@@ -1,0 +1,79 @@
+### YamlMime:Landing
+title: Dynamics 365 Customer Insights의 대상 그룹 인사이트 기능
+summary: 여러 소스에서 고객 데이터를 수집, 통합 및 구성합니다. 고객 프로필 및 실시간 세분화를 작성하고 관리하십시오. 고객 데이터를 다른 시스템과 통합하여 더욱 실용적입니다.
+metadata:
+  title: 대상 그룹 인사이트 설명서
+  description: 대상 그룹 인사이트에 대한 주요 링크가 있는 도움말 허브입니다.
+  ms.service: customer-insights
+  ms.subservice: audience-insights
+  ms.topic: landing-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.date: 10/16/2020
+  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4406299"
+landingContent:
+- title: 대상 그룹 인사이트 정보
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 제품 개요
+      url: overview.md
+    - text: 신규 및 업데이트된 기능
+      url: whats-new-audience-insights.md
+    - text: 커뮤니티 사이트
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+- title: 데이터 원본 수집
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 데이터 원본 추가
+      url: data-sources.md
+    - text: 증분 새로 고침
+      url: incremental-refresh-data-sources.md
+    - text: 엔터티 이해
+      url: entities.md
+- title: 데이터 통합
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 매핑
+      url: map-entities.md
+    - text: 일치
+      url: match-entities.md
+    - text: 병합
+      url: merge-entities.md
+- title: 고객 프로필 구체화
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 관계 구성
+      url: relationships.md
+    - text: 고객 활동 나열
+      url: activities.md
+    - text: 나만의 기계 학습 모델 가져오기
+      url: custom-models.md
+- title: 고객 데이터 내보내기
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 내보내기 대상 설정
+      url: export-destinations.md
+    - text: Dynamics 365 앱의 고객 카드
+      url: customer-card-add-in.md
+    - text: Power BI 커넥터
+      url: export-power-bi.md
+- title: 앱 관리
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 시스템 구성
+      url: system.md
+    - text: 사용자 권한 정의
+      url: permissions.md
+    - text: 다중 환경 관리
+      url: manage-environments.md

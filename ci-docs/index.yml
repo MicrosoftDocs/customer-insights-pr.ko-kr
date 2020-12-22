@@ -1,0 +1,108 @@
+### YamlMime:Landing
+metadata:
+  title: Dynamics 365 Customer Insights용 도움말 허브
+  author: m-hartmann
+  description: 도움말 콘텐츠로 시작할 관련 문서를 찾습니다.
+  ms.author: mhart
+  ms.date: 10/29/2020
+  ms.service: customer-insights
+  ms.topic: landing-page
+  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4406316"
+title: Dynamics 365 Customer Insights 설명서
+summary: 시작하는 데 도움이 되는 리소스를 찾고 Customer Insights의 특징과 기능에 대해 알아보세요.
+landingContent:
+- title: Customer Insights 소개
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Customer Insights 개요
+      url: overview.md
+    - text: 릴리스 계획
+      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+    - text: 환경 액세스
+      url: https://home.ci.ai.dynamics.com/
+- title: 대상 그룹 인사이트 시작
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 평가판 등록
+      url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+    - text: 새로운 기능
+      url: audience-insights/whats-new-audience-insights.md
+    - text: 대상 그룹 인사이트 설명서
+      url: audience-insights/index.yml
+- title: 연락하기
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Dynamics 365 커뮤니티 가입
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: 아이디어 공유
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: 문제 보고
+      url: https://go.microsoft.com/fwlink/?linkid=2079641
+- title: 대상 그룹 인사이트 자습서
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 새 환경 만들기
+      url: audience-insights/home.md
+    - text: 통합 고객 프로필 만들기
+      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+    - text: 앱에 대한 작업
+      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+- title: 대상 그룹 인사이트 데이터 내보내기
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 내보내기 대상 설정
+      url: audience-insights/export-destinations.md
+    - text: Dynamics 365 앱의 고객 카드
+      url: audience-insights/customer-card-add-in.md
+    - text: Power BI 커넥터
+      url: audience-insights/export-power-bi.md
+- title: 대상 그룹 인사이트 관리
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 시스템 구성
+      url: audience-insights/system.md
+    - text: 사용자 권한 정의
+      url: audience-insights/permissions.md
+    - text: 다중 환경 관리
+      url: audience-insights/manage-environments.md
+- title: 참여 인사이트(미리 보기) 소개
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 기능 개요
+      url: engagement-insights/overview.md
+    - text: 사용 약관 및 개념
+      url: engagement-insights/glossary.md
+    - text: 시작
+      url: engagement-insights/get-started.md
+- title: 참여 인사이트(미리 보기) 보고서
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 보고서 보기
+      url: engagement-insights/view-reports.md
+    - text: 사용자 지정 보고서 만들기
+      url: engagement-insights/custom-reports.md
+    - text: 통합 프로필 보고서 보기
+      url: engagement-insights/profile-reports.md
+- title: 참여 인사이트(미리 보기) 이벤트
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 정교한 이벤트 만들기
+      url: engagement-insights/refined-events.md
+    - text: 이벤트 내보내기
+      url: engagement-insights/export-events.md
+    - text: 개인 데이터 삭제 및 내보내기
+      url: engagement-insights/delete-export-personal-data.md
