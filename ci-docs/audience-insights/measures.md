@@ -1,7 +1,7 @@
 ---
-title: 측정값 만들기 및 편집
-description: 특정 비즈니스 영역의 성과를 분석하고 반영할 고객 관련 조치를 정의합니다.
-ms.date: 10/15/2020
+title: 측정값 만들기 및 관리
+description: 비즈니스 성과를 분석하고 반영하기 위한 측정값을 정의합니다.
+ms.date: 02/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,105 +9,111 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: wameng
 manager: shellyha
-ms.openlocfilehash: 0e214a6eb66abd27f7292db3ce2c2a6e16a8ff33
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 5bcee3b4c51880740715575b18fd7a4dbf87e6d0
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406306"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269936"
 ---
-# <a name="define-and-manage-measures"></a><span data-ttu-id="7173f-103">측정 정의 및 관리</span><span class="sxs-lookup"><span data-stu-id="7173f-103">Define and manage measures</span></span>
+# <a name="define-and-manage-measures"></a><span data-ttu-id="da8e7-103">측정 정의 및 관리</span><span class="sxs-lookup"><span data-stu-id="da8e7-103">Define and manage measures</span></span>
 
-<span data-ttu-id="7173f-104">**측정값** 은 특정 비즈니스 영역의 성과 및 상태를 반영하는 핵심 성과 지표(KPI)를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-104">**Measures** represent key performance indicators (KPIs) that reflect the performance and health of specific business areas.</span></span> <span data-ttu-id="7173f-105">대상 그룹 인사이트는 측정값을 수동으로 코딩하거나 유효성을 검사할 필요가 없는 쿼리 빌더를 사용하여 다양한 유형의 측정값을 구축할 수 있는 직관적인 경험을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-105">Audience insights provides an intuitive experience for building different types of measures, using a query builder that doesn't require you to code or validate your measures manually.</span></span> <span data-ttu-id="7173f-106">**홈** 페이지에서 비즈니스 측정값을 추적하고, **고객 카드** 의 특정 고객에 대한 측정값을 확인하고, 측정값을 사용하여 **세그먼트** 페이지에서 고객 세그먼트를 정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-106">You can track your business measures on the **Home** page, see measures for specific customers on the **Customer Card**, and use measures to define customer segments on the **Segments** page.</span></span>
+<span data-ttu-id="da8e7-104">측정값은 [통합 프로필](data-unification.md)에서 관련 값을 검색하여 고객 행동 및 비즈니스 성과를 더 잘 이해하는 데 도움이 됩니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-104">Measures help you to better understand customer behaviors and business performance by retrieving relevant values from [unified profiles](data-unification.md).</span></span> <span data-ttu-id="da8e7-105">예를 들어, 비즈니스에서 *고객당 총 지출* 을 확인하여 개별 고객의 구매 기록을 파악하고자 합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-105">For example, a business wants to see the *total spend per customer* to understand individual customer’s purchase history.</span></span> <span data-ttu-id="da8e7-106">또는 *회사의 총 매출* 을 측정하여 전체 비즈니스의 총 수익을 파악합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-106">Or measure *total sales of the company* to understand the aggregate-level revenue in the whole business.</span></span>  
 
-## <a name="create-a-measure"></a><span data-ttu-id="7173f-107">측정값 만들기</span><span class="sxs-lookup"><span data-stu-id="7173f-107">Create a measure</span></span>
+<span data-ttu-id="da8e7-107">측정값은 다양한 연산자와 간단한 매핑 옵션이 있는 데이터 쿼리 플랫폼인 측정값 빌더를 사용하여 생성됩니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-107">Measures are created using the measure builder, a data query platform with various operators and simple mapping options.</span></span> <span data-ttu-id="da8e7-108">이를 통해 데이터를 필터링하고 결과를 그룹화하고 [엔터티 관계 경로](relationships.md)를 감지하고 출력을 미리 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-108">It lets you filter the data, group results, detect [entity relationship paths](relationships.md), and preview the output.</span></span>
 
-<span data-ttu-id="7173f-108">이 섹션에서는 처음부터 측정값을 만드는 방법을 안내합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-108">This section walks you through creating a measure from scratch.</span></span> <span data-ttu-id="7173f-109">거객 엔터티를 통해 연결된 여러 데이터 원본의 데이터로 측정값을 작성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-109">You can build measures with data from multiple data sources that are connected through the Customer entity.</span></span> <span data-ttu-id="7173f-110">약간의 [서비스 제한](service-limits.md)이 적용됩니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-110">Some [service limits](service-limits.md) apply.</span></span>
+<span data-ttu-id="da8e7-109">측정값 빌더를 사용하여 고객 데이터를 쿼리하고 인사이트를 추출하여 비즈니스 활동을 계획합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-109">Use the measure builder to plan business activities by querying customer data and extract insights.</span></span> <span data-ttu-id="da8e7-110">예를 들어 *고객당 총 지출* 및 *고객당 총 수익* 의 측정값을 생성하면 지출이 많고 수익이 높은 고객 그룹을 식별하는 데 도움이 됩니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-110">For example, creating a measure of *total spend per customer* and *total return per customer* helps identify a group of customers with high spend yet high return.</span></span> <span data-ttu-id="da8e7-111">[세그먼트 생성](segments.md)을 통해 차선책을 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-111">You can [create a segment](segments.md) to drive next best actions.</span></span> 
 
-1. <span data-ttu-id="7173f-111">대상 그룹 인사이트에서 **측정값** 으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-111">In audience insights, go to **Measures**.</span></span>
+## <a name="create-a-measure"></a><span data-ttu-id="da8e7-112">측정값 만들기</span><span class="sxs-lookup"><span data-stu-id="da8e7-112">Create a measure</span></span>
 
-2. <span data-ttu-id="7173f-112">**새 측정값** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-112">Select **New measure**.</span></span>
+<span data-ttu-id="da8e7-113">이 섹션에서는 새 측정값을 만드는 과정을 처음부터 안내합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-113">This section walks you through creating a new measure from scratch.</span></span> <span data-ttu-id="da8e7-114">고객 엔터티와 연결하도록 설정된 관계가 있는 데이터 엔터티의 데이터 특성을 사용하여 측정값을 빌드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-114">You can build a measure with data attributes from data entities that have a relationship set up to connect with the Customer entity.</span></span> 
 
-3. <span data-ttu-id="7173f-113">측정값 **유형** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-113">Choose the measure **Type**:</span></span>
+1. <span data-ttu-id="da8e7-115">대상 그룹 인사이트에서 **측정값** 으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-115">In audience insights, go to **Measures**.</span></span>
 
-   - <span data-ttu-id="7173f-114">**고객 특성**: 고객의 점수, 값 또는 상태를 반영하는 고객당 단일 필드입니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-114">**Customer attribute**: A single field per customer that reflects a score, value, or state for the customer.</span></span> <span data-ttu-id="7173f-115">고객 특성은 **Customer_Measure** 라는 새 시스템 생성 엔터티에서 특성으로 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-115">Customer attributes are created as attributes in a new system-generated entity called **Customer_Measure**.</span></span>
+1. <span data-ttu-id="da8e7-116">**새로 만들기** 를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-116">Select **New**.</span></span>
 
-   - <span data-ttu-id="7173f-116">**고객 측정값**: 선택한 측정 기준별로 분석된 고객 행동에 대한 인사이트입니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-116">**Customer measure**: Insights on customer behavior with breakdown by selected dimensions.</span></span> <span data-ttu-id="7173f-117">각 측정값에 대해 새 엔터티가 생성되며 잠재적으로 고객당 여러 레코드가 생성될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-117">A new entity is generated for each measure, potentially with multiple records per customer.</span></span>
-
-   - <span data-ttu-id="7173f-118">**비즈니스 측정값**: 비즈니스 성과와 비즈니스 상태를 추적합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-118">**Business measure**: Tracks your business performance and health of the business.</span></span> <span data-ttu-id="7173f-119">비즈니스 측정값에는 **홈** 페이지에 표시되는 숫자 출력 또는 **엔터티** 페이지에서 찾은 새 엔터티의 두 가지 출력이 있을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-119">Business measures can have two different outputs: a numeric output that shows on the **Home** page or a new entity that you find on the **Entities** page.</span></span>
-
-4. <span data-ttu-id="7173f-120">**이름** 과 선택적 **표시 이름** 을 제공한 후 **다음** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-120">Provide a **Name** and an optional **Display name**, then select **Next**.</span></span>
-
-5. <span data-ttu-id="7173f-121">**엔터티** 섹션의 드롭다운 목록에서 첫 번째 엔터티를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-121">In the **Entities** section, select the first entity from the drop-down list.</span></span> <span data-ttu-id="7173f-122">이 시점에서 측정값 정의의 일부로 추가 엔터티가 필요한지 여부를 결정해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-122">At this point, you should decide whether additional entities are needed as part of your measure definition.</span></span>
-
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="7173f-123">![측정 정의](media/measure-definition.png "측정 정의")</span><span class="sxs-lookup"><span data-stu-id="7173f-123">![Measure definition](media/measure-definition.png "Measure definition")</span></span>
-
-   <span data-ttu-id="7173f-124">엔터티를 더 추가하려면 **엔터티 추가** 를 선택하고 측정값에 사용할 엔터티를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-124">To add more entities, select **Add entity** and select entities you want to use for the measure.</span></span>
-
+1. <span data-ttu-id="da8e7-117">**이름 편집** 을 선택하고 측정값에 대한 **이름** 을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-117">Select **Edit name** and provide a **Name** for the measure.</span></span> 
    > [!NOTE]
-   > <span data-ttu-id="7173f-125">시작 엔터티와 관계가 있는 엔터티만 선택할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-125">You can select only entities that have relationships to your starting entity.</span></span> <span data-ttu-id="7173f-126">관계를 정의하는 자세한 내용은 [관계](relationships.md)를 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="7173f-126">For more information about defining relationships, see [Relationships](relationships.md).</span></span>
+   > <span data-ttu-id="da8e7-118">새 측정값 구성에 두 개의 필드(예: CustomerID 및 계산)만 있는 경우 출력은 Customer_Measure라는 시스템 생성 엔터티에 새 열로 추가됩니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-118">If your new measure configuration has only two fields, for exmample, CustomerID and one calculation, the output will be added as a new column to the system generated entity called Customer_Measure.</span></span> <span data-ttu-id="da8e7-119">그리고 통합 고객 프로필에서 측정값의 값을 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-119">And you will be able to see the measure’s value in the unified customer profile.</span></span> <span data-ttu-id="da8e7-120">다른 측정값은 자체 엔터티를 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-120">Other measures will generate their own entities.</span></span>
 
-6. <span data-ttu-id="7173f-127">선택적으로 변수를 구성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-127">Optionally, you can configure variables.</span></span> <span data-ttu-id="7173f-128">**변수** 섹션에서 **새 변수** 를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-128">In the **Variables** section, select **New variable**.</span></span>
+1. <span data-ttu-id="da8e7-121">구성 영역의 **함수 선택** 드롭 다운 메뉴에서 집계 함수를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-121">In the configuration area, choose the aggregation function from the **Select Function** drop-down menu.</span></span> <span data-ttu-id="da8e7-122">집계 함수에는 다음이 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-122">Aggregation functions include:</span></span> 
+   - <span data-ttu-id="da8e7-123">**Sum**</span><span class="sxs-lookup"><span data-stu-id="da8e7-123">**Sum**</span></span>
+   - <span data-ttu-id="da8e7-124">**평균**</span><span class="sxs-lookup"><span data-stu-id="da8e7-124">**Average**</span></span>
+   - <span data-ttu-id="da8e7-125">**수**</span><span class="sxs-lookup"><span data-stu-id="da8e7-125">**Count**</span></span>
+   - <span data-ttu-id="da8e7-126">**고유 개수**</span><span class="sxs-lookup"><span data-stu-id="da8e7-126">**Count Unique**</span></span>
+   - <span data-ttu-id="da8e7-127">**최대**</span><span class="sxs-lookup"><span data-stu-id="da8e7-127">**Max**</span></span>
+   - <span data-ttu-id="da8e7-128">**Min**</span><span class="sxs-lookup"><span data-stu-id="da8e7-128">**Min**</span></span>
+   - <span data-ttu-id="da8e7-129">**첫 번째**: 데이터 레코드의 첫 번째 값 사용</span><span class="sxs-lookup"><span data-stu-id="da8e7-129">**First**: takes the first value of the data record</span></span>
+   - <span data-ttu-id="da8e7-130">**마지막**: 데이터 레코드에 추가된 마지막 값 사용</span><span class="sxs-lookup"><span data-stu-id="da8e7-130">**Last**: takes the last value that was added to the data record</span></span>
 
-   <span data-ttu-id="7173f-129">변수는 선택한 각 레코드에 대한 계산입니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-129">Variables are calculations that are made on each of your selected records.</span></span> <span data-ttu-id="7173f-130">예를 들어 각 고객 레코드에 대해 POS(Point of Sale) 및 온라인 판매를 합산합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-130">For example, summing point-of-sale (POS) and online sales for each of your customers' records.</span></span>
+   :::image type="content" source="media/measure-operators.png" alt-text="측정값 계산을 위한 연산자입니다.":::
 
-7. <span data-ttu-id="7173f-131">변수의 **이름** 을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-131">Provide a **Name** for the variable.</span></span>
+1. <span data-ttu-id="da8e7-132">**특성 추가** 를 선택하여 이 측정값을 만드는 데 필요한 데이터를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-132">Select **Add attribute** to select the data you need to create this measure.</span></span>
+   
+   1. <span data-ttu-id="da8e7-133">**특성** 탭을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-133">Select the **Attributes** tab.</span></span> 
+   1. <span data-ttu-id="da8e7-134">데이터 엔터티: 측정하려는 특성이 포함된 엔터티를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-134">Data entity: Choose the entity that includes the attribute you want to measure.</span></span> 
+   1. <span data-ttu-id="da8e7-135">데이터 특성: 측정값을 계산하기 위해 집계 함수에서 사용할 특성을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-135">Data attribute: Choose the attribute you want to use in the aggregation function to calculate the measure.</span></span> <span data-ttu-id="da8e7-136">한번에 하나의 특성만 선택할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-136">You can only select one attribute at a time.</span></span>
+   1. <span data-ttu-id="da8e7-137">**측정** 탭을 선택하여 기존 측정에서 데이터 속성을 선택할 수도 있습니다. 또는 엔터티 또는 측정값 이름을 검색 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-137">You can also select a data attribute from an existing measure by selecting the **Measures** tab. Or, you can search for an entity or measure name.</span></span> 
+   1. <span data-ttu-id="da8e7-138">**추가** 를 선택하여 측정값에 선택한 특성을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-138">Select **Add** to add the selected attribute to the measure.</span></span>
 
-8. <span data-ttu-id="7173f-132">**식** 영역에서 계산을 시작할 필드를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-132">In the **Expression** area, choose a field to begin your calculation with.</span></span>
+   :::image type="content" source="media/measure-attribute-selection.png" alt-text="계산에 사용할 특성을 선택합니다.":::
 
-9. <span data-ttu-id="7173f-133">계산에 포함할 필드를 더 선택하면서 **식** 영역에 식을 입력합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-133">Type an expression in the **Expression** area while choosing more fields to be included in your calculation.</span></span>
+1. <span data-ttu-id="da8e7-140">더 복잡한 측정값을 빌드하기 위해 측정값 함수에 더 많은 특성을 추가하거나 수학 연산자를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-140">To build more complex measures, you can add more attributes or use math operators on your measure function.</span></span>
 
-   > [!NOTE]
-   > <span data-ttu-id="7173f-134">현재는 산술식만 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-134">Currently, only arithmetic expressions are supported.</span></span> <span data-ttu-id="7173f-135">또한 다른 [엔터티 경로](relationships.md)의 엔터티에 대해서는 변수 계산이 지원되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-135">Additionally, variable calculation isn't supported for entities from different [entity paths](relationships.md).</span></span>
+   :::image type="content" source="media/measure-math-operators.png" alt-text="수학 연산자를 사용하여 복잡한 측정값을 만듭니다.":::
 
-10. <span data-ttu-id="7173f-136">**완료** 를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-136">Select **Done**.</span></span>
+1. <span data-ttu-id="da8e7-142">필터를 추가하려면 구성 영역에서 **필터** 를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-142">To add filters, select the **Filter** in the configuration area.</span></span> 
+  
+   1. <span data-ttu-id="da8e7-143">**필터** 창의 **속성 추가** 섹션에서 필터를 만드는 데 사용할 특성을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-143">In **Add attribute** section of the **Filters** pane, select the attribute you want to use to create filters.</span></span>
+   1. <span data-ttu-id="da8e7-144">선택한 모든 특성에 대한 필터를 정의하도록 필터 연산자를 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-144">Set the filter operators to define the filter for every selected attribute.</span></span>
+   1. <span data-ttu-id="da8e7-145">**적용** 을 선택하여 측정값에 필터를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-145">Select **Apply** to add the filters to the measure.</span></span>
 
-11. <span data-ttu-id="7173f-137">**측정값 정의** 섹션에서 선택한 엔터티와 계산된 변수가 새 측정값 엔터티 또는 특성에 집계되는 방법을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-137">In the **Measure definition** section, you'll define how your chosen entities and calculated variables are aggregated in a new measure entity or attribute.</span></span>
+1. <span data-ttu-id="da8e7-146">차원을 추가하려면 구성 영역에서 **차원** 을 ​​선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-146">To add dimensions, select **Dimension** in the configuration area.</span></span> <span data-ttu-id="da8e7-147">차원은 측정값 출력 엔터티에서 열로 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-147">Dimensions will show as columns in the measure output entity.</span></span>
+   1. <span data-ttu-id="da8e7-148">**차원 편집** 을 선택하여 측정값을 그룹화하려는 데이터 특성을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-148">Select **Edit dimensions** to add data attributes you want to group the measure values by.</span></span> <span data-ttu-id="da8e7-149">예: 도시 또는 성별.</span><span class="sxs-lookup"><span data-stu-id="da8e7-149">For example, city or gender.</span></span> <span data-ttu-id="da8e7-150">기본적으로 *고객 수준 측정값* 을 만들기 위해 *CustomerID* 차원이 선택됩니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-150">By default, the *CustomerID* dimension is selected to create *customer-level measures*.</span></span> <span data-ttu-id="da8e7-151">*비즈니스 수준 측정값* 을 만들려는 경우 기본 차원을 제거할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-151">You can remove the default dimension if you want to create *business-level measures*.</span></span>
+   1. <span data-ttu-id="da8e7-152">**완료** 를 선택하여 측정값에 차원을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-152">Select **Done** to add the dimensions to the measure.</span></span>
 
-12. <span data-ttu-id="7173f-138">**새 차원** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-138">Select **New dimension**.</span></span> <span data-ttu-id="7173f-139">차원을 함수별 *그룹* 으로 생각할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-139">You can think of a dimension as a *group by* function.</span></span> <span data-ttu-id="7173f-140">측정값 엔터티 또는 특성의 데이터 출력은 정의된 모든 차원으로 그룹화됩니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-140">The data output of your Measure entity or attribute will be grouped by all of your defined dimensions.</span></span>
+1. <span data-ttu-id="da8e7-153">매핑한 데이터 엔터티와 고객 엔터티 사이에 여러 경로가 있는 경우 식별된 [엔티티 관계 경로](relationships.md) 중 하나를 선택해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-153">If there are multiple paths between the data entity you mapped and the Customer entity, you have to choose one of the identified [entity relationship paths](relationships.md).</span></span> <span data-ttu-id="da8e7-154">측정 결과는 선택한 경로에 따라 달라질 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-154">Measure results can vary depending on the selected path.</span></span>
+   1. <span data-ttu-id="da8e7-155">**데이터 선호 설정** 을 선택하여 측정값을 식별하는 데 사용해야 하는 엔터티 경로를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-155">Select **Data preferences** and choose the entity path that should be used to identify your measure.</span></span>
+   1. <span data-ttu-id="da8e7-156">**완료** 를 선택하여 선택 사항을 적용합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-156">Select **Done** to apply your selection.</span></span> 
 
-    > [!div class="mx-imgBorder"]
-    > <span data-ttu-id="7173f-141">![집계 주기 선택](media/measures-businessreport-measure-definition2.png "집계 주기 선택")</span><span class="sxs-lookup"><span data-stu-id="7173f-141">![Choose aggregate cycle](media/measures-businessreport-measure-definition2.png "Choose aggregate cycle")</span></span>
+   :::image type="content" source="media/measures-data-preferences.png" alt-text="측정값에 대한 엔터티 경로를 선택합니다.":::
 
-    <span data-ttu-id="7173f-142">차원 정의의 일부로 다음 정보를 선택하거나 입력합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-142">Select or enter the following information as part of your dimension's definition:</span></span>
+1. <span data-ttu-id="da8e7-158">측정값에 대한 계산을 더 추가하려면 **새로운 계산** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-158">To add more calculations for the measure, select **New calculation**.</span></span> <span data-ttu-id="da8e7-159">새로운 계산에는 동일한 엔터티 경로에 있는 엔터티만 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-159">You can only use entities on the same entity path for new calculations.</span></span> <span data-ttu-id="da8e7-160">더 많은 계산이 측정값 출력 엔터티에 새 열로 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-160">More calculations will show as new columns in the measure output entity.</span></span>
 
-    - <span data-ttu-id="7173f-143">**엔터티**: 측정값 엔터티를 정의하는 경우 하나 이상의 특성을 포함해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-143">**Entity**: If you define a Measure entity, it should include at least one attribute.</span></span> <span data-ttu-id="7173f-144">측정값 특성을 정의하는 경우 기본적으로 하나의 특성만 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-144">If you define a Measure attribute, it will include only one attribute by default.</span></span> <span data-ttu-id="7173f-145">이 선택은 해당 특성을 포함하는 엔터티를 선택하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-145">This selection is about choosing the entity that includes that attribute.</span></span>
-    - <span data-ttu-id="7173f-146">**필드**: 측정값 엔터티 또는 특성에 포함할 특정 특성을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-146">**Field**: Choose the specific attribute to be included either in your Measure entity or attribute.</span></span>
-    - <span data-ttu-id="7173f-147">**버킷**: 일별, 월별 또는 연간 기준으로 데이터를 집계할지 여부를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-147">**Bucket**: Choose whether you want to aggregate data on a daily, monthly, or annual basis.</span></span> <span data-ttu-id="7173f-148">날짜 유형 속성을 선택한 경우에만 선택해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-148">It's a required selection only if you've selected a Date type attribute.</span></span>
-    - <span data-ttu-id="7173f-149">**(으)로**: 새 필드의 이름을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-149">**As**: Defines the name of your new field.</span></span>
-    - <span data-ttu-id="7173f-150">**표시 이름**: 필드의 표시 이름을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-150">**Display name**: Defines the display name of your field.</span></span>
+1. <span data-ttu-id="da8e7-161">계산에서 **...** 을 선택하여 측정값에서 계산을 **복제**, **이름 바꾸기** 또는 **제거** 합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-161">Select **...** on the calculation to **Duplicate**, **Rename**, or **Remove** a calculation from a measure.</span></span>
 
-    > [!NOTE]
-    > <span data-ttu-id="7173f-151">측정값에 측정 기준을 더 추가하지 않는 한 비즈니스 측정값은 단일 숫자 엔터티로 저장되며 **홈** 페이지에 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-151">Your business measure will be saved as a single-number entity and will appear on the **Home** page unless you add more dimensions to your measure.</span></span> <span data-ttu-id="7173f-152">차원을 더 추가하면 측정값이 **홈** 페이지에 표시되지 *않습니다*.</span><span class="sxs-lookup"><span data-stu-id="7173f-152">After adding more dimensions, the measure will *not* show up on the **Home** page.</span></span>
+1. <span data-ttu-id="da8e7-162">**미리 보기** 영역에는 필터 및 차원을 포함하여 측정값 출력 엔터티의 데이터 스키마가 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-162">In the **Preview** area, you'll see the data schema of the measure output entity, including filters and dimensions.</span></span> <span data-ttu-id="da8e7-163">미리 보기는 구성 변경에 동적으로 반응합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-163">The preview reacts dynamically to changes in the configuration.</span></span>
 
-13. <span data-ttu-id="7173f-153">선택적으로 집계 함수를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-153">Optionally, add aggregation functions.</span></span> <span data-ttu-id="7173f-154">만드는 모든 집계는 측정값 엔터티 또는 특성 내에 새 값을 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-154">Any aggregation that you create results in a new value within your Measures entity or attribute.</span></span> <span data-ttu-id="7173f-155">지원되는 집계 함수는 **최소**, **최대**, **평균**, **중앙값**, **합계**, **고고유 개수**, **첫 번째**(차원 값의 첫 번째 레코드 를 사용함) 및 **마지막**(마지막 레코드가 차원 값에 추가됨)입니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-155">Supported aggregation functions are: **Min**, **Max**, **Average**, **Median**, **Sum**, **Count Unique**, **First** (takes the first record of a dimension value), and **Last** (takes the last record added to a dimension value).</span></span>
+1. <span data-ttu-id="da8e7-164">**실행** 을 선택하여 구성된 측정값에 대한 결과를 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-164">Select **Run** to calculate results for the configured measure.</span></span> <span data-ttu-id="da8e7-165">현재 구성을 유지하고 나중에 측정을 실행하려면 **저장 및 닫기** 를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-165">Select **Save and close** if you want to keep the current configuration and run the measure later.</span></span>
 
-14. <span data-ttu-id="7173f-156">**저장** 을 선택하여 측정값에 변경 내용을 적용합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-156">Select **Save** to apply your changes to the measure.</span></span>
+1. <span data-ttu-id="da8e7-166">**측정값** 으로 이동하여 목록에서 새로 만들어진 측정값을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-166">Go to **Measures** to see the newly created measure in the list.</span></span>
 
-## <a name="manage-your-measures"></a><span data-ttu-id="7173f-157">측정 관리</span><span class="sxs-lookup"><span data-stu-id="7173f-157">Manage your measures</span></span>
+## <a name="manage-your-measures"></a><span data-ttu-id="da8e7-167">측정 관리</span><span class="sxs-lookup"><span data-stu-id="da8e7-167">Manage your measures</span></span>
 
-<span data-ttu-id="7173f-158">측정값을 하나 이상 생성한 후에는 측정값 목록이 **측정값** 페이지에 나타납니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-158">After creating at least one measure, you'll see a list of measures on the **Measures** page.</span></span>
+<span data-ttu-id="da8e7-168">[측정값 만들기](#create-a-measure)를 실행한 이후에 **측정값** 페이지에서 측정값 목록을 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-168">After [creating a measure](#create-a-measure), you see a list of measures on the **Measures** page.</span></span>
 
-<span data-ttu-id="7173f-159">측정값 유형, 작성자, 생성 날짜 및 시간, 마지막 편집 날짜 및 시간, 상태(측정값이 활성 상태인지 비활성 상태인지 여부) 및 마지막 새로 고침 날짜 및 시간에 대한 정보를 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-159">You'll find information about the measure type, the creator, creation date and time, last edit date and time, status (whether the measure is active, inactive, or failed), and last refresh date and time.</span></span> <span data-ttu-id="7173f-160">목록에서 측정을 선택하면 해당 출력의 미리보기를 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-160">When you select a measure from the list, you can see a preview of its output.</span></span>
+<span data-ttu-id="da8e7-169">측정값 유형, 작성자, 생성 날짜, 현황 및 상태에 대한 정보를 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-169">You'll find information about the measure type, the creator, creation date, status, and state.</span></span> <span data-ttu-id="da8e7-170">목록에서 측정값을 선택하면 출력을 미리보고 .CSV 파일을 다운로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-170">When you select a measure from the list, you can preview the output and download a .CSV file.</span></span>
 
-<span data-ttu-id="7173f-161">모든 측정을 동시에 새로 고치려면 특정 측정을 선택하지 않고 **모두 새로 고침** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-161">To refresh all of your measures at the same time, select **Refresh all** without selecting a specific measure.</span></span>
+<span data-ttu-id="da8e7-171">모든 측정을 동시에 새로 고치려면 특정 측정을 선택하지 않고 **모두 새로 고침** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-171">To refresh all of your measures at the same time, select **Refresh all** without selecting a specific measure.</span></span>
 
 > [!div class="mx-imgBorder"]
-> <span data-ttu-id="7173f-162">![단일 측정을 관리하기 위한 작업](media/measure-actions.png "단일 측정을 관리하기 위한 작업")</span><span class="sxs-lookup"><span data-stu-id="7173f-162">![Actions to manage single measures](media/measure-actions.png "Actions to manage single measures")</span></span>
+> <span data-ttu-id="da8e7-172">![단일 측정을 관리하기 위한 작업](media/measure-actions.png "단일 측정을 관리하기 위한 작업")</span><span class="sxs-lookup"><span data-stu-id="da8e7-172">![Actions to manage single measures](media/measure-actions.png "Actions to manage single measures")</span></span>
 
-<span data-ttu-id="7173f-163">또는 목록에서 측정을 선택하고 다음 작업 중 하나를 수행하십시오.</span><span class="sxs-lookup"><span data-stu-id="7173f-163">Alternatively, select a measure from the list and perform one of the following actions:</span></span>
+<span data-ttu-id="da8e7-173">다음 옵션에 대한 목록에서 측정값을 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="da8e7-173">Select a measure from the list for the following options:</span></span>
 
-- <span data-ttu-id="7173f-164">세부 사항을 보려면 측정 이름을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-164">Select the measure name to see its details.</span></span>
-- <span data-ttu-id="7173f-165">측정의 구성을 **편집** 합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-165">**Edit** the configuration of the measure.</span></span>
-- <span data-ttu-id="7173f-166">측정 **이름 바꾸기** 를 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-166">**Rename** the measure.</span></span>
-- <span data-ttu-id="7173f-167">측정을 **삭제** 합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-167">**Delete** the measure.</span></span>
-- <span data-ttu-id="7173f-168">줄임표(...)를 선택한 다음 **새로 고침** 을 선택하여 측정에 대한 새로 고침 프로세스를 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-168">Select the ellipsis (...) and then **Refresh** to start the refresh process for the measure.</span></span>
-- <span data-ttu-id="7173f-169">줄임표(...)를 선택한 다음 **다운로드** 를 선택하여 측정의 .CSV 파일을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-169">Select the ellipsis (...) and then **Download** to get a .CSV file of the measure.</span></span>
+- <span data-ttu-id="da8e7-174">세부 사항을 보려면 측정 이름을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-174">Select the measure name to see its details.</span></span>
+- <span data-ttu-id="da8e7-175">측정의 구성을 **편집** 합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-175">**Edit** the configuration of the measure.</span></span>
+- <span data-ttu-id="da8e7-176">최신 데이터를 기반으로 측정값을 **새로 고침** 합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-176">**Refresh** the measure based on the latest data.</span></span>
+- <span data-ttu-id="da8e7-177">측정 **이름 바꾸기** 를 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-177">**Rename** the measure.</span></span>
+- <span data-ttu-id="da8e7-178">측정을 **삭제** 합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-178">**Delete** the measure.</span></span>
+- <span data-ttu-id="da8e7-179">**활성화** 또는 **비활성화** 합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-179">**Activate** or **Deactivate**.</span></span> <span data-ttu-id="da8e7-180">[예약된 새로 고침](system.md#schedule-tab) 중에는 비활성 측정값이 새로 고쳐지지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-180">Inactive measures won't get refreshed during a [scheduled refresh](system.md#schedule-tab).</span></span>
 
 > [!TIP]
-> <span data-ttu-id="7173f-170">작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-170">There are [six types of status](system.md#status-types) for tasks/processes.</span></span> <span data-ttu-id="7173f-171">또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-171">Additionally, most processes [depend on other downstream processes](system.md#refresh-policies).</span></span> <span data-ttu-id="7173f-172">프로세스 상태를 선택하여 전체 작업의 진행률에 대한 세부 사항을 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-172">You can select the status of a process to see details on the progress of the entire job.</span></span> <span data-ttu-id="7173f-173">작업 중 하나를 선택한 다음 **자세히 보기** 참조를 선택하면, 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고와 같은 추가 정보를 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-173">After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.</span></span>
+> <span data-ttu-id="da8e7-181">작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-181">There are [six types of status](system.md#status-types) for tasks/processes.</span></span> <span data-ttu-id="da8e7-182">또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-182">Additionally, most processes [depend on other downstream processes](system.md#refresh-policies).</span></span> <span data-ttu-id="da8e7-183">프로세스 상태를 선택하여 전체 작업의 진행률에 대한 세부 사항을 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-183">You can select the status of a process to see details on the progress of the entire job.</span></span> <span data-ttu-id="da8e7-184">작업 중 하나를 선택한 다음 **자세히 보기** 참조를 선택하면, 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고와 같은 추가 정보를 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-184">After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="7173f-174">다음 단계</span><span class="sxs-lookup"><span data-stu-id="7173f-174">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="da8e7-185">다음 단계</span><span class="sxs-lookup"><span data-stu-id="da8e7-185">Next step</span></span>
 
-<span data-ttu-id="7173f-175">기존 측정값을 사용하여 **세그먼트** 페이지에서 첫 번째 고객 세그먼트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="7173f-175">You cam use existing measures to create your first customer segment on the **Segments** page.</span></span> <span data-ttu-id="7173f-176">자세한 내용은 [세그먼트](segments.md)를 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="7173f-176">For more information, see [Segments](segments.md).</span></span>
+<span data-ttu-id="da8e7-186">기존 측정값을 사용하여 [고객 세그먼트](segments.md)를 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da8e7-186">You cam use existing measures to create [a customer segment](segments.md).</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

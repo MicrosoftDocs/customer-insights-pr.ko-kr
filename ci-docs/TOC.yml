@@ -14,10 +14,10 @@
       href: 'https://dynamics.microsoft.com/get-started/?appname=customerinsights'
     - name: 신규 및 업데이트된 기능
       href: audience-insights/whats-new-audience-insights.md
-    - name: 시작
+    - name: 새 환경 만들기
+      href: audience-insights/home.md
+    - name: 학습 모듈
       items:
-        - name: 새 환경 만들기
-          href: audience-insights/home.md
         - name: 데이터 수집
           href: 'https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/'
         - name: 통합 고객 프로필 만들기
@@ -44,7 +44,7 @@
           href: audience-insights/entities.md
     - name: 데이터 통합
       items:
-        - name: 통합 개요
+        - name: 데이터 통합 개요
           href: audience-insights/data-unification.md
         - name: 엔터티 및 특성 매핑
           href: audience-insights/map-entities.md
@@ -80,6 +80,8 @@
           href: audience-insights/segments.md
         - name: 세그먼트에 대한 통찰력 확보
           href: audience-insights/segment-insights.md
+        - name: 제안된 세그먼트 확인
+          href: audience-insights/suggested-segments.md
         - name: 유사 고객 찾기
           href: audience-insights/find-similar-customer-segments.md
         - name: 측정값 및 KPI 정의
@@ -96,6 +98,12 @@
           href: audience-insights/predict-transactional-churn.md
         - name: 트랜잭션 이탈 예측 샘플 가이드
           href: audience-insights/sample-guide-predict-transactional-churn.md
+        - name: 고객 평생 가치(CLV) 예측
+          href: audience-insights/predict-customer-lifetime-value.md
+        - name: 제품 추천 예측
+          href: audience-insights/predict-product-recommendation.md
+        - name: 제품 추천 예측에 대한 샘플 가이드
+          href: audience-insights/sample-guide-predict-product-recommendation.md
         - name: 맞춤형 기계 학습 모델 구현
           href: audience-insights/custom-models.md
         - name: Azure Machine Learning 실험
@@ -104,10 +112,14 @@
           href: audience-insights/machine-learning-studio-experiments.md
     - name: 내보내기 옵션
       items:
-        - name: 내보내기 대상 검색
+        - name: 내보내기 대상 미리 보기
           href: audience-insights/export-destinations.md
+        - name: AutoPilot
+          href: audience-insights/export-autopilot.md
         - name: Azure Blob Storage
           href: audience-insights/export-azure-blob-storage.md
+        - name: Azure Data Lake Storage Gen2
+          href: audience-insights/export-azure-data-lake-storage-gen2.md
         - name: DotDigital
           href: audience-insights/export-dotdigital.md
         - name: Dynamics 365 Customer Service(추가 기능)
@@ -136,6 +148,8 @@
           href: audience-insights/export-power-apps.md
         - name: Power Automate
           href: audience-insights/export-power-automate.md
+        - name: SendGrid
+          href: audience-insights/export-sendgrid.md
         - name: SFTP
           href: audience-insights/export-sftp.md
     - name: 관리
@@ -152,6 +166,8 @@
           href: audience-insights/supported-languages.md
     - name: 확장성
       items:
+        - name: 참여 인사이트의 웹 데이터 통합
+          href: audience-insights/integrate-engagement-insights.md
         - name: Common Data Model의 엔터티 스키마 검토
           href: audience-insights/entity-schemas.md
         - name: API에 대한 작업
@@ -162,7 +178,7 @@
       href: audience-insights/service-limits.md
     - name: GDPR에 따른 DSR 요청
       href: audience-insights/gdpr.md
-- name: 참여 인사이트(미리 보기)
+- name: 참여 인사이트(프리뷰)
   items:
     - name: 도움말 허브
       href: engagement-insights/index.yml
@@ -170,10 +186,6 @@
       href: engagement-insights/overview.md
     - name: 무료 평가판
       href: 'https://pi.dynamics.com/'
-    - name: 빠른 시작
-      items:
-        - name: 공개 미리 보기를 위한 빠른 시작
-          href: engagement-insights/quickstart.md
     - name: 시작
       items:
         - name: 시작
@@ -223,4 +235,4 @@
     - name: 서비스 한도
       href: engagement-insights/quotas.md
 - name: 지원 문의
-  href: 'https://go.microsoft.com/fwlink/?linkid=2145734'
+  href: 'https://admin.powerplatform.microsoft.com/support'
