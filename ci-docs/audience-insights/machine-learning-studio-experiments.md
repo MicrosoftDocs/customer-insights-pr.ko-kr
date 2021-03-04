@@ -4,17 +4,17 @@ description: Dynamics 365 Customer Insights의 Machine Learning Studio(클래식
 ms.date: 12/03/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: ameetj
 manager: shellyha
-ms.openlocfilehash: 556b6810db0ed2733a3f086291757bd85b77e371
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 8a861d62bdfee6a3a82468fe1ab4a3fbbdad43d4
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4669026"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270212"
 ---
 # <a name="use-models-based-on-azure-machine-learning-studio-classic"></a>Azure Machine Learning Studio(클래식) 기반 모델을 사용합니다.
 
@@ -171,3 +171,6 @@ CLTV를 예측하는 것은 예측 값이 양의 값을 갖는 연속 변수이�
 Customer Insights에서 이러한 예측을 사용하려면 고객 ID와 함께 예측을 **내보내야** 합니다. 원본 데이터를 내보내는 [동일한 Azure Blob 저장소 위치로 내보냅니다](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-from-blobs). 예측 웹 서비스를 정기적으로 실행하고 점수가 업데이트되도록 예약할 수 있습니다.
 
 사용자 지정 모델에서 생성된 데이터를 사용하여 고객 데이터를 더욱 보강할 수 있습니다. 자세한 내용은 [사용자 지정 기계 학습 모델](custom-models.md)을 참조하세요.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

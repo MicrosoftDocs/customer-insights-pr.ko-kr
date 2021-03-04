@@ -4,17 +4,17 @@ description: 데이터를 매핑하여 통합 고객 프로필을 만듭니다.
 ms.date: 09/25/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: adkuppa
 manager: shellyha
-ms.openlocfilehash: e98c7717f7707d43a9fd1fc6f6b0e9c49e4e7ee0
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 0088daae0be0cb3e71f87387648430d2353081c9
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406300"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267043"
 ---
 # <a name="map-entities-and-attributes"></a>엔터티 및 특성 매핑
 
@@ -102,3 +102,6 @@ ms.locfileid: "4406300"
 
 > [!TIP]
 > 다음 비디오를 확인하십시오. [시작하기: 통합 고객 프로필 만들기](https://youtu.be/oBfGEhucAxs).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 5a03e916676800afdd8692da865a1060952d5c4f
-ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
+ms.openlocfilehash: 966db1a22e7dece1bcd89733880bce059151157f
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "4689138"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267532"
 ---
 # <a name="work-with-customer-insights-apis"></a>Customer Insights API에 대한 작업
 
@@ -140,3 +140,6 @@ NuGet.org에서 C# 클라이언트 라이브러리 사용을 시작하는 방법
 
 1. 메서드가 여러 유형(예: `IList<InstanceInfo>` 및 `ApiErrorResult`)을 반환할 수 있으므로 응답은 `object` 유형일 수 있습니다. 반환 유형을 확인하려면 해당 작업의 [API 세부 정보 페이지](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights)에 지정된 응답 유형으로 객체를 안전하게 캐스트할 수 있습니다.    
    요청에 대한 추가 정보가 필요한 경우 **http 메시지 방법** 을 사용하여 원시 응답 객체에 액세스합니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

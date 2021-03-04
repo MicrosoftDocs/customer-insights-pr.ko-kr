@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 24321e9e11f9fd4e800526673726e5146ed33674
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 44f97696ec91dc488dd6a7528e186abb99c8288b
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406271"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269660"
 ---
-# <a name="data-unification"></a>데이터 통합
+# <a name="data-unification-overview"></a>데이터 통합 개요
 
 [데이터 원본 설정](data-sources.md) 후 데이터를 통합할 수 있습니다. 데이터 통합에는 **매핑**, **일치** 및 **병합** 의 세 단계가 포함됩니다.
 
@@ -31,3 +31,6 @@ ms.locfileid: "4406271"
 - [엔터티 간 관계 설정](relationships.md)을 통해 정교한 세그먼트를 만들고
 - [데이터 보강](enrichment-hub.md)을 통해 고객에 대한 광범위한 인사이트를 얻으며
 - 일부 수집된 특성에서 [활동을 정의](activities.md)합니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

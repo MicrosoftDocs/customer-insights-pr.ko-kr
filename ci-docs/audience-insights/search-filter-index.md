@@ -1,7 +1,7 @@
 ---
 title: 고객 프로필 검색 및 필터링
 description: 통합 고객 프로필에 대한 정보를 신속하게 찾고 지정된 속성을 필터링합니다.
-ms.date: 04/16/2020
+ms.date: 01/19/2021
 ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 1842ad333c23bb155abc89167556163ae79cdd34
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d675738c43cbdb5f9b478d53d6124db38ba3004d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406310"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270074"
 ---
 # <a name="customer-profiles-search--filter-index"></a>고객 프로필: 색인 검색 및 필터링
 
@@ -28,14 +28,6 @@ ms.locfileid: "4406310"
 검색 가능한 특성을 관리자로 처음 정의하는 경우 먼저 색인화된 필드를 정의해야 합니다. **고객** 페이지에서 사용자가 고객을 검색하고 필터링할 수 있는 모든 특성을 선택하는 것이 좋습니다. 데이터 통합 프로세스 중에 작성한 고객 프로필 엔터티에 존재하는 특성만 지정할 수 있습니다.
 
 1. **고객** 페이지를 열고 **검색 및 필터 색인** 을 선택합니다.
-
-> [!NOTE]
-> 맵 페이지에 정의된 다음 의미 유형에서 고객 엔터티의 사용 가능한 특성에 대한 기본 검색 색인 구성을 작성합니다.
-> - 개인 이름, 성, 중간 이름, 전체 이름
-> - 조직 이름
-> - 전자 메일 주소
-> - 전화 번호
-> - 위치 정보
 
 2. 색인화된 필드를 지정하려면 **+ 추가** 를 선택합니다.
 
@@ -65,3 +57,10 @@ ms.locfileid: "4406310"
 2. **저장** 을 선택하여 변경 내용을 적용합니다.
 
 3. 설정을 적용할 준비가 되면 **실행** 을 선택합니다.
+
+## <a name="next-steps"></a>다음 단계
+
+**고객** 페이지로 이동하여 고객 프로필을 검색하거나 색인된 필드를 사용하여 모든 고객 프로필의 하위 집합을 확인합니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

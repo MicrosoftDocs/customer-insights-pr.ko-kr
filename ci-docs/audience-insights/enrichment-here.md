@@ -1,20 +1,20 @@
 ---
 title: 타사 보강 HERE Technologies로 보강
 description: HERE Technologies 타사 보강에 대한 일반 정보입니다.
-ms.date: 10/27/2020
+ms.date: 12/10/2020
 ms.reviewer: jodahl
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 7082fcfec099c3c9436b233c193be23625f6691a
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 258e37de9d9685d9ebc30b3c6b8d238d583431b4
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668686"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269522"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>HERE Technologies로 고객 프로필 보강(미리 보기)
 
@@ -43,7 +43,11 @@ HERE Technologies 보강을 구성하려면 다음 필수 구성 요소가 충�
 
 1. **HERE에 연결** 을 선택하여 입력을 둘 다 확인합니다.
 
-1. **데이터 추가** 를 선택하고 필드를 기본 또는 보조 주소에 매핑할지 여부를 선택합니다. 두 주소(예: 집 및 회사 주소)에 대한 필드 매핑을 지정하고 두 주소에 대해 개별적으로 프로필을 보강할 수 있습니다. **다음** 을 선택합니다.
+1.  **데이터 추가** 를 선택하고 HERE Technologies의 위치 데이터를 통해 보강하려는 **고객 데이터 집합** 을 선택합니다. **고객** 엔터티를 선택하여 모든 고객 프로필을 보강하거나 세그먼트 엔터티를 선택하여 해당 세그먼트에 포함된 고객 프로필만 보강할 수 있습니다.
+
+    :::image type="content" source="media/enrichment-HERE-configuration-customer-data-set.png" alt-text="고객 데이터 집합 선택 시 스크린샷입니다.":::
+
+1. 필드를 기본 또는 보조 주소에 매핑할지 여부를 선택합니다. 두 주소(예: 집 및 회사 주소)에 대한 필드 매핑을 지정하고 두 주소에 대해 개별적으로 프로필을 보강할 수 있습니다. **다음** 을 선택합니다.
 
 1. HERE Technologies에서 일치하는 위치 데이터를 찾는 데 사용해야 하는 통합 프로필의 필드를 정의합니다. **상세 주소 1** 및 **우편 번호** 필드는 선택한 기본 또는 보조 주소의 필수 항목입니다. 더 높은 일치 정확도를 위해 더 많은 필드를 추가할 수 있습니다.
 
@@ -68,3 +72,6 @@ HERE Technologies 보강을 구성하려면 다음 필수 구성 요소가 충�
 
 Dynamics 365 Customer Insights를 사용하여 HERE Technologies로 데이터를 전송하는 경우 Dynamics 365 Customer Insights 규정 준수 경계 외부로 개인 데이터와 같이 잠재적으로 민감한 데이터 등의 데이터를 전송할 수 있습니다. Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만 HERE Technologies가 귀하가 가질 수 있는 모든 개인 정보 보호 또는 보안 의무를 충족하도록 할 책임은 귀하에게 있습니다. 자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)를 참조하세요.
 Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하지 않도록 이 보강을 언제든지 제거할 수 있습니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

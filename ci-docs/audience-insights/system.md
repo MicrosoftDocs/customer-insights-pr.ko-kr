@@ -1,7 +1,7 @@
 ---
 title: 대상 그룹 인사이트의 시스템 구성
 description: Dynamics 365 Customer Insights 대상 그룹 인사이트 기능의 시스템 설정에 대해 알아봅니다.
-ms.date: 06/02/2020
+ms.date: 02/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,25 +9,30 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: nimagen
 manager: shellyha
-ms.openlocfilehash: 7dd72e6512cd87ac70235d21667399298408db21
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: a9c9e258da49b8f452550794539962d48b856829
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406307"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267348"
 ---
 # <a name="system-configuration"></a>시스템 구성
 
-**시스템** 페이지에는 **상태**, **일정**, **정보** 및 **일반** 이라는 4개 탭이 있습니다.
+**시스템** 페이지에는 다음 탭이 포함되어 있습니다.
+- [상태](#status-tab)
+- [일정](#schedule-tab)
+- [API 사용량](#api-usage-tab)
+- [정보](#about-tab)
+- [일반](#general-tab)
 
 > [!div class="mx-imgBorder"]
 > ![시스템 페이지](media/system-tabs.png "시스템 페이지")
 
 ## <a name="status-tab"></a>상태 탭
 
-**상태 탭** 을 사용하면 데이터 수집 진행률, 데이터 내보내기 및 몇 가지 중요한 제품 프로세스를 추적할 수 있습니다. 이 탭의 정보를 검토하여 활성 프로세스의 완전성을 확인하세요.
+**상태 탭** 을 사용하면 데이터 수집, 데이터 내보내기 및 기타 여러 중요한 제품 프로세스의 진행 상황을 추적할 수 있습니다. 이 탭의 정보를 검토하여 활성 프로세스의 완전성을 확인하세요.
 
-이 탭에는 **데이터 원본**, **시스템 프로세스** 및 **데이터 준비** 에 대한 상태 테이블이 있습니다. 각 테이블은 작업의 **이름** 과 해당 엔터티, 가장 최근에 실행된 **상태** 및 **마지막 업데이트** 날짜를 추적합니다.
+이 탭에는 다양한 프로세스에 대한 상태 및 처리 정보가 있는 테이블이 있습니다. 각 테이블은 작업의 **이름** 과 해당 엔터티, 가장 최근에 실행된 **상태** 및 **마지막 업데이트** 날짜를 추적합니다.
 
 이름을 선택하여 작업의 마지막 여러 실행에 대한 세부 정보를 볼 수 있습니다.
 
@@ -40,7 +45,7 @@ ms.locfileid: "4406307"
 - **건너뜀:** 작업을 건너 뛰었습니다. 이 작업이 의존하는 하나 이상의 다운스트림 프로세스가 실패하거나 건너 뜁니다.
 - **실패:** 작업 처리에 실패했습니다.
 - **취소됨:** 사용자가 처리를 마치기 전에 취소했습니다.
-- **큐에 대기 중:** 처리가 대기 중이며 모든 다운스트림 작업이 완료되면 시작됩니다. 자세한 내용은 [새로 고침 정책](#refresh-policies)을 참조하십시오.
+- **대기중:** 처리가 대기열에 있으며 모든 업스트림 작업이 완료되면 시작됩니다. 자세한 내용은 [새로 고침 정책](#refresh-policies)을 참조하십시오.
 
 ### <a name="refresh-policies"></a>새로 고침 정책
 
@@ -89,4 +94,17 @@ ms.locfileid: "4406307"
 
 ## <a name="api-usage-tab"></a>API 사용 탭
 
-실시간 API 사용에 대한 세부 사항을 찾고 주어진 시간 범위에서 발생한 이벤트를 확인합니다. 자세한 내용은 [실시간 데이터 수집](real-time-data-ingestion.md)을 참조하십시오.
+실시간 API 사용에 대한 세부 정보를 찾고 주어진 시간 프레임에서 발생한 이벤트를 확인하십시오. **시간 프레임 선택** 드롭 다운 메뉴에서 시간 프레임을 선택합니다. 
+
+**API 사용량** 에는 세 개의 섹션이 있습니다. 
+- **API 호출** - 선택한 시간 프레임에서 API에 대한 총 호출 수를 시각화하는 차트입니다.
+
+- **데이터 전송** - 선택한 시간 프레임에서 API를 통해 전송된 데이터의 양을 보여주는 차트입니다.
+
+-  **작업** - 각각의 사용 가능한 API 작업에 대한 행과 작업의 사용량에 대한 세부 정보가 포함된 테이블입니다. 작업 이름을 선택하여 [API 참조](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances)로 이동할 수 있습니다.
+
+   [실시간 데이터 수집](real-time-data-ingestion.md)을 사용하는 작업에는 실시간 API 사용량을 볼 수 있도록 쌍안경 기호가 있는 버튼이 포함되어 있습니다. 버튼을 선택하여 현재 환경에서 실시간 API 사용에 대한 사용 세부 정보가 포함된 사이드 창을 엽니다.   
+   **실시간 API 사용량** 창에서 **그룹화** 상자를 사용하여 실시간 상호 작용을 가장 잘 표시하는 방법을 선택합니다. API 메서드, 엔터티 규정이름(대상 엔터티), (이벤트 소스), 결과(성공 또는 실패) 또는 오류 코드별로 데이터를 그룹화할 수 있습니다. 데이터는 이력 차트 및 테이블로 제공됩니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

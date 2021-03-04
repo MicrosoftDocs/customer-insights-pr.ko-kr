@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f276a73feca52023391ad92fbc84359921b85328
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: ed9aa09fba938606611c6ce86c2b250c5e19c606
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406294"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268694"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>GDPR에 따른 데이터 주체 권한(DSR) 요청
 
@@ -75,3 +75,6 @@ Customer Insights 관리자는 다음 단계에 따라 Customer Insights 사용�
 1. 요청에 사용자의 전자 메일 주소를 지정하여 D365CI@microsoft.com으로 전자 메일을 보냅니다. Customer Insights 팀은 등록된 테넌트 관리자 이메일 주소로 이메일을 보내 데이터 내보내기 확인을 요청합니다.
 2. 요청한 사용자의 데이터를 내보내려면 확인을 승인합니다.
 3. 테넌트 관리자 전자 메일 주소를 통해 내보낸 데이터를 받습니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

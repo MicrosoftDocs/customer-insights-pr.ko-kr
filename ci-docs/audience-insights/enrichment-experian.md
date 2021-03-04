@@ -1,20 +1,20 @@
 ---
 title: 타사 보강 Experian으로 보강
 description: Experian 타사 보강에 대한 일반 정보입니다.
-ms.date: 09/17/2020
+ms.date: 12/10/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 60fc49734e54740e83b47a7028be216a0eb81e49
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: baf3cc58a233b70c48fb94ac4a543d162f91bdd1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668820"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269568"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>자세한 내용은 Experian의 인구 통계로 고객 프로필 보강을 참고하세요 (미리보기)
 
@@ -41,7 +41,9 @@ Experian 구성을 위해 다음 전제 조건이 충족되어야 합니다.
 
 ## <a name="map-your-fields"></a>필드 매핑
 
-1. **데이터 추가** 를 선택하고 신원 확인을 위해 Experian에 전송할 **이름과 주소**, **이메일** 또는 **전화** 중에 키 식별자를 선택하십시오.
+1.  **데이터 추가** 를 선택하고 Experian의 인구 통계 데이터를 통해 보강하려는 **고객 데이터 집합** 을 선택합니다. **고객** 엔터티를 선택하여 모든 고객 프로필을 보강하거나 세그먼트 엔터티를 선택하여 해당 세그먼트에 포함된 고객 프로필만 보강할 수 있습니다.
+
+1. **이름과 주소**, **이메일** 또는 **전화** 에서 키 식별자를 선택하여 신원 확인을 위해 Experian에 보냅니다.
 
    > [!TIP]
    > Experian에 전송된 키 식별자 속성이 많을수록 일치율이 높아질 수 있습니다.
@@ -52,8 +54,8 @@ Experian 구성을 위해 다음 전제 조건이 충족되어야 합니다.
 
 1.  **저장** 필드를 선택하여 매핑을 완료합니다.
 
-   > [!div class="mx-imgBorder"]
-   > ![Experian 필드 매핑](media/experian-field-mapping.png "Experian 필드 매핑")
+    > [!div class="mx-imgBorder"]
+    > ![Experian 필드 매핑](media/experian-field-mapping.png "Experian 필드 매핑")
 
 ## <a name="enrichment-results"></a>보강 결과
 
@@ -71,3 +73,6 @@ Experian 구성을 위해 다음 전제 조건이 충족되어야 합니다.
 
 Dynamics 365 Customer Insights를 사용하여 Experian으로 데이터를 전송하는 경우 Dynamics 365 Customer Insights규정 준수 경계 외부로 개인 데이터와 같이 잠재적으로 민감한 데이터 등의 데이터를 전송할 수 있습니다. Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만 Experian이 귀하가 가질 수 있는 모든 개인 정보 보호 또는 보안 의무를 충족하도록 할 책임은 귀하에게 있습니다. 자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)를 참조하세요.
 Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하지 않도록 이 보강을 언제든지 제거할 수 있습니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

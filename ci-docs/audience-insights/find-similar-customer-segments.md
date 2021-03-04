@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: jimsonc
 manager: shellyha
-ms.openlocfilehash: 8cdec4edd599b0249fcf144b5e5c0124504e1e14
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: b9b2e7fa862b595c6a364a7208e42295b4f9df83
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406295"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268878"
 ---
 # <a name="similar-customers-preview"></a>유사한 고객(미리 보기)
 
@@ -79,3 +79,6 @@ ms.locfileid: "4406295"
 - 0.85 – 1 사이의 유사성 점수는 시스템이 *매우 유사* 로 분류한 고객입니다.
 
 유사성 점수가 0.4 미만인 고객은 모델 출력에 포함되지 않습니다. 시스템은 이를 원본 세그먼트와 비슷한 것으로 간주하지 않습니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

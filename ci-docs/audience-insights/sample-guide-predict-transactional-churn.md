@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 055708ed3f9f468cad83ecf976a460814bf05199
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 81540ad2f490cf566f031233543b3cb6aa838033
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643601"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269798"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>트랜잭션 이탈 예측(미리 보기) 샘플 가이드
 
@@ -49,7 +49,7 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
    [!div class="mx-imgBorder"]
    ![날짜로 DoB 전환](media/ecommerce-dob-date.PNG "생년월일을 현재로 변환")
 
-1. 오른쪽 창의 '이름' 필드에서 데이터 원본의 이름을 **쿼리** 에서 **eCommerceContacts** 로 바꿉니다.
+1. 오른쪽 창의 **이름** 필드에서 데이터 원본의 이름을 **쿼리** 에서 **eCommerceContacts** 로 바꿉니다.
 
 1. 데이터 원본을 저장합니다.
 
@@ -66,7 +66,7 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
    - **PurchasedOn**: 날짜/시간
    - **TotalPrice**: 통화
    
-1. 오른쪽 창의 '이름' 필드에서 데이터 원본의 이름을 **쿼리** 에서 **eCommercePurchases** 로 바꿉니다.
+1. 오른쪽 창의 **이름** 필드에서 데이터 원본의 이름을 **쿼리** 에서 **eCommercePurchases** 로 바꿉니다.
 
 1. 데이터 원본을 저장합니다.
 
@@ -84,7 +84,7 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
    - **RewardsPoints**: 정수
    - **CreatedOn**: 날짜/시간
 
-1. 오른쪽 창의 '이름' 필드에서 데이터 원본의 이름을 **쿼리** 에서 **loyCustomers** 로 바꿉니다.
+1. 오른쪽 창의 **이름** 필드에서 데이터 원본의 이름을 **쿼리** 에서 **loyCustomers** 로 바꿉니다.
 
 1. 데이터 원본을 저장합니다.
 
@@ -166,7 +166,7 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
 
      :::image type="content" source="media/model-levers.PNG" alt-text="모델 레버 예측 창 및 변동 정의를 선택합니다.":::
 
-1. **구매 기록(필수)** 을 선택하고 구독 기록에 대한 **데이터 추가** 를 선택합니다.
+1. **구매 기록(필수)** 을 선택하고 구매 기록에 대한 **데이터 추가** 를 선택합니다.
 
 1. **eCommercePurchases : 전자상거래** 추가 엔터티를 추가하고 전자상거래의 필드를 모델에 필요한 해당 필드에 매핑합니다.
 
@@ -204,3 +204,6 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
 이제 이 구독 비즈니스에 대해 이탈 위험이 높은 고객을 식별하는 동적으로 업데이트되는 세그먼트가 있습니다.
 
 자세한 내용은 [세그먼트 만들기 및 관리](segments.md)를 참조하세요.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

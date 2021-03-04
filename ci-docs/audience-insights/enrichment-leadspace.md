@@ -5,16 +5,16 @@ ms.date: 11/24/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 1b5c6e46e8e424df83e855d81fc4dd7ecb394e3c
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 12eed91a7ca4ef7fde0d53cca4a1dfd398b4634f
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668731"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269430"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Leadspace를 통한 회사 프로필 강화(미리 보기)
 
@@ -38,7 +38,11 @@ Leadspace를 구성하려면 다음 전제 조건이 충족되어야 합니다.
 
 1. **시작** 을 선택한 후 활성 **Leadspace 토큰**(영구 키)을 입력합니다. **동의함** 확인란을 선택하여 **데이터 개인 정보 및 규정 준수** 에 대한 동의를 검토하고 제공합니다. **Leadspace에 연결** 을 선택하여 입력을 둘 다 확인합니다.
 
-1. **데이터 매핑** 을 선택하고 Leadspace에서 일치하는 회사 데이터를 찾는 데 사용해야 하는 통합 프로필의 필드를 정의합니다. **회사의 이름** 필드는 필수입니다. 일치 정확도를 높이기 위해 **회사 웹 사이트** 및 **회사 위치** 라는 다른 필드를 최대 2개까지 추가할 수 있습니다.
+1. **데이터 매핑** 을 선택하고 Leadspace에서 회사 데이터를 통해 보강하려는 데이터 집합을 선택합니다. *고객* 엔터티를 선택하여 모든 고객 프로필을 보강하거나 세그먼트 엔터티를 선택하여 해당 세그먼트에 포함된 고객 프로필만 보강할 수 있습니다.
+
+   :::image type="content" source="media/enrichment-leadspace-select-segment.png" alt-text="고객 프로필과 세그먼트 보강 중에서 선택합니다.":::
+
+1. **다음** 을 클릭하고 Leadspace에서 일치하는 회사 데이터를 찾는 데 사용해야 하는 통합 프로필의 필드를 정의합니다. **회사의 이름** 필드는 필수입니다. 일치 정확도를 높이기 위해 **회사 웹 사이트** 및 **회사 위치** 라는 다른 필드를 최대 2개까지 추가할 수 있습니다.
 
    :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace 필드 매핑 창.":::
    
@@ -62,3 +66,6 @@ Leadspace를 구성하려면 다음 전제 조건이 충족되어야 합니다.
 
 Dynamics 365 Customer Insights를 사용하여 Leadspace로 데이터를 전송하는 경우 Dynamics 365 Customer Insights 규정 준수 경계 외부로 개인 데이터와 같이 잠재적으로 민감한 데이터 등의 데이터를 전송할 수 있습니다. Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만 Leadspace가 귀하가 가질 수 있는 모든 개인 정보 보호 또는 보안 의무를 충족하도록 할 책임은 귀하에게 있습니다. 자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)를 참조하세요.
 Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하지 않도록 이 보강을 언제든지 제거할 수 있습니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

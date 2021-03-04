@@ -5,16 +5,16 @@ ms.date: 12/02/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 86aa8c66a47ee61741082c95f05d2e5ce3f06f35
-ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
+ms.openlocfilehash: 64d781f52e8124fc3e83a7b84f468830c5249cfd
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4667192"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270166"
 ---
 # <a name="liverampreg-connector-preview"></a>LiveRamp&reg; 커넥터 (미리 보기)
 
@@ -69,3 +69,5 @@ LiveRamp에서 데이터를 활성화하여 디지털, 소셜 및 TV 에코시�
 
 Dynamics 365 Customer Insights를 사용하여 Liveramp로 데이터를 전송하는 경우 Dynamics 365 Customer Insights규정 준수 경계 외부로 개인 데이터와 같이 잠재적으로 민감한 데이터 등의 데이터를 전송할 수 있습니다. Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만 Liveramp가 귀하가 가질 수 있는 모든 개인 정보 보호 또는 보안 의무를 충족하도록 할 책임은 귀하에게 있습니다. 자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)를 참조하세요.
 Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하지 않도록 이 내보내기 대상을 언제든지 제거할 수 있습니다.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,16 +5,16 @@ ms.date: 06/05/2020
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8260e3b5e529f3d54678d9d6e11aebb2795e27fd
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: c839f9dc7e403412c0e3d936392d45a43bc63545
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643691"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269982"
 ---
 # <a name="connector-for-facebook-ads-manager-preview"></a>Facebook 광고 관리자용 커넥터(미리 보기)
 
@@ -62,7 +62,16 @@ ms.locfileid: "4643691"
 
 [주문 시 데이터를 내보낼](export-destinations.md) 수 있습니다. 내보내기는 [예약된 새로 고침](system.md#schedule-tab)마다 실행됩니다.
 
+## <a name="known-limitations"></a>알려진 제한 사항
+
+- Facebook 광고 관리자에게 내보내기당 최대 1,000만 개의 고객 프로필 
+- Facebook 광고 관리자에게 내보내기는 세그먼트로 제한
+- 총 1,000만 개의 프로필이 있는 세그먼트 내보내기를 완료하는 데 최대 90분이 걸릴 수 있습니다.
+
 ## <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수
 
 Dynamics 365 Customer Insights를 사용하여 Facebook 광고 관리자로 데이터를 전송하는 경우 Dynamics 365 Customer Insights 규정 준수 경계 외부로 개인 데이터와 같이 잠재적으로 민감한 데이터 등의 데이터를 전송할 수 있습니다. Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만 Facebook 광고가 귀하가 가질 수 있는 모든 개인 정보 보호 또는 보안 의무를 충족하도록 할 책임은 귀하에게 있습니다. 자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)를 참조하세요.
 Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하지 않도록 이 내보내기 대상을 언제든지 제거할 수 있습니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

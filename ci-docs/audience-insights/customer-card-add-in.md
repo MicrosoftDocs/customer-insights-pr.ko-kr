@@ -1,7 +1,7 @@
 ---
 title: 고객 카드 추가 기능 설치 및 구성
 description: Dynamics 365 Customer Insights용 고객 카드 추가 기능을 설치하고 구성합니다.
-ms.date: 08/04/2020
+ms.date: 01/20/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: aab5deaf89b4b019f6688a1bca950ec2277ad5fb
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: a6d5b49380ed129cf147698a16f5f3f597bf7fbc
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644051"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268052"
 ---
 # <a name="customer-card-add-in-preview"></a>고객 카드 추가 기능(미리 보기)
 
@@ -28,7 +28,7 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 - [Common Data Service를 사용하여 Dynamics 365 앱에서 수집](connect-power-query.md)된 고객 프로필입니다.
 - 고객 카드 추가 기능의 사용자는 대상 그룹 인사이트에서 [사용자로 추가](permissions.md)되어야 합니다.
 - [구성된 검색 및 필터 기능](search-filter-index.md)입니다.
-- 인구 통계 제어: 통합 고객 프로필에서 연령 또는 성별과 같은 인구 통계 필드를 사용할 수 있습니다.
+- 인구 통계 제어: 통합 고객 프로필에서 인구 통계 필드(예: 연령 또는 성별)를 사용할 수 있습니다.
 - 보강 제어: 활성 [보강](enrichment-hub.md)이 고객 프로필에 적용되어야 합니다.
 - 인텔리전스 제어: Azure Machine Learning([예측](predictions.md) 또는 [사용자 지정 모델](custom-models.md))을 사용하여 생성된 데이터 필요
 - 측정값 제어: [구성된 측정값](measures.md)이 필요합니다.
@@ -92,10 +92,26 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 
 1. **필드 속성** 대화 상자에서 **양식에 레이블 표시** 확인란의 선택을 취소합니다.
 
-1. 컨트롤에 대해 **웹** 옵션을 선택합니다. 보강 컨트롤의 경우 **enrichmentType** 필드를 구성하여 표시하고자 하는 강화 유형을 선택합니다. 각 보강 유형에 대해 별도의 보강 제어를 추가해야 합니다.
+1. 컨트롤에 대해 **웹** 옵션을 선택합니다. 보강 컨트롤의 경우 **enrichmentType** 필드를 구성하여 표시하고자 하는 강화 유형을 선택합니다. 각 보강 유형에 대해 별도의 보강 컨트롤을 추가합니다.
 
 1. **저장** 과 **게시** 를 선택하여 업데이트된 연락처 양식을 게시합니다.
 
 1. 게시된 연락처 양식으로 이동합니다. 새로 추가된 컨트롤이 표시됩니다. 처음 사용할 때 로그인해야 할 수도 있습니다.
 
 1. 사용자 지정 컨트롤에 표시할 내용을 사용자 지정하려면 오른쪽 상단에서 편집 단추를 선택합니다.
+
+## <a name="upgrade-customer-card-add-in"></a>고객 카드 추가 기능 업그레이드
+고객 카드 추가 기능은 자동으로 업그레이드되지 않습니다. 최신 버전으로 업그레이드하려면 추가 기능이 설치된 Dynamics 365 앱에서 이 절차를 따르십시오.
+
+1. Dynamics 365 앱에서 **설정** > **사용자 지정** 으로 이동하고 **솔루션** 을 선택합니다.
+
+1. 추가 기능 테이블에서 **CustomerInsightsCustomerCard** 를 찾아 행을 선택합니다.
+
+1. 작업 표시줄에서 **솔루션 업그레이드 적용** 을 선택합니다.
+
+   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="Dynamics 365 앱의 사용자 지정 영역에서 솔루션 업그레이드":::
+
+1. 업그레이드 프로세스를 시작하면 업그레이드가 완료될 때까지 로딩 표시기가 나타납니다. 최신 버전이 없으면 업그레이드 시 오류 메시지가 표시됩니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

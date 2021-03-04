@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 2cf01029ef6b64fe566022d09ce65bca3603189c
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 9e7a6e944d37d25f4c25846644278b39b3ddd08e
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643916"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269292"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model의 엔터티 스키마
 
@@ -45,3 +45,6 @@ ms.locfileid: "4643916"
 [Common Data Model 엔터티 탐색기](https://microsoft.github.io/CDM/)에서 엔터티를 볼 수 있습니다. **GitHub에서 로드!** 버튼을 클릭하고 **foundationCommon** > **crmCommon** > **solutions** > **customerInsights** 로 이동하여 Customer Insights 엔터티 및 그 정의 목록을 찾을 수 있습니다.
 > [!div class="mx-imgBorder"]
 > ![CustomerActivity 엔터티를 보여주는 CDM 엔터티 탐색기](media/CDM-entity-navigator.png "CustomerActivity 엔터티를 보여주는 CDM 엔터티 탐색기")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

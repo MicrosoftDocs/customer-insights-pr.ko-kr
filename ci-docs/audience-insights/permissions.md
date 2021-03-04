@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 7de78c0ef71ec5b83870d396de36a7dcabbd14e5
-ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
+ms.openlocfilehash: f7fcecdea8dc49666dd5c45bf4109c205993f326
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "4689228"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268418"
 ---
 # <a name="user-permissions"></a>사용자 권한
 
@@ -74,3 +74,6 @@ ms.locfileid: "4689228"
 - 역할은 **역할** 열 아래에 지정됩니다.
 - 열 제목을 선택하여 해당 열 값으로 결과를 정렬합니다.
 - 페이지 상단의 **검색** 필드를 사용하여 특정 사용자를 찾습니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

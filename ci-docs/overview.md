@@ -1,28 +1,36 @@
 ---
 title: 제품 개요
 author: m-hartmann
-description: Dynamics 365 Customer Insights와 기능을 간략하게 살펴보세요.
+description: Dynamics 365 Customer Insights와 해당 기능에 대한 개요를 확인하십시오.
 ms.author: mhart
-ms.date: 10/16/2020
+ms.date: 02/16/2021
 ms.service: customer-insights
-ms.topic: conceptual
-ms.openlocfilehash: e0b46652a087f9d16d9f2f5c6e955761be8da208
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.topic: overview
+ms.manager: shellyha
+ms.openlocfilehash: 815220b7dd2fcd4df31c0cff8f6b55eb3a055669
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406317"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476957"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights용 제품 개요
 
-Dynamics 365 Customer Insights는 개인화된 고객 경험을 제공하는 데 도움이 되는 Microsoft의 고객 데이터 플랫폼(CDP)의 일부입니다. 모든 원본에서 고객 데이터를 통합하여 고객에 대한 단일 보기를 확보하세요. 
+Dynamics 365 Customer Insights는 개인화된 고객 경험을 제공하는 데 도움이 되는 Microsoft의 고객 데이터 플랫폼(CDP)의 일부입니다. 플랫폼의 기능은 고객이 누구이며 플랫폼에 어떻게 참여하는지에 대한 인사이트를 제공합니다. 여러 소스에서 고객 데이터를 통합하여 고객에 대한 단일 뷰를 확보하십시오.
 
-마케팅, 영업 및 서비스 전문가가 경험을 개인화하는 데 필요한 인사이트를 가진 고객 중심 조직으로 전환하세요. 고객에 대해 더 깊이 이해하세요. 다양한 트랜잭션, 행동 및 관찰 소스의 데이터를 연결하여 360도 고객 보기를 만듭니다. 조치를 취할 수 있는 인사이트를 제공하도록 설계된 CDP로 결과를 더 빠르게 확인하세요. 
 
-빠른 시작 템플릿을 사용하여 즉시 사용 가능한 인사이트를 도출하세요. 대규모 분석 솔루션을 사용하여 사용자 지정 AI/ML 모델을 신속하게 구축, 테스트 및 배포합니다. 실시간 인사이트를 활성화하여 행동을 유도하세요. 고객 데이터에 대한 완전한 제어를 유지하여 최고 수준의 데이터 거버넌스 및 규정 준수를 보장합니다. 
+- [대상 그룹 인사이트](audience-insights/overview.md)를 통해 비즈니스를 고객 중심 조직으로 전환할 수 있습니다. 마케팅, 영업 및 서비스 전문가는 경험을 개인화하는 데 필요한 인사이트를 가지고 있습니다. 트랜잭션, 행동 및 관찰 소스에서 데이터를 연결하여 360도 고객 뷰를 만듭니다. 조치를 취할 수 있는 인사이트를 제공하도록 설계된 CDP로 결과를 더 빠르게 확인하세요. 
 
-두 가지 주요 기능이 있습니다. 
-
-- [대상 그룹 인사이트](audience-insights/overview.md)
-- [참여 인사이트(미리 보기)](engagement-insights/index.yml)
+- [참여 인사이트 (미리 보기)](engagement-insights/index.yml)를 통해 웹 사이트, 모바일 앱 및 연결된 제품에서 고객이 개별적으로 그리고 전체적으로 서비스와 제품을 사용하는 방식을 대화식으로 이해할 수 있습니다. 행동 분석을 트랜잭션, 인구 통계, 설문 조사 및 Microsoft Dynamics 365 Customer Insights의 기타 데이터 유형과 결합합니다. 고객 데이터에 대한 완전한 제어를 유지하여 최고 수준의 데이터 거버넌스 및 규정 준수를 보장합니다.
  
+## <a name="choose-a-capability"></a>기능 선택
+
+:::image type="content" source="engagement-insights/media/choose_focus.png" alt-text="대상 그룹 인사이트 또는 참여 인사이트로 이동할 수 있는 고객 인사이트 페이지입니다.":::
+
+기능 선택 방법
+
+1. 탐색 창에서 **모든 앱** 을 선택하여 **초점 선택** 창을 엽니다.
+1. **지금 이동** 을 선택하여 선택한 기능으로 이동합니다.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

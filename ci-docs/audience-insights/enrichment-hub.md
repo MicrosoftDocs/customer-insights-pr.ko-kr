@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: c25cfbf3808fc1534b54d2d834f1c63ff4c9fe0a
-ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
+ms.openlocfilehash: 6b73aa93ec1a98f2b8d20d02e88bc6304f887078
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4667102"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269476"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>고객 프로필 보강(미리 보기)
 
@@ -51,3 +51,6 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 - 보강을 **삭제** 합니다.
 
 목록에서 여러 가지 보강을 선택하여 한 번에 실행하거나 비활성화할 수 있습니다. 보기 및 편집 옵션은 일괄 작업으로 사용할 수 없으며 한 번에 하나의 보강에 대해서만 작동합니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

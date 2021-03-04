@@ -4,16 +4,16 @@ description: Dynamics 365 Customer Insights Azure Machine Learning의 사용자 
 ms.date: 11/19/2020
 ms.reviewer: zacook
 ms.service: dynamics-365-ai
-ms.topic: article
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: ef248086b30b870359970529a7bfb37792be62d5
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668911"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267242"
 ---
 # <a name="custom-machine-learning-models"></a>사용자 지정 기계 학습 모델
 
@@ -46,15 +46,15 @@ ms.locfileid: "4668911"
 
 1. **모델이 포함된 웹 서비스** 드롭다운에서 Machine Learning Studio(클래식) 웹 서비스 또는 Azure Machine Learning 파이프라인을 선택합니다. 그런 후에 **다음** 을 선택합니다.
    - [Machine Learning Studio(클래식)에서 웹 서비스 게시](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)에 대해 자세히 알아보세요.
-   - [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) 또는 [디자이너를 사용하여 Azure Machine Learning에서 파이프라인을 게시](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer)하는 방법에 대해 자세히 알아보세요. 
-     > [!NOTE]
-     > 파이프라인은 [파이프라인 엔드포인트](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run) 아래에 게시되어야 합니다.
+   - [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) 또는 [디자이너를 사용하여 Azure Machine Learning에서 파이프라인을 게시](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer)하는 방법에 대해 자세히 알아보세요. 파이프라인은 [파이프라인 엔드포인트](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run) 아래에 게시되어야 합니다.
 
 1. 각 **웹 서비스 입력** 에 대상 그룹 인사이트의 일치하는 **엔터티** 를 선택하고 **다음** 을 선택합니다.
+   > [!NOTE]
+   > 사용자 지정 모델 워크플로는 휴리스틱을 적용하여 필드의 이름 및 데이터 형식을 기반으로 웹 서비스 입력 필드를 엔터티 속성에 매핑합니다. 웹 서비스 필드를 엔터티에 매핑할 수 없는 경우 오류가 표시됩니다.
 
    > [!div class="mx-imgBorder"]
    > ![워크플로 구성](media/intelligence-screen2-updated.png "워크플로 구성")
-
+   
 1. **모델 출력 매개 변수** 단계에서 다음 속성을 설정합니다.
    - Machine Learning Studio(클래식)
       1. 웹 서비스 출력 결과가 전달될 출력 **엔터티 이름** 을 입력합니다.
@@ -112,3 +112,6 @@ ms.locfileid: "4668911"
 1. **삭제** 를 선택하고 삭제를 확인합니다.
 
 워크플로가 삭제됩니다. 워크플로를 만들 때 생성된 [엔터티](entities.md)이며 **엔터티** 페이지에서 확인할 수 있습니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

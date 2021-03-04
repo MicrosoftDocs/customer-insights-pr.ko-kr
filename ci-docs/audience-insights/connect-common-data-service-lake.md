@@ -4,17 +4,17 @@ description: Common Data Service 관리 데이터 레이크에서 데이터 가�
 ms.date: 09/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
 ms.reviewer: adkuppa
-ms.openlocfilehash: 029857e2bbb5f6357a5c01138ceaad78887b7518
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 18b6cd3fdaf5b738877a73b520b91dbc6ded40de
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643406"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267822"
 ---
 # <a name="connect-to-data-in-a-common-data-service-managed-data-lake"></a>Common Data Service 관리형 데이터 레이크의 데이터에 연결
 
@@ -34,7 +34,10 @@ Azure Data Lake Storage와 같은 온라인 서비스에 저장된 데이터는 
 
 3. **Common Data Service에 연결** 을 선택하고 **다음** 을 선택합니다.
 
-4. 데이터 원본의 **이름** 을 입력하고 **다음** 을 선택합니다.
+4. 데이터 원본의 **이름** 을 입력하고 **다음** 을 선택합니다. 이름 지침: 
+   - 문자로 시작합니다.
+   - 문자와 숫자만 사용하십시오. 특수 문자와 공백은 사용할 수 없습니다.
+   - 3~64자 사이에서 사용하십시오.
 
 5. Common Data Service 조직의 **서버 주소** 를 제공하고 **로그인** 을 선택합니다.
 
@@ -65,3 +68,6 @@ Azure Data Lake Storage와 같은 온라인 서비스에 저장된 데이터는 
 3. 목록에서 **편집** 옵션을 선택합니다.
 
 4. 사용 가능한 엔터티 목록에서 추가 엔터티를 선택하고 **저장** 을 선택합니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

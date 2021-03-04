@@ -1,20 +1,20 @@
 ---
 title: 환경 만들기 및 관리
 description: 서비스에 등록하는 방법과 환경을 관리하는 방법을 알아봅니다.
-ms.date: 11/10/2020
+ms.date: 02/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: nimagen
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 010336445d0825a7ff82d1b7a65702fc12245788
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 744f0bcbf5d2700363180f44e38d6dee9bf5df63
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644141"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270120"
 ---
 # <a name="manage-environments"></a>환경 관리
 
@@ -46,9 +46,9 @@ ms.locfileid: "4644141"
 
 환경을 만들려면:
 
-1. 앱 헤더의 **설정** 기호를 선택하십시오.
+1. 앱 헤더의 **환경** 선택기를 선택합니다.
 
-1. **새 환경** 을 선택합니다.
+1. **새로 만들기** 를 선택합니다.
 
    > [!div class="mx-imgBorder"]
    > ![환경 설정](media/environment-settings-dialog.png)
@@ -75,7 +75,14 @@ ms.locfileid: "4644141"
 
    - Azure Data Lake Storage Gen2 옵션의 경우 인증을 위해 리소스 기반 옵션과 구독 기반 옵션 중에서 선택할 수 있습니다. 자세한 내용은 [Azure 서비스 보안 주체를 사용하여 대상 그룹 인사이트를 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)을 참조하세요. **컨테이너** 이름은 변경할 수 없으며 "customerinsights"가 됩니다.
    
-   - [예측](predictions.md)을 사용하려면 **예측 사용** 아래의 **서버 주소** 필드에 Common Data Service 인스턴스 URL을 입력합니다.
+   - [예측](predictions.md)을 사용하거나 Microsoft Dataverse를 기반으로 하는 응용 프로그램 및 솔루션과의 데이터 공유를 구성하려면 **Microsoft Dataverse와 데이터 공유 구성 및 추가 기능 사용** 에 Microsoft Dataverse 환경 URL을 제공하십시오. **데이터 공유 활성화** 를 선택하여 Customer Insights 출력 데이터를 Microsoft Dataverse 관리형 Data Lake와 공유합니다.
+
+     > [!NOTE]
+     > - 모든 데이터를 자체 Azure Data Lake Storage에 저장하는 경우 Microsoft Dataverse 관리형 Data Lake와의 데이터 공유는 현재 지원되지 않습니다.
+     > - Microsoft Dataverse 관리형 Data Lake와의 데이터 공유를 활성화한 경우 [엔터티에서 누락된 값의 예측](predictions.md)은 현재 지원되지 않습니다.
+
+     > [!div class="mx-imgBorder"]
+     > ![Microsoft Dataverse와 데이터 공유를 활성화하는 구성 옵션](media/Datasharing-with-DataverseMDL.png)
 
    데이터 수집 또는 세그먼트 생성과 같은 프로세스를 실행하면 위에서 지정한 스토리지 계정에 해당 폴더가 생성됩니다. 데이터 파일과 model.json 파일이 생성되며 실행하는 프로세스에 따라 해당 하위 폴더에 추가됩니다.
 
@@ -86,7 +93,7 @@ ms.locfileid: "4644141"
 다음 구성 설정이 복사됩니다.
 
 - 기능 구성
-- 통합/가져온 데이터 원본
+- 수집한/가져온 데이터 원본
 - 데이터 통합(맵, 일치, 병합) 구성
 - 세그먼트
 - 측정값
@@ -120,11 +127,11 @@ ms.locfileid: "4644141"
 
 기존 환경의 세부 사항 중 일부를 편집할 수 있습니다.
 
-1. **관리** > **시스템** > **정보** 로 이동
+1.  앱 헤더의 **환경** 선택기를 선택합니다.
 
-2. **편집** 을 선택합니다.
+2.  **편집** 아이콘을 선택합니다.
 
-3. 환경의 **표시 이름** 을 업데이트할 수 있지만 **지역** 또는 **유형** 은 변경할 수 없습니다.
+3. **환경 편집** 상자에서 환경의 **표시 이름** 을 업데이트할 수 있지만 **지역** 또는 **유형** 은 변경할 수 없습니다.
 
 4. 환경이 데이터를 Azure Data Lake Storage Gen2에 저장하도록 구성된 경우 **계정 키** 를 업데이트할 수 있습니다. 그러나 **계정 이름** 또는 **컨테이너** 이름은 변경할 수 없습니다.
 
@@ -132,19 +139,27 @@ ms.locfileid: "4644141"
 
 ## <a name="reset-an-existing-environment"></a>기존 환경 초기화
 
-모든 구성을 삭제하고 수집된 데이터를 제거하려는 경우 환경을 빈 상태로 재설정할 수 있습니다.
+모든 구성을 삭제하고 수집된 데이터를 제거하려는 경우 관리자로서 환경을 빈 상태로 재설정할 수 있습니다.
 
-1.  **관리** > **시스템** > **정보** 로 이동
+1.  앱 헤더의 **환경** 선택기를 선택합니다. 
 
-2.  **초기화** 를 선택합니다. 
+2.  재설정하려는 환경을 선택하고 줄임표 **...** 를 선택합니다. 
 
-3.  삭제를 확인하려면 환경 이름을 입력하고 **초기화** 를 선택합니다.
+3. **재설정** 옵션을 선택합니다. 
+
+4.  삭제를 확인하려면 환경 이름을 입력하고 **초기화** 를 선택합니다.
+
+## <a name="delete-an-existing-environment-available-only-for-admins"></a>기존 환경 삭제(관리자만 사용 가능)
+
+관리자는 관리하는 환경을 삭제할 수 있습니다.
+
+1.  앱 헤더의 **환경** 선택기를 선택합니다.
+
+2.  재설정하려는 환경을 선택하고 줄임표 **...** 를 선택합니다. 
+
+3. **삭제** 옵션을 선택합니다. 
+
+4.  삭제를 확인하려면 환경 이름을 입력하고 **삭제** 를 선택합니다.
 
 
-## <a name="delete-an-existing-environment"></a>기존 환경 삭제
-
-1. **관리** > **시스템** > **정보** 로 이동
-
-1. **삭제** 를 선택합니다.
-
-1. 삭제를 확인하려면 환경 이름을 입력하고 **삭제** 를 선택합니다.
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

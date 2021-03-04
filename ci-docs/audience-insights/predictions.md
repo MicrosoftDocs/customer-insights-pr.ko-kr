@@ -4,17 +4,17 @@ description: 예측을 사용하여 불완전한 고객 데이터를 채웁니�
 ms.date: 05/05/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: zacook
 manager: shellyha
-ms.openlocfilehash: 66f0b16b5d05741ab98ca5ce2157da8c46b6d9e0
-ms.sourcegitcommit: 5379c2b77d613d071a177f509e6417ebf3c47516
+ms.openlocfilehash: 577232c7e901dfd54a195c3e9cfac5d1f0f866e6
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "4648719"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268280"
 ---
 # <a name="complete-your-partial-data-with-predictions"></a>예측으로 부분 데이터 완성
 
@@ -160,3 +160,6 @@ ms.locfileid: "4648719"
     1. 방금 만든 사용자를 선택합니다.
     1. 상단 메뉴 모음에서 **역할 관리** 를 선택합니다.
     1. **시스템 관리자** 를 선택한 다음 **확인** 을 선택합니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

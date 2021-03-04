@@ -5,16 +5,16 @@ ms.date: 09/29/2020
 ms.reviewer: adkuppa
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8a170cc5b64b4b383501021232c83948e838a0e2
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406287"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267778"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>파워 쿼리 데이터 원본에 연결
 
@@ -28,7 +28,10 @@ ms.locfileid: "4406287"
 
 1. **데이터 가져오기** 방법을 선택하고 **다음** 을 선택하십시오.
 
-1. 데이터 원본을 위해 **이름** 을 제공하고 데이터 원본 생성을 위해 **다음** 을 선택합니다.
+1. 데이터 원본을 위해 **이름** 을 제공하고 데이터 원본 생성을 위해 **다음** 을 선택합니다. 이름 지침: 
+   - 문자로 시작합니다.
+   - 문자와 숫자만 사용하십시오. 특수 문자와 공백은 사용할 수 없습니다.
+   - 3~64자 사이에서 사용하십시오.
 
 1. [사용 가능한 커넥터](#available-power-query-data-sources) 중 하나를 선택합니다. 해당 예로, **텍스트/CSV** 커넥터를 선택했습니다.
 
@@ -77,3 +80,6 @@ Customer Insights로 데이터를 가져 오기 위해 선택할 수 있는 [파
 3. [새 데이터 원본 만들기](#create-a-new-data-source) 섹션에 설명된 대로 **파워 쿼리-검색어 수정** 대화상자에서 변경사항 및 변환을 적용합니다.
 
 4. 변경 내용을 저장하기 위해 편집을 완료한 후 파워 쿼리에서 **저장** 을 선택합니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

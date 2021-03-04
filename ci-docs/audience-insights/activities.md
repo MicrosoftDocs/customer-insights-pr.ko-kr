@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 1c95cba333266a73959de0a3afe1c8677130a3ec
-ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
+ms.openlocfilehash: dcef8f0547009e1488f1abe91423fa0bf5b061de
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4667237"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267440"
 ---
 # <a name="customer-activities"></a>고객 활동
 
@@ -44,13 +44,13 @@ Dynamics 365 Customer Insights에서 [다양한 데이터 원본](data-sources.m
 
 1. **관계 설정** 섹션에서 활동 데이터를 해당 고객과 연결하도록 세부 사항을 구성합니다.
 
-   > [!div class="mx-imgBorder"]
-   > ![엔터티 관계 정의](media/activities-entities-define.png "엔터티 관계 정의")
-
     - **활동 엔터티 필드**: 다른 엔터티와 관계를 설정하는 데 사용될 활동 엔터티의 필드를 선택합니다.
     - **고객 엔터티**: 활동 엔터티와 관계가 있는 해당 원본 고객 엔터티를 선택합니다. 데이터 통합 프로세스에 사용되는 원본 고객 엔터티에만 관련될 수 있습니다.
     - **고객 엔터티 필드**: 이 필드에는 맵 프로세스에서 선택한 원본 고객 엔터티의 기본 키가 표시됩니다. 소스 고객 엔터티의이 기본 키 필드는 활동 엔터티와의 관계를 설정하는 데 사용됩니다.
     - **이름**: 이 활동 엔터티와 선택된 원본 고객 엔터티 사이의 관계가 이미 존재하는 경우 관계 이름은 읽기 전용 모드입니다. 그러한 관계가 존재하지 않으면 여기에 제공된 이름으로 새로운 관계가 작성됩니다.
+   
+   > [!div class="mx-imgBorder"]
+   > ![엔터티 관계 정의](media/activities-entities-define.png "엔터티 관계 정의")
 
 1. **저장** 을 선택하여 변경 내용을 적용합니다.
 
@@ -82,3 +82,6 @@ Dynamics 365 Customer Insights에서 [다양한 데이터 원본](data-sources.m
 3. **삭제** 아이콘을 선택합니다.
 
 4. 삭제를 확정합니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

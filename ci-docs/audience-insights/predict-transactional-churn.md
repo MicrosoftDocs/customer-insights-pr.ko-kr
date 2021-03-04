@@ -5,16 +5,16 @@ ms.date: 11/12/2020
 ms.reviewer: zacook
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f3cbbf99a6cecba2aab2cf85428d53e5df8346e4
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: af461d290c69687fb47bacfcff446a0c62978383
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644411"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268326"
 ---
 # <a name="transactional-churn-prediction-preview"></a>트랜잭션 이탈 예측(미리 보기)
 
@@ -96,6 +96,8 @@ ms.locfileid: "4644411"
 1. 원하는 경우 **고객 활동** 에 대한 **데이터 추가** 를 선택합니다. 필수 구성 요소에 설명된 대로 고객 활동 정보를 제공하는 엔터티를 선택합니다.
 
 1. 의미론적 필드를 고객 활동 엔터티 내의 특성에 매핑하고 **다음** 을 선택합니다. 필드에 대한 설명은 [필수 구성 요소](#prerequisites)를 확인하십시오.
+
+   :::image type="content" source="media/map-transaction-data-fields.png" alt-text="트랜잭션 데이터에 대한 고객 필드를 매핑합니다.":::
 
 1. 구성 중인 고객 활동 유형과 일치하는 활동 유형을 선택합니다. **새로 만들기** 를 선택하고 사용 가능한 활동 유형을 선택하거나 새 유형을 만듭니다.
 
@@ -185,3 +187,6 @@ ms.locfileid: "4644411"
 1. 삭제하려는 예측 옆의 세로 줄임표를 선택합니다.
 
 1. **삭제** 를 선택합니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

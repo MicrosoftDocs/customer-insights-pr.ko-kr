@@ -1,20 +1,20 @@
 ---
 title: 서비스 주체를 사용하여 Azure Data Lake Storage Gen2 계정에 연결
 description: 대상 그룹 인사이트에 Azure 서비스 주체를 사용하여 대상 그룹 인사이트에 연결할 때 자체 데이터 레이크에 연결합니다.
-ms.date: 11/24/2020
+ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c2fae278d34fa02b9168ac70dfa8dd351653245e
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644096"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267730"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>대상 그룹 인사이트의 Azure 서비스 보안 주체를 사용하여 Azure Data Lake Storage Gen2 계정에 연결
 
@@ -22,7 +22,9 @@ Azure 서비스를 사용하는 자동화 도구에는 항상 제한된 권한�
 
 서비스 주체를 사용하여 [Common Data Model 폴더를 데이터 원본으로 안전하게 추가 또는 편집](connect-common-data-model.md)하거나 [새 환경을 만들거나 기존 환경을 업데이트](manage-environments.md#create-an-environment-in-an-existing-organization)할 수 있습니다.
 
-서비스 주체를 만들려면 Azure 구독에 대한 관리자 권한이 필요합니다.
+> [!IMPORTANT]
+> - 서비스 주체를 사용하려는 Azure Data Lake Gen2 스토리지 계정에는 [계층적 네임 스페이스(HNS)가 활성화](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace)되어 있어야 합니다.
+> - 서비스 주체를 만들려면 Azure 구독에 대한 관리자 권한이 필요합니다.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>대상 그룹 인사이트에 대한 Azure 서비스 주체 만들기
 
@@ -83,7 +85,7 @@ Azure Portal로 이동하여 대상 그룹 인사이트에서 사용하려는 �
 
 선택한 접근 방식에 대한 필수 정보를 제공하려면 아래 단계를 따릅니다.
 
-### <a name="resounce-based-storage-account-connection"></a>리소스 기반 저장소 계정 연결
+### <a name="resource-based-storage-account-connection"></a>리소스 기반 저장소 계정 연결
 
 1. [Azure 관리 포털](https://portal.azure.com)로 이동하여 구독에 로그인하고 스토리지 계정을 엽니다.
 
@@ -108,7 +110,8 @@ Azure Portal로 이동하여 대상 그룹 인사이트에서 사용하려는 �
 1. **구독**, **리소스 그룹** 및 스토리지 계정의 **이름** 을 검토하여 대상 그룹 인사이트에서 올바른 값을 선택했는지 확인합니다.
 
 1. 대상 그룹 인사이트에서 스토리지 계정을 연결할 때 값 또는 해당 필드를 선택합니다.
-
-   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="스토리지 계정 리소스 ID 정보를 입력합니다.":::
    
 1. 대상 그룹 인사이트의 나머지 단계를 계속하여 스토리지 계정을 연결합니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

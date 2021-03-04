@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 9032d99357db86e66588eda544211a5f8eb2f23b
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 63caa2ebdd7d637d14ac9c9cc7972095803aee2f
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643871"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477141"
 ---
-# <a name="export-destinations-preview"></a>내보내기 대상(미리 보기)
+# <a name="export-destinations-preview-overview"></a>내보내기 대상(미리 보기) 개요
 
 **내보내기 대상** 페이지에는 데이터를 내보내도록 설정한 모든 위치가 표시됩니다. 내보낼 새 대상을 추가할 수도 있습니다. 또한 현재 사용 가능한 내보내기 옵션을 보여줍니다. 빠른 개요, 설명 및 각 확장성 옵션으로 수행 할 수 있는 작업을 알아보십시오. 비즈니스와 관련된 지원되는 앱으로 통합 프로필, 측정 값 및 세그먼트를 내보냅니다.
 
@@ -27,10 +27,13 @@ ms.locfileid: "4643871"
 - [Power Automate 커넥터](export-power-automate.md)
 - [Power Apps 커넥터](export-power-apps.md)
 - [Power BI 커넥터](export-power-bi.md)
+- [AutoPilot](export-autopilot.md)
 - [DotDigital](export-dotdigital.md)
-- [Dynamics 365 for Sales](export-dynamics365-sales.md)
+- [Dynamics 365 Sales](export-dynamics365-sales.md)
 - [Dynamics 365 Marketing](export-dynamics365-marketing.md)
 - [Azure Blob Storage](export-azure-blob-storage.md)
+- [Azure Data Lake Storage Gen2](export-azure-data-lake-storage-gen2.md)
+- [SendGrid](export-sendgrid.md)
 - [LiveRamp&reg; 커넥터](export-liveramp.md)
 - [Microsoft Teams용 봇](export-teams-bot.md)
 - [Mailchimp](export-mailchimp.md)
@@ -95,3 +98,6 @@ ms.locfileid: "4643871"
 2. 드롭다운 메뉴에서 **제거** 를 선택합니다.
 
 3. 확인 화면에서 **제거** 를 선택하여 제거를 확인합니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

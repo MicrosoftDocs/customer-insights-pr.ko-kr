@@ -6,16 +6,16 @@ metadata:
   description: 대상 그룹 인사이트에 대한 주요 링크가 있는 도움말 허브입니다.
   ms.service: customer-insights
   ms.subservice: audience-insights
-  ms.topic: landing-page
+  ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.date: 10/16/2020
-  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
-  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.openlocfilehash: ba5229067c7c338b4f8d0503aaf80f25b6c4002c
+  ms.sourcegitcommit: a8f7d5d0008b2d7d0ff0daeb746126abfc82c253
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 11/03/2020
-  ms.locfileid: "4406299"
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "4745729"
 landingContent:
 - title: 대상 그룹 인사이트 정보
   linkLists:
@@ -27,36 +27,36 @@ landingContent:
       url: whats-new-audience-insights.md
     - text: 커뮤니티 사이트
       url: https://go.microsoft.com/fwlink/?linkid=2073991
-- title: 데이터 원본 수집
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 데이터 원본 추가
-      url: data-sources.md
-    - text: 증분 새로 고침
-      url: incremental-refresh-data-sources.md
-    - text: 엔터티 이해
-      url: entities.md
 - title: 데이터 통합
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 매핑
-      url: map-entities.md
-    - text: 일치
-      url: match-entities.md
-    - text: 병합
-      url: merge-entities.md
-- title: 고객 프로필 구체화
+    - text: 데이터 원본 개요
+      url: data-sources.md
+    - text: 통합 개요
+      url: data-unification.md
+    - text: 엔터티 이해
+      url: entities.md
+- title: 데이터 보강 및 정제
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: 고객 프로필 보강
+      url: enrichment-hub.md
     - text: 관계 구성
       url: relationships.md
     - text: 고객 활동 나열
       url: activities.md
-    - text: 나만의 기계 학습 모델 가져오기
-      url: custom-models.md
+- title: 인사이트 가져오기
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 세그먼트 만들기
+      url: segments.md
+    - text: 측정값 만들기
+      url: measures.md
+    - text: 예측으로 데이터 완성
+      url: predictions.md
 - title: 고객 데이터 내보내기
   linkLists:
   - linkListType: how-to-guide

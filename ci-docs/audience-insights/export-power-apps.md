@@ -1,20 +1,20 @@
 ---
 title: Power Apps 커넥터
 description: Power Apps 및 Power Automate와 연결합니다.
-ms.date: 08/21/2020
+ms.date: 01/19/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: b6ec103e29e218b2f27bfc1193300ea793a6b30b
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 5a8bbb9a09218d54228589d43c21c8894680b56e
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406265"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268924"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Microsoft Power Apps 커넥터(미리 보기)
 
@@ -31,7 +31,7 @@ Customer Insights는 [Power Apps에서 사용 가능한 많은 데이터 소스]
 Customer Insights를 데이터 연결로 추가한 후 Power Apps에서 다음 엔터티를 선택할 수 있습니다.
 
 - 고객: [통합 고객 프로필](customer-profiles.md)의 데이터를 사용합니다.
-- 통합 고객 활동: 앱에 [활동 타임라인](activities.md)을 표시합니다.
+- UnifiedActivity: 앱에 [활동 타임라인](activities.md)을 표시합니다.
 
 ## <a name="limitations"></a>제한 사항
 
@@ -72,3 +72,6 @@ Power Apps 커넥터에서 **고객**, **통합 활동**, **세그먼트** 엔�
 1. 고객의 통합 타임라인을 표시하려면 갤러리 요소를 추가하고 항목 속성: **Filter('UnifiedActivity', CustomerId = {Customer_Id})** 을 추가합니다.
 
     예: Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

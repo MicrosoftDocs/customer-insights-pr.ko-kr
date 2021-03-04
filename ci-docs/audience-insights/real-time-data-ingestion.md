@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: b00a72e6a67e33c8e70ccc6139c5e62020f9d3e1
-ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
+ms.openlocfilehash: 7421ed9d2cb399d546815b2d1b0ea5ec51ca6b6d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "4689183"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270288"
 ---
 # <a name="real-time-data-ingestion-preview"></a>실시간 데이터 수집(미리 보기)
 
@@ -83,6 +83,7 @@ ms.locfileid: "4689183"
 
 ## <a name="understand-your-real-time-usage-with-telemetry"></a>원격 분석으로 실시간 사용 이해
 
-실시간 API에 대한 요청의 양에 대한 개요와 시스템에서 발생할 수 있는 문제에 대한 정보를 가져옵니다. **관리자** > **시스템** > **API 사용** 으로 이동하여 [실시간 원격 분석에 액세스](system.md#api-usage-tab)할 수 있습니다. **작업** 테이블에서 실시간 메서드를 사용하는 API 작업 행에는 실시간 API 사용량을 볼 수 있는 버튼이 있습니다. 버튼은 쌍안경 기호로 시각화됩니다. 버튼을 선택하여 현재 환경에서 실시간 API 사용에 대한 사용 세부 정보가 포함된 사이드 창을 엽니다.
+실시간 API에 대한 요청의 양에 대한 개요와 시스템에서 발생할 수 있는 문제에 대한 정보를 가져옵니다. [실시간 원격 분석에 액세스](system.md#api-usage-tab)할 수 있습니다. 
 
-**그룹화 기준** 선택기를 사용하여 지난 24시간에서 30일까지의 타임라인에서 실시간 상호 작용을 가장 잘 표현할 수 있는 방법을 선택할 수 있습니다. API 메서드, 엔터티 규정이름(대상 엔터티), (이벤트 소스), 결과(성공 또는 실패) 또는 오류 코드별로 데이터를 그룹화할 수 있습니다. 데이터는 이력 차트 및 테이블로 제공됩니다.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

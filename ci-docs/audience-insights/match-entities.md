@@ -4,17 +4,17 @@ description: 엔터티를 일치시켜 통합 고객 프로필을 만듭니다.
 ms.date: 10/14/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: adkuppa
 manager: shellyha
-ms.openlocfilehash: 78549037f9c9e59329f5423c36eeb058128802c0
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 05afd17b7f1b34f7f24a8fa8cb2dc32c1649d40f
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406304"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267486"
 ---
 # <a name="match-entities"></a>엔터티 매칭
 
@@ -22,7 +22,7 @@ ms.locfileid: "4406304"
 
 ## <a name="specify-the-match-order"></a>일치 순서를 지정합니다.
 
-**통합** > **일치** 로 이동하고 **순서 설정** 을 선택하여 일치 단계를 시작합니다.
+**데이터** > **통합** > **일치** 로 이동하고 **순서 설정** 을 선택하여 일치 단계를 시작합니다.
 
 각 일치는 두 개 이상의 엔터티를 단일 엔터티로 통합하는 동시에 각 고유 고객 레코드를 유지합니다. 다음 예제에서는 **기본** 엔터티로 **ContactCSV: TestData**, **엔터티 2** 로 **WebAccountCSV: TestData** 및 **엔터티 3** 으로 **CallRecordSmall: TestData** 등 3개의 엔터티를 선택했습니다. 선택 항목 위의 다이어그램은 일치 순서가 실행되는 방법을 보여줍니다.
 
@@ -136,7 +136,7 @@ ms.locfileid: "4406304"
 
 1. 이제 일치 프로세스를 실행하면 중복 제거 규칙에 정의된 조건에 따라 레코드가 그룹화됩니다. 레코드를 그룹화한 후 병합 정책이 적용되어 승자 레코드를 식별합니다.
 
-1. 그런 다음 이 우승자 레코드는 엔터티 간 일치에 전달됩니다.
+1. 그런 다음 이 승자 레코드는 일치 품질을 개선하기 위해 비 승자 레코드(예: 대체 ID)와 함께 엔티티 간 일치에 전달됩니다.
 
 1. 항상 일치에 대해 정의 된 사용자 지정 일치 규칙은 중복 제거 규칙을 무시하고 일치하지 않습니다. 중복 제거 규칙이 일치하는 레코드를 식별하고 사용자 지정 일치 규칙이 해당 레코드와 일치하지 않도록 설정된 경우 이 두 레코드는 일치하지 않습니다.
 
@@ -157,6 +157,17 @@ ms.locfileid: "4406304"
 
 > [!TIP]
 > 작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다. 또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다. 프로세스 상태를 선택하여 전체 작업의 진행률에 대한 세부 사항을 볼 수 있습니다. 작업 중 하나를 선택한 다음 **자세히 보기** 참조를 선택하면, 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고와 같은 추가 정보를 확인할 수 있습니다.
+
+## <a name="deduplication-output-as-an-entity"></a>엔터티로서 중복 제거 출력
+엔터티 간 일치의 일부로 생성된 통합 마스터 엔터티 외에도 중복 제거 프로세스는 일치 순서에서 모든 엔터티에 대한 새 엔터티를 생성하여 중복 제거된 레코드를 식별합니다. 이러한 엔터티는 **엔티티** 페이지의 **시스템** 섹션에서 **Deduplication_Datasource_Entity** 라는 이름으로 **ConflationMatchPairs:CustomerInsights** 와 함께 찾을 수 있습니다.
+
+중복 제거 출력 엔터티에는 다음 정보가 포함됩니다.
+- ID / 키
+  - 기본 키 필드 및 대체 ID 필드. 대체 ID 필드는 레코드에 대해 식별된 모든 대체 ID로 구성됩니다.
+  - Deduplication_GroupId 필드는 지정된 중복 제거 필드를 기반으로 모든 유사한 레코드를 그룹화하는 엔터티 내에서 식별된 그룹 또는 클러스터를 보여줍니다. 이것은 시스템 처리 목적으로 사용됩니다. 지정된 수동 중복 제거 규칙이 없고 시스템 정의 중복 제거 규칙이 적용되는 경우 중복 제거 출력 엔터티에서 이 필드를 찾을 수 없습니다.
+  - Deduplication_WinnerId: 이 필드에는 식별된 그룹 또는 클러스터의 승자 ID가 포함됩니다. Deduplication_WinnerId가 레코드의 기본 키 값과 같으면 레코드가 승자 레코드라는 의미입니다.
+- 중복 제거 규칙을 정의하는 데 사용되는 필드입니다.
+- 적용된 중복 제거 규칙과 일치 알고리즘에서 반환된 점수를 나타내는 규칙 및 점수 필드입니다.
 
 ## <a name="review-and-validate-your-matches"></a>일치 검토 및 유효성 검사
 
@@ -200,6 +211,11 @@ ms.locfileid: "4406304"
   > [!div class="mx-imgBorder"]
   > ![규칙 복제](media/configure-data-duplicate-rule.png "규칙 복제")
 
+- **규칙을 비활성화** 하여 일치 프로세스에서 제외하는 동안 일치 규칙을 유지합니다.
+
+  > [!div class="mx-imgBorder"]
+  > ![규칙 비활성화](media/configure-data-deactivate-rule.png "규칙 비활성화")
+
 - **편집** 기호를 선택하여 **규칙을 편집** 합니다. 또한 다음과 같이 변경을 적용할 수 있습니다.
 
   - 조건에 대한 특성 변경: 특정 조건 행 내에서 새 특성을 선택합니다.
@@ -229,10 +245,12 @@ ms.locfileid: "4406304"
     - Entity2Key: 34567
 
    동일한 템플릿 파일은 여러 엔터티의 사용자 지정 일치 레코드를 지정할 수 있습니다.
+   
+   엔터티에서 중복 제거에 대한 사용자 지정 일치를 지정하려면 엔터티1 및 엔터티2와 동일한 엔터티를 제공하고 다른 기본 키 값을 설정합니다.
 
 5. 적용할 모든 재정의를 추가한 후 템플릿 파일을 저장합니다.
 
-6.**데이터** > **데이터 원본** 으로 이동하여 새 엔터티로 템플릿 파일을 수집합니다. 일단 수집되면 이를 사용하여 일치 구성을 지정할 수 있습니다.
+6. **데이터** > **데이터 원본** 으로 이동하여 새 엔터티로서 템플릿 파일을 수집합니다. 일단 수집되면 이를 사용하여 일치 구성을 지정할 수 있습니다.
 
 7. 파일 및 엔터티를 업로드한 후 **사용자 지정 일치** 옵션을 다시 선택합니다. 포함할 엔터티를 지정하는 옵션이 표시됩니다. 드롭다운 메뉴에서 필요한 엔터티를 선택합니다.
 
@@ -250,3 +268,6 @@ ms.locfileid: "4406304"
 ## <a name="next-step"></a>다음 단계
 
 하나 이상의 일치 쌍에 대한 매치 프로세스를 완료한 후 [**병합**](merge-entities.md) 항목을 통해 데이터에서 발생할 수 있는 모순을 해결할 수 있습니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

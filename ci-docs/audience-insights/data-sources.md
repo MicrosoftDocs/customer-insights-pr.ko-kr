@@ -9,14 +9,14 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: adkuppa
 manager: shellyha
-ms.openlocfilehash: a720641f7499fc71ff5bceeba48d296c51f77242
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 68aa1b56fb634da80a0c64db72f778d57507104d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643961"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269706"
 ---
-# <a name="overview-about-data-sources"></a>데이터 원본 개요
+# <a name="data-sources-overview"></a>데이터 원본 개요
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
@@ -49,7 +49,7 @@ Dynamics 365 Customer Insights의 대상 그룹 인사이트 기능은 광범위
 |새로 고침    |데이터 수집이 진행 중입니다. **작업** 열에서 **새로 고침 중지** 를 선택하여 이 작업을 취소할 수 있습니다 . 데이터 원본의 새로 고침을 중지하면 마지막 새로 고침 상태로 되돌아갑니다.       |
 |실패함     |데이터 수집에 오류가 발생했습니다.         |
 
-**상태 새로 고침** 을 선택하여 오류 세부 정보 및 다운스트림 프로세스 업데이트를 포함하여 새로 고침 상태에 대한 세부 정보를 검토합니다.
+데이터 원본의 **상태** 열에서 값을 선택하여 자세한 내용을 검토하십시오. **진행 세부 정보** 창에서 **데이터 원본** 을 확장합니다. 오류 세부 정보 및 다운스트림 프로세스 업데이트를 포함한 새로 고침 상태에 대한 자세한 내용을 보려면 **세부 정보 보기** 를 선택합니다.
 
 데이터 로딩에 약간 시간이 걸릴 수 있습니다. 성공적으로 새로 고친 후 수집된 데이터는 **엔터티** 페이지에서 검토할 수 있습니다. 자세한 내용은 [엔터티](entities.md)를 참조하십시오.
 
@@ -76,3 +76,6 @@ Dynamics 365 Customer Insights의 대상 그룹 인사이트 기능은 광범위
 2. 제거하려는 데이터 원본 옆에 있는 세로 줄임표를 선택하고 드롭다운 메뉴에서 **삭제** 를 선택합니다.
 
 3. 삭제를 확정합니다.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

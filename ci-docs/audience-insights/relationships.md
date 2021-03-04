@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 295c372bb452e7c40aa950506dc494d4a2de1108
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 292da986faa7f62d8aa73ed7214075612178e2e1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406309"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269889"
 ---
 # <a name="relationships-between-entities"></a>엔터티 간 관계
 
@@ -28,8 +28,8 @@ ms.locfileid: "4406309"
 > ![관계 만들기](media/relationships-entities-merge.png "관계 만들기")
 
 - ***CustomerToContact* 관계** 는 고객 엔터티와 연락처 엔터티 간에 만들어졌습니다. 고객 엔터티는 연락처 엔터티 키 필드 **contactId** 와 관련되는 키 필드 **Contact_contactId** 를 가져옵니다.
-- **_CustomerToAccount_ 관계** 는 고객 엔터티와 거래처 엔터티 간에 만들어졌습니다. 고객 엔터티는 거래처 엔터티 키 필드 **accountId** 와 관련되는 키 필드 **Account_accountId** 를 가져옵니다.
-- **_CustomerToWebAccount_ 관계** 는 고객 엔터티와 WebAccount 엔터티 간에 만들어졌습니다. 고객 엔터티는 WebAccount 엔터티 키 필드 **webaccountId** 와 관련되는 키 필드 **WebAccount_webaccountId** 를 가져옵니다.
+- ***CustomerToAccount* 관계** 는 고객 엔터티와 거래처 엔터티 간에 만들어졌습니다. 고객 엔터티는 거래처 엔터티 키 필드 **accountId** 와 관련되는 키 필드 **Account_accountId** 를 가져옵니다.
+- ***CustomerToWebAccount* 관계** 는 고객 엔터티와 WebAccount 엔터티 간에 만들어졌습니다. 고객 엔터티는 WebAccount 엔터티 키 필드 **webaccountId** 와 관련되는 키 필드 **WebAccount_webaccountId** 를 가져옵니다.
 
 ## <a name="create-a-relationship"></a>관계 만들기
 
@@ -69,3 +69,6 @@ ms.locfileid: "4406309"
 ## <a name="next-step"></a>다음 단계
 
 시스템 및 사용자 지정 관계는 더 이상 격리되지 않은 여러 데이터 원본을 기반으로 세그먼트를 만드는 데 사용됩니다. 자세한 내용은 [세그먼트](segments.md)를 참조하십시오.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
