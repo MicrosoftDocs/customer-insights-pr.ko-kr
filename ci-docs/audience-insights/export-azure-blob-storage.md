@@ -2,52 +2,52 @@
 title: Azure Blob Storage로 Customer Insights 데이터 내보내기
 description: Azure Blob Storage에 대한 연결을 구성하는 방법을 알아보십시오.
 ms.date: 09/18/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ecacf20365e78ced8859dfa54b1b16cb923c00eb
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 0986ee5caf5fa079994ca584fb2c4d9294ddb80b
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269200"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596185"
 ---
-# <a name="connector-for-azure-blob-storage-preview"></a><span data-ttu-id="68efa-103">Azure Blob Storage용 커넥터(미리 보기)</span><span class="sxs-lookup"><span data-stu-id="68efa-103">Connector for Azure Blob storage (preview)</span></span>
+# <a name="connector-for-azure-blob-storage-preview"></a><span data-ttu-id="0e5ba-103">Azure Blob Storage용 커넥터(미리 보기)</span><span class="sxs-lookup"><span data-stu-id="0e5ba-103">Connector for Azure Blob storage (preview)</span></span>
 
-<span data-ttu-id="68efa-104">Customer Insights 데이터를 Azure Blob Storage에 저장하거나 사용자의 데이터를 다른 애플리케이션으로 전송하는 데 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="68efa-104">Store your Customer Insights data in an Azure Blob storage or use it to transfer your data to other applications.</span></span>
+<span data-ttu-id="0e5ba-104">Customer Insights 데이터를 Azure Blob Storage에 저장하거나 사용자의 데이터를 다른 애플리케이션으로 전송하는 데 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-104">Store your Customer Insights data in an Azure Blob storage or use it to transfer your data to other applications.</span></span>
 
-## <a name="configure-the-connector-for-azure-blob-storage"></a><span data-ttu-id="68efa-105">Azure Blob Storage용 커넥터 구성</span><span class="sxs-lookup"><span data-stu-id="68efa-105">Configure the connector for Azure Blob storage</span></span>
+## <a name="configure-the-connector-for-azure-blob-storage"></a><span data-ttu-id="0e5ba-105">Azure Blob Storage용 커넥터 구성</span><span class="sxs-lookup"><span data-stu-id="0e5ba-105">Configure the connector for Azure Blob storage</span></span>
 
-1. <span data-ttu-id="68efa-106">대상 그룹 인사이트에서 **데이터** > **내보내기 대상** 으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="68efa-106">In audience insights, go to **Admin** > **Export destinations**.</span></span>
+1. <span data-ttu-id="0e5ba-106">대상 그룹 인사이트에서 **데이터** > **내보내기 대상** 으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-106">In audience insights, go to **Admin** > **Export destinations**.</span></span>
 
-1. <span data-ttu-id="68efa-107">**Azure Blob Storage** 아래에서 **설정** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="68efa-107">Under **Azure Blob Storage**, select **Set up**.</span></span>
+1. <span data-ttu-id="0e5ba-107">**Azure Blob Storage** 아래에서 **설정** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-107">Under **Azure Blob Storage**, select **Set up**.</span></span>
 
-1. <span data-ttu-id="68efa-108">Azure Blob Storage 계정의 **계정 이름**, **계정 키**, **컨테이너** 를 입력합니다.</span><span class="sxs-lookup"><span data-stu-id="68efa-108">Enter **Account name**, **Account key**, and **Container** for your Azure Blob storage account.</span></span>
-    - <span data-ttu-id="68efa-109">Azure Blob Storage 계정 이름 및 계정 키를 찾는 방법에 대한 자세한 내용은 [Azure Portal에서 저장소 계정 설정 관리](https://docs.microsoft.com/azure/storage/common/storage-account-manage)를 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="68efa-109">To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](https://docs.microsoft.com/azure/storage/common/storage-account-manage).</span></span>
-    - <span data-ttu-id="68efa-110">컨테이너를 만드는 방법을 배우려면 [컨테이너 만들기](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="68efa-110">To learn how to create a container, see [Create a container](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span></span>
+1. <span data-ttu-id="0e5ba-108">Azure Blob Storage 계정의 **계정 이름**, **계정 키**, **컨테이너** 를 입력합니다.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-108">Enter **Account name**, **Account key**, and **Container** for your Azure Blob storage account.</span></span>
+    - <span data-ttu-id="0e5ba-109">Azure Blob Storage 계정 이름 및 계정 키를 찾는 방법에 대한 자세한 내용은 [Azure Portal에서 저장소 계정 설정 관리](/azure/storage/common/storage-account-manage)를 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-109">To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).</span></span>
+    - <span data-ttu-id="0e5ba-110">컨테이너를 만드는 방법을 배우려면 [컨테이너 만들기](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-110">To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span></span>
 
-1. <span data-ttu-id="68efa-111">**표시 이름** 필드에서 대상에 인식할 수 있는 이름을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="68efa-111">Give your destination a recognizable name in the **Display name** field.</span></span>
+1. <span data-ttu-id="0e5ba-111">**표시 이름** 필드에서 대상에 인식할 수 있는 이름을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-111">Give your destination a recognizable name in the **Display name** field.</span></span>
 
-1. <span data-ttu-id="68efa-112">**다음** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="68efa-112">Select **Next**.</span></span>
+1. <span data-ttu-id="0e5ba-112">**다음** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-112">Select **Next**.</span></span>
 
-1. <span data-ttu-id="68efa-113">이 대상으로 내보내려는 각 엔터티 옆의 상자를 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="68efa-113">Select the box next to each of the entities you want to export to this destination.</span></span>
+1. <span data-ttu-id="0e5ba-113">이 대상으로 내보내려는 각 엔터티 옆의 상자를 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-113">Select the box next to each of the entities you want to export to this destination.</span></span>
 
-1. <span data-ttu-id="68efa-114">**저장** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="68efa-114">Select **Save**.</span></span>
+1. <span data-ttu-id="0e5ba-114">**저장** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-114">Select **Save**.</span></span>
 
-<span data-ttu-id="68efa-115">내보낸 데이터는 구성한 Azure Blob Storage 컨테이너에 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="68efa-115">Exported data is stored in the Azure Blob storage container you configured.</span></span> <span data-ttu-id="68efa-116">컨테이너에 다음 폴더 경로가 자동으로 생성됩니다.</span><span class="sxs-lookup"><span data-stu-id="68efa-116">The following folder paths are automatically created in your container:</span></span>
+<span data-ttu-id="0e5ba-115">내보낸 데이터는 구성한 Azure Blob Storage 컨테이너에 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-115">Exported data is stored in the Azure Blob storage container you configured.</span></span> <span data-ttu-id="0e5ba-116">컨테이너에 다음 폴더 경로가 자동으로 생성됩니다.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-116">The following folder paths are automatically created in your container:</span></span>
 
-- <span data-ttu-id="68efa-117">원본 엔터티 및 시스템에서 생성된 엔터티의 경우:`%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span><span class="sxs-lookup"><span data-stu-id="68efa-117">For source entities and entities generated by the system: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span></span>
-  - <span data-ttu-id="68efa-118">예: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span><span class="sxs-lookup"><span data-stu-id="68efa-118">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span></span>
-- <span data-ttu-id="68efa-119">내보낸 엔티티에 대한 모델.json은 %ExportDestinationName% 수준에 위치하고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="68efa-119">The model.json for the exported entities will reside at the %ExportDestinationName% level</span></span>
-  - <span data-ttu-id="68efa-120">예: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span><span class="sxs-lookup"><span data-stu-id="68efa-120">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span></span>
+- <span data-ttu-id="0e5ba-117">원본 엔터티 및 시스템에서 생성된 엔터티의 경우:`%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span><span class="sxs-lookup"><span data-stu-id="0e5ba-117">For source entities and entities generated by the system: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span></span>
+  - <span data-ttu-id="0e5ba-118">예: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span><span class="sxs-lookup"><span data-stu-id="0e5ba-118">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span></span>
+- <span data-ttu-id="0e5ba-119">내보낸 엔티티의 model.json은 %ExportDestinationName% 수준에 있음</span><span class="sxs-lookup"><span data-stu-id="0e5ba-119">The model.json for the exported entities will reside at the %ExportDestinationName% level</span></span>
+  - <span data-ttu-id="0e5ba-120">예: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span><span class="sxs-lookup"><span data-stu-id="0e5ba-120">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span></span>
 
-## <a name="export-the-data"></a><span data-ttu-id="68efa-121">데이터 내보내기</span><span class="sxs-lookup"><span data-stu-id="68efa-121">Export the data</span></span>
+## <a name="export-the-data"></a><span data-ttu-id="0e5ba-121">데이터 내보내기</span><span class="sxs-lookup"><span data-stu-id="0e5ba-121">Export the data</span></span>
 
-<span data-ttu-id="68efa-122">[주문 시 데이터를 내보낼](export-destinations.md#export-data-on-demand) 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="68efa-122">You can [export data on demand](export-destinations.md#export-data-on-demand).</span></span> <span data-ttu-id="68efa-123">내보내기는 [예약된 새로 고침](system.md#schedule-tab)마다 실행됩니다.</span><span class="sxs-lookup"><span data-stu-id="68efa-123">The export will also run with every [scheduled refresh](system.md#schedule-tab).</span></span>
+<span data-ttu-id="0e5ba-122">[주문 시 데이터를 내보낼](export-destinations.md#export-data-on-demand) 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-122">You can [export data on demand](export-destinations.md#export-data-on-demand).</span></span> <span data-ttu-id="0e5ba-123">내보내기는 [예약된 새로 고침](system.md#schedule-tab)마다 실행됩니다.</span><span class="sxs-lookup"><span data-stu-id="0e5ba-123">The export will also run with every [scheduled refresh](system.md#schedule-tab).</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

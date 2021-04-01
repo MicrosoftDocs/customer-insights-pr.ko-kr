@@ -19,13 +19,13 @@
     - name: 학습 모듈
       items:
         - name: 데이터 수집
-          href: 'https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/'
+          href: /learn/modules/ingest-data-customer-insights/
         - name: 통합 고객 프로필 만들기
-          href: 'https://docs.microsoft.com/learn/modules/unified-customer-profile/'
+          href: /learn/modules/unified-customer-profile/
         - name: 앱에 대한 작업
-          href: 'https://docs.microsoft.com/learn/modules/working-with-customer-insights/'
+          href: /learn/modules/working-with-customer-insights/
         - name: 데이터 및 예측 보강
-          href: 'https://docs.microsoft.com/learn/modules/enrich-data/'
+          href: /learn/modules/enrich-data/
     - name: 데이터 원본
       items:
         - name: 데이터 원본 개요
@@ -114,6 +114,12 @@
       items:
         - name: 내보내기 대상 미리 보기
           href: audience-insights/export-destinations.md
+        - name: AdRoll
+          href: audience-insights/export-adroll.md
+        - name: Adobe Campaign Standard
+          href: audience-insights/export-adobe-campaign-standard.md
+        - name: Adobe 환경 플랫폼
+          href: audience-insights/export-adobe-experience-platform.md
         - name: AutoPilot
           href: audience-insights/export-autopilot.md
         - name: Azure Blob Storage
@@ -202,7 +208,7 @@
           href: engagement-insights/refined-events.md
         - name: 이벤트 내보내기
           href: engagement-insights/export-events.md
-    - name: '보고서 '
+    - name: 보고서
       items:
         - name: 보고서 보기
           href: engagement-insights/view-reports.md
