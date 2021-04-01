@@ -2,19 +2,19 @@
 title: Dynamics 365 Customer Insights에 대한 대상 그룹 인사이트 개요
 description: Dynamics 365 Customer Insights에 대한 대상 그룹 인사이트의 개요입니다.
 ms.date: 01/18/2021
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: overview
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 735aae12abebd2d6d9b6aedb5835164834f480c0
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
+ms.openlocfilehash: 146994b739748c615ca002add4e64216da6c1dea
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5477003"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598638"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Dynamics 365 Customer Insights에 대한 대상 그룹 인사이트 개요
 
@@ -25,7 +25,7 @@ ms.locfileid: "5477003"
 - **데이터 사일로 제거 및 고객 데이터 통합**
 
   - 손쉽게 데이터를 연결하고 통합하여 [사전 구축된 커넥터를 통해 널리 사용되는 데이터 원본](data-sources.md)의 트랜잭션, 관찰 및 동작 데이터를 가져옵니다.
-  - 고객 데이터를 지능적으로 변환하여 [Common Data Model](https://docs.microsoft.com/common-data-model/)을 준수하는 통합된 고객 프로필을 빌드합니다. AI/ML 중심의 권장 사항으로 고객의 ID를 파악합니다.
+  - 고객 데이터를 지능적으로 변환하여 [Common Data Model](/common-data-model/)을 준수하는 통합된 고객 프로필을 빌드합니다. AI/ML 중심의 권장 사항으로 고객의 ID를 파악합니다.
 
 - **Microsoft Graph에 포함된 대상 그룹 인텔리전스 구축**
 
@@ -42,7 +42,7 @@ ms.locfileid: "5477003"
 - **데이터 분석가/관리자:**
 
   - 커넥터의 풍부한 컬렉션에 액세스하여 모든 고객 데이터를 수집합니다.
-  - 고객 데이터를 통합하여 [Common Data Model](https://docs.microsoft.com/common-data-model/) 형식으로 변환할 수 있습니다.
+  - 고객 데이터를 통합하여 [Common Data Model](/common-data-model/) 형식으로 변환할 수 있습니다.
   - 브랜드 선호도 및 관심사와 같은 Microsoft Graph에 포함된 대상 그룹 인텔리전스를 통해 풍부한 고객 정보를 얻을 수 있습니다.
   - 대상 그룹 인사이트를 쉽게 구성하고 잠재적인 문제를 식별하는 데 도움이 되는 "코드가 아닌 클릭" 구성 및 디버깅 경험을 제공합니다.
   - AI 기반 권장 사항을 통해 서로 다른 원본의 고객 데이터를 정리하고 표준화합니다.  

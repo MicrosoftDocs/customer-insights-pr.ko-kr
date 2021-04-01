@@ -2,19 +2,19 @@
 title: 실시간 데이터 수집 및 제한
 description: 대상 그룹 인사이트의 실시간 기능에 대한 일반 정보입니다.
 ms.date: 10/27/2020
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 7421ed9d2cb399d546815b2d1b0ea5ec51ca6b6d
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3c84cfe7441eb026c1fd45eda1f72421388d01d7
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270288"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598577"
 ---
 # <a name="real-time-data-ingestion-preview"></a>실시간 데이터 수집(미리 보기)
 
@@ -54,7 +54,7 @@ ms.locfileid: "5270288"
 
 실시간 API에 연결하는 방법은 다음 두 가지입니다.
 
-- [간접적으로](#connect-via-the-dynamics-365-customer-insights-connector), [Dynamics 365 Customer Insights 커넥터](https://docs.microsoft.com/connectors/customerinsights/) 사용
+- [간접적으로](#connect-via-the-dynamics-365-customer-insights-connector), [Dynamics 365 Customer Insights 커넥터](/connectors/customerinsights/) 사용
 - [직접적으로](#connect-directly-to-the-real-time-api), 코드 사용
 
 두 방법 모두 다음과 같은 전제 조건이 적용됩니다.
@@ -66,13 +66,13 @@ ms.locfileid: "5270288"
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>Dynamics 365 Customer Insights 커넥터를 통해 연결
 
-실시간 API는 코드를 작성하고 배포할 필요 없이 전용 Power Platform커넥터, [Dynamics 365 Customer Insights 커넥터](https://docs.microsoft.com/connectors/customerinsights/)에서 데이터를 수집할 수 있습니다.    
-커넥터는 API와 동일한 실시간 작업을 수행할 수 있습니다. 프리미엄 커넥터에 대한 유효한 라이선스가 필요합니다. 자세한 내용은 [Power Apps 및 Power Automate 라이선싱 FAQ](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq)를 참조하십시오.
+실시간 API는 코드를 작성하고 배포할 필요 없이 전용 Power Platform커넥터, [Dynamics 365 Customer Insights 커넥터](/connectors/customerinsights/)에서 데이터를 수집할 수 있습니다.    
+커넥터는 API와 동일한 실시간 작업을 수행할 수 있습니다. 프리미엄 커넥터에 대한 유효한 라이선스가 필요합니다. 자세한 내용은 [Power Apps 및 Power Automate 라이선싱 FAQ](/power-platform/admin/powerapps-flow-licensing-faq)를 참조하십시오.
 
-- Power Platform [Power Apps 및/또는 Power Automate](https://docs.microsoft.com/connectors/)
-- Azure [Logic Apps](https://docs.microsoft.com/azure/connectors/apis-list)
+- Power Platform [Power Apps 및/또는 Power Automate](/connectors/)
+- Azure [Logic Apps](/azure/connectors/apis-list)
 
-흐름 만들기에 대한 자세한 내용은 [Power Automate 설명서](https://docs.microsoft.com/power-automate/)를 참조하십시오.
+흐름 만들기에 대한 자세한 내용은 [Power Automate 설명서](/power-automate/)를 참조하십시오.
 
 ## <a name="connect-directly-to-the-real-time-api"></a>실시간 API에 직접 연결
 

@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
-ms.reviewer: wameng
+ms.author: wameng
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5bcee3b4c51880740715575b18fd7a4dbf87e6d0
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 202ea22d290be04e54ce9676b6b693162354607f
+ms.sourcegitcommit: d3eb07dcc72624a2d5cfc95c7ea9faaa2c1b6001
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269936"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "5654740"
 ---
 # <a name="define-and-manage-measures"></a>측정 정의 및 관리
 
@@ -72,8 +72,8 @@ ms.locfileid: "5269936"
    1. **차원 편집** 을 선택하여 측정값을 그룹화하려는 데이터 특성을 추가합니다. 예: 도시 또는 성별. 기본적으로 *고객 수준 측정값* 을 만들기 위해 *CustomerID* 차원이 선택됩니다. *비즈니스 수준 측정값* 을 만들려는 경우 기본 차원을 제거할 수 있습니다.
    1. **완료** 를 선택하여 측정값에 차원을 추가합니다.
 
-1. 매핑한 데이터 엔터티와 고객 엔터티 사이에 여러 경로가 있는 경우 식별된 [엔티티 관계 경로](relationships.md) 중 하나를 선택해야 합니다. 측정 결과는 선택한 경로에 따라 달라질 수 있습니다.
-   1. **데이터 선호 설정** 을 선택하여 측정값을 식별하는 데 사용해야 하는 엔터티 경로를 선택합니다.
+1. 매핑한 데이터 엔터티와 *고객* 엔터티 사이에 여러 경로가 있는 경우 식별된 [엔티티 관계 경로](relationships.md) 중 하나를 선택해야 합니다. 측정 결과는 선택한 경로에 따라 달라질 수 있습니다. 
+   1. **데이터 선호 설정** 을 선택하여 측정값을 식별하는 데 사용해야 하는 엔터티 경로를 선택합니다. *고객* 엔터티로의 경로가 하나뿐인 경우 이 컨트롤은 표시되지 않습니다.
    1. **완료** 를 선택하여 선택 사항을 적용합니다. 
 
    :::image type="content" source="media/measures-data-preferences.png" alt-text="측정값에 대한 엔터티 경로를 선택합니다.":::
