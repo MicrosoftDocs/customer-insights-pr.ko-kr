@@ -2,19 +2,19 @@
 title: 타사 보강 Experian으로 보강
 description: Experian 타사 보강에 대한 일반 정보입니다.
 ms.date: 12/10/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: kishorem-ms
+ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: baf3cc58a233b70c48fb94ac4a543d162f91bdd1
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 4d4723e8f793ee857c4f5204a42be8338c71d4c3
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269568"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597795"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>자세한 내용은 Experian의 인구 통계로 고객 프로필 보강을 참고하세요 (미리보기)
 

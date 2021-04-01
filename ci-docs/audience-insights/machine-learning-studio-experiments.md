@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
-ms.author: mhart
-ms.reviewer: ameetj
+ms.author: ameetj
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8a861d62bdfee6a3a82468fe1ab4a3fbbdad43d4
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 71881f7e1f9448fe0a7d6d92b8102b8b42de7c2a
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270212"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598347"
 ---
 # <a name="use-models-based-on-azure-machine-learning-studio-classic"></a>Azure Machine Learning Studio(클래식) 기반 모델을 사용합니다.
 
@@ -37,7 +37,7 @@ Dynamics 365 Customer Insights의 통합 데이터는 추가 비즈니스 인사
 
 1. **Machine Learning Studio 작업 영역** 을 검색해 **만들기** 를 선택합니다.
 
-1. 필요한 세부 정보를 입력하여 [작업 공간을 만듭니다](https://docs.microsoft.com/azure/machine-learning/studio/create-workspace). 가져올 데이터 양에 따라 **웹 서비스 계획 가격 책정 계층** 을 선택합니다. 최상의 성능을 위해 지리적으로 가장 가까운 **위치** 를 선택합니다.
+1. 필요한 세부 정보를 입력하여 [작업 공간을 만듭니다](/azure/machine-learning/studio/create-workspace). 가져올 데이터 양에 따라 **웹 서비스 계획 가격 책정 계층** 을 선택합니다. 최상의 성능을 위해 지리적으로 가장 가까운 **위치** 를 선택합니다.
 
 1. 리소스를 생성하면 Machine Learning Studio 작업 영역 대시보드가 나타납니다. **Machine Learning Studio 실행** 을 선택합니다.
 
@@ -65,7 +65,7 @@ Dynamics 365 Customer Insights의 통합 데이터는 추가 비즈니스 인사
 
    ![예측 웹 서비스 설정](media/predictive-webservice-control.png)
 
-1. 예측 웹 서비스 실험이 성공하면 자동 예약을 위해 배포할 수 있습니다. 웹 서비스가 Customer Insights와 함께 작동하게 하려면 **웹 서비스 배포** > **웹 서비스 배포 [신규] 미리 보기** 를 선택합니다. [웹 서비스 배포에 대해 자세히 알아보세요](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service).
+1. 예측 웹 서비스 실험이 성공하면 자동 예약을 위해 배포할 수 있습니다. 웹 서비스가 Customer Insights와 함께 작동하게 하려면 **웹 서비스 배포** > **웹 서비스 배포 [신규] 미리 보기** 를 선택합니다. [웹 서비스 배포에 대해 자세히 알아보세요](/azure/machine-learning/studio/deploy-a-machine-learning-web-service).
 
    ![예측 웹 서비스 배포](media/predictive-webservice-deploy.png)
 
@@ -116,7 +116,7 @@ Dynamics 365 Customer Insights의 통합 데이터는 추가 비즈니스 인사
 
 ![Azure Machine Learning Studio의 이탈 모델](media/azure-machine-learning-model.png)
 
-또한 모델 최적화의 중요한 측면인 **순열 기능 중요성** 이라는 기술도 적용합니다. 내장 모델은 특정 기능이 최종 예측에 미치는 영향에 대한 통찰력이 거의 또는 전혀 없습니다. 기능 중요도 계산기는 사용자 지정 알고리즘을 사용하여 특정 모델의 결과에 대한 개별 기능의 영향을 계산합니다. 기능 중요도는 +1에서 -1 사이로 정규화됩니다. 부정적인 영향은 해당 기능이 결과에 반 직관적인 영향을 미치므로 모델에서 제거해야 함을 의미합니다. 긍정적인 영향은 기능이 예측에 크게 기여하고 있음을 나타냅니다. 이러한 값은 서로 다른 메트릭이므로 상관 계수가 아닙니다. 자세한 내용은 [순열 기능 중요성](https://docs.microsoft.com/azure/machine-learning/studio-module-reference/permutation-feature-importance)을 참조하세요.
+또한 모델 최적화의 중요한 측면인 **순열 기능 중요성** 이라는 기술도 적용합니다. 내장 모델은 특정 기능이 최종 예측에 미치는 영향에 대한 통찰력이 거의 또는 전혀 없습니다. 기능 중요도 계산기는 사용자 지정 알고리즘을 사용하여 특정 모델의 결과에 대한 개별 기능의 영향을 계산합니다. 기능 중요도는 +1에서 -1 사이로 정규화됩니다. 부정적인 영향은 해당 기능이 결과에 반 직관적인 영향을 미치므로 모델에서 제거해야 함을 의미합니다. 긍정적인 영향은 기능이 예측에 크게 기여하고 있음을 나타냅니다. 이러한 값은 서로 다른 메트릭이므로 상관 계수가 아닙니다. 자세한 내용은 [순열 기능 중요성](/azure/machine-learning/studio-module-reference/permutation-feature-importance)을 참조하세요.
 
 전체 [이탈 실험은 Azure AI Gallery에서 사용할 수 있습니다](https://gallery.azure.ai/Experiment/Hotel-Churn-Predictive-Exp).
 
@@ -168,7 +168,7 @@ CLTV를 예측하는 것은 예측 값이 양의 값을 갖는 연속 변수이�
 
 ## <a name="integrate-custom-models"></a>사용자 지정 모델 통합
 
-Customer Insights에서 이러한 예측을 사용하려면 고객 ID와 함께 예측을 **내보내야** 합니다. 원본 데이터를 내보내는 [동일한 Azure Blob 저장소 위치로 내보냅니다](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-from-blobs). 예측 웹 서비스를 정기적으로 실행하고 점수가 업데이트되도록 예약할 수 있습니다.
+Customer Insights에서 이러한 예측을 사용하려면 고객 ID와 함께 예측을 **내보내야** 합니다. 원본 데이터를 내보내는 [동일한 Azure Blob 저장소 위치로 내보냅니다](/azure/storage/common/storage-import-export-data-from-blobs). 예측 웹 서비스를 정기적으로 실행하고 점수가 업데이트되도록 예약할 수 있습니다.
 
 사용자 지정 모델에서 생성된 데이터를 사용하여 고객 데이터를 더욱 보강할 수 있습니다. 자세한 내용은 [사용자 지정 기계 학습 모델](custom-models.md)을 참조하세요.
 

@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
-ms.author: mhart
-ms.reviewer: m-hartmann
+ms.author: naravill
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c166015b92596da0c6097e3d25e89579a5186ce0
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267914"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597427"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Azure Machine Learning 기반 모델 사용
 
@@ -29,9 +29,9 @@ Dynamics 365 Customer Insights의 통합 데이터는 추가 비즈니스 인사
 
 ## <a name="set-up-azure-machine-learning-workspace"></a>Azure Machine Learning 작업 영역 설정
 
-1. 작업 영역을 만드는 다양한 옵션은 [Azure Machine Learning 작업 영역 만들기](https://docs.microsoft.com/azure/machine-learning/concept-workspace#-create-a-workspace)를 참조하세요. 최상의 성능을 위해 지리적으로 Customer Insights 환경에 가장 가까운 Azure 지역에 작업 영역을 만듭니다.
+1. 작업 영역을 만드는 다양한 옵션은 [Azure Machine Learning 작업 영역 만들기](/azure/machine-learning/concept-workspace#-create-a-workspace)를 참조하세요. 최상의 성능을 위해 지리적으로 Customer Insights 환경에 가장 가까운 Azure 지역에 작업 영역을 만듭니다.
 
-1. [Azure Machine Learning Studio](https://ml.azure.com/)를 통해 작업 영역에 액세스합니다. 작업 영역과 [상호 작용하는 방법](https://docs.microsoft.com/azure/machine-learning/concept-workspace#tools-for-workspace-interaction)에는 여러 가지가 있습니다.
+1. [Azure Machine Learning Studio](https://ml.azure.com/)를 통해 작업 영역에 액세스합니다. 작업 영역과 [상호 작용하는 방법](/azure/machine-learning/concept-workspace#tools-for-workspace-interaction)에는 여러 가지가 있습니다.
 
 ## <a name="work-with-azure-machine-learning-designer"></a>Azure Machine Learning 디자이너로 작업
 
@@ -39,13 +39,13 @@ Azure Machine Learning 디자이너는 Machine Learning Studio(클래식)와 유
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>Azure Machine Learning SDK로 작업
 
-데이터 과학자 및 AI 개발자는 [Azure Machine Learning SDK](https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true)를 사용하여 기계 학습 워크플로를 빌드합니다. 현재 SDK를 사용하여 훈련된 모델은 Customer Insights와 직접 통합할 수 없습니다. Customer Insights와 통합하려면 해당 모델을 사용하는 배치 추론 파이프라인이 필요합니다.
+데이터 과학자 및 AI 개발자는 [Azure Machine Learning SDK](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py)를 사용하여 기계 학습 워크플로를 빌드합니다. 현재 SDK를 사용하여 훈련된 모델은 Customer Insights와 직접 통합할 수 없습니다. Customer Insights와 통합하려면 해당 모델을 사용하는 배치 추론 파이프라인이 필요합니다.
 
 ## <a name="batch-pipeline-requirements-to-integrate-with-customer-insights"></a>Customer Insights와 통합하기 위한 배치 파이프라인 요구 사항
 
 ### <a name="dataset-configuration"></a>데이터 집합 구성
 
-Customer Insights에서 배치 추론 파이프라인으로 엔터티 데이터를 사용하려면 데이터 집합을 만들어야 합니다. 이러한 데이터 집합은 작업 영역에 등록해야 합니다. 현재는 .csv 형식의 [테이블 형식 데이터 집합](https://docs.microsoft.com/azure/machine-learning/how-to-create-register-datasets#tabulardataset)만 지원합니다. 항목 데이터에 해당하는 데이터 집합은 파이프라인 매개 변수로 매개 변수화되어야 합니다.
+Customer Insights에서 배치 추론 파이프라인으로 엔터티 데이터를 사용하려면 데이터 집합을 만들어야 합니다. 이러한 데이터 집합은 작업 영역에 등록해야 합니다. 현재는 .csv 형식의 [테이블 형식 데이터 집합](/azure/machine-learning/how-to-create-register-datasets#tabulardataset)만 지원합니다. 항목 데이터에 해당하는 데이터 집합은 파이프라인 매개 변수로 매개 변수화되어야 합니다.
    
 * 디자이너의 데이터 집합 매개 변수
    
@@ -76,7 +76,7 @@ Customer Insights에서 배치 추론 파이프라인으로 엔터티 데이터�
 
 ### <a name="import-pipeline-data-into-customer-insights"></a>Customer Insights로 파이프라인 데이터 가져오기
 
-* 디자이너는 파이프라인의 출력을 Azure Storage로 내보낼 수 있는 [데이터 내보내기 모듈](https://docs.microsoft.com/azure/machine-learning/algorithm-module-reference/export-data)을 제공합니다. 현재 모듈은 데이터 저장소 유형 **Azure Blob Storage** 를 사용하고 **데이터 저장소** 및 상대 **경로** 를 매개 변수화해야 합니다. Customer Insights는 파이프라인 실행 중에 제품에 액세스할 수 있는 데이터 저장소 및 경로를 사용하여 이러한 매개 변수를 모두 재정의합니다.
+* 디자이너는 파이프라인의 출력을 Azure Storage로 내보낼 수 있는 [데이터 내보내기 모듈](/azure/machine-learning/algorithm-module-reference/export-data)을 제공합니다. 현재 모듈은 데이터 저장소 유형 **Azure Blob Storage** 를 사용하고 **데이터 저장소** 및 상대 **경로** 를 매개 변수화해야 합니다. Customer Insights는 파이프라인 실행 중에 제품에 액세스할 수 있는 데이터 저장소 및 경로를 사용하여 이러한 매개 변수를 모두 재정의합니다.
    > [!div class="mx-imgBorder"]
    > ![데이터 내보내기 모듈 구성](media/intelligence-designer-importdata.png "데이터 내보내기 모듈 구성")
    

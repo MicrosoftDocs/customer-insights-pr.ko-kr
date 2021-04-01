@@ -2,19 +2,19 @@
 title: Power Apps 커넥터
 description: Power Apps 및 Power Automate와 연결합니다.
 ms.date: 01/19/2021
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 5a8bbb9a09218d54228589d43c21c8894680b56e
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3fa91553fd50a22ab62b5a2b1e3f13b9483776a8
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268924"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598163"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Microsoft Power Apps 커넥터(미리 보기)
 
@@ -22,9 +22,9 @@ ms.locfileid: "5268924"
 
 ## <a name="connect-power-apps-and-dynamics-365-customer-insights"></a>Power Apps 및 Dynamics 365 Customer Insights 연결
 
-Customer Insights는 [Power Apps에서 사용 가능한 많은 데이터 소스](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-data-sources) 중 하나입니다.
+Customer Insights는 [Power Apps에서 사용 가능한 많은 데이터 소스](/powerapps/maker/canvas-apps/working-with-data-sources) 중 하나입니다.
 
-[앱에 데이터 연결을 추가](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-data-connection)하는 방법을 알아보려면 Power Apps 설명서를 참조하십시오. 또한 [Power Apps가 위임을 사용하여 캔버스 앱에서 대규모 데이터 집합을 처리하는 방법](https://docs.microsoft.com/powerapps/maker/canvas-apps/delegation-overview)을 검토하는 것이 좋습니다.
+[앱에 데이터 연결을 추가](/powerapps/maker/canvas-apps/add-data-connection)하는 방법을 알아보려면 Power Apps 설명서를 참조하십시오. 또한 [Power Apps가 위임을 사용하여 캔버스 앱에서 대규모 데이터 집합을 처리하는 방법](/powerapps/maker/canvas-apps/delegation-overview)을 검토하는 것이 좋습니다.
 
 ## <a name="available-entities"></a>사용 가능한 엔터티
 
@@ -47,11 +47,11 @@ Power Apps 커넥터에서 **고객**, **통합 활동**, **세그먼트** 엔�
 
 - **통합 활동** 위임:이 엔티티에 대한 위임은 **ActivityId** 와 **고객 ID** 필드에서만 작동합니다.  
 
-- 위임에 대한 자세한 내용은 [Power Apps 위임 가능한 기능 및 작업](https://docs.microsoft.com/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps)을 참조하세요. 
+- 위임에 대한 자세한 내용은 [Power Apps 위임 가능한 기능 및 작업](/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps)을 참조하세요. 
 
 ## <a name="example-gallery-control"></a>갤러리 컨트롤 예
 
-예를 들어, 고객 프로필을 [갤러리 컨트롤](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-gallery)에 추가합니다.
+예를 들어, 고객 프로필을 [갤러리 컨트롤](/powerapps/maker/canvas-apps/add-gallery)에 추가합니다.
 
 1. 빌드 중인 앱에 **갤러리** 컨트롤을 추가합니다.
 

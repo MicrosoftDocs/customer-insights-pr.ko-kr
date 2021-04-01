@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267730"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596507"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>대상 그룹 인사이트의 Azure 서비스 보안 주체를 사용하여 Azure Data Lake Storage Gen2 계정에 연결
 
@@ -23,7 +23,7 @@ Azure 서비스를 사용하는 자동화 도구에는 항상 제한된 권한�
 서비스 주체를 사용하여 [Common Data Model 폴더를 데이터 원본으로 안전하게 추가 또는 편집](connect-common-data-model.md)하거나 [새 환경을 만들거나 기존 환경을 업데이트](manage-environments.md#create-an-environment-in-an-existing-organization)할 수 있습니다.
 
 > [!IMPORTANT]
-> - 서비스 주체를 사용하려는 Azure Data Lake Gen2 스토리지 계정에는 [계층적 네임 스페이스(HNS)가 활성화](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace)되어 있어야 합니다.
+> - 서비스 주체를 사용하려는 Azure Data Lake Gen2 스토리지 계정에는 [계층적 네임 스페이스(HNS)가 활성화](/azure/storage/blobs/data-lake-storage-namespace)되어 있어야 합니다.
 > - 서비스 주체를 만들려면 Azure 구독에 대한 관리자 권한이 필요합니다.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>대상 그룹 인사이트에 대한 Azure 서비스 주체 만들기
@@ -48,7 +48,7 @@ Azure 서비스를 사용하는 자동화 도구에는 항상 제한된 권한�
 
 ### <a name="create-a-new-service-principal"></a>새 서비스 주체 만들기
 
-1. 최신 버전의 **그래프용 Azure Active Directory PowerShell** 을 설치합니다. 자세한 내용은 [그래프용 Azure Active Directory PowerShell 설치](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2)를 참조하세요.
+1. 최신 버전의 **그래프용 Azure Active Directory PowerShell** 을 설치합니다. 자세한 내용은 [그래프용 Azure Active Directory PowerShell 설치](/powershell/azure/active-directory/install-adv2)를 참조하세요.
    - PC에서 키보드의 Windows 키를 선택하고 **Windows PowerShell** 과 **관리자 권한으로 실행** 를 검색합니다.
    
    - 열리는 PowerShell 창에 `Install-Module AzureAD`를 입력합니다.

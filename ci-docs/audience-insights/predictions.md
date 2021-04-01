@@ -5,16 +5,16 @@ ms.date: 05/05/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: zacook
+author: zacookmsft
+ms.author: zacook
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 577232c7e901dfd54a195c3e9cfac5d1f0f866e6
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3342328b9eead9bdcb8b41f119a1d0a5823001c8
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268280"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595909"
 ---
 # <a name="complete-your-partial-data-with-predictions"></a>예측으로 부분 데이터 완성
 
@@ -31,7 +31,7 @@ ms.locfileid: "5268280"
 
 조직에서 예측 기능을 사용하기 전에 다음 전제 조건이 충족되어야 합니다.
 
-1. 조직에 [Common Data Service에 설정된](https://docs.microsoft.com/ai-builder/build-model#prerequisites) 인스턴스가 있으며 Customer Insights와 동일한 조직에 있습니다.
+1. 조직에 [Common Data Service에 설정된](/ai-builder/build-model#prerequisites) 인스턴스가 있으며 Customer Insights와 동일한 조직에 있습니다.
 
 2. 환경이 Common Data Service 인스턴스에 연결됩니다.
 
@@ -120,7 +120,7 @@ ms.locfileid: "5268280"
 
 4. **AI Builder에서 사용자 지정** 을 선택합니다.
 
-5. AI Builder에서 모델을 업데이트합니다. [AI Builder에서 모델 관리에 대해 자세히 알아보십시오](https://docs.microsoft.com/ai-builder/manage-model#retrain-and-republish-existing-models).
+5. AI Builder에서 모델을 업데이트합니다. [AI Builder에서 모델 관리에 대해 자세히 알아보십시오](/ai-builder/manage-model#retrain-and-republish-existing-models).
 
 다음 예측에서는 생성한 업데이트된 모델을 사용합니다.
 

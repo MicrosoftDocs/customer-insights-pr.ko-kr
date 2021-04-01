@@ -2,23 +2,23 @@
 title: 파워 쿼리 커넥터를 통해 데이터 수집
 description: 파워 쿼리를 기반으로 하는 데이터 원본용 커넥터.
 ms.date: 09/29/2020
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: b9a1b30e37c3792aa7bdfcfc177da9e8a32c324d
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267778"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596921"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>파워 쿼리 데이터 원본에 연결
 
-파워 쿼리는 데이터를 수집하기위한 광범위한 커넥터 세트를 제공합니다. 이러한 커넥터의 대부분은 Dynamics 365 Customer Insights의 지원을 받습니다. 파워 쿼리 커넥터를 기반으로 데이터 소스를 추가하는 것은 일반적으로 다음 섹션에 설명된 단계를 따릅니다. 그러나 사용하는 커넥터에 따라 다른 정보가 필요합니다. 자세한 내용은 개별 커넥터에 대한 [파워 쿼리 커넥터 참조 ](https://docs.microsoft.com/power-query/connectors/) 설명서를 참조하십시오.
+파워 쿼리는 데이터를 수집하기위한 광범위한 커넥터 세트를 제공합니다. 이러한 커넥터의 대부분은 Dynamics 365 Customer Insights의 지원을 받습니다. 파워 쿼리 커넥터를 기반으로 데이터 소스를 추가하는 것은 일반적으로 다음 섹션에 설명된 단계를 따릅니다. 그러나 사용하는 커넥터에 따라 다른 정보가 필요합니다. 자세한 내용은 개별 커넥터에 대한 [파워 쿼리 커넥터 참조 ](/power-query/connectors/) 설명서를 참조하십시오.
 
 ## <a name="create-a-new-data-source"></a>새 데이터 원본 만들기
 
@@ -44,7 +44,7 @@ ms.locfileid: "5267778"
    > [!div class="mx-imgBorder"]
    > ![대화 쿼리 편집](media/data-manager-configure-edit-queries.png "대화 쿼리 편집")
 
-1. 데이터를 변환할 수도 있습니다. 편집하거나 변환할 엔터티를 선택합니다. 파워 쿼리 창의 옵션을 사용하여 변형을 적용합니다. 각 변환은 **적용 단계** 아래에 나열됩니다. 파워 쿼리는 사전 빌드된 다양한 변환 옵션을 제공합니다. 자세한 내용은 [파워 쿼리 변환](https://docs.microsoft.com/power-query/power-query-what-is-power-query#transformations)을 참조하세요.
+1. 데이터를 변환할 수도 있습니다. 편집하거나 변환할 엔터티를 선택합니다. 파워 쿼리 창의 옵션을 사용하여 변형을 적용합니다. 각 변환은 **적용 단계** 아래에 나열됩니다. 파워 쿼리는 사전 빌드된 다양한 변환 옵션을 제공합니다. 자세한 내용은 [파워 쿼리 변환](/power-query/power-query-what-is-power-query#transformations)을 참조하세요.
 
 1. **쿼리 편집** 대화 상자에서 **데이터 가져 오기** 를 선택하여 데이터 원본에 엔터티를 추가할 수 있습니다.
 
@@ -59,7 +59,7 @@ ms.locfileid: "5267778"
 
 ## <a name="available-power-query-data-sources"></a>사용 가능한 파워 쿼리 데이터 소스
 
-Customer Insights로 데이터를 가져 오기 위해 선택할 수 있는 [파워 쿼리 커넥터 참조](https://docs.microsoft.com/power-query/connectors/) 최신 커넥터 목록을 참조하십시오. 
+Customer Insights로 데이터를 가져 오기 위해 선택할 수 있는 [파워 쿼리 커넥터 참조](/power-query/connectors/) 최신 커넥터 목록을 참조하십시오. 
 
 **Customer Insights(데이터 흐름)** 열에 확인 표시가 있는 커넥터는 파워 쿼리를 기반으로 새 데이터 소스를 만드는 데 사용할 수 있습니다. 특정 커넥터의 문서를 검토하여 전제 조건, 제한 사항 및 기타 세부 사항에 대해 자세히 알아보십시오.
 

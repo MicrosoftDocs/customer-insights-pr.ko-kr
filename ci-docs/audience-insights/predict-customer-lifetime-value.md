@@ -2,19 +2,19 @@
 title: 고객 평생 가치(CLV) 예측
 description: 향후 활성 고객의 잠재적인 수익을 예측합니다.
 ms.date: 02/05/2021
-ms.reviewer: wameng
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: m-hartmann
-ms.author: mhart
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 363a46c81b5bb737d274998f9a699dc662e38d7c
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 835a9f3371a8c1b1a10d5c6901c03e1df5379d3d
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268602"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595816"
 ---
 # <a name="customer-lifetime-value-clv-prediction-preview"></a>고객 평생 가치(CLV) 예측(미리 보기)
 
@@ -194,11 +194,11 @@ CLV 모델을 구성하고 실행하는 데 많은 시간이 걸리지 않으므
   
   - **가치 높은 고객 예측 성공률**
 
-  기준 모델과 비교하여 AI 모델을 사용한 가치 높은 고객 예측의 차이점을 확인하십시오. 예를 들어 84%의 성공률은 교육 데이터의 모든 가치 높은 고객 중에서 AI 모델이 84%를 정확하게 포착할 수 있음을 의미합니다. 그런 다음 이 성공률을 기준 모델의 성공률과 비교하여 상대적 변화를 보고합니다. 이 값은 모델에 등급을 지정하는 데 사용됩니다.
+    기준 모델과 비교하여 AI 모델을 사용한 가치 높은 고객 예측의 차이점을 확인하십시오. 예를 들어 84%의 성공률은 교육 데이터의 모든 가치 높은 고객 중에서 AI 모델이 84%를 정확하게 포착할 수 있음을 의미합니다. 그런 다음 이 성공률을 기준 모델의 성공률과 비교하여 상대적 변화를 보고합니다. 이 값은 모델에 등급을 지정하는 데 사용됩니다.
 
   - **오류 메트릭**
     
-  또 다른 메트릭을 사용하면 미래 가치를 예측할 때 오류 측면에서 모델의 전체 성능을 검토할 수 있습니다. 이 오류를 평가하기 위해 전체 평균 제곱근 오차(RMSE) 메트릭을 사용합니다. RMSE는 정량적 데이터를 예측할 때 모델의 오류를 측정하는 표준 방법입니다. AI 모델의 RMSE는 기준 모델의 RMSE와 비교되고 상대적 차이가 보고됩니다.
+    또 다른 메트릭을 사용하면 미래 가치를 예측할 때 오류 측면에서 모델의 전체 성능을 검토할 수 있습니다. 이 오류를 평가하기 위해 전체 평균 제곱근 오차(RMSE) 메트릭을 사용합니다. RMSE는 정량적 데이터를 예측할 때 모델의 오류를 측정하는 표준 방법입니다. AI 모델의 RMSE는 기준 모델의 RMSE와 비교되고 상대적 차이가 보고됩니다.
 
   AI 모델은 고객이 비즈니스에 제공하는 가치에 따라 정확한 고객 순위를 우선으로 합니다. 따라서 가치 높은 고객 예측의 성공률만이 최종 모델 등급을 도출하는 데 사용됩니다. RMSE 메트릭은 이상값에 민감합니다. 매우 높은 구매 값을 가진 고객 비율이 적은 시나리오에서는 전체 RMSE 메트릭이 모델 성능에 대한 전체 그림을 제공하지 못할 수 있습니다.   
 

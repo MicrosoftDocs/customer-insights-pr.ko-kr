@@ -2,19 +2,19 @@
 title: SFTP 사용자 지정 가져오기로 보강
 description: SFTP 사용자 지정 가져오기 보강에 대한 일반 정보입니다.
 ms.date: 11/18/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: jdahl
-ms.author: mhart
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f25dcc08d96d36507e47af0d7b184003ae095819
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: d9e095ef793cbd25415864f76a541dce68fafe47
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269614"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595863"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>사용자 지정 데이터로 고객 프로필 보강(미리 보기)
 
@@ -50,7 +50,7 @@ SFTP 사용자 지정 가져오기를 구성하려면 다음 전제 조건이 �
 
 ## <a name="defining-field-mappings"></a>필드 매핑 정의 
 
-SFTP 서버에서 가져올 파일이 포함된 디렉터리에는 *model.json* 파일도 포함되어 있어야 합니다. 이 파일은 데이터를 가져오는 데 사용할 스키마를 정의합니다. 스키마에서 [Common Data Model](https://docs.microsoft.com/common-data-model/)을 사용하여 필드 매핑을 지정해야 합니다. model.json 파일의 간단한 예는 다음과 같습니다.
+SFTP 서버에서 가져올 파일이 포함된 디렉터리에는 *model.json* 파일도 포함되어 있어야 합니다. 이 파일은 데이터를 가져오는 데 사용할 스키마를 정의합니다. 스키마에서 [Common Data Model](/common-data-model/)을 사용하여 필드 매핑을 지정해야 합니다. model.json 파일의 간단한 예는 다음과 같습니다.
 
 ```
 {

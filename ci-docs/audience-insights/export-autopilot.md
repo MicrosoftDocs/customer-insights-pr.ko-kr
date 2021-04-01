@@ -2,19 +2,19 @@
 title: Autopilot로 Customer Insights 데이터 내보내기
 description: Autopilot 연결을 구성하는 방법을 알아보세요.
 ms.date: 12/08/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: pkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 33a8cd1ae4a77ce2248bc2805d25687c9a2c2732
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 6d039c4afd84eaad942d214d4e6fb8ef7b1ec72a
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269246"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596139"
 ---
 # <a name="connector-for-autopilot-preview"></a>Autopilot용 커넥터(미리 보기)
 

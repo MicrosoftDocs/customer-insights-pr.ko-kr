@@ -2,19 +2,19 @@
 title: 엔터티 및 데이터 집합
 description: 엔터티 페이지에서 데이터를 봅니다.
 ms.date: 04/16/2020
-ms.reviewer: mukeshpo
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e71c69a6207147d8cd65363d51a5fa6bbf896151
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 383523bad5105e08e57758838e90a49e805b5f9b
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269384"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596415"
 ---
 # <a name="entities-in-audience-insights"></a>대상 그룹 인사이트의 엔터티
 

@@ -2,19 +2,19 @@
 title: Facebook Ads Manager로 Customer Insights 데이터 내보내기
 description: Facebook 광고 관리자에 대한 연결을 구성하는 방법 알아보기.
 ms.date: 06/05/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c839f9dc7e403412c0e3d936392d45a43bc63545
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3e2b52fe743563e4bf61d870cbf1718e6c752a67
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269982"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596691"
 ---
 # <a name="connector-for-facebook-ads-manager-preview"></a>Facebook 광고 관리자용 커넥터(미리 보기)
 

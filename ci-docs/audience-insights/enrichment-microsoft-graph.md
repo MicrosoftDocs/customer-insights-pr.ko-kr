@@ -2,19 +2,19 @@
 title: Microsoft Graph로 고객 프로필 보강
 description: Microsoft Graph의 독점 데이터를 사용하여 의 브랜드 및 관심 관계로 고객 데이터를 보강합니다.
 ms.date: 12/10/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: kishorem-MS
+ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 2c95369c778f592bc1460799aca0fa8cff813d68
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: aa46dac4f9c0d27881371877b14a92a6725710da
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269338"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596461"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>브랜드 및 관심 관계로 풍부한 고객 프로필 강화(미리 보기)
 
@@ -33,7 +33,7 @@ Microsoft Graph의 독점 데이터를 사용하여 의 브랜드 및 관심 관
 
 Microsoft Graph의 온라인 검색 데이터를 사용하여 다양한 인구 통계 세그먼트(연령, 성별 또는 위치로 정의)에서 브랜드 및 관심 분야에 대한 친화성을 찾습니다. 브랜드나 관심 분야에 대한 온라인 검색 양에 따라 인구 통계학적 세그먼트가 다른 세그먼트와 비교하여 해당 브랜드나 관심 분야에 얼마나 많은 유사성이 있는지가 결정됩니다.
 
-[Microsoft Graph에 대해 자세히 알아보십시오](https://docs.microsoft.com/graph/overview).
+[Microsoft Graph에 대해 자세히 알아보십시오](/graph/overview).
 
 ## <a name="affinity-level-and-score"></a>선호도 수준 및 점수
 

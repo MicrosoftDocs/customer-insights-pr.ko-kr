@@ -1,7 +1,7 @@
 ---
 title: 신규 및 향후 기능
 description: 새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.
-ms.date: 02/02/2021
+ms.date: 03/08/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,18 +9,18 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 9183c8af4fb9f9f08ac63d8d0cd37c6868bba310
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 96c0b871eeaaf0976e5c718f37f883f4410977dc
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270440"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598444"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트의 새로운 기능
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-최신 업데이트를 발표하게 된 것을 기쁘게 생각합니다! 이 문서는 공개 미리 보기 기능, 일반 가용성 향상 및 기능 업데이트를 요약합니다. 장기적인 기능 계획을 보려면 [Dynamics 365 및 Power Platform 릴리스 계획](https://docs.microsoft.com/dynamics365/release-plans/)을 살펴보십시오.
+최신 업데이트를 발표하게 된 것을 기쁘게 생각합니다! 이 문서는 공개 미리 보기 기능, 일반 가용성 향상 및 기능 업데이트를 요약합니다. 장기적인 기능 계획을 보려면 [Dynamics 365 및 Power Platform 릴리스 계획](/dynamics365/release-plans/)을 살펴보십시오.
 
 다음 비디오를 시청하여 지난 6개월 동안 계획된 기능에 대해 자세히 알아볼 수도 있습니다.
 
@@ -30,6 +30,40 @@ ms.locfileid: "5270440"
 
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하십시오.
+
+## <a name="february-2021-updates"></a>2021년 2월 업데이트
+
+2021년 2월 업데이트에는 여러 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+#### <a name="extensibility"></a>확장성
+
+- **AdRoll로 세그먼트 내보내기**
+
+  AdRoll을 포함하도록 내보내기 대상을 확장했습니다. 이제 Customer Insights에서 AdRoll 대상 그룹으로 세그먼트를 내보내고 이를 광고의 기준으로 사용할 수 있습니다. 자세한 내용은 [AdRoll용 커네터](export-adroll.md)를 참조하십시오.
+
+#### <a name="segments"></a>세그먼트
+ 
+- **중복 항목 만들기**
+  
+  기존 세그먼트를 기반으로 새 세그먼트를 만들려면 이제 세그먼트를 복제하고 복제된 세그먼트를 편집하여 더 구체화할 수 있습니다. 
+
+- **세그먼트에 추가 속성 추가**
+
+  이제 이러한 속성이 고객 프로필의 일부가 아닌 경우에도 세그먼트 출력에 특성을 포함할 수 있습니다. 예를 들어, 고객 엔터티와M:1 관계가 있는 구독 엔터티의 일부인 경우에도 세그먼트에 구독 ID를 포함합니다. 특성이 고객 엔터티와 관련된 엔터티에 속하는 한 이제 이러한 특성을 포함할 수 있습니다.  
+
+#### <a name="predictions"></a>예측
+
+- **예측 제품 추천 만들기**
+
+  고객이 구매에 관심을 갖는 것이 무엇인지 이해하는 것은 개인 설정 및 참여를 통해 비즈니스 수익을 개선하고 고객 충성도를 구축하는 데 필요한 첫 번째 단계 중 하나입니다. 고객의 관심사에 맞지 않는 제품에 대한 추천을 제공하면 고객과 비즈니스 사이에 단절감이 생길 수 있으며 궁극적으로 고객의 전반적인 잠재적 수익과 경험을 제한할 수 있습니다. 
+
+  자체 데이터를 사용하여 이제 고객이 미래에 구매할 가능성이 있는 제품에 대한 예측을 생성할 수 있습니다. 자세한 내용은 [제품 추천 예측](predict-product-recommendation.md)을 참조하십시오.
+
+#### <a name="system-administration"></a>시스템 관리
+
+- **복사 환경은 더 많은 유형의 데이터 원본을 지원함**
+
+  관리자는 동일한 조직의 새 환경에 환경 구성을 복사할 수 있습니다. 이 기능은 데이터 원본을 기반으로 하는 Common Data Service 데이터 레이크 또는 Common Data Model 폴더가 사용되는 사례에 대해 복사 환경 기능을 확장합니다.
 
 ## <a name="january-2021-updates"></a>2021년 1월 업데이트
 
@@ -455,7 +489,7 @@ Experian의 인구 통계 보강이 이제 미리 보기로 제공됩니다. Exp
 
 ### <a name="new-and-updated-features-in-april-2020"></a>2020년 4월의 새로운 기능 및 업데이트된 기능
 
-#### <a name="activities"></a>활동 
+#### <a name="activities"></a>활동
 
 - **활동 엔터티를 표준 활동 유형에 매핑**
   

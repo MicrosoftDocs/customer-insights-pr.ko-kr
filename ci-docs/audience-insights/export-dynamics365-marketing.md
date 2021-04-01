@@ -2,25 +2,25 @@
 title: Dynamics 365 Marketing에 Customer Insights 데이터 내보내기
 description: Dynamics 365 Marketing에 대한 연결을 구성하는 방법에 대해 알아봅니다.
 ms.date: 02/01/2021
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a06920b8ff25d7102ccd14ae68cf42fe91fa1ee6
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 892aff643872f11307a2c43e5670edab657d7848
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269062"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597611"
 ---
 # <a name="connector-for-dynamics-365-marketing-preview"></a>Dynamics 365 Marketing용 커넥터(미리 보기)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-[세그먼트](segments.md)를 사용하여 캠페인을 생성하고 Dynamics 365 Marketing의 특정 고객 그룹에게 연락합니다. 자세한 내용은 [Dynamics 365 Marketing으로 Dynamics 365 Customer Insights에서 세그먼트 사용](https://docs.microsoft.com/dynamics365/marketing/customer-insights-segments)을 참조하십시오.
+[세그먼트](segments.md)를 사용하여 캠페인을 생성하고 Dynamics 365 Marketing의 특정 고객 그룹에게 연락합니다. 자세한 내용은 [Dynamics 365 Marketing으로 Dynamics 365 Customer Insights에서 세그먼트 사용](/dynamics365/marketing/customer-insights-segments)을 참조하십시오.
 
 ## <a name="prerequisite"></a>필수 구성 요소
 
