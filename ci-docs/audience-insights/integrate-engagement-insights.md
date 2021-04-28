@@ -9,12 +9,12 @@ author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 14ebff30d3ec7fc52dca6f86136309a3f454fa27
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 9a4cb77bb4c6ef0d88b3f00802f66baab5520a07
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597473"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896427"
 ---
 # <a name="integrate-web-data-from-engagement-insights-with-audience-insights"></a>참여 인사이트의 웹 데이터를 대상 그룹 인사이트와 통합
 
@@ -46,7 +46,7 @@ ms.locfileid: "5597473"
     - Signal.Action.Name-활동 세부 정보 표시
     - Signal.User.Id-고객 ID로 매핑하는 데 사용
     - Signal.View.Uri-세그먼트 또는 측정값에 대한 기준으로 웹 주소로 사용됨
-    - Signal.Export.Id-이벤트의 기본 키로 사용 <!-- system generated, do we need to list?-->
+    - Signal.Export.Id-이벤트의 기본 키로 사용
     - Signal.Timestamp-활동의 날짜와 시간을 결정
 
 사용 사례에 중요한 이벤트 및 페이지에 초점을 맞추려면 필터를 선택하십시오. 이 예에서는 "이메일 프로모션" 작업 이름을 사용합니다.

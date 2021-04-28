@@ -1,7 +1,7 @@
 ---
 title: DotDigital 광고로 Customer Insights 데이터 내보내기
-description: DotDigital 연결을 구성하는 방법을 알아보세요.
-ms.date: 11/14/2020
+description: 연결을 구성하고 DotDigital로 내보내는 방법을 알아봅니다.
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,33 +9,40 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 51a28bdf0de34f0555d8ad7e3d13b2ef8911d417
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 235bcdfa4a7c4c1a382778bd4f66c1a9f5b7beb1
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598025"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5759967"
 ---
-# <a name="connector-for-dotdigital-preview"></a>DotDigital용 커넥터(미리 보기)
+# <a name="export-segment-lists-to-dotdigital-preview"></a>DotDigital로 세그먼트 목록 내보내기(프리뷰)
 
 통합 고객 프로필의 세그먼트를 DotDigital 주소록으로 내보내고 이를 캠페인, 이메일 마케팅에 사용하고 DotDigital로 고객 세그먼트를 구축합니다. 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites-for-a-connection"></a>연결을 위한 전제 조건
 
 -   [DotDigital 계정](https://dotdigital.com/) 및 해당 관리자 자격 증명이 있어야 합니다.
 -   DotDigital에 기존 주소록과 해당 ID가 있습니다. ID는 주소록을 선택하여 열 때 URL에서 찾을 수 있습니다. 자세한 내용은 [DotDigital 주소록](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)을 참조하세요.
 -   대상 그룹 인사이트에 [구성된 세그먼트](segments.md)가 있어야 합니다.
 -   내보낸 세그먼트의 통합 고객 프로필에는 이메일 주소를 나타내는 필드가 포함됩니다.
 
-## <a name="connect-to-dotdigital"></a>DotDigital에 연결
+## <a name="known-limitations"></a>알려진 제한 사항
 
-1. **관리자** > **내보내기 대상** 으로 이동합니다.
+- DotDigital로 내보낼 때마다 프로필이 최대 100만 개입니다.
+- DotDigital로 내보내기는 세그먼트로 제한됩니다.
+- 총 100만 개의 프로필이 있는 세그먼트를 내보내는 것은 공급자측의 제한으로 인해 최대 3시간이 걸릴 수 있습니다. 
+- DotDigital로 내보낼 수 있는 프로필 수는 DotDigital와의 계약에 따라 다르며 제한됩니다.
 
-1. **DotDigital** 에서 **설정** 을 선택합니다.
+## <a name="set-up-connection-to-dotdigital"></a>DotDigital에 연결을 설정합니다.
 
-1. **표시 이름** 필드에서 내보내기 대상에 인식할 수 있는 이름을 지정합니다.
+1. **관리자** > **연결** 로 이동합니다.
 
-   :::image type="content" source="media/DotDigital_config.PNG" alt-text="DotDigital 내보내기를 위한 구성 창.":::
+1. **연결 추가** 와 **DotDigital** 을 선택하여 연결을 구성합니다.
+
+1. **표시 이름** 필드에서 연결에 인식할 수 있는 이름을 지정합니다. 이름 및 연결 유형은 이 연결을 설명합니다. 이 연결의 목적과 대상을 설명하는 이름을 선택하는 것이 좋습니다.
+
+1. 이 연결을 사용할 수 있는 사용자를 선택합니다. 아무 조치도 취하지 않으면 기본값은 관리자입니다. 자세한 내용은 [기여자가 내보내기에 연결을 사용하도록 허용](connections.md#allow-contributors-to-use-a-connection-for-exports)을 확인하세요.
 
 1. **DotDigital 사용자 이름 및 암호** 를 입력합니다.
 
@@ -47,9 +54,18 @@ ms.locfileid: "5598025"
 
 1. **내보내기 사용자로 사용자 본인 추가** 를 선택하고 Customer Insights 자격 증명을 제공합니다.
 
-1. **다음** 을 선택해 내보내기를 구성합니다.
+1. 연결을 완료하려면 **저장** 을 선택합니다. 
 
-## <a name="configure-the-connector"></a>커넥터 구성
+## <a name="configure-an-export"></a>내보내기 구성
+
+이 유형의 연결에 대한 액세스 권한이 있는 경우 이 내보내기를 구성할 수 있습니다. 자세한 내용은 [내보내기를 구성하는 데 필요한 권한](export-destinations.md#set-up-a-new-export)을 참조하세요.
+
+1. **데이터** > **내보내기** 로 이동합니다.
+
+1. **대상 추가** 를 선택하여 새 내보내기를 만듭니다.
+
+1. **내보내기 연결** 필드의 DotDigital 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 연결이 없는 것입니다.
+
 
 1. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. **이름**, **성**, **전체 이름**, **성별** 및 **우편 번호** 와 같은 다른 선택 필드에 대해 동일한 단계를 반복하세요.
 
@@ -57,16 +73,12 @@ ms.locfileid: "5598025"
 
 1. **저장** 을 선택합니다.
 
-## <a name="export-the-data"></a>데이터 내보내기
+내보내기를 저장해도 내보내기가 즉시 실행되지는 않습니다.
 
-[주문 시 데이터를 내보낼](export-destinations.md) 수 있습니다. 내보내기는 [예약된 새로 고침](system.md#schedule-tab)마다 실행됩니다. DotDigital에서는 이제 [DotDigital 주소록](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)에서 세그먼트를 찾을 수 있습니다.
+내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다. [주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다. 
+ 
+DotDigital에서는 이제 [DotDigital 주소록](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)에서 세그먼트를 찾을 수 있습니다.
 
-## <a name="known-limitations"></a>알려진 제한 사항
-
-- DotDigital로 내보낼 때마다 프로필이 최대 100만 개입니다.
-- DotDigital로 내보내기는 세그먼트로 제한됩니다.
-- 총 100만 개의 프로필이 있는 세그먼트를 내보내는 것은 공급자측의 제한으로 인해 최대 3시간이 걸릴 수 있습니다. 
-- DotDigital로 내보낼 수 있는 프로필 수는 DotDigital와의 계약에 따라 다르며 제한됩니다.
 
 ## <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수
 

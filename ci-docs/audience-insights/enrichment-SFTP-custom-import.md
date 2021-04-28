@@ -1,7 +1,7 @@
 ---
 title: SFTP 사용자 지정 가져오기로 보강
 description: SFTP 사용자 지정 가져오기 보강에 대한 일반 정보입니다.
-ms.date: 11/18/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,44 +9,63 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: d9e095ef793cbd25415864f76a541dce68fafe47
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: a2d450635c19432bdd88db74b61c17febdeb568d
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595863"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896289"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>사용자 지정 데이터로 고객 프로필 보강(미리 보기)
 
-SFTP(보안 파일 전송 프로토콜) 사용자 지정 가져오기를 사용하면 데이터 통합 프로세스를 거치지 않아도 되는 데이터를 가져올 수 있습니다. 데이터를 가져오는 유연하고 안전하며 쉬운 방법입니다. SFTP 사용자 지정 가져오기는 보강에 필요한 고객 프로필 데이터를 내보낼 수 있는 [SFTP 내보내기](export-sftp.md)와 함께 사용할 수 있습니다. 그런 다음 데이터를 처리하고 보강할 수 있으며 SFTP 사용자 지정 가져오기를 사용하여 보강된 데이터를 다시 Dynamics 365 Customer Insights의 대상 그룹 인사이트 기능으로 가져올 수 있습니다.
+SFTP(Secure File Transfer Protocol) 사용자 지정 가져오기를 사용하면 데이터 통합 프로세스를 거치지 않아도 되는 데이터를 가져올 수 있습니다. 데이터를 가져오는 유연하고 안전하며 쉬운 방법입니다. SFTP 사용자 지정 가져오기는 보강에 필요한 고객 프로필 데이터를 내보낼 수 있는 [SFTP 내보내기](export-sftp.md)와 함께 사용할 수 있습니다. 그런 다음 데이터를 처리하고 보강할 수 있으며 SFTP 사용자 지정 가져오기를 사용하여 보강된 데이터를 다시 Dynamics 365 Customer Insights의 대상 그룹 인사이트 기능으로 가져올 수 있습니다.
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
 SFTP 사용자 지정 가져오기를 구성하려면 다음 전제 조건이 충족되어야 합니다.
 
-- 가져올 데이터가 있는 SFTP 위치에 대한 사용자 자격 증명(사용자 이름 및 암호)이 있습니다.
-- STFP 호스트에 대한 URL 및 포트 번호(일반적으로 22)가 있습니다.
-- SFTP 호스트에서 가져올 파일의 파일 이름과 위치가 있습니다.
-- 가져올 데이터의 스키마를 지정하는 *model.json* 파일이 있습니다. 이 파일은 가져올 파일과 동일한 디렉터리에 있어야 합니다.
-- [관리자](permissions.md#administrator) 권한이 있어야 합니다.
+- SFTP 호스트에서 가져올 파일의 파일 이름과 위치(경로)가 있음.
+- 가져올 데이터의 [Common Data Model 스키마](/common-data-model/)를 지정하는 *model.json* 파일이 있음. 이 파일은 가져올 파일과 동일한 디렉터리에 있어야 합니다.
+- 관리자가 SFTP 연결을 이미 구성 *했거나* 귀하가 [관리자](permissions.md#administrator) 권한을 가지고 있음. 데이터를 가져올 SFTP 위치에 대한 사용자 자격 증명, URL 및 포트 번호.
 
-## <a name="configuration"></a>구성
+
+## <a name="configure-the-import"></a>가져오기 구성
 
 1. **데이터** > **보강** 으로 이동 후, **발견하기** 탭을 선택합니다.
 
-1. **SFTP 사용자 지정 가져오기 타일** 에서 **내 데이터 보강을 선택** 합니다.
+1. **SFTP 사용자 지정 가져오기 타일** 에서 **내 데이터 보강** 을 선택하고 **시작** 을 선택합니다.
 
-   > [!div class="mx-imgBorder"]
-   > ![사용자 지정 가져오기 타일](media/SFTP_Custom_Import_tile.png "사용자 지정 가져오기 타일")
+   :::image type="content" source="media/SFTP_Custom_Import_tile.png" alt-text="SFTP 사용자 지정 가져오기 타일":::
 
-1. **시작** 을 선택하고 SFTP 서버의 자격 증명과 주소를 제공합니다. 예를 들어 sftp://mysftpserver.com:22입니다.
+1. 드롭다운 목록에서 [연결](connections.md)을 선택하십시오. 사용 가능한 연결이 없으면 관리자에게 문의하십시오. 관리자인 경우 연결 추가를 선택하고 드롭다운에서 **연결 추가** 와 **SFTP 사용자 지정 가져오기** 를 선택하여 연결을 만들 수 있습니다.
 
-1. 루트 폴더에 없는 경우 데이터가 포함된 파일의 이름과 SFTP 서버에 있는 파일 경로를 입력합니다.
+1. **사용자 지정 가져오기 연결** 을 선택하여 선택한 연결을 확인합니다.
 
-1. **사용자 지정 가져오기에 연결** 을 선택하여 모든 입력을 확인합니다.
+1.  **다음** 을 선택하고 가져올 데이터 파일의 **파일 이름** 과 **경로** 를 입력합니다.
 
-   > [!div class="mx-imgBorder"]
-   > ![SFTP 사용자 지정 가져오기 구성 플라이아웃](media/SFTP_Custom_Import_Configuration_flyout.png "SFTP 사용자 지정 가져오기 구성 플라이아웃")
+    :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="데이터 위치 입력 시 스크린 샷.":::
+
+1. **다음** 을 선택하고 보강 이름과 출력 엔터티 이름을 제공합니다. 
+
+1. 선택 사항을 검토 한 후 **보강 저장** 을 선택합니다.
+
+## <a name="configure-the-connection-for-sftp-custom-import"></a>SFTP 사용자 지정 가져오기에 대한 연결 구성 
+
+연결을 구성하려면 관리자여야 합니다. 보강을 구성할 때 **연결 추가** 를 선택 *하거나* **관리자** > **연결** 로 이동하여 사용자 지정 가져오기 타일에서 **설정** 을 선택합니다.
+
+1. **표시 이름** 상자에 연결 이름을 입력합니다.
+
+1. 가져올 데이터가 있는 STFP 서버의 유효한 사용자 이름, 비밀번호 및 호스트 URL을 입력하십시오.
+
+1. **동의함** 확인란을 선택하여 **데이터 개인 정보 및 규정 준수** 에 대한 동의를 검토하고 제공합니다.
+
+1. **확인** 을 선택하여 구성을 확인합니다.
+
+1. 확인이 완료되면 **저장** 을 클릭하여 연결을 저장할 수 있습니다.
+
+> [!div class="mx-imgBorder"]
+   > ![Experian 연결 구성 페이지.](media/enrichment-SFTP-connection.png "Experian 연결 구성 페이지.")
+
 
 ## <a name="defining-field-mappings"></a>필드 매핑 정의 
 
@@ -105,8 +124,5 @@ SFTP 서버에서 가져올 파일이 포함된 디렉터리에는 *model.json* 
 ## <a name="next-steps"></a>다음 단계
 
 보강된 고객 데이터를 바탕으로 구축합니다. [세그먼트](segments.md), [측정값](measures.md)을 만들고 [데이터를 내보내](export-destinations.md) 고객에게 개인화된 경험을 제공합니다.
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

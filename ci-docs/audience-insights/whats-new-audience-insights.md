@@ -1,7 +1,7 @@
 ---
 title: 신규 및 향후 기능
 description: 새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.
-ms.date: 03/08/2021
+ms.date: 04/07/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 96c0b871eeaaf0976e5c718f37f883f4410977dc
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2159481f9355de738a7b457dcf0849a45c3e08db
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598444"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896243"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트의 새로운 기능
 
@@ -22,14 +22,51 @@ ms.locfileid: "5598444"
 
 최신 업데이트를 발표하게 된 것을 기쁘게 생각합니다! 이 문서는 공개 미리 보기 기능, 일반 가용성 향상 및 기능 업데이트를 요약합니다. 장기적인 기능 계획을 보려면 [Dynamics 365 및 Power Platform 릴리스 계획](/dynamics365/release-plans/)을 살펴보십시오.
 
-다음 비디오를 시청하여 지난 6개월 동안 계획된 기능에 대해 자세히 알아볼 수도 있습니다.
-
-> [!VIDEO https://www.youtube.com/embed/jQh-7pscH30]
-
 업데이트는 지역별로 배포합니다. 따라서 특정 지역은 다른 지역보다 먼저 기능을 볼 수 있습니다. 다르게 지정하지 않으면 별도의 조치를 취할 필요가 없으며 가동 중지 시간 없이 자동으로 앱을 업데이트합니다.
 
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하십시오.
+
+## <a name="march-2021-updates"></a>2021년 3월 업데이트
+
+2021년 3월 업데이트에는 여러 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="activities"></a>활동 
+
+- **활동 마법사 및 의미 유형** 활동 매핑 생성을 안내하고 단순화하기 위해 활동 매핑 경험을 개선하고 업데이트했습니다. 이 새로운 경험에서 사용자는 프로세스의 각 단계를 완료하는 데 도움이되는 안내식 경험을 얻게 됩니다. 활동 매핑 단계에서 사용자는 다양한 활동 유형 중에서 선택하는 것 외에도 *구독* 및/또는 *SalesOrderLine* 를 위한 데이터를 산업 표준 스키마에 의미론적으로 매핑할 수 있으며 이는 다운스트림 소비에 사용될 수 있습니다.    
+  자세한 내용은 [고객 활동](activities.md)을 참조하세요.
+
+### <a name="data-ingestion"></a>데이터 수집
+
+- **Power Platform 데이터 흐름 및 게이트웨이를 사용하여 온-프레미스 데이터 소스에 연결** Customer Insights의 게이트웨이와 Power Platform 또는 Dataverse 연결된 환경을 사용하는 Power Platform 데이터 흐름 및 온-프레미스 연결 프리뷰를 발표하게 되어 기쁘게 생각합니다. 연결된 Dataverse 환경이 있는 Customer Insights 환경에서 생성된 모든 새 데이터 소스는 환경은 기본적으로 온-프레미스 데이터 연결과 풍부한 커넥터 및 변환 기능을 제공하는 Power Platform 데이터 흐름으로 설정됩니다.
+
+### <a name="extensibility"></a>확장성
+
+- **연결 및 내보내기로 구성된 내보내기** **내보내기 대상** 페이지에서 **연결** 로 이름을 바꾸고 **내보내기** 를 위한 별도의 페이지를 추가했습니다. 이 업데이트의 일부로 기존 내보내기를 연결 쌍과 해당 연결을 사용하는 내보내기 쌍으로 전환합니다. 관리자는 이제 **연결** 페이지에서 외부로 나가는 데이터를 보다 명확하게 확인할 수 있습니다. 모든 사용자 역할은 **수출** 페이지에 액세스 권한이 있지만 관리자만 기여자가 공유 연결을 사용하여 특정 내보내기를 편집할 수 있도록 선택할 수 있습니다.     
+  자세한 내용은 [연결 개요](connections.md) 및 [수출 개요](export-destinations.md)를 확인하세요.
+
+- **Campaign Monitor로 세그먼트 내보내기** Campaign Monitor를 포함하도록 내보내기 대상을 확장했습니다. 이제 Customer Insights에서 Campaign Monitor 목록으로 세그먼트를 내보내고 이를 마케팅 캠페인의 기준으로 사용할 수 있습니다.    
+   자세한 내용은 [Campaign Monitor로 내보내기](export-campaign-monitor.md)를 참조하십시오.
+
+- **Constant Contact로 세그먼트 내보내기** Constant Contact를 포함하도록 내보내기 대상을 확장했습니다. 이제 Customer Insights에서 Constant Contact 목록으로 세그먼트를 내보내고 이를 마케팅 캠페인의 기준으로 사용할 수 있습니다.   
+   자세한 내용은 [Constant Contact로 내보내기](export-constant-contact.md)를 참조하십시오.
+
+- **RollWorks로 세그먼트 내보내기** RollWorks를 포함하도록 내보내기 대상을 확장했습니다. 이제 Customer Insights에서 RollWorks 대상으로 세그먼트를 내보내고 이를 B2B 광고의 기준으로 사용할 수 있습니다.    
+   자세한 내용은 [RollWorks로 데이터 내보내기](export-rollworks.md)를 참조하십시오.
+
+- **Snapchat으로 세그먼트 내보내기** Snapchat을 포함하도록 내보내기 대상을 확장했습니다. 이제 Customer Insights에서 Snapchat 대상으로 세그먼트를 내보내고 이를 광고의 기준으로 사용할 수 있습니다.     
+   자세한 내용은 [Snapchat으로 데이터 내보내기](export-snapchat.md)를 참조하십시오.
+
+### <a name="predictions"></a>예측
+
+- **예측 제품 추천에 제품 필터 사용** 제품 추천 모델에 제품 필터를 사용하는 기능을 추가했습니다. 이제 제품의 하위 집합만 사용하는 예측을 만들 수 있습니다.    
+   자세한 내용은 [제품 필터 구성](predict-product-recommendation.md#configure-product-filters)을 참조하십시오.
+
+- **모델 예측에서 세그먼트 만들기** 예측 모델의 결과를 사용하여 세그먼트를 만드는 빠른 방법을 추가했습니다. 모델 결과 페이지에서 **세그먼트 만들기** 옵션을 선택하여 쉽게 새 세그먼트를 만들 수 있습니다.    
+  자세한 내용은 [예측 모델을 기반으로 세그먼트 만들기](prediction-based-segment.md)를 참조하세요.
+
+- **제품 추천에 대한 설명** 제품 권장 사항을 생성하기 위해 AI 모델에서 학습한 주요 요소와 이러한 요소가 제품 권장 사항에 기여하는 정도를 설명하는 정보를 추가했습니다. 이 정보는 모델 결과 화면에 추가됩니다.    
+   자세한 내용은 [예측 상태 및 결과를 검토](predict-product-recommendation.md#review-a-prediction-status-and-results)를 참조하세요.
 
 ## <a name="february-2021-updates"></a>2021년 2월 업데이트
 
@@ -107,7 +144,7 @@ ms.locfileid: "5598444"
 
   또한 고객 프로필을 보강하는 방법을 더 잘 제어하기 위해 새로운 구성 옵션을 추가했습니다. 
 
-  자세한 내용은 [브랜드 및 관심 선호도로 고객 프로필 강화](enrichment-microsoft-graph.md)를 참조하세요.
+  자세한 내용은 [브랜드 및 관심 선호도로 고객 프로필 강화](enrichment-microsoft.md)를 참조하세요.
 
 - **보강할 프로필 제어**
 
@@ -309,8 +346,8 @@ Experian의 인구 통계 보강이 이제 미리 보기로 제공됩니다. Exp
 
 - **더 많은 시장에서 사용 가능한 관심사 선호도 보강**
 
-  관심사 선호도 보강의 가용성을 미국을 넘어 캐나다, 호주, 영국, 프랑스 및 독일의 5개 시장으로 확장하고 있습니다. 이 확장을 통해 이러한 시장에 대한 더 많은 관심사를 포함한 고객 데이터를 보강할 수 있습니다. 또한 Microsoft Graph의 로컬 독점 데이터를 사용하여 이러한 시장에 있는 고객 프로필을 보강할 것입니다.
-  자세한 내용은 [브랜드 및 관심 선호도로 고객 프로필 보강](enrichment-microsoft-graph.md)을 참조하세요.
+  관심사 선호도 보강의 가용성을 미국을 넘어 캐나다, 호주, 영국, 프랑스 및 독일의 5개 시장으로 확장하고 있습니다. 이 확장을 통해 이러한 시장에 대한 더 많은 관심사를 포함한 고객 데이터를 보강할 수 있습니다. 또한 Microsoft의 로컬 독점 데이터를 사용하여 이러한 시장에 있는 고객 프로필을 보강합니다.
+  자세한 내용은 [브랜드 및 관심 선호도로 고객 프로필 보강](enrichment-microsoft.md)을 참조하세요.
 
 
 ## <a name="july-2020-updates"></a>2020년 7월 업데이트
@@ -330,8 +367,8 @@ Experian의 인구 통계 보강이 이제 미리 보기로 제공됩니다. Exp
 
 - **더 많은 시장에서 사용 가능한 브랜드 선호도 보강**
 
-  브랜드 선호도 보강의 가용성을 미국을 넘어 캐나다, 호주, 영국, 프랑스 및 독일의 5개 시장으로 확장하고 있습니다. 이 확장을 통해 이러한 시장의 현지 브랜드로 고객 데이터를 풍부하게 할 수 있습니다. 또한 Microsoft Graph의 로컬 독점 데이터를 사용하여 이러한 시장에 있는 고객 프로필을 보강할 것입니다.
-  자세한 내용은 [브랜드 및 관심 선호도로 고객 프로필 보강](enrichment-microsoft-graph.md)을 참조하세요.
+  브랜드 선호도 보강의 가용성을 미국을 넘어 캐나다, 호주, 영국, 프랑스 및 독일의 5개 시장으로 확장하고 있습니다. 이 확장을 통해 이러한 시장의 현지 브랜드로 고객 데이터를 풍부하게 할 수 있습니다. 또한 Microsoft의 로컬 독점 데이터를 사용하여 이러한 시장에 있는 고객 프로필을 보강합니다.
+  자세한 내용은 [브랜드 및 관심 선호도로 고객 프로필 보강](enrichment-microsoft.md)을 참조하세요.
 
 ## <a name="june-2020-updates"></a>2020년 6월 업데이트
 
@@ -355,7 +392,7 @@ Experian의 인구 통계 보강이 이제 미리 보기로 제공됩니다. Exp
 - **별도의 브랜드 및 관심 선호도 강화**
 
   이제 브랜드 및 관심 선호도 유사성을 두 개의 독립적인 보강으로 사용할 수 있습니다. 분리된 보강은 비즈니스 요구 사항이나 필요에 따라 개별적으로 구성하고 관리할 수 있는 유연성을 제공합니다.    
-  자세한 내용은 [브랜드 및 관심 선호도로 고객 프로필 강화](enrichment-microsoft-graph.md)를 참조하세요.
+  자세한 내용은 [브랜드 및 관심 선호도로 고객 프로필 강화](enrichment-microsoft.md)를 참조하세요.
 
 #### <a name="extensibility"></a>확장성
 

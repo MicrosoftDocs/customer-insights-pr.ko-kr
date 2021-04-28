@@ -1,7 +1,7 @@
 ---
 title: 타사 보강 Leadspace를 사용하여 회사 프로필 보강
 description: Leadspace 타사 보강에 대한 일반 정보입니다.
-ms.date: 11/24/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,46 +9,67 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 41c56aece043c2d7658fd2655713e1e98775edec
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: ccf4f661ecffb281556a4545b1f26ee809c697cd
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597657"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5895921"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Leadspace를 통한 회사 프로필 강화(미리 보기)
 
-Leadspace는 B2B 고객 데이터 플랫폼을 제공하는 데이터 과학 회사입니다. 통합된 고객 프로필을 보유한 고객이 회사의 데이터를 보강할 수 있습니다. 보강에는 회사 규모, 위치, 산업 등과 같은 추가 특성이 포함됩니다.
+Leadspace는 B2B 고객 데이터 플랫폼을 제공하는 데이터 과학 회사입니다. 통합된 고객 프로필을 보유한 고객이 회사의 데이터를 보강할 수 있습니다. 보강에 회사 규모, 위치, 산업과 같은 더 많은 특성이 포함됩니다.
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
 Leadspace를 구성하려면 다음 전제 조건이 충족되어야 합니다.
 
-- 활성 Leadspace 라이선스와 "영구 키"(**Leadspace 토큰** 이라고 함)가 있습니다. 그들의 제품에 대한 자세한 내용은 [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/)에 직접 문의하세요.
-- [관리자](permissions.md#administrator) 권한이 있어야 합니다.
+- 활성 Leadspace 라이선스.
 - 회사의 [통합 고객 프로필](customer-profiles.md)을 갖고 있습니다.
+- 관리자가 Leadspace 연결을 이미 구성했거나 귀하가 [관리자](permissions.md#administrator) 권한 및 "영구 키"(**Leadspace 토큰**)를 가지고 있음. 제품에 대한 자세한 설명은 [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/)에 직접 확인하십시오.
 
-## <a name="configuration"></a>구성
+## <a name="configure-the-enrichment"></a>보강 구성
 
 1. 대상 그룹 인사이트에서 **데이터** > **보강** 으로 이동합니다.
 
-1. Leadspace 타일에서 **내 데이터 보강** 을 선택합니다.
+1. Leadspace 타일에서 **내 데이터 보강** 을 선택하고 **시작** 을 선택합니다.
 
    :::image type="content" source="media/leadspace-tile.png" alt-text="Leadspace 타일의 스크린샷.":::
 
-1. **시작** 을 선택한 후 활성 **Leadspace 토큰**(영구 키)을 입력합니다. **동의함** 확인란을 선택하여 **데이터 개인 정보 및 규정 준수** 에 대한 동의를 검토하고 제공합니다. **Leadspace에 연결** 을 선택하여 입력을 둘 다 확인합니다.
+1. 드롭다운 목록에서 [연결](connections.md)을 선택하십시오. 사용 가능한 연결이 없으면 관리자에게 문의하십시오. 관리자인 경우 **연결 추가** 를 선택하고 **Leadspace** 를 선택하여 연결을 만들 수 있습니다. 
 
-1. **데이터 매핑** 을 선택하고 Leadspace에서 회사 데이터를 통해 보강하려는 데이터 집합을 선택합니다. *고객* 엔터티를 선택하여 모든 고객 프로필을 보강하거나 세그먼트 엔터티를 선택하여 해당 세그먼트에 포함된 고객 프로필만 보강할 수 있습니다.
+1. **Leadspace에 연결** 을 선택하여 연결을 확인합니다.
 
-   :::image type="content" source="media/enrichment-leadspace-select-segment.png" alt-text="고객 프로필과 세그먼트 보강 중에서 선택합니다.":::
+1. **다음** 을 선택하고 Leadspace의 회사 데이터로 보강할 **고객 데이터 집합** 을 선택합니다. **고객** 엔터티를 선택하여 모든 고객 프로필을 보강하거나 세그먼트 엔터티를 선택하여 해당 세그먼트에 포함된 고객 프로필만 보강할 수 있습니다.
 
-1. **다음** 을 클릭하고 Leadspace에서 일치하는 회사 데이터를 찾는 데 사용해야 하는 통합 프로필의 필드를 정의합니다. **회사의 이름** 필드는 필수입니다. 일치 정확도를 높이기 위해 **회사 웹 사이트** 및 **회사 위치** 라는 다른 필드를 최대 2개까지 추가할 수 있습니다.
+    :::image type="content" source="media/enrichment-Leadspace-configuration-customer-data-set.png" alt-text="고객 데이터 집합 선택 시 스크린샷입니다.":::
+
+1. **다음** 을 선택하고 Leadspace에서 일치하는 회사 데이터를 찾는 데 사용해야 하는 통합 프로필의 필드를 정의합니다. **회사의 이름** 필드는 필수입니다. 일치 정확도를 높이기 위해 **회사 웹 사이트** 및 **회사 위치** 라는 다른 필드를 최대 2개까지 추가할 수 있습니다.
 
    :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace 필드 매핑 창.":::
-   
-1. **적용** 을 선택하여 필드 매핑을 완료합니다.
 
-1. **실행** 을 선택하여 회사 프로필을 보강합니다. 보강에 걸리는 시간은 통합 고객 프로필의 수에 따라 다릅니다.
+1. 필드 매핑을 완료하려면 **다음** 을 선택합니다.
+
+1. 보강에 대한 이름을 제공하고 선택 사항을 검토한 후 **보강 저장** 을 선택합니다.
+
+
+## <a name="configure-the-connection-for-leadspace"></a>Leadspace에 대한 연결 구성 
+
+연결을 구성하려면 관리자여야 합니다. 보강을 구성할 때 **연결 추가** 를 선택 *하거나* **관리자** > **연결** 로 이동하여 Leadspace 타일에서 **설정** 을 선택합니다.
+
+1. **시작** 을 선택합니다. 
+
+1. **표시 이름** 상자에 연결 이름을 입력합니다.
+
+1. 유효한 Leadspace 토큰을 입력합니다.
+
+1. **동의함** 확인란을 선택하여 **데이터 개인 정보 및 규정 준수** 에 대한 동의를 검토하고 제공합니다.
+
+1. **확인** 을 선택하여 구성을 확인합니다.
+
+1. 확인을 완료한 후 **저장** 을 선택합니다.
+   
+   :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="Leadspace 연결 구성 페이지.":::
 
 ## <a name="enrichment-results"></a>보강 결과
 

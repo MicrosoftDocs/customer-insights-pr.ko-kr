@@ -1,7 +1,7 @@
 ---
 title: 통합 고객 프로필 보강
 description: 기능을 사용하여 고객 데이터를 보강합니다.
-ms.date: 11/02/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 36e6f7f8fcd64fc2591e913910918b83bf27567b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 10c338b89a6f9971912d05986c105cba1221b01b
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597703"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896013"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>고객 프로필 보강(미리 보기)
 
@@ -27,8 +27,8 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 **검색** 탭에서 다음과 같은 기능이 보강됩니다.
 
-- Microsoft Graph에서 제공하는 [브랜드](enrichment-microsoft-graph.md)
-- Microsoft Graph에서 제공하는 [관심사](enrichment-microsoft-graph.md).
+- Microsoft에서 제공한 [브랜드](enrichment-microsoft.md)
+- Microsoft에서 제공한 [관심사](enrichment-microsoft.md)
 - Leadspace에서 제공한 [회사 데이터](enrichment-leadspace.md)
 - Experian에서 제공한 [인구 통계 자료](enrichment-experian.md)
 - HERE Technologies에서 제공한 [위치 데이터](enrichment-here.md)
@@ -40,7 +40,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 구성된 모든 보강을 보려면 **내 보강** 으로 이동합니다. 각 보강은 보강에 대한 추가 정보를 포함하는 행으로 표시됩니다.
 
-사용 가능한 옵션을 보려면 보강을 선택하십시오. 또는 목록 항목에서 줄임표(...)를 선택하여 옵션을 볼 수 있습니다.
+사용 가능한 옵션을 보려면 보강을 선택하십시오. 목록 항목에서 줄임표(...)를 선택하여 옵션을 볼 수도 있습니다.
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="보강 목록에서 보강을 관리하는 옵션":::
 
@@ -52,5 +52,12 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 목록에서 여러 가지 보강을 선택하여 한 번에 실행하거나 비활성화할 수 있습니다. 보기 및 편집 옵션은 일괄 작업으로 사용할 수 없으며 한 번에 하나의 보강에 대해서만 작동합니다.
 
+## <a name="enrichments-and-connections"></a>보강 및 연결
+
+타사 보강은 관리자가 자격 증명으로 설정하고 데이터 전송에 대한 동의를 제공하는 [연결](connections.md)을 사용하여 구성됩니다. 관리자와 기여자 모두가 보강을 구성하는 데 연결을 사용할 수 있습니다.  
+
+## <a name="multiple-enrichments-of-the-same-type"></a>동일한 유형의 여러 보강
+
+보강할 엔터티는 보강 구성 중에 지정되므로 프로필의 하위 집합만 보강할 수 있습니다. 예를 들어, 특정 세그먼트에 대해서만 데이터를 보강하십시오. 동일한 유형의 여러 보강을 구성하고 동일한 연결을 재사용할 수 있습니다. 일부 보강에는 만들 수 있는 동일한 유형의 보강 수에 제한이 있습니다. 제한과 현재 사용은 **보강** 페이지에서 확인할 수 있습니다.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

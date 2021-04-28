@@ -1,7 +1,7 @@
 ---
-title: 내보내기 대상
-description: 데이터를 내보내고 내보내기 대상을 관리합니다.
-ms.date: 07/21/2020
+title: Customer Insights에서 데이터 내보내기
+description: 데이터 공유를 위한 내보내기를 관리합니다.
+ms.date: 03/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,102 +9,73 @@ ms.topic: conceptual
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5557442983f8c48cd46387009e0060beb6e764bb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 354ce9ef30fe918975d06290430996c84f8bd3f7
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596093"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896151"
 ---
-# <a name="export-destinations-preview-overview"></a>내보내기 대상(미리 보기) 개요
+# <a name="exports-preview-overview"></a>내보내기(프리뷰) 개요
 
-**내보내기 대상** 페이지에는 데이터를 내보내도록 설정한 모든 위치가 표시됩니다. 내보낼 새 대상을 추가할 수도 있습니다. 또한 현재 사용 가능한 내보내기 옵션을 보여줍니다. 빠른 개요, 설명 및 각 확장성 옵션으로 수행 할 수 있는 작업을 알아보십시오. 비즈니스와 관련된 지원되는 앱으로 통합 프로필, 측정 값 및 세그먼트를 내보냅니다.
+**내보내기** 페이지에는 구성된 모든 내보내기가 표시됩니다. 내보내기는 다양한 애플리케이션과 특정 데이터를 공유합니다. 여기에는 고객 프로필 또는 엔터티, 스키마 및 매핑 세부 정보가 포함될 수 있습니다. 각 내보내기에는 [인증 및 액세스 관리를 위해 관리자가 설정한 연결](connections.md)이 필요합니다.
 
-**관리자** > **내보내기 대상** 으로 이동하여 다음과 같은 확장성 옵션을 찾으십시오.
+> [!NOTE]
+> 2021년 3월까지 내보내기는 해당 서비스에 대한 연결을 자동으로 생성했습니다. 이제 내보내기를 만들려면 [관리자가 만들고 공유한 연결](connections.md)이 필요합니다.
 
-- [Adobe Campaign Standard](export-adobe-campaign-standard.md)
-- [Adobe 환경 플랫폼](export-adobe-experience-platform.md)
-- [AdRoll](export-adroll.md)
-- [AutoPilot](export-autopilot.md)
-- [Azure Blob Storage](export-azure-blob-storage.md)
-- [Azure Data Lake Storage Gen2](export-azure-data-lake-storage-gen2.md)
-- [Microsoft Teams용 봇](export-teams-bot.md)
-- [Customer Insights API](apis.md)
-- [DotDigital](export-dotdigital.md)
-- [Dynamics 365 Customer Service(고객 카드 추가 기능)](customer-card-add-in.md)
-- [Dynamics 365 Marketing](export-dynamics365-marketing.md)
-- [Dynamics 365 Sales](export-dynamics365-sales.md)
-- [Dynamics 365 영업 허브(고객 카드 추가 기능)](customer-card-add-in.md)
-- [Facebook 광고 관리자](export-facebook.md)
-- [Google 광고](export-google-ads.md)
-- [LiveRamp&reg;](export-liveramp.md)
-- [Mailchimp](export-mailchimp.md)
-- [Marketo](export-marketo.md)
-- [Power Automate](export-power-automate.md)
-- [Power Apps](export-power-apps.md)
-- [Power BI](export-power-bi.md)
-- [SendGrid](export-sendgrid.md)
-- [SFTP](export-sftp.md)
+**데이터** > **내보내기** 로 이동하여 내보내기 페이지를 봅니다. 모든 사용자 역할은 구성된 내보내기를 볼 수 있는 액세스 권한이 있습니다. 명령 모음의 검색 필드를 사용하여 이름, 연결 이름 또는 연결 유형별로 내보내기를 찾습니다.
 
-## <a name="add-a-new-export-destination"></a>새 내보내기 대상 추가
+## <a name="set-up-a-new-export"></a>새로운 내보내기 설정
 
-내보내기 대상을 추가하려면 [관리자 권한](permissions.md)이 있어야 합니다. Microsoft 서비스로 내보내는 경우 두 서비스가 모두 같은 조직에 있다고 가정합니다.
+내보내기를 설정하거나 편집하려면 연결을 사용할 수 있어야 합니다. 연결은 귀하의 [사용자 역할](permissions.md)에 따라 달라집니다.
+- 관리자는 모든 연결에 액세스할 수 있습니다. 내보내기를 설정할 때 새 연결을 만들 수도 있습니다.
+- 기여자는 특정 연결에 액세스할 수 있습니다. 관리자가 연결을 구성하고 공유해야 합니다. 자세한 내용은 [기여자가 내보내기에 연결을 사용하도록 허용](connections.md#allow-contributors-to-use-a-connection-for-exports)을 확인하세요.
+- 보기 권한자는 기존 내보내기를 볼 수만 있고 만들 수는 없습니다.
 
-1. **관리자** > **내보내기 대상** 으로 이동합니다.
+1. **데이터** > **내보내기** 로 이동합니다.
 
-1. **내 내보내기 대상** 탭으로 전환합니다.
+1. **내보내기 추가** 를 선택하여 새 내보내기 대상을 만듭니다.
 
-1. **내보내기 추가** 로 이동하여 새 내보내기 대상을 만듭니다.
+1. **내보내기 설정** 창에서 사용할 연결을 선택합니다. [연결](connections.md)은 관리자가 관리합니다. 
 
-1. **대상 추가** 창에서 드롭다운에서 내보내기 대상의 **유형** 을 선택합니다.
+1. 필요한 세부 정보를 제공하고 **저장** 을 선택하여 내보내기를 만듭니다.
 
-1. 필요한 세부 사항을 제공하고 **다음** 을 선택해 내보내기 대상을 만듭니다.
-
-**검색** 탭의 타일에서 **설정** 을 선택할 수도 있습니다.
-
-## <a name="view-export-destinations"></a>내보내기 대상 보기
-
-내보내기 대상을 만든 후에는 **내 내보내기 대상** 탭의 테이블에서 찾을 수 있습니다. 이 테이블에는 세 개의 열이 있습니다.
-
-- **표시 이름**: 대상을 만들 때 입력한 이름입니다.
-- **유형**: 대상을 만들 때 설정한 내보내기 대상 유형입니다.
-- **만든 날짜**: 대상을 만든 날짜입니다.
-
-## <a name="edit-an-export-destination"></a>내보내기 대상 편집
+### <a name="edit-an-export"></a>내보내기 편집
 
 1. 편집할 내보내기 대상의 세로 줄임표를 선택하십시오.
 
-   > [!div class="mx-imgBorder"]
-   > ![세로 줄임표](media/export-destinations-page-ellipsis.png "세로 줄임표")
-
 1. 드롭다운 메뉴에서 **편집** 을 선택합니다.
 
-1. 업데이트가 필요한 값을 변경하고 **저장** 을 선택합니다.
+1. 업데이트할 값을 변경하고 **저장** 을 선택합니다.
 
-## <a name="export-data-on-demand"></a>주문 시 데이터 내보내기
+## <a name="view-exports-and-export-details"></a>내보내기 및 내보내기 세부 정보 보기
 
-내보내기 대상에 대한 커넥터를 구성한 후에는 내보내기가 [예정된 새로 고침](system.md#schedule-tab)으로 실행됩니다.
+내보내기 대상을 만들면 **데이터** > **내보내기** 에 나열됩니다. 모든 사용자는 공유된 데이터와 최신 상태를 볼 수 있습니다.
 
-예약된 새로 고침을 기다리지 않고 데이터를 내보내려면 **관리자** > **내보내기 대상** 에서 **내 내보내기 목적** 탭으로 이동합니다.
+1. **데이터** > **내보내기** 로 이동합니다.
 
-> [!div class="mx-imgBorder"]
-> ![세로 줄임표](media/export-destinations-page-ellipsis.png "세로 줄임표")
+1. 편집 권한이 없는 사용자는 **편집** 대신 **보기** 를 선택하여 내보내기 세부 사항을 참조하십시오.
 
-- 목록 위의 **내보내기** 를 선택해 모든 내보내기 대상으로 동시에 내보내기를 실행합니다.
-- 목록 항목 뒤의 줄임표(...)를 선택한 다음 **내보내기** 옵션을 선택해 단일 내보내기 대상에 대해 내보내기를 실행합니다.
+1. 이 측면 창에는 이 내보내기 설정이 표시됩니다. 편집 권한이 없으면 값을 변경할 수 없습니다. **닫기** 를 선택하여 내보내기 페이지로 돌아갑니다.
 
-## <a name="remove-an-export-destination"></a>내보내기 대상 제거
+## <a name="run-exports-on-demand"></a>주문형으로 내보내기 실행
 
-내보내기 대상을 제거하려면 기본 **내보내기 대상** 페이지에서 시작하십시오.
+내보내기를 구성하면 내보내기는 작동하는 연결이 있는 한 모든 [예약된 새로 고침](system.md#schedule-tab)을 실행합니다.
+
+예약된 새로 고침을 기다리지 않고 데이터를 내보내려면 **데이터** > **내보내기** 로 이동하세요. 이때 다음 두 가지 방법을 사용할 수 있습니다.
+
+- 모든 내보내기를 실행하려면 명령 모음에서 **모두 실행** 을 선택하세요. 
+- 단일 내보내기를 실행하려면 목록 항목에서 줄임표(...)를 선택한 다음 **실행** 을 선택하세요.
+
+## <a name="remove-an-export"></a>내보내기 제거
+
+1. **데이터** > **내보내기** 로 이동합니다.
 
 1. 제거할 내보내기 대상의 세로 줄임표를 선택하십시오.
 
-   > [!div class="mx-imgBorder"]
-   > ![세로 줄임표](media/export-destinations-page-ellipsis.png "세로 줄임표")
+1. 드롭다운 메뉴에서 **제거** 를 선택합니다.
 
-2. 드롭다운 메뉴에서 **제거** 를 선택합니다.
-
-3. 확인 화면에서 **제거** 를 선택하여 제거를 확인합니다.
+1. 확인 화면에서 **제거** 를 선택하여 제거를 확인합니다.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

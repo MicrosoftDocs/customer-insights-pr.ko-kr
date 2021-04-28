@@ -1,7 +1,7 @@
 ---
 title: 사용자 권한 관리
 description: 사용 권한 및 사용자 역할에 대해 알아봅니다.
-ms.date: 10/27/2020
+ms.date: 03/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: e58bb1a3bd4c0920ff984daffabbf16162185f3d
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 8638489dba908d4504278916d2c28454e3ea9e18
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595710"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760381"
 ---
 # <a name="user-permissions"></a>사용자 권한
 
@@ -31,7 +31,7 @@ ms.locfileid: "5595710"
 - **보강** 페이지를 보고 탐색합니다.
 - **엔터티** 페이지를 사용하여 엔터티를 탐색하고 내보냅니다.
 - **시스템** 페이지를 사용하여 시스템 프로세스의 상태를 봅니다.
-- **세그먼트** 페이지에서 세그먼트를 내보냅니다.
+- **내보내기** 페이지에서 내보내기를 봅니다.
 - **Power BI Customer Insights** 대시보드를 설치하고 사용합니다.
 
 ## <a name="contributor"></a>참가자
@@ -43,6 +43,7 @@ ms.locfileid: "5595710"
 - **세그먼트** 페이지를 사용하여 세그먼트를 만듭니다.
 - **측정값** 페이지를 사용하여 측정값을 만듭니다.
 - **보강** 페이지에서 구성을 관리하고 고객 프로필을 보강합니다(자사 보강만 해당).
+- 기여자와 공유된 연결을 기반으로 내보내기를 관리하고 만듭니다. [관리자가 기여자가 내보내기에 연결을 사용하도록 허용하는 방법에 대해 자세히 알아보세요.](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 ## <a name="administrator"></a>관리자
 
@@ -50,8 +51,9 @@ ms.locfileid: "5595710"
 - 시스템 프로세스의 작업 언어 및 새로 고침 일정을 포함하여 **시스템** 페이지에서 설정을 변경합니다.
 - **권한** 페이지를 사용하여 권한을 보고 추가합니다.
 - **검색 및 필터 인덱스** 페이지(**고객** 페이지를 통해 액세스할 수 있음)를 사용하여 고객 페이지에 대한 검색 및 필터 정의를 설정합니다.
-- **내보내기 대상** 페이지를 사용하여 Dynamics 365 Sales 세그먼트 대상을 정의합니다.
+- 연결을 관리하고 **연결** 페이지에서 다른 사용자 역할에 허용하세요.
 - **보강** 페이지에서 구성을 관리하고 고객 프로필을 보강합니다(모든 보강용).
+- **내보내기** 페이지에서 내보내기를 관리하고 만듭니다.
 - **고객 카드 추가 기능** 을 설치하고 사용합니다.
 - **Power Apps 커넥터** 를 추가하고 사용합니다.
 - [Customer Insights API](apis.md)의 사용을 설정합니다.

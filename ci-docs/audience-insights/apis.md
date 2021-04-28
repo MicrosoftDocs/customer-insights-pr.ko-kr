@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 011fa700563c53534554a6b73e87c2391bfdf714
-ms.sourcegitcommit: a872f59e6febe4d4bd678ddd0b60a1660acca0f3
+ms.openlocfilehash: 59161456914df84d7e72402ed1f5faf70a5119ba
+ms.sourcegitcommit: a39e00a50ad3eda820fd756c5611081f0ca04662
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "5710468"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "5873670"
 ---
 # <a name="work-with-customer-insights-apis"></a>Customer Insights API에 대한 작업
 
@@ -78,7 +78,7 @@ MSAL(Microsoft 인증 라이브러리)에이 앱 등록을위한 애플리케이
 
 :::image type="content" source="media/grant-admin-consent.gif" alt-text="관리자 동의를 권한 부여하는 애니메이션 GIF입니다.":::
 
-MSAL에 대한 자세한 내용은 [MSAL(Microsoft 인증 라이브러리) 개요](https://docs.microsoft.com/azure/active-directory/develop/msal-overview)를 참조하세요.
+MSAL에 대한 자세한 내용은 [MSAL(Microsoft 인증 라이브러리) 개요](/azure/active-directory/develop/msal-overview)를 참조하세요.
 
 Azure의 앱 등록에 대한 자세한 내용은 [새로운 Azure Portal 앱 등록 환경](/azure/active-directory/develop/app-registration-portal-training-guide)을 참조하세요.
 

@@ -1,7 +1,7 @@
 ---
 title: 환경 만들기 및 관리
 description: 서비스에 등록하는 방법과 환경을 관리하는 방법을 알아봅니다.
-ms.date: 02/01/2021
+ms.date: 03/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 1c2dfdd2889b5cb6c5285b4d7cc7f52a3d6de4d1
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 8cc1401251ed7c45c598bd4a8fb33a9709fabbc8
+ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598301"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5887994"
 ---
 # <a name="manage-environments"></a>환경 관리
 
@@ -44,6 +44,9 @@ ms.locfileid: "5598301"
 
 다음과 같은 두 가지 방법으로 새 환경을 만들 수 있습니다. 완전히 새로운 구성을 지정하거나 기존 환경에서 일부 구성 설정을 복사할 수 있습니다.
 
+> [!NOTE]
+> 조직은 각 Customer Insights 라이선스에 대해 *두 개* 의 환경을 만들 수 있습니다. 조직에서 라이선스를 두 개 이상 구매하는 경우 [지원팀에 문의](https://go.microsoft.com/fwlink/?linkid=2079641)하여 사용 가능한 환경의 수를 늘리세요. 용량 및 추가 용량에 대한 자세한 내용은 [Dynamics 365 라이선스 가이드](https://go.microsoft.com/fwlink/?LinkId=866544)를 다운로드하세요.
+
 환경을 만들려면:
 
 1. 앱 헤더의 **환경** 선택기를 선택합니다.
@@ -55,14 +58,14 @@ ms.locfileid: "5598301"
 
 1. **새로운 환경 조성** 대화 상자에서 **새로운 환경** 을 선택합니다.
 
-   [현재 환경에서 데이터 복사](#additional-considerations-for-copy-configuration-preview)하고 싶다면 **기존 환경에서 복사** 를 선택합니다. 조직에서 데이터를 복사할 수 있는 사용 가능한 모든 환경 목록이 표시됩니다.
+   [현재 환경에서 데이터 복사](#considerations-for-copy-configuration-preview)하고 싶다면 **기존 환경에서 복사** 를 선택합니다. 조직에서 데이터를 복사할 수 있는 사용 가능한 모든 환경 목록이 표시됩니다.
 
 1. 다음 정보를 제공합니다.
    - **이름**: 이 환경의 이름입니다. 기존 환경에서 복사한 경우 이 필드가 이미 채워져 있지만 변경할 수 있습니다.
    - **지역**: 서비스가 배포되고 호스팅되는 지역입니다.
    - **유형**: 프로덕션 환경을 만들지 샌드박스 환경을 만들지 선택합니다.
 
-2. 필요에 따라 **고급 설정** 을 선택할 수 있습니다.
+1. 필요에 따라 **고급 설정** 을 선택할 수 있습니다.
 
    - **모든 데이터 저장**: Customer Insights에서 생성된 출력 데이터를 저장할 위치를 지정합니다. **Customer Insights 저장소**(Customer Insights 팀에서 관리하는 Azure Data Lake) 및 **Azure Data Lake Storage Gen2**(자신의 Azure Data Lake Storage)의 두 가지 옵션이 있습니다. 기본적으로 Customer Insights 저장소 옵션이 선택되어 있습니다.
 
@@ -75,20 +78,20 @@ ms.locfileid: "5598301"
 
    - Azure Data Lake Storage Gen2 옵션의 경우 인증을 위해 리소스 기반 옵션과 구독 기반 옵션 중에서 선택할 수 있습니다. 자세한 내용은 [Azure 서비스 보안 주체를 사용하여 대상 그룹 인사이트를 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)을 참조하세요. **컨테이너** 이름은 변경할 수 없으며 "customerinsights"가 됩니다.
    
-   - [예측](predictions.md)을 사용하거나 Microsoft Dataverse를 기반으로 하는 응용 프로그램 및 솔루션과의 데이터 공유를 구성하려면 **Microsoft Dataverse와 데이터 공유 구성 및 추가 기능 사용** 에 Microsoft Dataverse 환경 URL을 제공하십시오. **데이터 공유 활성화** 를 선택하여 Customer Insights 출력 데이터를 Microsoft Dataverse 관리형 Data Lake와 공유합니다.
+   - [예측](predictions.md)을 사용하려면 Microsoft Dataverse를 기반으로 애플리케이션과 솔루션의 데이터 공유를 구성하거나 온-프레미스 데이터 소스에서 데이터 수집을 사용 설정하고 **Microsoft Dataverse와 데이터 공유 구성 및 추가 기능 사용 설정** 아래에 Microsoft Dataverse 환경 URL을 제공합니다. **데이터 공유 활성화** 를 선택하여 Customer Insights 출력 데이터를 Microsoft Dataverse 관리형 Data Lake와 공유합니다.
 
      > [!NOTE]
      > - 모든 데이터를 자체 Azure Data Lake Storage에 저장하는 경우 Microsoft Dataverse 관리형 Data Lake와의 데이터 공유는 현재 지원되지 않습니다.
      > - Microsoft Dataverse 관리형 Data Lake와의 데이터 공유를 활성화한 경우 [엔터티에서 누락된 값의 예측](predictions.md)은 현재 지원되지 않습니다.
 
      > [!div class="mx-imgBorder"]
-     > ![Microsoft Dataverse와 데이터 공유를 활성화하는 구성 옵션](media/Datasharing-with-DataverseMDL.png)
+     > ![Microsoft Dataverse와 데이터 공유를 활성화하는 구성 옵션](media/datasharing-with-DataverseMDL.png)
 
    데이터 수집 또는 세그먼트 생성과 같은 프로세스를 실행하면 위에서 지정한 스토리지 계정에 해당 폴더가 생성됩니다. 데이터 파일과 model.json 파일이 생성되며 실행하는 프로세스에 따라 해당 하위 폴더에 추가됩니다.
 
    Customer Insights의 여러 환경을 만들고 해당 환경의 출력 엔터티를 스토리지 계정에 저장하도록 선택하면 컨테이너에 ci_<environmentid>가 있는 각 환경에 대해 별도의 폴더가 생성됩니다.
 
-### <a name="additional-considerations-for-copy-configuration-preview"></a>복사 구성에 대한 추가 고려 사항 (미리보기)
+### <a name="considerations-for-copy-configuration-preview"></a>복사 구성 고려 사항(프리뷰)
 
 다음 구성 설정이 복사됩니다.
 
@@ -136,6 +139,18 @@ ms.locfileid: "5598301"
 4. 환경이 데이터를 Azure Data Lake Storage Gen2에 저장하도록 구성된 경우 **계정 키** 를 업데이트할 수 있습니다. 그러나 **계정 이름** 또는 **컨테이너** 이름은 변경할 수 없습니다.
 
 5. 선택적으로 계정 키 기반 연결에서 리소스 기반 또는 구독 기반 연결로 업데이트할 수 있습니다. 한 번 업그레이드하면 업데이트 후 계정 키로 되돌릴 수 없습니다. 자세한 내용은 [Azure 서비스 보안 주체를 사용하여 대상 그룹 인사이트를 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)을 참조하세요. 연결을 업데이트할 때 **컨테이너** 정보를 변경할 수 없습니다.
+
+6. 선택적으로 **Microsoft Dataverse와 데이터 공유 구성 및 추가 기능 사용 설정** 아래에서 Microsoft Dataverse 환경 URL을 제공할 수 있습니다. 이러한 기능에는 Microsoft Dataverse, 온-프레미스 데이터 소스를 기반으로 한 데이터 수집 또는 사용 [예측](predictions.md)을 기반으로 한 애플리케이션 및 솔루션과의 데이터 공유가 포함됩니다. **데이터 공유 활성화** 를 선택하여 Customer Insights 출력 데이터를 Microsoft Dataverse 관리형 Data Lake와 공유합니다.
+
+   > [!NOTE]
+   > - 모든 데이터를 자체 Azure Data Lake Storage에 저장하는 경우 Microsoft Dataverse 관리형 Data Lake와의 데이터 공유는 현재 지원되지 않습니다.
+   > - [엔터티에서 누락된 값의 예측](predictions.md)은 Microsoft Dataverse 관리형 Data Lake와의 데이터 공유를 활성화할 때 현재 지원되지 않습니다.
+
+   Microsoft Dataverse와의 데이터 공유를 사용 설정하면 데이터 원본 및 기타 프로세스의 전체 새로 고침이 트리거됩니다. 프로세스가 현재 실행 중이고 대기 중인 경우 Microsoft Dataverse와의 데이터 공유를 활성화하는 옵션이 표시되지 않습니다. 해당 프로세스가 완료될 때까지 기다리거나 취소하여 데이터 공유를 활성화할 수 있습니다. 
+   
+   :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="Microsoft Dataverse와 데이터 공유를 활성화하는 구성 옵션":::
+   
+   데이터 수집 또는 세그먼트 생성과 같은 프로세스를 실행하면 위에서 지정한 스토리지 계정에 해당 폴더가 생성됩니다. 실행하는 프로세스에 따라 데이터 파일 및 model.json 파일이 생성되고 각 하위 폴더에 추가됩니다.
 
 ## <a name="reset-an-existing-environment"></a>기존 환경 초기화
 

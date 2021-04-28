@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: d6a9e7872a488b6d68afce35b547f93cc4a7c652
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 433e6ceda0ec7827bd672cff40f895d7719561df
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596875"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896335"
 ---
 # <a name="customer-profiles"></a>고객 프로필
 
@@ -59,7 +59,7 @@ ms.locfileid: "5596875"
 
 -   **고객 프로필 타일**: 이 타일에는 통합된 고객 프로필 엔터티의 다양한 값이 표시됩니다. 이러한 세부 정보에는 이메일 주소, 이름, 도시 등이 포함될 수 있습니다. 
 
--   **잠재적 관심사, 잠재적 브랜드:** 자사 보강을 구성했는지 표시합니다. 이 고객과 유사한 프로필을 가진 고객이 가질 수 있는 브랜드에 대한 잠재적인 관심사 및 친밀도를 나타냅니다. 자세한 내용은 [브랜드 및 관심 선호도로 고객 프로필 강화](enrichment-microsoft-graph.md)를 참조하세요.
+-   **잠재적 관심사, 잠재적 브랜드:** 자사 보강을 구성했는지 표시합니다. 이 고객과 유사한 프로필을 가진 고객이 가질 수 있는 브랜드에 대한 잠재적인 관심사 및 친밀도를 나타냅니다. 자세한 내용은 [브랜드 및 관심 선호도로 고객 프로필 강화](enrichment-microsoft.md)를 참조하세요.
 
 -   **측정값:** 특정 유형의 측정값(고객 특성 측정값)을 하나 이상 구성했는지 표시합니다. 여기에는 개별 고객 수준에서 고객에 대한 계산된 KPI가 포함됩니다. 자세한 내용은 [측정값 정의 및 관리](measures.md)를 참조하세요.
 
