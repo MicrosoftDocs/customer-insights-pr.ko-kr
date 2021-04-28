@@ -1,7 +1,7 @@
 ---
 title: Facebook Ads Manager로 Customer Insights 데이터 내보내기
-description: Facebook 광고 관리자에 대한 연결을 구성하는 방법 알아보기.
-ms.date: 06/05/2020
+description: 연결을 구성하고 Facebook 광고 관리자로 내보내는 방법을 알아봅니다.
+ms.date: 04/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,69 +9,88 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3e2b52fe743563e4bf61d870cbf1718e6c752a67
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: ca32906a98bc734639fb369d6f5a92e8888fd850
+ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596691"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906818"
 ---
-# <a name="connector-for-facebook-ads-manager-preview"></a><span data-ttu-id="93097-103">Facebook 광고 관리자용 커넥터(미리 보기)</span><span class="sxs-lookup"><span data-stu-id="93097-103">Connector for Facebook Ads Manager (preview)</span></span>
+# <a name="export-segments-list-to-facebook-ads-manager-preview"></a><span data-ttu-id="3d001-103">Facebook 광고 관리자로 세그먼트 목록 내보내기(프리뷰)</span><span class="sxs-lookup"><span data-stu-id="3d001-103">Export segments list to Facebook Ads Manager (preview)</span></span>
 
-<span data-ttu-id="93097-104">통합 고객 프로필 세그먼트를 Facebook 광고 관리자에 내보내 Facebook 및 Instagram에서 캠페인을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="93097-104">Export segments of unified customer profiles to Facebook Ads Manager to create campaigns on Facebook and Instagram.</span></span>
+<span data-ttu-id="3d001-104">통합 고객 프로필 세그먼트를 Facebook 광고 관리자에 내보내 Facebook 및 Instagram에서 캠페인을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-104">Export segments of unified customer profiles to Facebook Ads Manager to create campaigns on Facebook and Instagram.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="93097-105">필수 구성 요소</span><span class="sxs-lookup"><span data-stu-id="93097-105">Prerequisites</span></span>
+## <a name="prerequisites-for-connection"></a><span data-ttu-id="3d001-105">연결을 위한 전제 조건</span><span class="sxs-lookup"><span data-stu-id="3d001-105">Prerequisites for connection</span></span>
 
-- <span data-ttu-id="93097-106">[**Facebook 비즈니스 계정**](https://business.facebook.com/)이 포함된 [**Facebook 광고 계정**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account)이 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="93097-106">You need to have a [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) which includes a [**Facebook Business Account**](https://business.facebook.com/).</span></span>
-- <span data-ttu-id="93097-107">[**Facebook 광고 계정**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account)의 관리자여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="93097-107">You need to be an administrator on the [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).</span></span>
+- <span data-ttu-id="3d001-106">[**Facebook 비즈니스 계정**](https://business.facebook.com/)이 포함된 [**Facebook광고 계정**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account)이 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-106">You need to have a [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) that includes a [**Facebook Business Account**](https://business.facebook.com/).</span></span>
+- <span data-ttu-id="3d001-107">[**Facebook 광고 계정**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account)의 관리자여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-107">You need to be an administrator on the [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).</span></span>
 
-## <a name="connect-to-facebook-ads-manager"></a><span data-ttu-id="93097-108">Facebook 광고 관리자에 연결</span><span class="sxs-lookup"><span data-stu-id="93097-108">Connect to Facebook Ads Manager</span></span>
+## <a name="known-limitations"></a><span data-ttu-id="3d001-108">알려진 제한 사항</span><span class="sxs-lookup"><span data-stu-id="3d001-108">Known limitations</span></span>
 
-1. <span data-ttu-id="93097-109">**관리자** > **내보내기 대상** 으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="93097-109">Go to **Admin** > **Export destinations**.</span></span>
+- <span data-ttu-id="3d001-109">Facebook 광고 관리자에게 내보내기당 최대 1,000만 개의 고객 프로필.</span><span class="sxs-lookup"><span data-stu-id="3d001-109">Up to 10 million customer profile per export to Facebook Ads Manager.</span></span>
+- <span data-ttu-id="3d001-110">Facebook 광고 관리자에게 내보내기는 세그먼트로 제한됩니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-110">Export to Facebook Ads Manager is limited to segments.</span></span>
+- <span data-ttu-id="3d001-111">Facebook에서 *고객 목록* 유형의 사용자 지정 대상만 만들거나 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-111">Create or update custom audiences in Facebook of type *customer list* only.</span></span>
+- <span data-ttu-id="3d001-112">총 1,000만 개의 프로필이 있는 세그먼트 내보내기를 완료하는 데 최대 90분이 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-112">Exporting segments with a total of 10 million profiles can take up to 90 minutes to complete.</span></span>
 
-1. <span data-ttu-id="93097-110">**Facebook 광고 관리자** 아래에서 **설정** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="93097-110">Under **Facebook Ads Manager**, select **Set up**.</span></span>
+## <a name="set-up-connection-to-facebook-ads-manager"></a><span data-ttu-id="3d001-113">Facebook 광고 관리자 연결 설정</span><span class="sxs-lookup"><span data-stu-id="3d001-113">Set up connection to Facebook Ads Manager</span></span>
 
-1. <span data-ttu-id="93097-111">**표시 이름** 필드에서 내보내기 대상에 인식할 수 있는 이름을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="93097-111">Give your export destination a recognizable name in the **Display name** field.</span></span>
+<span data-ttu-id="3d001-114">사용자가 내보내기를 생성하려면 관리자가 서비스에 대한 연결을 구성하고 기여자가 연결을 사용할 수 있도록 허용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-114">Before users can create an export, an administrator must configure the connection to the service and allow contributors to use the connection.</span></span>
 
-1. <span data-ttu-id="93097-112">**Facebook으로 계속** 을 선택하고 Facebook 광고 계정에 로그인합니다.</span><span class="sxs-lookup"><span data-stu-id="93097-112">Select **Continue with Facebook** to sign in to your Facebook Ad Account.</span></span>
+1. <span data-ttu-id="3d001-115">**관리자** > **연결** 로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-115">Go to **Admin** > **Connections**.</span></span>
 
-1. <span data-ttu-id="93097-113">Facebook으로 인증한 후 **ads_management** 권한을 허용합니다.</span><span class="sxs-lookup"><span data-stu-id="93097-113">Allow the **ads_management** permission after authenticating with Facebook.</span></span>
+1. <span data-ttu-id="3d001-116">**연결 추가** 와 **Facebook 광고 관리자** 를 선택하여 연결을 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-116">Select **Add connection** and choose **Facebook Ads Manager** to configure the connection.</span></span>
 
-1. <span data-ttu-id="93097-114">작업할 **Facebook 광고 계정** 을 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="93097-114">Select the **Facebook Ads Account** that you want to work with.</span></span>
+1. <span data-ttu-id="3d001-117">**표시 이름** 필드에서 연결에 인식할 수 있는 이름을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-117">Give your connection a recognizable name in the **Display name** field.</span></span> <span data-ttu-id="3d001-118">이름 및 연결 유형은 이 연결을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-118">The name and the type of the connection describe this connection.</span></span> <span data-ttu-id="3d001-119">이 연결의 목적과 대상을 설명하는 이름을 선택하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-119">We recommend choosing a name that explains the purpose and target of the connection.</span></span>
 
-1. <span data-ttu-id="93097-115">드롭다운 목록에서 **기존 사용자 지정 대상 그룹** 을 선택하거나 **새 사용자 지정 대상 그룹** 을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="93097-115">Select an **Existing custom audience** from the drop-down list or create a **New custom audience**.</span></span> <span data-ttu-id="93097-116">자세한 내용은 [**Facebook 광고 관리자의 대상 그룹**](https://www.facebook.com/business/help/744354708981227?id=2469097953376494).</span><span class="sxs-lookup"><span data-stu-id="93097-116">For more information, see [**Audiences in Facebook Ads Manager**](https://www.facebook.com/business/help/744354708981227?id=2469097953376494).</span></span>
+1. <span data-ttu-id="3d001-120">이 연결을 사용할 수 있는 사용자를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-120">Choose who can use this connection.</span></span> <span data-ttu-id="3d001-121">아무 조치도 취하지 않으면 기본값은 **관리자** 입니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-121">If you take no action, the default will be **Administrators**.</span></span> <span data-ttu-id="3d001-122">자세한 내용은 [기여자가 내보내기에 연결을 사용하도록 허용](connections.md#allow-contributors-to-use-a-connection-for-exports)을 확인하세요.</span><span class="sxs-lookup"><span data-stu-id="3d001-122">For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).</span></span>
 
-1. <span data-ttu-id="93097-117">**동의** 를 선택해 **데이터 프라이버시 및 규정 준수** 를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="93097-117">Select **I agree** to confirm the **Data privacy and compliance**.</span></span>
+1. <span data-ttu-id="3d001-123">Facebook 광고를 사용하여 인증:</span><span class="sxs-lookup"><span data-stu-id="3d001-123">Authenticate with Facebook Ads:</span></span> 
 
-1. <span data-ttu-id="93097-118">**다음** 을 선택해 내보내기를 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="93097-118">Select **Next** to configure the export.</span></span>
+   1. <span data-ttu-id="3d001-124">**Facebook으로 계속** 을 선택하고 Facebook 광고 계정에 로그인합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-124">Select **Continue with Facebook** to sign in to your Facebook Ad Account.</span></span>
 
-## <a name="configure-the-connector"></a><span data-ttu-id="93097-119">커넥터 구성</span><span class="sxs-lookup"><span data-stu-id="93097-119">Configure the connector</span></span>
+   1. <span data-ttu-id="3d001-125">Facebook으로 인증한 후 **ads_management** 권한을 허용합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-125">Allow the **ads_management** permission after authenticating with Facebook.</span></span>
 
-1. <span data-ttu-id="93097-120">**키 식별자 필드 선택** 에서 **이메일**, **이름과 주소** 또는 **전화** 를 선택해 Facebook 광고 관리자에 전송합니다.</span><span class="sxs-lookup"><span data-stu-id="93097-120">In the **Choose your key identifier field**, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager.</span></span>
+   1. <span data-ttu-id="3d001-126">작업할 **Facebook 광고 계정** 을 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="3d001-126">Select the **Facebook Ads Account** that you want to work with.</span></span>
 
-1. <span data-ttu-id="93097-121">선택한 키 식별자에 대해 통합 고객 엔터티의 해당 특성을 매핑합니다.</span><span class="sxs-lookup"><span data-stu-id="93097-121">Map the corresponding attributes from your unified customer entity for the selected key identifier.</span></span>
-   > <span data-ttu-id="93097-122">[도움말] **이메일** 을 키 식별자로 선택하면 가장 많이 일치하는 결과를 얻습니다.</span><span class="sxs-lookup"><span data-stu-id="93097-122">[TIP] The best chances for a match occur if you select **Email** as key identifier.</span></span> <span data-ttu-id="93097-123">식별자를 추가하면 일치가 향상될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="93097-123">Adding additional identifiers may improve the matching.</span></span>
+   1. <span data-ttu-id="3d001-127">드롭다운 목록에서 **기존 사용자 지정 대상 그룹** 을 선택하거나 **새 사용자 지정 대상 그룹** 을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-127">Select an **Existing custom audience** from the drop-down list or create a **New custom audience**.</span></span> <span data-ttu-id="3d001-128">자세한 내용은 [**Facebook 광고 관리자의 대상 그룹**](https://www.facebook.com/business/help/744354708981227?id=2469097953376494).</span><span class="sxs-lookup"><span data-stu-id="3d001-128">For more information, see [**Audiences in Facebook Ads Manager**](https://www.facebook.com/business/help/744354708981227?id=2469097953376494).</span></span>
+      > [!NOTE]
+      > <span data-ttu-id="3d001-129">이 내보내기로는 Facebook에서 *고객 목록* 유형의 사용자 지정 대상만 만들거나 업데이트할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-129">You can only create or update custom audiences on Facebook of the type *customer list* with this export.</span></span> <span data-ttu-id="3d001-130">경우에 따라 드롭다운 목록에 다양한 유형의 사용자 지정 대상이 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-130">In some cases, you see custom audiences of different types in the drop-down list.</span></span> <span data-ttu-id="3d001-131">*고객 목록* 이 아닌 다른 유형을 선택하면 내보내기에 실패합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-131">Selecting a different type than *customer list* will result in a failing export.</span></span> 
 
-1. <span data-ttu-id="93097-124">**특성 추가** 를 선택해 추가 특성을 매핑하고 Facebook 광고 관리자로 보냅니다.</span><span class="sxs-lookup"><span data-stu-id="93097-124">Select **Add attribute** to map additional attributes to send to Facebook Ads Manager.</span></span> <span data-ttu-id="93097-125">Facebook 광고 관리자의 특성은 다음과 같은 사용자 이름으로 매핑됩니다. **FN** = **이름**, **LN** = **성**, **FI** = **첫 이니셜**, **PHONE** = **전화**, **GEN** = **성별**, **DOB** = **생년월일**, **ST** = **주**, **CT** = **도시**, **ZIP** = **우편 번호**, **COUNTRY** = **국가/지역**</span><span class="sxs-lookup"><span data-stu-id="93097-125">Attributes from Facebook Ads Manager are mapping to the following user friendly names: **FN** = **First Name**, **LN** = **Last Name**, **FI** = **First Initial**, **PHONE** = **Phone**, **GEN** = **Gender**, **DOB** = **Date of birth**, **ST** = **State**, **CT** = **City**, **ZIP** = **Postal code / Zip code**, **COUNTRY** = **Country / Region**</span></span>
+1. <span data-ttu-id="3d001-132">**데이터 개인 정보 보호 및 규정 준수** 를 검토하고 **동의함** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-132">Review the **Data privacy and compliance** and select **I agree**.</span></span>
 
-1. <span data-ttu-id="93097-126">내보낼 세그먼트를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="93097-126">Select the segments you want to export.</span></span>
+1. <span data-ttu-id="3d001-133">연결을 완료하려면 **저장** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-133">Select **Save** to complete the connection.</span></span>
 
-1. <span data-ttu-id="93097-127">**저장** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="93097-127">Select **Save**.</span></span>
+## <a name="configure-an-export"></a><span data-ttu-id="3d001-134">내보내기 구성</span><span class="sxs-lookup"><span data-stu-id="3d001-134">Configure an export</span></span>
 
-## <a name="export-the-data"></a><span data-ttu-id="93097-128">데이터 내보내기</span><span class="sxs-lookup"><span data-stu-id="93097-128">Export the data</span></span>
+<span data-ttu-id="3d001-135">이 유형의 연결에 대한 액세스 권한이 있는 경우 이 내보내기를 구성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-135">You can configure this export if you have access to a connection of this type.</span></span> <span data-ttu-id="3d001-136">자세한 내용은 [내보내기를 구성하는 데 필요한 권한](export-destinations.md#set-up-a-new-export)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="3d001-136">For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).</span></span>
 
-<span data-ttu-id="93097-129">[주문 시 데이터를 내보낼](export-destinations.md) 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="93097-129">You can [export data on demand](export-destinations.md).</span></span> <span data-ttu-id="93097-130">내보내기는 [예약된 새로 고침](system.md#schedule-tab)마다 실행됩니다.</span><span class="sxs-lookup"><span data-stu-id="93097-130">The export will also run with every [scheduled refresh](system.md#schedule-tab).</span></span>
+1. <span data-ttu-id="3d001-137">**데이터** > **내보내기** 로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-137">Go to **Data** > **Exports**.</span></span>
 
-## <a name="known-limitations"></a><span data-ttu-id="93097-131">알려진 제한 사항</span><span class="sxs-lookup"><span data-stu-id="93097-131">Known limitations</span></span>
+1. <span data-ttu-id="3d001-138">**대상 추가** 를 선택하여 새 내보내기를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-138">To create a new export, select **Add destination**.</span></span> 
 
-- <span data-ttu-id="93097-132">Facebook 광고 관리자에게 내보내기당 최대 1,000만 개의 고객 프로필</span><span class="sxs-lookup"><span data-stu-id="93097-132">Up to 10 million customer profile per export to Facebook Ads Manager</span></span> 
-- <span data-ttu-id="93097-133">Facebook 광고 관리자에게 내보내기는 세그먼트로 제한</span><span class="sxs-lookup"><span data-stu-id="93097-133">Export to Facebook Ads Manager is limited to segments</span></span>
-- <span data-ttu-id="93097-134">총 1,000만 개의 프로필이 있는 세그먼트 내보내기를 완료하는 데 최대 90분이 걸릴 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="93097-134">Exporting segments with a total of 10 million profiles can take up to 90 minutes to complete</span></span>
+1. <span data-ttu-id="3d001-139">**내보내기 연결** 의 **Facebook 광고 관리자** 섹션에서 연결을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-139">In **Connection for export** choose a connection from the **Facebook Ads Manager** section.</span></span> <span data-ttu-id="3d001-140">이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 연결이 없는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-140">If you don't see this section name, there are no connections of this type available to you.</span></span>
 
-## <a name="data-privacy-and-compliance"></a><span data-ttu-id="93097-135">데이터 프라이버시 및 규정 준수</span><span class="sxs-lookup"><span data-stu-id="93097-135">Data privacy and compliance</span></span>
+1. <span data-ttu-id="3d001-141">**키 식별자 필드 선택** 에서 **이메일**, **이름과 주소** 또는 **전화** 를 선택해 Facebook 광고 관리자에 전송합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-141">In the **Choose your key identifier field**, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager.</span></span> 
 
-<span data-ttu-id="93097-136">Dynamics 365 Customer Insights를 사용하여 Facebook 광고 관리자로 데이터를 전송하는 경우 Dynamics 365 Customer Insights 규정 준수 경계 외부로 개인 데이터와 같이 잠재적으로 민감한 데이터 등의 데이터를 전송할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="93097-136">When you enable Dynamics 365 Customer Insights to transmit data to Facebook Ads Manager, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data.</span></span> <span data-ttu-id="93097-137">Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만 Facebook 광고가 귀하가 가질 수 있는 모든 개인 정보 보호 또는 보안 의무를 충족하도록 할 책임은 귀하에게 있습니다.</span><span class="sxs-lookup"><span data-stu-id="93097-137">Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Facebook Ads meet any privacy or security obligations you may have.</span></span> <span data-ttu-id="93097-138">자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="93097-138">For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).</span></span>
-<span data-ttu-id="93097-139">Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하지 않도록 이 내보내기 대상을 언제든지 제거할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="93097-139">Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.</span></span>
+1. <span data-ttu-id="3d001-142">**표시 이름** 필드에서 연결에 인식할 수 있는 이름을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-142">Give your connection a recognizable name in the **Display name** field.</span></span>
+
+1. <span data-ttu-id="3d001-143">선택한 키 식별자에 대해 통합 고객 엔터티의 해당 특성을 매핑합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-143">Map the corresponding attributes from your unified customer entity for the selected key identifier.</span></span>
+   > <span data-ttu-id="3d001-144">[도움말] **이메일** 을 키 식별자로 선택하면 가장 많이 일치하는 결과를 얻습니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-144">[TIP] The best chances for a match occur if you select **Email** as key identifier.</span></span> <span data-ttu-id="3d001-145">식별자를 추가하면 일치가 향상될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-145">Adding additional identifiers may improve the matching.</span></span>
+
+1. <span data-ttu-id="3d001-146">**특성 추가** 를 선택하여 Facebook 광고 관리자에 보낼 더 많은 특성을 매핑합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-146">Select **Add attribute** to map more attributes to send to Facebook Ads Manager.</span></span> <span data-ttu-id="3d001-147">Facebook 광고 관리자의 특성은 다음과 같은 사용자 이름으로 매핑됩니다. **FN** = **이름**, **LN** = **성**, **FI** = **첫 이니셜**, **PHONE** = **전화**, **GEN** = **성별**, **DOB** = **생년월일**, **ST** = **주**, **CT** = **도시**, **ZIP** = **우편 번호**, **COUNTRY** = **국가/지역**</span><span class="sxs-lookup"><span data-stu-id="3d001-147">Attributes from Facebook Ads Manager are mapping to the following user-friendly names: **FN** = **First Name**, **LN** = **Last Name**, **FI** = **First Initial**, **PHONE** = **Phone**, **GEN** = **Gender**, **DOB** = **Date of birth**, **ST** = **State**, **CT** = **City**, **ZIP** = **Postal code / Zip code**, **COUNTRY** = **Country / Region**</span></span>
+
+1. <span data-ttu-id="3d001-148">내보낼 세그먼트를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-148">Select the segments you want to export.</span></span>
+
+1. <span data-ttu-id="3d001-149">**저장** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-149">Select **Save**.</span></span>
+
+<span data-ttu-id="3d001-150">내보내기를 저장해도 내보내기가 즉시 실행되지는 않습니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-150">Saving an export doesn't run the export immediately.</span></span>
+
+<span data-ttu-id="3d001-151">내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-151">The export runs with every [scheduled refresh](system.md#schedule-tab).</span></span> <span data-ttu-id="3d001-152">[주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-152">You can also [export data on demand](export-destinations.md#run-exports-on-demand).</span></span> 
+
+## <a name="data-privacy-and-compliance"></a><span data-ttu-id="3d001-153">데이터 프라이버시 및 규정 준수</span><span class="sxs-lookup"><span data-stu-id="3d001-153">Data privacy and compliance</span></span>
+
+<span data-ttu-id="3d001-154">Dynamics 365 Customer Insights를 사용하여 Facebook 광고 관리자로 데이터를 전송하는 경우 Dynamics 365 Customer Insights 규정 준수 경계 외부로 개인 데이터와 같이 잠재적으로 민감한 데이터 등의 데이터를 전송할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-154">When you enable Dynamics 365 Customer Insights to transmit data to Facebook Ads Manager, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data.</span></span> <span data-ttu-id="3d001-155">Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만 Facebook 광고가 귀하가 가질 수 있는 모든 개인 정보 보호 또는 보안 의무를 충족하도록 할 책임은 귀하에게 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-155">Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Facebook Ads meet any privacy or security obligations you may have.</span></span> <span data-ttu-id="3d001-156">자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="3d001-156">For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).</span></span>
+<span data-ttu-id="3d001-157">Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하지 않도록 이 내보내기 대상을 언제든지 제거할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3d001-157">Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

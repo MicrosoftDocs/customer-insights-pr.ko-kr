@@ -1,7 +1,7 @@
 ---
 title: 고객 활동
 description: 고객 활동을 정의하고 고객 시간 표시줄에서 봅니다.
-ms.date: 10/13/2020
+ms.date: 04/07/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,79 +9,88 @@ ms.topic: conceptual
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
-ms.openlocfilehash: fbfa9d7e00859cc80c24b98bd2dc806f1fda7803
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 0c728fad4ed00d1bf085fed60057211861b3a195
+ms.sourcegitcommit: f0855bd7762b1f0a1d3dd5259e23c95e1b0a6a93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596737"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866415"
 ---
-# <a name="customer-activities"></a><span data-ttu-id="8ba73-103">고객 활동</span><span class="sxs-lookup"><span data-stu-id="8ba73-103">Customer activities</span></span>
+# <a name="customer-activities"></a><span data-ttu-id="7acd9-103">고객 활동</span><span class="sxs-lookup"><span data-stu-id="7acd9-103">Customer activities</span></span>
 
-<span data-ttu-id="8ba73-104">Dynamics 365 Customer Insights에서 [다양한 데이터 원본](data-sources.md)의 고객 활동을 결합하여 활동을 시간순으로 나열하는 고객 시간 표시줄을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-104">Combine customer activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights to create a customer timeline that lists the activities in chronological order.</span></span> <span data-ttu-id="8ba73-105">[고객 카드 추가 기능](customer-card-add-in.md)을 통해 또는 Power BI 대시보드 Dynamics 365의 고객 참여 앱에 타임라인을 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-105">You can include the timeline in customer engagement apps in Dynamics 365 via the [Customer Card add-in](customer-card-add-in.md), or in a Power BI dashboard.</span></span>
+<span data-ttu-id="7acd9-104">Dynamics 365 Customer Insights에 [다양한 데이터 소스](data-sources.md)의 고객 활동을 결합하여 활동을 시간순으로 나열하는 타임라인을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-104">Combine customer activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights to create a timeline that lists the activities chronologically.</span></span> <span data-ttu-id="7acd9-105">Dynamics 365 앱 또는 Power BI 대시보드에 타임라인과 [고객 카드 추가 기능](customer-card-add-in.md)을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-105">Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution, or in a Power BI dashboard.</span></span>
 
-## <a name="define-an-activity"></a><span data-ttu-id="8ba73-106">활동 정의</span><span class="sxs-lookup"><span data-stu-id="8ba73-106">Define an activity</span></span>
+## <a name="define-an-activity"></a><span data-ttu-id="7acd9-106">활동 정의</span><span class="sxs-lookup"><span data-stu-id="7acd9-106">Define an activity</span></span>
 
-<span data-ttu-id="8ba73-107">데이터 원본에는 여러 데이터 원본의 트랜잭션 및 활동 데이터가 있는 엔터티가 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-107">Your data sources include entities with transactional and activity data from multiple data sources.</span></span> <span data-ttu-id="8ba73-108">이러한 엔터티를 식별하고 고객의 타임라인에서 보려는 활동을 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="8ba73-108">Identify these entities and select the activities you want to view on the customer's timeline.</span></span> <span data-ttu-id="8ba73-109">대상 활동을 포함하는 엔터티를 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="8ba73-109">Choose the entity that includes your target activity or activities.</span></span>
+<span data-ttu-id="7acd9-107">데이터 원본에는 여러 데이터 원본의 트랜잭션 및 활동 데이터가 있는 엔터티가 포함될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-107">Your data sources can include entities with transactional and activity data from multiple data sources.</span></span> <span data-ttu-id="7acd9-108">이러한 엔터티를 식별하고 고객의 타임라인에서 보려는 활동을 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="7acd9-108">Identify these entities and select the activities you want to view on the customer's timeline.</span></span> <span data-ttu-id="7acd9-109">대상 활동을 포함하는 엔터티를 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="7acd9-109">Choose the entity that includes your target activity or activities.</span></span>
 
-1. <span data-ttu-id="8ba73-110">대상 그룹 인사이트에서 **데이터** > **활동** 으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-110">In audience insights, go to **Data** > **Activities**.</span></span>
+> [!NOTE]
+> <span data-ttu-id="7acd9-110">고객타임 라인에 포함되려면 엔터티는 하나 이상의 **날짜** 속성 유형을 가져야 하며 **날짜** 필드가 없는 엔터티를 추가할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-110">An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields.</span></span> <span data-ttu-id="7acd9-111">해당 엔터티가 없으면 **활동 추가** 컨트롤을 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-111">The **Add activity** control is disabled if no such entity is found.</span></span>
 
-1. <span data-ttu-id="8ba73-111">**활동 추가** 를 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="8ba73-111">Select **Add activity**.</span></span>
+1. <span data-ttu-id="7acd9-112">대상 그룹 인사이트에서 **데이터** > **활동** 으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-112">In audience insights, go to **Data** > **Activities**.</span></span>
 
-   > [!NOTE]
-   > <span data-ttu-id="8ba73-112">고객타임 라인에 포함되려면 엔터티는 하나 이상의 **날짜** 속성 유형을 가져야 하며 **날짜** 필드가 없는 엔터티를 추가할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-112">An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields.</span></span> <span data-ttu-id="8ba73-113">해당 엔터티가 없으면 **활동 추가** 컨트롤을 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-113">The **Add activity** control is disabled if no such entity is found.</span></span>
+1. <span data-ttu-id="7acd9-113">**활동 추가** 를 선택하여 활동 설정 프로세스에 대한 안내 경험을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-113">Select **Add activity** to start the guided experience for the activity setup process.</span></span>
 
-1. <span data-ttu-id="8ba73-114">**활동 추가** 창에서 다음 필드의 값을 설정하십시오.</span><span class="sxs-lookup"><span data-stu-id="8ba73-114">In the **Add activity** pane, set the values for the following fields:</span></span>
+1. <span data-ttu-id="7acd9-114">**활동 데이터** 단계에서 다음 필드의 값을 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-114">In the **Activity data** step, set the values for the following fields:</span></span>
 
-   - <span data-ttu-id="8ba73-115">**엔터티**: 거래 또는 활동 데이터가 포함된 엔터티를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-115">**Entity**: Select an entity that includes transactional or activity data.</span></span>
-   - <span data-ttu-id="8ba73-116">**기본 키**: 레코드를 고유하게 식별하는 필드를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-116">**Primary key**: Select the field that uniquely identifies a record.</span></span> <span data-ttu-id="8ba73-117">중복 값, 빈 값 또는 누락된 값을 포함해서는 안됩니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-117">It shouldn't contain any duplicate values, empty values, or missing values.</span></span>
-   - <span data-ttu-id="8ba73-118">**타임스탬프**: 활동 시작 시간을 나타내는 필드를 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="8ba73-118">**Timestamp**: Select the field that represents the start time of your activity.</span></span>
-   - <span data-ttu-id="8ba73-119">**이벤트**: 활동에 대한 이벤트 필드를 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="8ba73-119">**Event**: Select the field that is the event for the activity.</span></span>
-   - <span data-ttu-id="8ba73-120">**웹 주소**: 이 활동에 대한 추가 정보를 제공하는 URL을 나타내는 필드를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-120">**Web address**: Select the field that represents a URL providing additional information about this activity.</span></span> <span data-ttu-id="8ba73-121">예를 들어 이 활동을 제공하는 트랜잭션 시스템입니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-121">For example, the transactional system that sources this activity.</span></span> <span data-ttu-id="8ba73-122">이 URL은 데이터 원본의 모든 필드이거나 파워 쿼리 변환을 사용하여 새 필드로 구성될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-122">This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation.</span></span> <span data-ttu-id="8ba73-123">이 URL 데이터는 통합 활동 엔터티에 저장되며 API를 사용하여 다운스트림에서 소비될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-123">This URL data will be stored in the Unified Activity entity, which can be consumed downstream using APIs.</span></span>
-   - <span data-ttu-id="8ba73-124">**세부 정보**: 선택적으로 추가 세부 사항을 위해 추가된 필드를 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="8ba73-124">**Details**: Optionally, select the field that is added for additional details.</span></span>
-   - <span data-ttu-id="8ba73-125">**아이콘**: 선택적으로 이 활동을 나타내는 아이콘을 선택하십시오.</span><span class="sxs-lookup"><span data-stu-id="8ba73-125">**Icon**: Optionally, select the icon that represents this activity.</span></span>
-   - <span data-ttu-id="8ba73-126">**활동 유형**: 활동의 의미 정의를 가장 잘 설명하는 Common Data Model에 대한 활동 유형 참조를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-126">**Activity Type**: Define the activity type reference to Common Data Model that best describes the semantic definition of the activity.</span></span>
+   - <span data-ttu-id="7acd9-115">**활동 이름**: 활동 이름을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-115">**Activity name**: Select a name for your activity.</span></span>
+   - <span data-ttu-id="7acd9-116">**엔터티**: 거래 또는 활동 데이터가 포함된 엔터티를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-116">**Entity**: Select an entity that includes transactional or activity data.</span></span>
+   - <span data-ttu-id="7acd9-117">**기본 키**: 레코드를 고유하게 식별하는 필드를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-117">**Primary key**: Select the field that uniquely identifies a record.</span></span> <span data-ttu-id="7acd9-118">중복 값, 빈 값 또는 누락된 값을 포함해서는 안됩니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-118">It shouldn't contain any duplicate values, empty values, or missing values.</span></span>
 
-1. <span data-ttu-id="8ba73-127">**관계 설정** 섹션에서 활동 데이터를 해당 고객과 연결하도록 세부 사항을 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-127">In the **Set up relationship** section, configure the details to connect your activity data to its corresponding customer.</span></span>
+   :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="이름, 엔터티 및 기본 키를 사용하여 활동 데이터를 설정합니다.":::
 
-    - <span data-ttu-id="8ba73-128">**활동 엔터티 필드**: 다른 엔터티와 관계를 설정하는 데 사용될 활동 엔터티의 필드를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-128">**Activity entity field**: Select the field in your activity entity that will be used to establish a relationship with another entity.</span></span>
-    - <span data-ttu-id="8ba73-129">**고객 엔터티**: 활동 엔터티와 관계가 있는 해당 원본 고객 엔터티를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-129">**Customer entity**: Select the corresponding source customer entity with which your activity entity will be in relationship.</span></span> <span data-ttu-id="8ba73-130">데이터 통합 프로세스에 사용되는 원본 고객 엔터티에만 관련될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-130">You can relate to only those source customer entities that are used in the data unification process.</span></span>
-    - <span data-ttu-id="8ba73-131">**고객 엔터티 필드**: 이 필드에는 맵 프로세스에서 선택한 원본 고객 엔터티의 기본 키가 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-131">**Customer entity field**: This field shows the primary key of the source customer entity as selected in the map process.</span></span> <span data-ttu-id="8ba73-132">소스 고객 엔터티의이 기본 키 필드는 활동 엔터티와의 관계를 설정하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-132">This primary key field in the source customer entity is used to establish a relationship with the activity entity.</span></span>
-    - <span data-ttu-id="8ba73-133">**이름**: 이 활동 엔터티와 선택된 원본 고객 엔터티 사이의 관계가 이미 존재하는 경우 관계 이름은 읽기 전용 모드입니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-133">**Name**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode.</span></span> <span data-ttu-id="8ba73-134">그러한 관계가 존재하지 않으면 여기에 제공된 이름으로 새로운 관계가 작성됩니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-134">If there no such relationship exists, a new relationship will be created with the name provided here.</span></span>
+1. <span data-ttu-id="7acd9-120">**다음** 을 선택하여 다음 단계로 진행합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-120">Select **Next** to go to the next step.</span></span>
+
+1. <span data-ttu-id="7acd9-121">**관계** 단계에서 활동 데이터를 해당 고객에 연결하도록 세부 정보를 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-121">In the **Relationship** step, configure the details to connect your activity data to its corresponding customer.</span></span> <span data-ttu-id="7acd9-122">이 단계는 엔터티 간의 연결을 시각화합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-122">This step visualizes the connection between entities.</span></span>  
+
+   - <span data-ttu-id="7acd9-123">**첫째**: 다른 엔터티와의 관계를 설정하는 데 사용될 활동 엔터티의 외부 필드입니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-123">**First**: Foreign field in your activity entity that will be used to establish a relationship with another entity.</span></span>
+   - <span data-ttu-id="7acd9-124">**둘째**: 활동 엔터티와 관계가 있는 해당 소스 고객 엔터티입니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-124">**Second**: Corresponding source customer entity with which your activity entity will be in relationship.</span></span> <span data-ttu-id="7acd9-125">데이터 통합 프로세스에 사용되는 소스 고객 엔터티에만 연결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-125">You can only relate to source customer entities that are used in the data unification process.</span></span>
+   - <span data-ttu-id="7acd9-126">**셋째**: 이 활동 항목과 선택한 소스 고객 항목 간의 관계가 이미 있는 경우 관계 이름은 읽기 전용 모드가 됩니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-126">**Third**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode.</span></span> <span data-ttu-id="7acd9-127">이러한 관계가 없는 경우 이 상자에 입력한 이름으로 새 관계가 생성됩니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-127">If there no such relationship exists, a new relationship will be created with the name you provide in this box.</span></span>
+
+   :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="엔터티 관계를 정의합니다.":::
+
+1. <span data-ttu-id="7acd9-129">**다음** 을 선택하여 다음 단계로 진행합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-129">Select **Next** to go to the next step.</span></span> 
+
+1. <span data-ttu-id="7acd9-130">**활동 통합** 단계에서 활동 이벤트와 활동 시작 시간을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-130">In the **Activity unification** step, choose the activity event and the start time of your activity.</span></span> 
+   - <span data-ttu-id="7acd9-131">**필수 필드**</span><span class="sxs-lookup"><span data-stu-id="7acd9-131">**Required fields**</span></span>
+      1. <span data-ttu-id="7acd9-132">**이벤트 활동**: 이 활동의 이벤트인 필드</span><span class="sxs-lookup"><span data-stu-id="7acd9-132">**Event activity**: Field that is the event for this activity</span></span>
+      2. <span data-ttu-id="7acd9-133">**타임스탬프**: 활동 시작 시간을 나타내는 필드입니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-133">**Timestamp**: Field that represents the start time of your activity.</span></span>
+
+   - <span data-ttu-id="7acd9-134">**선택 필드**</span><span class="sxs-lookup"><span data-stu-id="7acd9-134">**Optional fields**</span></span>
+      1. <span data-ttu-id="7acd9-135">**추가 세부 정보**: 이 활동에 대한 관련 정보가 있는 필드입니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-135">**Additional detail**: Field with relevant information for this activity.</span></span>
+      2. <span data-ttu-id="7acd9-136">**아이콘**: 이 활동 유형을 가장 잘 나타내는 아이콘입니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-136">**Icon**: Icon that best represents this activity type.</span></span>
+      3. <span data-ttu-id="7acd9-137">**웹 주소**: 이 활동에 대한 정보가 있는 URL이 포함된 필드입니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-137">**Web address**: Field containing a URL with information about this activity.</span></span> <span data-ttu-id="7acd9-138">예를 들어 이 활동을 제공하는 트랜잭션 시스템입니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-138">For example, the transactional system that sources this activity.</span></span> <span data-ttu-id="7acd9-139">이 URL은 데이터 원본의 모든 필드이거나 파워 쿼리 변환을 사용하여 새 필드로 구성될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-139">This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation.</span></span> <span data-ttu-id="7acd9-140">URL 데이터는 [API](apis.md)를 사용하여 다운스트림에서 소비될 수 있는 *통합 활동* 엔터티에 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-140">The URL data will be stored in the *Unified Activity* entity, which can be consumed downstream using [APIs](apis.md).</span></span>
    
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="8ba73-135">![엔터티 관계 정의](media/activities-entities-define.png "엔터티 관계 정의")</span><span class="sxs-lookup"><span data-stu-id="8ba73-135">![Define the entity relationship](media/activities-entities-define.png "Define the entity relationship")</span></span>
+   :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="통합 활동 엔터티에서 고객 활동 데이터를 지정합니다.":::
 
-1. <span data-ttu-id="8ba73-136">**저장** 을 선택하여 변경 내용을 적용합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-136">Select **Save** to apply your changes.</span></span>
+1. <span data-ttu-id="7acd9-142">다음 단계로 이동하려면 **다음** 을 선택하세요.</span><span class="sxs-lookup"><span data-stu-id="7acd9-142">Select **Next** to move to the next step.</span></span> <span data-ttu-id="7acd9-143">**완료 및 검토** 를 선택하여 활동 유형을 **기타** 로 설정한 상태로 지금 활동을 저장할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-143">You can select **Finish and review** to save the activity now with the activity type set to **Other**.</span></span> 
 
-1. <span data-ttu-id="8ba73-137">**활동** 페이지에서 **실행** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-137">On the **Activities** page, select **Run**.</span></span>
+1. <span data-ttu-id="7acd9-144">**활동 유형** 단계에서 활동 유형을 선택하고 선택적으로 Customer Insights의 다른 영역에서 사용하기 위해 일부 활동 유형을 의미론적으로 매핑하려는 경우 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-144">In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights.</span></span> <span data-ttu-id="7acd9-145">현재 *구독* & *SalesOrderLine* 활동 유형은 필드 매핑에 동의한 후 의미론적으로 매핑될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-145">Currently, *Subscription* & *SalesOrderLine* activity types can be semantically mapped after agreeing to map the fields.</span></span> <span data-ttu-id="7acd9-146">활동 유형이 새 활동과 관련이 없는 경우 사용자 지정 활동 유형에 *기타* 또는 *새로 만들기* 를 선택할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-146">If an activity type isn't relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.</span></span>
+
+1. <span data-ttu-id="7acd9-147">다음 단계로 이동하려면 **다음** 을 선택하세요.</span><span class="sxs-lookup"><span data-stu-id="7acd9-147">Select **Next** to move to the next step.</span></span> 
+
+1. <span data-ttu-id="7acd9-148">**리뷰** 단계에서 선택 사항을 확인하십시오.</span><span class="sxs-lookup"><span data-stu-id="7acd9-148">In the **Review** step, verify your selections.</span></span> <span data-ttu-id="7acd9-149">이전 단계로 돌아가 필요한 경우 정보를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-149">You go back to any of the previous steps and update the information if necessary.</span></span>
+
+   :::image type="content" source="media/Activity_Wizard5.PNG" alt-text="활동에 대해 지정된 필드를 검토하십시오.":::
+   
+1. <span data-ttu-id="7acd9-151">**활동 저장** 을 선택하여 변경 사항을 적용하고 **완료** 를 선택하여 **데이터** > **활동** 으로 돌아갑니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-151">Select **Save activity** to apply your changes and select **Done** to go back to **Data** > **Activities**.</span></span> <span data-ttu-id="7acd9-152">여기에서 타임라인에 표시하도록 설정된 활동을 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-152">Here you see which activities are set to show in the timeline.</span></span> 
+
+1. <span data-ttu-id="7acd9-153">**활동** 페이지에서 **실행** 을 선택하여 활동을 처리합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-153">On the **Activities** page, select **Run** to process the activity.</span></span> 
 
 > [!TIP]
-> <span data-ttu-id="8ba73-138">작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-138">There are [six types of status](system.md#status-types) for tasks/processes.</span></span> <span data-ttu-id="8ba73-139">또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-139">Additionally, most processes [depend on other downstream processes](system.md#refresh-policies).</span></span> <span data-ttu-id="8ba73-140">프로세스 상태를 선택하여 전체 작업의 진행률에 대한 세부 사항을 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-140">You can select the status of a process to see details on the progress of the entire job.</span></span> <span data-ttu-id="8ba73-141">작업 중 하나를 선택한 다음 **자세히 보기** 참조를 선택하면, 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고와 같은 추가 정보를 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-141">After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.</span></span>
+> <span data-ttu-id="7acd9-154">작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-154">There are [six types of status](system.md#status-types) for tasks/processes.</span></span> <span data-ttu-id="7acd9-155">또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-155">Additionally, most processes [depend on other downstream processes](system.md#refresh-policies).</span></span> <span data-ttu-id="7acd9-156">프로세스 상태를 선택하여 전체 작업의 진행률에 대한 세부 사항을 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-156">You can select the status of a process to see details on the progress of the entire job.</span></span> <span data-ttu-id="7acd9-157">작업 중 하나를 선택한 다음 **자세히 보기** 참조를 선택하면, 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고와 같은 추가 정보를 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-157">After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.</span></span>
 
-## <a name="edit-an-activity"></a><span data-ttu-id="8ba73-142">활동 편집</span><span class="sxs-lookup"><span data-stu-id="8ba73-142">Edit an activity</span></span>
 
-1. <span data-ttu-id="8ba73-143">대상 그룹 인사이트에서 **데이터** > **활동** 으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-143">In audience insights, go to **Data** > **Activities**.</span></span>
+## <a name="manage-existing-activities"></a><span data-ttu-id="7acd9-158">기존 활동 관리</span><span class="sxs-lookup"><span data-stu-id="7acd9-158">Manage existing activities</span></span>
 
-2. <span data-ttu-id="8ba73-144">편집하려는 활동 엔터티를 선택하고 **편집** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-144">Select the activity entity you want to edit and select **Edit**.</span></span> <span data-ttu-id="8ba73-145">또는 엔터티 행 위로 마우스를 가져간 다음 **편집** 아이콘을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-145">Or, you can hover over the entity row and select the **Edit** icon.</span></span>
+<span data-ttu-id="7acd9-159">**데이터** > **활동** 에서 저장된 모든 활동을 보고 관리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-159">On **Data** > **Activities**, you can view all your saved activities, and manage them.</span></span> <span data-ttu-id="7acd9-160">각 활동은 소스, 엔터티 및 활동 유형에 대한 세부 사항도 포함하는 행으로 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-160">Each activity is represented by a row that also includes details about the source, the entity, and the activity type.</span></span>
 
-3. <span data-ttu-id="8ba73-146">**편집** 아이콘을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-146">Click on the **Edit** icon.</span></span>
+<span data-ttu-id="7acd9-161">활동을 선택하면 다음 작업을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-161">The following actions are available when you select an activity.</span></span> 
 
-4. <span data-ttu-id="8ba73-147">**활동 편집** 창에서 값을 업데이트하고 **저장** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-147">In the **Edit activity** pane, update the values and select **Save**.</span></span>
+- <span data-ttu-id="7acd9-162">**편집**: 검토 단계에서 활동 설정을 엽니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-162">**Edit**: Opens the activity setup on the review step.</span></span> <span data-ttu-id="7acd9-163">이 단계에서 현재 구성의 일부 또는 전부를 변경할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-163">You can change any or all of the current configuration from this step.</span></span> <span data-ttu-id="7acd9-164">구성을 변경한 후 **활동 저장** 을 선택하고 **실행** 을 선택하여 변경 사항을 처리합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-164">After changing the configuration, select **Save activity** and then select **Run** to process the changes.</span></span>
 
-5. <span data-ttu-id="8ba73-148">**활동** 페이지에서 **실행** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-148">On the **Activities** page, select **Run**.</span></span>
+- <span data-ttu-id="7acd9-165">**이름 바꾸기**: 선택한 활동에 대해 다른 이름을 입력할 수 있는 대화 상자를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-165">**Rename**: Opens a dialog where to enter a different name for the selected activity.</span></span> <span data-ttu-id="7acd9-166">**저장** 을 선택하여 변경 내용을 적용합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-166">Select **Save** to apply your changes.</span></span>
 
-## <a name="delete-an-activity"></a><span data-ttu-id="8ba73-149">활동 삭제</span><span class="sxs-lookup"><span data-stu-id="8ba73-149">Delete an activity</span></span>
-
-1. <span data-ttu-id="8ba73-150">대상 그룹 인사이트에서 **데이터** > **활동** 으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-150">In audience insights, go to **Data** > **Activities**.</span></span>
-
-2. <span data-ttu-id="8ba73-151">제거하려는 활동 엔터티를 선택하고 **삭제** 를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-151">Select the activity entity you want to remove and select **Delete**.</span></span> <span data-ttu-id="8ba73-152">또는 엔터티 행 위로 마우스를 가져간 다음 **삭제** 아이콘을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-152">Or, you can hover over the entity row and select the **Delete** icon.</span></span> <span data-ttu-id="8ba73-153">또한 한 번에 여러 활동 엔터티를 삭제할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-153">Additionally, you can select multiple activity entities to be deleted at once.</span></span>
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="8ba73-154">![엔터티 관계 편집 또는 삭제](media/activities-entities-edit-delete.png "엔터티 관계 편집 또는 삭제")</span><span class="sxs-lookup"><span data-stu-id="8ba73-154">![Edit or delete the entity relationship](media/activities-entities-edit-delete.png "Edit or delete the entity relationship")</span></span>
-
-3. <span data-ttu-id="8ba73-155">**삭제** 아이콘을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-155">Select on the **Delete** icon.</span></span>
-
-4. <span data-ttu-id="8ba73-156">삭제를 확정합니다.</span><span class="sxs-lookup"><span data-stu-id="8ba73-156">Confirm your deletion.</span></span>
-
+- <span data-ttu-id="7acd9-167">**삭제**: 선택한 활동의 삭제를 확인하는 대화 상자를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-167">**Delete**: Opens a dialog to confirm the deletion of the selected activity.</span></span> <span data-ttu-id="7acd9-168">활동을 선택한 다음 삭제 아이콘을 선택하여 한 번에 둘 이상의 활동을 삭제할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-168">You can also delete more than one activity at once by selecting the activities and then selecting the delete icon.</span></span> <span data-ttu-id="7acd9-169">**삭제** 를 선택하여 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="7acd9-169">Select **Delete** to confirm the deletion.</span></span>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
