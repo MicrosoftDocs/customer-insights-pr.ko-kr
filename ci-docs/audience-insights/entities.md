@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 383523bad5105e08e57758838e90a49e805b5f9b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: f81128183b6e20e1078ad38c42c771d343909270
+ms.sourcegitcommit: c1841ab91fbef9ead9db0f63fbc669cc3af80c12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596415"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049402"
 ---
 # <a name="entities-in-audience-insights"></a>대상 그룹 인사이트의 엔터티
 
@@ -37,12 +37,12 @@ ms.locfileid: "5596415"
 > [!div class="mx-imgBorder"]
 > ![엔터티 선택](media/data-manager-entities-data.png "엔터티 선택")
 
-- **데이터** 탭은 기본적으로 선택되며 엔터티의 개별 레코드에 대한 세부 사항을 나열하는 테이블을 표시합니다.
+- **데이터** 탭에는 엔터티의 개별 레코드에 대한 세부 정보가 나열된 테이블이 표시됩니다.
 
 > [!div class="mx-imgBorder"]
 > ![필드 테이블](media/data-manager-entities-fields.PNG "필드 테이블")
 
-- **필드** 탭에는 필드 이름, 데이터 유형 및 유형과 같은 선택된 엔터티에 대한 세부 정보를 검토하는 테이블이 표시됩니다. **유형** 열에는 Common Data Model 관련 유형이 표시되며 시스템에 의해 자동 식별되거나 사용자에 의해 [수동으로 매핑](map-entities.md)됩니다. 필드와 같이 특성의 데이터 형식과 다를 수 있는 의미 유형입니다. 예를 들어 아래의 *전자 메일* 에는 *텍스트* 라는 데이터 형식이 있지만 (의미론적) Common Data Model 유형은 *전자 메일* 또는 *EmailAddress* 일 수 있습니다.
+- **특성** 탭은 기본적으로 선택되며 필드 이름, 데이터 유형 및 유형과 같은 선택한 엔터티에 대한 세부 사항을 검토하는 테이블을 표시합니다. **유형** 열에는 Common Data Model 관련 유형이 표시되며 시스템에 의해 자동 식별되거나 사용자에 의해 [수동으로 매핑](map-entities.md)됩니다. 필드와 같이 특성의 데이터 형식과 다를 수 있는 의미 유형입니다. 예를 들어 아래의 *전자 메일* 에는 *텍스트* 라는 데이터 형식이 있지만 (의미론적) Common Data Model 유형은 *전자 메일* 또는 *EmailAddress* 일 수 있습니다.
 
 > [!NOTE]
 > 두 테이블 모두 엔터티 데이터의 샘플만 표시합니다. 전체 데이터 집합을 보려면 **데이터 원본** 페이지에서 엔터티를 선택하고 **편집** 을 선택한 다음 [데이터 원본](data-sources.md)에 설명된 대로 파워 쿼리 편집기를 사용하여 이 엔터티의 데이터를 봅니다.

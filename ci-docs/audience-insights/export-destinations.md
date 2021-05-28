@@ -6,22 +6,19 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 354ce9ef30fe918975d06290430996c84f8bd3f7
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: c1078ed0ba259a6e9cde3c7ede3570890ae48e67
+ms.sourcegitcommit: 33a8e21b3bf6521bdb8346f81f79fce88091ddfd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896151"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016622"
 ---
 # <a name="exports-preview-overview"></a>내보내기(프리뷰) 개요
 
 **내보내기** 페이지에는 구성된 모든 내보내기가 표시됩니다. 내보내기는 다양한 애플리케이션과 특정 데이터를 공유합니다. 여기에는 고객 프로필 또는 엔터티, 스키마 및 매핑 세부 정보가 포함될 수 있습니다. 각 내보내기에는 [인증 및 액세스 관리를 위해 관리자가 설정한 연결](connections.md)이 필요합니다.
-
-> [!NOTE]
-> 2021년 3월까지 내보내기는 해당 서비스에 대한 연결을 자동으로 생성했습니다. 이제 내보내기를 만들려면 [관리자가 만들고 공유한 연결](connections.md)이 필요합니다.
 
 **데이터** > **내보내기** 로 이동하여 내보내기 페이지를 봅니다. 모든 사용자 역할은 구성된 내보내기를 볼 수 있는 액세스 권한이 있습니다. 명령 모음의 검색 필드를 사용하여 이름, 연결 이름 또는 연결 유형별로 내보내기를 찾습니다.
 

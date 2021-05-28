@@ -1,7 +1,7 @@
 ---
-title: 고객 카드 추가 기능 설치 및 구성
-description: Dynamics 365 Customer Insights용 고객 카드 추가 기능을 설치하고 구성합니다.
-ms.date: 01/20/2021
+title: Dynamics 365 앱용 고객 카드 추가 기능
+description: 이 추가 기능을 사용하여 Dynamics 365 앱에서 대상 그룹 인사이트의 데이터를 표시합니다.
+ms.date: 05/18/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,30 +9,31 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f3c4a01f9ce7749eeee72f7901620dae7cb9b8d3
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 88492943ddbf9ae30c64d92b261433b74f34f682
+ms.sourcegitcommit: d74430270f1b754322287c4f045d7febdae35be2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597335"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059596"
 ---
 # <a name="customer-card-add-in-preview"></a>고객 카드 추가 기능(미리 보기)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하세요. 고객 카드 추가 기능으로 인구 통계, 인사이트 및 활동 일정을 봅니다.
+Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하세요. 지원되는 Dynamics 365 앱에 설치된 고객 카드 추가 기능을 사용하여 인구 통계, 인사이트 및 활동 타임라인을 표시하도록 선택할 수 있습니다. 추가 기능은 연결된 Dynamics 365 앱의 데이터에 영향을 주지 않고 Customer Insights에서 데이터를 검색합니다. 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
 
-- 통합 인터페이스가 활성화된 영업 허브 또는 고객 서비스 허브와 같은 Dynamics 365 앱, 버전 9.0 이상.
-- [Common Data Service를 사용하여 Dynamics 365 앱에서 수집](connect-power-query.md)된 고객 프로필입니다.
-- 고객 카드 추가 기능의 사용자는 대상 그룹 인사이트에서 [사용자로 추가](permissions.md)되어야 합니다.
-- [구성된 검색 및 필터 기능](search-filter-index.md)입니다.
-- 인구 통계 제어: 통합 고객 프로필에서 인구 통계 필드(예: 연령 또는 성별)를 사용할 수 있습니다.
-- 보강 제어: 활성 [보강](enrichment-hub.md)이 고객 프로필에 적용되어야 합니다.
-- 인텔리전스 제어: Azure Machine Learning([예측](predictions.md) 또는 [사용자 지정 모델](custom-models.md))을 사용하여 생성된 데이터 필요
-- 측정값 제어: [구성된 측정값](measures.md)이 필요합니다.
-- 시간 표시줄 제어: [구성된 활동](activities.md)이 필요합니다.
+- 추가 기능은 Sales 또는 Customer Service, 버전 9.0 이상과 같은 Dynamics 365 모델 기반 앱에서만 작동합니다.
+- Dynamics 365 데이터를 대상 그룹 인사이트 고객 프로필에 매핑하려면 [Common Data Service 커넥터를 사용하여 Dynamics 365 앱에서 수집](connect-power-query.md)해야 합니다.
+- 고객 카드 추가 기능의 모든 Dynamics 365 사용자는 데이터를 보려면 대상 그룹 인사이트의 [사용자로 추가](permissions.md)되어야 합니다.
+- 데이터 조회가 작동하려면 대상 그룹 인사이트의 [구성된 검색 및 필터 기능](search-filter-index.md)이 필요합니다.
+- 각 추가 기능 컨트롤은 대상 그룹 인사이트의 특정 데이터에 의존합니다.
+  - 측정값 제어: [구성된 측정값](measures.md)이 필요합니다.
+  - 인텔리전스 제어: [예측](predictions.md) 또는 [사용자 지정 모델](custom-models.md)을 사용하여 생성된 데이터가 필요합니다.
+  - 인구 통계 제어: 통합 고객 프로필에서 인구 통계 필드(예: 연령 또는 성별)를 사용할 수 있습니다.
+  - 보강 제어: 활성 [보강](enrichment-hub.md)이 고객 프로필에 적용되어야 합니다.
+  - 시간 표시줄 제어: [구성된 활동](activities.md)이 필요합니다.
 
 ## <a name="install-the-customer-card-add-in"></a>고객 카드 추가 기능 설치
 
@@ -56,9 +57,9 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
    > [!NOTE]
    > **로그인** 단추를 선택할 때 브라우저 팝업 차단 기능이 인증 창을 차단하지 않는지 확인하십시오.
 
-1. 데이터를 가져오려는 환경을 선택합니다.
+1. 데이터를 가져오려는 Customer Insights 환경을 선택합니다.
 
-1. Dynamics 365 앱에서 레코드에 대한 필드 매핑을 정의합니다.
+1. Dynamics 365 앱의 레코드에 대한 필드 매핑을 정의합니다. Customer Insights의 데이터에 따라 다음 옵션을 매핑하도록 선택할 수 있습니다.
    - 연락처와 매핑하려면 연락처 엔터티의 ID와 일치하는 고객 엔터티의 필드를 선택합니다.
    - 계정과 매핑하려면 연락처 엔터티의 ID와 일치하는 계정 엔터티의 필드를 선택합니다.
 

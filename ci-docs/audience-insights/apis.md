@@ -1,7 +1,7 @@
 ---
 title: API에 대한 작업
 description: API를 사용하고 제한 사항을 이해합니다.
-ms.date: 03/10/2021
+ms.date: 05/10/2021
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 59161456914df84d7e72402ed1f5faf70a5119ba
-ms.sourcegitcommit: a39e00a50ad3eda820fd756c5611081f0ca04662
+ms.openlocfilehash: 4d41d7d328dfa6699b5f5e992d3a5bf3179490d8
+ms.sourcegitcommit: 33a8e21b3bf6521bdb8346f81f79fce88091ddfd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "5873670"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016628"
 ---
 # <a name="work-with-customer-insights-apis"></a>Customer Insights API에 대한 작업
 
@@ -90,19 +90,13 @@ Azure의 앱 등록에 대한 자세한 내용은 [새로운 Azure Portal 앱 �
 
 1. Azure Portal의 앱 등록에서 **API 권한** 으로 이동합니다.
 
-1. **권한 추가** 를 선택하고 측면 창에서 **Customer Insights** 를 선택합니다.
+1. **권한 추가** 를 선택합니다. 
+
+1. **내 조직에서 사용하는 API** 탭을 선택하고 목록에서 **Customer Insights용 Dynamics 365 AI** 를 선택합니다. 
 
 1. **권한 유형** 의 경우 **애플리케이션 권한** 을 선택하고 **CustomerInsights.Api.All** 권한을 선택합니다.
 
 1. **권한 추가** 를 선택합니다.
-
-1. 이 애플리케이션 권한에 대한 관리자 동의를 제공하려면 서비스 주체를 추가해야 합니다.
-
-   1. AD(Azure Active Directory) PowerShell 모듈 설치: `Install-Module -Name AzureAD -AllowClobber -Scope AllUsers`
-   1. AD 계정에 연결: `Connect-AzureAD -TenantId <your tenant id>` **개요** > **Azure Active Directory** 에 테넌트 ID를 찾을 수 있습니다.
-   1. 다음 명령을 실행하여 Azure AD 서비스 주체 추가: `New-AzureADServicePrincipal -AppId "38c77d00-5fcb-4cce-9d93-af4738258e3c" -DisplayName "Microsoft Dynamics 365 Customer Insights"` AppId 매개 변수는 Customer Insights API 앱과 관련됩니다.
-
-   :::image type="content" source="media/azureAD-service-principal.png" alt-text="서비스 주체 이름":::
 
 1. 앱 등록을 위한 **API 권한** 으로 돌아갑니다.
 

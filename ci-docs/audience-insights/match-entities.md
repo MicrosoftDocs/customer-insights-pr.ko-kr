@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2eb84c44aa530346a73ba720106734d705a45f23
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2155042d86cda0cffee1588760a06d6c7eb7077e
+ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595572"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085630"
 ---
 # <a name="match-entities"></a>엔터티 매칭
 
@@ -103,6 +103,18 @@ ms.locfileid: "5595572"
 
 > [!NOTE]
 > 규칙의 순서가 중요합니다. 일치 알고리즘은 첫 번째 규칙을 기준으로 일치를 시도하고 첫 번째 규칙과 일치하는 항목이 없는 경우에만 두 번째 규칙으로 계속합니다.
+
+### <a name="change-the-entity-order-in-match-rules"></a>일치 규칙에서 엔터티 순서 변경
+
+일치 규칙의 엔터티를 다시 정렬하여 처리 순서를 변경할 수 있습니다. 변경된 순서로 인해 충돌하는 규칙은 제거됩니다. 업데이트된 구성으로 제거된 규칙은 다시 만들어야 합니다.
+
+1. **데이터** > **통합** > **일치** 로 이동하여 **편집** 을 선택합니다.
+
+1. **규칙 편집** 창에서 **위/아래로 이동** 컨트롤을 선택하거나 엔터티를 끌어서 놓아 순서를 변경합니다.
+
+   :::image type="content" source="media/reorder-match-rules.png" alt-text="일치 단계에서 엔터티가 처리되는 순서를 변경하는 옵션입니다.":::
+
+1. **완료** 를 선택하여 규칙을 저장합니다.
 
 ## <a name="define-deduplication-on-a-match-entity"></a>일치 항목에서 중복 제거 정의
 

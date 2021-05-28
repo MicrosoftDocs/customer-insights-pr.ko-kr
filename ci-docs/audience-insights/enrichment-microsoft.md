@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 6f19033236190547f68d2b91ec6b32074bf7912a
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: be042dd139607849b795c903fa58da2edb9ff589
+ms.sourcegitcommit: 72603fb39c4d5dbca71128815a2e1692542ea4dc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896610"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "6064899"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>브랜드 및 관심 관계로 풍부한 고객 프로필 강화(미리 보기)
 
@@ -31,7 +31,7 @@ Microsoft의 독점 데이터를 사용하여 브랜드 및 관심사와 함께 
 
 ## <a name="how-we-determine-affinities"></a>친화도를 결정하는 방법
 
-Microsoft의 온라인 검색 데이터를 사용하여 다양한 인구 통계 세그먼트(연령, 성별 또는 위치로 정의됨)에서 브랜드 및 관심사에 대한 선호도를 찾습니다. 브랜드나 관심 분야에 대한 온라인 검색 양에 따라 인구 통계학적 세그먼트가 다른 세그먼트와 비교하여 해당 브랜드나 관심 분야에 얼마나 많은 유사성이 있는지가 결정됩니다. 브랜드 또는 관심사.
+Microsoft의 온라인 검색 데이터를 사용하여 다양한 인구 통계 세그먼트(연령, 성별 또는 위치로 정의됨)에서 브랜드 및 관심사에 대한 선호도를 찾습니다. 브랜드나 관심 분야에 대한 온라인 검색 양에 따라 인구 통계학적 세그먼트가 다른 세그먼트와 비교하여 해당 브랜드나 관심 분야에 얼마나 많은 유사성이 있는지가 결정됩니다.
 
 ## <a name="affinity-level-and-score"></a>선호도 수준 및 점수
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 10c338b89a6f9971912d05986c105cba1221b01b
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: c8e4a7247ccf575a62440038180010916b09d51b
+ms.sourcegitcommit: f9e2fa3f11ecf11a5d9cccc376fdeb1ecea54880
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896013"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954495"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>고객 프로필 보강(미리 보기)
 
@@ -29,6 +29,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 - Microsoft에서 제공한 [브랜드](enrichment-microsoft.md)
 - Microsoft에서 제공한 [관심사](enrichment-microsoft.md)
+- Microsoft 제공 [향상된 주소](enrichment-enhanced-addresses.md)
 - Leadspace에서 제공한 [회사 데이터](enrichment-leadspace.md)
 - Experian에서 제공한 [인구 통계 자료](enrichment-experian.md)
 - HERE Technologies에서 제공한 [위치 데이터](enrichment-here.md)

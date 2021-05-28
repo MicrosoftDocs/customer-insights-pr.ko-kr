@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e973bb11b31c9e70b695ebec8aa2700fdaa5e44f
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: ce2477d957a1792e0436a0dfc15a33621b1c89a9
+ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597933"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5976096"
 ---
 # <a name="power-automate-connector-preview"></a>Power Automate 커넥터(미리 보기)
 
@@ -27,7 +27,7 @@ ms.locfileid: "5597933"
 - 데이터 원본 새로 고침이 실패하면 트리거됩니다. 
 - 데이터 원본 새로 고침이 성공하면 트리거됩니다.
 - 임계값이 세그먼트에서 교차될 때 트리거됩니다. 트리거는 임계값을 초과하는 것으로 제한됩니다.
-- 임계값이 비즈니스 측정에서 교차될 때 트리거됩니다. 트리거는 임계값을 초과하는 것으로 제한됩니다.
+- 임계값이 비즈니스 측정에서 교차될 때 트리거됩니다. 차원이 없는 비즈니스 측정값만 지원됩니다. 트리거는 임계값을 초과하는 것으로 제한됩니다.
 - (데이터 원본, 세그먼트, 측정값 등)의 전체 새로 고침이 완료되면 트리거됩니다.
 - 통합 프로세스(매핑, 일치, 병합)의 새로 고침이 완료되면 트리거됩니다.
 

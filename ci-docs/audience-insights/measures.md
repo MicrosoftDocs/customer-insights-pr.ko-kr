@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 9a94a32a04f2a8beb661c27271fe96f23d998722
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 402e5ef3515bce0e6f56788781b7bd909738aaa6
+ms.sourcegitcommit: b833e333745d321edeaf96d3ed14458cbce02ff1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887948"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049258"
 ---
 # <a name="define-and-manage-measures"></a>측정 정의 및 관리
 
@@ -34,7 +34,7 @@ ms.locfileid: "5887948"
 
 1. **이름 편집** 을 선택하고 측정값에 대한 **이름** 을 제공합니다. 
    > [!NOTE]
-   > 새 측정값 구성에 두 개의 필드(예: CustomerID 및 계산)만 있는 경우 출력은 Customer_Measure라는 시스템 생성 엔터티에 새 열로 추가됩니다. 그리고 통합 고객 프로필에서 측정값의 값을 볼 수 있습니다. 다른 측정값은 자체 엔터티를 생성합니다.
+   > 새 측정값 구성에 두 개의 필드(예: CustomerID 및 하나의 계산)만 있는 경우 출력은 Customer_Measure라는 시스템 생성 엔터티에 새 열로 추가됩니다. 그리고 통합 고객 프로필에서 측정값의 값을 볼 수 있습니다. 다른 측정값은 자체 엔터티를 생성합니다.
 
 1. 구성 영역의 **함수 선택** 드롭 다운 메뉴에서 집계 함수를 선택합니다. 집계 함수에는 다음이 포함됩니다. 
    - **Sum**

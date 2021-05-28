@@ -66,6 +66,8 @@
           href: audience-insights/enrichment-hub.md
         - name: 브랜드 및 관심 관계
           href: audience-insights/enrichment-microsoft.md
+        - name: 고급 주소
+          href: audience-insights/enrichment-enhanced-addresses.md
         - name: HERE Technologies로 보강
           href: audience-insights/enrichment-here.md
         - name: Leadspace로 보강
@@ -76,14 +78,20 @@
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: 세그먼트 및 측정값
       items:
-        - name: 세그먼트 및 고객 그룹 만들기
+        - name: 세그먼트 개요
           href: audience-insights/segments.md
+        - name: 세그먼트 및 고객 그룹 만들기
+          href: audience-insights/segment-builder.md
+        - name: 측정값에 따라 제안된 세그먼트
+          href: audience-insights/suggested-segments.md
+        - name: 활동을 기반으로 제안된 세그먼트
+          href: audience-insights/suggested-segments-activity.md
         - name: 세그먼트에 대한 통찰력 확보
           href: audience-insights/segment-insights.md
-        - name: 제안된 세그먼트 확인
-          href: audience-insights/suggested-segments.md
         - name: 유사 고객 찾기
           href: audience-insights/find-similar-customer-segments.md
+    - name: 측정
+      items:
         - name: 측정값 및 KPI 정의
           href: audience-insights/measures.md
     - name: 예측
@@ -116,7 +124,7 @@
       items:
         - name: 내보내기
           items:
-            - name: 내보내기(프리뷰) 개요
+            - name: 내보내기 개요
               href: audience-insights/export-destinations.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
@@ -126,6 +134,8 @@
               href: audience-insights/export-azure-blob-storage.md
             - name: Azure Data Lake Storage Gen2
               href: audience-insights/export-azure-data-lake-storage-gen2.md
+            - name: Azure Synapse Analytics
+              href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
             - name: Adobe 환경 플랫폼
@@ -160,9 +170,7 @@
               href: audience-insights/export-sftp.md
         - name: 기타 용도
           items:
-            - name: Dynamics 365 Customer Service(추가 기능)
-              href: audience-insights/customer-card-add-in.md
-            - name: Dynamics 365 Sales 허브(추가 기능)
+            - name: Dynamics 365용 고객 카드 추가 기능
               href: audience-insights/customer-card-add-in.md
             - name: Microsoft Teams(봇)
               href: audience-insights/export-teams-bot.md
@@ -178,7 +186,7 @@
           href: audience-insights/system.md
         - name: 사용자 권한 할당
           href: audience-insights/permissions.md
-        - name: 연결(프리뷰) 개요
+        - name: 연결 개요
           href: audience-insights/connections.md
         - name: 다중 환경 관리
           href: audience-insights/manage-environments.md

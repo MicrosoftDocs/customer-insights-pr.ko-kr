@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01290d5fae7af1737b73373d75e334ae1ed67d37
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: b5a644e286bd44d4ebf7d1837255326c005b48d6
+ms.sourcegitcommit: 74cd4fa9cbb784d9dff174c0eec7b4dcb408d66b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759829"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059324"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Marketo로 세그먼트 내보내기(프리뷰)
 
@@ -44,7 +44,7 @@ ms.locfileid: "5759829"
 
 1. 이 연결을 사용할 수 있는 사용자를 선택합니다. 아무 조치도 취하지 않으면 기본값은 관리자입니다. 자세한 내용은 [기여자가 내보내기에 연결을 사용하도록 허용](connections.md#allow-contributors-to-use-a-connection-for-exports)을 확인하세요.
 
-1. **[Marketo 클라이언트 ID, 클라이언트 암호 및 REST 엔드포인트 호스트 이름](https://developers.marketo.com/rest-api/authentication/)** 을 입력합니다.
+1. **[Marketo 클라이언트 ID, 클라이언트 암호 및 REST 엔드포인트 호스트 이름](https://developers.marketo.com/rest-api/authentication/)** 을 입력합니다. REST 끝점 호스트 이름은 `https://`가 없는 호스트 이름입니다. 예: `xyz-abc-123.mktorest.com` 
 
 1. **데이터 개인 정보 보호 및 준수** 를 확인하려면 **동의함** 을 선택하고 Marketo에 대한 연결을 초기화하려면 **연결** 을 선택합니다.
 
@@ -62,7 +62,7 @@ ms.locfileid: "5759829"
 
 1. **내보내기 연결** 필드의 Marketo 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 연결이 없는 것입니다.
 
-1. **[Marketo 목록 ID](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 를 입력합니다. 
+1. **[Marketo 목록 ID](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 를 입력합니다. 목록 ID는 순수 숫자 값입니다. 예를 들어 Marketo 목록 ID가 ST12345A7인 경우 숫자 앞뒤의 문자를 제거하고 `12345`를 입력합니다. 
 
 1. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. 
 
@@ -74,7 +74,7 @@ ms.locfileid: "5759829"
 
 내보내기를 저장해도 내보내기가 즉시 실행되지는 않습니다.
 
-내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다. [주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다. Marketo에서 이제 [Marketo 목록](ttps://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)에 있는 세그먼트를 찾을 수 있습니다.
+내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다. [주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다. Marketo에서 이제 [Marketo 목록](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)에 있는 세그먼트를 찾을 수 있습니다.
 
 
 ## <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수
