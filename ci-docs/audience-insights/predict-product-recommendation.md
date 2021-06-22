@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: e46e31131a2dd5235af8221eafcd2e1d1394f3d4
-ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
+ms.openlocfilehash: 01704f78cfe1f6ceeee19ff825fc65150894d4ed
+ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5906772"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6095564"
 ---
 # <a name="product-recommendation-prediction-preview"></a>제품 추천 예측(미리 보기)
 
@@ -205,33 +205,9 @@ ms.locfileid: "5906772"
        > [!div class="mx-imgBorder"]
        > ![선별된 개별 고객에 대한 높은 신뢰도 제안을 보여주는 목록](media/product-recommendation-highconfidence.PNG "선별된 개별 고객에 대한 높은 신뢰도 제안을 보여주는 목록")
 
-## <a name="fix-a-failed-prediction"></a>실패한 예측 수정
+## <a name="manage-predictions"></a>예측 관리
 
-1. **인텔리전스** > **예측** 에서 **내 예측** 탭으로 이동합니다.
-
-1. 오류 로그를 보려는 예측을 선택하고 **로그** 를 선택합니다.
-
-1. 모든 오류를 검토합니다. 발생할 수 있는 여러 유형의 오류가 있으며 오류를 일으킨 조건을 설명합니다. 예를 들어 데이터가 충분하지 않아 정확하게 예측할 수 없다는 오류는 일반적으로 더 많은 데이터를 Customer Insights에 로드하면 해결됩니다.
-
-## <a name="refresh-a-prediction"></a>예측 새로 고침
-
-예측은 설정에 구성된 것과 동일한 [데이터 새로 고침 예약](system.md#schedule-tab)에서 자동으로 새로 고쳐집니다.
-
-1. **인텔리전스** > **예측** 에서 **내 예측** 탭으로 이동합니다.
-
-1. 새로 고치려는 예측 옆의 세로 줄임표를 선택합니다.
-
-1. **새로 고침** 을 선택합니다.
-
-## <a name="delete-a-prediction"></a>예측 삭제
-
-예측을 삭제하면 출력 엔터티도 제거됩니다.
-
-1. **인텔리전스** > **예측** 에서 **내 예측** 탭으로 이동합니다.
-
-1. 삭제하려는 예측 옆의 세로 줄임표를 선택합니다.
-
-1. **삭제** 를 선택합니다.
+예측을 최적화, 문제 해결, 새로 고침 또는 삭제할 수 있습니다. 입력 데이터 사용성 보고서를 검토하여 예측을 더 빠르고 안정적으로 만드는 방법을 알아보세요. 자세한 내용은 [예측 관리](manage-predictions.md)를 참조하십시오.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

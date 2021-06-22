@@ -1,7 +1,7 @@
 ---
 title: 환경 만들기 및 관리
 description: 서비스에 등록하는 방법과 환경을 관리하는 방법을 알아봅니다.
-ms.date: 03/26/2021
+ms.date: 06/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 8cc1401251ed7c45c598bd4a8fb33a9709fabbc8
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 06310ea6fc72f26e21e185a6abcb5d19d4b201f6
+ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887994"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6259107"
 ---
 # <a name="manage-environments"></a>환경 관리
 
@@ -76,9 +76,9 @@ ms.locfileid: "5887994"
    > 환경을 만들 때 선택한 동일한 Azure 지역의 Azure Data Lake Gen2 스토리지 계정만 지원합니다.
    > Azure Data Lake Gen2 계층 구조 네임스페이스(HNS)를 지원하는 저장소 계정만 지원합니다.
 
-   - Azure Data Lake Storage Gen2 옵션의 경우 인증을 위해 리소스 기반 옵션과 구독 기반 옵션 중에서 선택할 수 있습니다. 자세한 내용은 [Azure 서비스 보안 주체를 사용하여 대상 그룹 인사이트를 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)을 참조하세요. **컨테이너** 이름은 변경할 수 없으며 "customerinsights"가 됩니다.
+   - Azure Data Lake Storage Gen2 옵션의 경우 인증을 위해 리소스 기반 옵션과 구독 기반 옵션 중에서 선택할 수 있습니다. 자세한 내용은 [Azure 서비스 보안 주체를 사용하여 대상 그룹 인사이트를 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)을 참조하세요. **컨테이너** 이름은 변경할 수 없으며 `customerinsights`가 됩니다.
    
-   - [예측](predictions.md)을 사용하려면 Microsoft Dataverse를 기반으로 애플리케이션과 솔루션의 데이터 공유를 구성하거나 온-프레미스 데이터 소스에서 데이터 수집을 사용 설정하고 **Microsoft Dataverse와 데이터 공유 구성 및 추가 기능 사용 설정** 아래에 Microsoft Dataverse 환경 URL을 제공합니다. **데이터 공유 활성화** 를 선택하여 Customer Insights 출력 데이터를 Microsoft Dataverse 관리형 Data Lake와 공유합니다.
+   - [예측](predictions.md)을 사용하려면 Microsoft Dataverse로 데이터 공유를 구성하거나 온-프레미스 데이터 소스에서 데이터 수집을 사용 설정하고 **Microsoft Dataverse와 데이터 공유 구성 및 추가 기능 사용 설정** 아래에 Microsoft Dataverse 환경 URL을 제공합니다. **데이터 공유 활성화** 를 선택하여 Customer Insights 출력 데이터를 Microsoft Dataverse 관리형 Data Lake와 공유합니다.
 
      > [!NOTE]
      > - 모든 데이터를 자체 Azure Data Lake Storage에 저장하는 경우 Microsoft Dataverse 관리형 Data Lake와의 데이터 공유는 현재 지원되지 않습니다.
@@ -87,7 +87,7 @@ ms.locfileid: "5887994"
      > [!div class="mx-imgBorder"]
      > ![Microsoft Dataverse와 데이터 공유를 활성화하는 구성 옵션](media/datasharing-with-DataverseMDL.png)
 
-   데이터 수집 또는 세그먼트 생성과 같은 프로세스를 실행하면 위에서 지정한 스토리지 계정에 해당 폴더가 생성됩니다. 데이터 파일과 model.json 파일이 생성되며 실행하는 프로세스에 따라 해당 하위 폴더에 추가됩니다.
+   데이터 수집 또는 세그먼트 생성과 같은 프로세스를 실행하면 위에서 지정한 스토리지 계정에 해당 폴더가 생성됩니다. 데이터 파일 및 model.json 파일이 생성되고 프로세스 이름을 기반으로 폴더에 추가됩니다.
 
    Customer Insights의 여러 환경을 만들고 해당 환경의 출력 엔터티를 스토리지 계정에 저장하도록 선택하면 컨테이너에 ci_<environmentid>가 있는 각 환경에 대해 별도의 폴더가 생성됩니다.
 
@@ -146,7 +146,7 @@ ms.locfileid: "5887994"
    > - 모든 데이터를 자체 Azure Data Lake Storage에 저장하는 경우 Microsoft Dataverse 관리형 Data Lake와의 데이터 공유는 현재 지원되지 않습니다.
    > - [엔터티에서 누락된 값의 예측](predictions.md)은 Microsoft Dataverse 관리형 Data Lake와의 데이터 공유를 활성화할 때 현재 지원되지 않습니다.
 
-   Microsoft Dataverse와의 데이터 공유를 사용 설정하면 데이터 원본 및 기타 프로세스의 전체 새로 고침이 트리거됩니다. 프로세스가 현재 실행 중이고 대기 중인 경우 Microsoft Dataverse와의 데이터 공유를 활성화하는 옵션이 표시되지 않습니다. 해당 프로세스가 완료될 때까지 기다리거나 취소하여 데이터 공유를 활성화할 수 있습니다. 
+   Microsoft Dataverse와의 데이터 공유를 활성화하면 데이터 원본 및 기타 프로세스의 전체 새로 고침이 시작됩니다. 프로세스가 현재 실행 중인 경우 Microsoft Dataverse와의 데이터 공유를 활성화하는 옵션이 표시되지 않습니다. 해당 프로세스가 완료될 때까지 기다리거나 취소하여 데이터 공유를 활성화합니다. 
    
    :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="Microsoft Dataverse와 데이터 공유를 활성화하는 구성 옵션":::
    

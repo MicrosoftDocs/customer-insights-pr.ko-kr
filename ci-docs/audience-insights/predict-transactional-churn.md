@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 43fcd37f8dd71e2890334a4cc53d49dae97d63c6
-ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
+ms.openlocfilehash: b0e587739f9f4d03942d70a72de4f9378822054d
+ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5906864"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6095610"
 ---
 # <a name="transactional-churn-prediction-preview"></a>트랜잭션 이탈 예측(미리 보기)
 
@@ -144,7 +144,7 @@ ms.locfileid: "5906864"
    - **상태:** 예측 실행 상태입니다.
         - **대기 중:** 예측은 다른 프로세스가 실행되기를 기다리고 있습니다.
         - **새로 고치는 중:** 예측은 현재 출력 엔터티로 유입되는 결과를 생성하기 위해 실행 중입니다.
-        - **실패:** 예측 실행에 실패했습니다. 자세한 내용은 [로그](#troubleshoot-a-failed-prediction)를 검토합니다.
+        - **실패:** 예측 실행에 실패했습니다. 자세한 내용은 [로그](manage-predictions.md#troubleshoot-a-failed-prediction)를 검토합니다.
         - **성공:** 예측에 성공했습니다. 세로 줄임표 아래에서 **보기** 를 선택하여 예측을 검토합니다.
    - **편집됨:** 예측의 구성이 변경된 날짜입니다.
    - **마지막 새로 고침:** 출력 엔터티에서 예측을 새로 고친 날짜입니다.
@@ -168,35 +168,9 @@ ms.locfileid: "5906864"
        
     1. **가장 영향력 있는 요소:** 예측을 만들 때 고려해야 할 요소가 많이 있습니다. 각 요인에는 모델이 생성하는 집계된 예측에 대해 계산된 중요도가 있습니다. 이러한 요소를 사용하여 예측 결과를 검증할 수 있습니다. 또는 나중에 이 정보를 사용하여 [세그먼트 만들기 ](segments.md)를 통해 고객의 이탈 위험에 영향을 줄 수 있습니다.
 
-## <a name="troubleshoot-a-failed-prediction"></a>실패한 예측 문제 해결
+## <a name="manage-predictions"></a>예측 관리
 
-1. **인텔리전스** > **예측** 으로 이동하고 **내 예측** 탭을 선택합니다.
-
-1. 오류 로그를 보려는 예측 옆에 있는 세로 줄임표를 선택합니다.
-
-1. **로그** 를 선택합니다.
-
-1. 모든 오류를 검토합니다. 발생할 수 있는 여러 유형의 오류가 있으며 오류를 일으킨 조건을 설명합니다. 예를 들어 정확하게 예측하기에 데이터가 충분하지 않은 오류는 일반적으로 추가 데이터를 Customer Insights에 로드하여 해결됩니다.
-
-## <a name="refresh-a-prediction"></a>예측 새로 고침
-
-예측은 설정에서 구성된 대로 [데이터 새로 고침 예약](system.md#schedule-tab)에 자동으로 동일하게 갱신됩니다. 수동으로도 새로 고칠 수 있습니다.
-
-1. **인텔리전스** > **예측** 으로 이동하고 **내 예측** 탭을 선택합니다.
-
-1. 새로 고치려는 예측 옆의 세로 줄임표를 선택합니다.
-
-1. **새로 고침** 을 선택합니다.
-
-## <a name="delete-a-prediction"></a>예측 삭제
-
-예측을 삭제하면 출력 엔터티도 제거됩니다.
-
-1. **인텔리전스** > **예측** 으로 이동하고 **내 예측** 탭을 선택합니다.
-
-1. 삭제하려는 예측 옆의 세로 줄임표를 선택합니다.
-
-1. **삭제** 를 선택합니다.
+예측을 최적화, 문제 해결, 새로 고침 또는 삭제할 수 있습니다. 입력 데이터 사용성 보고서를 검토하여 예측을 더 빠르고 안정적으로 만드는 방법을 알아보세요. 자세한 내용은 [예측 관리](manage-predictions.md)를 참조하십시오.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

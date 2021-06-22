@@ -1,7 +1,7 @@
 ---
 title: 신규 및 향후 기능
 description: 새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.
-ms.date: 05/06/2021
+ms.date: 06/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: c66b37d6e4d6ed830238566fbc09934832892b34
-ms.sourcegitcommit: 3f9981df97fa7b1f432a446d3f11936ea4cfbde5
+ms.openlocfilehash: 355dc22ac381145b231848830cefc47eda7968f4
+ms.sourcegitcommit: 6944c1592877eb92ec789df5f2e0dbecef638837
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "5988928"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6263259"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트의 새로운 기능
 
@@ -26,6 +26,37 @@ ms.locfileid: "5988928"
 
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하십시오.
+
+## <a name="may-2021-updates"></a>2021년 5월 업데이트
+
+2021년 5월 업데이트에는 여러 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="data-ingestion"></a>데이터 수집
+
+- **Azure Data Lake Storage에서 데이터를 연결할 때 메타데이터 또는 엔터티 정의 보기 또는 수정** 이제 Azure Data Lake Storage의 Common Data Model 폴더에서 데이터를 연결할 때 대상 그룹 인사이트에서 메타데이터 또는 엔터티 정의를 보고 편집할 수 있습니다. 이 기능은 실시간 피드백, 모델 검증 및 오류 검사를 제공합니다. 이를 통해 model.json과 manifest.json을 완벽하게 편집할 수 있습니다.
+
+### <a name="extensibility"></a>확장성
+
+- **향상된 세그먼트 내보내기, 사용자 지정 일정 및 복제** 이제 목록에서 [특정 세그먼트에 대한 모든 내보내기 보기](export-destinations.md#view-exports-and-export-details)를 수행할 수 있습니다. 이 새로운 보기는 특정 세그먼트가 사용되는 방식을 관리하고 기존을 조정하거나 새 내보내기를 만드는 데 도움이 됩니다.    
+  개별 내보내기 또는 한 번에 여러 내보내기에 대한 [사용자 지정 새로 고침 일정을 정의](export-destinations.md#schedule-and-run-exports)할 수 있습니다. 지금까지 모든 내보내기는 시스템을 새로 고칠 때마다 실행되었습니다.    
+  처음부터 새 내보내기를 만드는 대신 기존 내보내기를 기반으로 시작하여 시간을 절약할 수 있습니다.
+
+- **Microsoft Advertising으로 세그먼트 내보내기** Microsoft Advertising을 포함하도록 내보내기 대상을 확장했습니다. 통합 고객 프로필 데이터로 Microsoft Advertising에 Customer Match 대상 그룹을 만들고, 광고 캠페인에 이러한 대상 그룹을 사용합니다. 자세한 내용은 [Microsoft Advertising으로 세그먼트 내보내기](export-microsoft-advertising.md)를 참조하십시오.
+
+- **LinkedIn Ads로 세그먼트 내보내기** LinkedIn Ads를 포함하도록 내보내기 대상을 확장했으며 통합 고객 프로필 데이터를 내보내 LinkedIn을 통해 연락처 타겟팅 및 회사 타겟팅을 잠금 해제할 수 있습니다. 자세한 내용은 [LinkedIn Ads로 세그먼트 내보내기](export-linkedin-ads.md)를 참조하십시오.
+
+
+- **Omnisend로 세그먼트 내보내기** Omnisend를 포함하도록 내보내기 대상을 확장했습니다. 대상 그룹 인사이트에서 만든 세그먼트를 사용하여 캠페인을 생성하고 이메일 마케팅을 제공하며 Omnisend의 특정 고객 그룹을 활용합니다. 자세한 내용은 [Omnisend로 세그먼트 내보내기](export-omnisend.md)를 참조하십시오.
+
+### <a name="predictions"></a>예측
+
+- **입력 데이터 사용성 보고서** 입력 데이터 사용성 보고서는 기본 제공 예측이 생성할 수 있는 오류 및 경고에 대한 통합 보기를 제공합니다. 또한 모델 성능을 개선하는 방법에 대한 권장 사항을 제공합니다.    
+  이 보고서는 모델이 학습 프로세스를 완료한 후에 사용할 수 있습니다. 성공적으로 완료되었는지 여부와 관계없이 각 모델에 대해 별도로 생성됩니다.
+  현재 이 기능은 트랜잭션 이탈 모델에서만 사용할 수 있습니다. 자세한 내용은 [입력 데이터 사용성 보고서](manage-predictions.md#input-data-usability-report)를 참조하십시오.
+
+### <a name="relationships"></a>관계
+
+- **관계 시각화 도우미** 관계 시각화 도우미 보기를 사용하면 엔터티와 해당 카디널리티 간의 기존 관계를 모두 볼 수 있습니다. 관계는 이제 사용자 생성, 시스템 및 상속된 관계 그룹으로 구성됩니다. 보기를 이미지로 내보낼 수도 있습니다. 자세한 내용은 [관계 보기](relationships.md#view-relationships)를 참조하십시오. 
 
 ## <a name="april-2021-updates"></a>2021년 4월 업데이트
 

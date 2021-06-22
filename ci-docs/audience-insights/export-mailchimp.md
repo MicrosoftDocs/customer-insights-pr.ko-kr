@@ -9,14 +9,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 35848998e738c7ecc1642f2b75912ff78d85f79e
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 7922a6a69f863caae5401549ed6f88a61aa77d39
+ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976163"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6124235"
 ---
-# <a name="export-segment-lists-to-mailchimp-preview"></a>Mailchimp로 세그먼트 목록 내보내기(프리뷰)
+# <a name="export-segments-to-mailchimp-preview"></a>Mailchimp로 세그먼트 내보내기(프리뷰)
 
 통합 고객 프로필의 세그먼트를 Mailchimp로 내보내 뉴스레터 및 이메일 캠페인을 만듭니다.
 

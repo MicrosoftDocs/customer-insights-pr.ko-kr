@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 20072d14b160e54f5ad044adc1de6c079bf790e4
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: b136084316da5ae17a8428236381f69e5c21f9ea
+ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595281"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6129907"
 ---
 # <a name="product-recommendation-prediction-preview-sample-guide"></a>제품 추천 예측(미리 보기) 샘플 가이드
 
@@ -65,7 +65,7 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
 
 1. 측면 창의 **이름** 필드에서 데이터 원본의 이름을 **쿼리** 에서 **eCommercePurchases** 로 바꿉니다.
 
-1. 데이터 원본을 저장합니다.
+1. 데이터 원본을 **저장** 합니다.
 
 
 ### <a name="ingest-customer-data-from-loyalty-schema"></a>충성도 스키마에서 고객 데이터 수집
@@ -83,11 +83,11 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
 
 1. 오른쪽 창의 **이름** 필드에서 데이터 원본의 이름을 **쿼리** 에서 **loyCustomers** 로 바꿉니다.
 
-1. 데이터 원본을 저장합니다.
+1. 데이터 원본을 **저장** 합니다.
 
 ## <a name="task-2---data-unification"></a>작업 2 - 데이터 통합
 
-데이터를 수집 한 후 이제 **매핑, 일치, 병합** 프로세스를 시작하여 통합 고객 프로필을 만듭니다. 자세한 내용은 [데이터 통합](data-unification.md)을 참조하십시오.
+데이터를 수집한 후 이제 데이터 통합 프로세스를 시작하여 통합 고객 프로필을 만듭니다. 자세한 내용은 [데이터 통합](data-unification.md)을 참조하십시오.
 
 ### <a name="map"></a>매핑
 
@@ -156,7 +156,7 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
 
    - **제품 수**: 이 값을 **5** 로 설정합니다. 이 설정은 고객에게 추천할 제품 수를 정의합니다.
 
-   - **고객이 최근에 구매한 제품을 제안하시겠습니까?**: **예** 를 선택하여 추천에 고객이 이전에 구매한 제품을 포함할 것임을 나타냅니다.
+   - **예상되는 반복 구매**: **예** 를 선택하여 고객이 이전에 구매한 추천에 제품을 포함할 것임을 나타냅니다.
 
    - **과거 기록 보기 창:** **365 일** 이상을 선택합니다. 이 설정은 모델이 추천에 대한 입력으로 사용하기 위해 고객의 활동을 되돌아 볼 기간을 정의합니다.
    

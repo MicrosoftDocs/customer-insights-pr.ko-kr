@@ -96,30 +96,40 @@
           href: audience-insights/measures.md
     - name: 예측
       items:
-        - name: 가치 예측을 사용하여 데이터 완료
-          href: audience-insights/predictions.md
-        - name: 구독 이탈 예측
-          href: audience-insights/predict-subscription-churn.md
-        - name: 구독 이탈 예측 샘플 가이드
-          href: audience-insights/sample-guide-predict-subscription-churn.md
-        - name: 트랜잭션 이탈 예측
-          href: audience-insights/predict-transactional-churn.md
-        - name: 트랜잭션 이탈 예측 샘플 가이드
-          href: audience-insights/sample-guide-predict-transactional-churn.md
-        - name: 고객 평생 가치(CLV) 예측
-          href: audience-insights/predict-customer-lifetime-value.md
-        - name: 제품 추천 예측
-          href: audience-insights/predict-product-recommendation.md
-        - name: 제품 추천 예측에 대한 샘플 가이드
-          href: audience-insights/sample-guide-predict-product-recommendation.md
+        - name: AI의 도움으로 데이터 예측
+          items:
+            - name: 예측 모델 개요
+              href: audience-insights/predictions-overview.md
+            - name: 고객 평생 가치(CLV) 예측
+              href: audience-insights/predict-customer-lifetime-value.md
+            - name: 제품 추천 예측
+              href: audience-insights/predict-product-recommendation.md
+            - name: 구독 이탈 예측
+              href: audience-insights/predict-subscription-churn.md
+            - name: 트랜잭션 이탈 예측
+              href: audience-insights/predict-transactional-churn.md
+            - name: Azure 기계 학습의 사용자 지정 모델 사용
+              href: audience-insights/custom-models.md
+            - name: 부분적으로 누락된 데이터 완료
+              href: audience-insights/predictions.md
+        - name: 샘플 가이드
+          items:
+            - name: CLV 예측용 샘플 가이드
+              href: audience-insights/sample-guide-predict-clv.md
+            - name: 구독 이탈 예측 샘플 가이드
+              href: audience-insights/sample-guide-predict-subscription-churn.md
+            - name: 트랜잭션 이탈 예측 샘플 가이드
+              href: audience-insights/sample-guide-predict-transactional-churn.md
+            - name: 제품 추천 예측에 대한 샘플 가이드
+              href: audience-insights/sample-guide-predict-product-recommendation.md
+            - name: Azure Machine Learning 실험
+              href: audience-insights/azure-machine-learning-experiments.md
+            - name: Azure Machine Learning Studio로 실험
+              href: audience-insights/machine-learning-studio-experiments.md
+        - name: 예측 관리
+          href: audience-insights/manage-predictions.md
         - name: 예측을 기준으로 세그먼트 만들기
           href: audience-insights/prediction-based-segment.md
-        - name: 맞춤형 기계 학습 모델 구현
-          href: audience-insights/custom-models.md
-        - name: Azure Machine Learning 실험
-          href: audience-insights/azure-machine-learning-experiments.md
-        - name: Azure Machine Learning Studio로 실험
-          href: audience-insights/machine-learning-studio-experiments.md
     - name: 내보내기 옵션
       items:
         - name: 내보내기
@@ -154,12 +164,18 @@
               href: audience-insights/export-facebook.md
             - name: Google 광고
               href: audience-insights/export-google-ads.md
+            - name: LinkedIn Ads
+              href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
               href: audience-insights/export-liveramp.md
             - name: Mailchimp
               href: audience-insights/export-mailchimp.md
             - name: Marketo
               href: audience-insights/export-marketo.md
+            - name: Microsoft Advertising
+              href: audience-insights/export-microsoft-advertising.md
+            - name: Omnisend
+              href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
             - name: SendGrid
@@ -200,6 +216,8 @@
           href: audience-insights/integrate-engagement-insights.md
         - name: Common Data Model의 엔터티 스키마 검토
           href: audience-insights/entity-schemas.md
+        - name: Dataverse의 Customer Insights 데이터
+          href: audience-insights/customer-insights-dataverse.md
         - name: API에 대한 작업
           href: audience-insights/apis.md
         - name: API 참조
@@ -240,6 +258,12 @@
           href: engagement-insights/custom-reports.md
         - name: 통합 프로필 보고서 작성
           href: engagement-insights/profile-reports.md
+        - name: 차원 보기 및 만들기
+          href: engagement-insights/dimensions.md
+        - name: 메트릭 보기 및 만들기
+          href: engagement-insights/metrics.md
+        - name: 세그먼트 보기 및 만들기
+          href: engagement-insights/segments.md
     - name: 여정 분석
       items:
         - name: 퍼널 보고서 만들기 및 관리

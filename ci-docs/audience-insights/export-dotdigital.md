@@ -9,14 +9,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d08504856e1c673ef32433b83bf491d7f4e8cee4
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 8b0bda638c9bc7bb9cb2fdb01be11489b44f28a5
+ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976854"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6124419"
 ---
-# <a name="export-segment-lists-to-dotdigital-preview"></a>DotDigital로 세그먼트 목록 내보내기(프리뷰)
+# <a name="export-segments-to-dotdigital-preview"></a>DotDigital로 세그먼트 내보내기(프리뷰)
 
 통합 고객 프로필의 세그먼트를 DotDigital 주소록으로 내보내고 이를 캠페인, 이메일 마케팅에 사용하고 DotDigital로 고객 세그먼트를 구축합니다. 
 

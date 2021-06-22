@@ -9,12 +9,12 @@ ms.topic: how-to
 author: m-hartmann
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 04c4252aae374cf25c16b71415ee4a89b51b0040
-ms.sourcegitcommit: f9e2fa3f11ecf11a5d9cccc376fdeb1ecea54880
+ms.openlocfilehash: e2f92a64d01a443bcf3c1605621abe045b93ee5e
+ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954587"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6095518"
 ---
 # <a name="customer-lifetime-value-clv-prediction-preview"></a>고객 평생 가치(CLV) 예측(미리 보기)
 
@@ -149,7 +149,6 @@ CLV 모델을 구성하고 실행하는 데 많은 시간이 걸리지 않으므
 
 1. **다음** 을 선택합니다.
 
-
 ### <a name="review-and-run-the-model-configuration"></a>모델 구성 검토 및 실행
 
 1. **모델 세부 정보 검토** 단계에서 예측의 구성을 확인합니다. 표시된 값 아래에서 **편집** 을 선택하여 예측 구성의 일부로 돌아갈 수 있습니다. 진행률 표시기에서 구성 단계를 선택할 수도 있습니다.
@@ -170,11 +169,10 @@ CLV 모델을 구성하고 실행하는 데 많은 시간이 걸리지 않으므
 - **상태**: 예측 실행 상태입니다.
     - **대기 중**: 예측은 다른 프로세스가 완료되기를 기다리고 있습니다.
     - **새로 고치는 중**: 출력 엔터티로 유입되는 결과를 생성하기 위해 현재 예측이 실행 중입니다.
-    - **실패**: 예측 실행에 실패했습니다. 자세한 내용은 [로그](#troubleshoot-a-failed-prediction)를 검토합니다.
+    - **실패**: 예측 실행에 실패했습니다. 자세한 내용은 [로그](manage-predictions.md#troubleshoot-a-failed-prediction)를 검토합니다.
     - **성공**: 예측에 성공했습니다. 예측 결과를 검토하려면 세로 줄임표 아래에서 **보기** 를 선택합니다.
 - **편집됨**: 예측의 구성이 변경된 날짜입니다.
 - **마지막 새로 고침**: 출력 엔터티에서 예측을 새로 고친 날짜입니다.
-
 
 ### <a name="review-prediction-results"></a>예측 결과 검토
 
@@ -216,28 +214,8 @@ CLV 모델을 구성하고 실행하는 데 많은 시간이 걸리지 않으므
 
 - **가장 영향력 있는 요소**: AI 모델에 제공된 입력 데이터를 기반으로 CLV 예측을 생성할 때 다양한 요소를 고려합니다. 각 요인은 모형이 생성하는 집계된 예측에 대해 중요도가 계산됩니다. 이러한 요소를 사용하여 예측 결과를 검증할 수 있습니다. 이러한 요소는 또한 모든 고객의 CLV 예측에 기여한 가장 영향력 있는 요소에 대한 더 많은 인사이트를 제공합니다.
 
-## <a name="refresh-a-prediction"></a>예측 새로 고침
+## <a name="manage-predictions"></a>예측 관리
 
-예측은 설정에 구성된 것과 동일한 [데이터 새로 고침 예약](system.md#schedule-tab)에서 자동으로 새로 고쳐집니다. 수동으로도 새로 고칠 수 있습니다.
-
-1. **인텔리전스** > **예측** 으로 이동하고 **내 예측** 탭을 선택합니다.
-2. 새로 고치려는 예측 옆의 세로 줄임표를 선택합니다.
-3. **새로 고침** 을 선택합니다.
-
-## <a name="delete-a-prediction"></a>예측 삭제
-
-예측을 삭제하면 출력 엔터티도 제거됩니다.
-
-1. **인텔리전스** > **예측** 으로 이동하고 **내 예측** 탭을 선택합니다.
-2. 삭제하려는 예측 옆의 세로 줄임표를 선택합니다.
-3. **삭제** 를 선택합니다.
-
-## <a name="troubleshoot-a-failed-prediction"></a>실패한 예측 문제 해결
-
-1. **인텔리전스** > **예측** 으로 이동하고 **내 예측** 탭을 선택합니다.
-2. 오류 로그를 보려는 예측 옆에 있는 세로 줄임표를 선택합니다.
-3. **로그** 를 선택합니다.
-4. 모든 오류를 검토합니다. 발생할 수 있는 여러 유형의 오류가 있으며 오류를 일으킨 조건을 설명합니다. 예를 들어, 정확하게 예측할 수 있는 데이터가 충분하지 않다는 오류는 일반적으로 더 많은 데이터를 대상 그룹 인사이트에 로드하여 해결됩니다.
-
+예측을 최적화, 문제 해결, 새로 고침 또는 삭제할 수 있습니다. 입력 데이터 사용성 보고서를 검토하여 예측을 더 빠르고 안정적으로 만드는 방법을 알아보세요. 자세한 내용은 [예측 관리](manage-predictions.md)를 참조하십시오.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

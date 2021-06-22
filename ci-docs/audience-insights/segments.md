@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: a7fa6515bd6e79dedfb21aa0f0b8e24b873a6771
-ms.sourcegitcommit: 8341fa964365c185b65bc4b71fc0c695ea127dc0
+ms.openlocfilehash: 6cb7bd62bf0f61e6dc5811b20e5011e4a086c743
+ms.sourcegitcommit: 84283d523a891298fca8aaf629d9f9ab2a1bc067
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6034020"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111395"
 ---
 # <a name="segments-overview"></a>세그먼트 개요
 
@@ -32,22 +32,13 @@ ms.locfileid: "6034020"
 - 측정값 또는 속성을 기반으로 한 AI 기반 제안: [측정값 향상을 위한 제안 세그먼트](suggested-segments.md)
 - 활동에 따른 제안: [고객 활동에 기반한 제안 세그먼트](suggested-segments-activity.md)
 
-## <a name="get-insights-on-existing-segments"></a>기존 세그먼트에 대한 인사이트 얻기
-
-[세그먼트 인사이트](segment-insights.md)를 사용하여 기존 세그먼트에 대한 추가 정보를 찾아보십시오. 두 세그먼트를 차별화하는 요소 또는 공통점을 찾으십시오.
-
-## <a name="find-similar-customers"></a>유사 고객 찾기
-
-인공 지능의 도움을 받아 선택한 세그먼트의 구성원과 유사한 고객을 찾습니다. 자세한 내용은 [유사한 고객](find-similar-customer-segments.md)을 참조하십시오.
-
 ## <a name="manage-existing-segments"></a>기존 세그먼트 관리
 
 **세그먼트** 페이지로 이동하여 저장된 모든 세그먼트를 보고 관리합니다.
 
 각 세그먼트는 세그먼트에 대한 추가 정보가 포함된 행으로 표시됩니다.
 
-> [!div class="mx-imgBorder"]
-> ![기존 세그먼트를 관리하는 옵션](media/segments-selected-segment.png "기존 세그먼트를 관리하는 옵션")
+:::image type="content" source="media/segments-selected-segment.png" alt-text="옵션 드롭다운 목록 및 사용 가능한 옵션이 있는 선택된 세그먼트입니다.":::
 
 세그먼트를 선택하면 다음 작업을 사용할 수 있습니다.
 
@@ -59,7 +50,7 @@ ms.locfileid: "6034020"
   또는 **활성화/비활성화** 드롭다운의 **나중에 예약** 기능을 사용하여 특정 세그먼트의 활성화 및 비활성화에 대한 미래 날짜 및 시간을 지정할 수 있습니다.
 - **이름 바꾸기**: 세그먼트 이름을 바꿉니다.
 - **다운로드**: 구성원 목록을 .CSV 파일로 다운로드합니다.
-- **추가** 옵션은 다른 애플리케이션에서 처리하기 위해 세그먼트의 고객 ID 목록을 보냅니다.
+- **내보내기 관리** 내보내기 관련 세그먼트를 보고 관리합니다. [내보내기에 대해 자세히 알아보기.](export-destinations.md)
 - **삭제**: 세그먼트를 삭제합니다.
 
 ## <a name="refresh-segments"></a>세그먼트 새로 고침
@@ -68,6 +59,24 @@ ms.locfileid: "6034020"
 
 > [!TIP]
 > 작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다. 또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다. 프로세스 상태를 선택하여 전체 작업의 진행률에 대한 세부 사항을 볼 수 있습니다. 작업 중 하나를 선택한 다음 **자세히 보기** 참조를 선택하면, 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고와 같은 추가 정보를 확인할 수 있습니다.
+
+## <a name="export-segments"></a>세그먼트 내보내기
+
+세그먼트 페이지 또는 [내보내기 페이지](export-destinations.md)에서 세그먼트를 내보낼 수 있습니다. 
+
+1. **세그먼트** 페이지로 이동합니다.
+
+1. 내보낼 세그먼트 선택에 대해 **더보기 [...]** 를 선택합니다.
+
+1. 작업 드롭다운 목록에서 **내보내기 관리** 를 선택합니다.
+
+1. **세그먼트에 대한 내보내기(미리 보기)** 페이지가 열립니다. 현재 세그먼트를 포함하거나 포함하지 않은 내보내기별로 그룹화된 모든 구성된 내보내기를 볼 수 있습니다.
+
+   1. 선택한 세그먼트를 내보내기에 추가하려면 목록에서 내보내기를 선택하고 **세그먼트 추가** 를 선택합니다.
+
+   1. 선택한 세그먼트로 새 내보내기를 만들려면 **내보내기 추가** 를 선택합니다. 내보내기 만들기에 대한 자세한 내용은 [새 내보내기 설정](export-destinations.md#set-up-a-new-export)을 참조하십시오.
+
+1. 세그먼트의 기본 페이지로 돌아가려면 **뒤로** 를 선택합니다.
 
 ## <a name="view-processing-history-and-segment-members"></a>처리 기록 및 세그먼트 구성원 보기
 

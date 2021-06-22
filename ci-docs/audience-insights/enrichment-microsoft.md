@@ -1,7 +1,7 @@
 ---
 title: Microsoft의 데이터로 고객 프로필 보강
 description: Microsoft의 독점 데이터를 사용하여 브랜드 및 관심사와 함께 고객 데이터를 보강하십시오.
-ms.date: 04/09/2021
+ms.date: 06/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: be042dd139607849b795c903fa58da2edb9ff589
-ms.sourcegitcommit: 72603fb39c4d5dbca71128815a2e1692542ea4dc
+ms.openlocfilehash: e92360bb886739cfe477ce1d2eb62219228a0292
+ms.sourcegitcommit: d4b4053f6ee8f60f1a214982c4726c9de84615ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6064899"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6245715"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>브랜드 및 관심 관계로 풍부한 고객 프로필 강화(미리 보기)
 
@@ -69,12 +69,10 @@ Microsoft의 온라인 검색 데이터를 사용하여 다양한 인구 통계 
 
 ### <a name="define-your-brands-or-interests"></a>브랜드 또는 관심 정의
 
-다음 옵션 중 하나를 선택합니다.
+다음 옵션 중 하나 또는 둘 다를 사용하여 최대 5개의 브랜드 또는 관심 분야를 선택하십시오.
 
-- **산업**: 이 시스템은 산업과 관련된 최고 브랜드 또는 관심사를 식별하고 고객 데이터를 보강합니다.
-- **원하는 항목 선택**: 조직과 가장 관련이 있는 브랜드 또는 관심사 목록에서 최대 5개의 항목을 선택합니다.
-
-브랜드나 관심사를 추가하려면 입력 영역에 해당 브랜드나 관심사를 입력하여 일치하는 용어를 기반으로 제안을 받습니다. 찾고 있는 브랜드나 관심 분야가 목록에 없는 경우 **제안** 링크를 사용하여 의견을 보내주십시오.
+- **산업**: 드롭다운 목록에서 산업을 선택한 다음 해당 산업의 상위 브랜드 또는 관심 분야에서 선택합니다.
+- **자체 선택**: 조직과 관련된 브랜드 또는 관심 분야를 입력한 다음 일치하는 제안에서 선택합니다. 찾고 있는 브랜드나 관심 분야가 목록에 없는 경우 **제안** 링크를 사용하여 의견을 보내주십시오.
 
 ### <a name="review-enrichment-preferences"></a>보강 선호 설정 검토
 
