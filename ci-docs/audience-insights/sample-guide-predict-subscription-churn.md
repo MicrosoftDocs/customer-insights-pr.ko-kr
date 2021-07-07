@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 324e5c19778230dd978b2f4e9156a2dd82b3d2bd
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: fa460fa5c79bc8a356ec5e90050ec85e05c55be8
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595526"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306311"
 ---
 # <a name="subscription-churn-prediction-preview-sample-guide"></a>구독 이탈 예측(미리 보기) 샘플 가이드
 
@@ -138,8 +138,8 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
 
 1. FullName을 사용하여 첫 번째 조건을 추가합니다.
 
-   * eCommerceContacts의 경우 **FullName** 드롭다운에서 선택합니다.
-   * loyCustomers의 경우 **FullName** 드롭다운에서 선택합니다.
+   * eCommerceContacts의 경우 드롭다운에서 **FullName** 을 선택합니다.
+   * loyCustomers의 경우 드롭다운에서 **FullName** 을 선택합니다.
    * **정규화** 드롭다운을 선택하고 **유형(전화, 이름, 주소, ...)** 을 선택합니다.
    * **정밀도 수준**: **기본** 및 **값**: **높음** 을 설정합니다.
 

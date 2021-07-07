@@ -9,16 +9,16 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 251bc26246cee16952e8e4cb08e2ed7aa4d18488
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 49dad45c951f3c00d77ddd99faec48bfccada8b0
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595434"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306128"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>트랜잭션 이탈 예측(미리 보기) 샘플 가이드
 
-이 가이드는 아래 제공된 데이터를 사용하여 Customer Insights에서 트랜잭션 이탈 예측의 엔드 투 엔드 예를 안내합니다. 이 가이드에 사용된 모든 데이터는 실제 고객 데이터가 아니며 Customer Insights 구독 내 *데모* 환경에 있는 Contoso 데이터 집합의 일부입니다.
+이 가이드는 아래 제공된 데이터를 사용하여 Customer Insights에서 트랜잭션 이탈 예측의 엔드 투 엔드 예를 안내합니다. 이 가이드에 사용된 모든 데이터는 실제 고객 데이터가 아니며 Customer Insights 구독의 *데모* 환경에 있는 Contoso 데이터 집합의 일부입니다.
 
 ## <a name="scenario"></a>시나리오
 
@@ -119,8 +119,8 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
 
 1. FullName을 사용하여 첫 번째 조건을 추가합니다.
 
-   * eCommerceContacts의 경우 **FullName** 드롭다운에서 선택합니다.
-   * loyCustomers의 경우 **FullName** 드롭다운에서 선택합니다.
+   * eCommerceContacts의 경우 드롭다운에서 **FullName** 을 선택합니다.
+   * loyCustomers의 경우 드롭다운에서 **FullName** 을 선택합니다.
    * **정규화** 드롭다운을 선택하고 **유형(전화, 이름, 주소, ...)** 을 선택합니다.
    * **정밀도 수준**: **기본** 및 **값**: **높음** 을 설정합니다.
 

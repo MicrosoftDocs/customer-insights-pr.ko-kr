@@ -136,6 +136,8 @@
           items:
             - name: 내보내기 개요
               href: audience-insights/export-destinations.md
+            - name: 활성 캠페인
+              href: audience-insights/export-active-campaign.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
             - name: AutoPilot
@@ -178,8 +180,12 @@
               href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
+            - name: Salesforce Marketing Cloud
+              href: audience-insights/export-salesforce.md
             - name: SendGrid
               href: audience-insights/export-sendgrid.md
+            - name: SendInBlue
+              href: audience-insights/export-sendinblue.md
             - name: Snapchat
               href: audience-insights/export-snapchat.md
             - name: SFTP
@@ -240,15 +246,15 @@
           href: engagement-insights/get-started.md
         - name: 작업 영역 만들기
           href: engagement-insights/create-workspace.md
-        - name: 웹 사이트 계측
-          href: engagement-insights/instrument-website.md
+        - name: 웹 사이트 및 모바일 앱에서 이벤트 캡처
+          href: engagement-insights/developer-resources.md
         - name: 개념 및 용어
           href: engagement-insights/glossary.md
     - name: 이벤트
       items:
         - name: 이벤트 생성 및 수정
           href: engagement-insights/refined-events.md
-        - name: 이벤트 내보내기
+        - name: 내보내기 이벤트
           href: engagement-insights/export-events.md
     - name: 보고서
       items:
@@ -276,6 +282,14 @@
           href: engagement-insights/advanced-SDK-implementation.md
         - name: 웹 SDK 샘플
           href: engagement-insights/websdk-sample.md
+        - name: Android SDK 자습서
+          href: engagement-insights/get-started-android.md
+        - name: Android SDK 샘플
+          href: engagement-insights/androidsdk-sample.md
+        - name: iOS SDK 자습서
+          href: engagement-insights/get-started-ios.md
+        - name: iOS SDK 샘플
+          href: engagement-insights/iossdk-sample.md
     - name: 관리
       items:
         - name: 역할 및 권한

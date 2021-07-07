@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: ccf4f661ecffb281556a4545b1f26ee809c697cd
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: 0496d10c994cd077a778a6e745e3774e316765ae
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5895921"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305210"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Leadspace를 통한 회사 프로필 강화(미리 보기)
 
@@ -63,7 +63,7 @@ Leadspace를 구성하려면 다음 전제 조건이 충족되어야 합니다.
 
 1. 유효한 Leadspace 토큰을 입력합니다.
 
-1. **동의함** 확인란을 선택하여 **데이터 개인 정보 및 규정 준수** 에 대한 동의를 검토하고 제공합니다.
+1. **데이터 개인 정보 보호 및 규정 준수** 를 검토하고 **동의함** 을 선택하여 동의를 제공합니다.
 
 1. **확인** 을 선택하여 구성을 확인합니다.
 
@@ -81,7 +81,7 @@ Leadspace를 구성하려면 다음 전제 조건이 충족되어야 합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-보강된 고객 데이터를 바탕으로 구축합니다. [세그먼트](segments.md)를 만들고, [측정](measures.md)하고, 또한 [데이터를 내보내](export-destinations.md) 고객에게 맞춤형 경험을 제공합니다.
+보강된 고객 데이터를 바탕으로 구축합니다. [세그먼트](segments.md) 및 [측정값](measures.md)을 만들고 [데이터 내보내기](export-destinations.md) 를 통해 고객에게 개인화된 경험을 제공합니다.
 
 ## <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수
 

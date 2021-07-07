@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: b136084316da5ae17a8428236381f69e5c21f9ea
-ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
+ms.openlocfilehash: a85ee598ec747d0594755314e83a127ce0f2af95
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129907"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306174"
 ---
 # <a name="product-recommendation-prediction-preview-sample-guide"></a>제품 추천 예측(미리 보기) 샘플 가이드
 
@@ -115,8 +115,8 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
 
 5. FullName을 사용하여 첫 번째 조건을 추가합니다.
 
-   - eCommerceContacts의 경우 **FullName** 드롭다운에서 선택합니다.
-   - loyCustomers의 경우 **FullName** 드롭다운에서 선택합니다.
+   - eCommerceContacts의 경우 드롭다운에서 **FullName** 을 선택합니다.
+   - loyCustomers의 경우 드롭다운에서 **FullName** 을 선택합니다.
    - **정규화** 드롭다운을 선택하고 **유형(전화, 이름, 주소, ...)** 을 선택합니다.
    - **정밀도 수준**: **기본** 및 **값**: **높음** 을 설정합니다.
 

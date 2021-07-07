@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2155042d86cda0cffee1588760a06d6c7eb7077e
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 50b11e7d6f62d7a25eb25a0f2b1c4ad7d859def1
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085630"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306036"
 ---
 # <a name="match-entities"></a>엔터티 매칭
 
@@ -209,7 +209,7 @@ ms.locfileid: "6085630"
 
 대부분의 일치 매개 변수를 재구성하고 미세 조정할 수 있습니다.
 
-:::image type="content" source="media/match-rules-management.png" alt-text="일치 규칙 옵션이 있는 드롭 다운 메뉴의 스크린샷입니다.":::
+:::image type="content" source="media/match-rules-management.png" alt-text="일치 규칙 옵션이 있는 드롭다운 메뉴의 스크린샷입니다.":::
 
 - 여러 규칙을 정의한 경우 **규칙의 순서를 변경** 합니다. **위로 이동** 과 **아래로 이동** 옵션을 선택하거나 끌어서 놓기로 일치 규칙을 재정렬할 수 있습니다.
 

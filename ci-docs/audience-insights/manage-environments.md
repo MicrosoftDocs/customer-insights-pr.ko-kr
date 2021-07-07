@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 06310ea6fc72f26e21e185a6abcb5d19d4b201f6
-ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
+ms.openlocfilehash: 904ce68336cba4b7a4d5a37692b72d091400559d
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6259107"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304888"
 ---
 # <a name="manage-environments"></a>환경 관리
 
@@ -54,29 +54,32 @@ ms.locfileid: "6259107"
 1. **새로 만들기** 를 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![환경 설정](media/environment-settings-dialog.png)
+   > ![환경 설정.](media/environment-settings-dialog.png)
 
-1. **새로운 환경 조성** 대화 상자에서 **새로운 환경** 을 선택합니다.
+1. **환경 만들기** 대화 상자에서 **새로운 환경** 을 선택합니다.
 
    [현재 환경에서 데이터 복사](#considerations-for-copy-configuration-preview)하고 싶다면 **기존 환경에서 복사** 를 선택합니다. 조직에서 데이터를 복사할 수 있는 사용 가능한 모든 환경 목록이 표시됩니다.
 
 1. 다음 정보를 제공합니다.
    - **이름**: 이 환경의 이름입니다. 기존 환경에서 복사한 경우 이 필드가 이미 채워져 있지만 변경할 수 있습니다.
-   - **지역**: 서비스가 배포되고 호스팅되는 지역입니다.
    - **유형**: 프로덕션 환경을 만들지 샌드박스 환경을 만들지 선택합니다.
-
+   - **지역**: 서비스가 배포되고 호스팅되는 지역입니다.
+   
 1. 필요에 따라 **고급 설정** 을 선택할 수 있습니다.
 
-   - **모든 데이터 저장**: Customer Insights에서 생성된 출력 데이터를 저장할 위치를 지정합니다. **Customer Insights 저장소**(Customer Insights 팀에서 관리하는 Azure Data Lake) 및 **Azure Data Lake Storage Gen2**(자신의 Azure Data Lake Storage)의 두 가지 옵션이 있습니다. 기본적으로 Customer Insights 저장소 옵션이 선택되어 있습니다.
+   - **모든 데이터 저장**: Customer Insights에서 생성된 출력 데이터를 저장할 위치를 지정합니다. 두 가지 옵션이 있습니다. **Customer Insights 스토리지**(Customer Insights 팀에서 관리하는 Azure Data Lake) 및 **Azure Data Lake Storage**(사용자의 Azure Data Lake Storage). 기본적으로 Customer Insights 저장소 옵션이 선택되어 있습니다.
 
-   > [!NOTE]
-   > Azure Data Lake Storage에 데이터를 저장하면 데이터가 Dynamics 365 Customer Insights에서 데이터가 저장되는 위치와 다를 수 있으므로 해당 Azure Storage 계정의 적절한 지역에 데이터를 전송하고 저장한다는 데 동의하는 것입니다. [Microsoft 보안 센터에서 자세히 알아보십시오.](https://www.microsoft.com/trust-center)
-   >
-   > 현재 수집된 엔터티는 항상 Customer Insights 관리형 데이터 레이크에 저장됩니다.
-   > 환경을 만들 때 선택한 동일한 Azure 지역의 Azure Data Lake Gen2 스토리지 계정만 지원합니다.
-   > Azure Data Lake Gen2 계층 구조 네임스페이스(HNS)를 지원하는 저장소 계정만 지원합니다.
+     > [!NOTE]
+     > Azure Data Lake Storage에 데이터를 저장하면 데이터가 Dynamics 365 Customer Insights에서 데이터가 저장되는 위치와 다를 수 있으므로 해당 Azure Storage 계정의 적절한 지역에 데이터를 전송하고 저장한다는 데 동의하는 것입니다. [Microsoft 보안 센터에서 자세히 알아보십시오.](https://www.microsoft.com/trust-center)
+     >
+     > 현재 수집된 엔터티는 항상 Customer Insights 관리형 Data Lake에 저장됩니다. 
+     > 
+     > 환경을 만들 때 선택한 동일한 Azure 지역의 Azure Data Lake Storage 계정만 지원합니다. 
+     > 
+     > 계층 구조 네임스페이스가 사용 설정된 Azure Data Lake Storage 계정만 지원합니다.
 
-   - Azure Data Lake Storage Gen2 옵션의 경우 인증을 위해 리소스 기반 옵션과 구독 기반 옵션 중에서 선택할 수 있습니다. 자세한 내용은 [Azure 서비스 보안 주체를 사용하여 대상 그룹 인사이트를 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)을 참조하세요. **컨테이너** 이름은 변경할 수 없으며 `customerinsights`가 됩니다.
+
+   - Azure Data Lake Storage 옵션의 경우 인증을 위해 리소스 기반 옵션과 구독 기반 옵션 중에서 선택할 수 있습니다. 자세한 내용은 [Azure 서비스 보안 주체를 사용하여 대상 그룹 인사이트를 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)을 참조하세요. **컨테이너** 이름은 변경할 수 없으며 `customerinsights`가 됩니다.
    
    - [예측](predictions.md)을 사용하려면 Microsoft Dataverse로 데이터 공유를 구성하거나 온-프레미스 데이터 소스에서 데이터 수집을 사용 설정하고 **Microsoft Dataverse와 데이터 공유 구성 및 추가 기능 사용 설정** 아래에 Microsoft Dataverse 환경 URL을 제공합니다. **데이터 공유 활성화** 를 선택하여 Customer Insights 출력 데이터를 Microsoft Dataverse 관리형 Data Lake와 공유합니다.
 
@@ -113,14 +116,14 @@ ms.locfileid: "6259107"
 
 - 고객 프로필.
 - 데이터 원본 자격 증명. 모든 데이터 원본에 대한 자격 증명을 제공하고 데이터 원본을 수동으로 새로 고쳐야 합니다.
-- Common Data Model 폴더 및 Common Data Service 관리 레이크의 데이터 원본. 원본 환경에서와 동일한 이름으로 해당 데이터 원본을 수동으로 생성해야 합니다.
+- Common Data Model 폴더의 데이터 원본 및 Dataverse 관리형 Data Lake. 원본 환경에서와 동일한 이름으로 해당 데이터 원본을 수동으로 생성해야 합니다.
 
 환경을 복사하면 새 환경이 생성되었다는 확인 메시지가 표시됩니다. **데이터 원본으로 이동** 을 선택하여 데이터 원본 목록을 볼 수 있습니다.
 
 모든 데이터 원본에 **자격 증명 필요** 상태가 표시됩니다. 데이터 원본을 편집하고 자격 증명 정보를 입력하여 새로 고치십시오.
 
 > [!div class="mx-imgBorder"]
-> ![데이터 원본 복사됨](media/data-sources-copied.png)
+> ![데이터 원본 복사됨.](media/data-sources-copied.png)
 
 데이터 원본을 새로 고친 후 **데이터** > **통합** 으로 이동합니다. 원본 환경에서 설정을 확인할 수 있습니다. 필요에 따라 편집하거나 **실행** 을 선택하여 데이터 통합 프로세스를 시작하고 통합 고객 엔터티를 만듭니다.
 
@@ -136,7 +139,7 @@ ms.locfileid: "6259107"
 
 3. **환경 편집** 상자에서 환경의 **표시 이름** 을 업데이트할 수 있지만 **지역** 또는 **유형** 은 변경할 수 없습니다.
 
-4. 환경이 데이터를 Azure Data Lake Storage Gen2에 저장하도록 구성된 경우 **계정 키** 를 업데이트할 수 있습니다. 그러나 **계정 이름** 또는 **컨테이너** 이름은 변경할 수 없습니다.
+4. Azure Data Lake Storage에 데이터를 저장하도록 환경이 구성된 경우 **계정 키** 를 업데이트할 수 있습니다. 그러나 **계정 이름** 또는 **컨테이너** 이름은 변경할 수 없습니다.
 
 5. 선택적으로 계정 키 기반 연결에서 리소스 기반 또는 구독 기반 연결로 업데이트할 수 있습니다. 한 번 업그레이드하면 업데이트 후 계정 키로 되돌릴 수 없습니다. 자세한 내용은 [Azure 서비스 보안 주체를 사용하여 대상 그룹 인사이트를 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)을 참조하세요. 연결을 업데이트할 때 **컨테이너** 정보를 변경할 수 없습니다.
 
@@ -158,19 +161,19 @@ ms.locfileid: "6259107"
 
 1.  앱 헤더의 **환경** 선택기를 선택합니다. 
 
-2.  재설정하려는 환경을 선택하고 줄임표 **...** 를 선택합니다. 
+2.  재설정하려는 환경을 선택하고 줄임표(**...**)를 선택합니다. 
 
 3. **재설정** 옵션을 선택합니다. 
 
 4.  삭제를 확인하려면 환경 이름을 입력하고 **초기화** 를 선택합니다.
 
-## <a name="delete-an-existing-environment-available-only-for-admins"></a>기존 환경 삭제(관리자만 사용 가능)
+## <a name="delete-an-existing-environment"></a>기존 환경 삭제
 
 관리자는 관리하는 환경을 삭제할 수 있습니다.
 
 1.  앱 헤더의 **환경** 선택기를 선택합니다.
 
-2.  재설정하려는 환경을 선택하고 줄임표 **...** 를 선택합니다. 
+2.  재설정하려는 환경을 선택하고 줄임표(**...**)를 선택합니다. 
 
 3. **삭제** 옵션을 선택합니다. 
 

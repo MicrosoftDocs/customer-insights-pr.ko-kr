@@ -1,6 +1,6 @@
 ---
 title: Adobe 환경 플랫폼으로 Customer Insights 데이터 내보내기
-description: Adobe 환경 플랫폼에서 대상 그룹 인사이트 세그먼트를 사용하는 방법을 알아보십시오.
+description: Adobe Experience Platform에서 대상 그룹 인사이트 세그먼트를 사용하는 방법을 알아봅니다.
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 884f4d30f354bed29909d57be84dce4c8e46965a
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760109"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305532"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Adobe 환경 플랫폼(프리뷰)에서 Customer Insights 세그먼트 사용하기
 
-Dynamics 365 Customer Insights에 대한 대상 그룹 인사이트의 사용자로서 관련 대상 그룹을 타기팅하여 마케팅 캠페인의 효율성을 높이기 위해 세그먼트를 생성했을 수 있습니다. Adobe 환경 플랫폼 및 Adobe Campaign Standard와 같은 애플리케이션에서 대상 그룹 인사이트의 세그먼트를 사용하려면 이 문서에 설명된 몇 가지 단계를 따라야 합니다.
+Dynamics 365 Customer Insights의 대상 그룹 인사이트 사용자로서 관련 잠재 고객을 타겟팅하여 마케팅 캠페인의 효율성을 높이기 위해 세그먼트를 만들었을 수 있습니다. Adobe 환경 플랫폼 및 Adobe Campaign Standard와 같은 애플리케이션에서 대상 그룹 인사이트의 세그먼트를 사용하려면 이 문서에 설명된 몇 가지 단계를 따라야 합니다.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="이 문서에 설명된 단계의 프로세스 다이어그램입니다.":::
 
@@ -55,9 +55,9 @@ Adobe 환경 플랫폼에서 대상 그룹 인사이트의 세그먼트를 사�
 
 1. **관리자** > **연결** 로 이동합니다.
 
-1. **연결 추가** 를 선택하고 **Azure Blob Storage** 또는 **Azure Blob Storage** 타일에서 **설정** 을 선택합니다.
+1. **연결 추가** 를 선택하고 **Azure Blob Storage** 를 선택하거나 **Azure Blob Storage** 타일에서 **설정** 을 선택하여 연결을 구성합니다.
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Azure Blob Storage에 대한 구성 타일입니다."::: 이렇게 연결을 구성합니다.
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Azure Blob Storage에 대한 구성 타일입니다."::: 
 
 1. **표시 이름** 필드에서 연결에 인식할 수 있는 이름을 지정합니다. 이름 및 연결 유형은 이 연결을 설명합니다. 이 연결의 목적과 대상을 설명하는 이름을 선택하는 것이 좋습니다.
 
@@ -80,7 +80,7 @@ Adobe 환경 플랫폼에서 대상 그룹 인사이트의 세그먼트를 사�
 
 1. **내보내기 추가** 를 선택하여 새 내보내기를 만듭니다.
 
-1. **내보내기 연결** 필드의 Azure Blob Storage 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 연결이 없는 것입니다.
+1. **내보내기 연결** 필드의 Azure Blob Storage 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 이 유형의 연결을 사용할 수 없습니다.
 
 1. 내보낼 세그먼트를 선택하십시오. 이 예에서는 **ChurnProneCustomers** 입니다.
 
@@ -95,7 +95,7 @@ Adobe 환경 플랫폼에서 대상 그룹 인사이트의 세그먼트를 사�
 > [!NOTE]
 > 내보낸 세그먼트의 레코드 수가 Adobe Campaign Standard 라이선스의 허용 한도 내에 있는지 확인합니다.
 
-내보낸 데이터는 위에서 구성한 Azure Blob 저장소 컨테이너에 저장됩니다. 컨테이너에 다음 폴더 경로가 자동으로 만들어집니다.
+내보낸 데이터는 위에서 구성한 Azure Blob Storage 컨테이너에 저장됩니다. 컨테이너에 다음 폴더 경로가 자동으로 만들어집니다.
 
 *%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
 
@@ -123,7 +123,8 @@ Adobe 환경 플랫폼에서 대상 그룹 인사이트의 세그먼트를 사�
 
 이 캠페인에 대한 이메일을 보내기 위해 Adobe Campaign Standard를 사용합니다. 데이터를 Adobe 환경 플랫폼으로 가져온 후 Adobe 환경 플랫폼의 데이터를 사용하여 Adobe Campaign Standard에서 [대상 그룹을 생성](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission)해야 합니다.
 
-Adobe Campaign Standard에서 [세그먼트 작성기를 사용하는 방법](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/working-with-adobe-experience-platform/aep-using-segment-builder.html#building-a-segment)을 알아보고 Adobe 환경 플랫폼의 데이터를 기반으로 대상 그룹을 정의합니다.
+
+Adobe Campaign Standard에서 [세그먼트 작성기를 사용하는 방법](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html)을 알아보고 Adobe 환경 플랫폼의 데이터를 기반으로 대상 그룹을 정의합니다.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Adobe Campaign Standard를 사용하여 이메일 작성 및 보내기
 

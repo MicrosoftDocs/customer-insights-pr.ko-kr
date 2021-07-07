@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 07271d491460764f2c738e760e41c3492f2b6de9
-ms.sourcegitcommit: 27f9dd837304ef9fc00f055a6e900fbf6fce1429
+ms.openlocfilehash: e0ca731f944da9a7eaae7c2dc2d7568b6386089f
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5965586"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305440"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>향상된 주소로 고객 프로필 강화
 
@@ -22,7 +22,7 @@ ms.locfileid: "5965586"
 
 ## <a name="how-we-enhance-addresses"></a>주소 향상 방법
 
-당사 모델은 주소를 향상하기 위해 2단계 프로세스를 거칩니다. 먼저 주소를 구문 분석하여 구성 요소를 식별하고 구조화된 형식에 넣습니다. 그런 다음 인공 지능을 사용하여 주소의 값을 수정, 완성 및 표준화합니다.
+당사 모델은 주소를 향상하기 위해 2단계 프로세스를 거칩니다. 먼저 주소를 구문 분석하여 구성 요소를 식별하고 구조화된 형식에 넣습니다. 그런 다음 AI를 사용하여 주소의 값을 수정, 완성 및 표준화합니다.
 
 ### <a name="example"></a>예제
 
@@ -50,7 +50,7 @@ ms.locfileid: "5965586"
 2. 우편 번호 또는 거리 이름과 같은 값이 유효한지 확인.
 3. 인식하지 못하는 값을 변경.
 
-이 모델은 기계 학습 기반 기술을 사용하여 주소를 향상시킵니다. ML 기반 모델과 마찬가지로 모델이 입력값을 변경할 때 높은 신뢰도 임계값을 적용하지만 정확도가 100% 보장되지는 않습니다.
+이 모델은 기계 학습 기반 기술을 사용하여 주소를 향상시킵니다. 기계 학습 기반 모델과 마찬가지로 모델이 입력 값을 변경할 때 높은 신뢰도 임계값을 적용하지만 100% 정확도는 보장되지 않습니다.
 
 ## <a name="supported-countries-or-regions"></a>지원되는 국가 또는 지역
 
@@ -98,6 +98,6 @@ ms.locfileid: "5965586"
 
 ## <a name="next-steps"></a>다음 단계
 
-보강된 고객 데이터를 바탕으로 구축합니다. [세그먼트](segments.md)를 만들고, [측정](measures.md)하고, 또한 [데이터를 내보내](export-destinations.md) 고객에게 맞춤형 경험을 제공합니다.
+보강된 고객 데이터를 바탕으로 구축합니다. [세그먼트](segments.md) 및 [측정값](measures.md)을 만들고 [데이터 내보내기](export-destinations.md) 를 통해 고객에게 개인화된 경험을 제공합니다.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

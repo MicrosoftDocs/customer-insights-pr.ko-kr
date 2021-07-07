@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 73d294a285b4ad706bec7fe925c1daa0b839ddd6
-ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
+ms.openlocfilehash: 19c1fbadb79ba22c0dc11aa7c3b5b2415add70a7
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129953"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306357"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>고객 평생 가치(CLV) 예측 샘플 가이드
 
@@ -133,9 +133,9 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사입니다. C
 
 1. FullName을 사용하여 첫 번째 조건을 추가합니다.
 
-   - eCommerceContacts의 경우 **FullName** 드롭다운에서 선택합니다.
-   - loyCustomers의 경우 **FullName** 드롭다운에서 선택합니다.
-   - **정규화** 드롭다운을 선택하고 **유형(전화, 이름, 주소, ...)** 을 선택합니다.
+   - eCommerceContacts의 경우 드롭다운에서 **FullName** 을 선택합니다.
+   - loyCustomers의 경우 드롭다운에서 **FullName** 을 선택합니다.
+   - **정규화** 드롭다운을 선택하고 **유형(전화, 이름, 주소 등)** 을 선택합니다.
    - **정밀도 수준**: **기본** 및 **값**: **높음** 을 설정합니다.
 
 1. 새 규칙의 이름에 **FullName, Email** 을 입력합니다.

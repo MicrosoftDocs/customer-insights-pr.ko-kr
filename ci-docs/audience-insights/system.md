@@ -9,12 +9,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 87bf8d7b9c23633ebdc929e15ac645c55cc21e4a
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 09d449e51a3a47ec916ab3d017419c9d9be1ffcf
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595388"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305718"
 ---
 # <a name="system-configuration"></a>시스템 구성
 
@@ -94,7 +94,7 @@ ms.locfileid: "5595388"
 
 ## <a name="api-usage-tab"></a>API 사용 탭
 
-실시간 API 사용에 대한 세부 정보를 찾고 주어진 시간 프레임에서 발생한 이벤트를 확인하십시오. **시간 프레임 선택** 드롭 다운 메뉴에서 시간 프레임을 선택합니다. 
+실시간 API 사용에 대한 세부 정보를 찾고 주어진 시간 프레임에서 발생한 이벤트를 확인하십시오. **시간 프레임 선택** 드롭다운 메뉴에서 시간 프레임을 선택합니다. 
 
 **API 사용량** 에는 세 개의 섹션이 있습니다. 
 - **API 호출** - 선택한 시간 프레임에서 API에 대한 총 호출 수를 시각화하는 차트입니다.

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: b9a1b30e37c3792aa7bdfcfc177da9e8a32c324d
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 50c231070ff9930c1ea82971bf4f8541a89d5027
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596921"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305899"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>파워 쿼리 데이터 원본에 연결
 
@@ -72,7 +72,7 @@ Customer Insights로 데이터를 가져 오기 위해 선택할 수 있는 [파
 
 1. 대상 그룹 인사이트에서 **데이터** > **데이터 원본** 으로 이동합니다.
 
-2. 변경하려는 데이터 원본 옆에 있는 세로 줄임표를 선택하고 드롭다운 메뉴에서 **편집** 을 선택합니다.
+2. 변경하려는 데이터 원본 옆의 세로 줄임표를 선택하고 드롭다운 메뉴에서 **편집** 을 선택합니다.
 
    > [!div class="mx-imgBorder"]
    > ![편집 옵션](media/edit-option-data-sources.png "편집 옵션")

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 106dbc26f95b309821d738e1484b1eaa79dd225b
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: 17e04b243e9b3d4375c86f5a890a18be35956835
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896105"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304980"
 ---
 # <a name="connections-preview-overview"></a>연결(프리뷰) 개요
 
@@ -42,7 +42,7 @@ ms.locfileid: "5896105"
 
 1. **연결** 탭으로 이동합니다.
 
-1. 새 연결을 만들려면 **연결 추가** 를 선택합니다. 드롭다운 메뉴에서 만들려는 연결 유형을 선택합니다.
+1. 새 연결을 만들려면 **연결 추가** 를 선택합니다. 드롭다운 메뉴에서 생성하려는 연결 유형을 선택합니다.
 
 1. **연결 설정** 창에서 필요한 세부 정보를 제공합니다. 
    1. **표시 이름** 및 연결 유형은 연결을 설명합니다. 이 연결의 목적과 대상을 설명하는 이름을 선택하는 것이 좋습니다.
@@ -74,7 +74,9 @@ ms.locfileid: "5896105"
 
 ## <a name="remove-a-connection"></a>연결 제거
 
-제거하려는 연결이 보강 또는 내보내기에 사용되는 경우 먼저 연결을 분리하거나 제거해야 합니다. 제거 대화 상자는 관련 보강 또는 내보내기로 안내합니다. 분리된 보강 및 내보내기가 비활성화됩니다. [보강](enrichment-hub.md) 또는 [내보내기](export-destinations.md) 페이지에서 다른 연결을 추가하여 다시 활성화합니다.
+제거하려는 연결이 보강 또는 내보내기에 사용되는 경우 먼저 연결을 분리하거나 제거해야 합니다. 제거 대화 상자는 관련 보강 또는 내보내기로 안내합니다. 
+
+분리된 보강 및 내보내기가 비활성화됩니다. [보강](enrichment-hub.md) 또는 [내보내기](export-destinations.md) 페이지에서 다른 연결을 추가하여 다시 활성화합니다.
 
 1. **관리자** > **연결(프리뷰)** 로 이동합니다.
 

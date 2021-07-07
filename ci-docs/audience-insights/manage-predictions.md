@@ -9,12 +9,12 @@ ms.topic: how-to
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: b935be08199f20e83bceb3317985b0e1dc120016
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: dccb8dcca8f65f64973e46fed9d83034d58282e2
+ms.sourcegitcommit: bcc47d15d4f0eacf008e4dbc09baac7f062b3ca8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095728"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6315886"
 ---
 # <a name="manage-predictions"></a>예측 관리
 
@@ -35,9 +35,6 @@ ms.locfileid: "6095728"
 입력 데이터 사용성 보고서는 기본 제공 예측이 생성할 수 있는 오류 및 경고에 대한 통합 보기를 제공합니다. 또한 모델 성능을 개선하는 방법에 대한 권장 사항을 제공합니다.
 
 이 보고서는 모델이 학습 프로세스를 완료한 후에 사용할 수 있습니다. 성공적으로 완료되었는지 여부와 관계없이 각 모델에 대해 별도로 생성됩니다.
-
-> [!NOTE]
-> 현재 이 기능은 트랜잭션 이탈 모델에서만 작동합니다.
 
 ### <a name="view-the-input-data-usability-report"></a>입력 데이터 사용성 보고서 보기
 

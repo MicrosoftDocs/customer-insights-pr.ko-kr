@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 3c0b4690e18285aa37eef481b3cfac951884ead6
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 54dd7b629d4b4e7f640b932b0f9246e0602f46bd
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085538"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304704"
 ---
 # <a name="data-sources-overview"></a>데이터 원본 개요
 
@@ -30,15 +30,15 @@ Dynamics 365 Customer Insights의 대상 그룹 인사이트 기능은 광범위
 
 - [수십 개의 파워 쿼리 커넥터를 통해](connect-power-query.md)
 - [Common Data Model 폴더로 부터](connect-common-data-model.md)
-- [내 Common Data Service 레이크로 부터](connect-common-data-service-lake.md)
+- [내 Microsoft Dataverse 레이크로 부터](connect-common-data-service-lake.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>온-프레미스 데이터 소스의 데이터 추가
 
-대상 그룹 Insights의 온-프레미스 데이터 소스에서 데이터 수집은 Power Platform 데이터 흐름을 기반으로 지원됩니다. Customer Insights에서 데이터 흐름을 활성화할 수 있습니다. 환경을 설정할 때 [Microsoft Dataverse 환경 URL을 제공](manage-environments.md#create-an-environment-in-an-existing-organization)하면 됩니다.
+대상 그룹 인사이트의 온-프레미스 데이터 소스에서 데이터 수집은 Microsoft Power Platform 데이터 흐름을 기반으로 지원됩니다. Customer Insights에서 데이터 흐름을 활성화할 수 있습니다. 환경을 설정할 때 [Microsoft Dataverse 환경 URL을 제공](manage-environments.md#create-an-environment-in-an-existing-organization)하면 됩니다.
 
-Dataverse 환경과 Customer Insights가 사용하는 환경을 연견ㄹ한 후 생성되는 데이터 소스는 기본적으로 [Power Platform 데이터 흐름](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)을 사용합니다. 데이터 흐름은 데이터 게이트웨이를 사용하여 온 프레미스 연결을 지원합니다. Dataverse 환경이 연결되기 이전에 존재했던 데이터 소스를 제거하고 다시 만들어 [온-프레미스 데이터 게이트웨이를 사용](/powerapps/maker/data-platform/using-dataflows-with-on-premises-data.md)합니다.
+Dataverse 환경과 Customer Insights가 사용하는 환경을 연견ㄹ한 후 생성되는 데이터 소스는 기본적으로 [Power Platform 데이터 흐름](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)을 사용합니다. 데이터 흐름은 데이터 게이트웨이를 사용하여 온 프레미스 연결을 지원합니다. Dataverse 환경이 연결되기 이전에 존재했던 데이터 소스를 제거하고 다시 만들어 [온-프레미스 데이터 게이트웨이를 사용](/data-integration/gateway/service-gateway-app.md)합니다.
 
-기존 Power BI의 데이터 게이트웨이 또는 Power Apps 환경이 표시되고 Customer Insights에서 재사용할 수 있습니다. 데이터 소스 페이지에는 Power Platform 환경으로 이동하는 링크가 표시됩니다. 온-프레미스 데이터 게이트웨이를 보고 구성 할 수 있는 환경입니다.
+기존 Power BI의 데이터 게이트웨이 또는 Power Apps 환경이 표시되고 Customer Insights에서 재사용할 수 있습니다. 데이터 소스 페이지에는 온-프레미스 데이터 게이트웨이를 보고 구성할 수 있는 Microsoft Power Platform 환경에 대한 링크가 표시됩니다.
 
 ## <a name="review-ingested-data"></a>수집 된 데이터 검토
 
@@ -56,7 +56,7 @@ Dataverse 환경과 Customer Insights가 사용하는 환경을 연견ㄹ한 후
 
 데이터 원본의 **상태** 열에서 값을 선택하여 자세한 내용을 검토하십시오. **진행 세부 정보** 창에서 **데이터 원본** 을 확장합니다. 오류 세부 정보 및 다운스트림 프로세스 업데이트를 포함한 새로 고침 상태에 대한 자세한 내용을 보려면 **세부 정보 보기** 를 선택합니다.
 
-데이터 로딩에 약간 시간이 걸릴 수 있습니다. 성공적으로 새로 고친 후 수집된 데이터는 **엔터티** 페이지에서 검토할 수 있습니다. 자세한 내용은 [엔터티](entities.md)를 참조하십시오.
+데이터를 로드하는 데 시간이 걸릴 수 있습니다. 성공적으로 새로 고친 후 수집된 데이터는 **엔터티** 페이지에서 검토할 수 있습니다. 자세한 내용은 [엔터티](entities.md)를 참조하십시오.
 
 ## <a name="refresh-a-data-source"></a>데이터 원본 새로 고침
 
@@ -68,7 +68,7 @@ Dataverse 환경과 Customer Insights가 사용하는 환경을 연견ㄹ한 후
 
 1. 대상 그룹 인사이트에서 **데이터** > **데이터 원본** 으로 이동합니다.
 
-2. 새로 고치려는 데이터 원본 옆에 있는 세로 줄임표를 선택하고 드롭다운 목록에서 **새로 고침** 을 선택합니다.
+2. 새로 고치려는 데이터 원본 옆의 세로 줄임표를 선택하고 드롭다운 목록에서 **새로 고침** 을 선택합니다.
 
 3. 데이터 원본은 이제 수동 새로 고침을 위해 트리거됩니다. 데이터 원본를 새로 고침하면 데이터 원본에 지정된 모든 엔터티의 엔터티 스키마와 데이터가 모두 업데이트됩니다.
 
@@ -78,7 +78,7 @@ Dataverse 환경과 Customer Insights가 사용하는 환경을 연견ㄹ한 후
 
 1. 대상 그룹 인사이트에서 **데이터** > **데이터 원본** 으로 이동합니다.
 
-2. 제거하려는 데이터 원본 옆에 있는 세로 줄임표를 선택하고 드롭다운 메뉴에서 **삭제** 를 선택합니다.
+2. 제거하려는 데이터 원본 옆의 세로 줄임표를 선택하고 드롭다운 메뉴에서 **삭제** 를 선택합니다.
 
 3. 삭제를 확정합니다.
 

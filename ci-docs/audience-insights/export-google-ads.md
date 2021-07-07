@@ -9,24 +9,23 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 73f3257a3ae6e8423f45410546535df5e3b400ce
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: c23c8b4e6758df08e04bf1e3ae0cba4dee06fe2b
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976326"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305348"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Google Ads로 세그먼트 내보내기(프리뷰)
 
-통합 고객 프로필의 세그먼트를 Google 광고 대상 그룹 목록으로 내보내고 이를 사용하여 Google 검색, Gmail, YouTube 및 Google 디스플레이 네트워크에서 광고합니다. 
+통합 고객 프로필의 세그먼트를 Google Ads 대상 그룹 목록으로 내보내고 이를 사용하여 Google 검색, Gmail, YouTube 및 Google 디스플레이 네트워크에서 광고합니다. 
 
 ## <a name="prerequisites-for-connection"></a>연결을 위한 전제 조건
 
 -   [Google 광고 계정](https://ads.google.com/) 및 해당 관리자 자격 증명이 있어야 합니다.
--   [승인된 Google Ads 개발자 토큰](https://developers.google.com/google-ads/api/docs/first-call/dev-token) 
--   [고객 일치 정책](https://support.google.com/adspolicy/answer/6299717) 요구 사항 충족
--   [리마케팅 목록 크기](https://support.google.com/google-ads/answer/7558048) 요구 사항 충족 
-
+-   [승인된 Google Ads 개발자 토큰](https://developers.google.com/google-ads/api/docs/first-call/dev-token)이 있습니다. 
+-   [고객 일치 정책](https://support.google.com/adspolicy/answer/6299717) 요구 사항을 충족합니다.
+-   [리마케팅 목록 크기](https://support.google.com/google-ads/answer/7558048) 요구 사항을 충족합니다.
 -   Google 광고에 기존 대상 그룹과 해당 ID가 있습니다. 자세한 내용은 [Google 광고 대상 그룹](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)을 참조하세요.
 -   [구성된 세그먼트](segments.md)가 있어야 합니다.
 -   내보낸 세그먼트의 통합 고객 프로필에는 이메일 주소, 이름 및 성을 나타내는 필드가 포함됩니다.
@@ -68,7 +67,7 @@ ms.locfileid: "5976326"
 
 1. **대상 추가** 를 선택하여 새 내보내기를 만듭니다.
 
-1. **내보내기 연결** 필드의 Google Ads 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 연결이 없는 것입니다.
+1. **내보내기 연결** 필드의 Google Ads 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 이 유형의 연결을 사용할 수 없습니다.
 
 1. **[Google 광고 대상 그룹 ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** 를 입력하고 **연결** 을 선택하여 Google 광고 연결을 초기화합니다.
 
@@ -78,7 +77,9 @@ ms.locfileid: "5976326"
 
 내보내기를 저장해도 내보내기가 즉시 실행되지는 않습니다.
 
-내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다. [주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다. 
+내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다. 
+
+[주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다. 
 
 ## <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수
 

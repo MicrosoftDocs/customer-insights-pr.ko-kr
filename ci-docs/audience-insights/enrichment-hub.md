@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: c8e4a7247ccf575a62440038180010916b09d51b
-ms.sourcegitcommit: f9e2fa3f11ecf11a5d9cccc376fdeb1ecea54880
+ms.openlocfilehash: c35e73b366fcd5db2ba5a757295ddda6db30efa0
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954495"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305256"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>고객 프로필 보강(미리 보기)
 
@@ -22,7 +22,8 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 :::image type="content" source="media/enrichment-hub-page.png" alt-text="보강 허브 페이지":::
 
-대상 그룹 인사이트에서 **데이터** > **보강** 으로 이동하여 강화 옵션을 사용합니다.    
+대상 그룹 인사이트에서 **데이터** > **보강** 으로 이동하여 강화 옵션을 사용합니다.  
+
 기능 보강을 작성하거나 편집하려면 기여자 또는 관리자 권한이 있어야 합니다. 자세한 내용은 [권한](permissions.md)을 참조하십시오.
 
 **검색** 탭에서 다음과 같은 기능이 보강됩니다.
@@ -31,7 +32,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 - Microsoft에서 제공한 [관심사](enrichment-microsoft.md)
 - Microsoft 제공 [향상된 주소](enrichment-enhanced-addresses.md)
 - Leadspace에서 제공한 [회사 데이터](enrichment-leadspace.md)
-- Experian에서 제공한 [인구 통계 자료](enrichment-experian.md)
+- [Experian에서 제공하는 인구 통계](enrichment-experian.md)
 - HERE Technologies에서 제공한 [위치 데이터](enrichment-here.md)
 - SFTP(보안 파일 전송 프로토콜)를 통한 [사용자 지정 데이터](enrichment-SFTP-custom-import.md)
 
@@ -39,7 +40,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 ## <a name="manage-existing-enrichments"></a>기존 보강 관리
 
-구성된 모든 보강을 보려면 **내 보강** 으로 이동합니다. 각 보강은 보강에 대한 추가 정보를 포함하는 행으로 표시됩니다.
+**내 보강** 탭으로 이동하여 구성된 모든 보강을 확인하십시오. 각 보강은 보강에 대한 추가 정보를 포함하는 행으로 표시됩니다.
 
 사용 가능한 옵션을 보려면 보강을 선택하십시오. 목록 항목에서 줄임표(...)를 선택하여 옵션을 볼 수도 있습니다.
 
@@ -59,6 +60,6 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 ## <a name="multiple-enrichments-of-the-same-type"></a>동일한 유형의 여러 보강
 
-보강할 엔터티는 보강 구성 중에 지정되므로 프로필의 하위 집합만 보강할 수 있습니다. 예를 들어, 특정 세그먼트에 대해서만 데이터를 보강하십시오. 동일한 유형의 여러 보강을 구성하고 동일한 연결을 재사용할 수 있습니다. 일부 보강에는 만들 수 있는 동일한 유형의 보강 수에 제한이 있습니다. 제한과 현재 사용은 **보강** 페이지에서 확인할 수 있습니다.
+보강할 엔터티는 보강 구성 중에 지정되므로 프로필의 하위 집합만 보강할 수 있습니다. 예를 들어 특정 세그먼트에 대해서만 데이터를 보강합니다. 동일한 유형의 여러 보강을 구성하고 동일한 연결을 재사용할 수 있습니다. 일부 보강에는 만들 수 있는 동일한 유형의 보강 수에 제한이 있습니다. 제한과 현재 사용은 **보강** 페이지에서 확인할 수 있습니다.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: dbebc3ee3978ca6ee9d1ad1c15c226479876709f
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 67bfa23d56b26ae592efa4d7197713664bb02623
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124373"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304841"
 ---
 # <a name="export-segments-to-adroll-preview"></a>AdRoll로 세그먼트 내보내기(프리뷰)
 
@@ -28,11 +28,11 @@ ms.locfileid: "6124373"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- 내보내기당 25만 개의 고객 프로필을 AdRoll로 내보낼 수 있습니다.
+- AdRoll에 한 번에 최대 250,000개의 프로필을 내보낼 수 있습니다.
 - 프로필이 100개 미만인 세그먼트는 AdRoll로 내보낼 수 없습니다. 
 - AdRoll로 내보내기는 세그먼트로 제한됩니다.
 - 최대 250,000개의 프로필을 AdRoll로 내보내는 데 최대 10분이 걸릴 수 있습니다. 
-- AdRoll로 내보낼 수 있는 프로필 수는 AdRoll과의 계약에 따라 다르며 제한됩니다.
+- AdRoll로 내보낼 수 있는 프로필 수는 AdRoll과의 계약에 따라 다릅니다.
 
 ## <a name="set-up-connection-to-adroll"></a>AdRoll에 연결을 설정합니다.
 
@@ -62,9 +62,9 @@ ms.locfileid: "6124373"
 
 1. **대상 추가** 를 선택하여 새 내보내기를 만듭니다.
 
-1. **내보내기 연결** 필드의 AdRoll 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 연결이 없는 것입니다.
+1. **내보내기 연결** 필드의 AdRoll 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 이 유형의 연결을 사용할 수 없습니다.
 
-1. **AdRoll 광고주 ID** 를 입력합니다. 자세한 내용은 [AdRoll 광고주 프로필](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles)을 참조하세요.
+1. **AdRoll 광고주 ID** 를 입력합니다. 자세한 내용은 [AdRoll 광고주 프로필](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles)을 참고하세요.
 
 3. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. 세그먼트를 AdRoll로 내보내는 데 필요합니다.
 
@@ -74,7 +74,9 @@ ms.locfileid: "6124373"
 
 내보내기를 저장해도 내보내기가 즉시 실행되지는 않습니다.
 
-내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다. [주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다. 
+내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다. 
+
+[주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다. 
 
 
 ## <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수

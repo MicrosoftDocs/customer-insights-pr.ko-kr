@@ -9,21 +9,21 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 4d41d7d328dfa6699b5f5e992d3a5bf3179490d8
-ms.sourcegitcommit: 33a8e21b3bf6521bdb8346f81f79fce88091ddfd
+ms.openlocfilehash: 9326f821f9970ba2254ab804814e369abb677eb0
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6016628"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304750"
 ---
 # <a name="work-with-customer-insights-apis"></a>Customer Insights API에 대한 작업
 
-Dynamics 365 Customer Insights는 Customer Insights의 데이터를 기반으로 자체 애플리케이션을 구축하는 API를 제공합니다.
+Dynamics 365 Customer Insights는 Customer Insights의 데이터를 기반으로 자체 애플리케이션을 빌드하는 API를 제공합니다.
 
 > [!IMPORTANT]
 > 이러한 API에 대한 자세한 내용은 [Customer Insights API 참조](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights)에 나열되어 있습니다. 여기에는 작업, 매개 변수 및 응답에 대한 추가 정보가 포함됩니다.
 
-이 문서에서는 Customer Insights API에 액세스하고, Azure 앱 등록을 만들고, 사용 가능한 클라이언트 라이브러리를 시작하는 데 도움을 줍니다.
+이 문서에서는 Customer Insights API에 액세스하고, Azure 앱 등록을 만들고, 사용 가능한 클라이언트 라이브러리를 시작하는 방법을 설명합니다.
 
 ## <a name="get-started-trying-the-customer-insights-apis"></a>Customer Insights API로 시작하기
 
@@ -32,6 +32,7 @@ Dynamics 365 Customer Insights는 Customer Insights의 데이터를 기반으로
 1. Customer Insights 환경에서 API를 사용하려면 **관리** > **권한** 으로 이동합니다. 이렇게 하려면 관리자 권한이 필요합니다.
 
 1. **API** 탭으로 이동하고 **사용** 버튼을 선택합니다.    
+ 
    API를 사용하면 API 요청에 사용되는 인스턴스의 기본 및 보조 구독 키가 생성됩니다. **관리** > **권한** > **API** 에서 **기본 다시 생성** 또는 **보조 다시 생성** 을 선택하여 키를 다시 생성 할 수 있습니다.
 
    :::image type="content" source="media/enable-apis.gif" alt-text="Customer Insights API 사용":::
@@ -40,7 +41,7 @@ Dynamics 365 Customer Insights는 Customer Insights의 데이터를 기반으로
 
 1. API 작업을 선택하고 **둘러보기** 를 선택합니다.
 
-1. 측면 창에서 **권한** 드롭다운 메뉴의 값을 **암시적** 으로 설정합니다. `Authorization` 헤더에 전달자 토큰이 추가됩니다. 구독 키가 자동으로 채워집니다.
+1. 측면 창에서 **권한 부여** 드롭다운 메뉴의 값을 **암시적** 으로 설정합니다. `Authorization` 헤더는 전달자 토큰과 함께 추가됩니다. 구독 키가 자동으로 채워집니다.
   
 1. 필요한 경우 모든 필수 쿼리 매개 변수를 추가합니다.
 
@@ -48,27 +49,27 @@ Dynamics 365 Customer Insights는 Customer Insights의 데이터를 기반으로
 
 HTTP 응답이 곧 아래에 표시됩니다.
 
-
-   :::image type="content" source="media/try-apis.gif" alt-text="API 테스트를 선택하는 방법을 보여주는 애니메이션 GIF입니다.":::
+   :::image type="content" source="media/try-apis.gif" alt-text="API를 테스트하는 방법.":::
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>Azure Portal에 새 앱 등록을 만듭니다.
 
-이러한 단계는 위임된 권한을 사용하여 Azure 애플리케이션에서 Customer Insights API 사용을 시작하는 데 도움이 됩니다. 먼저 [시작 섹션](#get-started-trying-the-customer-insights-apis)을 완료했는지 확인하세요.
+이 단계는 위임된 권한을 사용하여 Azure 애플리케이션에서 Customer Insights API 사용을 시작하는 데 도움이 됩니다. [시작하기 섹션](#get-started-trying-the-customer-insights-apis)을 먼저 완료해야 합니다.
 
 1. Customer Insights 데이터에 액세스할 수 있는 계정으로 [Azure Portal](https://portal.azure.com)에 로그인합니다.
 
 1. 왼쪽에서 **앱 등록** 을 선택합니다.
 
 1. **새 등록** 을 선택하고 애플리케이션 이름을 제공하고 계정 유형을 선택합니다.
+ 
    원하는 경우 리디렉션 URL을 추가합니다. http://localhost는 로컬 컴퓨터에서 애플리케이션을 개발하는 데 충분합니다.
 
 1. 새 앱 등록에서 **API 권한** 으로 이동합니다.
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="앱 등록에서 API 권한을 설정하는 애니메이션 GIF입니다.":::
+   :::image type="content" source="media/app-registration-1.gif" alt-text="앱 등록에서 API 권한을 설정하는 방법.":::
 
 1. **권한 추가** 를 선택하고 측면 창에서 **Customer Insights** 를 선택합니다.
 
-1. **권한 유형** 으로 **위임된 권한** 을 선택하고 **user_impersonation** 권한을 선택합니다.
+1. **권한 유형** 에서 **위임된 권한** 을 선택한 후 **user_impersonation** 권한을 선택합니다.
 
 1. **권한 추가** 를 선택합니다. 사용자 로그인없이 API에 액세스해야 하는 경우 [서버 간 애플리케이션 권한](#server-to-server-application-permissions) 섹션을 검토합니다.
 
@@ -76,13 +77,13 @@ HTTP 응답이 곧 아래에 표시됩니다.
 
 MSAL(Microsoft 인증 라이브러리)에이 앱 등록을위한 애플리케이션/클라이언트 ID를 사용하여 API에 대한 요청과 함께 보낼 전달자 토큰을 얻을 수 있습니다.
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="관리자 동의를 권한 부여하는 애니메이션 GIF입니다.":::
+:::image type="content" source="media/grant-admin-consent.gif" alt-text="관리자 동의를 부여하는 방법.":::
 
 MSAL에 대한 자세한 내용은 [MSAL(Microsoft 인증 라이브러리) 개요](/azure/active-directory/develop/msal-overview)를 참조하세요.
 
-Azure의 앱 등록에 대한 자세한 내용은 [새로운 Azure Portal 앱 등록 환경](/azure/active-directory/develop/app-registration-portal-training-guide)을 참조하세요.
+Azure에서 앱 등록에 대한 자세한 내용은 [애플리케이션 등록](/azure/active-directory/develop/quickstart-register-app.md#register-an-application)을 참고하세요.
 
-클라이언트 라이브러리 API 사용에 대한 자세한 내용은 [Customer Insights 클라이언트 라이브러리](#customer-insights-client-libraries)를 참조하세요.
+클라이언트 라이브러리에서 API를 사용하는 방법에 대한 자세한 내용은 [Customer Insights 클라이언트 라이브러리](#customer-insights-client-libraries)를 참고하세요.
 
 ### <a name="server-to-server-application-permissions"></a>서버 간 애플리케이션 권한
 
@@ -94,7 +95,7 @@ Azure의 앱 등록에 대한 자세한 내용은 [새로운 Azure Portal 앱 �
 
 1. **내 조직에서 사용하는 API** 탭을 선택하고 목록에서 **Customer Insights용 Dynamics 365 AI** 를 선택합니다. 
 
-1. **권한 유형** 의 경우 **애플리케이션 권한** 을 선택하고 **CustomerInsights.Api.All** 권한을 선택합니다.
+1. **권한 유형** 에서 **애플리케이션 권한** 을 선택한 후 **CustomerInsights.Api.All** 권한을 선택합니다.
 
 1. **권한 추가** 를 선택합니다.
 
@@ -102,9 +103,10 @@ Azure의 앱 등록에 대한 자세한 내용은 [새로운 Azure Portal 앱 �
 
 1. **관리자 동의 허용...** 을 선택하여 앱 등록을 완료합니다.
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="관리자 동의를 권한 부여하는 애니메이션 GIF입니다.":::
+   :::image type="content" source="media/grant-admin-consent.gif" alt-text="관리자 동의를 부여하는 방법.":::
 
-1. 마지막으로 Customer Insights에서 사용자로 앱 등록 이름을 추가해야 합니다.    
+1. 마지막으로 Customer Insights에서 사용자로 앱 등록 이름을 추가해야 합니다.  
+   
    Customer Insights를 열고 **관리자** > **권한** 으로 이동하고 **사용자 추가** 를 선택합니다.
 
 1. 앱 등록 이름을 검색하고 검색 결과에서 선택한 다음 **저장** 을 선택합니다.
@@ -124,6 +126,7 @@ NuGet.org에서 C# 클라이언트 라이브러리 사용을 시작하는 방법
 1. **Microsoft.Dynamics.CustomerInsights.Api** 를 검색합니다.
 
 1. **설치** 를 선택하여 프로젝트에 패키지를 추가합니다.
+ 
    또는 다음 명령을 **NuGet 패키지 관리자 콘솔** 에 실행합니다. `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
    :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Visual Studio 프로젝트에 NuGet 패키지 추가":::
@@ -132,7 +135,8 @@ NuGet.org에서 C# 클라이언트 라이브러리 사용을 시작하는 방법
 
 1. [MSAL(Microsoft 인증 라이브러리)](/azure/active-directory/develop/msal-overview)을 사용하여 기존 [Azure 앱 등록](#create-a-new-app-registration-in-the-azure-portal)을 사용하여 `AccessToken`를 가져옵니다.
 
-1. 토큰을 성공적으로 인증하고 획득한 후 추가 **DefaultRequestHeaders "인증"** 을 **전달자 <access token>** 으로 설정하고 **Ocp-Apim-Subscription-Key** 를 [Customer Insights 환경의 **구독 키**](#get-started-trying-the-customer-insights-apis)로 설정하여 새 'HttpClient'를 구성하거나 기존`HttpClient`를 사용합니다.    
+1. 토큰을 성공적으로 인증하고 획득한 후 추가 **DefaultRequestHeaders "인증"** 을 **전달자 <access token>** 으로 설정하고 **Ocp-Apim-Subscription-Key** 를 [Customer Insights 환경의 **구독 키**](#get-started-trying-the-customer-insights-apis)로 설정하여 새 'HttpClient'를 구성하거나 기존`HttpClient`를 사용합니다.   
+ 
    적절한 경우 **권한 부여** 헤더를 초기화합니다. 예를 들어 토큰이 만료된 경우입니다.
 
 1. 이 `HttpClient`를 `CustomerInsights` 클라이언트의 구성에 전달합니다.
@@ -142,6 +146,7 @@ NuGet.org에서 C# 클라이언트 라이브러리 사용을 시작하는 방법
 1. 클라이언트를 사용하여 '확장 메서드'(예: `GetAllInstancesAsync`)를 호출합니다. 기본 `Microsoft.Rest.HttpOperationResponse`에 대한 액세스를 선호하는 경우 "http 메시지 메서드"(예: `GetAllInstancesWithHttpMessagesAsync`)를 사용합니다.
 
 1. 메서드가 여러 유형(예: `IList<InstanceInfo>` 및 `ApiErrorResult`)을 반환할 수 있으므로 응답은 `object` 유형일 수 있습니다. 반환 유형을 확인하려면 해당 작업의 [API 세부 정보 페이지](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights)에 지정된 응답 유형으로 객체를 안전하게 캐스트할 수 있습니다.    
+   
    요청에 대한 추가 정보가 필요한 경우 **http 메시지 방법** 을 사용하여 원시 응답 객체에 액세스합니다.
 
 ### <a name="nodejs-package"></a>NodeJS 패키지

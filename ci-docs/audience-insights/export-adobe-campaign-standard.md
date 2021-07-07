@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: b6c010d84119c2fa8b3ef99017c65f9939bf28c4
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 917ab9559416f3ee0ffd66e471e590e8da3faffc
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760289"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305394"
 ---
 # <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>Adobe Campaign Standard(프리뷰)에서 Customer Insights 세그먼트 사용하기
 
-Dynamics 365 Customer Insights에 대한 대상 그룹 인사이트의 사용자로서 관련 대상 그룹을 타기팅하여 마케팅 캠페인의 효율성을 높이기 위해 세그먼트를 생성했을 수 있습니다. Adobe 환경 플랫폼 및 Adobe Campaign Standard와 같은 애플리케이션에서 대상 그룹 인사이트의 세그먼트를 사용하려면 이 문서에 설명된 몇 가지 단계를 따라야 합니다.
+Dynamics 365 Customer Insights의 대상 그룹 인사이트 사용자로서 관련 잠재 고객을 타겟팅하여 마케팅 캠페인의 효율성을 높이기 위해 세그먼트를 만들었을 수 있습니다. Adobe 환경 플랫폼 및 Adobe Campaign Standard와 같은 애플리케이션에서 대상 그룹 인사이트의 세그먼트를 사용하려면 이 문서에 설명된 몇 가지 단계를 따라야 합니다.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="이 문서에 설명된 단계의 프로세스 다이어그램입니다.":::
 
@@ -80,7 +80,7 @@ Adobe 환경 플랫폼에서 대상 그룹 인사이트의 세그먼트를 사�
 
 1. **내보내기 추가** 를 선택하여 새 내보내기를 만듭니다.
 
-1. **내보내기 연결** 필드의 Adobe Campaign 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 연결이 없는 것입니다.
+1. **내보내기 연결** 필드의 Adobe Campaign 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 이 유형의 연결을 사용할 수 없습니다.
 
 1. 내보낼 세그먼트를 선택하십시오. 이 예에서는 **ChurnProneCustomers** 입니다.
 
@@ -106,7 +106,7 @@ Adobe 환경 플랫폼에서 대상 그룹 인사이트의 세그먼트를 사�
 > [!NOTE]
 > 내보낸 세그먼트의 레코드 수가 Adobe Campaign Standard 라이선스의 허용 한도 내에 있는지 확인합니다.
 
-내보낸 데이터는 위에서 구성한 Azure Blob 저장소 컨테이너에 저장됩니다. 컨테이너에 다음 폴더 경로가 자동으로 만들어집니다.
+내보낸 데이터는 위에서 구성한 Azure Blob Storage 컨테이너에 저장됩니다. 컨테이너에 다음 폴더 경로가 자동으로 만들어집니다.
 
 *%ContainerName%/CustomerInsights_%instanceID%/% exportdestination-name%_%segmentname%_%timestamp%.csv*
 
@@ -128,7 +128,7 @@ Adobe Campaign Standard에 가져올 레코드 외에 다른 레코드가 없는
 
 이제 모든 것이 준비되었으므로 준비된 대상 그룹 데이터를 대상 그룹 인사이트에서 Adobe Campaign Standard로 가져와 프로필을 만들어야 합니다. 워크플로를 사용해 [Adobe Campaign Standard에서 프로필을 가져오는 방법](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences)을 확인하십시오.
 
-아래 이미지의 가져오기 워크플로는 8시간마다 실행되도록 구성되었으며 내보낸 대상 그룹 인사이트 세그먼트(Azure Blob Storage의 .csv 파일)를 찾습니다. 워크플로는 지정된 열 순서로 .csv 파일 콘텐츠를 추출합니다. 이 워크플로는 기본 오류 처리를 수행하고 Adobe Campaign Standard에서 데이터를 하이드레이션하기 전에 각 레코드에 이메일 주소가 있는지 확인하기 위해 구축되었습니다. 또한 워크플로는 ACS 프로필 데이터로 upsert하기 전에 파일 이름에서 세그먼트 이름을 추출합니다.
+아래 이미지의 가져오기 워크플로는 8시간마다 실행되고 내보낸 대상 그룹 인사이트 세그먼트(Azure Blob Storage의 .csv 파일)를 찾도록 구성되었습니다. 워크플로는 지정된 열 순서로 .csv 파일 콘텐츠를 추출합니다. 이 워크플로는 기본 오류 처리를 수행하고 Adobe Campaign Standard에서 데이터를 하이드레이션하기 전에 각 레코드에 이메일 주소가 있는지 확인하기 위해 구축되었습니다. 또한 워크플로는 Adobe Campaign Standard 프로필 데이터로 업데이트하기 전에 파일 이름에서 세그먼트 이름을 추출합니다.
 
 :::image type="content" source="media/ACS-import-workflow.png" alt-text="Adobe Campaign Standard 사용자 인터페이스의 가져오기 워크플로 스크린샷입니다.":::
 

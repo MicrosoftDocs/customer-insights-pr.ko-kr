@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 90ebcaab896c628b04e751ad9857e924749895e7
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2856888d6ac64d5daabcc5a234f13bc6f88bb3df
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595342"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306082"
 ---
 # <a name="segment-insights-preview"></a>세그먼트 인사이트(미리 보기)
 
@@ -50,7 +50,7 @@ ms.locfileid: "5595342"
 
 - 분석을 위해 선택한 세그먼트와 겹치는 구성원 수입니다.
 - 세그먼트 중 하나에 포함되었지만 나머지 세그먼트에는 포함되지 않은 구성원 수입니다.
-- 겹침 분석을 구성하는 동안 필드를 선택한 경우 해당 탭에서 해당 필드를 찾을 수 있습니다. 필터 드롭다운을 사용하여 원하는 속성 레벨을 선택할 수 있으며 맨 아래 표에 해당 데이터가 표시됩니다.
+- 겹침 분석을 구성하는 동안 필드를 선택한 경우 해당 탭에서 해당 필드를 찾을 수 있습니다. 필터 드롭다운을 사용하여 관심 있는 특성 수준을 선택할 수 있으며 하단의 표에 해당 데이터가 표시됩니다.
 
 ## <a name="segment-differentiators"></a>세그먼트 구분자
 

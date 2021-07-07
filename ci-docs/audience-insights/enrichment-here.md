@@ -1,5 +1,5 @@
 ---
-title: 타사 보강 HERE Technologies로 보강
+title: 제3자 보강을 통한 보강 HERE Technologies
 description: HERE Technologies 타사 보강에 대한 일반 정보입니다.
 ms.date: 04/09/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 5d1f037377010153045c9255d2d01f98ebf1fdfd
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896059"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305302"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>HERE Technologies로 고객 프로필 보강(미리 보기)
 
@@ -24,9 +24,9 @@ HERE Technologies는 위치 중심 데이터 및 서비스를 제공하는 위�
 
 HERE Technologies 보강을 구성하려면 다음 필수 구성 요소가 충족되어야 합니다.
 
-- 활성 HERE Technologies 구독이 있어야 합니다. 구독을 받으려면 [여기에 등록](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic)하거나 직접 [HERE Technologies에 연락](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you)할 수 있습니다. [HERE Technologies Location 보강에 대해 자세히 알아보세요.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
+- 활성 HERE Technologies 구독이 있어야 합니다. 구독하려면 [여기에서 등록](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic)하거나 직접 [HERE Technologies에 연락](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you)할 수 있습니다. [HERE Technologies Location 보강에 대해 자세히 알아보세요.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- 사용 가능한 HERE [연결](connections.md)이 *있거나* 귀하가 [관리자](permissions.md#administrator) 권한 및 HERE Technologies API 키를 가지고 있음.
+- HERE [연결](connections.md)을 사용할 수 *있거나* 귀하가 [관리자](permissions.md#administrator) 권한 및 HERE Technologies API 키를 가지고 있습니다.
 
 ## <a name="configure-the-enrichment"></a>보강 구성
 
@@ -37,7 +37,7 @@ HERE Technologies 보강을 구성하려면 다음 필수 구성 요소가 충�
    > [!div class="mx-imgBorder"]
    > ![HERE Technologies 타일](media/HERE-tile.png "HERE Technologies 타일")
 
-1. 드롭다운 목록에서 [연결](connections.md)을 선택하십시오. 사용 가능한 연결이 없으면 관리자에게 문의하십시오. 관리자인 경우 **연결 추가** 를 선택하여 연결을 만들 수 있습니다. 드롭다운에서 **HERE Technologies** 를 선택합니다. 
+1. 드롭다운 목록에서 [연결](connections.md)을 선택하십시오. 사용 가능한 연결이 없으면 관리자에게 문의하십시오. 관리자인 경우 **연결 추가** 를 선택하여 연결을 만들 수 있습니다. 드롭다운 목록에서 **HERE Technologies** 를 선택합니다. 
 
 1. **HERE Technologies에 연결** 을 선택하여 선택을 확인합니다.
 
@@ -58,7 +58,7 @@ HERE Technologies 보강을 구성하려면 다음 필수 구성 요소가 충�
 
 1. 선택 사항을 검토 한 후 **보강 저장** 을 선택합니다.
 
-## <a name="configure-the-connection-for-here-technologies"></a>HERE technologies에 대한 연결 구성 
+## <a name="configure-the-connection-for-here-technologies"></a>HERE Technologies에 대한 연결 구성 
 
 연결을 구성하려면 관리자여야 합니다. 보강을 구성할 때 **연결 추가** 를 선택 *하거나* **관리자** > **연결** 로 이동하여 HERE technologies 타일에서 **설정** 을 선택합니다.
 
@@ -66,13 +66,13 @@ HERE Technologies 보강을 구성하려면 다음 필수 구성 요소가 충�
 
 1. 유효한 HERE Technologies API 키를 제공하십시오.
 
-1. **동의함** 확인란을 선택하여 **데이터 개인 정보 및 규정 준수** 에 대한 동의를 검토하고 제공합니다.
+1. **데이터 개인 정보 보호 및 규정 준수** 를 검토하고 **동의함** 을 선택하여 동의를 제공합니다.
 
 1. **확인** 을 선택하여 구성을 확인합니다.
 
 1. 확인을 완료한 후 **저장** 을 선택합니다.
 
-> [!div class="mx-imgBorder"]
+   > [!div class="mx-imgBorder"]
    > ![HERE technologies 연결 구성 페이지](media/enrichment-HERE-connection.png "HERE technologies 연결 구성 페이지")
 
 ## <a name="enrichment-results"></a>보강 결과
@@ -85,7 +85,7 @@ HERE Technologies 보강을 구성하려면 다음 필수 구성 요소가 충�
 
 ## <a name="next-steps"></a>다음 단계
 
-보강된 고객 데이터를 바탕으로 구축합니다. [세그먼트](segments.md)를 만들고, [측정](measures.md)하고, 또한 [데이터를 내보내](export-destinations.md) 고객에게 맞춤형 경험을 제공합니다.
+보강된 고객 데이터를 바탕으로 구축합니다. [세그먼트](segments.md) 및 [측정값](measures.md)을 만들고 [데이터 내보내기](export-destinations.md) 를 통해 고객에게 개인화된 경험을 제공합니다.
 
 ## <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수
 
