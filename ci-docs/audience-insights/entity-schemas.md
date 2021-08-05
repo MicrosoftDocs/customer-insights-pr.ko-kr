@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6667e411a1b56e13105a6b59b7b5d249bc8141ea
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596369"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692313"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model의 엔터티 스키마
 
@@ -24,7 +24,7 @@ ms.locfileid: "5596369"
 
 이 공유 데이터 모델을 통해 응용 프로그램과 데이터 통합자가 통합된 데이터 정의를 제공하여 보다 쉽게 공동 작업할 수 있습니다. Common Data Model에는 표준 엔터티, 관계, 계층 구조, 특성 등이 포함된 풍부한 메타데이터 시스템이 포함됩니다. Dynamics 365 앱에서 시작되었으며 260개가 넘는 표준 엔터티가 있는 GitHub에서 오픈 소스로 제공됩니다. 내부 및 외부 파트너의 대규모 시스템은 Common Data Model에 산업별 개념을 제공합니다.
 
-오늘날 Power BI 데이터 흐름 및 Azure 데이터 서비스 등 여러 시스템 및 플랫폼이 Common Data Model을 구현합니다. Common Data Service, Dynamics 365, Power Apps, Power BI, 그리고 출시 예정인 Azure 데이터 서비스에서 이미 지원되며, [Open Data Initiative](https://www.microsoft.com/open-data-initiative)에 직접 가치를 더합니다.
+오늘날 Power BI 데이터 흐름 및 Azure Data Services를 비롯한 여러 시스템 및 플랫폼이 Common Data Model 을 구현합니다. Microsoft Dataverse, Dynamics 365, Power Apps, Power BI, 곧 출시될 Azure 데이터 서비스에서 이미 지원되며 [오픈 데이터 이니셔티브](https://www.microsoft.com/open-data-initiative)에 직접적인 가치를 창출합니다.
 
 ## <a name="customer-insights-entity-schemas"></a>Customer Insights 엔터티 스키마
 
@@ -44,7 +44,7 @@ ms.locfileid: "5596369"
 
 [Common Data Model 엔터티 탐색기](https://microsoft.github.io/CDM/)에서 엔터티를 볼 수 있습니다. **GitHub에서 로드!** 버튼을 클릭하고 **foundationCommon** > **crmCommon** > **solutions** > **customerInsights** 로 이동하여 Customer Insights 엔터티 및 그 정의 목록을 찾을 수 있습니다.
 > [!div class="mx-imgBorder"]
-> ![CustomerActivity 엔터티를 보여주는 CDM 엔터티 탐색기](media/CDM-entity-navigator.png "CustomerActivity 엔터티를 보여주는 CDM 엔터티 탐색기")
+> ![CustomerActivity 엔터티를 보여주는 CDM 엔터티 탐색기.](media/CDM-entity-navigator.png "CustomerActivity 엔터티를 보여주는 CDM 엔터티 탐색기")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

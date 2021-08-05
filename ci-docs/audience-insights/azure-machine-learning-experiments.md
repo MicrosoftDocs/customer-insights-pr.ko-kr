@@ -9,12 +9,12 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 3f97e22687ae4f5536d492bac83bdf9c711e2c94
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597427"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554443"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Azure Machine Learning 기반 모델 사용
 
@@ -52,7 +52,7 @@ Customer Insights에서 배치 추론 파이프라인으로 엔터티 데이터�
      디자이너에서 **데이터 집합의 열 선택** 을 열고 매개 변수 이름을 제공하는 **파이프라인 매개 변수로 설정** 을 선택합니다.
 
      > [!div class="mx-imgBorder"]
-     > ![디자이너의 데이터 집합 매개 변수화](media/intelligence-designer-dataset-parameters.png "디자이너의 데이터 집합 매개 변수화")
+     > ![디자이너의 데이터 집합 매개 변수화.](media/intelligence-designer-dataset-parameters.png "디자이너의 데이터 집합 매개 변수화")
    
 * SDK(Python)의 데이터 집합 매개 변수
    
@@ -78,7 +78,7 @@ Customer Insights에서 배치 추론 파이프라인으로 엔터티 데이터�
 
 * 디자이너는 파이프라인의 출력을 Azure Storage로 내보낼 수 있는 [데이터 내보내기 모듈](/azure/machine-learning/algorithm-module-reference/export-data)을 제공합니다. 현재 모듈은 데이터 저장소 유형 **Azure Blob Storage** 를 사용하고 **데이터 저장소** 및 상대 **경로** 를 매개 변수화해야 합니다. Customer Insights는 파이프라인 실행 중에 제품에 액세스할 수 있는 데이터 저장소 및 경로를 사용하여 이러한 매개 변수를 모두 재정의합니다.
    > [!div class="mx-imgBorder"]
-   > ![데이터 내보내기 모듈 구성](media/intelligence-designer-importdata.png "데이터 내보내기 모듈 구성")
+   > ![데이터 내보내기 모듈 구성.](media/intelligence-designer-importdata.png "데이터 내보내기 모듈 구성")
    
 * 코드를 사용하여 추론 출력을 작성할 때 출력을 작업 영역의 *등록된 데이터 스토어* 내의 경로에 업로드할 수 있습니다. 경로 및 데이터 스토어가 파이프라인에서 매개 변수화되면 Customer Insights에서 추론 출력을 읽고 가져올 수 있습니다. 현재 csv 형식의 단일 테이블 형식 출력이 지원됩니다. 경로에는 디렉터리와 파일 이름이 포함되어야 합니다.
 

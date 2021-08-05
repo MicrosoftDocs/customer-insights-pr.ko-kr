@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 50b11e7d6f62d7a25eb25a0f2b1c4ad7d859def1
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: de53927f7ed1f58176a7ba83f89be7c39064947c
+ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306036"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6650326"
 ---
 # <a name="match-entities"></a>엔터티 매칭
 
@@ -138,7 +138,7 @@ ms.locfileid: "6306036"
    - **가장 최근**: 최신순으로 승자 기록을 식별합니다. 최신 성을 정의하려면 날짜 또는 숫자 필드가 필요합니다.
  
    > [!div class="mx-imgBorder"]
-   > ![중복 제거 규칙 1단계](media/match-selfconflation.png "중복 제거 규칙 1단계")
+   > ![중복 제거 규칙 1단계.](media/match-selfconflation.png "중복 제거 규칙 1단계")
  
 1. 엔터티가 선택되고 기본 설정 병합이 설정되면 **규칙 추가** 를 선택하여 엔터티 수준에서 중복 제거 규칙을 정의합니다.
    - **필드 선택** 은 해당 엔터티에서 사용 가능한 모든 필드를 나열합니다. 중복을 확인하려는 필드를 선택하십시오. 모든 단일 고객에게 고유한 필드를 선택하십시오. 예를 들어 이메일 주소 또는 이름, 도시 및 전화번호의 조합입니다.
@@ -146,7 +146,7 @@ ms.locfileid: "6306036"
    - **조건 추가** 를 선택하여 조건을 더 정의합니다.
  
    > [!div class="mx-imgBorder"]
-   > ![중복 제거 규칙 2단계](media/match-selfconflation-rules.png "중복 제거 규칙 2단계")
+   > ![중복 제거 규칙 2단계.](media/match-selfconflation-rules.png "중복 제거 규칙 2단계")
 
   엔터티에 대해 여러 중복 제거 규칙을 만들 수 있습니다. 
 
@@ -179,7 +179,9 @@ ms.locfileid: "6306036"
 성공적인 실행 결과와 통합 고객 프로필 엔터티를 **엔티티** 페이지에서 확인합니다. 통합 고객 엔티티는 **프로필** 섹션에서 **고객** 으로 불립니다. 첫 번째 성공적인 일치 실행은 통합 *고객* 엔터티를 실행합니다. 모든 후속 일치 실행은 해당 엔티티를 확장합니다.
 
 > [!TIP]
-> 작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다. 또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다. 프로세스 상태를 선택하여 전체 작업의 진행률에 대한 세부 사항을 볼 수 있습니다. 작업 중 하나를 선택한 다음 **자세히 보기** 참조를 선택하면, 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고와 같은 추가 정보를 확인할 수 있습니다.
+> 일치 프로세스를 실행한 후 프로세스 상태를 선택하여 **작업 세부 정보** 창을 엽니다. 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고에 대한 개요를 제공합니다. **세부 정보 보기** 를 선택하여 일치 프로세스에 참여한 엔터티, 적용된 규칙 및 업데이트가 성공적으로 게시되었는지 확인합니다.  
+> 작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다. 또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다.  
+> :::image type="content" source="media/process-detail-path.png" alt-text="작업 상태 링크에서 프로세스 세부 정보로 이동하는 드릴다운 경로.":::
 
 ## <a name="review-and-validate-your-matches"></a>일치 검토 및 유효성 검사
 

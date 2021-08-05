@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: b0e587739f9f4d03942d70a72de4f9378822054d
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: 28c89693239393d93b7a816535b8c3fffe353935
+ms.sourcegitcommit: e57d51ae3cc233f7b6185c074c66efd9800c02c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095610"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6559413"
 ---
 # <a name="transactional-churn-prediction-preview"></a>트랜잭션 이탈 예측(미리 보기)
 
@@ -47,7 +47,7 @@ ms.locfileid: "6095610"
         - **이벤트:** 사용하려는 이벤트 이름입니다. 예를 들어 식료품점에서 'UserAction'이라는 필드는 고객이 사용하는 쿠폰일 수 있습니다.
         - **세부 정보:** 이벤트에 대한 자세한 정보입니다. 예를 들어 식료품점에서 "CouponValue"라는 필드가 쿠폰의 통화 값일 수 있습니다.
 - 제안된 데이터 특징:
-    - 충분한 기록 데이터: 선택한 기간의 최소 두 배에 해당하는 트랜잭션 데이터입니다. 바람직하게는 2~3년의 구독 데이터입니다. 
+    - 충분한 기록 데이터: 선택한 기간의 최소 두 배에 해당하는 트랜잭션 데이터입니다. 가급적이면 2~3년의 거래 내역이 필요합니다. 
     - 고객당 여러 번 구매: 고객 ID당 2회 이상 트랜잭션이 있는 것이 좋음
     - 고객 수: 최소 10개의 고객 프로필, 고유 고객 수 1,000명 이상이 바람직함. 고객이 10명 미만이고 기록 데이터가 충분하지 않으면 모델이 실패합니다.
     - 데이터 완전성: 제공된 엔터티의 데이터 필드에서 누락된 값이 20% 미만.

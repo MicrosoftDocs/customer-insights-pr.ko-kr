@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 49dad45c951f3c00d77ddd99faec48bfccada8b0
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 72f3bd1f32b813fef04dc14618331e3d707b5052
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306128"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6556269"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>트랜잭션 이탈 예측(미리 보기) 샘플 가이드
 
@@ -47,7 +47,7 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
    - **CreatedOn**: 날짜/시간/영역
 
    [!div class="mx-imgBorder"]
-   ![날짜로 DoB 전환](media/ecommerce-dob-date.PNG "생년월일을 현재로 변환")
+   ![날짜로 DoB 전환.](media/ecommerce-dob-date.PNG "생년월일을 현재로 변환")
 
 1. 오른쪽 창의 **이름** 필드에서 데이터 원본의 이름을 **쿼리** 에서 **eCommerceContacts** 로 바꿉니다.
 

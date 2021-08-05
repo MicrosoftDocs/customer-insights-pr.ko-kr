@@ -9,12 +9,12 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 3342328b9eead9bdcb8b41f119a1d0a5823001c8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 31b9b1b709540896c1dbc19f974df4ab056a7b8d
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595909"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692535"
 ---
 # <a name="complete-your-partial-data-with-predictions"></a>예측으로 부분 데이터 완성
 
@@ -31,11 +31,11 @@ ms.locfileid: "5595909"
 
 조직에서 예측 기능을 사용하기 전에 다음 전제 조건이 충족되어야 합니다.
 
-1. 조직에 [Common Data Service에 설정된](/ai-builder/build-model#prerequisites) 인스턴스가 있으며 Customer Insights와 동일한 조직에 있습니다.
+1. 조직에 [Microsoft Dataverse에서 설정](/ai-builder/build-model#prerequisites) 인스턴스가 있고 이는 Customer Insights와 동일한 조직에 있습니다.
 
-2. 환경이 Common Data Service 인스턴스에 연결됩니다.
+2. 대상 그룹 인사이트 환경은 Dataverse 인스턴스에 연결됩니다.
 
-[새 환경을 만드는](manage-environments.md) 경우 **환경 만들기** 대화 상자에서 환경을 구성하고 **고급** 을 선택합니다. 이미 환경을 만든 경우 해당 설정으로 이동하여 **고급** 을 선택합니다. 어느 쪽이든 **예측 사용** 섹션에서 환경을 연결하려는 Common Data Service 인스턴스 URL을 입력합니다.
+[새 환경을 만드는](get-started-paid.md) 경우 **환경 만들기** 대화 상자에서 환경을 구성하고 **고급** 을 선택합니다. 이미 환경을 만든 경우 해당 설정으로 이동하여 **고급** 을 선택합니다. 어느 쪽이든 **예측 사용** 섹션에서 환경을 연결하려는 Dataverse 인스턴스 URL을 입력합니다.
 
 ## <a name="create-a-prediction-in-the-customer-entity"></a>고객 엔터티에서 예측 만들기
 
@@ -47,17 +47,17 @@ ms.locfileid: "5595909"
 
 4. 값을 예측하려는 특성 이름을 찾은 다음 **요약** 열에서 **개요** 아이콘을 선택합니다.
    > [!div class="mx-imgBorder"]
-   > ![개요 아이콘](media/intelligence-overviewicon.png "개요 아이콘")
+   > ![개요 아이콘.](media/intelligence-overviewicon.png "개요 아이콘")
 
 5. 특성에 대해 누락된 값의 비율이 높은 경우 **누락된 값 예측** 을 선택하여 예측을 계속합니다.
    > [!div class="mx-imgBorder"]
-   > ![누락된 값 예측 단추가 표시된 개요 상태](media/intelligence-overviewpredictmissingvalues.png "누락된 값 예측 단추가 표시된 개요 상태")
+   > ![누락된 값 예측 단추가 표시된 개요 상태.](media/intelligence-overviewpredictmissingvalues.png "누락된 값 예측 단추가 표시된 개요 상태")
 
 6. 예측 결과를 위해 **표시 이름** 과 **출력 엔터티 이름** 을 제공합니다.
 
 7. 미리 채워진 옵션 목록에 값을 예측된 범주에 매핑할 수 있는 위치가 표시됩니다. 이 경우 예측의 참/거짓 또는 이진 특성에 매핑되므로 범주 옵션만 0 또는 1이 됩니다. 범주 열에서 최종 예측에서 "0"으로 분류할 필드 값을 "0"으로 매핑하고 최종 예측에서 "1"로 분류할 항목을 "1"로 매핑합니다.
    > [!div class="mx-imgBorder"]
-   > ![범주에 매핑된 필드 값을 보여주는 예](media/intelligence-categorymapping.png "범주에 매핑된 필드 값을 보여주는 예")
+   > ![범주에 매핑된 필드 값을 보여주는 예.](media/intelligence-categorymapping.png "범주에 매핑된 필드 값을 보여주는 예")
 
 8. **완료** 를 선택하면 예측이 처리됩니다. 데이터의 크기와 복잡성에 따라 처리에 시간이 걸립니다. 생성한 예측의 **출력 엔터티 이름** 을 기반으로 새 엔터티에서 결과를 사용할 수 있습니다.
 
@@ -77,7 +77,7 @@ ms.locfileid: "5595909"
 
 5. 만든 세그먼트에 소스 필드에 불완전한 데이터가 있는 경우 누락된 값을 예측하도록 선택할 수 있습니다.
    > [!div class="mx-imgBorder"]
-   > ![예측 단추](media/segments-predictoption.png "예측 단추")
+   > ![예측 단추.](media/segments-predictoption.png "예측 단추")
 
 6. 예측 결과를 위해 **표시 이름** 과 **출력 엔터티 이름** 을 제공합니다.
 
@@ -93,7 +93,7 @@ ms.locfileid: "5595909"
 
 4. 예측 보기에 여러 데이터 요소가 표시됩니다.
    > [!div class="mx-imgBorder"]
-   > ![예측 페이지](media/intelligence-predictionsviewpage.png "예측 페이지")
+   > ![예측 페이지.](media/intelligence-predictionsviewpage.png "예측 페이지")
 
    - **예측 가치** 는 필드 값 대 범주 매핑 단계에서 작성한 매핑을 보여줍니다. 이들은 특정 범주에 매핑된 데이터 집합의 값입니다.
    -**상위 인플루언서** 는 데이터 집합 내에서 특정 범주에 매핑되는 필드 값에 대한 예측의 신뢰도에 영향을 줄 수 있는 요인입니다.
@@ -139,7 +139,7 @@ ms.locfileid: "5595909"
 
 ## <a name="troubleshooting"></a>문제 해결
 
-오류로 인해 Common Data Service 첨부 프로세스를 완료할 수 없는 경우 프로세스를 수동으로 완료할 수 있습니다. 연결 프로세스에서 발생할 수 있는 두 가지 알려진 문제가 있습니다.
+오류로 인해 Dataverse 첨부 프로세스를 완료할 수 없는 경우 프로세스를 수동으로 완료할 수 있습니다. 연결 프로세스에서 발생할 수 있는 두 가지 알려진 문제가 있습니다.
 
 - 고객 카드 추가 기능 솔루션이 설치되지 않았습니다.
     1. [솔루션 설치 및 구성](customer-card-add-in.md)에 대한 지침을 완료하십시오.

@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: ameetj
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 71881f7e1f9448fe0a7d6d92b8102b8b42de7c2a
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2eb44604e72b32292f971754d4f8c4fd1988c697
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598347"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555177"
 ---
 # <a name="use-models-based-on-azure-machine-learning-studio-classic"></a>Azure Machine Learning Studio(클래식) 기반 모델을 사용합니다.
 
@@ -41,7 +41,7 @@ Dynamics 365 Customer Insights의 통합 데이터는 추가 비즈니스 인사
 
 1. 리소스를 생성하면 Machine Learning Studio 작업 영역 대시보드가 나타납니다. **Machine Learning Studio 실행** 을 선택합니다.
 
-   ![Azure Machine Learning Studio 사용자 인터페이스](media/azure-machine-learning-studio.png)
+   ![Azure Machine Learning Studio 사용자 인터페이스.](media/azure-machine-learning-studio.png)
 
 ## <a name="work-with-azure-machine-learning-studio"></a>Azure Machine Learning Studio 작업
 
@@ -55,7 +55,7 @@ Dynamics 365 Customer Insights의 통합 데이터는 추가 비즈니스 인사
 
 1. 새 실험을 만들거나 갤러리의 실험 템플릿을 사용하는 경우 **데이터 가져오기** 속성을 구성해야 합니다. 안내식 환경을 사용하거나 데이터가 포함된 Azure Blob Storage에 액세스하기 위한 세부 정보를 직접 제공하세요.  
 
-   ![Azure Machine Learning Studio 실험](media/azure-machine-learning-studio-experiment.png)
+   ![Azure Machine Learning Studio 실험.](media/azure-machine-learning-studio-experiment.png)
 
 1. 이제 사용자 지정 처리 파이프라인을 구축하여 데이터를 정리 및 전처리하고, 기능을 추출하고, 적합한 모델을 학습시킬 수 있습니다.
 
@@ -63,15 +63,15 @@ Dynamics 365 Customer Insights의 통합 데이터는 추가 비즈니스 인사
 
 1. 모델의 품질이 만족스러우면 **웹 서비스 설정** > **예측 웹 서비스** 를 선택합니다. 이 옵션은 학습 실험에서 예측 서비스로 학습된 모델과 기능화 파이프라인을 가져옵니다. 예측 서비스는 학습 실험에 사용된 스키마를 사용하여 다른 입력 데이터 집합을 가져와 예측을 수행할 수 있습니다.
 
-   ![예측 웹 서비스 설정](media/predictive-webservice-control.png)
+   ![예측 웹 서비스 설정.](media/predictive-webservice-control.png)
 
 1. 예측 웹 서비스 실험이 성공하면 자동 예약을 위해 배포할 수 있습니다. 웹 서비스가 Customer Insights와 함께 작동하게 하려면 **웹 서비스 배포** > **웹 서비스 배포 [신규] 미리 보기** 를 선택합니다. [웹 서비스 배포에 대해 자세히 알아보세요](/azure/machine-learning/studio/deploy-a-machine-learning-web-service).
 
-   ![예측 웹 서비스 배포](media/predictive-webservice-deploy.png)
+   ![예측 웹 서비스 배포.](media/predictive-webservice-deploy.png)
 
 ## <a name="sample-models-from-the-gallery"></a>갤러리의 샘플 모델
 
-이 문서에서는 모델에 Contoso Hotel의 가상 시나리오를 사용합니다. Contoso Hotel은 다음 데이터를 수집합니다.
+이 문서의 모델에 대해 Contoso 호텔의 가상 시나리오를 사용합니다. Contoso 호텔은 다음 데이터를 수집합니다.
 
 - 호텔 숙박 활동으로 구성된 CRM 데이터. 데이터 집합에는 등록된 각 고객의 숙박 날짜에 대한 정보가 포함되어 있습니다. 또한 예약, 객실 유형, 지출 세부 정보 등에 대한 정보도 포함됩니다. 데이터는 2014년 1월부터 2018년 1월까지 4년에 걸쳐 있습니다.
 - 호텔 투숙객의 고객 프로필. 이러한 프로필에는 이름, 생년월일, 우편 주소, 성별, 전화 번호 등 각 고객에 대한 정보가 포함됩니다.
@@ -87,13 +87,13 @@ Dynamics 365 Customer Insights의 통합 데이터는 추가 비즈니스 인사
 
 갤러리에서 실험 템플릿을 가져올 수 있습니다. 먼저 Azure Blob Storage에서 **호텔 숙박 활동**, **고객 데이터**, **서비스 사용 데이터** 에 대한 데이터를 가져와야 합니다.
 
-   ![이탈 모델에 대한 데이터 가져오기](media/import-data-azure-blob-storage.png)
+   ![이탈 모델에 대한 데이터 가져오기.](media/import-data-azure-blob-storage.png)
 
 ### <a name="featurization"></a>기능화
 
 이탈의 정의에 따라 먼저 레이블에 영향을 미칠 원시 기능을 식별합니다. 그런 다음 이러한 원시 기능을 기계 학습 모델과 함께 사용할 수 있는 수치 기능으로 처리합니다. Customer Insights에서 데이터 통합이 이루어 지므로 *고객 ID* 를 사용하여 이러한 테이블을 포함될 수 있습니다.
 
-   ![가져온 데이터 결합](media/join-imported-data.png)
+   ![가져온 데이터 결합.](media/join-imported-data.png)
 
 이탈 분석을 위한 모델 구축을 위한 기능화는 약간 까다로울 수 있습니다. 데이터는 매일 새로운 호텔 활동이 기록되는 시간의 함수입니다. 기능화 중에 동적 데이터에서 정적 기능을 생성하려고 합니다. 이 경우 슬라이딩 윈도우가 1년인 호텔 활동에서 여러 기능을 생성합니다. 또한 원-핫 인코딩을 사용하여 객실 유형 또는 예약 유형과 같은 범주별 기능을 별도의 기능으로 확장합니다.  
 
@@ -114,7 +114,7 @@ Dynamics 365 Customer Insights의 통합 데이터는 추가 비즈니스 인사
 
 다음 이미지는 Azure Machine Learning Studio의 모델 학습 및 평가 파이프라인을 보여줍니다.
 
-![Azure Machine Learning Studio의 이탈 모델](media/azure-machine-learning-model.png)
+![Azure Machine Learning Studio의 이탈 모델.](media/azure-machine-learning-model.png)
 
 또한 모델 최적화의 중요한 측면인 **순열 기능 중요성** 이라는 기술도 적용합니다. 내장 모델은 특정 기능이 최종 예측에 미치는 영향에 대한 통찰력이 거의 또는 전혀 없습니다. 기능 중요도 계산기는 사용자 지정 알고리즘을 사용하여 특정 모델의 결과에 대한 개별 기능의 영향을 계산합니다. 기능 중요도는 +1에서 -1 사이로 정규화됩니다. 부정적인 영향은 해당 기능이 결과에 반 직관적인 영향을 미치므로 모델에서 제거해야 함을 의미합니다. 긍정적인 영향은 기능이 예측에 크게 기여하고 있음을 나타냅니다. 이러한 값은 서로 다른 메트릭이므로 상관 계수가 아닙니다. 자세한 내용은 [순열 기능 중요성](/azure/machine-learning/studio-module-reference/permutation-feature-importance)을 참조하세요.
 
@@ -148,7 +148,7 @@ CLTV를 예측하는 것은 예측 값이 양의 값을 갖는 연속 변수이�
 
 이탈 모델과 마찬가지로, 우리는 CustomerID별로 일관되게 추천을 구축하기 위해 호텔 ServiceCustomerID와 CustomerID를 결합하고 있습니다.
 
-![추천 모델의 기능화](media/azure-machine-learning-model-featurization.png)
+![추천 모델의 기능화.](media/azure-machine-learning-model-featurization.png)
 
 데이터는 세 가지 다른 엔터티에서 제공되며 기능은 이들에서 파생됩니다. 추천의 기능화는 이탈 또는 CLTV 시나리오와 다릅니다. 추천 모델에는 세 가지 기능 집합 형식의 입력 데이터가 필요합니다.
 
@@ -156,13 +156,13 @@ CLTV를 예측하는 것은 예측 값이 양의 값을 갖는 연속 변수이�
 
 우리는 **매치박스 추천 학습** 이라는 알고리즘을 사용하여 추천 모델을 교육하여 제품 또는 서비스를 예측합니다.
 
-![제품 추천 알고리즘](media/azure-machine-learning-model-recommendation-algorithm.png)
+![제품 추천 알고리즘.](media/azure-machine-learning-model-recommendation-algorithm.png)
 
 세 개의 **매치박스 추천 학습** 모델에 대한 입력 포트는 교육 서비스 사용 데이터, 고객 설명(선택 사항) 및 서비스 설명을 취합니다. 모델을 평가하는 방법에는 세 가지가 있습니다. 하나는 NDCG(Normalized Discounted Cumulative Gain) 점수를 계산하여 등급 항목의 순위를 매기는 모델 평가용입니다. 이 실험에서 NDCG 점수는 0.97입니다. 다른 두 가지 옵션은 전체 권장 서비스 카탈로그에서 모델을 평가하거나 사용자가 이전에 사용하지 않은 항목에 대해서만 평가하는 것입니다.
 
 전체 서비스 카탈로그의 권장 사항 배포를 자세히 살펴보면 전화, Wi-Fi 및 택배가 가장 권장되는 서비스임을 알 수 있습니다. 이것은 서비스 소비 데이터의 분포에서 찾은 것과 일치합니다.
 
-![추천 모델 출력](media/azure-machine-learning-model-output.png)
+![추천 모델 출력.](media/azure-machine-learning-model-output.png)
 
 전체 [제품 추천 실험은 Azure AI Gallery에서 액세스할 수 있습니다.](https://gallery.azure.ai/Experiment/Recommendation-4)
 

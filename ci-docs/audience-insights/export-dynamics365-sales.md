@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 328bb2f26ebcea234fb645e5225930ab12f82a8b
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 9f11ab189117da5bcc1aee843b73962ec6615e82
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976234"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692351"
 ---
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>Dynamics 365 Sales에 세그먼트 사용(프리뷰)
 
@@ -24,7 +24,7 @@ ms.locfileid: "5976234"
 
 ## <a name="prerequisite-for-connection"></a>연결을 위한 전제 조건
 
-1. Customer Insights에서 영업으로 세그먼트를 내보내려면 먼저 Dynamics 365 Sales에 연락처 레코드가 있어야 합니다. [Common Data Services를 사용하는 Dynamics 365 Sales](connect-power-query.md)에서 연락처를 수집하는 방법에 대해 자세히 알아보십시오.
+1. Customer Insights에서 영업으로 세그먼트를 내보내려면 먼저 Dynamics 365 Sales에 연락처 레코드가 있어야 합니다. [Microsoft Dataverse를 사용하는 Dynamics 365 Sales](connect-power-query.md)에서 연락처를 수집하는 방법에 대해 자세히 알아보십시오.
 
    > [!NOTE]
    > 대상 그룹 인사이트에서 영업으로 세그먼트를 내보내면 영업 인스턴스에 새 연락처 레코드가 생성되지 않습니다. 영업의 연락처 레코드는 대상 그룹 인사이트에서 수집되고 데이터 원본으로 사용되어야 합니다. 또한 세그먼트를 내보내기 전에 고객 ID를 연락처 ID에 매핑하려면 통합 고객 엔터티에 포함되어야 합니다.

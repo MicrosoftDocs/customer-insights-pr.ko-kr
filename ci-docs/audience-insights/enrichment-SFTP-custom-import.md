@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f92b36ac5364ea8586f9cbba7ba03178641555c0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 9331cf8057850e2fbe03622831f388e73056d938
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304658"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555407"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>사용자 지정 데이터로 고객 프로필 보강(미리 보기)
 
@@ -64,7 +64,7 @@ SFTP 사용자 지정 가져오기를 구성하려면 다음 전제 조건이 �
 1. 확인이 완료되면 **저장** 을 선택하여 연결을 저장할 수 있습니다.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian 연결 구성 페이지](media/enrichment-SFTP-connection.png "Experian 연결 구성 페이지")
+   > ![Experian 연결 구성 페이지.](media/enrichment-SFTP-connection.png "Experian 연결 구성 페이지")
 
 
 ## <a name="defining-field-mappings"></a>필드 매핑 정의 

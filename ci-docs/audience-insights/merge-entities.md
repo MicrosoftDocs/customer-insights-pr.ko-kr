@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 86ab3cefa70e5fab4bdb27cde363adee26efee4c
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 24b523786158ff36c314601846ee25ea64cfabbe
+ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305654"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6650234"
 ---
 # <a name="merge-entities"></a>엔터티 병합
 
@@ -109,7 +109,7 @@ ms.locfileid: "6305654"
 특성을 수동으로 병합하든 시스템에서 특성을 병합하도록 허용하든 언제든지 병합을 실행할 수 있습니다. **병합** 페이지에서 **실행** 을 선택하여 프로세스를 시작합니다.
 
 > [!div class="mx-imgBorder"]
-> ![데이터 병합 저장 및 실행](media/configure-data-merge-save-run.png "데이터 병합 저장 및 실행")
+> ![데이터 병합 저장 및 실행.](media/configure-data-merge-save-run.png "데이터 병합 저장 및 실행")
 
 통합 고객 엔터티에 반영된 출력만 보려면 **병합만 실행** 을 선택합니다. 다운스트림 프로세스는 [지정된 새로 고침 일정](system.md#schedule-tab)에 따라 새로 고쳐집니다.
 
@@ -118,7 +118,9 @@ ms.locfileid: "6305654"
 추가 변경을 수행하고 단계를 다시 실행하기 위해 진행중인 병합을 취소할 수 있습니다. **새로 고침 중...** 을 선택하고 나타나는 측면 창에서 **작업 취소** 를 선택합니다.
 
 > [!TIP]
-> 작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다. 또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다. 프로세스 상태를 선택하여 전체 작업의 진행률에 대한 세부 사항을 볼 수 있습니다. 작업 중 하나를 선택한 다음 **자세히 보기** 참조를 선택하면, 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고와 같은 추가 정보를 확인할 수 있습니다.
+> 병합 프로세스를 실행한 후 프로세스 상태를 선택하여 **작업 세부 정보** 창을 엽니다. 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고에 대한 개요를 제공합니다. **세부 정보 보기** 를 선택하여 일치 프로세스에 참여한 엔터티, 충돌 해결에 성공했는지, 업데이트가 성공적으로 게시되었는지 확인합니다.  
+> 작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다. 또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다.  
+> :::image type="content" source="media/process-detail-path.png" alt-text="작업 상태 링크에서 프로세스 세부 정보로 이동하는 드릴다운 경로.":::
 
 ## <a name="next-step"></a>다음 단계
 

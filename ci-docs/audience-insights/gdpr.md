@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9c453c9b416bff0e6362a8ccf7ff534f4efa1e00
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e832fbbdfb59cb06d98715223edca438d2c3a7f2
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597519"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554337"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>GDPR에 따른 데이터 주체 권한(DSR) 요청
 
@@ -40,7 +40,7 @@ Customer Insights 관리자는 다음 단계에 따라 데이터 원본에서 �
    2. **상태** 아래에서 데이터 원본의 상태를 확인합니다. 확인 표시는 새로 고침이 완료되었음을 나타냅니다. 경고 삼각형은 문제가 있음을 의미합니다. 경고 삼각형이 표시되면 D365CI@microsoft.com에 문의하십시오.
 
 > [!div class="mx-imgBorder"]
-> ![고객 데이터에 대한 GDPR 삭제 요청 처리](media/gdpr-data-sources.png "고객 데이터에 대한 GDPR 삭제 요청 처리")
+> ![고객 데이터에 대한 GDPR 삭제 요청 처리.](media/gdpr-data-sources.png "고객 데이터에 대한 GDPR 삭제 요청 처리")
 
 #### <a name="manage-delete-requests-for-user-data"></a>사용자 데이터에 대한 삭제 요청 관리
 
@@ -52,7 +52,7 @@ Customer Insights 관리자는 다음 단계에 따라 Customer Insights 사용�
 4. **제거** 를 선택합니다.
 
 > [!div class="mx-imgBorder"]
-> ![사용자 데이터에 대한 GDPR 삭제 요청 처리](media/gdpr-permissions.png "사용자 데이터에 대한 GDPR 삭제 요청 처리")
+> ![사용자 데이터에 대한 GDPR 삭제 요청 처리.](media/gdpr-permissions.png "사용자 데이터에 대한 GDPR 삭제 요청 처리")
 
 ## <a name="responding-to-gdpr-data-subject-export-requests"></a>GDPR 데이터 주체 내보내기 요청에 응답
 

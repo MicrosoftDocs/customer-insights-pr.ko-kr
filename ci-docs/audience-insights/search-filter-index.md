@@ -9,19 +9,19 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: b6cc0ad1a47a6c00e3bf220271f42870fc53621b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: a6131d4dddce48b0fba153bcefe5631e0d22d808
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597151"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554029"
 ---
 # <a name="customer-profiles-search--filter-index"></a>고객 프로필: 색인 검색 및 필터링
 
 고객 데이터를 통합한 결과는 전체 고객 기반에 대한 통일된 보기를 제공하는 고객 프로필 엔터티입니다. [특정 고객 또는 고객 그룹에 대한 정보를 빠르게 찾을 수 있도록](customer-profiles.md) **고객** 페이지에서 **검색** 및 **필터** 기능을 구성할 수 있습니다. 관리자가 **검색 및 필터 색인** 페이지에서 특성을 편집하여 사용자가 검색 및 필터링할 수 있는 특성을 편집하는 방법을 계속 읽으십시오.
 
 > [!div class="mx-imgBorder"]
-> ![검색 필터](media/search-filter.png "검색 필터")
+> ![검색 필터.](media/search-filter.png "검색 필터")
 
 ## <a name="add-fields-and-specify-attributes"></a>필드 추가 및 특성 지정
 

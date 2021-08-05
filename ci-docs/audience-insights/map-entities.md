@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 36b7f7b2fac9497245cf6759506c53753972f173
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 7fc05aca61d1136f620019ee82dc6937ea39d8e5
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596001"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555131"
 ---
 # <a name="map-entities-and-attributes"></a>엔터티 및 특성 매핑
 
@@ -35,14 +35,14 @@ ms.locfileid: "5596001"
 3. 사용할 엔티티와 특성을 선택합니다. *시합* 과 *병합* 단계. 엔터티에서 개별적으로 필요한 특성을 선택하거나 엔터티의 모든 특성을 포함 할 수 있습니다. **모든 필드 포함** 엔터티 수준의 확인란. 데이터 통합 프로세스를 활용하려면 두 개 이상의 엔터티를 선택하는 것이 좋습니다.
 
    > [!div class="mx-imgBorder"]
-   > ![엔터티 추가 예](media/data-manager-configure-map-add-entities-example.png "엔터티 추가 예")
+   > ![엔터티 추가 예.](media/data-manager-configure-map-add-entities-example.png "엔터티 추가 예")
 
    이 예에서 우리는 **전자 상거래 연락처** 와 **충성 고객** 엔터티를 추가합니다. 이러한 엔터티를 선택하면 어떤 온라인 비즈니스 고객이 로열티 프로그램 회원인지에 대한 통찰력을 얻을 수 있습니다.
    
    매핑하려는 필수 특성을 선택하기 위해 모든 특성 및 엔터티에서 키워드를 검색 할 수 있습니다.
    
      > [!div class="mx-imgBorder"]
-   > ![검색 필드 예](media/data-manager-configure-map-search-fields-example.png "검색 필드 예")
+   > ![검색 필드 예.](media/data-manager-configure-map-search-fields-example.png "검색 필드 예")
 
 4. **적용** 을 선택하여 선택 사항을 확인합니다.
 
@@ -55,7 +55,7 @@ ms.locfileid: "5596001"
 - **특성 의미 유형**: 이메일 주소 또는 이름과 같은 특성 범주입니다. 스마트 예측 의미 체계에 AI 모델을 사용하고 시간을 절약하고 정확도를 높이려면 **지능형 매핑** 을 **사용 설정** 하세요. 지능형 매핑은 **유형** 필드에서 AI 기반 의미론 권장 사항을 강조합니다. **사용 중지** 로 설정하면 정기적인 매핑 권장 사항을 볼 수 있습니다. 사용 가능한 옵션 목록에서 의미 유형을 선택하고 제안 된 선택을 재정의 할 수 있습니다.
 
 > [!div class="mx-imgBorder"]
-> ![속성 유형 및 의미 예측](media/data-manager-configure-map-add-attributes-semantic-prediction.png "특성 유형 및 의미 예측")
+> ![특성 유형 및 의미 예측.](media/data-manager-configure-map-add-attributes-semantic-prediction.png "특성 유형 및 의미 예측")
 
 사용자 지정 의미 유형을 추가할 수도 있습니다. 해당 특성의 유형 필드를 선택하고 사용자 지정 의미 유형 이름을 입력합니다. 이 방법으로 시스템이 자동 식별한 특성 유형을 변경할 수도 있습니다.
 
@@ -64,7 +64,7 @@ ms.locfileid: "5596001"
 의미 체계 유형에 자동으로 매핑되지 않는 특성은 **매핑되지 않은 필드의 데이터 정의** 섹션. 매핑되지 않은 특성에 대한 의미 유형 필드를 선택하거나 사용자 정의 특성 유형 이름을 입력합니다.
 
 > [!div class="mx-imgBorder"]
-> ![기본 키 및 특성 유형](media/data-manager-configure-map-add-attributes.png "기본 키 및 특성 유형")
+> ![기본 키 및 특성 유형.](media/data-manager-configure-map-add-attributes.png "기본 키 및 특성 유형")
 
 > [!NOTE]
 > 고객 카드에 고객 이름을 채우려면 하나의 필드가 Person.FullName 의미 유형에 매핑되어야 합니다. 그렇지 않으면 고객 카드는 이름이 없는 것으로 나타납니다. 
@@ -76,7 +76,7 @@ ms.locfileid: "5596001"
 2. **필드 편집** 창에서 특성 및 엔터티를 추가하거나 제거합니다. 검색 또는 스크롤을 사용하여 관심있는 특성 및 엔터티를 찾아 선택하십시오. 이미 일치된 특성이나 엔터티는 제거할 수 없습니다.
 
    > [!div class="mx-imgBorder"]
-   > ![특성 추가 또는 제거](media/configure-data-map-edit.png "특성 추가 또는 제거")
+   > ![특성 추가 또는 제거.](media/configure-data-map-edit.png "특성 추가 또는 제거")
 
 3. **적용** 을 선택합니다.
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 7c82fe92b3351a782a4fa6510300d870b742d042
-ms.sourcegitcommit: 42b3bce1e20e7cc707d232844dacfeed3d6fc096
+ms.openlocfilehash: abe9ee447745081e3c462d44e5901b6dac919adf
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "6309828"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555361"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Experian 인구 통계로 고객 프로필을 보강하십시오.(프리뷰)
 
@@ -39,7 +39,7 @@ Experian을 구성하려면 다음 전제 조건이 충족되어야 합니다.
 1. Experian 타일에서 **내 데이터 보강** 을 선택하세요.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian 합니다](media/experian-tile.png "Experian tile")
+   > ![Experian 타일.](media/experian-tile.png "Experian tile")
    > 
 
 1. 드롭다운 목록에서 [연결](connections.md)을 선택하십시오. 사용 가능한 연결이 없으면 관리자에게 문의하십시오. 관리자인 경우 **연결 추가** 를 선택하고 드롭다운 목록에서 Experian을 선택하여 연결을 만들 수 있습니다. 

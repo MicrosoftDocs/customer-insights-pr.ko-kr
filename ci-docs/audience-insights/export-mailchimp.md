@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 7922a6a69f863caae5401549ed6f88a61aa77d39
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: ac6642c0ce02f1a92458a16250fd3b4cdef5fd1c
+ms.sourcegitcommit: adb9c43ddaba25e511535d78a4bcf8815f154a7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124235"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6362517"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>Mailchimp로 세그먼트 내보내기(프리뷰)
 
@@ -38,7 +38,7 @@ ms.locfileid: "6124235"
 
 1. **관리자** > **연결** 로 이동합니다.
 
-1. **연결 추가** 와 **Autopilot** 을 선택하여 연결을 구성합니다.
+1. **연결 추가** 를 선택하고 **Mailchimp** 를 선택하여 연결을 구성합니다.
 
 1. **표시 이름** 필드에서 연결에 인식할 수 있는 이름을 지정합니다. 이름 및 연결 유형은 이 연결을 설명합니다. 이 연결의 목적과 대상을 설명하는 이름을 선택하는 것이 좋습니다.
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 50c231070ff9930c1ea82971bf4f8541a89d5027
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: b37bb5dfeed2326784ef276a93a04bec626aaf6e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305899"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554691"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>파워 쿼리 데이터 원본에 연결
 
@@ -42,7 +42,7 @@ ms.locfileid: "6305899"
 1. **파워 쿼리-검색어 수정** 대화 상자를 통해 데이터를 검토하고 조정할 수 있습니다. 선택한 데이터 원본에서 식별된 시스템이 왼쪽 창에 나타납니다.
 
    > [!div class="mx-imgBorder"]
-   > ![대화 쿼리 편집](media/data-manager-configure-edit-queries.png "대화 쿼리 편집")
+   > ![쿼리 편집 대화.](media/data-manager-configure-edit-queries.png "대화 쿼리 편집")
 
 1. 데이터를 변환할 수도 있습니다. 편집하거나 변환할 엔터티를 선택합니다. 파워 쿼리 창의 옵션을 사용하여 변형을 적용합니다. 각 변환은 **적용 단계** 아래에 나열됩니다. 파워 쿼리는 사전 빌드된 다양한 변환 옵션을 제공합니다. 자세한 내용은 [파워 쿼리 변환](/power-query/power-query-what-is-power-query#transformations)을 참조하세요.
 
@@ -75,7 +75,7 @@ Customer Insights로 데이터를 가져 오기 위해 선택할 수 있는 [파
 2. 변경하려는 데이터 원본 옆의 세로 줄임표를 선택하고 드롭다운 메뉴에서 **편집** 을 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![편집 옵션](media/edit-option-data-sources.png "편집 옵션")
+   > ![편집 옵션.](media/edit-option-data-sources.png "편집 옵션")
 
 3. [새 데이터 원본 만들기](#create-a-new-data-source) 섹션에 설명된 대로 **파워 쿼리-검색어 수정** 대화상자에서 변경사항 및 변환을 적용합니다.
 

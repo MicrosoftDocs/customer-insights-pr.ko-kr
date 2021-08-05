@@ -1,7 +1,7 @@
 ---
 title: Salesforce Marketing Cloud로 Customer Insights 데이터 내보내기
 description: 연결을 구성하고 Salesforce Marketing Cloud로 내보내는 방법을 알아봅니다.
-ms.date: 06/24/2021
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 123f8b2dbb6140785dec6c1b4164d2f513f66a53
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
+ms.openlocfilehash: 8ce243918c2388e931a98df3bbe576ddf692f707
+ms.sourcegitcommit: 4823684a1399fd66ffecfce21735f2bc90a1733c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314639"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6660275"
 ---
 # <a name="export-segments-and-other-data-to-salesforce-marketing-cloud-preview"></a>Salesforce Marketing Cloud로 세그먼트 및 기타 데이터 내보내기(프리뷰)
 
@@ -23,11 +23,6 @@ SFTP(Secure File Transfer Protocol) 위치를 통해 내보냄으로써 Salesfor
 ## <a name="prerequisites-for-connection"></a>연결을 위한 전제 조건
 
 - SFTP 호스트 및 해당 관리자 자격 증명의 가용성. [Salesforce Marketing Cloud에 대한 SFTP 위치를 설정하는 방법](https://help.salesforce.com/articleView?id=sf.mc_es_configure_enhanced_ftp.htm&type=5) 
-
-## <a name="known-limitations"></a>알려진 제한 사항
-
-- 내보내기 런타임은 시스템 성능에 따라 다릅니다. 서버의 최소 구성으로 2개의 CPU 코어와 1Gb의 메모리를 권장합니다. 
-- 권장되는 최소 구성을 사용하는 경우 최대 1억 개의 고객 프로필이 있는 항목을 내보내는 데 90분이 걸릴 수 있습니다. 
 
 ## <a name="set-up-the-connection-to-salesforce-marketing-cloud"></a>Salesforce Marketing Cloud에 대한 연결 설정
 

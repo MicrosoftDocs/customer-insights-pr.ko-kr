@@ -1,7 +1,7 @@
 ---
 title: 신규 및 향후 기능
 description: 새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.
-ms.date: 06/15/2021
+ms.date: 07/19/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 355dc22ac381145b231848830cefc47eda7968f4
-ms.sourcegitcommit: 6944c1592877eb92ec789df5f2e0dbecef638837
+ms.openlocfilehash: 1c54d74c999eb4776074951a129019843017964e
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6263259"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692397"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트의 새로운 기능
 
@@ -26,6 +26,28 @@ ms.locfileid: "6263259"
 
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하십시오.
+
+## <a name="june-2021-updates"></a>2021년 6월 업데이트
+
+2021년 6월 업데이트에는 여러 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="data-ingestion"></a>데이터 수집
+
+- **데이터 통합 진행 상황 업데이트 개선** 이제 [데이터 통합 프로세스](data-unification.md) 단계에서 보다 세분화되고 개선된 동적 상태 업데이트를 볼 수 있습니다. 이 기능을 사용하면 자세한 진행 상황을 추적하여 프로세스 흐름을 이해하고 주의가 필요한 단계가 있는 경우 조치를 취할 수 있습니다.
+
+### <a name="extensibility"></a>확장성
+
+- **Salesforce Marketing Cloud로 세그먼트 및 기타 데이터 내보내기** [Salesforce Marketing Cloud](export-salesforce.md)를 포함하도록 내보내기 대상을 확장했습니다. 이제 브랜드 SFTP 내보내기를 통해 세그먼트 및 기타 유형의 데이터를 Salesforce Marketing Cloud로 내보낼 수 있습니다. Salesforce에서 데이터 가져오기를 완전히 자동화하고 보다 효과적인 마케팅 캠페인을 만드는 데 사용할 수 있습니다.  
+ 
+- **ActiveCampaign으로 세그먼트 내보내기** [활성 캠페인](export-active-campaign.md)을 포함하도록 내보내기 대상을 확장했습니다. 이제 세그먼트를 내보내 캠페인을 생성하고, 이메일 마케팅을 실행하고, ActiveCampaign에서 특정 고객 그룹과 작업할 수 있습니다.
+ 
+- **Sendinblue로 세그먼트 내보내기** [Sendinblue](export-sendinblue.md)를 포함하도록 내보내기 대상을 확장했습니다. 이제 세그먼트를 내보내 캠페인을 생성하고, 이메일 마케팅을 실행하고, Sendinblue에서 특정 고객 그룹과 작업할 수 있습니다.
+ 
+### <a name="ux-updates"></a>UX 업데이트 
+
+- **신규 및 향상된 고객 페이지 및 프로필 세부 정보 페이지** 향상된 사용자 환경과 더 나은 성능을 위해 고객 페이지와 프로필 세부 정보 페이지를 다시 디자인했습니다. 이러한 변경을 통해 고객을 보고, 정렬하고, 검색하고, 필터링할 수 있습니다. 이제 필터가 URL에 표시되어 검색 결과를 다른 사용자와 원활하게 공유할 수 있습니다. 검색 결과를 세그먼트로 저장할 수도 있습니다.    
+  고객 프로필의 세부 정보 페이지는 이제 가독성 향상을 위해 인구 통계 데이터, ID 및 기타 프로필 특성과 같은 다양한 하위 섹션의 데이터를 그룹화합니다. 프로필 세부 정보 페이지의 다른 섹션은 이제 더 대화형이 되었습니다. 예를 들어 이제 활동 섹션에서 필터링 및 정렬이 가능합니다.
+
 
 ## <a name="may-2021-updates"></a>2021년 5월 업데이트
 
@@ -170,7 +192,7 @@ ms.locfileid: "6263259"
 
 - **복사 환경은 더 많은 유형의 데이터 원본을 지원함**
 
-  관리자는 동일한 조직의 새 환경에 환경 구성을 복사할 수 있습니다. 이 기능은 데이터 원본을 기반으로 하는 Common Data Service 데이터 레이크 또는 Common Data Model 폴더가 사용되는 사례에 대해 복사 환경 기능을 확장합니다.
+  관리자는 동일한 조직의 새 환경에 환경 구성을 복사할 수 있습니다. 이 기능은 Microsoft Dataverse 관리형 Data Lake 또는 Common Data Model 폴더를 기반으로 하는 데이터 원본이 사용되는 경우 복사 환경 기능을 확장합니다.
 
 ## <a name="january-2021-updates"></a>2021년 1월 업데이트
 

@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 336cab8619c0b80b7b8a38035cae99620baf2873
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 6e2080b4ad19f6f57f60da591345e80ce9083e8a
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306265"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554075"
 ---
 # <a name="segments-overview"></a>세그먼트 개요
 
@@ -89,7 +89,7 @@ ms.locfileid: "6306265"
 시각화의 시간 프레임 업데이트할 수 있습니다.
 
 > [!div class="mx-imgBorder"]
-> ![세그먼트 시간 범위](media/segment-time-range.png "세그먼트 시간 범위")
+> ![세그먼트 시간 범위.](media/segment-time-range.png "세그먼트 시간 범위")
 
 아래 부분에는 세그먼트 구성원 목록이 포함되어 있습니다.
 

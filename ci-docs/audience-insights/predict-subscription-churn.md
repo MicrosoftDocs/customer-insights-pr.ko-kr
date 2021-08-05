@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 4e7065b61940ef0d7b2a30f96f6225df29e30383
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: 9eb0593f93d713124e4113dcb62c588819f5b97b
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095656"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6556315"
 ---
 # <a name="subscription-churn-prediction-preview"></a>구독 이탈 예측(미리 보기)
 
@@ -63,7 +63,7 @@ ms.locfileid: "6095656"
 1. 대상 그룹 인사이트에서 **인텔리전스** > **예측** 으로 이동합니다.
 1. **구독 이탈 모델(미리 보기)** 타일을 선택하고 **이 모델 사용** 을 선택합니다.
    > [!div class="mx-imgBorder"]
-   > ![이 모델 사용 단추가 있는 구독 이탈 모델 타일](media/subscription-churn-usethismodel.PNG "이 모델 사용 단추가 있는 구독 이탈 모델 타일")
+   > ![이 모델 사용 단추가 있는 구독 이탈 모델 타일.](media/subscription-churn-usethismodel.PNG "이 모델 사용 단추가 있는 구독 이탈 모델 타일")
 
 ### <a name="name-model"></a>모델에 이름 붙이기
 
@@ -86,11 +86,11 @@ ms.locfileid: "6095656"
     1. 기본 고객 엔터티와 일치하는 **고객 엔터티** 를 선택합니다.
     1. 관계를 설명하는 이름을 입력합니다.
        > [!div class="mx-imgBorder"]
-       > ![고객과의 관계 생성을 보여주는 구독 내역 페이지](media/subscription-churn-subscriptionhistoryrelationship.PNG "고객과의 관계 생성을 보여주는 구독 내역 페이지")
+       > ![고객과의 관계 생성을 보여주는 구독 내역 페이지.](media/subscription-churn-subscriptionhistoryrelationship.PNG "고객과의 관계 생성을 보여주는 구독 내역 페이지")
 1. **다음** 을 선택합니다.
 1. 의미 필드를 구독 내역 엔터티 내의 속성에 맵핑하고 **저장** 을 선택합니다. 필드에 대한 설명은 [필수 구성 요소](#prerequisites)를 확인하십시오.
    > [!div class="mx-imgBorder"]
-   > ![선택한 구독 내역 엔터티의 필드에 매핑된 의미 특성을 보여주는 구독 내역 페이지](media/subscription-churn-subscriptionhistorymapping.PNG "선택한 구독 내역 엔터티의 필드에 매핑된 의미 특성을 보여주는 구독 내역 페이지")
+   > ![선택한 구독 내역 엔터티의 필드에 매핑된 의미 특성을 보여주는 구독 내역 페이지.](media/subscription-churn-subscriptionhistorymapping.PNG "선택한 구독 내역 엔터티의 필드에 매핑된 의미 특성을 보여주는 구독 내역 페이지")
 1. **고객 활동** 에 대해 **데이터 추가** 를 선택하고 필수 구성 요소에 설명된 대로 고객 활동 정보를 제공하는 엔터티를 선택합니다.
 1. 구성 중인 고객 활동 유형과 일치하는 활동 유형을 선택합니다.  **새로 만들기** 를 선택하고 필요한 활동 유형과 일치하는 옵션이 표시되지 않으면 이름을 제공합니다.
 1. 고객 활동 엔터티와 고객 엔터티 간의 관계를 구성해야 합니다.
@@ -101,7 +101,7 @@ ms.locfileid: "6095656"
 1. 의미 필드를 고객 활동 엔터티 내의 속성에 맵핑하고 **저장** 을 선택합니다. 필드에 대한 설명은 [필수 구성 요소](#prerequisites)를 확인하십시오.
 1. (선택 사항) 포함하려는 다른 고객 활동이 있는 경우 위 단계를 반복합니다.
    > [!div class="mx-imgBorder"]
-   > ![엔터티 관계 정의](media/subscription-churn-customeractivitiesmapping.PNG "선택한 고객 활동 엔터티의 필드에 매핑된 의미 특성을 보여주는 고객 활동 페이지")
+   > ![엔터티 관계를 정의합니다.](media/subscription-churn-customeractivitiesmapping.PNG "선택한 고객 활동 엔터티의 필드에 매핑된 의미 특성을 보여주는 고객 활동 페이지")
 1. **다음** 을 선택합니다.
 
 ### <a name="set-schedule-and-review-configuration"></a>일정 설정 및 구성 검토
@@ -115,7 +115,7 @@ ms.locfileid: "6095656"
 
 1. **인텔리전스** > **예측** 에서 **내 예측** 탭으로 이동합니다.
    > [!div class="mx-imgBorder"]
-   > ![내 예측 페이지 보기](media/subscription-churn-mypredictions.PNG "내 예측 페이지 보기")
+   > ![내 예측 페이지 보기.](media/subscription-churn-mypredictions.PNG "내 예측 페이지 보기")
 1. 검토하려는 예측을 선택합니다.
    - **예측 이름:** 생성할 때 제공한 예측의 이름입니다.
    - **예측 유형:** 예측에 사용된 모델 유형
@@ -131,7 +131,7 @@ ms.locfileid: "6095656"
    - **마지막 새로 고침:** 출력 엔터티에서 예측을 새로 고친 날짜입니다.
 1. 결과를 검토하려는 예측 옆에 있는 세로 줄임표를 선택하고 **보기** 를 선택합니다.
    > [!div class="mx-imgBorder"]
-   > ![편집, 새로 고침, 보기, 로그 및 삭제를 포함하여 예측에 대한 세로 줄임표 메뉴의 옵션 보기](media/subscription-churn-verticalellipses.PNG "편집, 새로 고침, 보기, 로그 및 삭제를 포함하여 예측에 대한 세로 줄임표 메뉴의 옵션 보기")
+   > ![편집, 새로 고침, 보기, 로그 및 삭제를 포함하여 예측에 대한 세로 줄임표 메뉴의 옵션 보기.](media/subscription-churn-verticalellipses.PNG "편집, 새로 고침, 보기, 로그 및 삭제를 포함하여 예측에 대한 세로 줄임표 메뉴의 옵션 보기")
 1. 결과 페이지에는 세 가지 기본 데이터 섹션이 있습니다.
     1. **교육 모델 성능:** A, B 또는 C가 가능한 점수입니다. 이 점수는 예측의 성능을 나타내며 출력 엔터티에 저장된 결과를 사용하도록 결정하는 데 도움이 됩니다.
         - 점수는 다음 규칙에 따라 결정됩니다.
@@ -139,13 +139,13 @@ ms.locfileid: "6095656"
             - 모델이 전체 예측의 50% 이상을 정확하게 예측한 경우 및 이탈한 고객에 대한 정확한 예측 백분율이 과거 평균 이탈률보다 최대 10% 큰 경우 **B**.
             - 모델이 전체 예측의 50% 미만을 정확하게 예측한 경우 또는 이탈한 고객의 정확한 예측 백분율이 과거 평균 이탈률보다 낮은 경우 **C**.
                > [!div class="mx-imgBorder"]
-               > ![모델 성능 결과 보기](media/subscription-churn-modelperformance.PNG "모델 성능 결과 보기")
+               > ![모델 성능 결과 보기.](media/subscription-churn-modelperformance.PNG "모델 성능 결과 보기")
     1. **이탈 가능성(고객 수):** 고객 이탈 위험 예측에 기반한 고객 그룹입니다. 이탈 위험이 높은 고객 세그먼트를 생성하려는 경우 이 데이터가 나중에 도움이 될 수 있습니다. 이러한 세그먼트는 세그먼트 멤버십을 위한 컷오프 위치를 이해하는 데 도움이 됩니다.
        > [!div class="mx-imgBorder"]
-       > ![이탈 결과의 분포를 0-100 % 범위로 나타내는 그래프](media/subscription-churn-resultdistribution.PNG "이탈 결과의 분포를 0-100 % 범위로 나타내는 그래프")
+       > ![이탈 결과의 분포를 0-100% 범위로 나타내는 그래프.](media/subscription-churn-resultdistribution.PNG "이탈 결과의 분포를 0-100 % 범위로 나타내는 그래프")
     1. **가장 영향력 있는 요소:** 예측을 만들 때 고려해야 할 요소가 많이 있습니다. 각 요인은 모형이 생성하는 집계된 예측에 대해 중요도가 계산됩니다. 이러한 요소를 사용하여 예측 결과를 검증할 수 있습니다. 또는 나중에 이 정보를 사용하여 [세그먼트 만들기 ](segments.md)를 통해 고객의 이탈 위험에 영향을 줄 수 있습니다.
        > [!div class="mx-imgBorder"]
-       > ![이탈 결과 예측에 영향을 미치는 요인과 그 중요성을 보여주는 목록](media/subscription-churn-influentialfactors.PNG "이탈 결과 예측에 영향을 미치는 요인과 그 중요성을 보여주는 목록")
+       > ![이탈 결과 예측에 영향을 미치는 요인과 그 중요성을 보여주는 목록.](media/subscription-churn-influentialfactors.PNG "이탈 결과 예측에 영향을 미치는 요인과 그 중요성을 보여주는 목록")
 
 ## <a name="manage-predictions"></a>예측 관리
 

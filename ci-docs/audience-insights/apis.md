@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9326f821f9970ba2254ab804814e369abb677eb0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: f98af8fb1c1d1ae050a5273286d35cf276d9fb17
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304750"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554489"
 ---
 # <a name="work-with-customer-insights-apis"></a>Customer Insights API에 대한 작업
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights는 Customer Insights의 데이터를 기반으로
  
    API를 사용하면 API 요청에 사용되는 인스턴스의 기본 및 보조 구독 키가 생성됩니다. **관리** > **권한** > **API** 에서 **기본 다시 생성** 또는 **보조 다시 생성** 을 선택하여 키를 다시 생성 할 수 있습니다.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Customer Insights API 사용":::
+   :::image type="content" source="media/enable-apis.gif" alt-text="Customer Insights API 사용.":::
 
 1. **API 탐색** 을 선택하여 [API를 사용해 봅니다](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -129,7 +129,7 @@ NuGet.org에서 C# 클라이언트 라이브러리 사용을 시작하는 방법
  
    또는 다음 명령을 **NuGet 패키지 관리자 콘솔** 에 실행합니다. `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Visual Studio 프로젝트에 NuGet 패키지 추가":::
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Visual Studio 프로젝트에 NuGet 패키지 추가.":::
 
 #### <a name="use-the-c-client-library"></a>C# 클라이언트 라이브러리 사용
 
@@ -141,7 +141,7 @@ NuGet.org에서 C# 클라이언트 라이브러리 사용을 시작하는 방법
 
 1. 이 `HttpClient`를 `CustomerInsights` 클라이언트의 구성에 전달합니다.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="httpclient 샘플":::
+   :::image type="content" source="media/httpclient-sample.png" alt-text="httpclient 샘플.":::
 
 1. 클라이언트를 사용하여 '확장 메서드'(예: `GetAllInstancesAsync`)를 호출합니다. 기본 `Microsoft.Rest.HttpOperationResponse`에 대한 액세스를 선호하는 경우 "http 메시지 메서드"(예: `GetAllInstancesWithHttpMessagesAsync`)를 사용합니다.
 

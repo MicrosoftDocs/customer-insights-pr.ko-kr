@@ -1,7 +1,7 @@
 ---
 title: 세그먼트 만들기 및 관리
 description: 다양한 특성에 따라 그룹화할 고객 세그먼트를 만듭니다.
-ms.date: 05/03/2021
+ms.date: 07/18/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,14 +9,24 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 550e509a24701fe5fcdeb9d54311872dc954156c
-ms.sourcegitcommit: 72603fb39c4d5dbca71128815a2e1692542ea4dc
+ms.openlocfilehash: 4a19661abea42618ef1848110c05d635a925c68f
+ms.sourcegitcommit: c45b094072cbe3fbf61d1e9e7d220e1f29ffebd0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6064945"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "6685470"
 ---
 # <a name="create-and-manage-segments"></a>세그먼트 만들기 및 관리
+
+> [!IMPORTANT]
+> 2021년 9월 세그먼트 생성 환경에 몇 가지 변경 사항이 적용됩니다. 
+> - 세그먼트 빌더는 스타일이 변경된 요소와 향상된 사용자 흐름으로 약간 다르게 보일 것입니다.
+> - 세그먼트 작성기에서 새로운 날짜/시간 연산자와 향상된 날짜 선택 도구가 활성화되었습니다.
+> - 세그먼트에서 조건 및 규칙을 추가하거나 제거할 수 있습니다. 
+> - OR 조건으로 시작하는 중첩 규칙을 사용할 수 있게 됩니다. 더 이상 가장 바깥쪽 레이어에 AND 조건이 필요하지 않습니다.
+> - 특성을 선택하는 측면 창은 지속적으로 사용할 수 있습니다.
+> - 엔터티 관계 경로를 선택하는 옵션.
+> 새 세그먼트 빌더를 사용하려면 "새 세그먼트 빌더 활성화 요청"이라는 제목의 이메일을 cihelp [at] microsoft.com에 보내십시오. 조직의 이름과 샌드박스 환경의 ID를 포함합니다.
 
 통합 고객 엔터티 및 관련 엔터티를 중심으로 복잡한 필터를 정의합니다. 처리 후 각 세그먼트는 내보내고 조치를 취할 수 있는 고객 레코드 집합을 작성합니다. 세그먼트는 **세그먼트** 페이지에서 관리됩니다. 
 
@@ -50,13 +60,13 @@ ms.locfileid: "6064945"
 1. 선택한 특성에 대한 연산자 및 값을 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![사용자 지정 그룹 필터](media/customer-group-numbers.png "고객 그룹 필터")
+   > ![사용자 지정 그룹 필터.](media/customer-group-numbers.png "고객 그룹 필터")
 
    |숫자 |정의  |
    |---------|---------|
-   |1     |Entity          |
+   |6     |Entity          |
    |2     |특성          |
-   |3    |연산자         |
+   |3    |운영자         |
    |4    |값         |
 
    1. 그룹에 조건을 더 추가하려면 두 개의 논리 연산자를 사용할 수 있습니다.
@@ -66,7 +76,7 @@ ms.locfileid: "6064945"
       - **OR** 연산자: 세그레이션 프로세스의 일부로 조건 중 하나를 충족해야 합니다. 이 옵션은 동일한 엔터티에 대해 여러 조건을 정의할 때 가장 유용합니다.
 
       > [!div class="mx-imgBorder"]
-      > ![두 조건 중 하나를 충족해야 하는 OR 연산자](media/segmentation-either-condition.png "두 조건 중 하나를 충족해야 하는 OR 연산자")
+      > ![두 조건 중 하나를 충족해야 하는 OR 연산자.](media/segmentation-either-condition.png "두 조건 중 하나를 충족해야 하는 OR 연산자")
 
       현재 **OR** 연산자를 **AND** 연산자 아래에 중첩시킬 수는 있지만 다른 방법은 아닙니다.
 
@@ -74,12 +84,12 @@ ms.locfileid: "6064945"
    **그룹 추가** 를 선택합니다.
 
       > [!div class="mx-imgBorder"]
-      > ![고객 그룹 추가 그룹](media/customer-group-add-group.png "고객 그룹 추가 그룹")
+      > ![고객 그룹 추가 그룹.](media/customer-group-add-group.png "고객 그룹 추가 그룹")
 
    1. 다음 집합 연산자 중 하나를 선택합니다: **결합**, **교차** 또는 **제외**.
 
    > [!div class="mx-imgBorder"]
-   > ![고객 그룹 추가 결합](media/customer-group-union.png "고객 그룹 추가 결합")
+   > ![고객 그룹 추가 결합.](media/customer-group-union.png "고객 그룹 추가 결합")
 
    - **결합** 은 두 그룹을 통합합니다.
 
@@ -90,7 +100,7 @@ ms.locfileid: "6064945"
 1. 엔터티가 [관계](relationships.md)를 통해 통합 고객 엔터티에 연결된 경우 유효한 세그먼트를 작성하기 위해 관계 경로를 정의해야 합니다. 드롭다운에서 **고객: CustomerInsights** 엔터티를 선택할 수 있을 때까지 관계 경로에서 엔터티를 추가합니다. 그런 다음 각 단계에 대해 **모든 레코드** 를 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![세그먼트 작성 중 관계 경로](media/segments-multiple-relationships.png "세그먼트 작성 중 관계 경로")
+   > ![세그먼트 작성 중 관계 경로.](media/segments-multiple-relationships.png "세그먼트 작성 중 관계 경로")
 
 1. 기본적으로 세그먼트는 정의된 필터와 일치하는 고객 프로필의 모든 속성을 포함하는 출력 엔터티를 생성합니다. 세그먼트가 *고객* 엔티티가 아닌 다른 엔터티를 기반으로 하는 경우 이러한 엔티티의 더 많은 속성을 출력 엔티티에 추가할 수 있습니다. **프로젝트 특성** 을 선택하여 출력 엔티티에 추가될 속성을 선택합니다.  
   
@@ -127,7 +137,7 @@ ms.locfileid: "6064945"
 4. 시스템은 **예상 세그먼트 크기** 를 제공합니다. 정의한 세그먼트를 생성할지 또는 먼저 다시 방문하여 다른 세그먼트 크기를 얻을지 여부를 선택할 수 있습니다.
 
     > [!div class="mx-imgBorder"]
-    > ![빠른 세그먼트의 이름 및 평가](media/quick-segment-name.png "빠른 세그먼트의 이름 및 평가")
+    > ![빠른 세그먼트의 이름 및 평가.](media/quick-segment-name.png "빠른 세그먼트의 이름 및 평가")
 
 5. 세그먼트의 **이름** 을 제공합니다. 또는 **표시 이름** 을 제공합니다.
 

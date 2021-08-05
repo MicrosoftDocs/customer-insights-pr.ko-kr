@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: f588f45ed11efffbb335003642a4b92810153017
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 96fbd18a20e0df7abd4e79ff77e2c3a396e33ccc
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596783"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554213"
 ---
 # <a name="similar-customers-preview"></a>유사한 고객(미리 보기)
 
@@ -50,7 +50,7 @@ ms.locfileid: "5596783"
 유사한 세그먼트를 처리한 후 새로운 세그먼트가 **세그먼트** 페이지에 표시됩니다.
 
 > [!div class="mx-imgBorder"]
-> ![유사한 고객 세그먼트](media/expanded-segment.png "유사한 고객 세그먼트")
+> ![유사한 고객 세그먼트.](media/expanded-segment.png "유사한 고객 세그먼트")
 
 작업 표시줄에서 **보기** 를 선택해 세그먼트 세부 정보를 여십시오. 이 보기에는 [유사성 점수](#about-similarity-scores)의 결과 분포에 대한 정보가 포함됩니다. 또한 유사성 점수 값은 **세그먼트 구성원 미리 보기** 에서 찾습니다.
 

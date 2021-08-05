@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 00be15367001a5f4342d60bb284726ef7154d05c
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305302"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555315"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>HERE Technologies로 고객 프로필 보강(미리 보기)
 
@@ -35,7 +35,7 @@ HERE Technologies 보강을 구성하려면 다음 필수 구성 요소가 충�
 1. HERE Technologies 타일에서 **내 데이터 보강** 을 선택하고 **시작** 을 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![HERE Technologies 타일](media/HERE-tile.png "HERE Technologies 타일")
+   > ![HERE Technologies 타일.](media/HERE-tile.png "HERE Technologies 타일")
 
 1. 드롭다운 목록에서 [연결](connections.md)을 선택하십시오. 사용 가능한 연결이 없으면 관리자에게 문의하십시오. 관리자인 경우 **연결 추가** 를 선택하여 연결을 만들 수 있습니다. 드롭다운 목록에서 **HERE Technologies** 를 선택합니다. 
 
@@ -50,7 +50,7 @@ HERE Technologies 보강을 구성하려면 다음 필수 구성 요소가 충�
 1. HERE Technologies에서 일치하는 위치 데이터를 찾는 데 사용해야 하는 통합 프로필의 필드를 정의합니다. **상세 주소 1** 및 **우편 번호** 필드는 선택한 기본 또는 보조 주소의 필수 항목입니다. 더 높은 일치 정확도를 위해 더 많은 필드를 추가할 수 있습니다.
 
    > [!div class="mx-imgBorder"]
-   > ![HERE Technologies 강화 구성 페이지](media/enrichment-HERE-configuration.png "HERE Technologies 강화 구성 페이지")
+   > ![HERE Technologies 강화 구성 페이지.](media/enrichment-HERE-configuration.png "HERE Technologies 강화 구성 페이지")
 
 1. 필드 매핑을 완료하려면 **다음** 을 선택합니다.
 
@@ -73,7 +73,7 @@ HERE Technologies 보강을 구성하려면 다음 필수 구성 요소가 충�
 1. 확인을 완료한 후 **저장** 을 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![HERE technologies 연결 구성 페이지](media/enrichment-HERE-connection.png "HERE technologies 연결 구성 페이지")
+   > ![HERE technologies 연결 구성 페이지.](media/enrichment-HERE-connection.png "HERE technologies 연결 구성 페이지")
 
 ## <a name="enrichment-results"></a>보강 결과
 

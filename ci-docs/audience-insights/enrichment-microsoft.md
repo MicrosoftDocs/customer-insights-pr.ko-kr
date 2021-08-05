@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 3b10fb23cca03ed918aa7fd46478b568d5ebbf1a
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305164"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555499"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>브랜드 및 관심 관계로 풍부한 고객 프로필 강화(미리 보기)
 
@@ -27,7 +27,7 @@ Microsoft의 독점 데이터를 사용하여 브랜드 및 관심사와 함께 
 관심 관계 보강을 구성하려면 **검색** 탭으로 이동하고 **관심** 타일에서 **내 데이터 보강** 을 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![브랜드 및 관심사 타일](media/BrandsInterest-tile-Hub.png "브랜드 및 관심사 타일")
+   > ![브랜드 및 관심사 타일.](media/BrandsInterest-tile-Hub.png "브랜드 및 관심사 타일")
 
 ## <a name="how-we-determine-affinities"></a>친화도를 결정하는 방법
 
@@ -123,7 +123,7 @@ Microsoft의 온라인 검색 데이터를 사용하여 다양한 인구 통계 
 
 보강 프로세스를 실행한 후 **내 보강** 으로 이동하여 총 보강 고객 수와 보강된 고객 프로필에 대한 브랜드 또는 관심사를 분석합니다.
 
-:::image type="content" source="media/my-enrichments.png" alt-text="보강 프로세스를 실행한 후 결과 미리 보기":::
+:::image type="content" source="media/my-enrichments.png" alt-text="보강 프로세스를 실행한 후 결과 미리 보기.":::
 
 차트에서 **보강된 데이터 보기** 를 선택하여 풍부한 데이터를 검토합니다. 브랜드에 대한 보강 데이터는 **BrandAffinityFromMicrosoft** 엔터티로 이동합니다. 관심 분야에 대한 데이터는 **InterestAffinityFromMicrosoft** 엔터티에 있습니다. 이 엔터티는 **데이터** > **엔터티** 의 **보강** 그룹에 나열됩니다.
 
@@ -131,7 +131,7 @@ Microsoft의 온라인 검색 데이터를 사용하여 다양한 인구 통계 
 
 개별 고객 카드에서 브랜드 및 관심 선호도를 볼 수도 있습니다. **고객** 으로 이동하여 고객 프로필을 선택하십시오. 고객 카드에는 해당 고객의 인구 통계학적 프로필에 있는 사람들이 선호하는 브랜드 또는 관심사에 대한 차트가 있습니다.
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="보강된 데이터가 포함된 고객 카드":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="보강된 데이터가 포함된 고객 카드.":::
 
 ## <a name="next-steps"></a>다음 단계
 

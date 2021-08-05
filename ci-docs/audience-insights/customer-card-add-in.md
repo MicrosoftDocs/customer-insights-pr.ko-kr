@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 88492943ddbf9ae30c64d92b261433b74f34f682
-ms.sourcegitcommit: d74430270f1b754322287c4f045d7febdae35be2
+ms.openlocfilehash: 6a7137730ab8cc43bc93daf647d9d55d02d96cd8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059596"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692213"
 ---
 # <a name="customer-card-add-in-preview"></a>고객 카드 추가 기능(미리 보기)
 
@@ -25,7 +25,7 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 ## <a name="prerequisites"></a>필수 조건
 
 - 추가 기능은 Sales 또는 Customer Service, 버전 9.0 이상과 같은 Dynamics 365 모델 기반 앱에서만 작동합니다.
-- Dynamics 365 데이터를 대상 그룹 인사이트 고객 프로필에 매핑하려면 [Common Data Service 커넥터를 사용하여 Dynamics 365 앱에서 수집](connect-power-query.md)해야 합니다.
+- Dynamics 365 데이터를 대상 그룹 인사이트 고객 프로필에 매핑하려면 [Microsoft Dataverse 커넥터를 사용하여 Dynamics 365 앱에서 수집](connect-power-query.md)해야 합니다.
 - 고객 카드 추가 기능의 모든 Dynamics 365 사용자는 데이터를 보려면 대상 그룹 인사이트의 [사용자로 추가](permissions.md)되어야 합니다.
 - 데이터 조회가 작동하려면 대상 그룹 인사이트의 [구성된 검색 및 필터 기능](search-filter-index.md)이 필요합니다.
 - 각 추가 기능 컨트롤은 대상 그룹 인사이트의 특정 데이터에 의존합니다.
@@ -50,7 +50,7 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 1. **Dynamics 365 Customer Insights 고객 카드 추가 기능(미리 보기)** 솔루션에 대한 **표시 이름** 링크를 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![표시 이름 선택](media/select-display-name.png "표시 이름 선택")
+   > ![표시 이름 선택.](media/select-display-name.png "표시 이름 선택")
 
 1. **로그인** 을 선택하고 Customer Insights를 구성하는 데 사용하는 관리자 계정의 자격 증명을 입력합니다.
 
@@ -64,7 +64,7 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
    - 계정과 매핑하려면 연락처 엔터티의 ID와 일치하는 계정 엔터티의 필드를 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![연락처 ID 필드](media/contact-id-field.png "연락처 ID 필드")
+   > ![연락처 ID 필드.](media/contact-id-field.png "연락처 ID 필드")
 
 1. **구성 저장** 을 선택하여 설정을 저장합니다.
 
@@ -83,7 +83,7 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 1. 고객 카드 컨트롤을 추가할 연락처 양식을 선택합니다.
 
     > [!div class="mx-imgBorder"]
-    > ![연락처 양식 선택](media/contact-active-forms.png "연락처 양식 선택")
+    > ![연락처 양식 선택.](media/contact-active-forms.png "연락처 양식 선택")
 
 1. 양식 편집기에서 컨트롤을 추가하려면 **필드 탐색기** 에서 컨트롤을 배치할 위치로 필드를 드래그합니다.
 
@@ -110,7 +110,7 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 
 1. 작업 표시줄에서 **솔루션 업그레이드 적용** 을 선택합니다.
 
-   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="Dynamics 365 앱의 사용자 지정 영역에서 솔루션 업그레이드":::
+   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="Dynamics 365 앱의 사용자 지정 영역에서 솔루션 업그레이드.":::
 
 1. 업그레이드 프로세스를 시작하면 업그레이드가 완료될 때까지 로딩 표시기가 나타납니다. 최신 버전이 없으면 업그레이드 시 오류 메시지가 표시됩니다.
 

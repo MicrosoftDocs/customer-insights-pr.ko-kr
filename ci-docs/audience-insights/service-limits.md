@@ -1,7 +1,7 @@
 ---
 title: 서비스 한도
 description: 한도 및 제한 사항을 이해합니다.
-ms.date: 10/15/2020
+ms.date: 07/08/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b68ab833538db7020c8be8be7658c86f083f137a
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 81253332cbea3110c0b3804db3a4d03b514f92d4
+ms.sourcegitcommit: 9a99e48e96dfb3d895db428f37c30ae55eea66b7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598525"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6604377"
 ---
 # <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트 기능의 서비스 한도
 
@@ -23,6 +23,7 @@ ms.locfileid: "5598525"
 | 영역  | 제한  | 참고 |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | 세그먼트 및 측정값 | 100개의 세그먼트 또는 측정값입니다. | 활성 [세그먼트](segments.md)와 [측정값](measures.md)은 합쳐서 총 개수가 100개를 초과할 수 없습니다.  |
+| 관계 | 엔티티 경로의 관계에 대한 20가지 수준의 깊이. | 빌더 인터페이스를 사용하여 [세그먼트](segments.md) 또는 [측정](measures.md)를 생성할 때 엔터티 경로는 시작 엔터티와 대상 엔터티 간에 최대 20개의 관계 홉을 가질 수 있습니다.  |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

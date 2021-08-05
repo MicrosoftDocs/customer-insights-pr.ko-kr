@@ -2,6 +2,8 @@
   href: index.yml
 - name: 제품 개요
   href: overview.md
+- name: 평가판 만들기
+  href: audience-insights/get-started-trial.md
 - name: 환경 액세스
   href: 'https://home.ci.ai.dynamics.com/'
 - name: 대상 그룹 인사이트
@@ -10,12 +12,10 @@
       href: audience-insights/index.yml
     - name: 기능 개요
       href: audience-insights/overview.md
-    - name: 무료 평가판
-      href: 'https://dynamics.microsoft.com/get-started/?appname=customerinsights'
     - name: 신규 및 업데이트된 기능
       href: audience-insights/whats-new-audience-insights.md
     - name: 새 환경 만들기
-      href: audience-insights/home.md
+      href: audience-insights/get-started-paid.md
     - name: 학습 모듈
       items:
         - name: 데이터 수집
@@ -34,8 +34,8 @@
           href: audience-insights/connect-power-query.md
         - name: Common Data Model 폴더를 데이터 원본으로 추가
           href: audience-insights/connect-common-data-model.md
-        - name: Common Data Service 관리형 데이터 레이크 추가
-          href: audience-insights/connect-common-data-service-lake.md
+        - name: Dataverse 관리형 데이터 레이크 추가
+          href: audience-insights/connect-dataverse-managed-lake.md
         - name: 데이터 원본을 위한 증분 새로 고침
           href: audience-insights/incremental-refresh-data-sources.md
         - name: 실시간 데이터 수집
@@ -76,11 +76,11 @@
           href: audience-insights/enrichment-experian.md
         - name: SFTP 사용자 지정 가져오기로 보강
           href: audience-insights/enrichment-SFTP-custom-import.md
-    - name: 세그먼트 및 측정값
+    - name: 세그먼트
       items:
         - name: 세그먼트 개요
           href: audience-insights/segments.md
-        - name: 세그먼트 및 고객 그룹 만들기
+        - name: 세그먼트 만들기
           href: audience-insights/segment-builder.md
         - name: 측정값에 따라 제안된 세그먼트
           href: audience-insights/suggested-segments.md
@@ -254,9 +254,11 @@
       items:
         - name: 이벤트 생성 및 수정
           href: engagement-insights/refined-events.md
+        - name: 이전에 인증된 방문자의 웹 이벤트 인식
+          href: engagement-insights/unknown-to-known.md
         - name: 내보내기 이벤트
           href: engagement-insights/export-events.md
-    - name: 보고서
+    - name: '보고서 '
       items:
         - name: 보고서 보기
           href: engagement-insights/view-reports.md
@@ -304,7 +306,9 @@
       items:
         - name: 개인 데이터 삭제 및 내보내기
           href: engagement-insights/delete-export-personal-data.md
+    - name: 국가별 가용성
+      href: engagement-insights/regional-availability.md
     - name: 서비스 한도
       href: engagement-insights/quotas.md
-- name: 지원 문의
+- name: 지원 연락처
   href: 'https://admin.powerplatform.microsoft.com/support'

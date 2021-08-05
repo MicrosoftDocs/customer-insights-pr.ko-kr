@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 01704f78cfe1f6ceeee19ff825fc65150894d4ed
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: bcbafa513c2c61b0280c91aa7ed71e211c32c35c
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095564"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6556132"
 ---
 # <a name="product-recommendation-prediction-preview"></a>제품 추천 예측(미리 보기)
 
@@ -64,7 +64,7 @@ ms.locfileid: "6095564"
 
 1. **제품 추천 모델(미리 보기)** 타일을 선택하고 **이 모델 사용** 을 선택합니다.
    > [!div class="mx-imgBorder"]
-   > ![이 모델 사용 버튼이 있는 제품 추천 모델 타일](media/product-recommendation-usethismodel.PNG "이 모델 사용 버튼이 있는 제품 추천 모델 타일")
+   > ![이 모델 사용 버튼이 있는 제품 추천 모델 타일.](media/product-recommendation-usethismodel.PNG "이 모델 사용 버튼이 있는 제품 추천 모델 타일")
 
 1. 모델 요구 사항에 대한 정보를 검토하십시오. 필요한 데이터가 있는 경우, **시작하기** 를 선택합니다.
 
@@ -93,7 +93,7 @@ ms.locfileid: "6095564"
 
 1. 의미론적 필드를 구매 기록 엔터티 내의 특성에 매핑하고 **다음** 을 선택합니다. 필드에 대한 설명은 [필수 구성 요소](#prerequisites)를 확인하십시오.
    > [!div class="mx-imgBorder"]
-   > ![엔터티 관계 정의](media/product-recommendation-purchasehistorymapping.PNG "선택한 구매 기록 엔터티의 필드에 매핑되는 의미론적 특성을 보여주는 구매 기록 페이지")
+   > ![엔터티 관계를 정의합니다.](media/product-recommendation-purchasehistorymapping.PNG "선택한 구매 기록 엔터티의 필드에 매핑되는 의미론적 특성을 보여주는 구매 기록 페이지")
 
 1. 필드가 채워지지 않은 경우 구매 기록 엔터티에서 *고객* 엔터티로의 관계를 구성합니다.
     1. **구매 기록 엔터티** 를 선택합니다.
@@ -101,7 +101,7 @@ ms.locfileid: "6095564"
     1. 기본 고객 엔터티와 일치하는 **고객 엔터티** 를 선택합니다.
     1. 관계를 설명하는 이름을 입력합니다.
        > [!div class="mx-imgBorder"]
-       > ![고객과의 관계 생성을 보여주는 구매 기록 페이지](media/model-purchase-join.png "고객과의 관계 생성을 보여주는 구매 기록 페이지")
+       > ![고객과의 관계 생성을 보여주는 구매 기록 페이지.](media/model-purchase-join.png "고객과의 관계 생성을 보여주는 구매 기록 페이지")
 
 1. **저장** 을 선택합니다.
 
@@ -145,7 +145,7 @@ ms.locfileid: "6095564"
 
 1. **인텔리전스** > **예측** 에서 **내 예측** 탭으로 이동합니다.
    > [!div class="mx-imgBorder"]
-   > ![내 예측 페이지 보기](media/product-recommendation-mypredictions.PNG "내 예측 페이지 보기")
+   > ![내 예측 페이지 보기.](media/product-recommendation-mypredictions.PNG "내 예측 페이지 보기")
 
 1. 검토하려는 예측을 선택합니다.
    - **예측 이름:** 생성할 때 제공한 예측의 이름입니다.
@@ -163,7 +163,7 @@ ms.locfileid: "6095564"
 
 1. 결과를 검토하려는 예측 옆에 있는 세로 줄임표를 선택하고 **보기** 를 선택합니다.
    > [!div class="mx-imgBorder"]
-   > ![편집, 새로 고침, 보기, 로그 및 삭제를 포함하여 예측에 대한 세로 줄임표 메뉴의 옵션 보기](media/product-recommendation-verticalellipses.PNG "편집, 새로 고침, 보기, 로그 및 삭제를 포함하여 예측에 대한 세로 줄임표 메뉴의 옵션 보기")
+   > ![편집, 새로 고침, 보기, 로그 및 삭제를 포함하여 예측에 대한 세로 줄임표 메뉴의 옵션 보기.](media/product-recommendation-verticalellipses.PNG "편집, 새로 고침, 보기, 로그 및 삭제를 포함하여 예측에 대한 세로 줄임표 메뉴의 옵션 보기")
 
 1. 결과 페이지에는 5개의 기본 데이터 섹션이 있습니다.
     1. **교육 모델 성능:** A, B 또는 C가 가능한 점수입니다. 이 점수는 예측의 성능을 나타내며 출력 엔터티에 저장된 결과를 사용하도록 결정하는 데 도움이 됩니다.
@@ -173,13 +173,13 @@ ms.locfileid: "6095564"
             - **C** "Success @ K" 메트릭이 기준보다 적은 경우 모델은 **C** 품질로 간주됩니다.
                
                > [!div class="mx-imgBorder"]
-               > ![모델 성능 결과 보기](media/product-recommendation-modelperformance.PNG "모델 성능 결과 보기")
+               > ![모델 성능 결과 보기.](media/product-recommendation-modelperformance.PNG "모델 성능 결과 보기")
             - **기준**: 모델은 모든 고객의 구매 횟수별로 가장 많이 권장되는 제품을 선택하고 모델에서 식별한 학습된 규칙을 사용하여 고객을 위한 추천 세트를 만듭니다. 그런 다음 제품을 구매한 고객의 수로 계산하여 상위 제품과 예측을 비교합니다. 가장 많이 구매한 제품에도 표시되는 추천 제품의 제품을 고객이 하나 이상 보유한 경우 기준의 일부로 간주됩니다. 총 고객 100명 중 추천 제품을 구매한 고객이 10명이라면 기준은 10%가 됩니다.
             - **Success @ K**: 트랜잭션 기간의 유효성 검사 세트를 사용하여 모든 고객에 대한 추천을 생성하고 트랜잭션 유효성 검사 세트와 비교합니다. 예를 들어 12개월 기간에서, 12개월은 데이터 유효성 검사 세트로 따로 설정될 수 있습니다. 모델이 지난 11개월 동안 학습한 내용을 기반으로 12개월에 구매할 제품을 하나 이상 예측하는 경우 고객은 "Success @ K" 메트릭을 늘릴 것입니다.
     
     1. **가장 많이 제안된 제품(xof리 포함):** 고객을 위해 예측된 상위 5개 제품.
        > [!div class="mx-imgBorder"]
-       > ![가장 추천하는 상위 5개 제품을 보여주는 그래프](media/product-recommendation-topproducts.PNG "가장 추천하는 상위 5개 제품을 보여주는 그래프")
+       > ![가장 추천하는 상위 5개 제품을 보여주는 그래프.](media/product-recommendation-topproducts.PNG "가장 추천하는 상위 5개 제품을 보여주는 그래프")
     
     1. **주요 권장 사항:** 이 모델은 고객의 트랜잭션 내역을 사용하여 제품을 추천합니다. 과거 구매를 기반으로 패턴을 학습하고 고객과 제품 간의 유사점을 찾습니다. 그런 다음 이러한 유사성을 활용하여 제품 권장 사항을 생성합니다.
     다음은 모델에 의해 생성된 제품 추천에 영향을 미칠 수 있는 요소입니다. 
@@ -190,20 +190,20 @@ ms.locfileid: "6095564"
         모든 제품 권장 사항은 이러한 요소 중 하나 이상에 의해 영향을 받습니다. 각 영향 요인이 역할을 한 추천 비율이 차트에 시각화됩니다. 다음 예에서 추천의 100%는 과거 트랜잭션, 60%는 고객 유사성, 22%는 제품 유사성에 의해 영향을 받았습니다. 영향 요인이 기여한 정확한 비율을 보려면 차트의 막대 위로 마우스를 가져갑니다.
 
         > [!div class="mx-imgBorder"]
-        > ![주요 추천 요인](media/product-recommendation-keyrecommendationfactors.png "제품 추천을 생성하기 위해 모델에서 학습한 주요 추천 요인")
+        > ![주요 추천 요인.](media/product-recommendation-keyrecommendationfactors.png "제품 추천을 생성하기 위해 모델에서 학습한 주요 추천 요인")
        
      
    1. **데이터 통계**: 모델이 고려한 트랜잭션, 고객 및 제품 수에 대한 개요를 제공합니다. 패턴을 학습하고 제품 추천을 생성하는 데 사용된 입력 데이터를 기반으로 합니다.
 
       > [!div class="mx-imgBorder"]
-      > ![데이터 통계](media/product-recommendation-datastatistics.png "패턴 학습을 위해 모델에서 사용하는 입력 데이터에 대한 데이터 통계")
+      > ![데이터 통계.](media/product-recommendation-datastatistics.png "패턴 학습을 위해 모델에서 사용하는 입력 데이터에 대한 데이터 통계")
 
       이 섹션에서는 모델에서 패턴을 학습하고 제품 권장 사항을 생성하는 데 사용된 데이터 포인트에 대한 통계를 보여줍니다. 모델 구성에 구성된 필터링은 모델에서 생성된 출력에 적용됩니다. 그러나 모델은 사용 가능한 모든 데이터를 사용하여 패턴을 학습합니다. 따라서 모델 구성에서 제품 필터링을 사용하는 경우 이 섹션에는 모델이 패턴을 학습하기 위해 분석한 총 제품 수가 표시되며, 이는 정의된 필터링 기준과 일치하는 제품 수와 다를 수 있습니다.
 
    1. **신뢰도가 높은 제품 추천 항목:** 모델이 고객이 구매할 가능성이 있다고 판단하여 고객에게 제공된 추천 항목 샘플입니다.    
       제품 카탈로그가 추가되면 제품 ID가 제품 이름으로 대체됩니다. 제품 이름은 예측에 대한 보다 실행 가능하고 직관적인 정보를 제공합니다.
        > [!div class="mx-imgBorder"]
-       > ![선별된 개별 고객에 대한 높은 신뢰도 제안을 보여주는 목록](media/product-recommendation-highconfidence.PNG "선별된 개별 고객에 대한 높은 신뢰도 제안을 보여주는 목록")
+       > ![선별된 개별 고객에 대한 높은 신뢰도 제안을 보여주는 목록.](media/product-recommendation-highconfidence.PNG "선별된 개별 고객에 대한 높은 신뢰도 제안을 보여주는 목록")
 
 ## <a name="manage-predictions"></a>예측 관리
 

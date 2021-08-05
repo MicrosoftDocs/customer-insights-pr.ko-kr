@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 822082d661863e737ea3d3a749a6c878db766967
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 7ee57aa9e86ebf9bd1989d88750642f0b01bd4bf
+ms.sourcegitcommit: f18635c29bb25d9e424a3f5825dc2696278450cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5977385"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6327372"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Azure Synapse 분석으로 데이터 내보내기(프리뷰)
 
@@ -74,8 +74,10 @@ Azure에서:
 1. 내보내기에 대해 알아볼 수 있는 **표시 이름** 과 **데이터베이스 이름** 을 제공합니다.
 
 1. Azure Synapse 분석으로 내보낼 엔터티를 선택합니다.
+   > [!NOTE]
+   > [Common Data Model 폴더](connect-common-data-model.md) 기반의 데이터 원본은 지원하지 않습니다.
 
-1. **저장** 을 선택합니다.
+2. **저장** 을 선택합니다.
 
 내보내기를 저장해도 내보내기가 즉시 실행되지는 않습니다.
 

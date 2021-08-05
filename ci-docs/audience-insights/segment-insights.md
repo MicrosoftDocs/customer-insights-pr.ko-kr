@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2856888d6ac64d5daabcc5a234f13bc6f88bb3df
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 0803be651662480ddf1fd22952f6a69ee1603001
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306082"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554993"
 ---
 # <a name="segment-insights-preview"></a>세그먼트 인사이트(미리 보기)
 
@@ -44,7 +44,7 @@ ms.locfileid: "6306082"
 분석을 완료한 후 **세그먼트** > **인사이트(미리 보기)** 에서 이 인사이트에 대한 세부 정보를 찾으십시오.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-overlap.png" alt-text="세그먼트 겹침 인사이트 세부 정보":::
+> :::image type="content" source="media/segment-overlap.png" alt-text="세그먼트 겹침 인사이트 세부 정보.":::
 
 분석 결과를 보려면 통찰력을 선택하십시오.
 
@@ -77,7 +77,7 @@ ms.locfileid: "6306082"
 분석을 완료한 후 **세그먼트** > **인사이트(미리 보기)** 에서 이 인사이트에 대한 세부 정보를 찾으십시오.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-differentiators.png" alt-text="세그먼트 차별화 요소 인사이트 세부 정보":::
+> :::image type="content" source="media/segment-differentiators.png" alt-text="세그먼트 차별화 요소 인사이트 세부 정보.":::
 
 분석 결과를 보려면 통찰력을 선택하십시오. 차별화 요소 분석에는 두 개의 탭이 있습니다. **특성** 탭에는 차별화 요소로 간주되는 프로필 특성이 나열됩니다. **측정값** 탭은 차별화 요소를 나열합니다. 각 탭에는 다음 세부 정보가 포함됩니다.
 

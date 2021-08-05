@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 987457966fe1fc034d9e3cd2a1ce33902c7a84f4
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: b377a3500c5d91962e59d46fbc259db5cc8fa7d0
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760335"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555453"
 ---
 # <a name="export-segments-to-liverampreg-preview"></a>LiveRamp로 세그먼트 내보내기&reg;(프리뷰)
 
@@ -56,7 +56,7 @@ LiveRamp에서 데이터를 활성화하여 디지털, 소셜 및 TV에서 500�
 
 1. **키 식별자 선택** 필드에서 **이메일**, **이름 및 주소** 또는 **전화** 를 선택해 신원 확인을 위해 LiveRamp로 보냅니다.
    > [!div class="mx-imgBorder"]
-   > ![특성 매핑이 있는 LiveRamp 커넥터](media/export-liveramp-segments.png "특성 매핑이 있는 LiveRamp 커넥터")
+   > ![특성 매핑이 있는 LiveRamp 커넥터.](media/export-liveramp-segments.png "특성 매핑이 있는 LiveRamp 커넥터")
 
 1. 선택한 키 식별자에 대해 통합 고객 엔터티의 해당 특성을 매핑합니다.
 

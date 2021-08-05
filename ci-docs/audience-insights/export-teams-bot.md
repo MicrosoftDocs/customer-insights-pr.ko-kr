@@ -9,21 +9,21 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 03299610fd41a7e142e3c9723fad56ce7f90e083
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: e563619f40be859f3f02638adbd60b80423182b3
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267960"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554395"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>Dynamics 365 Customer Insights의 Teams 봇(미리 보기)
 
 Microsoft Teams에 연결하여 봇이 Teams 채널에서 통합 고객 프로필을 조회할 수 있도록 합니다.
 
 > [!div class="mx-imgBorder"]
-> ![고객 레코드를 보여주는 Teams 봇](media/teams-bot.png "고객 레코드를 보여주는 Teams 봇")
+> ![고객 레코드를 보여주는 Teams 봇.](media/teams-bot.png "고객 레코드를 보여주는 Teams 봇")
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
 
 봇을 설정 및 구성하려면 다음 전제 조건이 충족되어야 합니다.
 

@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: cc94ad49f12067d513db4663bff60620d6501eb0
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596507"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692121"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>대상 그룹 인사이트의 Azure 서비스 보안 주체를 사용하여 Azure Data Lake Storage Gen2 계정에 연결
 
 Azure 서비스를 사용하는 자동화 도구에는 항상 제한된 권한이 있어야 합니다. 애플리케이션이 완전한 권한이 있는 사용자로 로그인하는 대신 Azure는 서비스 주체를 제공합니다. 스토리지 계정 키 대신 Azure 서비스 주체를 사용하여 Azure Data Lake Storage Gen2 계정과 대상 그룹 인사이트를 연결하는 방법을 알아보려면 계속 읽어보세요. 
 
-서비스 주체를 사용하여 [Common Data Model 폴더를 데이터 원본으로 안전하게 추가 또는 편집](connect-common-data-model.md)하거나 [새 환경을 만들거나 기존 환경을 업데이트](manage-environments.md#create-an-environment-in-an-existing-organization)할 수 있습니다.
+서비스 주체를 사용하여 [Common Data Model 폴더를 데이터 원본으로 안전하게 추가 또는 편집](connect-common-data-model.md)하거나 [새 환경을 만들거나 기존 환경을 업데이트](get-started-paid.md)할 수 있습니다.
 
 > [!IMPORTANT]
 > - 서비스 주체를 사용하려는 Azure Data Lake Gen2 스토리지 계정에는 [계층적 네임 스페이스(HNS)가 활성화](/azure/storage/blobs/data-lake-storage-namespace)되어 있어야 합니다.
@@ -81,7 +81,7 @@ Azure Portal로 이동하여 대상 그룹 인사이트에서 사용하려는 �
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>대상 그룹 인사이트에 대한 스토리지 계정 첨부 파일에 Azure 리소스 ID 또는 Azure 구독 세부 정보를 입력합니다.
 
-대상 그룹 인사이트에 Azure Data Lake 스토리지 계정을 연결하여 [출력 데이터를 저장](manage-environments.md)하거나 [데이터 원본으로 사용](connect-common-data-service-lake.md)합니다. Azure Data Lake 옵션을 선택하면 리소스 기반 또는 구독 기반 접근 방식 중에서 선택할 수 있습니다.
+대상 그룹 인사이트에 Azure Data Lake 스토리지 계정을 연결하여 [출력 데이터를 저장](manage-environments.md)하거나 [데이터 원본으로 사용](connect-dataverse-managed-lake.md)합니다. Azure Data Lake 옵션을 선택하면 리소스 기반 또는 구독 기반 접근 방식 중에서 선택할 수 있습니다.
 
 선택한 접근 방식에 대한 필수 정보를 제공하려면 아래 단계를 따릅니다.
 

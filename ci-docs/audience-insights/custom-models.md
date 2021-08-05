@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 82f6f363497f8f1b45fa84acd49bcaed332e60e8
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 72ccb2d86c698939d0ff018b4d36203e793df9ae
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305648"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554856"
 ---
 # <a name="custom-machine-learning-models"></a>사용자 지정 기계 학습 모델
 
@@ -42,7 +42,7 @@ ms.locfileid: "6305648"
 1. **이름** 필드에서 사용자 지정 모델에 인식할 수 있는 이름을 지정합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![새 워크플로우 창의 스크린샷](media/new-workflowv2.png "새 워크플로우 창의 스크린샷")
+   > ![새 워크플로 창의 스크린샷.](media/new-workflowv2.png "새 워크플로우 창의 스크린샷")
 
 1. **웹 서비스가 포함된 테넌트** 에서 웹 서비스가 포함된 조직을 선택합니다.
 
@@ -59,7 +59,7 @@ ms.locfileid: "6305648"
    > 사용자 지정 모델 워크플로는 휴리스틱을 적용하여 필드의 이름 및 데이터 형식을 기반으로 웹 서비스 입력 필드를 엔터티 속성에 매핑합니다. 웹 서비스 필드를 엔터티에 매핑할 수 없는 경우 오류가 표시됩니다.
 
    > [!div class="mx-imgBorder"]
-   > ![워크플로 구성](media/intelligence-screen2-updated.png "워크플로 구성")
+   > ![워크플로 구성.](media/intelligence-screen2-updated.png "워크플로 구성")
 
 1. **모델 출력 매개 변수** 단계에서 다음 속성을 설정합니다.
    - Machine Learning Studio(클래식)
@@ -70,12 +70,12 @@ ms.locfileid: "6305648"
       1. 드롭다운에서 배치 파이프라인의 **출력 경로 매개 변수 이름** 을 선택합니다.
 
       > [!div class="mx-imgBorder"]
-      > ![모델 출력 매개 변수 창](media/intelligence-screen3-outputparameters.png "모델 출력 매개 변수 창")
+      > ![모델 출력 매개 변수 창.](media/intelligence-screen3-outputparameters.png "모델 출력 매개 변수 창")
 
 1. 고객을 식별하는 **결과의 고객 ID** 드롭다운 목록에서 일치하는 특성을 선택하고 **저장** 을 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![결과를 고객 데이터 창에 연결](media/intelligence-screen4-relatetocustomer.png "결과를 고객 데이터 창에 연결")
+   > ![결과를 고객 데이터 창에 연결.](media/intelligence-screen4-relatetocustomer.png "결과를 고객 데이터 창에 연결")
 
 1. 워크플로에 대한 세부 정보가 있는 **워크플로 저장** 화면이 표시됩니다.    
    Azure Machine Learning 파이프라인에 대한 워크플로를 구성한 경우 대상 그룹 인사이트가 파이프라인이 포함된 작업 영역에 연결됩니다. 대상 그룹 인사이트는 Azure 작업 영역에서 **기여자** 역할을 받습니다.

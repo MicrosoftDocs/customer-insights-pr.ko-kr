@@ -9,12 +9,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 3fa91553fd50a22ab62b5a2b1e3f13b9483776a8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2ab5a9059991611a2959a19cc688d232ec782e1e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598163"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554121"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Microsoft Power Apps 커넥터(미리 보기)
 
@@ -56,12 +56,12 @@ Power Apps 커넥터에서 **고객**, **통합 활동**, **세그먼트** 엔�
 1. 빌드 중인 앱에 **갤러리** 컨트롤을 추가합니다.
 
 > [!div class="mx-imgBorder"]
-> ![갤러리 요소 추가](media/connector-powerapps9.png "갤러리 요소 추가")
+> ![갤러리 요소 추가.](media/connector-powerapps9.png "갤러리 요소 추가")
 
 1. **고객** 을 항목의 데이터 원본을 선택합니다.
 
     > [!div class="mx-imgBorder"]
-    > ![데이터 원본 선택](media/choose-datasource-powerapps.png "데이터 원본 선택")
+    > ![데이터 원본 선택.](media/choose-datasource-powerapps.png "데이터 원본 선택")
 
 1. 오른쪽의 데이터 패널을 변경하여 갤러리에 표시할 고객 엔터티 필드를 선택할 수 있습니다.
 

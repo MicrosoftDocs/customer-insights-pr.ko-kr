@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 29f4320c798db62609283e3c48f0b47a4f0b982f
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: b54659f028a141fe8f351645d96e933d47568a39
+ms.sourcegitcommit: adb9c43ddaba25e511535d78a4bcf8815f154a7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124281"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6362426"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>Constant Contact로 세그먼트 내보내기(프리뷰)
 
@@ -47,7 +47,7 @@ ms.locfileid: "6124281"
 
 1. **연결** 을 선택하여 Constant Contact에 대한 연결을 초기화합니다.
 
-1. **AdRoll로 인증** 을 선택하고 Constant Contact에 대한 관리자 자격 증명을 제공합니다. 
+1. **Constant Contact로 인증** 을 선택하고 Constant Contact에 대한 관리자 자격 증명을 제공합니다. 
 
 1. **내보내기 사용자로 사용자 본인 추가** 를 선택하고 Customer Insights 자격 증명을 제공합니다.
 

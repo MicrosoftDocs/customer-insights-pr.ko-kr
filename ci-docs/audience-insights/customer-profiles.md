@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: c9adb4d7db74573d0512ae7a68a0e7ab51c994a0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304612"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554626"
 ---
 # <a name="customer-profiles"></a>고객 프로필
 
@@ -23,11 +23,11 @@ ms.locfileid: "6304612"
 고객은 개인 또는 조직(미리 보기)일 수 있습니다. 각 고객 또는 조직 프로필은 타일로 표시됩니다. 타일을 선택하여 특정 고객 또는 조직에 대한 추가 정보를 확인합니다. 추가 레코드를 보려면 페이지 하단의 페이지 매기기 컨트롤을 사용합니다.
 
 > [!div class="mx-imgBorder"] 
-> ![B2C 고객 프로필](media/profiles-customers.png "B2C 고객 프로필")
+> ![B2C 고객 프로필.](media/profiles-customers.png "B2C 고객 프로필")
 
 조직(미리 보기)
 > [!div class="mx-imgBorder"] 
-> ![B2B 고객 프로필](media/profile-customers-b2b.png "B2B 고객 프로필")
+> ![B2B 고객 프로필.](media/profile-customers-b2b.png "B2B 고객 프로필")
 
 > [!NOTE]
 > 탐색에서 **고객** 을 선택할 때 타일이 표시되지 않으면 관리자는 **검색 및 필터 색인** 에서 [검색 가능한 속성을 하나 이상 정의](search-filter-index.md)해야 합니다.
@@ -47,7 +47,7 @@ ms.locfileid: "6304612"
 2. 고객을 필터링할 특성 옆에 있는 확인란을 선택합니다.
 
    > [!div class="mx-imgBorder"] 
-   > ![고객 프로필](media/profiles-customers3.png "고객 프로필")
+   > ![고객 프로필.](media/profiles-customers3.png "고객 프로필")
 
 3. **고객** 페이지에서 **필터 지우기** 를 선택하여 필터를 제거합니다.
 
