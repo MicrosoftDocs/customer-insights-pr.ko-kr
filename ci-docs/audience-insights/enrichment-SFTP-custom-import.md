@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 9331cf8057850e2fbe03622831f388e73056d938
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: b67aa7477033222b0bc9512a962a1580edd973b4882ce925620ff5ec14f83fe3
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6555407"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032720"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>사용자 지정 데이터로 고객 프로필 보강(미리 보기)
 

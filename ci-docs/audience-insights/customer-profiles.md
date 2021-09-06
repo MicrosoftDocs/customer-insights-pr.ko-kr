@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: 87323d15c44ef82ae8bc3cc971be6c36356121571cb9a9630be699ac2d157bf6
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554626"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032812"
 ---
 # <a name="customer-profiles"></a>고객 프로필
 
@@ -69,7 +69,7 @@ ms.locfileid: "6554626"
 
 ## <a name="next-steps"></a>다음 단계
 
-[더 많은 데이터 원본 추가](data-sources.md) 또는 [고객 분류 작성](segments.md).
+[데이터 원본 추가](data-sources.md), [통합 프로필 보강](enrichment-hub.md) 또는 [세그먼트 만들기](segments.md)를 사용하여 다른 애플리케이션에서 통합 프로필과 함께 사용할 수 있습니다.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: a6131d4dddce48b0fba153bcefe5631e0d22d808
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: e53d87c4f633cba09fecbc1c219f0ac2ec6bb5598a7902cbcf7398d26d6d7c6b
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554029"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7029407"
 ---
 # <a name="customer-profiles-search--filter-index"></a>고객 프로필: 색인 검색 및 필터링
 
@@ -60,7 +60,7 @@ ms.locfileid: "6554029"
 
 ## <a name="next-steps"></a>다음 단계
 
-**고객** 페이지로 이동하여 고객 프로필을 검색하거나 색인된 필드를 사용하여 모든 고객 프로필의 하위 집합을 확인합니다.
+[통합 프로필 페이지](customer-profiles.md)를 검토하여 프로필을 검색하거나 인덱싱된 필드를 사용하여 모든 통합 프로필의 하위 집합을 확인하십시오.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

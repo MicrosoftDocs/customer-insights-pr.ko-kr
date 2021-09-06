@@ -1,5 +1,5 @@
 ---
-title: Adobe 환경 플랫폼으로 Customer Insights 데이터 내보내기
+title: Customer Insights 데이터를 Adobe Experience Platform로 내보내기
 description: Adobe Experience Platform에서 대상 그룹 인사이트 세그먼트를 사용하는 방법을 알아봅니다.
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -9,31 +9,31 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: fac976a49b1b5c5485b75e1262135738c913bd2230be7df8aa0ec12c59734053
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305532"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032125"
 ---
-# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Adobe 환경 플랫폼(프리뷰)에서 Customer Insights 세그먼트 사용하기
+# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Adobe Experience Platform(프리뷰)에서 Customer Insights 세그먼트 사용
 
-Dynamics 365 Customer Insights의 대상 그룹 인사이트 사용자로서 관련 잠재 고객을 타겟팅하여 마케팅 캠페인의 효율성을 높이기 위해 세그먼트를 만들었을 수 있습니다. Adobe 환경 플랫폼 및 Adobe Campaign Standard와 같은 애플리케이션에서 대상 그룹 인사이트의 세그먼트를 사용하려면 이 문서에 설명된 몇 가지 단계를 따라야 합니다.
+Dynamics 365 Customer Insights의 대상 그룹 인사이트 사용자로서 관련 잠재 고객을 타겟팅하여 마케팅 캠페인의 효율성을 높이기 위해 세그먼트를 만들었을 수 있습니다. Adobe Experience Platform 및 Adobe Campaign Standard와 같은 응용 프로그램의 대상 그룹 인사이트에서 세그먼트를 사용하려면 이 문서에 설명된 몇 가지 단계를 따라야 합니다.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="이 문서에 설명된 단계의 프로세스 다이어그램입니다.":::
 
-## <a name="prerequisites"></a>필요한 항목
+## <a name="prerequisites"></a>필수 조건
 
 -   Dynamics 365 Customer Insights 라이선스
--   Adobe 환경 플랫폼 라이선스
+-   Adobe Experience Platform 라이선스
 -   Adobe Campaign Standard 라이선스
 -   Azure Blob Storage 계정
 
 ## <a name="campaign-overview"></a>캠페인 개요
 
-Adobe 환경 플랫폼에서 대상 그룹 인사이트의 세그먼트를 사용하는 방법을 더 잘 이해하기 위해 가상의 샘플 캠페인을 살펴 보겠습니다.
+Adobe Experience Platform에서 대상 그룹 인사이트의 세그먼트를 사용하는 방법을 더 잘 이해하기 위해 가상의 샘플 캠페인을 살펴보겠습니다.
 
-귀사가 미국 고객에게 월간 구독 기반 서비스를 제공한다고 가정합시다. 다음 8일 이내에 구독을 갱신해야 하지만 아직 갱신하지 않은 고객을 식별하려고 합니다. 이러한 고객을 유지하려면 Adobe 환경 플랫폼을 사용하여 이메일을 통해 프로모션 제안을 보내는 것이 좋습니다.
+귀사가 미국 고객에게 월간 구독 기반 서비스를 제공한다고 가정합시다. 다음 8일 이내에 구독을 갱신해야 하지만 아직 갱신하지 않은 고객을 식별하려고 합니다. 이러한 고객을 유지하기 위해 Adobe Experience Platform을 사용하여 이메일을 통해 프로모션 제안을 보내려고 합니다.
 
 이 예에서는 프로모션 이메일 캠페인을 한 번 실행하려고 합니다. 이 문서에서는 캠페인을 두 번 이상 실행하는 사용 사례를 다루지 않습니다.
 
@@ -93,7 +93,7 @@ Adobe 환경 플랫폼에서 대상 그룹 인사이트의 세그먼트를 사�
 이제 [필요에 따라 세그먼트 내보내기](export-destinations.md#run-exports-on-demand)를 할 수 있습니다. 내보내기는 [예약된 새로 고침](system.md)마다 실행됩니다.
 
 > [!NOTE]
-> 내보낸 세그먼트의 레코드 수가 Adobe Campaign Standard 라이선스의 허용 한도 내에 있는지 확인합니다.
+> 내보낸 세그먼트의 레코드 수가 Adobe Campaign Standard 라이선스의 허용 한도 내에 있는지 확인하십시오.
 
 내보낸 데이터는 위에서 구성한 Azure Blob Storage 컨테이너에 저장됩니다. 컨테이너에 다음 폴더 경로가 자동으로 만들어집니다.
 
@@ -105,29 +105,29 @@ Adobe 환경 플랫폼에서 대상 그룹 인사이트의 세그먼트를 사�
 
 예: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo/model.json
 
-## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>Adobe 환경 플랫폼에서 환경 데이터 모델(XDM) 정의
+## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>Adobe Experience Platform의 Experience Data Model(XDM) 정의
 
-대상 그룹 인사이트에서 내보낸 데이터를 Adobe 환경 플랫폼 내에서 사용하려면 먼저 경험 데이터 모델 스키마를 정의하고 [실시간 고객 프로필에 대한 데이터를 구성](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials)해야 합니다.
+대상 그룹 인사이트에서 내보낸 데이터를 Adobe Experience Platform 내에서 사용하려면 먼저 Experience Data Model 스키마를 정의하고 [실시간 고객 프로필에 대한 데이터를 구성](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials)해야 합니다.
 
 [XDM의 정의](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)를 알아보고 [스키마 구성의 기초](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema)을 파악하십시오.
 
-## <a name="import-data-into-adobe-experience-platform"></a>Adobe 환경 플랫폼으로 데이터 가져오기
+## <a name="import-data-into-adobe-experience-platform"></a>Adobe Experience Platform으로 데이터 가져오기
 
-이제 모든 것이 준비되었으므로 준비된 대상 그룹 데이터를 대상 그룹 인사이트에서 Adobe 환경 플랫폼으로 가져와야 합니다.
+이제 모든 것이 준비되었으므로 대상 그룹 인사이트에서 Adobe Experience Platform으로 준비된 대상 그룹 데이터를 가져와야 합니다.
 
 먼저, [Azure Blob Storage 원본 연결을 만듭니다](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started).    
 
-원본 연결을 정의한 후 클라우드 저장소 일괄 처리 연결에 대한 [데이터 흐름 구성](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials)을 구성하여 대상 그룹 인사이트에서 세그먼트 출력을 Adobe 환경 플랫폼으로 가져옵니다.
+소스 연결을 정의한 후 클라우드 스토리지 일괄 연결에 대한 [데이터 흐름 구성](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials)을 통해 대상 그룹 인사이트의 세그먼트 출력을 Adobe Experience Platform으로 가져옵니다.
 
 ## <a name="create-an-audience-in-adobe-campaign-standard"></a>Adobe Campaign Standard에서 대상 그룹 만들기
 
-이 캠페인에 대한 이메일을 보내기 위해 Adobe Campaign Standard를 사용합니다. 데이터를 Adobe 환경 플랫폼으로 가져온 후 Adobe 환경 플랫폼의 데이터를 사용하여 Adobe Campaign Standard에서 [대상 그룹을 생성](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission)해야 합니다.
+이 캠페인에 대한 이메일을 보내기 위해 Adobe Campaign Standard를 사용합니다. Adobe Experience Platform으로 데이터를 가져온 후 Adobe Experience Platform의 데이터를 사용하여 Adobe Campaign Standard에서 [대상 그룹을 생성](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission)해야 합니다.
 
 
-Adobe Campaign Standard에서 [세그먼트 작성기를 사용하는 방법](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html)을 알아보고 Adobe 환경 플랫폼의 데이터를 기반으로 대상 그룹을 정의합니다.
+Adobe Campaign Standard에서 [세그먼트 빌더를 사용](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html)하여 Adobe Experience Platform의 데이터를 기반으로 대상 그룹을 정의하는 방법을 알아봅니다.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Adobe Campaign Standard를 사용하여 이메일 작성 및 보내기
 
 이메일 콘텐츠를 만든 다음 내 이메일을 [테스트 및 전송](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages)합니다.
 
-:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Adobe Campaign Standard의 갱신 제안이 포함된 샘플 이메일입니다.":::
+:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Adobe Campaign Standard의 갱신 제안이 포함된 샘플 이메일.":::
