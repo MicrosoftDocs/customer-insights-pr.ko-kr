@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4a19661abea42618ef1848110c05d635a925c68f
-ms.sourcegitcommit: c45b094072cbe3fbf61d1e9e7d220e1f29ffebd0
+ms.openlocfilehash: e759872643cc7387cf732d73c7a320ae8901e5a9
+ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "6685470"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7377796"
 ---
 # <a name="create-and-manage-segments"></a>세그먼트 만들기 및 관리
 
@@ -27,6 +27,23 @@ ms.locfileid: "6685470"
 > - 특성을 선택하는 측면 창은 지속적으로 사용할 수 있습니다.
 > - 엔터티 관계 경로를 선택하는 옵션.
 > 새 세그먼트 빌더를 사용하려면 "새 세그먼트 빌더 활성화 요청"이라는 제목의 이메일을 cihelp [at] microsoft.com에 보내십시오. 조직의 이름과 샌드박스 환경의 ID를 포함합니다.
+> :::image type="content" source="media/segment-builder-overview.png" alt-text="세그먼트 빌더의 요소." lightbox="media/segment-builder-overview.png":::
+>
+> 1 - 규칙 및 하위 규칙으로 세그먼트를 구성합니다. 각 규칙 또는 하위 규칙은 조건으로 구성됩니다. 조건을 논리 연산자와 결합
+>
+> 2 - 규칙에 적용되는 엔터티 간에 [관계 경로](relationships.md)를 선택합니다. 관계 경로는 조건에서 사용할 수 있는 특성을 결정합니다.
+>
+> 3 - 규칙 및 하위 규칙을 관리합니다. 규칙의 위치를 변경하거나 삭제합니다.
+>
+> 4 - 조건을 추가하고 하위 규칙을 사용하여 적절한 수준의 중첩을 구축합니다.
+>
+> 5 - 연결된 규칙에 집합 작업을 적용합니다.
+>
+> 6 - 특성 창을 사용하여 사용 가능한 엔터티 특성을 추가하거나 특성을 기반으로 조건을 만듭니다. 창에는 선택한 관계 경로에 따라 선택한 규칙에 사용할 수 있는 엔터티 및 특성 목록이 표시됩니다.
+>
+> 7 - 기존 규칙 및 하위 규칙에 속성을 기반으로 조건을 추가하거나 새 규칙에 추가합니다.
+>
+> 8 - 세그먼트를 구축하는 동안 변경 사항을 실행 취소 및 다시 실행합니다.
 
 통합 고객 엔터티 및 관련 엔터티를 중심으로 복잡한 필터를 정의합니다. 처리 후 각 세그먼트는 내보내고 조치를 취할 수 있는 고객 레코드 집합을 작성합니다. 세그먼트는 **세그먼트** 페이지에서 관리됩니다. 
 
@@ -64,7 +81,7 @@ ms.locfileid: "6685470"
 
    |숫자 |정의  |
    |---------|---------|
-   |6     |Entity          |
+   |1     |Entity          |
    |2     |특성          |
    |3    |운영자         |
    |4    |값         |
@@ -147,6 +164,6 @@ ms.locfileid: "6685470"
 
 ## <a name="next-steps"></a>다음 단계
 
-[세그먼트를 내보내고](export-destinations.md) [고객 카드](customer-card-add-in.md) 및 [커넥터](export-power-bi.md)를 탐색하여 고객 수준에 대한 통찰력을 얻을 수 있습니다.
+[세그먼트 내보내기](export-destinations.md)를 수행하고 [고객 카드 통합](customer-card-add-in.md)을 탐색하여 다른 응용 프로그램에서 세그먼트를 사용합니다.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

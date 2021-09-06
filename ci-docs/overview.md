@@ -3,21 +3,21 @@ title: 제품 개요
 author: m-hartmann
 description: Dynamics 365 Customer Insights와 해당 기능에 대한 개요를 확인하십시오.
 ms.author: mhart
-ms.date: 02/16/2021
+ms.date: 07/30/2021
 ms.service: customer-insights
 ms.topic: overview
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 1bc75959229fd2ffef9a5fd5617889888eb72e55
-ms.sourcegitcommit: b78c9680b213204e6b0ed47f0147205083f6a98f
+ms.openlocfilehash: 651bd151a77b9d7f44d5fcca15da0f131b9fb3f07ffc89bfac9c0aa6f799e9b1
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6539397"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036519"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights용 제품 개요
 
-Dynamics 365 Customer Insights는 개인화된 고객 경험을 제공하는 데 도움이 되는 Microsoft의 고객 데이터 플랫폼(CDP)의 일부입니다. 플랫폼의 기능은 고객이 누구이며 플랫폼에 어떻게 참여하는지에 대한 인사이트를 제공합니다. 여러 소스에서 고객 데이터를 통합하여 고객에 대한 단일 뷰를 확보하십시오.
+[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/)는 개인화된 고객 경험을 제공하는 데 도움이 되는 Microsoft의 고객 데이터 플랫폼(CDP)의 일부입니다. 플랫폼의 기능은 고객이 누구이며 플랫폼에 어떻게 참여하는지에 대한 인사이트를 제공합니다. 여러 소스에서 고객 데이터를 통합하여 고객에 대한 단일 뷰를 확보하십시오.
 
 
 - [대상 그룹 인사이트](audience-insights/overview.md)를 통해 비즈니스를 고객 중심 조직으로 전환할 수 있습니다. 마케팅, 영업 및 서비스 전문가는 경험을 개인화하는 데 필요한 인사이트를 가지고 있습니다. 트랜잭션, 행동 및 관찰 소스에서 데이터를 연결하여 360도 고객 뷰를 만듭니다. 조치를 취할 수 있는 인사이트를 제공하도록 설계된 CDP로 결과를 더 빠르게 확인하세요. 

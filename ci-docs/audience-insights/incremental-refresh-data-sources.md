@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 1af2e4c42dc5890556c90bb3e5ef1aeb0621fda0
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
+ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554167"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7377842"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>파워 쿼리 기반 데이터 원본에 대한 증분 새로 고침 | Microsoft Docs
 
@@ -44,8 +44,7 @@ ms.locfileid: "6554167"
 
 1. **증분 새로 고침 설정** 에서 데이터 원본을 만들 때 선택한 모든 엔터티에 대해 증분 새로 고침을 구성합니다.
 
-   > [!div class="mx-imgBorder"]
-   > ![증분 새로 고침을 위해 데이터 원본에서 엔터티 구성.](media/incremental-refresh-settings.png "증분 새로 고침을 위해 데이터 원본에서 엔터티 구성")
+   :::image type="content" source="media/incremental-refresh-settings.png" alt-text="증분 새로 고침을 위해 데이터 원본에서 엔터티 구성.":::
 
 1. 엔터티를 선택하고 다음 세부 사항을 제공하십시오.
 

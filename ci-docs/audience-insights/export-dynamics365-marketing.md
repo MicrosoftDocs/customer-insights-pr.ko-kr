@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 Marketing에 Customer Insights 데이터 내보내기
 description: 연결을 구성하고 Dynamics 365 Marketing으로 내보내는 방법을 알아봅니다.
-ms.date: 03/03/2021
+ms.date: 08/24/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bd8189f8daee1a6aea75e75e116186f62a360ba4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: b8e63a738abaf4fbb902e3edbf83f5a815978478
+ms.sourcegitcommit: 8e89575fe2acb4b289fc157fa7c4c29caf9be967
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692489"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7417213"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>Dynamics 365 Marketing에 세그먼트 사용(프리뷰)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 [세그먼트](segments.md)를 사용하여 캠페인을 생성하고 Dynamics 365 Marketing의 특정 고객 그룹에게 연락합니다. 자세한 내용은 [Dynamics 365 Marketing으로 Dynamics 365 Customer Insights에서 세그먼트 사용](/dynamics365/marketing/customer-insights-segments)을 참조하십시오.
+
+Dataverse 조직에서 실시간 고객 여정 오케스트레이션을 위해 Dynamics 365 Marketing의 새로운 기능을 사용하는 경우 Dynamics 365 Marketing에 대한 표준 내보내기를 만들 필요가 없습니다. 대상 그룹 인사이트의 연락처 및 세그먼트는 Marketing 및 Customer Insights를 연결한 후 Dynamics 365 Marketing에서 직접 사용할 수 있습니다. 기존 내보내기를 삭제하기 전에 [대상 그룹 인사이트와 Dynamics 365 Marketing 고객 여정 오케스트레이션을 연결하는 방법](/dynamics365/marketing/real-time-marketing-ci-profile)에 대한 문서를 검토하십시오.
 
 ## <a name="prerequisite-for-a-connection"></a>연결을 위한 전제 조건
 

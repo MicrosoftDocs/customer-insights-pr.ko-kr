@@ -4,17 +4,17 @@ metadata:
   author: m-hartmann
   description: 도움말 콘텐츠로 시작할 관련 문서를 찾습니다.
   ms.author: mhart
-  ms.date: 10/29/2020
+  ms.date: 07/30/2021
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: e9c4aa3347d6f477751804790bd3dc9b20eb5dbe
-  ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+  ms.openlocfilehash: 1446a2bcb24739187a37b2024c9a6070ab008989d722ebf84ef5259ec2ee4d5c
+  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/15/2021
-  ms.locfileid: "5598471"
+  ms.lasthandoff: 08/10/2021
+  ms.locfileid: "7036565"
 title: Dynamics 365 Customer Insights 설명서
-summary: 시작하는 데 도움이 되는 리소스를 찾고 Customer Insights의 특징과 기능에 대해 알아보세요.
+summary: 시작하는 데 유용한 리소스를 찾고 Customer Insights의 기능에 대해 알아보십시오.
 landingContent:
 - title: Customer Insights 소개
   linkLists:
@@ -23,9 +23,9 @@ landingContent:
     - text: Customer Insights 개요
       url: overview.md
     - text: 릴리스 계획
-      url: /dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
-    - text: 환경 액세스
-      url: https://home.ci.ai.dynamics.com/
+      url: /dynamics365-release-plan/
+    - text: CDP 검색
+      url: https://dynamics.microsoft.com/ai/customer-insights/
 - title: 대상 그룹 인사이트 시작
   linkLists:
   - linkListType: get-started

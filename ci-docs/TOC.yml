@@ -150,7 +150,7 @@
               href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
-            - name: Adobe 환경 플랫폼
+            - name: Adobe Experience Platform
               href: audience-insights/export-adobe-experience-platform.md
             - name: Campaign Monitor
               href: audience-insights/export-campaign-monitor.md
@@ -166,6 +166,8 @@
               href: audience-insights/export-facebook.md
             - name: Google 광고
               href: audience-insights/export-google-ads.md
+            - name: Klaviyo
+              href: audience-insights/export-klaviyo.md
             - name: LinkedIn Ads
               href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
@@ -310,5 +312,13 @@
       href: engagement-insights/regional-availability.md
     - name: 서비스 한도
       href: engagement-insights/quotas.md
-- name: 지원 연락처
-  href: 'https://admin.powerplatform.microsoft.com/support'
+- name: 대상 그룹 및 참여 인사이트 통합
+  items:
+    - name: 대상 그룹 인사이트와 참여 인사이트 연결
+      href: engagement-insights/integrate-audience-insights-engagement-insights.md
+    - name: 참여 인사이트 보고서에서 대상 그룹 인사이트 세그먼트를 사용하는 방법
+      href: engagement-insights/integrate-audience-insights-segments.md
+    - name: 행동 데이터 분할에 인구통계학적 차원 사용
+      href: engagement-insights/curate-dimensions.md
+- name: 제품 지원
+  href: 'https://dynamics.microsoft.com/en-us/support/'

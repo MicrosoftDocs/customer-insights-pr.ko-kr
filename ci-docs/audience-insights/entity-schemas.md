@@ -1,7 +1,7 @@
 ---
 title: Common Data Model의 Customer Insights 엔터티 스키마
 description: Common Data Model에서 엔터티로 작업합니다.
-ms.date: 04/17/2020
+ms.date: 08/13/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: 66d846c3e9404ca7993cae742ea6e16833233fba
+ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692313"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380751"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model의 엔터티 스키마
 
@@ -42,7 +42,7 @@ ms.locfileid: "6692313"
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>Common Data Model 엔터티 탐색기를 사용하여 엔터티 보기
 
-[Common Data Model 엔터티 탐색기](https://microsoft.github.io/CDM/)에서 엔터티를 볼 수 있습니다. **GitHub에서 로드!** 버튼을 클릭하고 **foundationCommon** > **crmCommon** > **solutions** > **customerInsights** 로 이동하여 Customer Insights 엔터티 및 그 정의 목록을 찾을 수 있습니다.
+[Common Data Model 엔터티 탐색기](https://microsoft.github.io/CDM/)에서 엔터티를 볼 수 있습니다. Insights 응용 프로그램 섹션에서 엔터티를 선택하여 Customer Insights 엔터티 및 해당 정의 목록을 가져옵니다.
 > [!div class="mx-imgBorder"]
 > ![CustomerActivity 엔터티를 보여주는 CDM 엔터티 탐색기.](media/CDM-entity-navigator.png "CustomerActivity 엔터티를 보여주는 CDM 엔터티 탐색기")
 
