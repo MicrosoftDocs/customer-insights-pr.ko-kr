@@ -1,0 +1,86 @@
+### YamlMime:Landing
+title: Dynamics 365 Customer Insights 참여 인사이트 둘러보기(프리뷰) 기능
+summary: 웹 사이트에 대한 데이터를 수집합니다. 사이트 전반의 고객 상호 작용 및 사용을 대화식으로 이해합니다. 참여 인사이트와 대상 그룹 인사이트 간의 심층 통합을 사용하여 고객 프로필 보고서로 실시간 행동 분석을 보강합니다. 웹 활동으로 고객 프로필을 보강하여 관련 고객 데이터와 함께 실시간 행동 데이터를 얻습니다. 고객 데이터에서 즉각적인 가치를 창출하도록 비즈니스를 혁신하세요.
+metadata:
+  title: 참여 인사이트(프리뷰) 설명서
+  description: 참여 인사이트를 위한 주요 링크가 있는 도움말 허브.
+  ms.service: customer-insights
+  ms.subservice: engagement-insights
+  ms.topic: hub-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.reviewer: mhart
+  ms.date: 07/30/2021
+  ms.openlocfilehash: 9951b1834d18acf0c4961a776d9d6247d4ae3505b5721a41314266e41f8ae928
+  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 08/10/2021
+  ms.locfileid: "7036246"
+landingContent:
+- title: 정보
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 기능 개요
+      url: overview.md
+    - text: 사용 약관 및 개념
+      url: glossary.md
+    - text: 참여 인사이트 검색
+      url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+- title: 온보딩
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 시작
+      url: get-started.md
+    - text: 작업 영역 만들기
+      url: create-workspace.md
+    - text: 웹 사이트 계측
+      url: instrument-website.md
+- title: '보고서 '
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 보고서 보기
+      url: view-reports.md
+    - text: 사용자 지정 보고서 만들기
+      url: custom-reports.md
+    - text: 통합 프로필 보고서 보기
+      url: profile-reports.md
+    - text: 유입 경로 보고서 만들기
+      url: funnel-reports.md
+- title: 이벤트
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 정교한 이벤트 만들기
+      url: refined-events.md
+    - text: 내보내기 이벤트
+      url: export-events.md
+    - text: 개인 데이터 삭제 및 내보내기
+      url: delete-export-personal-data.md
+- title: 개발자 리소스
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: 개발자 리소스
+      url: developer-resources.md
+    - text: WebSDK 샘플
+      url: websdk-sample.md
+    - text: 고급 웹 SDK 시나리오
+      url: advanced-SDK-implementation.md
+    - text: Android SDK 샘플
+      url: get-started-android.md
+    - text: iOS SDK 샘플
+      url: get-started-ios.md
+- title: 관리
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 환경 및 작업 영역 관리
+      url: manage-environments-workspaces.md
+    - text: 대상 그룹 인사이트에 연결
+      url: configure-connections.md
+    - text: 쿠키 및 사용자 동의 관리
+      url: user-consent-storage.md
