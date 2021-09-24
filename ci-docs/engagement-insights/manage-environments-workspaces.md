@@ -4,17 +4,17 @@ description: 작업 영역 및 환경 생성, 이름 변경 및 삭제하는 방
 author: jusali
 ms.reviewer: mhart
 ms.author: jusali
-ms.date: 07/01/2021
+ms.date: 09/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: bf310b1a50ba7baac5d11d5f22ff42003fbba516efd7d165c00b59adc958da2e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a5b48db5ae23ea65bf608d67348d493bfdc7678f
+ms.sourcegitcommit: 0ceb46c4f57ab49d3a2ebb1c8a816bbafe979e3d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034050"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7486043"
 ---
 # <a name="manage-environments-and-workspaces"></a>환경 및 작업 영역 관리
 
@@ -85,13 +85,11 @@ ms.locfileid: "7034050"
 
 1. **구성원 추가** 를 선택하여 액세스 권한을 부여하고 [역할을 할당](user-roles.md)합니다. 현재는 **작업 영역 관리자** 만 사용할 수 있습니다.
 
-1. [대상 그룹 인사이트에 대한 연결](configure-connections.md)을 설정한 경우 **프로필 데이터에 대한 액세스 허용** 을 선택하여 구성원이 [사용자 프로필](profile-reports.md)을 기반으로 작성한 보고서를 볼 수 있도록 설정할 수 있습니다.
-
 1. **구성원 추가** 를 선택하여 작업 영역에 추가합니다.
 
 ## <a name="manage-an-environment"></a>환경 관리
 
-환경 관리자는 왼쪽 탐색 창에서 환경에 액세스할 수 있습니다. 환경 설정, 기타 환경 관리자, 작업 영역 및 [대상 그룹 인사이트에 대한 연결](configure-connections.md)을 구성할 수 있습니다. 관리 센터의 다른 영역간에 이동하려면 탭을 선택하세요.
+환경 관리자는 왼쪽 탐색 창에서 환경에 액세스할 수 있습니다. 환경 설정, 기타 환경 관리자 및 작업 영역을 구성할 수 있습니다. 관리 센터의 다른 영역간에 이동하려면 탭을 선택하세요.
 
 :::image type="content" source="media/New-environment.png" alt-text="환경 관리 센터 설정.":::
 
@@ -123,8 +121,6 @@ ms.locfileid: "7034050"
 
 1. **구성원 추가** 를 선택하여 구성원을 업데이트하고 [역할을 할당](user-roles.md)합니다. 현재는 **환경 관리자** 만 사용할 수 있습니다.
 
-1. [대상 그룹 인사이트에 대한 연결](configure-connections.md)을 설정한 경우 **프로필 데이터에 대한 액세스 허용** 을 선택하여 구성원이 [사용자 프로필](profile-reports.md)을 기반으로 작성한 보고서를 볼 수 있도록 설정할 수 있습니다.
-
 1. **구성원 추가** 를 선택하여 환경에 추가합니다.
 
 ### <a name="delete-an-environment"></a>환경 삭제
@@ -143,7 +139,7 @@ ms.locfileid: "7034050"
 
 대상 그룹 인사이트에 대한 연결을 설정하면 통합 고객 프로필을 기반으로 한 참여 인사이트에서 보고서를 볼 수 있습니다. 
 
-자세한 내용은 [연결 구성](configure-connections.md)을 참조하세요.
+자세한 정보는 [대상 그룹 인사이트와 참여 인사이트 사이에 링크 만들기](integrate-audience-insights-engagement-insights.md)를 참조하십시오.
 
 ## <a name="manage-personal-data"></a>개인 데이터 관리
 

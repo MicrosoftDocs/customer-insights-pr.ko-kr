@@ -1,20 +1,20 @@
 ---
 title: 제품 추천 예측
 description: 고객이 구매하거나 상호 작용할 가능성이 있는 제품을 예측합니다.
-ms.date: 03/17/2021
+ms.date: 09/13/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: zacookmsft
-ms.author: zacook
+author: wmelewong
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 60d511181aa85e3e939eff3e5931f0de7807c01c8f38134ebca5c5604cd53871
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a75a245bc721d65643fa78d46f2be52291595a5a
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034964"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494547"
 ---
 # <a name="product-recommendation-prediction-preview"></a>제품 추천 예측(미리 보기)
 
@@ -89,23 +89,24 @@ ms.locfileid: "7034964"
 
 ### <a name="add-required-data"></a>필수 데이터 추가
 
-1. **고객 트랜잭션 기록** 에 대한 **데이터 추가** 를 선택하고 [필수 구성 요소](#prerequisites)에 설명된 대로 트랜잭션/구매 기록 정보를 제공하는 엔터티를 선택합니다.
+1. **데이터 추가** 를 선택하고 필요한 거래 또는 구매 이력 정보가 포함된 측면 창에서 활동 유형을 선택합니다.
 
-1. 의미론적 필드를 구매 기록 엔터티 내의 특성에 매핑하고 **다음** 을 선택합니다. 필드에 대한 설명은 [필수 구성 요소](#prerequisites)를 확인하십시오.
-   > [!div class="mx-imgBorder"]
-   > ![엔터티 관계를 정의합니다.](media/product-recommendation-purchasehistorymapping.PNG "선택한 구매 기록 엔터티의 필드에 매핑되는 의미론적 특성을 보여주는 구매 기록 페이지")
+1. **활동 선택** 에서, 선택한 활동에서 계산에 집중할 특정 활동을 선택합니다.
 
-1. 필드가 채워지지 않은 경우 구매 기록 엔터티에서 *고객* 엔터티로의 관계를 구성합니다.
-    1. **구매 기록 엔터티** 를 선택합니다.
-    1. 구매 기록 엔터티에서 고객을 식별하는 **필드** 를 선택합니다. *고객* 엔터티의 기본 고객 ID와 관련되어야 합니다.
-    1. 기본 고객 엔터티와 일치하는 **고객 엔터티** 를 선택합니다.
-    1. 관계를 설명하는 이름을 입력합니다.
-       > [!div class="mx-imgBorder"]
-       > ![고객과의 관계 생성을 보여주는 구매 기록 페이지.](media/model-purchase-join.png "고객과의 관계 생성을 보여주는 구매 기록 페이지")
+   :::image type="content" source="media/product-recommendation-select-semantic-activity.PNG" alt-text="의미론적 유형에서 특정 활동을 선택하는 것을 보여주는 측면 창.":::
+
+1. 활동을 의미론적 유형에 아직 매핑하지 않은 경우 **편집** 을 선택하여 매핑합니다. 의미론적 활동을 매핑하기 위한 안내 환경이 열립니다. 선택한 활동 유형의 해당 필드에 데이터를 매핑합니다.
+
+   :::image type="content" source="media/product-recommendation-set-activity-type.PNG" alt-text="페이지 설정 활동 유형.":::
+
+1. 활동을 해당 의미 유형에 매핑한 후 **다음** 을 선택하여 계속 진행 
+ 
+1. 의미론적 특성을 모델을 실행하는 데 필요한 필드에 매핑합니다.
 
 1. **저장** 을 선택합니다.
 
 1. **다음** 을 선택합니다.
+
 
 ### <a name="configure-product-filters"></a>제품 필터 구성
 

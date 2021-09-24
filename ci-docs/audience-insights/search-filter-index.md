@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: e53d87c4f633cba09fecbc1c219f0ac2ec6bb5598a7902cbcf7398d26d6d7c6b
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 9eaeb0c93481283324f21122c9528ff5896b9866
+ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7029407"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "7470001"
 ---
 # <a name="customer-profiles-search--filter-index"></a>고객 프로필: 색인 검색 및 필터링
 
@@ -56,7 +56,7 @@ ms.locfileid: "7029407"
 
 2. **저장** 을 선택하여 변경 내용을 적용합니다.
 
-3. 설정을 적용할 준비가 되면 **실행** 을 선택합니다.
+3. 설정을 적용할 준비가 되면 **실행** 을 선택합니다. 변경 사항이 처리된 후 [고객 페이지의 고객 카드](customer-profiles.md)에서 확인할 수 있습니다. 
 
 ## <a name="next-steps"></a>다음 단계
 

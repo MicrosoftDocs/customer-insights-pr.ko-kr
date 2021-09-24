@@ -9,12 +9,12 @@ ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: eebe51d343f6afbed52a66c52ab6a60eb5cd410367fb2e4409eb8679f357c91e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 95caaa1f67a7740328b67face00acaea65452eb0
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033915"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494465"
 ---
 # <a name="first-run-experience"></a>첫 실행 환경
 
@@ -26,7 +26,7 @@ Dynamics 365 Customer Insights의 기능인 참여 인사이트를 사용하면 
 
 활성 Microsoft Azure Active Directory 사용자 계정이 있어야 합니다. 
 
-1. [참여 인사이트](https://pi.dynamics.com/) 웹 사이트를 엽니다. 
+1. [참여 인사이트](https://home.ci.ai.dynamics.com/app/engagement-insights) 웹 사이트를 엽니다. 
 
 1. 학교 또는 회사 계정을 사용하여 로그인합니다.
 

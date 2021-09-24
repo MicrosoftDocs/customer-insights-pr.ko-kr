@@ -1,24 +1,23 @@
 ---
-title: 대상 그룹 인사이트에 지원되는 언어
+title: Dynamics 365 Customer Insights에 대해 지원되는 언어
 description: 언어 지원을 이해하고 구성합니다.
-ms.date: 02/26/2021
+ms.date: 09/01/2021
 ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: e9161ebbfdf3ae6c48c12cdf7515b77ca49ae8055ae9a69f9ec314bc1247aeaf
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f80c3019df9b5d82273842ca6f6f18bef0239687
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035147"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483350"
 ---
-# <a name="supported-languages-for-audience-insights-capability"></a>대상 그룹 인사이트 기능에 지원되는 언어
+# <a name="supported-languages-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights에 대해 지원되는 언어
 
-Dynamics 365 Customer Insights에 대한 대상 그룹 인사이트는 여러 언어로 번역됩니다. 다음 목록에는 사용 가능한 언어와 번역된 내용에 대한 정보가 포함되어 있습니다. 언어 설정 변경 방법에 대해서도 자세히 알아볼 수 있습니다. 
+Dynamics 365 Customer Insights는 많은 언어로 번역됩니다. 다음 목록에는 사용 가능한 언어와 번역된 내용에 대한 정보가 포함되어 있습니다. 언어 설정 변경 방법에 대해서도 자세히 알아볼 수 있습니다. 
 
 ## <a name="languages"></a>언어
 
@@ -69,7 +68,7 @@ Dynamics 365 Customer Insights에 대한 대상 그룹 인사이트는 여러 �
 
 ## <a name="whats-translated"></a>번역된 내용
 
-앱은 언어 기본 설정을 사용하여 메뉴, 레이블 텍스트 및 시스템 메시지와 같은 요소를 기본 언어로 표시합니다.
+Customer Insights에서는 언어 기본 설정을 사용하여 메뉴, 레이블 텍스트 및 시스템 메시지와 같은 요소를 기본 설정 언어로 표시합니다.
 
 대부분의 기능은 데이터를 기반으로 하기 때문에 일부 항목은 원래 언어로 유지됩니다. 예:
 

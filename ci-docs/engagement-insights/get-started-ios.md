@@ -4,17 +4,17 @@ description: iOS SDK를 개인화하고 실행하는 방법 알아보기
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: de8291fc429ae6433301a47bfdf9a3271b1b77294fd58448c7aa6bd0783edc97
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f05929435eeee9cf3f891ab18842c5861e39d5ba
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036881"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494238"
 ---
 # <a name="get-started-with-the-ios-sdk"></a>iOS SDK로 시작하기
 
@@ -45,11 +45,36 @@ ms.locfileid: "7036881"
 
 - 기존 작업 영역이없는 경우 **새 작업 영역** 을 선택하고 단계에 따라 [새 작업 영역](create-workspace.md)을 만듭니다.
 
+- 작업 영역을 만든 후 **관리자** > **작업 영역** 으로 이동한 후 **설치 가이드** 를 선택합니다.
+
 ## <a name="configure-the-sdk"></a>SDK 구성
 
-SDK를 다운로드하면 Xcode에서 SDK로 작업하여 이벤트를 활성화하고 정의할 수 있습니다.
+SDK를 다운로드하면 Xcode에서 SDK로 작업하여 이벤트를 활성화하고 정의할 수 있습니다. 이렇게 하는 방법은 두 가지가 있습니다.
 
-1. 작업 영역을 만든 후 **관리자** > **작업 영역** 으로 이동한 후 **설치 가이드** 를 선택합니다.
+### <a name="option-1-using-cocoapods-recommended"></a>옵션 1: CocoaPods 사용(권장)
+CocoaPods은 Swift 및 Objective-C Cocoa 프로젝트의 종속성 관리자입니다. 이를 사용하면 iOS용 참여 인사이트 SDK를 더 쉽게 통합할 수 있습니다. 또한 CocoaPods를 통해 참여 인사이트 SDK의 최신 버전으로 업그레이드할 수 있습니다. CocoaPods을 사용하여 참여 인사이트 SDK를 Xcode 프로젝트에 통합하는 방법은 다음과 같습니다. 
+
+1. CocoaPods을 설치합니다. 
+
+1. 프로젝트의 루트 디렉터리에 Podfile이라는 새 파일을 만들고 여기에 다음 문을 추가합니다. YOUR_TARGET_PROJECT_NAME을 Xcode 프로젝트의 이름으로 바꿉니다. 
+```objectivec
+platform :ios, '9.0'  
+
+ target '${YOUR_TARGET_PROJECT_NAME}' do 
+
+     use_frameworks!   
+
+     pod 'EIObjC.framework.debug' 
+
+     pod 'EIObjC.framework.release' 
+
+ end 
+```
+위의 Pod 구성에는 SDK의 디버그 및 릴리스 버전이 모두 포함되어 있습니다. 프로젝트에 가장 적합한 것을 선택하십시오.
+
+1. 다음 명령을 실행하여 Pod을 설치하십시오: `pod install --repo-update `
+
+### <a name="option-2-using-download-link"></a>옵션 2: 다운로드 링크 사용
 
 1. [참여 인사이트 iOS SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-ios-sdk.zip)를 다운로드하고 `EIObjC.xcframework` 파일을 `Frameworks` 폴더에 배치합니다.
 

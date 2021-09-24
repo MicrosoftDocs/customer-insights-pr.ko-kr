@@ -1,20 +1,20 @@
 ---
 title: 고객 활동
-description: 고객 활동을 정의하고 고객 시간 표시줄에서 봅니다.
-ms.date: 04/07/2021
+description: 고객 활동을 정의하고 고객 프로필의 타임라인에서 볼 수 있습니다.
+ms.date: 09/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
-author: MichelleDevaney
-ms.author: midevane
+author: CadeSanthaMSFT
+ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: 6ebe899d3e3da43c4108678cd2e4f9a986e18ab35e839044becab4619adb0f14
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c5697df8a7d011c70384c8bc5e4773d7fcc25a62
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033639"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494419"
 ---
 # <a name="customer-activities"></a>고객 활동
 
@@ -60,12 +60,15 @@ Dynamics 365 Customer Insights에 [다양한 데이터 소스](data-sources.md)�
       - **추가 세부 정보**: 이 활동에 대한 관련 정보가 있는 필드입니다.
       - **아이콘**: 이 활동 유형을 가장 잘 나타내는 아이콘입니다.
       - **웹 주소**: 이 활동에 대한 정보가 있는 URL이 포함된 필드입니다. 예를 들어 이 활동을 제공하는 트랜잭션 시스템입니다. 이 URL은 데이터 원본의 모든 필드이거나 파워 쿼리 변환을 사용하여 새 필드로 구성될 수 있습니다. URL 데이터는 [API](apis.md)를 사용하여 다운스트림에서 소비될 수 있는 *통합 활동* 엔터티에 저장됩니다.
-   
-   :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="통합 활동 엔터티에서 고객 활동 데이터를 지정합니다.":::
+
+   - **타임라인에 표시**
+      - 고객 프로필의 타임라인 보기에 이 활동을 표시할 항목을 선택합니다. 타임라인에 활동을 표시하려면 **예** 를 선택하고 숨기려면 **아니요** 를 선택합니다.
+
+      :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="통합 활동 엔터티에서 고객 활동 데이터를 지정합니다.":::
 
 1. 다음 단계로 이동하려면 **다음** 을 선택하세요. **완료 및 검토** 를 선택하여 활동 유형을 **기타** 로 설정한 상태로 지금 활동을 저장할 수 있습니다. 
 
-1. **활동 유형** 단계에서 활동 유형을 선택하고 선택적으로 Customer Insights의 다른 영역에서 사용하기 위해 일부 활동 유형을 의미론적으로 매핑하려는 경우 선택합니다. 현재 *구독* 과 *SalesOrderLine* 활동 유형은 필드 매핑에 동의한 후 의미론적으로 매핑될 수 있습니다. 활동 유형이 새 활동과 관련이 없는 경우 사용자 지정 활동 유형에 *기타* 또는 *새로 만들기* 를 선택할 수 있습니다.
+1. **활동 유형** 단계에서 활동 유형을 선택하고 선택적으로 Customer Insights의 다른 영역에서 사용하기 위해 일부 활동 유형을 의미론적으로 매핑하려는 경우 선택합니다. 현재 *피드백*, *충성도*, *SalesOrder*, *SalesOrderLine* 및 *구독* 활동 유형은 필드 매핑에 동의한 후 의미적으로 매핑될 수 있습니다. 활동 유형이 새 활동과 관련이 없는 경우 사용자 지정 활동 유형에 *기타* 또는 *새로 만들기* 를 선택할 수 있습니다.
 
 1. 다음 단계로 이동하려면 **다음** 을 선택하세요. 
 

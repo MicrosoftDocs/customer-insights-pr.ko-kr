@@ -9,12 +9,12 @@ ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 3aa9599fc780098a2f7f31f0210d76ed2ef27ece774dd6212b5cb2a599ad537e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: bf2ec67c9fb99918b87841d3c0b131934e31b58b
+ms.sourcegitcommit: 0ceb46c4f57ab49d3a2ebb1c8a816bbafe979e3d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033960"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7486128"
 ---
 # <a name="out-of-box-profile-reports"></a>기본 프로필 보고서
 
@@ -31,7 +31,7 @@ ms.locfileid: "7033960"
 
 ## <a name="enable-the-customer-profile-report"></a>고객 프로필 보고서 사용
 
-환경 관리자는 [대상 그룹 인사이트에 연결](configure-connections.md)해야 합니다.
+환경 관리자는 [참여 인사이트와 대상 그룹 인사이트를 연결](integrate-audience-insights-engagement-insights.md)해야 합니다.
 
 연결 세부 정보를 지정한 후 관리자는 조직의 다른 사용자에게 보고서를 볼 수 있는 액세스 권한을 부여할 수 있습니다. 연결을 설정하는 환경 관리자는 자동으로 보고서에 액세스할 수 있습니다. 
 

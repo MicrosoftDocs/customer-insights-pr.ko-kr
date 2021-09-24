@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 726edb19a9fd97d80ae357103dc7d48ed38b005131ad44137b47d629a1c60b12
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 45c81a037258e42d8975e0372c104865a9d4cbfe
+ms.sourcegitcommit: 2acda3c5adf40bc3f5bbb4b2b4b6c22f84371da7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033869"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466632"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>브랜드 및 관심 관계로 풍부한 고객 프로필 강화(미리 보기)
 
@@ -126,6 +126,8 @@ Microsoft의 온라인 검색 데이터를 사용하여 다양한 인구 통계 
 :::image type="content" source="media/my-enrichments.png" alt-text="보강 프로세스를 실행한 후 결과 미리 보기.":::
 
 차트에서 **보강된 데이터 보기** 를 선택하여 풍부한 데이터를 검토합니다. 브랜드에 대한 보강 데이터는 **BrandAffinityFromMicrosoft** 엔터티로 이동합니다. 관심 분야에 대한 데이터는 **InterestAffinityFromMicrosoft** 엔터티에 있습니다. 이 엔터티는 **데이터** > **엔터티** 의 **보강** 그룹에 나열됩니다.
+
+시간 경과에 따라 보강된 고객 프로필 수가 포함된 차트와 보강된 엔터티의 미리 보기가 표시됩니다. 보강된 엔터티를 열려면 미리 보기 타일에서 **자세히 보기** 를 선택합니다.
 
 ## <a name="see-enrichment-data-on-the-customer-card"></a>고객 카드의 보강 데이터 보기
 

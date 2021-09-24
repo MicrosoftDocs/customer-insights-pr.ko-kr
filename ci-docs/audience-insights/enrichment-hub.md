@@ -1,7 +1,7 @@
 ---
 title: 통합 고객 프로필 보강
 description: 기능을 사용하여 고객 데이터를 보강합니다.
-ms.date: 07/01/2021
+ms.date: 08/31/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: a64bbd754d4013d0a6243074ac9f55991547be82b269047a9937b583baf98697
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
+ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032536"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "7470000"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>고객 프로필 보강(미리 보기)
 
@@ -29,6 +29,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 **검색** 탭에서 다음과 같은 기능이 보강됩니다.
 
+- Microsoft 제공 [Azure Maps](enrichment-azure-maps.md)
 - Microsoft에서 제공한 [브랜드](enrichment-microsoft.md)
 - Microsoft에서 제공한 [관심사](enrichment-microsoft.md)
 - Microsoft 제공 [향상된 주소](enrichment-enhanced-addresses.md)
@@ -62,5 +63,17 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 ## <a name="multiple-enrichments-of-the-same-type"></a>동일한 유형의 여러 보강
 
 보강할 엔터티는 보강 구성 중에 지정되므로 프로필의 하위 집합만 보강할 수 있습니다. 예를 들어 특정 세그먼트에 대해서만 데이터를 보강합니다. 동일한 유형의 여러 보강을 구성하고 동일한 연결을 재사용할 수 있습니다. 일부 보강에는 만들 수 있는 동일한 유형의 보강 수에 제한이 있습니다. 제한과 현재 사용은 **보강** 페이지에서 확인할 수 있습니다.
+
+## <a name="see-the-progress-of-the-enrichment-process"></a>보강 프로세스의 진행 상황 보기
+
+새로 고치는 동안 또는 새로 고침이 완료된 후 상태 및 잠재적 문제를 포함하여 보강 처리에 대한 세부 정보를 찾을 수 있습니다. 보강을 새로 고치는 데 관련된 프로세스와 프로세스를 실행하는 데 걸린 시간을 이해합니다. 보강 상태는 Experian, Leadspace, HERE Technologies, SFTP Import 및 Azure Maps에 대해 지원됩니다.
+
+보강 상태를 보는 방법
+
+1. **데이터** > **보강** 으로 이동합니다. 
+1. **내 보강** 탭에서 보강 상태를 선택하여 측면 창을 엽니다. 
+1. **진행 세부 정보** 창에서 **보강** 섹션을 확장합니다. 
+1. 진행 상황을 확인하려는 보강 아래에서 **세부 정보 보기** 를 선택합니다. 
+1. **작업 세부 정보** 창에서 **세부 정보 표시** 를 선택하여 보강 및 해당 상태 업데이트와 관련된 프로세스를 확인합니다. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

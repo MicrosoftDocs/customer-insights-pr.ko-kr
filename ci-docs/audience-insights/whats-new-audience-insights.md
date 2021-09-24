@@ -1,7 +1,7 @@
 ---
 title: 신규 및 향후 기능
 description: 새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.
-ms.date: 07/19/2021
+ms.date: 08/31/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 3412213bcf3a4174baf28c6b4d38f5febded18707c355d236d5082698c4c0db7
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fcc45c24e9d89516dba9964ee16f57caf439eff0
+ms.sourcegitcommit: 2abe9b661b8c3c01e9730c629e383402e3f6a655
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035971"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465213"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트의 새로운 기능
 
@@ -26,6 +26,15 @@ ms.locfileid: "7035971"
 
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하십시오.
+
+## <a name="august-2021-updates"></a>2021년 8월 업데이트
+
+2021년 7월과 8월 업데이트에는 새로운 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="extensibility"></a>확장성
+
+- **Klaviyo로 세그먼트 내보내기** [Klaviyo를 포함하도록 내보내기 대상을 확장](export-klaviyo.md)했습니다. 이제 세그먼트를 내보내 캠페인을 만들고 이메일 마케팅을 수행하고 Klaviyo로 특정 고객 그룹을 사용할 수 있습니다. 
+
 
 ## <a name="june-2021-updates"></a>2021년 6월 업데이트
 

@@ -1,19 +1,19 @@
 ---
 title: 대상 그룹 인사이트와 참여 인사이트 사이에 링크 만들기
 description: 대상 그룹 인사이트와 참여 인사이트 사이에 활성 링크를 만들어 양방향 데이터 공유를 가능하게 합니다.
-ms.date: 07/22/2021
+ms.date: 09/08/2021
 ms.service: customer-insights
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 870209a7e19fec464ec41462a02365771bd653bd
-ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
+ms.openlocfilehash: 0fdbc93292291814b2e1a62fee2c5ff796ae14e2
+ms.sourcegitcommit: 4e5b7ec50c7612765a9ec2c8673e0cc43b357abb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "7461021"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7487115"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>대상 그룹 인사이트와 참여 인사이트 사이에 링크 만들기
 
@@ -26,14 +26,14 @@ ms.locfileid: "7461021"
 ## <a name="prerequisites"></a>필수 조건
 
 - 대상 그룹 인사이트 프로필은 자체 Azure Data Lake Storage 계정 또는 [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash;관리형 데이터 레이크에 저장해야 합니다. 
-
+- 대상 그룹 인사이트 환경에는 연결된 Dataverse 환경이 있어야 합니다. 또한 해당 환경에서 데이터 저장을 위해 Dataverse을 사용하는 경우 대상 그룹 인사이트에서 **데이터 공유 활성화** 옵션을 선택해야 합니다. 자세한 정보는 [대상 그룹 인사이트에서 유료 환경 만들기 및 구성](../audience-insights/get-started-paid.md)를 참조하십시오.
 - 참여 인사이트와 대상 그룹 인사이트 환경 모두에 관리자 권한이 필요합니다.
-
 - 연결된 환경은 동일한 지리적 지역에 있어야 합니다.
 
 > [!NOTE]
 > - 대상 그룹 인사이트 구독이 내부적으로 관리형 데이터 레이크의 대상 그룹 인사이트를 사용하는 평가판인 경우 [pirequest@microsoft.com](mailto:pirequest@microsoft.com)에 문의하여 도움을 받으십시오. 
-> - 대상 그룹 인사이트 환경에서 자체 Azure Data Lake Storage을 사용하여 데이터를 저장하는 경우 스토리지 계정에 참여 인사이트 Azure 서비스 주체를 추가해야 합니다. 자세한 내용은 [대상 그룹 인사이트를 위해 Azure 서비스 주체를 사용하여 Azure Data Lake Storage 계정에 연결](../audience-insights/connect-service-principal.md)을 참고하십시오. 또한 대상 그룹 인사이트 환경에는 연결된 [Dataverse 환경](../audience-insights/get-started-paid.md)이 있어야 합니다. 
+> - 대상 그룹 인사이트 환경에서 자체 Azure Data Lake Storage을 사용하여 데이터를 저장하는 경우 스토리지 계정에 참여 인사이트 Azure 서비스 주체를 추가해야 합니다. 자세한 내용은 [대상 그룹 인사이트를 위해 Azure 서비스 주체를 사용하여 Azure Data Lake Storage 계정에 연결](../audience-insights/connect-service-principal.md)을 참고하십시오. 
+
 
 ## <a name="create-an-environment-link"></a>환경 링크 만들기
 
@@ -75,6 +75,7 @@ ms.locfileid: "7461021"
 
    > [!IMPORTANT]
    > 이 단계에서 사용자를 명시적으로 추가하지 않으면 참여 인사이트에서 데이터가 사용자에게 숨겨집니다.
+   > 대상 그룹 인사이트 세그먼트가 참여 인사이트에 표시되려면 먼저 [병합 및 다운스트림 프로세스를 실행](../audience-insights/merge-entities.md)해야 합니다. 다운스트림 프로세스는 참여 인사이트와 공유할 대상 그룹 인사이트 세그먼트를 준비하는 고유한 테이블을 생성하기 때문에 중요합니다. (시스템 새로 고침이 예약된 경우 다운스트림 프로세스가 자동으로 포함됩니다.)
 
 1. 선택한 사항을 검토한 다음 **마침** 을 선택하십시오.
 

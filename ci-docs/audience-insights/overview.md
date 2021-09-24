@@ -10,12 +10,12 @@ author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 15cc495359af1faefe32225ae490fd7e7b6b08cc7a411e0a9804da6ec704099c
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 925cb5c2ccb4279ae5db2eb927a356708d310360
+ms.sourcegitcommit: 048d65bded22abadcbbad1e22f15b05828bb977b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034368"
+ms.lasthandoff: 09/06/2021
+ms.locfileid: "7474065"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Dynamics 365 Customer Insights에 대한 대상 그룹 인사이트 개요
 
@@ -57,11 +57,5 @@ ms.locfileid: "7034368"
 
   - 사용자 지정 가능한 프로필을 작성하고 측정값을 정의하며 세그먼트를 만들고, 예측 분석의 이점을 활용하여 조직별 고객에 대한 360도 보기를 얻을 수 있습니다.  
   - 다수의 Microsoft 및 타사 응용 프로그램 또는 API에 대해 기본 제공 커넥터를 사용하여 인사이트를 처리합니다.
-
-## <a name="pricing-and-licensing"></a>가격 산정 및 라이선싱
-
-Customer Insights는 테넌트별로 라이선스가 부여되며 여러 기능을 포함합니다. 자격이 부여된 용량에는 프로필 집합, 일일 시스템 새로 고침, Power Platform 요청 및 두 가지 환경이 포함됩니다. 추가 용량과 라이선스를 구입하여 기본 할당량을 늘릴 수 있습니다. 
-- 자세한 용량 및 권한: [Dynamics 365 라이선스 가이드](https://go.microsoft.com/fwlink/?LinkId=866544)
-- 가격 개요: [Dynamics 365 가격](https://dynamics.microsoft.com/pricing/#CustomerDataPlatform)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

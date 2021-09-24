@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: Dynamics 365 Customer Insights 참여 인사이트 둘러보기(프리뷰) 기능
+title: Dynamics 365 Customer Insights의 참여 인사이트 기능(프리뷰)
 summary: 웹 사이트에 대한 데이터를 수집합니다. 사이트 전반의 고객 상호 작용 및 사용을 대화식으로 이해합니다. 참여 인사이트와 대상 그룹 인사이트 간의 심층 통합을 사용하여 고객 프로필 보고서로 실시간 행동 분석을 보강합니다. 웹 활동으로 고객 프로필을 보강하여 관련 고객 데이터와 함께 실시간 행동 데이터를 얻습니다. 고객 데이터에서 즉각적인 가치를 창출하도록 비즈니스를 혁신하세요.
 metadata:
   title: 참여 인사이트(프리뷰) 설명서
@@ -10,24 +10,24 @@ metadata:
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
-  ms.date: 07/30/2021
-  ms.openlocfilehash: 9951b1834d18acf0c4961a776d9d6247d4ae3505b5721a41314266e41f8ae928
-  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.date: 09/15/2021
+  ms.openlocfilehash: bf2e40b1ca304e7b26687eaff298d2e70615cd2b
+  ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 08/10/2021
-  ms.locfileid: "7036246"
+  ms.lasthandoff: 09/15/2021
+  ms.locfileid: "7494192"
 landingContent:
 - title: 정보
   linkLists:
   - linkListType: overview
     links:
-    - text: 기능 개요
+    - text: 기능 이점
       url: overview.md
-    - text: 사용 약관 및 개념
+    - text: 용어집
       url: glossary.md
-    - text: 참여 인사이트 검색
-      url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+    - text: 신규 및 업데이트된 기능
+      url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 - title: 온보딩
   linkLists:
   - linkListType: how-to-guide
@@ -38,28 +38,30 @@ landingContent:
       url: create-workspace.md
     - text: 웹 사이트 계측
       url: instrument-website.md
-- title: '보고서 '
+- title: 보고서 보기 및 필터링
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: 보고서 보기
       url: view-reports.md
-    - text: 사용자 지정 보고서 만들기
-      url: custom-reports.md
     - text: 통합 프로필 보고서 보기
       url: profile-reports.md
-    - text: 유입 경로 보고서 만들기
-      url: funnel-reports.md
-- title: 이벤트
+    - text: 대상 그룹 세그먼트를 사용하여 보고서 필터링
+      url: integrate-audience-insights-segments.md
+- title: 분석
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: 유입 경로 보고서 만들기
+      url: funnel-reports.md
+    - text: 행동 데이터 분석
+      url: curate-dimensions.md
+    - text: 사용자 지정 보고서 만들기
+      url: custom-reports.md
     - text: 정교한 이벤트 만들기
       url: refined-events.md
     - text: 내보내기 이벤트
       url: export-events.md
-    - text: 개인 데이터 삭제 및 내보내기
-      url: delete-export-personal-data.md
 - title: 개발자 리소스
   linkLists:
   - linkListType: reference
@@ -81,6 +83,10 @@ landingContent:
     - text: 환경 및 작업 영역 관리
       url: manage-environments-workspaces.md
     - text: 대상 그룹 인사이트에 연결
-      url: configure-connections.md
+      url: integrate-audience-insights-engagement-insights.md
     - text: 쿠키 및 사용자 동의 관리
       url: user-consent-storage.md
+    - text: 개인 데이터 삭제 및 내보내기
+      url: delete-export-personal-data.md
+    - text: 서비스 한도
+      url: ../service-limits.md
