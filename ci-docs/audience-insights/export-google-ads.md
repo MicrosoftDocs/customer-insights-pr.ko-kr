@@ -1,7 +1,7 @@
 ---
 title: Google 광고로 Customer Insights 데이터 내보내기
 description: 연결을 구성하고 Google Ads로 내보내는 방법을 알아봅니다.
-ms.date: 03/03/2021
+ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,16 +9,19 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5977b3de9fbb0d97c0912e2ada6a313b0ab92498adf9cdbed48191c0e5143567
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c958f58c927b76364f305dad8f524dde29b2a638
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031665"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7558980"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Google Ads로 세그먼트 내보내기(프리뷰)
 
 통합 고객 프로필의 세그먼트를 Google Ads 대상 그룹 목록으로 내보내고 이를 사용하여 Google 검색, Gmail, YouTube 및 Google 디스플레이 네트워크에서 광고합니다. 
+
+> [!IMPORTANT]
+> 현재 승인된 Google Ads 개발자 토큰이 이미 있는 경우에만 새 연결을 만들고 Google Ads로 데이터를 내보낼 수 있습니다. 정책 변경으로 인해 Google Ads 내보내기가 곧 업데이트되고 경험의 연속성을 보장하고 Google Ads로 내보내기를 단순화하기 위해 개발자 토큰이 필요하지 않은 내보내기 옵션이 제공됩니다. 새 내보내기 옵션으로 쉽게 전환할 수 있도록 Google Ads에 대한 연결을 더 이상 설정하지 않는 것이 좋습니다.
 
 ## <a name="prerequisites-for-connection"></a>연결을 위한 전제 조건
 

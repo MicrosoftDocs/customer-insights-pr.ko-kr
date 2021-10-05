@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fdbc93292291814b2e1a62fee2c5ff796ae14e2
-ms.sourcegitcommit: 4e5b7ec50c7612765a9ec2c8673e0cc43b357abb
+ms.openlocfilehash: 8d93a49a29c29103e189a6d4a42294c18dc28abd
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7487115"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7559026"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>대상 그룹 인사이트와 참여 인사이트 사이에 링크 만들기
 
@@ -54,6 +54,9 @@ ms.locfileid: "7487115"
 ## <a name="enable-audience-insights-unified-profiles-attributes-and-segments"></a>대상 그룹 통찰 통합 프로필 특성 및 세그먼트 활성화
 
 환경을 연결한 후 연결된 환경에 대한 옵션 기능을 선택할 수 있습니다. 이러한 기능을 사용하면 고객 데이터에 대한 대화형 분석을 위해 대상 그룹 인사이트에서 통합된 프로필 속성 및 세그먼트를 사용할 수 있습니다.
+
+> [!IMPORTANT]
+> 대상 그룹 인사이트 세그먼트가 참여 인사이트에 표시되려면 먼저 [병합 및 다운스트림 프로세스를 실행](../audience-insights/merge-entities.md)해야 합니다. 다운스트림 프로세스는 참여 인사이트와 공유할 대상 그룹 인사이트 세그먼트를 준비하는 고유한 테이블을 생성하기 때문에 중요합니다. (시스템 새로 고침이 예약된 경우 다운스트림 프로세스가 자동으로 포함됩니다.)
 
 **참여 인사이트에서 웹 데이터를 분석하는 방법**
 

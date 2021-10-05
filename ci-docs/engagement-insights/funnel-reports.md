@@ -4,17 +4,17 @@ description: 유입 경로 보고서를 사용하여 대상 그룹이 결정하�
 ms.reviewer: mhart
 ms.author: kamacdon
 author: kamacdon
-ms.date: 09/17/2021
+ms.date: 09/21/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 901e7ec50037d66c7c5ceb635d1c6cda6cfff83b
-ms.sourcegitcommit: 3bafa27adae113948636b30c7462e0af060c7131
+ms.openlocfilehash: efb10f2664630a5851d9582ff09c378c01777b96
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "7498650"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7558928"
 ---
 # <a name="create-and-manage-funnel-reports"></a>퍼널 보고서 만들기 및 관리
 
@@ -163,13 +163,23 @@ ms.locfileid: "7498650"
 
 참여 인사이트는 이제 고객을 위한 유입 경로 인사이트를 제공합니다. 유입 경로 인사이트를 사용하여 유입 경로 보고서에서 단계에 대한 고객 행동에 대한 더 깊은 인사이트를 얻으십시오. 새 유입 경로 보고서를 만들고 저장하면 보고서에 대한 유입 경로 인사이트가 자동으로 생성됩니다. 
 
+:::image type="content" source="media/funnel-insights.png" alt-text="유입 경로 인사이트.":::
+
+> [!NOTE]
+> 유입 경로 인사이트는 사용자 지정 차원을 포함하지 **않은** 유입 경로 단계에 대해서만 생성할 수 있습니다. 유입 경로의 모든 단계에 유입 경로 인사이트를 생성하려면 참여 인사이트 기본 차원을 사용하여 유입 경로 단계를 생성합니다. 
+
 기본 및 단계 수준의 다음 범주에서 유입 경로 인사이트를 볼 수 있습니다. 
 
- - 전환율 
+ - 전환율
+ -    체크 아웃과 구매 사이의 전환율은 22%입니다.
  - 전환 시간 
+ -    장바구니에서 체크아웃 사이의 평균 전환 시간은 23분입니다. 
  - 완료 시간 
+ -    고객이 유입 경로를 완료하는 데 걸리는 평균 시간은 47분입니다. 
 
 이러한 인사이트를 사용하여 고객 행동을 더 깊이 탐색하고 유입 경로 보고서의 이탈 지점 및 전환을 더 잘 이해하십시오. 
+
+여러 단계의 인사이트를 비교하려면 인사이트 카드에서 **단계 분석 보기** 또는 **다른 단계와 비교** 를 선택합니다. 여기에는 유입 경로의 각 단계에 대한 메트릭을 비교하는 막대 그래프가 표시됩니다. 
 
 유입 경로 인사이트는 24시간마다 다시 계산되거나 유입경로 보고서를 **저장** 할 때 다시 계산됩니다. 
 

@@ -1,20 +1,20 @@
 ---
 title: 엔터티 및 엔터티 경로 간 관계
 description: 여러 데이터 원본의 항목 간에 관계를 만들고 관리합니다.
-ms.date: 06/01/2020
+ms.date: 09/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: MichelleDevaney
-ms.author: midevane
+author: CadeSanthaMSFT
+ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: 1853fcd8db2918a0b4a19fa0934e2f0ddbcf6d093c85fdf2068a13f954035dec
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c639cfca30cf1b57ada7d728311210b7210a37ac
+ms.sourcegitcommit: f72d5b86dfdc7282c6c1918b1ab3962d7a1c9852
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035239"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7557360"
 ---
 # <a name="relationships-between-entities"></a>엔터티 간 관계
 
@@ -93,11 +93,11 @@ ms.locfileid: "7035239"
 - **가로/세로 레이아웃으로 변경** : 엔터티 및 관계의 정렬 방식을 변경합니다.
 - **편집**: 편집 창에서 사용자 지정 관계의 속성을 업데이트하고 변경 사항을 저장합니다.
 
-### <a name="relationship-path"></a>관계 경로
+## <a name="relationship-paths"></a>관계 경로
 
-관계 경로는 소스 엔터티와 대상 엔터티 간에 관계로 연결된 엔터티를 설명합니다. 통합 프로필 엔터티 이외의 다른 엔터티를 포함하는 세그먼트 또는 측정값을 생성할 때 사용되며 통합 프로필 엔터티에 도달하기 위한 여러 옵션이 있습니다.
+관계 경로는 소스 엔터티와 대상 엔터티 간의 관계로 연결된 엔터티를 설명합니다. 통합 프로필 엔터티 이외의 다른 엔터티를 포함하는 세그먼트 또는 측정값을 생성할 때 사용되며 통합 프로필 엔터티에 도달하기 위한 여러 옵션이 있습니다. 
 
-관계 경로는 시스템에 관계가 통합 프로필 엔터티에 액세스하도록 알려줍니다. 다른 관계 경로는 다른 결과를 산출할 수 있습니다.
+관계 경로는 통합 프로필 엔터티에 액세스할 관계를 시스템에 알려줍니다. 다른 관계 경로는 다른 결과를 산출할 수 있습니다.
 
 예를 들어 *eCommerce_eCommercePurchases* 엔터티는 통합 프로필 *고객* 엔터티에 대해 다음과 같은 관계를 갖습니다.
 
@@ -106,6 +106,42 @@ ms.locfileid: "7035239"
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > 고객 
 
 관계 경로는 측정값 또는 세그먼트에 대한 규칙을 생성할 때 사용할 수 있는 엔터티를 결정합니다. 가장 긴 관계 경로가 있는 옵션을 선택하면 일치하는 레코드가 모든 엔터티의 일부가 되어야 하기 때문에 더 적은 결과를 얻을 수 있습니다. 이 예에서 고객은 판매 시점(POS_posPurchases)에서 전자 상거래(eCommerce_eCommercePurchases)를 통해 상품을 구매하고 로열티 프로그램(loyaltyScheme_loyCustomers)에 참여해야 합니다. 첫 번째 옵션을 선택하면 고객이 하나의 추가 엔터티에만 있으면 되므로 더 많은 결과를 얻을 수 있습니다.
+
+### <a name="direct-relationship"></a>직접 관계
+
+소스 엔터티가 하나의 관계만 있는 대상 엔터티와 관련된 경우 관계는 **직접 관계** 로 분류됩니다.
+
+예를 들어 *eCommerce_eCommercePurchases* 라는 활동 엔터티가 *ContactId* 를 통해서만 대상 엔터티 *eCommerce_eCommerceContacts* 엔터티에 연결하는 경우 직접 관계입니다.
+
+:::image type="content" source="media/direct_Relationship.png" alt-text="소스 엔터티가 대상 엔터티에 직접 연결됩니다.":::
+
+#### <a name="multi-path-relationship"></a>다중 경로 관계
+
+**다중 경로 관계** 는 원본 엔터티를 둘 이상의 대상 엔터티에 연결하는 특별한 유형의 직접 관계입니다.
+
+예를 들어 *eCommerce_eCommercePurchases* 라는 활동 엔터티가 *eCommerce_eCommerceContacts* 및 *loyaltyScheme_loyCustomers* 의 두 대상 엔터티와 관련된 경우 다중 경로 관계입니다.
+
+:::image type="content" source="media/multi-path_relationship.png" alt-text="소스 엔터티는 다중 홉 관계를 통해 둘 이상의 대상 엔터티에 직접 연결합니다.":::
+
+### <a name="indirect-relationship"></a>간접 관계
+
+소스 엔터티가 대상 엔터티와 관련되기 전에 하나 이상의 추가 엔터티와 관련되는 경우 관계는 **간접 관계** 로 분류됩니다.
+
+#### <a name="multi-hop-relationship"></a>다중 홉 관계
+
+*다중 홉 관계* 는 *간접 관계* 로 하나 이상의 다른 중간 엔티티를 통해 소스 엔티티를 대상 엔티티에 연결할 수 있습니다.
+
+예를 들어 *eCommerce_eCommercePurchasesWest* 라는 활동 엔터티가 *eCommerce_eCommercePurchasesEast* 라는 중간 엔터티에 연결한 다음 *eCommerce_eCommerceContacts* 라는 대상 엔터티에 연결하는 경우 다중 홉 관계입니다.
+
+:::image type="content" source="media/multi-hop_relationship.png" alt-text="원본 엔터티는 중간 엔터티를 사용하여 대상 엔터티에 직접 연결합니다.":::
+
+### <a name="multi-hop-multi-path-relationship"></a>다중 홉, 다중 경로 관계
+
+다중 홉 및 다중 경로 관계를 함께 사용하여 **다중 홉, 다중 경로 관계** 를 생성할 수 있습니다. 이 특수 유형은 **다중 홉** 및 **다중 경로 관계** 의 기능을 결합합니다. 중간 엔터티를 사용하는 동안 둘 이상의 대상 엔터티에 연결할 수 있습니다.
+
+예를 들어 *eCommerce_eCommercePurchasesWest* 라는 활동 엔티티가 *eCommerce_eCommercePurchasesEast* 라는 중간 엔티티에 연결한 다음 *eCommerce_eCommerceContacts* 및 *loyaltyScheme_loyCustomers* 라는 두 개의 대상 엔티티에 연결하는 경우 이는 다중 홉, 다중 경로 관계입니다.
+
+:::image type="content" source="media/multi-hop_multi-path_relationship.png" alt-text="소스 엔터티는 한 대상 엔터티에 직접 연결하고 중간 엔터티를 통해 다른 대상 엔터티에 연결합니다.":::
 
 ## <a name="manage-existing-relationships"></a>기존 관계 관리 
 
