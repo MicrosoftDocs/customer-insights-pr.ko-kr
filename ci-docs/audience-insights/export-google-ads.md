@@ -9,12 +9,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c958f58c927b76364f305dad8f524dde29b2a638
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: ce9579f3d31207e666665237fd8935bb86889f8d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7558980"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617931"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Google Ads로 세그먼트 내보내기(프리뷰)
 
@@ -35,9 +35,9 @@ ms.locfileid: "7558980"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- Google 광고로 내보낼 때마다 프로필이 최대 100만 개입니다.
+- Google Ads로 내보낼 때마다 최대 100만 개의 고객 프로필이 생성됩니다.
 - Google 광고로 내보내기는 세그먼트로 제한됩니다.
-- 총 100만 개의 프로필이 있는 세그먼트를 내보내는 것은 공급자측의 제한으로 인해 최대 5분이 걸릴 수 있습니다. 
+- 공급자 측의 제한으로 인해 총 100만 개의 고객 프로필이 포함된 세그먼트를 내보내는 데 최대 5분이 걸릴 수 있습니다. 
 - Google 광고에서 일치하는 데 최대 48시간이 걸릴 수 있습니다.
 
 ## <a name="set-up-connection-to-google-ads"></a>Google Ads 연결 설정
@@ -74,7 +74,7 @@ ms.locfileid: "7558980"
 
 1. **[Google 광고 대상 그룹 ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** 를 입력하고 **연결** 을 선택하여 Google 광고 연결을 초기화합니다.
 
-1. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다.
+1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다.
 
 1. 내보낼 세그먼트를 선택합니다. 총 100만 개의 고객 프로필을 Google 광고로 내보낼 수 있습니다.
 

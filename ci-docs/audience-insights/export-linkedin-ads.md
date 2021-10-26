@@ -1,7 +1,7 @@
 ---
 title: Customer Insights 데이터를 LinkedIn Ads로 내보내기
 description: 연결을 구성하고 LinkedIn Ads로 내보내는 방법을 알아봅니다.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 2cfaa37fd0ac697f29665792bab27a925d8ea1eede0519d424524a7e5accbfeb
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034231"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618299"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>LinkedIn Ads로 세그먼트 내보내기(프리뷰)
 
@@ -28,9 +28,9 @@ ms.locfileid: "7034231"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- LinkedIn Ads로 내보낼 때마다 최대 10만 개의 프로필을 내보낼 수 있습니다.
+- LinkedIn Ads로 내보낼 때마다 고객 프로필을 최대 10만 개까지 내보낼 수 있습니다.
 - LinkedIn Ads로 내보내기는 세그먼트로 제한됩니다.
-- 최대 10만 개의 프로필을 LinkedIn Ads으로 내보내는 데 최대 10분이 걸릴 수 있습니다. 
+- 최대 10만 개의 고객 프로필을 LinkedIn Ads로 내보내려면 최대 10분이 소요될 수 있습니다. 
 
 ## <a name="set-up-the-connection-to-linkedin-ads"></a>LinkedIn Ads에 대한 연결 설정하기
 
@@ -66,7 +66,7 @@ ms.locfileid: "7034231"
 
 1. LinkedIn에서 [연락처 타겟팅](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) 또는 [회사 타겟팅](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting)을 수행하기 위해 데이터를 내보낼지 여부를 선택합니다. 
 
-1. **데이터 매칭** 섹션에서 고객의 이메일 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. LinkedIn Ads로 세그먼트를 내보내야 합니다.
+1. **데이터 일치** 섹션에서 연락처 타겟팅의 경우 고객의 이메일 주소, Apple Ad ID, Google Ad ID, Google 사용자 ID 또는 성과 이름을 나타내는 필드를 하나 이상 선택합니다. 회사 타겟팅을 선택하는 경우 회사 이름, 이메일 도메인, LinkedIn 페이지 URL, 주식 종목 또는 웹 사이트를 나타내는 필드를 하나 이상 선택합니다. 추가 필드를 선택하여 내보내기를 추가로 정의할 수 있습니다. 
 
 1. 내보낼 세그먼트를 선택합니다. 내보내기 위해 선택한 세그먼트의 이름으로 LinkedIn Campaign Manager의 Matched Audiences가 자동으로 생성됩니다. 각 세그먼트는 별도의 Matched Audience를 생성합니다. 
 

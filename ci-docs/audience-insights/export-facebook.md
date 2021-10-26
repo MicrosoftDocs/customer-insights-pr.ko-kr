@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 34dc753aa9d2420ef8780d436e14c3c27377e4779eda0f83ca6b5424f2328f22
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 4403c6f535f5dc60919be3717073d52640bbe61a
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031436"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619219"
 ---
 # <a name="export-segments-list-to-facebook-ads-manager-preview"></a>Facebook 광고 관리자로 세그먼트 목록 내보내기(프리뷰)
 
@@ -30,7 +30,7 @@ ms.locfileid: "7031436"
 - Facebook 광고 관리자로 내보내기당 최대 1,000만 개의 고객 프로필을 내보낼 수 있습니다.
 - Facebook 광고 관리자에게 내보내기는 세그먼트로 제한됩니다.
 - Facebook에서 *고객 목록* 유형의 사용자 지정 대상만 만들거나 업데이트합니다.
-- 총 1,000만 개의 프로필이 있는 세그먼트 내보내기를 완료하는 데 최대 90분이 걸릴 수 있습니다.
+- 총 1,000만 개의 고객 프로필이 포함된 세그먼트를 내보내는 데 최대 90분이 걸릴 수 있습니다.
 
 ## <a name="set-up-connection-to-facebook-ads-manager"></a>Facebook 광고 관리자 연결 설정
 

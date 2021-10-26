@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b67aa7477033222b0bc9512a962a1580edd973b4882ce925620ff5ec14f83fe3
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fa1d4ffd9f77e128b5d804e4562e964561f4684f
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032720"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618713"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>사용자 지정 데이터로 고객 프로필 보강(미리 보기)
 
@@ -44,6 +44,8 @@ SFTP 사용자 지정 가져오기를 구성하려면 다음 전제 조건이 �
 1.  **다음** 을 선택한 후 가져올 데이터 파일의 **경로** 및 **파일 이름** 을 입력합니다.
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="데이터 위치 입력 시 스크린 샷.":::
+
+1. **다음** 을 선택하고 고객 데이터 세트를 선택합니다. 모든 고객 프로필 또는 세그먼트일 수 있습니다.
 
 1. **다음** 을 선택하고 보강 이름과 출력 엔터티 이름을 제공합니다. 
 
@@ -123,6 +125,6 @@ SFTP 서버에서 가져올 파일이 포함된 디렉터리에는 *model.json* 
 
 ## <a name="next-steps"></a>다음 단계
 
-보강된 고객 데이터를 바탕으로 구축합니다. [세그먼트](segments.md) 및 [측정값](measures.md)을 만들고 [데이터 내보내기](export-destinations.md) 를 통해 고객에게 개인화된 경험을 제공합니다.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

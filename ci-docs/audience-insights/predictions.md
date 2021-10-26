@@ -9,12 +9,12 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6ce72486faa97e6f630a991044ca5e6d4714d0b8b8395a60fad12f3e3a49fa29
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 7ca42334420a27a8739d7c28bb72606c3ed91f3c
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032443"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645042"
 ---
 # <a name="complete-your-partial-data-with-predictions"></a>예측으로 부분 데이터 완성
 
@@ -35,7 +35,7 @@ ms.locfileid: "7032443"
 
 2. 대상 그룹 인사이트 환경은 Dataverse 인스턴스에 연결됩니다.
 
-[새 환경을 만드는](get-started-paid.md) 경우 **환경 만들기** 대화 상자에서 환경을 구성하고 **고급** 을 선택합니다. 이미 환경을 만든 경우 해당 설정으로 이동하여 **고급** 을 선택합니다. 어느 쪽이든 **예측 사용** 섹션에서 환경을 연결하려는 Dataverse 인스턴스 URL을 입력합니다.
+자세한 내용은 [새 환경 만들기](create-environment.md)를 참조하세요.
 
 ## <a name="create-a-prediction-in-the-customer-entity"></a>고객 엔터티에서 예측 만들기
 

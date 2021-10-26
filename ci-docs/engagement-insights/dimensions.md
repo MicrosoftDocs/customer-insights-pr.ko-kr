@@ -4,17 +4,17 @@ description: 차원을 만들고 편집 및 삭제하는 방법.
 ms.reviewer: mhart
 ms.author: jusali
 author: jusali
-ms.date: 06/09/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: b575c5e84197d76f53a722bac60c5af928c917f9671720ede1de38c4a7478be4
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 136da1e1265c7087d861712d34d011b09cb60ad5
+ms.sourcegitcommit: 565637f49cbdd05a82f42784f594c19cac299140
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034005"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "7623640"
 ---
 # <a name="view-and-create-dimensions"></a>차원 보기 및 만들기
 
@@ -22,7 +22,7 @@ ms.locfileid: "7034005"
 
 차원은 데이터를 설명, 필터링 또는 그룹화할 수 있는 이벤트 속성입니다. 웹 사이트에서 마케팅 프로모션을 진행하는 경우 차원을 사용하여 신규 및 재방문 사용자별로 방문자를 정렬할 수 있습니다.  
 
-참여 인사이트에는 이벤트 속성에 대한 기본 차원이 포함됩니다. 예는 다음과 같습니다.
+참여 인사이트에는 이벤트 속성에 대한 OOB(기본) 차원이 포함됩니다. 예는 다음과 같습니다.
 
 - 브라우저 이름
 - 페이지 이름
@@ -44,17 +44,21 @@ ms.locfileid: "7034005"
 시스템 생성 차원 외에도 환경 및 작업 영역 관리자는 사용자 지정 차원을 생성할 수 있습니다. 사용자 지정 차원은 기본 이벤트의 기본 속성을 기반으로 하거나 [이벤트의 사용자 지정 속성](advanced-SDK-implementation.md)을 사용할 수 있습니다.
 
 1. **데이터** > **차원** 으로 이동합니다.
-1. **차원 추가** 를 선택합니다.
+1. **새 차원** 을 선택합니다.
 
    :::image type="content" source="media/add-dimension.png" alt-text="이벤트에 차원 추가.":::
 
 1. **차원 만들기** 창에서 차원의 기준이 될 속성을 선택합니다. 속성 목록에는 차원에 할당되지 않은 작업 영역의 모든 속성이 표시됩니다.
-1. **표시 이름** 상자에 이름을 입력합니다. 선택적으로 설명을 추가할 수 있습니다.
-1. **만들기** 를 선택하여 차원을 저장합니다. [사용자 지정 보고서](custom-reports.md) 또는 [세그먼트](segments.md)에서 차원을 사용하려면 최대 1분이 걸릴 수 있습니다. 
+   
+   :::image type="content" source="media/create-new-dimension.png" alt-text="새 차원 만들기.":::
+      
+3. **표시 이름** 상자에 이름을 입력합니다. 선택적으로 **설명** 을 추가할 수 있습니다.
+4. **만들기** 를 선택하여 차원을 저장합니다. [사용자 지정 보고서](custom-reports.md) 또는 [세그먼트](segments.md)에서 차원을 사용하려면 최대 1분이 걸릴 수 있습니다. 
 
 ## <a name="edit-a-dimension"></a>차원 편집
 
-차원의 이름과 설명을 변경할 수 있습니다.
+차원의 이름과 설명을 변경할 수 있습니다. 사용자가 만든 차원만 편집할 수 있지만 시스템 차원은 편집할 수 없습니다.
+
 
 1. **데이터** > **차원** 으로 이동합니다.
 1. 삭제하려는 차원을 선택합니다.

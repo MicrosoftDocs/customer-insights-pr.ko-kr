@@ -1,7 +1,7 @@
 ---
-title: 데이터 통합 시 엔터티 매핑
-description: 데이터를 매핑하여 통합 고객 프로필을 만듭니다.
-ms.date: 09/25/2020
+title: 데이터 통합을 위한 매핑 엔터티 및 특성
+description: 엔터티, 특성, 기본 키 및 의미 체계 유형을 선택하여 데이터를 통합 고객 프로필에 매핑합니다.
+ms.date: 10/18/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,12 +9,14 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 570683876b10cb83d8af14552ca9bea9d80613575005d49a9af37cc16b8e75c9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+searchScope:
+- ci-map
+ms.openlocfilehash: 7ee3feea8423f35f32ff471b3ed8eb3447584089
+ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034414"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7648170"
 ---
 # <a name="map-entities-and-attributes"></a>엔터티 및 특성 매핑
 

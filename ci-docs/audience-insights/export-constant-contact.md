@@ -1,7 +1,7 @@
 ---
 title: Customer Insights 데이터를 Constant Contact로 내보내기
 description: 연결을 구성하고 Constant Contact로 내보내는 방법을 알아봅니다.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 30dfe4d6c2374ba9979827ea70a71c52a1334b45dd3e36ccb1de90fae0c61ad9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b25e4f11e21d059c2d867e925c0ae5635a87addc
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031849"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619127"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>Constant Contact로 세그먼트 내보내기(프리뷰)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7031849"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- Constant Contact로 내보낼 때마다 최대 1백만 개의 프로필을 내보낼 수 있습니다.
+- Constant Contact로 내보낼 때마다 고객 프로필을 최대 100만 개까지 내보낼 수 있습니다.
 - Constant Contact로 내보내기는 세그먼트로 제한됩니다.
-- 최대 1백만 개의 프로필을 Constant Contact로 내보내는 데 최대 1시간이 걸릴 수 있습니다. 
-- Constant Contact로 내보낼 수 있는 프로필 수는 Constant Contact와의 계약에 따라 다르며 제한됩니다.
+- 최대 100만 개의 고객 프로필을 Constant Contact으로 내보내려면 최대 1시간이 걸릴 수 있습니다. 
+- Constant Contact로 내보낼 수 있는 고객 프로필의 수는 Constant Contact와의 계약에 따라 달라지고 제한됩니다.
 
 ## <a name="set-up-connection-to-constant-contact"></a>Constant Contact에 연결 설정
 
@@ -65,7 +65,7 @@ ms.locfileid: "7031849"
 
 1. [**Constant Contact 목록 ID**](https://app.constantcontact.com/pages/contacts/ui#lists)를 입력합니다. Constant Contact에서 목록을 열어 URL에서 목록 ID를 찾습니다.
 
-1. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. Constant Contact로 세그먼트를 내보내야 합니다.
+1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다. Constant Contact로 세그먼트를 내보내야 합니다.
 
 1. 선택적으로 이름 및 성을 추가 필드로 내보내 더 개인화된 이메일을 만들 수 있습니다. **특성 추가** 를 선택하여 이러한 필드를 매핑합니다.
 

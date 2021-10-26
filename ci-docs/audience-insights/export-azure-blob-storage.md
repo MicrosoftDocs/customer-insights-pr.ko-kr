@@ -1,7 +1,7 @@
 ---
 title: Azure Blob Storage로 Customer Insights 데이터 내보내기
 description: 연결을 구성하고 Azure Blob Storage로 내보내는 방법을 알아봅니다.
-ms.date: 06/30/2021
+ms.date: 10/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b159f87276581f68e07bb73ffd257080eb3cb56422997b09a613bd7afa4e3980
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: d02c09a1869d0099db4861b65ac8ff006914873e
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034736"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605858"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>세그먼트 목록 및 기타 데이터를 Azure Blob Storage로 내보내기(프리뷰)
 
 Blob Storage에 Customer Insights 데이터를 저장하거나 다른 애플리케이션으로 데이터를 전송하는 데 사용합니다.
+
+## <a name="known-limitations"></a>알려진 제한 사항
+
+1. Azure Blob Storage의 경우 [표준 성능과 프리미엄 성능 계층](/azure/storage/blobs/storage-blob-performance-tiers) 중에서 선택할 수 있습니다. 프리미엄 성능 계층을 선택하는 경우 [프리미엄 블록 Blob을 계정 유형으로](/azure/storage/common/storage-account-overview#types-of-storage-accounts) 선택합니다.
 
 ## <a name="set-up-the-connection-to-blob-storage"></a>Blob Storage에 대한 연결 설정
 

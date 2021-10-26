@@ -1,7 +1,7 @@
 ---
 title: Microsoft Dataverse의 Customer Insights 데이터
 description: Customer Insights 엔터티를 Microsoft Dataverse에서 테이블로 사용합니다.
-ms.date: 06/15/2021
+ms.date: 10/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 45535a7368b89e19a91f08fcd825bda9d57a8709653104bf4043c29ffa14d0b8
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 9855ff6908001dd18bc19a286fc56620d0a127e5
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032904"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645226"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Microsoft Dataverse에서 Customer Insights 데이터로 작업
 
@@ -24,11 +24,7 @@ Customer Insights는 [Microsoft Dataverse](/powerapps/maker/data-platform/data-p
 
 **기존 Dataverse 환경이 있는 조직**
 
-이미 Dataverse을 사용하고 있는 조직은 관리자가 대상 그룹 인사이트를 설정할 때 [기존 Dataverse 환경 중 하나를 사용](get-started-paid.md)할 수 있습니다. Dataverse 환경에 URL을 제공함으로써 새로운 대상 그룹 인사이트 환경에 연결됩니다. 최상의 성능을 보장하려면 Customer Insights 및 Dataverse 환경이 동일한 지역에서 호스팅되어야 합니다.
-
-대상 그룹 인사이트 환경을 만들 때 Dataverse 환경을 연결하려면 **고급 설정** 을 확장합니다. **Microsoft Dataverse 환경 URL** 을 제공하고 **데이터 공유 활성화** 확인란을 선택합니다.
-
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt.":::
+이미 Dataverse을 사용하고 있는 조직은 관리자가 대상 그룹 인사이트를 설정할 때 [기존 Dataverse 환경 중 하나를 사용](create-environment.md)할 수 있습니다. Dataverse 환경에 URL을 제공함으로써 새로운 대상 그룹 인사이트 환경에 연결됩니다. 최상의 성능을 보장하려면 Customer Insights 및 Dataverse 환경이 동일한 지역에서 호스팅되어야 합니다.
 
 **새 조직**
 

@@ -1,7 +1,7 @@
 ---
 title: SendGrid로 Customer Insights 데이터 내보내기
 description: 연결을 구성하고 SendGrid로 내보내는 방법을 알아봅니다.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 03df2ab5fce1da1f4f662e1975533f2b538b47dbdd5cf96aae4f1007163e3729
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: da3da5ea68d178deab3b9ab31dd810dee610f607
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036109"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617839"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>SendGrid로 세그먼트 내보내기(프리뷰)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7036109"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- SendGrid에 최대 10만 개의 프로필.
+- SendGrid에 총 최대 10만 개의 고객 프로필이 생성됩니다.
 - SendGrid로 내보내기는 세그먼트로 제한됩니다.
-- 최대 10만 개의 프로필을 SendGrid로 내보내는 데 최대 몇 시간이 걸릴 수 있습니다. 
-- SendGrid로 내보낼 수 있는 프로필 수는 SendGrid와의 계약에 따라 다르며 제한됩니다.
+- 최대 10만 개의 고객 프로필을 SendGrid로 내보내려면 최대 몇 시간이 걸릴 수 있습니다. 
+- SendGrid로 내보낼 수 있는 고객 프로필의 수는 SendGrid와의 계약에 따라 달라지고 제한됩니다.
 
 ## <a name="set-up-connection-to-sendgrid"></a>SendGrid 연결 설정
 
@@ -66,7 +66,7 @@ ms.locfileid: "7036109"
 
 1. **[SendGrid 목록 ID](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts)** 를 입력합니다.
 
-1. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. **이름**, **성**, **국가/지역**, **주**, **도시** 및 **우편 번호** 와 같은 다른 선택 사항 필드에 대해 동일한 단계를 반복하십시오.
+1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다. **이름**, **성**, **국가/지역**, **주**, **도시** 및 **우편 번호** 와 같은 다른 선택 사항 필드에 대해 동일한 단계를 반복하십시오.
 
 1. 내보낼 세그먼트를 선택합니다. SendGrid로 **총 10만 개 이상의 고객 프로필은 내보내지 않을 것을 강력히 권고합니다**. 
 

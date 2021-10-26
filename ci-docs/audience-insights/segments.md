@@ -1,7 +1,7 @@
 ---
 title: 대상 그룹 인사이트의 세그먼트
 description: 세그먼트 및 세그먼트 생성 및 관리 방법에 대한 개요입니다.
-ms.date: 05/03/2021
+ms.date: 09/30/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: f1003b53b17e3ba2c37c0f2d94b89f7e97c2b6f10e28b7bbe93160e4c7f08d54
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036381"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617383"
 ---
 # <a name="segments-overview"></a>세그먼트 개요
 
@@ -26,11 +26,19 @@ ms.locfileid: "7036381"
 
 새 세그먼트를 만드는 방법에는 여러 가지가 있습니다. 
 
-- 세그먼트 빌더를 통한 복잡한 세그먼트: [빈 세그먼트](segment-builder.md#create-a-new-segment)
-- 연산자가 하나인 간단한 세그먼트: [빠른 세그먼트](segment-builder.md#quick-segments)
-- 유사한 고객을 찾는 AI 기반 방법: [유사 고객](find-similar-customer-segments.md)
-- 측정값 또는 속성을 기반으로 한 AI 기반 제안: [측정값 향상을 위한 제안 세그먼트](suggested-segments.md)
-- 활동에 따른 제안: [고객 활동에 기반한 제안 세그먼트](suggested-segments-activity.md)
+# <a name="individual-customers-b2c"></a>[개별 소비자(B2C)](#tab/b2c)
+
+- 세그먼트 빌더가 있는 복잡한 세그먼트: [직접 빌드](segment-builder.md#create-a-new-segment) 
+- 연산자가 하나인 간단한 세그먼트: [빠른 세그먼트](segment-builder.md#quick-segments) 
+- 유사한 고객을 찾는 AI 기반 방법: [유사 고객](find-similar-customer-segments.md) 
+- 측정값 또는 속성을 기반으로 한 AI 기반 제안: [측정값 향상을 위한 제안 세그먼트](suggested-segments.md) 
+- 활동에 따른 제안: [고객 활동에 기반한 제안 세그먼트](suggested-segments-activity.md) 
+
+# <a name="business-accounts-b2b"></a>[비즈니스 계정(B2B)](#tab/b2b)
+
+- 세그먼트 빌더가 있는 복잡한 세그먼트: [직접 빌드](segment-builder.md#create-a-new-segment)
+
+---
 
 ## <a name="manage-existing-segments"></a>기존 세그먼트 관리
 
@@ -70,9 +78,9 @@ ms.locfileid: "7036381"
 
 1. 작업 드롭다운 목록에서 **내보내기 관리** 를 선택합니다.
 
-1. **세그먼트에 대한 내보내기(미리 보기)** 페이지가 열립니다. 현재 세그먼트를 포함하거나 포함하지 않은 내보내기별로 그룹화된 모든 구성된 내보내기를 볼 수 있습니다.
+1. **세그먼트에 대한 내보내기(미리 보기)** 페이지가 열립니다. 현재 세그먼트를 포함하는지 여부에 따라 그룹화된 구성된 모든 내보내기를 볼 수 있습니다.
 
-   1. 선택한 세그먼트를 내보내기에 추가하려면 목록에서 내보내기를 선택하고 **세그먼트 추가** 를 선택합니다.
+   1. 선택한 세그먼트를 내보내기에 추가하려면 해당 내보내기를 **편집** 하여 해당 세그먼트를 선택한 다음 저장합니다. 개별 고객을 위한 환경에서는 대신 목록에서 내보내기를 선택하고 **세그먼트 추가** 를 선택하여 동일한 결과를 얻을 수 있습니다.
 
    1. 선택한 세그먼트로 새 내보내기를 만들려면 **내보내기 추가** 를 선택합니다. 내보내기 만들기에 대한 자세한 내용은 [새 내보내기 설정](export-destinations.md#set-up-a-new-export)을 참조하십시오.
 

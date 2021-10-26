@@ -2,8 +2,14 @@
   href: index.yml
 - name: 제품 개요
   href: overview.md
-- name: 평가판 만들기
-  href: audience-insights/get-started-trial.md
+- name: 무료 평가판
+  items:
+    - name: 무료 평가판 신청
+      href: trial-signup.md
+    - name: 평가판 FAQ
+      href: trial-FAQ.md
+- name: 유료 라이선스로 시작
+  href: paid-license.md
 - name: 환경 액세스
   href: 'https://home.ci.ai.dynamics.com/'
 - name: 대상 그룹 인사이트
@@ -19,9 +25,11 @@
         - name: 빠른 시작 가이드
           href: audience-insights/get-started.md
         - name: 새 환경 만들기
-          href: audience-insights/get-started-paid.md
+          href: audience-insights/create-environment.md
         - name: 대상 그룹 인사이트 살펴보기
           href: audience-insights/home.md
+    - name: 비즈니스 계정과 연동
+      href: audience-insights/work-with-business-accounts.md
     - name: 학습 모듈
       items:
         - name: 데이터 수집
@@ -66,6 +74,8 @@
           href: audience-insights/relationships.md
         - name: 고객 활동 나열
           href: audience-insights/activities.md
+        - name: 의미 체계 매핑 정의
+          href: audience-insights/semantic-mappings.md
     - name: 데이터 보강
       items:
         - name: 고객 프로필 보강
@@ -126,7 +136,7 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: 구독 이탈 예측 샘플 가이드
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: 트랜잭션 이탈 예측 샘플 가이드
+            - name: 트랜잭션 이탈 예측에 대한 샘플 가이드
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: 제품 추천 예측에 대한 샘플 가이드
               href: audience-insights/sample-guide-predict-product-recommendation.md
@@ -222,10 +232,14 @@
           href: audience-insights/connections.md
         - name: 다중 환경 관리
           href: audience-insights/manage-environments.md
-        - name: 서비스 주체를 사용하여 ADLS 스토리지 계정에 연결
-          href: audience-insights/connect-service-principal.md
         - name: 지원되는 언어
           href: audience-insights/supported-languages.md
+        - name: 보안
+          items:
+            - name: Key Vault 직접 가져오기
+              href: audience-insights/use-azure-key-vault.md
+            - name: 서비스 주체를 사용하여 ADLS 스토리지 계정에 연결
+              href: audience-insights/connect-service-principal.md
     - name: 확장성
       items:
         - name: 참여 인사이트의 웹 데이터 통합
@@ -248,6 +262,8 @@
       items:
         - name: 빠른 시작 가이드
           href: engagement-insights/get-started.md
+        - name: 환경 만들기
+          href: engagement-insights/create-new-environment.md
         - name: 작업 영역 만들기
           href: engagement-insights/create-workspace.md
         - name: 웹 사이트 및 모바일 앱에서 이벤트 캡처

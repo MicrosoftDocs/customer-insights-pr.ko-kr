@@ -1,7 +1,7 @@
 ---
 title: AdRoll로 Customer Insights 데이터 내보내기
 description: 연결을 구성하고 AdRoll로 내보내는 방법을 알아봅니다.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e48f67ec21bb9b883dd30544ccf4dcfbf487acb1abaf0a0557764bc3d955e41a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f9373ea18e77723c988392a5a2959baa66d8eae9
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032079"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617357"
 ---
 # <a name="export-segments-to-adroll-preview"></a>AdRoll로 세그먼트 내보내기(프리뷰)
 
@@ -28,11 +28,11 @@ ms.locfileid: "7032079"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- AdRoll에 한 번에 최대 250,000개의 프로필을 내보낼 수 있습니다.
-- 프로필이 100개 미만인 세그먼트는 AdRoll로 내보낼 수 없습니다. 
+- 한 번에 최대 25만 개의 고객 프로필을 AdRoll로 내보낼 수 있습니다.
+- 고객 프로필이 100개 미만인 세그먼트는 AdRoll로 내보낼 수 없습니다. 
 - AdRoll로 내보내기는 세그먼트로 제한됩니다.
-- 최대 250,000개의 프로필을 AdRoll로 내보내는 데 최대 10분이 걸릴 수 있습니다. 
-- AdRoll로 내보낼 수 있는 프로필 수는 AdRoll과의 계약에 따라 다릅니다.
+- 최대 25만 개의 고객 프로필을 AdRoll로 내보내려면 최대 10분이 걸릴 수 있습니다. 
+- AdRoll로 내보낼 수 있는 고객 프로필의 수는 AdRoll과의 계약에 따라 달라지고 제한됩니다.
 
 ## <a name="set-up-connection-to-adroll"></a>AdRoll에 연결을 설정합니다.
 
@@ -66,7 +66,7 @@ ms.locfileid: "7032079"
 
 1. **AdRoll 광고주 ID** 를 입력합니다. 자세한 내용은 [AdRoll 광고주 프로필](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles)을 참고하세요.
 
-3. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. 세그먼트를 AdRoll로 내보내는 데 필요합니다.
+1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다. 세그먼트를 AdRoll로 내보내는 데 필요합니다.
 
 1. 내보낼 세그먼트를 선택합니다. 구성원이 100명 이상인 세그먼트를 선택합니다. 더 작은 세그먼트는 내보낼 수 없습니다. 또한 내보낼 세그먼트의 최대 크기는 내보내기당 250,000명입니다. 
 

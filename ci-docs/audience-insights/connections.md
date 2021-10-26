@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 37c5d152a4cc91a90df8db387d25923ed150e238bc6b54c54f7bba59fbd48c82
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3689c7016454ed44e22b4d4ff5a338836a8fe288
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033226"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605957"
 ---
 # <a name="connections-preview-overview"></a>연결(프리뷰) 개요
 
@@ -47,6 +47,7 @@ ms.locfileid: "7033226"
 1. **연결 설정** 창에서 필요한 세부 정보를 제공합니다. 
    1. **표시 이름** 및 연결 유형은 연결을 설명합니다. 이 연결의 목적과 대상을 설명하는 이름을 선택하는 것이 좋습니다.
    1. 정확한 필드는 연결하는 서비스에 따라 다릅니다. 대상 서비스에 대한 기사에서 특정 연결 유형의 세부 사항에 대해 알아볼 수 있습니다.
+   1. [자체 Key Vault를 사용](use-azure-key-vault.md)하여 비밀을 저장하는 경우 **Key Vault 사용** 을 활성화하고 목록에서 비밀을 선택합니다.
 
 1. 연결을 만들려면 **저장** 을 선택합니다.
 
@@ -93,3 +94,6 @@ ms.locfileid: "7033226"
 
 1. **제거** 를 선택하여 삭제를 확인합니다.
 
+## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>자체 Key Vault에서 관리하는 비밀을 통해 연결 설정
+
+일부 연결에는 API 키 또는 비밀과 같은 암호가 필요합니다. 일부 연결은 자체 Key Vault에 저장된 비밀을 지원합니다. 지원되는 연결 및 [대상 그룹 인사이트를 위해 자체 Key Vault](use-azure-key-vault.md)를 설정하는 방법에 대해 자세히 알아보세요.

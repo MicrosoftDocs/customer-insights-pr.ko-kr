@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 75d597158233f75f0eb5f94389f9dba199d81719f2bbe4e5cc58d2a3afc7dcf8
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: de31e1f25c08d0bcb5341c5f465b1999de48acf3
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032858"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645363"
 ---
 # <a name="data-sources-overview"></a>데이터 원본 개요
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights의 대상 그룹 인사이트 기능은 광범위
 
 ## <a name="add-data-from-on-premises-data-sources"></a>온-프레미스 데이터 소스의 데이터 추가
 
-대상 그룹 인사이트의 온-프레미스 데이터 소스에서 데이터 수집은 Microsoft Power Platform 데이터 흐름을 기반으로 지원됩니다. Customer Insights에서 데이터 흐름을 활성화할 수 있습니다. 환경을 설정할 때 [Microsoft Dataverse 환경 URL을 제공](get-started-paid.md)하면 됩니다.
+대상 그룹 인사이트의 온-프레미스 데이터 소스에서 데이터 수집은 Microsoft Power Platform 데이터 흐름을 기반으로 지원됩니다. Customer Insights에서 데이터 흐름을 활성화할 수 있습니다. 환경을 설정할 때 [Microsoft Dataverse 환경 URL을 제공](create-environment.md)하면 됩니다.
 
 Dataverse 환경과 Customer Insights가 사용하는 환경을 연견ㄹ한 후 생성되는 데이터 소스는 기본적으로 [Power Platform 데이터 흐름](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)을 사용합니다. 데이터 흐름은 데이터 게이트웨이를 사용하여 온 프레미스 연결을 지원합니다. Dataverse 환경이 연결되기 이전에 존재했던 데이터 소스를 제거하고 다시 만들어 [온-프레미스 데이터 게이트웨이를 사용](/data-integration/gateway/service-gateway-app)합니다.
 

@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: fcc45c24e9d89516dba9964ee16f57caf439eff0
-ms.sourcegitcommit: 2abe9b661b8c3c01e9730c629e383402e3f6a655
+ms.openlocfilehash: 5262ad20019e90e73ab121a5ab90e602c1a32b7e
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465213"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7606098"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트의 새로운 기능
 
@@ -26,6 +26,20 @@ ms.locfileid: "7465213"
 
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하십시오.
+
+## <a name="september-2021-updates"></a>2021년 9월 업데이트
+
+2021년 9월 업데이트에는 새로운 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="activities"></a>활동 
+
+- **활동 타임라인 개선** 고객 프로필의 활동 타임라인에 대한 필터를 확장했습니다. 또한 새 필터 팬을 사용하여 활동 유형 및 날짜별로 필터링할 수 있습니다. 날짜는 다른 조건을 사용하여 필터링할 수 있습니다. 자세한 내용은 [고객 프로필에서 활동 타임라인 보기](activities.md#view-activity-timelines-on-customer-profiles)를 참조하세요.
+
+### <a name="relationships"></a>관계
+
+- **다중 홉 관계 지원** 활동을 구성하고 엔터티 간의 관계를 정의할 때 다중 홉 관계를 사용합니다. 다중 홉 관계는 중간 엔터티를 사용하여 두 엔터티를 연결합니다. 활동을 구성할 때 다중 홉 관계를 사용하여 활동 엔터티를 중간 엔터티에 연결한 다음 고객 엔터티에 연결할 수 있습니다. 다중 홉 관계와 다중 경로 관계를 결합할 수 있습니다. 자세한 내용은 [다중 홉 관계](relationships.md#multi-hop-relationship)를 참조하세요.
+
+- **다중 경로 관계 지원** 활동을 구성하고 엔터티 간의 관계를 정의할 때 다중 경로 관계를 사용합니다. 다중 경로 관계는 소스 엔터티를 둘 이상의 엔터티에 연결합니다. 활동을 구성할 때 다중 경로 관계를 사용하여 활동 엔터티를 둘 이상의 고객 엔터티에 연결할 수 있습니다. 다중 경로 관계와 다중 홉 관계를 결합할 수 있습니다. 자세한 내용은 [다중 경로 관계](relationships.md#multi-path-relationship)를 참조하세요.
 
 ## <a name="august-2021-updates"></a>2021년 8월 업데이트
 
@@ -55,7 +69,7 @@ ms.locfileid: "7465213"
 ### <a name="ux-updates"></a>UX 업데이트 
 
 - **신규 및 향상된 고객 페이지 및 프로필 세부 정보 페이지** 향상된 사용자 환경과 더 나은 성능을 위해 고객 페이지와 프로필 세부 정보 페이지를 다시 디자인했습니다. 이러한 변경을 통해 고객을 보고, 정렬하고, 검색하고, 필터링할 수 있습니다. 이제 필터가 URL에 표시되어 검색 결과를 다른 사용자와 원활하게 공유할 수 있습니다. 검색 결과를 세그먼트로 저장할 수도 있습니다.    
-  고객 프로필의 세부 정보 페이지는 이제 가독성 향상을 위해 인구 통계 데이터, ID 및 기타 프로필 특성과 같은 다양한 하위 섹션의 데이터를 그룹화합니다. 프로필 세부 정보 페이지의 다른 섹션은 이제 더 대화형이 되었습니다. 예를 들어 이제 활동 섹션에서 필터링 및 정렬이 가능합니다.
+  고객 프로필의 세부 정보 페이지는 이제 가독성 향상을 위해 인구 통계 데이터, ID 및 기타 프로필 특성과 같은 다양한 하위 섹션의 데이터를 그룹화합니다. 프로필 세부 정보 페이지의 다른 섹션은 이제 더 대화형이 되었습니다. 예를 들어, 이제 활동 섹션에서 필터링 및 정렬이 가능합니다.
 
 
 ## <a name="may-2021-updates"></a>2021년 5월 업데이트

@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 앱용 고객 카드 추가 기능
 description: 이 추가 기능을 사용하여 Dynamics 365 앱에서 대상 그룹 인사이트의 데이터를 표시합니다.
-ms.date: 05/18/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,20 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0f6c922104df229980b308136a4d764938121b35d6d744f41b1530bdb5515e7f
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c9c7cfbf9f47cca53e5543e2cda2584e25ad855d
+ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032996"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7643438"
 ---
 # <a name="customer-card-add-in-preview"></a>고객 카드 추가 기능(미리 보기)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하세요. 지원되는 Dynamics 365 앱에 설치된 고객 카드 추가 기능을 사용하여 인구 통계, 인사이트 및 활동 타임라인을 표시하도록 선택할 수 있습니다. 추가 기능은 연결된 Dynamics 365 앱의 데이터에 영향을 주지 않고 Customer Insights에서 데이터를 검색합니다. 
+Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하세요. 지원되는 Dynamics 365 앱에 설치된 고객 카드 추가 기능을 사용하여 고객 프로필 필드, 인사이트 및 활동 타임라인을 표시하도록 선택할 수 있습니다. 추가 기능은 연결된 Dynamics 365 앱의 데이터에 영향을 주지 않고 Customer Insights에서 데이터를 검색합니다.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN1qv]
 
 ## <a name="prerequisites"></a>필수 조건
 
@@ -28,20 +30,19 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 - Dynamics 365 데이터를 대상 그룹 인사이트 고객 프로필에 매핑하려면 [Microsoft Dataverse 커넥터를 사용하여 Dynamics 365 앱에서 수집](connect-power-query.md)해야 합니다.
 - 고객 카드 추가 기능의 모든 Dynamics 365 사용자는 데이터를 보려면 대상 그룹 인사이트의 [사용자로 추가](permissions.md)되어야 합니다.
 - 데이터 조회가 작동하려면 대상 그룹 인사이트의 [구성된 검색 및 필터 기능](search-filter-index.md)이 필요합니다.
-- 각 추가 기능 컨트롤은 대상 그룹 인사이트의 특정 데이터에 의존합니다.
-  - 측정값 제어: [구성된 측정값](measures.md)이 필요합니다.
-  - 인텔리전스 제어: [예측](predictions.md) 또는 [사용자 지정 모델](custom-models.md)을 사용하여 생성된 데이터가 필요합니다.
-  - 인구 통계 제어: 통합 고객 프로필에서 인구 통계 필드(예: 연령 또는 성별)를 사용할 수 있습니다.
-  - 보강 제어: 활성 [보강](enrichment-hub.md)이 고객 프로필에 적용되어야 합니다.
-  - 시간 표시줄 제어: [구성된 활동](activities.md)이 필요합니다.
+- 각 추가 기능 컨트롤은 대상 그룹 인사이트의 특정 데이터에 의존합니다. 일부 데이터 및 컨트롤은 특정 유형의 환경에서만 사용할 수 있습니다. 추가 기능 구성은 선택한 환경 유형으로 인해 제어를 사용할 수 없는 경우 알려줍니다. [환경 사용 사례](work-with-business-accounts.md)에 대해 자세히 알아보세요.
+  - **측정 제어**: 고객 특성 유형의 [구성된 측정값](measures.md)이 필요합니다.
+  - **인텔리전스 제어**: [예측](predictions.md) 또는 [사용자 지정 모델](custom-models.md)을 사용하여 생성된 데이터가 필요합니다.
+  - **고객 세부 정보 제어**: 프로필의 모든 필드는 통합 고객 프로필에서 사용할 수 있습니다.
+  - **보강 제어**: 활성 [보강](enrichment-hub.md)이 고객 프로필에 적용되어야 합니다.
+  - **연락처 제어**: 유형 연락처의 의미 체계 엔티티 정의가 필요합니다.
+  - **시간 표시줄 제어**: [구성된 활동](activities.md)이 필요합니다.
 
 ## <a name="install-the-customer-card-add-in"></a>고객 카드 추가 기능 설치
 
 고객 카드 추가 기능은 Dynamics 365의 Customer Engagement 앱을 위한 솔루션입니다. 솔루션을 설치하려면 AppSource로 이동하고 **Dynamics 고객 카드** 를 검색합니다. [AppSource에서 고객 카드 추가 기능](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview)을 선택하고 **지금 가져 오기** 를 선택합니다.
 
-솔루션을 설치하려면 Dynamics 365 앱에 대한 관리자 자격 증명으로 로그인해야 할 수 있습니다.
-
-솔루션을 환경에 설치하는 데 시간이 걸릴 수 있습니다.
+솔루션을 설치하려면 Dynamics 365 앱에 대한 관리자 자격 증명으로 로그인해야 할 수 있습니다. 솔루션을 환경에 설치하는 데 시간이 걸릴 수 있습니다.
 
 ## <a name="configure-the-customer-card-add-in"></a>고객 카드 추가 기능 구성
 
@@ -50,7 +51,7 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 1. **Dynamics 365 Customer Insights 고객 카드 추가 기능(미리 보기)** 솔루션에 대한 **표시 이름** 링크를 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![표시 이름 선택.](media/select-display-name.png "표시 이름 선택")
+   > ![표시 이름 선택.](media/select-display-name.png "표시 이름을 선택합니다.")
 
 1. **로그인** 을 선택하고 Customer Insights를 구성하는 데 사용하는 관리자 계정의 자격 증명을 입력합니다.
 
@@ -64,7 +65,7 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
    - 계정과 매핑하려면 연락처 엔터티의 ID와 일치하는 계정 엔터티의 필드를 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![연락처 ID 필드.](media/contact-id-field.png "연락처 ID 필드")
+   > ![연락처 ID 필드.](media/contact-id-field.png "연락처 ID 필드입니다.")
 
 1. **구성 저장** 을 선택하여 설정을 저장합니다.
 
@@ -73,7 +74,9 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 1. 전체 조직에 대해 카드에 표시되는 콘텐츠를 사용자 지정할 사용자에게 **Customer Insights 카드 사용자 지정자** 역할을 할당합니다.
 
 ## <a name="add-customer-card-controls-to-forms"></a>양식에 고객 카드 제어 추가
-  
+
+시나리오에 따라 **연락처** 양식 또는 **계정** 양식에 컨트롤을 추가하도록 선택할 수 있습니다. 대상 그룹 인사이트 환경이 비즈니스 계정용인 경우 계정 양식에 컨트롤을 추가하는 것이 좋습니다. 이 경우 아래 단계에서 "연락처"를 "계정"으로 바꿉니다.
+
 1. 연락처 양식에 고객 카드 컨트롤을 추가하려면 Dynamics 365에서에서 **설정** > **사용자 지정** 으로 이동합니다.
 
 1. **시스템 사용자 지정** 을 선택합니다.
@@ -83,7 +86,7 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 1. 고객 카드 컨트롤을 추가할 연락처 양식을 선택합니다.
 
     > [!div class="mx-imgBorder"]
-    > ![연락처 양식 선택.](media/contact-active-forms.png "연락처 양식 선택")
+    > ![연락처 양식 선택.](media/contact-active-forms.png "연락처 양식을 선택합니다.")
 
 1. 양식 편집기에서 컨트롤을 추가하려면 **필드 탐색기** 에서 컨트롤을 배치할 위치로 필드를 드래그합니다.
 
@@ -102,7 +105,8 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 1. 사용자 지정 컨트롤에 표시할 내용을 사용자 지정하려면 오른쪽 상단에서 편집 단추를 선택합니다.
 
 ## <a name="upgrade-customer-card-add-in"></a>고객 카드 추가 기능 업그레이드
-고객 카드 추가 기능은 자동으로 업그레이드되지 않습니다. 최신 버전으로 업그레이드하려면 추가 기능이 설치된 Dynamics 365 앱에서 이 절차를 따르십시오.
+
+고객 카드 추가 기능은 자동으로 업그레이드되지 않습니다. 최신 버전으로 업그레이드하려면 추가 기능이 설치된 Dynamics 365 앱에서 다음 단계를 따르세요.
 
 1. Dynamics 365 앱에서 **설정** > **사용자 지정** 으로 이동하고 **솔루션** 을 선택합니다.
 

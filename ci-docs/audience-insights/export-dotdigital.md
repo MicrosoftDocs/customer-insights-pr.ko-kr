@@ -1,7 +1,7 @@
 ---
 title: DotDigital 광고로 Customer Insights 데이터 내보내기
 description: 연결을 구성하고 DotDigital로 내보내는 방법을 알아봅니다.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f09be0dfa599c1ef7cf0055b7ce1df8784cf447ada64b56bc7543c214f9a5b99
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3e3a79603f9f5746ee176d3d4299a30510c7459e
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034644"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618391"
 ---
 # <a name="export-segments-to-dotdigital-preview"></a>DotDigital로 세그먼트 내보내기(프리뷰)
 
@@ -22,17 +22,17 @@ ms.locfileid: "7034644"
 
 ## <a name="prerequisites-for-a-connection"></a>연결을 위한 전제 조건
 
--   [DotDigital 계정](https://dotdigital.com/) 및 해당 관리자 자격 증명이 있어야 합니다.
+-   [DotDigital 계정](https://dotdigital.com/)이 있고 [API 사용자](https://support.dotdigital.com/hc/articles/115001718730-How-do-I-create-an-API-user)를 만들었습니다. 연결을 만들려면 API 사용자 자격 증명을 사용해야 합니다.
 -   DotDigital에 기존 주소록과 해당 ID가 있습니다. ID는 주소록을 선택하여 열 때 URL에서 찾을 수 있습니다. 자세한 내용은 [DotDigital 주소록](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)을 참조하세요.
 -   대상 그룹 인사이트에 [구성된 세그먼트](segments.md)가 있어야 합니다.
 -   내보낸 세그먼트의 통합 고객 프로필에는 이메일 주소를 나타내는 필드가 포함됩니다.
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- DotDigital로 내보낼 때마다 프로필이 최대 100만 개입니다.
+- DotDigital로 내보낼 때마다 최대 100만 개의 고객 프로필이 생성됩니다.
 - DotDigital로 내보내기는 세그먼트로 제한됩니다.
-- 총 100만 개의 프로필이 있는 세그먼트를 내보내는 것은 공급자측의 제한으로 인해 최대 3시간이 걸릴 수 있습니다. 
-- DotDigital로 내보낼 수 있는 프로필 수는 DotDigital와의 계약에 따라 다르며 제한됩니다.
+- 공급자 측의 제한으로 인해 총 100만 개의 고객 프로필이 포함된 세그먼트를 내보내는 데 최대 3시간이 걸릴 수 있습니다. 
+- DotDigital로 내보낼 수 있는 고객 프로필의 수는 DotDigital와의 계약에 따라 달라지고 제한됩니다.
 
 ## <a name="set-up-connection-to-dotdigital"></a>DotDigital에 연결을 설정합니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "7034644"
 
 1. 이 연결을 사용할 수 있는 사용자를 선택합니다. 아무 조치도 취하지 않으면 기본값은 관리자입니다. 자세한 내용은 [기여자가 내보내기에 연결을 사용하도록 허용](connections.md#allow-contributors-to-use-a-connection-for-exports)을 확인하세요.
 
-1. **DotDigital 사용자 이름 및 암호** 를 입력합니다.
+1. **DotDigital API 사용자 이름과 암호** 를 입력합니다. 
 
 1. **[DotDigital 주소록 ID](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)** 를 입력합니다.
 
@@ -67,7 +67,7 @@ ms.locfileid: "7034644"
 1. **내보내기 연결** 필드의 DotDigital 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 연결이 없는 것입니다.
 
 
-1. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. **이름**, **성**, **전체 이름**, **성별** 및 **우편 번호** 와 같은 다른 선택 필드에 대해 동일한 단계를 반복하세요.
+1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다. **이름**, **성**, **전체 이름**, **성별** 및 **우편 번호** 와 같은 다른 선택 필드에 대해 동일한 단계를 반복하세요.
 
 1. 내보낼 세그먼트를 선택합니다. 총 100만 개의 고객 프로필을 DotDigital로 내보낼 수 있습니다.
 

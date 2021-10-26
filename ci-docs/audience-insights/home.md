@@ -1,7 +1,7 @@
 ---
 title: 대상 그룹 인사이트의 홈 페이지
 description: 홈 페이지에서 앱 탐색을 시작합니다.
-ms.date: 08/26/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 55c0313d1dbf7fb6774c058a6784cf02821d9133
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 4ab5497024cb15b103e96b0fc9a2e0739fd4691c
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7469999"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617702"
 ---
 # <a name="explore-audience-insights"></a>대상 그룹 인사이트 살펴보기
 
@@ -23,7 +23,7 @@ ms.locfileid: "7469999"
 
 :::image type="content" source="media/home-page.png" alt-text="샘플 인사이트를 보여주는 홈 화면의 스크린샷.":::
 
-1 - Customer Insights 기능 간 전환 2 - 왼쪽 창을 사용하여 다른 영역 간 탐색 3 - 작업 환경을 확인하고 관리자로 환경 관리 4 - Customer Insights에 대한 개인 설정 지정
+1 - Customer Insights의 기능 간 전환 2 - 왼쪽 창을 사용하여 다른 영역 간을 탐색하고 기본 대상 그룹 선택 3 - 작업 환경 확인 및 관리자로 환경 관리 4 - Customer Insights에 대한 개인 설정 지정
 
 아래에 **최근 세그먼트**, 정의한 인구 통계, 행동 또는 거래 특성을 기반으로 고객 그룹이 표시됩니다. [세그먼트 생성](segments.md)을 사용하면 고객 기반을 그룹화하고 비즈니스 활동을 더 정확하게 타겟팅할 수 있습니다.
 

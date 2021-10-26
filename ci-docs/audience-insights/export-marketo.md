@@ -1,7 +1,7 @@
 ---
 title: Marketo로 Customer Insights 데이터 내보내기
 description: 연결을 구성하고 Marketo로 내보내는 방법을 알아봅니다.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0d5eaa769973c861d89287bba0ed29509ab2efc653bdd8e177cc49b3560c698e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 71a16bd71a58b5cc0a6a2ed421561d91f782dd8e
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033501"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619173"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Marketo로 세그먼트 내보내기(프리뷰)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7033501"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- Marketo로 내보낼 때마다 프로필이 최대 100만 개입니다.
+- Marketo로 내보낼 때마다 최대 100만 개의 고객 프로필이 생성됩니다.
 - Marketo로 내보내기는 세그먼트로 제한됩니다.
-- 총 100만 개의 프로필이 있는 세그먼트를 내보내려면 최대 3시간이 걸릴 수 있습니다. 
-- Marketo로 내보낼 수 있는 프로필 수는 Marketo와의 계약에 따라 다르며 제한됩니다.
+- 총 1,000만 개의 고객 프로필이 포함된 세그먼트를 내보내는 데 최대 3시간이 걸릴 수 있습니다. 
+- Marketo로 내보낼 수 있는 고객 프로필의 수는 Marketo와의 계약에 따라 달라지고 제한됩니다.
 
 ## <a name="set-up-connection-to-marketo"></a>Marketo에 연결을 설정합니다.
 
@@ -64,7 +64,7 @@ ms.locfileid: "7033501"
 
 1. **[Marketo 목록 ID](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 를 입력합니다. 목록 ID는 순수 숫자 값입니다. 예를 들어 Marketo 목록 ID가 ST12345A7인 경우 숫자 앞뒤의 문자를 제거하고 `12345`를 입력합니다. 
 
-1. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. 
+1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다. 
 
 1. 선택적으로 **이름** 과 **성**, **도시**, **주**, **국가/지역** 을 내보내어 보다 개인화된 이메일을 만들 수 있습니다. **특성 추가** 를 선택하여 이러한 필드를 매핑합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: 통합 고객 프로필 보강
 description: 기능을 사용하여 고객 데이터를 보강합니다.
-ms.date: 08/31/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7470000"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617563"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>고객 프로필 보강(미리 보기)
 
@@ -27,16 +27,26 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 기능 보강을 작성하거나 편집하려면 기여자 또는 관리자 권한이 있어야 합니다. 자세한 내용은 [권한](permissions.md)을 참조하십시오.
 
-**검색** 탭에서 다음과 같은 기능이 보강됩니다.
+**검색** 탭에서 지원되는 모든 보강 옵션을 찾을 수 있습니다.
 
-- Microsoft 제공 [Azure Maps](enrichment-azure-maps.md)
+# <a name="individual-customers-b2c"></a>[개별 소비자(B2C)](#tab/b2c)
+
 - Microsoft에서 제공한 [브랜드](enrichment-microsoft.md)
 - Microsoft에서 제공한 [관심사](enrichment-microsoft.md)
-- Microsoft 제공 [향상된 주소](enrichment-enhanced-addresses.md)
-- Leadspace에서 제공한 [회사 데이터](enrichment-leadspace.md)
+- Microsoft 제공 [향상된 주소](enrichment-enhanced-addresses.md) 
 - [Experian에서 제공하는 인구 통계](enrichment-experian.md)
-- HERE Technologies에서 제공한 [위치 데이터](enrichment-here.md)
-- SFTP(보안 파일 전송 프로토콜)를 통한 [사용자 지정 데이터](enrichment-SFTP-custom-import.md)
+- SFTP(보안 파일 전송 프로토콜)를 통한 [사용자 지정 데이터](enrichment-SFTP-custom-import.md) 
+- Microsoft 제공 [Azure Maps](enrichment-azure-maps.md)
+
+# <a name="business-accounts-b2b"></a>[비즈니스 계정(B2B)](#tab/b2b)
+
+- Leadspace에서 제공한 [회사 데이터](enrichment-leadspace.md)
+- Microsoft 제공 [향상된 주소](enrichment-enhanced-addresses.md) 
+- HERE Technologies에서 제공한 [위치 데이터](enrichment-here.md) 
+- SFTP(보안 파일 전송 프로토콜)를 통한 [사용자 지정 데이터](enrichment-SFTP-custom-import.md) 
+- Microsoft 제공 [Azure Maps](enrichment-azure-maps.md)
+
+---
 
 **내 보강** 탭에서 구성한 보강을 보고 속성을 편집할 수 있습니다.
 
@@ -58,7 +68,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 ## <a name="enrichments-and-connections"></a>보강 및 연결
 
-타사 보강은 관리자가 자격 증명으로 설정하고 데이터 전송에 대한 동의를 제공하는 [연결](connections.md)을 사용하여 구성됩니다. 관리자와 기여자 모두가 보강을 구성하는 데 연결을 사용할 수 있습니다.  
+타사 보강은 관리자가 자격 증명으로 설정하고 데이터 전송에 대한 동의를 제공하는 [연결](connections.md)을 사용하여 구성됩니다. 관리자와 기여자는 연결을 사용하여 보강을 구성할 수 있습니다.  
 
 ## <a name="multiple-enrichments-of-the-same-type"></a>동일한 유형의 여러 보강
 

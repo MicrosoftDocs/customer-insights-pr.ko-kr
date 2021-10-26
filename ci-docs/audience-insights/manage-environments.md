@@ -1,7 +1,7 @@
 ---
 title: 환경 만들기 및 관리
 description: 서비스에 등록하는 방법과 환경을 관리하는 방법을 알아봅니다.
-ms.date: 07/22/2021
+ms.date: 10/14/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: e3f99f8f151aea5f120084382babd5e46e109545a4f63aafc51c3ecb1400cc33
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: ce2fdd435a81bb04148057554c5958e3ab59f125
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034185"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645134"
 ---
 # <a name="manage-environments"></a>환경 관리
 
@@ -26,7 +26,7 @@ ms.locfileid: "7034185"
 
 :::image type="content" source="media/home-page-environment-switcher.png" alt-text="환경을 전환하는 컨트롤의 스크린샷.":::
 
-관리자는 환경을 [생성](get-started-paid.md)하고 관리할 수 있습니다.
+관리자는 환경을 [생성](create-environment.md)하고 관리할 수 있습니다.
 
 ## <a name="edit-an-existing-environment"></a>기존 환경 편집
 
@@ -36,23 +36,9 @@ ms.locfileid: "7034185"
 
 2.  **편집** 아이콘을 선택합니다.
 
-3. **환경 편집** 상자에서 환경의 **표시 이름** 을 업데이트할 수 있지만 **지역** 또는 **유형** 은 변경할 수 없습니다.
+3. **환경 편집** 상자에서 환경 설정을 업데이트할 수 있습니다.
 
-4. Azure Data Lake Storage에 데이터를 저장하도록 환경이 구성된 경우 **계정 키** 를 업데이트할 수 있습니다. 그러나 **계정 이름** 또는 **컨테이너** 이름은 변경할 수 없습니다.
-
-5. 선택적으로 계정 키 기반 연결에서 리소스 기반 또는 구독 기반 연결로 업데이트할 수 있습니다. 한 번 업그레이드하면 업데이트 후 계정 키로 되돌릴 수 없습니다. 자세한 내용은 [Azure 서비스 보안 주체를 사용하여 대상 그룹 인사이트를 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)을 참조하세요. 연결을 업데이트할 때 **컨테이너** 정보를 변경할 수 없습니다.
-
-6. 선택적으로 **Microsoft Dataverse와 데이터 공유 구성 및 추가 기능 사용 설정** 아래에서 Microsoft Dataverse 환경 URL을 제공할 수 있습니다. 이러한 기능에는 Microsoft Dataverse, 온-프레미스 데이터 소스를 기반으로 한 데이터 수집 또는 사용 [예측](predictions.md)을 기반으로 한 애플리케이션 및 솔루션과의 데이터 공유가 포함됩니다. **데이터 공유 활성화** 를 선택하여 Customer Insights 출력 데이터를 Microsoft Dataverse 관리형 Data Lake와 공유합니다.
-
-   > [!NOTE]
-   > - 모든 데이터를 자체 Azure Data Lake Storage에 저장하는 경우 Microsoft Dataverse 관리형 Data Lake와의 데이터 공유는 현재 지원되지 않습니다.
-   > - [엔티티에서 누락된 값의 예측](predictions.md) 대상 그룹 Insights의 PowerBI Embedded 보고서(사용자 환경에서 활성화된 경우)는 Microsoft Dataverse 관리형 데이터 레이크와 데이터 공유를 활성화할 때 현재 지원되지 않습니다.
-
-   Microsoft Dataverse와의 데이터 공유를 활성화하면 데이터 원본 및 기타 프로세스의 전체 새로 고침이 시작됩니다. 프로세스가 현재 실행 중인 경우 Microsoft Dataverse와의 데이터 공유를 활성화하는 옵션이 표시되지 않습니다. 해당 프로세스가 완료될 때까지 기다리거나 취소하여 데이터 공유를 활성화합니다. 
-   
-   :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="Microsoft Dataverse와 데이터 공유를 활성화하는 구성 옵션":::
-   
-   데이터 수집 또는 세그먼트 생성과 같은 프로세스를 실행하면 위에서 지정한 스토리지 계정에 해당 폴더가 생성됩니다. 실행하는 프로세스에 따라 데이터 파일 및 model.json 파일이 생성되고 각 하위 폴더에 추가됩니다.
+환경 설정에 대한 자세한 내용은 [새 환경 만들기](create-environment.md)를 참조하세요.
 
 ## <a name="copy-the-environment-configuration"></a>환경 구성 복사
 

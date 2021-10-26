@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: c639cfca30cf1b57ada7d728311210b7210a37ac
-ms.sourcegitcommit: f72d5b86dfdc7282c6c1918b1ab3962d7a1c9852
+ms.openlocfilehash: bd80d0315f4f501b8f8108b99c144082c21e0d4c
+ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7557360"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "7623019"
 ---
 # <a name="relationships-between-entities"></a>엔터티 간 관계
 
@@ -67,6 +67,20 @@ ms.locfileid: "7557360"
    - **대상 키 필드**:대상 엔터티의 키 필드입니다. 예시 고객은 **CustomerID** 키 필드를 사용할 수 있습니다.
 
 4. **저장** 을 선택하여 사용자 지정 관계를 만듭니다.
+
+## <a name="set-up-account-hierarchies"></a>계정 계층 구조 설정
+
+비즈니스 계정을 기본 대상 그룹으로 사용하도록 구성된 환경은 관련 비즈니스 계정에 대한 계정 계층을 구성할 수 있습니다. 예를 들어 별도의 사업부가 있는 회사입니다. 
+
+조직은 계정 및 계정 간의 관계를 보다 잘 관리하기 위해 계정 계층을 만듭니다. 대상 그룹 인사이트 기능은 수집된 고객 데이터에 이미 존재하는 상위-하위 계정 계층을 지원합니다. 예를 들어 Dynamics 365 Sales의 계정입니다. 이러한 계층은 계정 계층 탭 아래에 있는 대상 그룹 인사이트의 **관계** 페이지에서 구성할 수 있습니다.
+
+1. **데이터** > **관계** 로 이동합니다.
+1. **계정 계층** 탭을 선택합니다.
+1. **새 계정 계층** 을 선택합니다. 
+1. **계정 계층** 창에서 계층의 이름을 제공합니다. 시스템에서 출력 엔터티의 이름을 만듭니다. 출력 이름 엔터티의 이름을 변경할 수 있습니다.
+1. 계정 계층이 포함된 엔터티를 선택합니다. 일반적으로 계정이 포함된 동일한 엔터티에 있습니다.
+1. 선택한 엔터티에서 **계정 ID** 및 **계정 상위 ID** 를 선택함 
+1. **저장** 을 선택하여 설정을 적용하고 계정 계층을 완료합니다.
 
 ## <a name="view-relationships"></a>관계 보기
 

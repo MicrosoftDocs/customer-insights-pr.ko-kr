@@ -10,12 +10,12 @@ ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: aaaf1848df175469d8af07754ac153b777781ffb
-ms.sourcegitcommit: 971716c761871cee390519cacef617dac21ecd60
+ms.openlocfilehash: 5e8545bc9bf0d953150248fa859c6ca71a12f9cf
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466585"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645272"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-audience-insights-capability"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트 기능 시작하기
 
@@ -23,7 +23,7 @@ ms.locfileid: "7466585"
 
 ## <a name="step-1-create-an-environment"></a>1단계: 환경 만들기
 
-시작하려면 먼저 작업할 환경을 만들어야 합니다. 조직에서 이미 라이선스를 구입한 경우 [유료 구독 시작하기](get-started-paid.md)를 참조하십시오. 대상 그룹 인사이트에 대한 평가판을 시작하려면 [평가판 환경 설정](get-started-trial.md)을 참조하십시오. 
+시작하려면 먼저 작업할 환경을 만들어야 합니다. 조직에서 이미 라이선스를 구입한 경우 [환경 만들기](create-environment.md)를 참조하세요. 대상 그룹 인사이트에 대한 평가판을 시작하려면 [평가판 환경 설정](../trial-signup.md)을 참조하십시오. 
 
 ## <a name="step-2-explore-audience-insights"></a>2단계: 대상 그룹 인사이트 살펴보기
 

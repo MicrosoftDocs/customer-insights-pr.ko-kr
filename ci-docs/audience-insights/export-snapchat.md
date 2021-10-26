@@ -1,7 +1,7 @@
 ---
 title: Customer Insights 데이터를 Snapchat으로 내보내기
 description: 연결을 구성하고 Snapchat으로 내보내는 방법을 알아봅니다.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 421dcd5ba5421597cf9dea71a9f9f25c7972a4f26fb49d4b042f8667a317ab5d
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b7a929d65a730b60e77ae111b458c68d3cce2020
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033409"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618691"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>Snapchat으로 세그먼트 내보내기(프리뷰)
 
@@ -29,7 +29,7 @@ ms.locfileid: "7033409"
 ## <a name="known-limitations"></a>알려진 제한 사항
 
 - Snapchat으로 내보내기는 세그먼트로 제한됩니다.
-- 최대 1백만 개의 프로필을 Snapchat으로 내보내는 데 최대 15분이 걸릴 수 있습니다. 
+- 최대 100만 개의 고객 프로필을 Snapchat으로 내 보내는 데 최대 15분이 걸릴 수 있습니다. 
 
 ## <a name="set-up-connection-to-snapchat"></a>Snapchat 연결 설정
 
@@ -63,7 +63,7 @@ ms.locfileid: "7033409"
 
 1. [**Snapchat 대상 그룹 ID**](https://businesshelp.snapchat.com/s/article/custom-audiences)를 입력합니다.
 
-1. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. Snapchat으로 세그먼트를 내보내야 합니다.
+1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다. Snapchat으로 세그먼트를 내보내야 합니다.
 
 1. 내보낼 세그먼트를 선택합니다. 
 

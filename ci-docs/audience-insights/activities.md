@@ -1,7 +1,7 @@
 ---
 title: 고객 활동
 description: 고객 활동을 정의하고 고객 프로필의 타임라인에서 볼 수 있습니다.
-ms.date: 09/12/2021
+ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: c5697df8a7d011c70384c8bc5e4773d7fcc25a62
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
+ms.openlocfilehash: c250efcd54ec126c0726b22a971cdedd89760d6b
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494419"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617977"
 ---
 # <a name="customer-activities"></a>고객 활동
 
@@ -24,8 +24,7 @@ Dynamics 365 Customer Insights에 [다양한 데이터 소스](data-sources.md)�
 
 데이터 원본에는 여러 데이터 원본의 트랜잭션 및 활동 데이터가 있는 엔터티가 포함될 수 있습니다. 이러한 엔터티를 식별하고 고객의 타임라인에서 보려는 활동을 선택하십시오. 대상 활동을 포함하는 엔터티를 선택하십시오.
 
-> [!NOTE]
-> 고객타임 라인에 포함되려면 엔터티는 하나 이상의 **날짜** 속성 유형을 가져야 하며 **날짜** 필드가 없는 엔터티를 추가할 수 없습니다. 해당 엔터티가 없으면 **활동 추가** 컨트롤을 사용할 수 없습니다.
+고객타임 라인에 포함되려면 엔터티는 하나 이상의 **날짜** 속성 유형을 가져야 하며 **날짜** 필드가 없는 엔터티를 추가할 수 없습니다. 해당 엔터티가 없으면 **활동 추가** 컨트롤을 사용할 수 없습니다.
 
 1. 대상 그룹 인사이트에서 **데이터** > **활동** 으로 이동합니다.
 
@@ -41,13 +40,16 @@ Dynamics 365 Customer Insights에 [다양한 데이터 소스](data-sources.md)�
 
 1. **다음** 을 선택하여 다음 단계로 진행합니다.
 
-1. **관계** 단계에서 활동 데이터를 해당 고객에 연결하도록 세부 정보를 구성합니다. 이 단계는 엔터티 간의 연결을 시각화합니다.  
+1. **관계** 단계에서 활동 데이터를 해당 고객 레코드에 연결하도록 세부 정보를 구성합니다. 이 단계는 엔터티 간의 연결을 시각화합니다.  
 
    - **첫째**: 다른 엔터티와의 관계를 설정하는 데 사용될 활동 엔터티의 외부 필드입니다.
    - **둘째**: 활동 엔터티와 관계가 있는 해당 소스 고객 엔터티입니다. 데이터 통합 프로세스에 사용되는 소스 고객 엔터티에만 연결할 수 있습니다.
    - **셋째**: 이 활동 항목과 선택한 소스 고객 항목 간의 관계가 이미 있는 경우 관계 이름은 읽기 전용 모드가 됩니다. 그러한 관계가 없는 경우 이 상자에 입력한 이름으로 새 관계가 생성됩니다.
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="엔터티 관계를 정의합니다.":::
+
+   > [!TIP]
+   > B2B 환경에서는 계정 엔터티와 다른 엔터티 중에서 선택할 수 있습니다. 계정 엔터티를 선택하면 관계 경로가 자동으로 설정됩니다. 다른 엔터티의 경우 계정 엔터티에 도달할 때까지 하나 이상의 중간 엔터티에 대한 관계 경로를 정의해야 합니다.
 
 1. **다음** 을 선택하여 다음 단계로 진행합니다. 
 
@@ -95,5 +97,34 @@ Dynamics 365 Customer Insights에 [다양한 데이터 소스](data-sources.md)�
 - **이름 바꾸기**: 선택한 활동에 대해 다른 이름을 입력할 수 있는 대화 상자를 엽니다. **저장** 을 선택하여 변경 내용을 적용합니다.
 
 - **삭제**: 선택한 활동의 삭제를 확인하는 대화 상자를 엽니다. 활동을 선택한 다음 삭제 아이콘을 선택하여 한 번에 둘 이상의 활동을 삭제할 수도 있습니다. **삭제** 를 선택하여 확인합니다.
+
+## <a name="view-activity-timelines-on-customer-profiles"></a>고객 프로필에서 활동 타임라인 보기
+
+고객 활동을 구성한 후 활동 구성에서 **활동 타임라인에 표시** 를 선택하여 고객 프로필에서 고객의 모든 활동을 찾습니다.
+
+**고객** 의 타임라인을 열려면 고객으로 이동하여 보려는 고객 프로필을 선택합니다.
+
+구성한 활동에 고객이 참여한 경우 **활동 타임라인** 섹션에서 찾을 수 있습니다.
+
+:::image type="content" source="media/Activity_Timeline1.PNG" alt-text="고객 프로필에서 구성된 활동 보기.":::
+
+활동 타임라인에서 활동을 필터링하는 방법에는 여러 가지가 있습니다.
+
+- 하나 이상의 활동 아이콘을 선택하여 선택한 유형만 포함하도록 결과를 구체화할 수 있습니다.
+
+  :::image type="content" source="media/Activity_Timeline2.PNG" alt-text="아이콘을 사용하여 유형별로 활동을 필터링.":::
+
+- **필터** 를 선택하여 필터 패널을 열어 타임라인 필터를 구성할 수 있습니다.
+
+   1. *ActivityType* 및 *날짜* 별로 필터링할 수 있습니다.
+   1. 활동 타임라인에서 필터를 사용하려면 **적용** 을 선택합니다.
+
+   :::image type="content" source="media/Activity_Timeline3.PNG" alt-text="필터 패널을 사용하여 필터 조건을 구성.":::
+
+필터를 제거하려면 타임라인에 적용된 각 필터 옆에 있는 **x** 를 선택하거나 **필터 지우기** 를 선택합니다.
+
+
+> [!NOTE]
+> 고객 프로필에서 나가면 활동 필터가 제거됩니다. 고객 프로필을 열 때마다 적용해야 합니다.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: 데이터 통합 시 엔터티 병합
 description: 엔터티를 병합하여 통합 고객 프로필을 만듭니다.
-ms.date: 09/14/2021
+ms.date: 10/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,12 +9,14 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b038cd3f5b433fedf918d34bbfaf2261e11c5c17
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
+searchScope:
+- ci-merge
+ms.openlocfilehash: 6b3002b21ea043315e50724ec103aef8a3ced98e
+ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494327"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7648262"
 ---
 # <a name="merge-entities"></a>엔터티 병합
 
@@ -89,7 +91,7 @@ ms.locfileid: "7494327"
     :::image type="content" source="media/recency-merge-option.png" alt-text="병합 필드의 최근성 옵션 대화 상자.":::
     - **최소 최근**: 최소 최근성을 기준으로 승자 값을 식별합니다. 최근성을 정의하려면 병합 필드 범위의 모든 참여 엔터티에 대한 날짜 또는 숫자 필드가 필요합니다.
 
-1.  병합 프로세스에 참여할 필드를 추가할 수 있습니다.
+1.  병합 프로세스에 참여할 필드를 더 추가할 수 있습니다.
 
 1.  병합된 필드의 이름을 바꿀 수 있습니다.
 
@@ -131,7 +133,7 @@ ms.locfileid: "7494327"
 
 병합 필드를 구성한 후 고유한 고객 프로필 식별자인 CustomerId 값을 생성하는 방법을 정의할 수 있습니다. 데이터 통합 프로세스의 병합 단계에서는 고유한 고객 프로필 식별자를 생성합니다. 식별자는 데이터 통합 ​​프로세스의 결과인 *고객* 엔터티의 CustomerId입니다. 
 
-고객 엔터티의 CustomerId는 null이 아닌 승자 기본 키의 첫 번째 값 해시를 기반으로 합니다. 이러한 키는 일치 및 병합 단계에서 사용되는 엔터티에서 제공되며 일치 순서의 영향을 받습니다. 그래서 일치 순서의 기본 엔터티에서 기본 키 값이 변경되면 생성된 CustomerID가 변경될 수 있습니다. 따라서 기본 키 값이 항상 동일한 고객을 나타내는 것은 아닙니다.
+고객 엔터티의 CustomerId는 null이 아닌 승자 기본 키의 첫 번째 값 해시를 기반으로 합니다. 이러한 키는 일치 및 병합 단계에서 사용되는 엔터티에서 제공되며 일치 순서의 영향을 받습니다. 그래서 일치 순서의 기본 엔터티에서 기본 키 값이 변경되면 생성된 CustomerID가 변경될 수 있습니다. 따라서 기본 키 값이 항상 동일한 고객을 나타내는 것은 아닙니다.
 
 안정적인 고객 ID를 구성하면 이러한 동작을 피할 수 있습니다.
 
@@ -139,7 +141,7 @@ ms.locfileid: "7494327"
 
 1. **통합** > **병합** 으로 이동합니다.
 
-1. **병합** 페이지에서 **키** 탭을 선택합니다. 
+1. **키** 탭을 선택합니다. 
 
 1. 마우스를 **CustomerId** 행 위로 가져가고 **구성** 옵션을 선택합니다.
    :::image type="content" source="media/customize-stable-id.png" alt-text="ID 생성을 사용자 지정하는 컨트롤.":::
@@ -147,6 +149,30 @@ ms.locfileid: "7494327"
 1. 고유한 고객 ID를 구성하고 보다 안정적인 필드를 최대 5개까지 선택하십시오. 구성과 일치하지 않는 레코드는 시스템 구성 ID를 대신 사용합니다.  
 
 1. **완료** 를 선택하고 병합 프로세스를 실행하여 변경 사항을 적용합니다.
+
+## <a name="group-profiles-into-households-or-clusters"></a>프로필을 가족 또는 클러스터로 그룹화
+
+고객 프로필 생성 구성 프로세스의 일부로 관련 프로필을 클러스터로 그룹화하는 규칙을 정의할 수 있습니다. 현재 사용 가능한 클러스터 유형은 가정 및 사용자 지정 클러스터의 두 가지입니다. *Customer* 엔터티에 의미 필드 *Person.LastName* 및 *Location.Address* 가 포함된 경우 시스템은 미리 정의된 규칙을 사용하여 가구를 자동으로 선택합니다. [일치 규칙](match-entities.md#define-rules-for-match-pairs)과 유사한 고유한 규칙 및 조건으로 클러스터를 생성할 수도 있습니다.
+
+**가구 또는 클러스터 정의**
+
+1. **통합** > **병합** 으로 이동합니다.
+
+1. **병합** 탭에서 **고급** > **클러스터 만들기** 를 선택합니다.
+
+   :::image type="content" source="media/create-cluster.png" alt-text="새 클러스터를 생성하도록 제어.":::
+
+1. **가구** 또는 **사용자 지정** 클러스터 중에서 선택합니다. 의미 필드 *Person.LastName* 및 *Location.Address* 가 *Customer* 엔터티에 있는 경우 가구가 자동으로 선택됩니다.
+
+1. 클러스터의 이름을 제공하고 **완료** 를 선택합니다.
+
+1. **클러스터** 탭을 선택하여 생성한 클러스터를 찾습니다.
+
+1. 클러스터를 정의하기 위한 규칙 및 조건을 지정합니다.
+
+1. **실행** 을 선택하여 병합 프로세스를 실행하고 클러스터를 만듭니다.
+
+병합 프로세스를 실행한 후 클러스터 식별자가 *Customer* 엔터티에 새 필드로 추가됩니다.
 
 ## <a name="run-your-merge"></a>병합 실행
 
