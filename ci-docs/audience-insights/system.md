@@ -1,7 +1,7 @@
 ---
 title: 대상 그룹 인사이트의 시스템 구성
 description: Dynamics 365 Customer Insights 대상 그룹 인사이트 기능의 시스템 설정에 대해 알아봅니다.
-ms.date: 02/12/2021
+ms.date: 10/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2af8728009b4f1d53ebc2557bab8c79537a0dc5dda54477493ab1ad16f3f9a8a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3ce767939b8fedf676dc569ede47104ecfe930dd
+ms.sourcegitcommit: cd9f9a9d3da71c5420ef5c4c6ead91bc820d17a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035920"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651848"
 ---
 # <a name="system-configuration"></a>시스템 구성
 
@@ -24,9 +24,9 @@ ms.locfileid: "7035920"
 - [API 사용량](#api-usage-tab)
 - [정보](#about-tab)
 - [일반](#general-tab)
+- [보안](#security-tab)
 
-> [!div class="mx-imgBorder"]
-> ![시스템 페이지.](media/system-tabs.png "시스템 페이지")
+:::image type="content" source="media/system-tabs.png" alt-text="시스템 페이지의 설정 탭.":::
 
 ## <a name="status-tab"></a>상태 탭
 
@@ -84,9 +84,15 @@ ms.locfileid: "7035920"
 
 ## <a name="general-tab"></a>일반 탭
 
-**일반** 탭에는 **언어** 및 **국가/지역 형식** 의 두 가지 옵션이 있습니다.
+**일반** 탭에서 언어 및 국가/지역 형식을 변경할 수 있습니다.
 
-앱은 [다양한 언어를 지원](supported-languages.md)합니다. 선호하는 언어를 변경하려면 드롭 다운에서 **언어** 를 선택합니다.
+Customer Insights는 [여러 언어를 지원합니다](/dynamics365/get-started/availability). 앱은 언어 기본 설정을 사용하여 메뉴, 레이블 텍스트 및 시스템 메시지와 같은 요소를 기본 언어로 표시합니다.
+
+가져온 데이터 및 수동으로 입력한 정보는 번역되지 않습니다.
+
+### <a name="update-the-settings"></a>설정 업데이트
+
+선호하는 언어를 변경하려면 드롭 다운에서 **언어** 를 선택합니다.
 
 날짜, 시간 및 숫자에 대한 원하는 형식을 변경하려면 **국가/지역 형식** 드롭다운을 사용합니다. 이 필드 아래에 서식 미리 보기가 표시됩니다. 새 언어를 선택하면 시스템이 자동으로 선택 항목을 제안합니다.
 
@@ -105,6 +111,13 @@ ms.locfileid: "7035920"
 
    [실시간 데이터 수집](real-time-data-ingestion.md)을 사용하는 작업에는 실시간 API 사용량을 볼 수 있도록 쌍안경 기호가 있는 버튼이 포함되어 있습니다. 버튼을 선택하여 현재 환경에서 실시간 API 사용에 대한 사용 세부 정보가 포함된 사이드 창을 엽니다.   
    **실시간 API 사용량** 창에서 **그룹화** 상자를 사용하여 실시간 상호 작용을 가장 잘 표시하는 방법을 선택합니다. API 메서드, 엔터티 규정이름(대상 엔터티), (이벤트 소스), 결과(성공 또는 실패) 또는 오류 코드별로 데이터를 그룹화할 수 있습니다. 데이터는 이력 차트 및 테이블로 제공됩니다.
+
+## <a name="security-tab"></a>보안 탭
+
+**보안** 탭을 사용하면 자신의 [Azure Key Vault](/azure/key-vault/general/basic-concepts)를 환경에 연결하고 관리할 수 있습니다.
+전용 키 자격 증명 모음을 사용하여 조직의 규정 준수 경계에서 비밀을 준비하고 사용할 수 있습니다. 대상 그룹 인사이트는 Azure Key Vault의 비밀을 사용하여 타사 시스템에 대한 [연결을 설정](connections.md)할 수 있습니다.
+
+자세한 내용은[ 고유한 Azure 키 자격 증명 모음 가져오기](use-azure-key-vault.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

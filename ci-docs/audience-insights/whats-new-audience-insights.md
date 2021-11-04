@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 5262ad20019e90e73ab121a5ab90e602c1a32b7e
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+ms.openlocfilehash: e501df8701493a1c5b83c4d06da3a73fd226165f
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7606098"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673865"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트의 새로운 기능
 
@@ -166,7 +166,7 @@ ms.locfileid: "7606098"
 - **Constant Contact로 세그먼트 내보내기** Constant Contact를 포함하도록 내보내기 대상을 확장했습니다. 이제 Customer Insights에서 Constant Contact 목록으로 세그먼트를 내보내고 이를 마케팅 캠페인의 기준으로 사용할 수 있습니다.   
    자세한 내용은 [Constant Contact로 내보내기](export-constant-contact.md)를 참조하십시오.
 
-- **RollWorks로 세그먼트 내보내기** RollWorks를 포함하도록 내보내기 대상을 확장했습니다. 이제 Customer Insights에서 RollWorks 대상으로 세그먼트를 내보내고 이를 B2B 광고의 기준으로 사용할 수 있습니다.    
+- **RollWorks로 세그먼트 내보내기** RollWorks를 포함하도록 내보내기 대상을 확장했습니다. 이제 Customer Insights에서 RollWorks 대상그룹으로 세그먼트를 내보내고 이를 B-to-B 광고의 기준으로 사용할 수 있습니다.    
    자세한 내용은 [RollWorks로 데이터 내보내기](export-rollworks.md)를 참조하십시오.
 
 - **Snapchat으로 세그먼트 내보내기** Snapchat을 포함하도록 내보내기 대상을 확장했습니다. 이제 Customer Insights에서 Snapchat 대상으로 세그먼트를 내보내고 이를 광고의 기준으로 사용할 수 있습니다.     

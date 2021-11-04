@@ -9,16 +9,16 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: c57eb0ceb50e3b778acac72a4bbfd733a5b0c401
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 685b1683b0c90eab04b130552d2cb23a8ab7a235
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617409"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673240"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Leadspace를 통한 회사 프로필 강화(미리 보기)
 
-Leadspace는 B2B 고객 데이터 플랫폼을 제공하는 데이터 과학 회사입니다. 계정을 기반으로 하는 통합 고객 프로필이 있는 환경에서 데이터를 보강할 수 있습니다. 회사 규모, 위치 또는 산업과 같은 특성으로 *고객 프로필* 을 보강합니다. 직함, 가상 사용자 또는 이메일 인증과 같은 특성으로 *연락처 프로필* 을 보강합니다.
+Leadspace는 B-to-B 고객 데이터 플랫폼을 제공하는 데이터 과학 회사입니다. 계정을 기반으로 하는 통합 고객 프로필이 있는 환경에서 데이터를 보강할 수 있습니다. 회사 규모, 위치 또는 산업과 같은 특성으로 *고객 프로필* 을 보강합니다. 직함, 가상 사용자 또는 이메일 인증과 같은 특성으로 *연락처 프로필* 을 보강합니다.
 
 ## <a name="prerequisites"></a>필수 조건
 

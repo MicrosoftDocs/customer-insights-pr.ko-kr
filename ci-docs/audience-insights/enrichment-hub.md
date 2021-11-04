@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617563"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673007"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>고객 프로필 보강(미리 보기)
 
@@ -29,7 +29,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 **검색** 탭에서 지원되는 모든 보강 옵션을 찾을 수 있습니다.
 
-# <a name="individual-customers-b2c"></a>[개별 소비자(B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[개별 소비자(B2C)](#tab/b2c)
 
 - Microsoft에서 제공한 [브랜드](enrichment-microsoft.md)
 - Microsoft에서 제공한 [관심사](enrichment-microsoft.md)
@@ -38,7 +38,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 - SFTP(보안 파일 전송 프로토콜)를 통한 [사용자 지정 데이터](enrichment-SFTP-custom-import.md) 
 - Microsoft 제공 [Azure Maps](enrichment-azure-maps.md)
 
-# <a name="business-accounts-b2b"></a>[비즈니스 계정(B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[비즈니스 어카운트(B2B)](#tab/b2b)
 
 - Leadspace에서 제공한 [회사 데이터](enrichment-leadspace.md)
 - Microsoft 제공 [향상된 주소](enrichment-enhanced-addresses.md) 

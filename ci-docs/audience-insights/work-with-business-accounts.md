@@ -1,7 +1,7 @@
 ---
 title: 주요 대상 그룹으로 비즈니스 계정 시작
 description: Dynamics 365 Customer Insights의 주요 대상 고객인 비즈니스 계정에 대해 알아보세요.
-ms.date: 09/30/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,16 +9,16 @@ author: m-hartmann
 ms.author: wimohabb
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ea036cf3a3623a314a6d0d7da85b2c30c030ccea
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: ac5ae950a44f7f32e3cb9fdc0ffad05b78fddef0
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7644996"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673695"
 ---
 # <a name="work-with-business-accounts-in-audience-insights"></a>대상 그룹 인사이트에서 비즈니스 계정 작업
 
-Dynamics 365 Customer Insights의 대상 그룹 인사이트 기능을 사용하면 B2C(개별 고객) 및 B2B(비즈니스 계정)과 같은 다양한 주요 대상 그룹에 대해 환경을 구성할 수 있습니다. B2C 시나리오에서 데이터는 개인을 중심으로 합니다. B2B의 경우 주요 대상 그룹은 계정(조직 또는 회사)과 연락처입니다. 이 문서는 비즈니스 계정 환경을 시작하는 데 도움이 됩니다. 환경 초점에 따라 대상 그룹 인사이트의 기능 영역에 대한 차이점을 나열합니다. 차이점에 대한 자세한 내용은 기능 영역의 문서를 검토하세요. 
+Dynamics 365 Customer Insights의 대상 그룹 인사이트 기능을 사용하면 B-to-C(개별 고객) 및 B-to-B(비즈니스 계정)과 같은 다양한 주요 대상 그룹에 대해 환경을 구성할 수 있습니다. B-to-C 시나리오에서 데이터는 개인을 중심으로 합니다. B-to-B의 경우 주요 대상 그룹은 계정(조직 또는 회사)과 연락처입니다. 이 문서는 비즈니스 계정 환경을 시작하는 데 도움이 됩니다. 환경 초점에 따라 대상 그룹 인사이트의 기능 영역에 대한 차이점을 나열합니다. 차이점에 대한 자세한 내용은 기능 영역의 문서를 검토하세요. 
 
 ## <a name="create-an-environment-for-business-accounts"></a>비즈니스 계정을 위한 환경 만들기
 
@@ -32,7 +32,7 @@ Dynamics 365 Customer Insights의 대상 그룹 인사이트 기능을 사용하
 
 조직에서 개별 고객 및 비즈니스 계정에 대한 환경을 유지 관리하는 경우 왼쪽 창의 전환기를 사용하여 기본 대상 그룹를 선택할 수 있습니다.
 
-:::image type="content" source="media/switch-primary-target-audience.PNG" alt-text="개인 고객과 비즈니스 계정 간의 기본 대상 그룹를 변경하는 스위처.":::
+:::image type="content" source="media/switch-primary-target-audience.png" alt-text="개인 고객과 비즈니스 계정 간의 기본 대상 그룹를 변경하는 스위처.":::
 
 ## <a name="supported-feature-areas"></a>지원되는 기능 영역
 

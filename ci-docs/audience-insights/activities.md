@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: c250efcd54ec126c0726b22a971cdedd89760d6b
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: bcb8d42963719f5d225556c31b3fc06db8573e5b
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617977"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673146"
 ---
 # <a name="customer-activities"></a>고객 활동
 
@@ -49,7 +49,7 @@ Dynamics 365 Customer Insights에 [다양한 데이터 소스](data-sources.md)�
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="엔터티 관계를 정의합니다.":::
 
    > [!TIP]
-   > B2B 환경에서는 계정 엔터티와 다른 엔터티 중에서 선택할 수 있습니다. 계정 엔터티를 선택하면 관계 경로가 자동으로 설정됩니다. 다른 엔터티의 경우 계정 엔터티에 도달할 때까지 하나 이상의 중간 엔터티에 대한 관계 경로를 정의해야 합니다.
+   > B-to-B 환경에서는 계정 엔터티와 다른 엔터티 중에서 선택할 수 있습니다. 계정 엔터티를 선택하면 관계 경로가 자동으로 설정됩니다. 다른 엔터티의 경우 계정 엔터티에 도달할 때까지 하나 이상의 중간 엔터티에 대한 관계 경로를 정의해야 합니다.
 
 1. **다음** 을 선택하여 다음 단계로 진행합니다. 
 

@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: ce2fdd435a81bb04148057554c5958e3ab59f125
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 2d977ef4eb585e26b36139681552db22d84759c9
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645134"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673741"
 ---
 # <a name="manage-environments"></a>환경 관리
 
@@ -67,7 +67,8 @@ ms.locfileid: "7645134"
 
 - 고객 프로필.
 - 데이터 원본 자격 증명. 모든 데이터 원본에 대한 자격 증명을 제공하고 데이터 원본을 수동으로 새로 고쳐야 합니다.
-- Common Data Model 폴더의 데이터 원본 및 Dataverse 관리형 Data Lake. 원본 환경에서와 동일한 이름으로 해당 데이터 원본을 수동으로 생성해야 합니다.
+
+- Common Data Model 폴더 및 Dataverse 관리형 Data Lake의 데이터 원본. 원본 환경에서와 동일한 이름으로 해당 데이터 원본을 수동으로 생성해야 합니다.
 
 환경을 복사하면 새 환경이 생성되었다는 확인 메시지가 표시됩니다. **데이터 원본으로 이동** 을 선택하여 데이터 원본 목록을 볼 수 있습니다.
 

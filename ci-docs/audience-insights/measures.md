@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 39acca78c022bc15ebc15dc80f21fe175da04d4d
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
+ms.openlocfilehash: d77d1901fee4771537554c05d3963316d0fb37cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622978"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673477"
 ---
 # <a name="define-and-manage-measures"></a>측정 정의 및 관리
 
@@ -28,7 +28,7 @@ ms.locfileid: "7622978"
 
 이 섹션에서는 새 측정값을 만드는 과정을 처음부터 안내합니다. 통합 고객 프로필 엔터티와 연결하도록 설정된 관계가 있는 데이터 엔터티의 데이터 특성을 사용하여 측정값을 작성할 수 있습니다.
 
-# <a name="individual-customers-b2c"></a>[개별 소비자(B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[개별 소비자(B2C)](#tab/b2c)
 
 1. 대상 그룹 인사이트에서 **측정값** 으로 이동합니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "7622978"
 
 1. **측정값** 으로 이동하여 목록에서 새로 만들어진 측정값을 확인합니다.
 
-# <a name="business-accounts-b2b"></a>[비즈니스 계정(B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[비즈니스 어카운트(B2B)](#tab/b2b)
 
 1. 대상 그룹 인사이트에서 **측정값** 으로 이동합니다.
 
@@ -164,7 +164,7 @@ ms.locfileid: "7622978"
 
 일반적으로 사용되는 측정값의 미리 정의된 템플릿을 사용하여 생성할 수 있습니다. 템플릿에 대한 자세한 설명과 안내식 경험은 효율적인 측정값 생성에 도움이 됩니다. 템플릿은 *통합 활동* 엔터티의 매핑된 데이터를 기반으로 합니다. 따라서 템플릿에서 측정값을 만들기 전에 [고객 활동](activities.md)을 구성했는지 확인하십시오.
 
-# <a name="individual-customers-b2c"></a>[개별 소비자(B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[개별 소비자(B2C)](#tab/b2c)
 
 일반적으로 사용되는 측정값의 미리 정의된 템플릿을 사용하여 생성할 수 있습니다. 템플릿에 대한 자세한 설명과 안내식 경험은 효율적인 측정값 생성에 도움이 됩니다. 템플릿은 *통합 활동* 엔터티의 매핑된 데이터를 기반으로 합니다. 따라서 템플릿에서 측정값을 만들기 전에 [고객 활동](activities.md)을 구성했는지 확인하십시오.
 
@@ -212,7 +212,7 @@ ms.locfileid: "7622978"
 
 1. 이제 **실행** 을 선택하여 측정 결과를 계산합니다. 나중에 수정하려면 **임시보관함에 저장** 을 선택합니다.
 
-# <a name="business-accounts-b2b"></a>[비즈니스 계정(B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[비즈니스 어카운트(B2B)](#tab/b2b)
 
 이 기능은 개별 고객이 기본 대상인 대상 그룹 환경에서 생성된 측정값에만 사용할 수 있습니다.
 

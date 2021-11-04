@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: ac33a6dcde4c710cecd3c6836aad3e26ce5c7de6
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617383"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673849"
 ---
 # <a name="segments-overview"></a>세그먼트 개요
 
@@ -26,7 +26,7 @@ ms.locfileid: "7617383"
 
 새 세그먼트를 만드는 방법에는 여러 가지가 있습니다. 
 
-# <a name="individual-customers-b2c"></a>[개별 소비자(B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[개별 소비자(B2C)](#tab/b2c)
 
 - 세그먼트 빌더가 있는 복잡한 세그먼트: [직접 빌드](segment-builder.md#create-a-new-segment) 
 - 연산자가 하나인 간단한 세그먼트: [빠른 세그먼트](segment-builder.md#quick-segments) 
@@ -34,7 +34,7 @@ ms.locfileid: "7617383"
 - 측정값 또는 속성을 기반으로 한 AI 기반 제안: [측정값 향상을 위한 제안 세그먼트](suggested-segments.md) 
 - 활동에 따른 제안: [고객 활동에 기반한 제안 세그먼트](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b2b"></a>[비즈니스 계정(B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[비즈니스 어카운트(B2B)](#tab/b2b)
 
 - 세그먼트 빌더가 있는 복잡한 세그먼트: [직접 빌드](segment-builder.md#create-a-new-segment)
 

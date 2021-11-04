@@ -10,12 +10,12 @@ author: zacookmsft
 ms.author: zacook
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: be452e4f1515f637f6edbc3ae3aaf6a3d3471489
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 63e22bf9a457ea43c65132643681cffb295ae7e5
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618851"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673970"
 ---
 # <a name="predictions-overview"></a>예측 개요
 
@@ -25,14 +25,14 @@ Dynamics 365 Customer Insights에는 AI 및 기계 학습을 활용하여 데이
 
 데이터 예측을 시작하는 가장 쉬운 방법은 흔히 기본 제공 모델이라고 부르는 사전 정의된 모델입니다. 인사이트를 빠르게 생성하도록 특정 데이터와 구조만 필요합니다. 현재 다음 모델을 사용할 수 있습니다. 
 
-# <a name="individual-customers-b2c"></a>[개별 소비자(B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[개별 소비자(B2C)](#tab/b2c)
 
 - [고객 평생 가치](predict-customer-lifetime-value.md): 비즈니스와의 전체 상호 작용에서 고객의 잠재적 수익을 예측합니다.
 - [제품 추천](predict-product-recommendation.md): 구매 행동 및 구매 패턴이 유사한 고객을 기반으로 한 예측 제품 추천 세트를 제안합니다.
 - [구독 이탈](predict-subscription-churn.md): 고객이 회사의 구독 제품 또는 서비스를 더 이상 사용하지 않을 위험에 처해 있는지 여부를 예측합니다.
 - [트랜잭션 이탈](predict-transactional-churn.md): 고객이 특정 시간 프레임에서 귀하의 제품이나 서비스를 더 이상 구매하지 않을 것인지 예측합니다.
 
-# <a name="business-accounts-b2b"></a>[비즈니스 계정(B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[비즈니스 어카운트(B2B)](#tab/b2b)
 
 - [트랜잭션 이탈](predict-transactional-churn.md): 고객이 특정 시간 프레임에서 귀하의 제품이나 서비스를 더 이상 구매하지 않을 것인지 예측합니다.
 
