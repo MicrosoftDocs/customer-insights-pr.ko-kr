@@ -1,7 +1,7 @@
 ---
 title: 회사 데이터 개선
 description: Microsoft의 모델을 사용하여 회사 데이터를 보강하고 정규화하십시오.
-ms.date: 11/05/2021
+ms.date: 11/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 9bfb96d47de4ec98325e644c60752fc7cab2706c
-ms.sourcegitcommit: 6efcba688d1db1a5d6343c229f292a26c48fc007
+ms.openlocfilehash: d11700c87f31cedc40d32b201251d8a9e2e2c312
+ms.sourcegitcommit: dfc4843cc78857f1e3ca49d7b938e3ba77969169
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7770178"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813926"
 ---
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>개선된 회사 데이터로 회사 프로필 보강
 
@@ -51,7 +51,8 @@ Microsft
 
 1.  회사의 ID를 확인합니다. 입력이 기존 조직인지 또는 회사가 출력을 표준 이름으로 사용하는지 확인하지 않습니다.
 2.  전 세계 기업을 포괄적으로 다룹니다. Microsoft의 편집된 회사 데이터는 전 세계적으로 적용되지만 호주, 캐나다, 영국 및 미국에서 대부분의 적용 범위를 제공합니다.
-3.  데이터의 정확성 또는 최신성을 보장합니다. 비즈니스 정보는 자주 변경되므로 제공되는 향상된 회사 데이터가 항상 정확하거나 최신 상태임을 보장할 수 없습니다.
+3.  회사 주소를 전역적으로 표준화합니다. 현재 오스트레일리아, 캐나다, 프랑스, 독일, 이탈리아, 일본, 영국 및 미국과 같은 국가 또는 지역에서 주소 표준화를 지원합니다.
+4.  데이터의 정확성 또는 최신성을 보장합니다. 비즈니스 정보는 자주 변경되므로 제공되는 향상된 회사 데이터가 항상 정확하거나 최신 상태임을 보장할 수 없습니다.
 
 ## <a name="configure-the-enrichment"></a>보강 구성
 
