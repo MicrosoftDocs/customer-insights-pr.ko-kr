@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c9c7cfbf9f47cca53e5543e2cda2584e25ad855d
-ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
+ms.openlocfilehash: dbcdcbea8ffd1755b58c322233c08c70a065db36
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7643438"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7792035"
 ---
 # <a name="customer-card-add-in-preview"></a>고객 카드 추가 기능(미리 보기)
 
@@ -34,7 +34,7 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
   - **측정 제어**: 고객 특성 유형의 [구성된 측정값](measures.md)이 필요합니다.
   - **인텔리전스 제어**: [예측](predictions.md) 또는 [사용자 지정 모델](custom-models.md)을 사용하여 생성된 데이터가 필요합니다.
   - **고객 세부 정보 제어**: 프로필의 모든 필드는 통합 고객 프로필에서 사용할 수 있습니다.
-  - **보강 제어**: 활성 [보강](enrichment-hub.md)이 고객 프로필에 적용되어야 합니다.
+  - **보강 제어**: 활성 [보강](enrichment-hub.md)이 고객 프로필에 적용되어야 합니다. 카드 추가 기능은 Microsoft에서 제공하는 [브랜드](enrichment-microsoft.md), Microsoft에서 제공하는 [관심사](enrichment-microsoft.md)와 같은 보강 기능을 지원합니다.
   - **연락처 제어**: 유형 연락처의 의미 체계 엔티티 정의가 필요합니다.
   - **시간 표시줄 제어**: [구성된 활동](activities.md)이 필요합니다.
 

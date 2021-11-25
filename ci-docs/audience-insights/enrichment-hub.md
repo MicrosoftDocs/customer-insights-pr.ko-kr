@@ -1,7 +1,7 @@
 ---
 title: 통합 고객 프로필 보강
 description: 기능을 사용하여 고객 데이터를 보강합니다.
-ms.date: 09/30/2021
+ms.date: 11/05/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: de27da92118b83dafa0742b6a1e10ee315750c61
+ms.sourcegitcommit: 6efcba688d1db1a5d6343c229f292a26c48fc007
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673007"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7770132"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>고객 프로필 보강(미리 보기)
 
@@ -42,6 +42,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 - Leadspace에서 제공한 [회사 데이터](enrichment-leadspace.md)
 - Microsoft 제공 [향상된 주소](enrichment-enhanced-addresses.md) 
+- Microsoft에서 제공한 [개선된 회사 데이터](enrichment-enhanced-company-data.md)
 - HERE Technologies에서 제공한 [위치 데이터](enrichment-here.md) 
 - SFTP(보안 파일 전송 프로토콜)를 통한 [사용자 지정 데이터](enrichment-SFTP-custom-import.md) 
 - Microsoft 제공 [Azure Maps](enrichment-azure-maps.md)

@@ -1,7 +1,7 @@
 ---
 title: 예측 시나리오를 위해 공유된 작업
 description: 예측을 관리, 문제 해결 및 구체화하는 방법을 알아봅니다.
-ms.date: 05/17/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: eaccf23a81ca4de19763b761cc5a27c14515fe522ee36dc78f294208b681966e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 4e7e21a610564b30463b27ab703c291275725895
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036473"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731996"
 ---
 # <a name="manage-predictions"></a>예측 관리
 
@@ -50,12 +50,12 @@ ms.locfileid: "7036473"
 
 :::image type="content" source="media/input-data-usability-report.png" alt-text="오류, 경고 및 권장 사항이 있는 테이블을 보여주는 입력 데이터 사용성 보고서의 예입니다.":::
 
-- 이름: 오류, 경고 또는 권장 사항을 설명하는 이름입니다.
-- 단계: 모델 단계, 훈련 또는 점수, 참조 정보입니다.
-- 상태: 정보의 심각도(오류, 경고, 권장 사항)입니다.
-- 열 이름: 모델 성능을 개선하기 위해 수정해야 하는 엔터티의 열입니다.
-- 엔터티 이름: 모델 성능을 개선하기 위해 수정해야 하는 엔터티의 이름입니다.
-- 세부 정보: 오류, 경고 또는 권장 사항에 대한 세부 정보입니다.
+- **이름:** 오류, 경고 또는 권장 사항을 설명하는 이름입니다.
+- **단계:** 모델 단계, 훈련 또는 점수, 참조 정보입니다.
+- **상태:** 정보의 심각도(오류, 경고, 권장 사항)입니다.
+- **열 이름:** 모델 성능을 개선하기 위해 수정해야 하는 엔터티의 열입니다.
+- **엔터티 이름:** 모델 성능을 개선하기 위해 수정해야 하는 엔터티의 이름입니다.
+- **세부 정보:** 오류, 경고 또는 권장 사항에 대한 세부 정보입니다.
 
 ## <a name="refresh-a-prediction"></a>예측 새로 고침
 
@@ -66,6 +66,8 @@ ms.locfileid: "7036473"
 1. 새로 고치려는 예측 옆의 세로 줄임표를 선택합니다.
 
 1. **새로 고침** 을 선택합니다.
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="delete-a-prediction"></a>예측 삭제
 

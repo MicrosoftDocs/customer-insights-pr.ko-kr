@@ -1,7 +1,7 @@
 ---
 title: 신규 및 향후 기능
 description: 새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.
-ms.date: 08/31/2021
+ms.date: 11/04/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: e501df8701493a1c5b83c4d06da3a73fd226165f
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: f7e2645e1608ea83b5d3af1073a5d6f6e97eec8f
+ms.sourcegitcommit: 2a0947cffb52eaf885aa2e50c95b3693f7e4c589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673865"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753125"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트의 새로운 기능
 
@@ -26,6 +26,41 @@ ms.locfileid: "7673865"
 
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하십시오.
+
+## <a name="october-2021-updates"></a>2021년 10월 업데이트
+
+2021년 10월 업데이트에는 새로운 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="b-to-b"></a>B-to-B
+
+2021년 10월부터 Customer Insights에서 비즈니스 계정 및 관련 연락처로 작업할 수 있습니다. 이전에는 앱이 대부분 개인 소비자를 대상으로 했습니다. 새로운 환경 유형 위에 B-to-B 시나리오를 지원하도록 여러 기능 영역이 업데이트되었습니다. 지원되는 B-to-B 기능에 대한 개요는 [대상 그룹 인사이트에서 비즈니스 계정으로 작업](work-with-business-accounts.md)을 참조하십시오.
+
+다음 섹션에서는 비즈니스 계정 및 개별 소비자를 지원하도록 조정된 몇 가지 주요 영역을 강조합니다.
+
+#### <a name="export-segments-based-on-business-accounts"></a>비즈니스 계정을 기반으로 세그먼트 내보내기
+
+대상 그룹 인사이트의 모든 세그먼트 내보내기는 비즈니스 계정의 컨텍스트에서 사용할 수 있습니다. 대부분의 세그먼트 내보내기는 비즈니스 계정에 유효한 기본 세그먼트의 추가 구성 및 [연락처 정보 프로젝팅](segment-builder.md#create-a-new-segment)이 필요합니다. 자세한 내용은 [세그먼트 내보내기](export-destinations.md#export-segments)를 참조하십시오.
+
+#### <a name="use-the-linkedin-ads-export-with-business-accounts"></a>비즈니스 계정으로 LinkedIn 광고 내보내기 사용
+
+LinkedIn 광고 내보내기는 이제 비즈니스 계정의 컨텍스트에서 연락처 및 회사 타겟팅에 사용할 수 있습니다. LinkedIn 내보내기의 주요 포커스로 회사 타겟팅을 선택하면 연락처 정보를 프로젝팅할 필요 없이 비즈니스 계정에 구축된 세그먼트를 내보낼 수 있습니다. 자세한 내용은 [ LinkedIn 광고 내보내기](export-linkedin-ads.md) 및 [연락처 타겟팅](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting)과 [회사 타겟팅](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting)의 차이점에 대한 문서를 참조하십시오. 
+
+#### <a name="create-measures-based-on-business-accounts-and-their-hierarchy"></a>비즈니스 계정 및 해당 계층 구조를 기반으로 측정값 만들기
+
+측정값 빌더를 사용하면 비즈니스 계정에 대한 측정값을 생성하고 선택적으로 계층 구조 정보를 사용할 수 있습니다. 계층 구조 정보는 계정 및 모든 관련 하위 계정에서 측정값 계산을 롤업하는 데 사용됩니다. 예를 들어 계층 구조로 식별되는 각 비즈니스 계정 그룹에 대한 총 수익과 같은 측정값을 생성할 수 있습니다. 자세한 내용은 [측정값 정의 및 관리](measures.md)를 참조하세요.
+
+#### <a name="create-segments-based-on-business-accounts-and-their-hierarchy"></a>비즈니스 계정 및 해당 계층 구조를 기반으로 세그먼트 만들기
+
+세그먼트 빌더를 사용하면 세그먼트의 각 계정에 대한 연락처 정보를 선택적으로 포함하는 비즈니스 계정 세그먼트를 만들 수 있습니다. 계정 계층 구조가 설정되어 있으면 세그먼트 생성에서 계정 계층 구조 정보를 사용할 수 있습니다. 자세한 내용은 [새 세그먼트 만들기](segment-builder.md#create-a-new-segment)를 참조하세요.
+
+#### <a name="retain-your-business-accounts-with-deep-insights-to-their-churn-tendency"></a>고객 이탈 경향에 대한 깊은 인사이트를 통해 비즈니스 계정 유지
+
+고객 이탈 예측 모델은 이제 비즈니스 계정도 지원합니다. 계정뿐만 아니라 계정과 고객이 구매하는 제품 또는 서비스 범주의 조합에 대한 이탈 위험을 평가할 수 있습니다. 이 추가 사항은 계정이 일반적으로 귀하의 구매를 중단할 가능성이 더 높은지 또는 특정 범주의 상품 또는 서비스에 대한 구매를 중단할 가능성이 더 높은지 이해하는 데 도움이 됩니다. 이 AI 모델을 사용하는 데 도움이 되도록 계정이 이탈할 가능성이 있는 이유도 나열됩니다. 자세한 내용은 [트랜잭션 이탈 예측(프리뷰)](predict-transactional-churn.md)을 참조하십시오.
+
+#### <a name="see-contacts-of-a-business-account-in-customer-view"></a>고객 보기에서 비즈니스 계정 연락처 보기
+
+비즈니스 계정이 관련 계정에 매핑된 경우 Customer Insights 앱은 이러한 관련 연락처를 고객 세부 정보 보기의 일부로 표시합니다. 자세한 내용은 [고객 프로필](customer-profiles.md)을 참조하십시오.
+
 
 ## <a name="september-2021-updates"></a>2021년 9월 업데이트
 

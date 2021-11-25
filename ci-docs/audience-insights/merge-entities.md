@@ -1,7 +1,7 @@
 ---
 title: 데이터 통합 시 엔터티 병합
 description: 엔터티를 병합하여 통합 고객 프로필을 만듭니다.
-ms.date: 10/10/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-merge
-ms.openlocfilehash: 6b3002b21ea043315e50724ec103aef8a3ced98e
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: c218f9c1a1b7711ee48419470bf6c352450ffc0c
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648262"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732780"
 ---
 # <a name="merge-entities"></a>엔터티 병합
 
@@ -187,10 +187,9 @@ ms.locfileid: "7648262"
 
 추가 변경을 수행하고 단계를 다시 실행하기 위해 진행중인 병합을 취소할 수 있습니다. **새로 고침 중...** 을 선택하고 나타나는 측면 창에서 **작업 취소** 를 선택합니다.
 
-> [!TIP]
-> 병합 프로세스를 실행한 후 프로세스 상태를 선택하여 **작업 세부 정보** 창을 엽니다. 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고에 대한 개요를 제공합니다. **세부 정보 보기** 를 선택하여 일치 프로세스에 참여한 엔터티, 충돌 해결에 성공했는지, 업데이트가 성공적으로 게시되었는지 확인합니다.  
-> 작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다. 또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다.  
-> :::image type="content" source="media/process-detail-path.png" alt-text="작업 상태 링크에서 프로세스 세부 정보로 이동하는 드릴다운 경로.":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+:::image type="content" source="media/process-detail-path.png" alt-text="작업 상태 링크에서 프로세스 세부 정보로 이동하는 드릴다운 경로.":::
 
 ## <a name="next-step"></a>다음 단계
 

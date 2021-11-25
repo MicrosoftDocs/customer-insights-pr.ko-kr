@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eba7871faf304d5945191b5b9bc215243b4f8a05
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: eb25e050b8aa768e6e1d8d4c5adce6095cccc346
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483685"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7791989"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>Customer Insights 기능의 서비스 제한
 
@@ -26,7 +26,7 @@ ms.locfileid: "7483685"
 
 | 지역  | 제한  | 노트 |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| 세그먼트 및 측정값 | 100개의 세그먼트 또는 측정값입니다. | 활성 [세그먼트](audience-insights/segments.md)와 [측정값](audience-insights/measures.md)은 합쳐서 총 개수가 100개를 초과할 수 없습니다.  |
+| 세그먼트, 측정값 및 예측 | 300  | 결합된 [세그먼트](audience-insights/segments.md), [측정값](audience-insights/measures.md) 및 [예측](audience-insights/predictions.md)의 총 수는 300을 초과할 수 없습니다.  |
 | 관계 | 엔티티 경로의 관계에 대한 20가지 수준의 깊이. | 빌더 인터페이스를 사용하여 [세그먼트](audience-insights/segments.md) 또는 [측정](audience-insights/measures.md)를 생성할 때 엔터티 경로는 시작 엔터티와 대상 엔터티 간에 최대 20개의 관계 홉을 가질 수 있습니다.  |
 
 

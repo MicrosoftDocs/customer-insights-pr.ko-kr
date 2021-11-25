@@ -9,12 +9,12 @@ ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 816f948331a06794c15000eb779f93cc7fdda202
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 1f8922703af506974c8b5b24086b61f05a83609d
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645318"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673451"
 ---
 # <a name="create-a-new-workspace-and-add-members"></a>새 작업 영역을 만들고 구성원 추가
 
@@ -26,11 +26,11 @@ ms.locfileid: "7645318"
 
 ## <a name="create-a-new-workspace"></a>새 작업 영역 만들기
 
-작업 영역을 만드는 과정에는 작업 영역을 구성하기 위한 *환경* 설정 작업이 포함됩니다. 환경은 하나 이상의 작업 영역을 포함할 수 있는 공간입니다. 환경을 사용하여 작업 영역 및 Customer Insights 대상 그룹 인사이트 기능에 대한 연결을 관리할 수 있습니다.
+작업 영역을 만드는 과정에는 작업 영역을 구성하기 위한 *환경* 설정 작업이 포함됩니다. 환경은 하나 이상의 작업 영역을 포함할 수 있는 공간입니다. 환경을 사용하여 작업 영역 및 대상 그룹 인사이트 기능에 대한 연결을 관리할 수 있습니다.
 
-1. 작업 영역 전환기에서 **새로 만들기** 를 선택합니다.
+1. 작업 영역 전환기에서 **+새로 만들기** 를 선택합니다.
 
-   :::image type="content" source="media/new-workspace.png" alt-text="탐색 창 및 설명에 설명이 있는 Customer Insights 페이지.":::
+   :::image type="content" source="media/new-workspace.png" alt-text="탐색 창 및 설명에 설명 선이 있는 Customer Insights 페이지.":::
 
 1. **작업 영역** 창에서 **작업 영역 이름** 을 입력합니다.
 

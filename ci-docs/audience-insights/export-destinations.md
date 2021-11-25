@@ -1,7 +1,7 @@
 ---
 title: Customer Insights에서 데이터 내보내기
 description: 데이터 공유를 위한 내보내기를 관리합니다.
-ms.date: 10/08/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: pkieffer
 ms.author: philk
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 61e95e47489495e367498547687b0065169519e6
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: bff0486fdb3a02ecb0aa86e81abe1c506e234bc5
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673331"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732158"
 ---
 # <a name="exports-preview-overview"></a>내보내기(프리뷰) 개요
 
@@ -97,7 +97,9 @@ ms.locfileid: "7673331"
 
 구성하는 각 내보내기에는 새로 고침 일정이 있습니다. 새로 고치는 동안 시스템은 내보내기에 포함할 새 데이터 또는 업데이트된 데이터를 찾습니다. 기본적으로 내보내기는 모든 [예약된 시스템 새로 고침](system.md#schedule-tab)의 일부로 실행됩니다. 새로 고침 일정을 사용자 지정하거나 해제하여 수동으로 내보내기를 실행할 수 있습니다.
 
-내보내기 일정은 환경 상태에 따라 다릅니다. 예약된 내보내기가 시작되어야 할 때 [종속성](system.md#refresh-policies)에 진행 중인 업데이트가 있는 경우 시스템은 먼저 업데이트를 완료한 다음 내보내기를 실행합니다. **새로 고침** 열에서 내보내기가 마지막으로 새로 고쳐진 시기를 확인할 수 있습니다.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+내보내기 일정은 환경 상태에 따라 다릅니다. 예약된 내보내기가 시작되어야 할 때 [종속성](system.md#refresh-processes)에 진행 중인 업데이트가 있는 경우 시스템은 먼저 업데이트를 완료한 다음 내보내기를 실행합니다. **새로 고침** 열에서 내보내기가 마지막으로 새로 고쳐진 시기를 확인할 수 있습니다.
 
 ### <a name="schedule-exports"></a>내보내기 예약
 

@@ -1,7 +1,7 @@
 ---
 title: 측정값 만들기 및 관리
 description: 비즈니스 성과를 분석하고 반영하기 위한 측정값을 정의합니다.
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: d77d1901fee4771537554c05d3963316d0fb37cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: f6be11bd97be71bc0c3a58eaee4d8ed45f535877
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673477"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732734"
 ---
 # <a name="define-and-manage-measures"></a>측정 정의 및 관리
 
@@ -238,8 +238,7 @@ ms.locfileid: "7673477"
 - 측정을 **삭제** 합니다.
 - **활성화** 또는 **비활성화** 합니다. [예약된 새로 고침](system.md#schedule-tab) 중에는 비활성 측정값이 새로 고쳐지지 않습니다.
 
-> [!TIP]
-> 작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다. 또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다. 프로세스 상태를 선택하여 전체 작업의 진행률에 대한 세부 사항을 볼 수 있습니다. 작업의 작업 중 하나에 대해 **세부 정보 보기** 를 선택한 후 처리 시간, 마지막 처리 날짜 및 작업과 관련된 모든 오류 및 경고와 같은 추가 정보를 찾을 수 있습니다.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="next-step"></a>다음 단계
 

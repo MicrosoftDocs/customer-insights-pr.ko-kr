@@ -1,7 +1,7 @@
 ---
 title: 엔터티 및 데이터 집합
 description: 엔터티 페이지에서 데이터를 봅니다.
-ms.date: 04/16/2020
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 137de726b243b501491fcbe7866820aaee26097fcf379270c423c277374ae9a4
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 2a207a3dcad4bf192efb6ee1554195f10b19670b
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033823"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732088"
 ---
 # <a name="entities-in-audience-insights"></a>대상 그룹 인사이트의 엔터티
 
@@ -26,9 +26,10 @@ ms.locfileid: "7033823"
 - **원본**: 엔터티를 수집한 데이터 소스 유형
 - **만든 사람**: 엔터티를 만든 사람의 이름
 - **만든 날짜**: 엔터티 작성 날짜 및 시간
-- **업데이트한 사람**: 엔터티를 업데이트한 사람의 이름
-- **마지막 업데이트 날짜**: 엔터티의 마지막 업데이트 날짜 및 시간
-- **마지막 새로 고침**: 마지막으로 데이터를 새로 고친 날짜 및 시간
+- **업데이트한 사람**: 엔티티를 업데이트한 사람의 이름
+- **상태**: 엔터티의 마지막 업데이트에 대한 세부 정보
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="explore-a-specific-entitys-data"></a>특정 엔터티의 데이터 탐색
 

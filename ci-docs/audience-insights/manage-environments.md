@@ -1,7 +1,7 @@
 ---
 title: 환경 만들기 및 관리
 description: 서비스에 등록하는 방법과 환경을 관리하는 방법을 알아봅니다.
-ms.date: 10/14/2021
+ms.date: 11/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 2d977ef4eb585e26b36139681552db22d84759c9
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 65c6a68f550c2873ec30c6ac54f1752d880ce12c
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673741"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799644"
 ---
 # <a name="manage-environments"></a>환경 관리
 
@@ -39,6 +39,19 @@ ms.locfileid: "7673741"
 3. **환경 편집** 상자에서 환경 설정을 업데이트할 수 있습니다.
 
 환경 설정에 대한 자세한 내용은 [새 환경 만들기](create-environment.md)를 참조하세요.
+
+## <a name="connect-to-microsoft-dataverse"></a>Microsoft Dataverse에 연결할 수 없음
+   
+**Microsoft Dataverse** 단계를 통해 Customer Insights를 Dataverse 환경과 연결할 수 있습니다.
+
+[기본 예측 모델](predictions-overview.md#out-of-box-models)을 사용하려면 Dataverse와 데이터 공유를 구성하세요. 또는 조직에서 관리하는 Microsoft Dataverse 환경 URL을 제공하여 온-프레미스 데이터 원본에서 데이터 수집을 활성화할 수 있습니다. **데이터 공유 활성화** 를 선택하여 Customer Insights 출력 데이터를 Dataverse 관리형 Data Lake와 공유합니다.
+
+:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Microsoft Dataverse와 데이터 공유를 활성화하는 구성 옵션":::
+
+> [!NOTE]
+> Customer Insights는 다음 데이터 공유 시나리오를 지원하지 않습니다.
+> - 모든 데이터를 자체 Azure Data Lake Storage에 저장하면 Dataverse 관리형 데이터 레이크와 데이터 공유를 활성화할 수 없습니다.
+> - Dataverse와 데이터 공유를 사용 설정하면 [엔터티에서 예측되거나 누락된 값 만들기](predictions.md)가 가능하지 않습니다.
 
 ## <a name="copy-the-environment-configuration"></a>환경 구성 복사
 

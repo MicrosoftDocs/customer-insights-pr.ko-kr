@@ -1,7 +1,7 @@
 ---
 title: 고객 프로필 검색 및 필터링
 description: 통합 고객 프로필에 대한 정보를 신속하게 찾고 지정된 속성을 필터링합니다.
-ms.date: 01/19/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,19 +9,20 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 9eaeb0c93481283324f21122c9528ff5896b9866
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: e17d745974958b73683f1f9406c5ae95f2cbcb3c
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7470001"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732042"
 ---
 # <a name="customer-profiles-search--filter-index"></a>고객 프로필: 색인 검색 및 필터링
 
 고객 데이터를 통합한 결과는 전체 고객 기반에 대한 통일된 보기를 제공하는 고객 프로필 엔터티입니다. [특정 고객 또는 고객 그룹에 대한 정보를 빠르게 찾을 수 있도록](customer-profiles.md) **고객** 페이지에서 **검색** 및 **필터** 기능을 구성할 수 있습니다. 관리자가 **검색 및 필터 색인** 페이지에서 특성을 편집하여 사용자가 검색 및 필터링할 수 있는 특성을 편집하는 방법을 계속 읽으십시오.
 
-> [!div class="mx-imgBorder"]
-> ![검색 필터.](media/search-filter.png "검색 필터")
+   :::image type="content" source="media/search-filter.png" alt-text="검색 필터":::
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="add-fields-and-specify-attributes"></a>필드 추가 및 특성 지정
 

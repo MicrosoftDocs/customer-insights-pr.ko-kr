@@ -1,7 +1,7 @@
 ---
 title: 의미 체계 매핑(미리 보기)
 description: 의미 체계 매핑 개요 및 사용 방법.
-ms.date: 09/28/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: b0884b8b6a2c5abe4b3967d1b57d11a3a6d65c5b
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
+ms.openlocfilehash: f23c622572ff9f967eca07de7898419d1ffc18b0
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622943"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731951"
 ---
 # <a name="semantic-mappings"></a>의미 체계 매핑
 
@@ -75,8 +75,7 @@ ms.locfileid: "7622943"
 
 1. 의미 체계 매핑을 나중에 실행하려면 의미 체계 매핑을 선택하고 **새로 고침** 을 선택합니다.
 
-> [!TIP]
-> 작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다. 또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다. 프로세스 상태를 선택하여 전체 작업의 진행률에 대한 세부 사항을 볼 수 있습니다. 작업 중 하나를 선택한 다음 **자세히 보기** 참조를 선택하면, 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고와 같은 추가 정보를 확인할 수 있습니다.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-semantic-mappings"></a>기존 의미 체계 매핑 관리
 
@@ -91,5 +90,6 @@ ms.locfileid: "7622943"
 - **이름 바꾸기**: 선택한 의미 체계 매핑에 대해 다른 이름을 입력할 수 있는 대화 상자를 엽니다. **저장** 을 선택하여 변경 내용을 적용합니다.
 
 - **삭제** : 선택한 의미 체계 매핑의 삭제를 확인하는 대화 상자를 엽니다. 의미 체계 매핑 및 삭제 아이콘을 선택하여 한 번에 둘 이상의 의미 체계 매핑을 삭제할 수도 있습니다. **삭제** 를 선택하여 확인합니다.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

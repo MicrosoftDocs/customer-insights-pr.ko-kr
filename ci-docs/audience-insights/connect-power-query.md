@@ -1,7 +1,7 @@
 ---
 title: 파워 쿼리 커넥터를 통해 데이터 수집
 description: 파워 쿼리를 기반으로 하는 데이터 원본용 커넥터.
-ms.date: 09/29/2020
+ms.date: 11/01/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: ab6edc3f33ebacb81f55c0882a78c5827b4384ed
-ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
+ms.openlocfilehash: 5d54d33c235e646644e8874e5b0c28898dcff11a
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7643502"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732226"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>파워 쿼리 데이터 원본에 연결
 
@@ -79,6 +79,8 @@ Customer Insights로 데이터를 가져 오기 위해 선택할 수 있는 [파
    > [!div class="mx-imgBorder"]
    > ![편집 옵션.](media/edit-option-data-sources.png "편집 옵션")
 
+   [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+   
 3. [새 데이터 원본 만들기](#create-a-new-data-source) 섹션에 설명된 대로 **파워 쿼리-검색어 수정** 대화상자에서 변경사항 및 변환을 적용합니다.
 
 4. 변경 내용을 저장하기 위해 편집을 완료한 후 파워 쿼리에서 **저장** 을 선택합니다.

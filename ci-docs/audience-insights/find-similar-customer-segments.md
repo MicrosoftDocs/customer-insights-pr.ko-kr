@@ -9,16 +9,18 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ee4d24ae0ae39c689956f70efe46c4226876484e6da6282dc874cec37bd287e2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 7c447609bd54de0780dd14aae9f05c7c24b8cce5
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034551"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799690"
 ---
 # <a name="similar-customers-preview"></a>유사한 고객(미리 보기)
 
 이 기능을 사용하면 인공 지능을 사용하여 고객 기반에서 유사한 고객을 찾을 수 있습니다. 이 기능을 사용하려면 하나 이상의 세그먼트를 작성해야 합니다. 기존 세그먼트의 기준을 확장하면 해당 세그먼트와 유사한 고객을 찾을 수 있습니다.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOFou]
 
 > [!NOTE]
 > *유사한 고객 찾기* 는 자동화된 수단을 사용하여 데이터를 평가하고 해당 데이터를 기반으로 예측을 수행하므로 일반 데이터 보호 규정("GDPR")에 의해 정의된 대로 프로파일링 방법으로 사용될 수 있습니다. 고객이 데이터를 처리하기 위해 이 기능을 사용하는 경우 GDPR 또는 기타 법률 또는 규정이 적용될 수 있습니다. 귀하는 예측을 포함한 Dynamics 365 Customer Insights 사용이 개인 정보 보호, 개인 데이터, 생체 인식 데이터, 데이터 보호 및 통신 기밀과 관련된 법률을 포함하여 모든 관련 법률 및 규정을 준수하는지 확인할 책임이 있습니다.

@@ -1,7 +1,7 @@
 ---
 title: 데이터 통합 시 엔터티 일치
 description: 엔터티를 일치시켜 데이터 세트를 결합하고 통합된 고객 프로필을 만듭니다.
-ms.date: 02/23/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-match
-ms.openlocfilehash: 67e17495fa6da1cfac7ee4ee165e798364f6cb27
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: cabeddbc9d485108d166e6355175a01721b75a55
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648216"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732642"
 ---
 # <a name="match-entities"></a>엔터티 매칭
 
@@ -180,10 +180,7 @@ ms.locfileid: "7648216"
 
 성공적인 실행 결과와 통합 고객 프로필 엔터티를 **엔티티** 페이지에서 확인합니다. 통합 고객 엔티티는 **프로필** 섹션에서 **고객** 으로 불립니다. 첫 번째 성공적인 일치 실행은 통합 *고객* 엔터티를 실행합니다. 모든 후속 일치 실행은 해당 엔티티를 확장합니다.
 
-> [!TIP]
-> 일치 프로세스를 실행한 후 프로세스 상태를 선택하여 **작업 세부 정보** 창을 엽니다. 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고에 대한 개요를 제공합니다. **세부 정보 보기** 를 선택하여 일치 프로세스에 참여한 엔터티, 적용된 규칙 및 업데이트가 성공적으로 게시되었는지 확인합니다.  
-> 작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다. 또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다.  
-> :::image type="content" source="media/process-detail-path.png" alt-text="작업 상태 링크에서 프로세스 세부 정보로 이동하는 드릴다운 경로.":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="review-and-validate-your-matches"></a>일치 검토 및 유효성 검사
 

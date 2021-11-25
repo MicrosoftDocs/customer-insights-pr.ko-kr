@@ -9,16 +9,18 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 409dfce02c41d7c52295409912880b9224469908805e199066faeb2b7a4f1f9d
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f9397729d2f79d079b4dea2ee92d0823b6d987e4
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035331"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799736"
 ---
 # <a name="subscription-churn-prediction-preview"></a>구독 이탈 예측(미리 보기)
 
 구독 이탈 예측은 고객이 회사의 구독 제품이나 서비스를 더 이상 사용하지 않아도 되는 위험에 처해 있는지 여부를 예측합니다. **인텔리전스** > **예측** 페이지에서 새로운 구독 이탈 예측을 만들 수 있습니다. **내 예측** 을 선택하여 내가 만든 다른 예측을 볼 수 있습니다.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOKNQ]
 
 > [!TIP]
 > 샘플 데이터를 사용한 구독 이탈 예측 자습서인 [구독 이탈 예측 샘플 가이드](sample-guide-predict-subscription-churn.md)를 사용해 보세요.

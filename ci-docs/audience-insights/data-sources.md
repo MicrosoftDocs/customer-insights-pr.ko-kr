@@ -1,7 +1,7 @@
 ---
 title: 데이터를 수집할 데이터 원본 사용
 description: 다양한 소스에서 데이터를 가져 오는 방법을 알아 봅니다.
-ms.date: 04/12/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: de31e1f25c08d0bcb5341c5f465b1999de48acf3
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 27cbd0346b1219c7812f4b90327dd27b645c2b8e
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645363"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732163"
 ---
 # <a name="data-sources-overview"></a>데이터 원본 개요
 
@@ -48,14 +48,7 @@ Dataverse 환경과 Customer Insights가 사용하는 환경을 연견ㄹ한 후
 > [!div class="mx-imgBorder"]
 > ![원본 데이터 추가됨.](media/configure-data-datasource-added.png "데이터 원본 추가")
 
-|실행 상태  |설명  |
-|---------|---------|
-|성공   |**새로 고침됨** 열에 데이터 원본에 시간이 언급되면 성공적으로 수집되었습니다.
-|시작되지 않음   |데이터 원본에는 아직 수집된 데이터가 없거나 아직 초안 모드에 있습니다.         |
-|새로 고침    |데이터 수집이 진행 중입니다. **작업** 열에서 **새로 고침 중지** 를 선택하여 이 작업을 취소할 수 있습니다 . 데이터 원본의 새로 고침을 중지하면 마지막 새로 고침 상태로 되돌아갑니다.       |
-|실패함     |데이터 수집에 오류가 발생했습니다.         |
-
-데이터 원본의 **상태** 열에서 값을 선택하여 자세한 내용을 검토하십시오. **진행 세부 정보** 창에서 **데이터 원본** 을 확장합니다. 오류 세부 정보 및 다운스트림 프로세스 업데이트를 포함한 새로 고침 상태에 대한 자세한 내용을 보려면 **세부 정보 보기** 를 선택합니다.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 데이터를 로드하는 데 시간이 걸릴 수 있습니다. 성공적으로 새로 고친 후 수집된 데이터는 **엔터티** 페이지에서 검토할 수 있습니다. 자세한 내용은 [엔터티](entities.md)를 참조하십시오.
 
