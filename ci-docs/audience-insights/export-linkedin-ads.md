@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 867a6541734746f75a35faaa8d3861e0479d6114
+ms.sourcegitcommit: 9558ff772ee6c944fcb8db4bfc8cda13b38a1bff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618299"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7866896"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>LinkedIn Ads로 세그먼트 내보내기(프리뷰)
 
@@ -28,6 +28,7 @@ ms.locfileid: "7618299"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
+- Customer Insights의 세그먼트에는 최소 300개의 고유 프로필이 포함되어야 합니다. 
 - LinkedIn Ads로 내보낼 때마다 고객 프로필을 최대 10만 개까지 내보낼 수 있습니다.
 - LinkedIn Ads로 내보내기는 세그먼트로 제한됩니다.
 - 최대 10만 개의 고객 프로필을 LinkedIn Ads로 내보내려면 최대 10분이 소요될 수 있습니다. 

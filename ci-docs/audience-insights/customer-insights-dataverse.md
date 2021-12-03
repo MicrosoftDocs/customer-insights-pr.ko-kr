@@ -1,7 +1,7 @@
 ---
 title: Microsoft Dataverse의 Customer Insights 데이터
 description: Customer Insights 엔터티를 Microsoft Dataverse에서 테이블로 사용합니다.
-ms.date: 10/14/2021
+ms.date: 11/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9855ff6908001dd18bc19a286fc56620d0a127e5
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 6f74559b34a95ed976a4e353c2dbabe59e1a8839
+ms.sourcegitcommit: 9558ff772ee6c944fcb8db4bfc8cda13b38a1bff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645226"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7866942"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Microsoft Dataverse에서 Customer Insights 데이터로 작업
 
@@ -45,6 +45,7 @@ Customer Insights를 설정할 때 새 조직을 만들면 새 Dataverse 환경�
 - [CustomerMeasure](#customermeasure)
 - [보강](#enrichment)
 - [예측](#prediction)
+- [세그먼트 구성원 자격](#segment-membership)
 
 
 ### <a name="customerprofile"></a>CustomerProfile
@@ -121,3 +122,16 @@ AlternateKey 테이블에는 통합 프로세스에 참여한 엔터티의 키�
 | 값               | JSON 문자열 | 모델에서 생성된 특성 목록 |
 | msdynci_predictionid | GUID        | msdynci_identifier에서 생성된 결정론적 GUID | 
 | msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+
+### <a name="segment-membership"></a>세그먼트 구성원 자격
+
+이 테이블에는 고객 프로필의 세그먼트 구성원 자격 정보가 포함되어 있습니다.
+
+| Column        | Type | Description                        |
+|--------------------|--------------|-----------------------------|
+| 고객 ID        | String       | 고객 프로필 ID        |
+| SegmentProvider      | String       | 세그먼트를 게시하는 앱입니다. 기본: 대상 그룹 인사이트         |
+| SegmentMembershipType | String       | 이 세그먼트 구성원 자격 레코드의 고객 유형입니다. 고객, 연락처 또는 계정과 같은 여러 유형을 지원합니다. 기본: 고객  |
+| 세그먼트       | JSON 문자열  | 고객 프로필이 속한 고유 세그먼트 목록      |
+| msdynci_identifier  | String   | 세그먼트 구성원 자격 레코드의 고유 식별자입니다. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| msdynci_segmentmembershipid | GUID      | `msdynci_identifier`에서 생성된 결정적 GUID          |
