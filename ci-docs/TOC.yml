@@ -84,7 +84,7 @@
           href: audience-insights/enrichment-microsoft.md
         - name: 고급 주소
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: 회사 데이터 개선
+        - name: 고급 회사 데이터
           href: audience-insights/enrichment-enhanced-company-data.md
         - name: Azure Maps로 보강
           href: audience-insights/enrichment-azure-maps.md
@@ -94,6 +94,8 @@
           href: audience-insights/enrichment-leadspace.md
         - name: Experian으로 보강
           href: audience-insights/enrichment-experian.md
+        - name: Office 365 데이터로 보강
+          href: audience-insights/enrichment-office.md
         - name: SFTP 사용자 지정 가져오기로 보강
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: 세그먼트
@@ -144,8 +146,6 @@
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: Azure Machine Learning 실험
               href: audience-insights/azure-machine-learning-experiments.md
-            - name: Azure Machine Learning Studio로 실험
-              href: audience-insights/machine-learning-studio-experiments.md
         - name: 예측 관리
           href: audience-insights/manage-predictions.md
         - name: 예측을 기준으로 세그먼트 만들기
@@ -240,6 +240,8 @@
               href: audience-insights/use-azure-key-vault.md
             - name: 서비스 주체를 사용하여 ADLS 스토리지 계정에 연결
               href: audience-insights/connect-service-principal.md
+            - name: 진단 로그 내보내기
+              href: audience-insights/diagnostics.md
     - name: 확장성
       items:
         - name: 참여 인사이트의 웹 데이터 통합

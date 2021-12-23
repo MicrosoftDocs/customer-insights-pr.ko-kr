@@ -1,7 +1,7 @@
 ---
 title: Azure Machine Learning 실험
 description: Dynamics 365 Customer Insights의 Azure Machine Learning 기반 모델을 사용합니다.
-ms.date: 11/30/2020
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,16 +9,16 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4c04a1d08aba152ce91d452ae2300c1ce0fc79e5d6980ac506dc40d9914c9fca
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: e37eec503c9df83ef72497e22afa1266296e642c
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033180"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881746"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Azure Machine Learning 기반 모델 사용
 
-Dynamics 365 Customer Insights의 통합 데이터는 추가 비즈니스 인사이트를 생성할 수 있는 기계 학습 모델을 구축하기 위한 소스입니다. Customer Insights는 Machine Learning Studio(클래식) 및 Azure Machine Learning과 통합되어 고유한 사용자 지정 모델을 사용합니다. Machine Learning Studio(클래식)에서 빌드된 실험의 예는 [Machine Learning Studio(클래식) 실험](machine-learning-studio-experiments.md)을 참조하세요. 
+Dynamics 365 Customer Insights의 통합 데이터는 추가 비즈니스 인사이트를 생성할 수 있는 기계 학습 모델을 구축하기 위한 소스입니다. Customer Insights는 Azure Machine Learning과 통합되어 고유한 사용자 지정 모델을 사용합니다.
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights의 통합 데이터는 추가 비즈니스 인사
 
 ## <a name="work-with-azure-machine-learning-designer"></a>Azure Machine Learning 디자이너로 작업
 
-Azure Machine Learning 디자이너는 Machine Learning Studio(클래식)와 유사한 데이터 집합 및 모듈을 끌어서 놓을 수 있는 시각적 캔버스를 제공합니다. 디자이너에서 생성된 배치 파이프라인은 적절히 구성된 경우 Customer Insights에 통합될 수 있습니다. 
+Azure Machine Learning 디자이너는 데이터 세트 및 모듈을 끌어다 놓을 수 있는 시각적 캔버스를 제공합니다. 디자이너에서 생성된 배치 파이프라인은 적절히 구성된 경우 Customer Insights에 통합될 수 있습니다. 
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>Azure Machine Learning SDK로 작업
 

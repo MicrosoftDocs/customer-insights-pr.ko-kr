@@ -1,5 +1,5 @@
 ---
-title: 트랜잭션 이탈 예측
+title: 트랜잭션 이탈 예측(비디오)
 description: 고객이 더 이상 제품이나 서비스를 구매하지 않을 위험에 처해 있는지 예측합니다.
 ms.date: 10/20/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 9fa6a044989d523e1068aff24266cfb475632736
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: ad87e0fd848168d1a18f28f2ac5c507bb01e1f28
+ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673053"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7904080"
 ---
 # <a name="transaction-churn-prediction-preview"></a>트랜잭션 이탈 예측(프리뷰)
 

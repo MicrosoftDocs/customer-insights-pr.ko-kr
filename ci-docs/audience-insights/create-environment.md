@@ -1,7 +1,7 @@
 ---
 title: Customer Insights에서 환경 만들기
 description: Dynamics 365 Customer Insights에 대한 라이선스 구독으로 환경을 만드는 단계.
-ms.date: 10/14/2021
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 914af46d2d82f3556d149f2836680c902f826d50
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 4f26220f6ba7f5b5ae00c11216129f9ad814b77d
+ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673399"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892346"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>대상 그룹 인사이트에서 환경 만들기
 
@@ -77,6 +77,9 @@ Customer Insights의 여러 환경을 만들고 해당 환경의 출력 엔터�
 **Microsoft Dataverse** 단계를 통해 Customer Insights를 Dataverse 환경과 연결할 수 있습니다.
 
 [기본 예측 모델](predictions-overview.md#out-of-box-models)을 사용하려면 Dataverse와 데이터 공유를 구성하세요. 또는 조직에서 관리하는 Microsoft Dataverse 환경 URL을 제공하여 온-프레미스 데이터 원본에서 데이터 수집을 활성화할 수 있습니다. **데이터 공유 활성화** 를 선택하여 Customer Insights 출력 데이터를 Dataverse 관리형 Data Lake와 공유합니다.
+
+> [!IMPORTANT]
+> 데이터 공유를 활성화하려면 Customer Insights 및 Dataverse가 동일한 지역에 있어야 합니다.
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="Microsoft Dataverse와 데이터 공유를 활성화하는 구성 옵션":::
 

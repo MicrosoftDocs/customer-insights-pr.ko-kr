@@ -1,20 +1,20 @@
 ---
-title: Dynamics 365 앱용 고객 카드 추가 기능
+title: Dynamics 365 앱의 고객 카드 추가 기능(비디오)
 description: 이 추가 기능을 사용하여 Dynamics 365 앱에서 대상 그룹 인사이트의 데이터를 표시합니다.
-ms.date: 09/30/2021
+ms.date: 12/07/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: pkieffer
-ms.author: philk
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: dbcdcbea8ffd1755b58c322233c08c70a065db36
-ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
+ms.openlocfilehash: e15d73bfc7af2cd9c8b5d983f01922459ec4a2ee
+ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7792035"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7904021"
 ---
 # <a name="customer-card-add-in-preview"></a>고객 카드 추가 기능(미리 보기)
 
@@ -34,7 +34,7 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
   - **측정 제어**: 고객 특성 유형의 [구성된 측정값](measures.md)이 필요합니다.
   - **인텔리전스 제어**: [예측](predictions.md) 또는 [사용자 지정 모델](custom-models.md)을 사용하여 생성된 데이터가 필요합니다.
   - **고객 세부 정보 제어**: 프로필의 모든 필드는 통합 고객 프로필에서 사용할 수 있습니다.
-  - **보강 제어**: 활성 [보강](enrichment-hub.md)이 고객 프로필에 적용되어야 합니다. 카드 추가 기능은 Microsoft에서 제공하는 [브랜드](enrichment-microsoft.md), Microsoft에서 제공하는 [관심사](enrichment-microsoft.md)와 같은 보강 기능을 지원합니다.
+  - **보강 제어**: 활성 [보강](enrichment-hub.md)이 고객 프로필에 적용되어야 합니다. 카드 추가 기능은 다음 강화를 지원합니다. Microsfot에서 제공한 [브랜드](enrichment-microsoft.md), Microsfot에서 제공한 [관심사](enrichment-microsoft.md), Microsfot에서 제공한 [사무실 참여 데이터](enrichment-office.md).
   - **연락처 제어**: 유형 연락처의 의미 체계 엔티티 정의가 필요합니다.
   - **시간 표시줄 제어**: [구성된 활동](activities.md)이 필요합니다.
 

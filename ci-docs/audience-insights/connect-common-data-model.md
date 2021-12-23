@@ -1,7 +1,7 @@
 ---
 title: Common Data Model 데이터를 Azure Data Lake 계정에 연결
 description: Azure Data Lake Storage를 사용하여 Common Data Model 데이터로 작업합니다.
-ms.date: 05/29/2020
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 93871f8029053d4ed4a116d3af3550b7684ee11ea8633e937138245e193a44e6
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 5f9010f78ea4c24094e0df4f8e153fb832e05cc8
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033134"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900205"
 ---
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>Azure Data Lake 계정을 사용하여 Common Data Model 폴더에 연결
 
@@ -30,7 +30,7 @@ ms.locfileid: "7033134"
 
 - 연결하고 데이터를 수집하려는 Azure Data Lake는 Dynamics 365 Customer Insights 환경과 동일한 Azure 지역에 있어야 합니다. 다른 Azure 지역의 데이터 레이크에서 Common Data Model 폴더에 대한 연결은 지원되지 않습니다. 환경의 Azure 지역을 확인하려면 대상 그룹 인사이트에서 **관리** > **시스템** > **정보** 로 이동합니다.
 
-- 온라인 서비스에 저장된 데이터는 Dynamics 365 Customer Insights에서 데이터가 처리되거나 저장되는 위치와 다른 위치에 저장될 수 있습니다.온라인 서비스에서 데이터를 가져오거나 이에 연결하면 해당 데이터가 Dynamics 365 Customer Insights에 전송되거나 저장될 수 있음에 동의하는 것입니다. [Microsoft 보안 센터에서 자세히 알아보십시오.](https://www.microsoft.com/trust-center)
+- 온라인 서비스에 저장된 데이터는 Dynamics 365 Customer Insights에서 데이터가 처리되거나 저장되는 위치와 다른 위치에 저장될 수 있습니다. 온라인 서비스에서 데이터를 가져오거나 이에 연결하면 해당 데이터가 Dynamics 365 Customer Insights에 전송되거나 저장될 수 있음에 동의하는 것입니다. [Microsoft 보안 센터에서 자세히 알아보십시오.](https://www.microsoft.com/trust-center)
 
 ## <a name="connect-to-a-common-data-model-folder"></a>Common Data Model 폴더에 연결
 
@@ -38,12 +38,11 @@ ms.locfileid: "7033134"
 
 1. **데이터 원본 추가** 를 선택합니다.
 
-1. **Common Data Model 폴더에 연결** 을 선택하고 데이터 원본의 **이름** 을 입력한 후 **다음** 을 선택합니다. 이름 지침: 
-   - 문자로 시작합니다.
-   - 문자와 숫자만 사용하십시오. 특수 문자와 공백은 사용할 수 없습니다.
-   - 3~64자 사이에서 사용하십시오.
+1. **Azure Data Lake Storage** 를 선택하고 데이터 원본의 **이름** 을 입력하고 **다음** 을 선택합니다.
 
-1. 인증을 위해 리소스 기반 옵션과 구독 기반 옵션 중에서 사용하여 선택할 수 있습니다. 자세한 내용은 [Azure 서비스 보안 주체를 사용하여 대상 그룹 인사이트를 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)을 참조하세요. **컨테이너** 정보를 입력하고 **다음** 을 선택합니다.
+   - 메시지가 표시되면 해당 산업과 관련된 샘플 데이터 세트 중 하나를 선택한 후 **다음** 을 선택합니다. 
+
+1. 인증을 위해 리소스 기반 옵션과 구독 기반 옵션 중에서 사용하여 선택할 수 있습니다. 자세한 내용은 [Azure 서비스 보안 주체를 사용하여 대상 그룹 인사이트를 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)을 참조하세요. **서버 주소** 를 입력하고 **로그인** 을 선택한 후 **다음** 을 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![Azure Data Lake에 대한 새 연결 세부 정보를 입력하는 대화 상자.](media/enter-new-storage-details.png)
    > [!NOTE]
@@ -56,11 +55,11 @@ ms.locfileid: "7033134"
    > [!NOTE]
    > 환경의 다른 데이터 원본과 연결된 model.json 또는 manifest.json 파일은 목록에 표시되지 않습니다.
 
-1. 선택한 model.json 또는 manifest.json 파일에서 사용 가능한 엔터티 목록이 표시됩니다. 사용 가능한 엔터티 목록에서 검토하고 선택한 후 **저장** 을 선택할 수 있습니다. 선택한 모든 항목이 새 데이터 원본에서 수집됩니다.
+1. 선택한 model.json 또는 manifest.json 파일에서 사용 가능한 엔터티 목록이 표시됩니다. 사용 가능한 엔터티 목록을 검토한 후 엔터티를 선택한 다음 **저장** 을 선택합니다. 선택한 모든 항목이 새 데이터 원본에서 수집됩니다.
    > [!div class="mx-imgBorder"]
    > ![model.json 파일의 엔터티 목록을 표시하는 대화 상자.](media/review-entities.png)
 
-8. 데이터 프로파일링을 사용할 데이터 엔터티를 지정하고 **저장** 을 선택합니다. 데이터 프로파일링을 통해 분석 및 기타 기능을 사용할 수 있습니다. 엔터티에서 모든 특성을 선택하는 전체 엔터티를 선택하거나 선택한 특정 특성을 선택할 수 있습니다. 기본적으로 데이터 프로파일링에 대해 활성화된 엔터티가 없습니다.
+8. 데이터 프로파일링을 사용할 수 있도록 설정할 데이터 엔터티를 표시한 후 **저장** 을 선택합니다. 데이터 프로파일링을 통해 분석 및 기타 기능을 사용할 수 있습니다. 엔터티에서 모든 특성을 선택하는 전체 엔터티를 선택하거나 선택한 특정 특성을 선택할 수 있습니다. 기본적으로 데이터 프로파일링에 대해 활성화된 엔터티가 없습니다.
    > [!div class="mx-imgBorder"]
    > ![데이터 프로파일링을 보여주는 대화 상자.](media/dataprofiling-entities.png)
 

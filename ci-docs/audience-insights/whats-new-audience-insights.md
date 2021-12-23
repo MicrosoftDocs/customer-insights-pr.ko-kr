@@ -1,7 +1,7 @@
 ---
 title: 신규 및 향후 기능
 description: 새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.
-ms.date: 11/04/2021
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: f7e2645e1608ea83b5d3af1073a5d6f6e97eec8f
-ms.sourcegitcommit: 2a0947cffb52eaf885aa2e50c95b3693f7e4c589
+ms.openlocfilehash: 346ef93e8471580b782618550ca4eb71b3f3c921
+ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7753125"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7884270"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트의 새로운 기능
 
@@ -26,6 +26,18 @@ ms.locfileid: "7753125"
 
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하십시오.
+
+## <a name="november-2021-updates"></a>2021년 11월 업데이트
+
+2021년 11월 업데이트에는 새로운 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="segment-membership-now-available-in-dataverse"></a>이제 Dataverse에서 세그먼트 멤버십을 사용할 수 있습니다.
+
+이제 고객 프로필 및 인사이트와 함께 Dataverse에서 고객 프로필에 대한 세그먼트 멤버십 정보를 사용할 수 있습니다. Dynamics 365 작업 앱 및 모델 기반 앱은 이 데이터를 사용하여 지정된 고객에 대한 세그먼트 멤버십 세부 정보를 조회할 수 있습니다.
+
+### <a name="activities-support-contact-level-details-for-business-accounts"></a>활동은 비즈니스 계정에 대한 연락처 수준 세부 정보를 지원합니다.
+
+이제 비즈니스 계정 활동 타임라인에서 연락처에 대한 활동을 구성, 표시 및 필터링하여 특정 활동에 참여한 계정 연락처를 더 잘 이해할 수 있습니다.
 
 ## <a name="october-2021-updates"></a>2021년 10월 업데이트
 

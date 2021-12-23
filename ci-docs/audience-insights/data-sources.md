@@ -1,7 +1,7 @@
 ---
 title: 데이터를 수집할 데이터 원본 사용
 description: 다양한 소스에서 데이터를 가져 오는 방법을 알아 봅니다.
-ms.date: 11/01/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 27cbd0346b1219c7812f4b90327dd27b645c2b8e
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 6846c73cb156aaa049e2656c8e327bcba1f73abc
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732163"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900387"
 ---
 # <a name="data-sources-overview"></a>데이터 원본 개요
 
@@ -25,19 +25,22 @@ Dynamics 365 Customer Insights의 대상 그룹 인사이트 기능은 광범위
 
 ## <a name="add-a-data-source"></a>데이터 원본 추가
 
-선택한 옵션에 따라 데이터 원본를 추가하는 방법에 대한 자세한 문서를 참조하세요.
+선택한 옵션에 따라 데이터 원본을 추가하는 방법에 대한 자세한 기사를 참조하십시오.
 
-세 가지 주요 방법으로 데이터 원본를 추가 할 수 있습니다.
+다음 데이터 원본을 자리 표시자로 추가할 수 있습니다.
 
-- [수십 개의 파워 쿼리 커넥터를 통해](connect-power-query.md)
-- [Common Data Model 폴더로 부터](connect-common-data-model.md)
-- [내 Microsoft Dataverse 레이크로 부터](connect-dataverse-managed-lake.md)
+- [Power Query 커넥터](connect-power-query.md)
+- [Common Data Model](connect-common-data-model.md)
+- [Microsoft Dataverse 레이크](connect-dataverse-managed-lake.md)
+
+> [!NOTE]
+> 평가판을 사용하는 경우 가져오기 방법 섹션에 **Customer Insights 데이터 라이브러리** 옵션이 있습니다. 다양한 산업 분야에서 사용할 수 있는 샘플 데이터 세트를 선택하려면 이 옵션을 선택합니다. 자세한 내용은 [Dynamics 365 Customer Insights 평가판](../trial-signup.md)을 참조하십시오.
 
 ## <a name="add-data-from-on-premises-data-sources"></a>온-프레미스 데이터 소스의 데이터 추가
 
-대상 그룹 인사이트의 온-프레미스 데이터 소스에서 데이터 수집은 Microsoft Power Platform 데이터 흐름을 기반으로 지원됩니다. Customer Insights에서 데이터 흐름을 활성화할 수 있습니다. 환경을 설정할 때 [Microsoft Dataverse 환경 URL을 제공](create-environment.md)하면 됩니다.
+대상 그룹 인사이트의 온-프레미스 데이터 소스에서 데이터 수집은 Microsoft Power Platform 데이터 흐름을 기반으로 지원됩니다. 환경을 설정할 때 [Microsoft Dataverse 환경 URL](create-environment.md)을 제공하여 Customer Insights에서 Dataflows를 활성화할 수 있습니다.
 
-Dataverse 환경과 Customer Insights가 사용하는 환경을 연견ㄹ한 후 생성되는 데이터 소스는 기본적으로 [Power Platform 데이터 흐름](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)을 사용합니다. 데이터 흐름은 데이터 게이트웨이를 사용하여 온 프레미스 연결을 지원합니다. Dataverse 환경이 연결되기 이전에 존재했던 데이터 소스를 제거하고 다시 만들어 [온-프레미스 데이터 게이트웨이를 사용](/data-integration/gateway/service-gateway-app)합니다.
+Dataverse 환경을 Customer Insights와 연결 후 생성되는 데이터 원본은 기본적으로 [Power Platform 데이터 흐름](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)을 사용합니다. 데이터 흐름은 데이터 게이트웨이를 사용하여 온 프레미스 연결을 지원합니다. [온-프레미스 데이터 게이트웨이](/data-integration/gateway/service-gateway-app)를 사용하여 Dataverse 환경이 연결되기 전에 존재했던 데이터 소스를 제거하고 다시 생성할 수 있습니다.
 
 기존 Power BI의 데이터 게이트웨이 또는 Power Apps 환경이 표시되고 Customer Insights에서 재사용할 수 있습니다. 데이터 소스 페이지에는 온-프레미스 데이터 게이트웨이를 보고 구성할 수 있는 Microsoft Power Platform 환경에 대한 링크가 표시됩니다.
 

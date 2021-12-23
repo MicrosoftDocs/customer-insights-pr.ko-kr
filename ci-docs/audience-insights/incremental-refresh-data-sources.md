@@ -1,7 +1,7 @@
 ---
 title: 파워 쿼리 기반 데이터 원본에 대한 증분 새로 고침
 description: 파워 쿼리를 기반 대규모 데이터 소스의 신규 및 업데이트 데이터 새로 고침.
-ms.date: 09/28/2020
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,16 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
-ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
+ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7377842"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900276"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>파워 쿼리 기반 데이터 원본에 대한 증분 새로 고침 | Microsoft Docs
+
+이 문서에서는 Power Query를 기반으로 데이터 원본에 대한 증분 새로 고침을 구성하는 방법에 대해 설명합니다.
 
 데이터 소스 증분 새로 고침은 다음과 같은 이점을 제공합니다:
 
@@ -30,9 +32,9 @@ ms.locfileid: "7377842"
 
 1. [파워 쿼리를 기반으로 새 데이터 원본를 만듭니다](connect-power-query.md).
 
-1. 데이터 원본의 이름을 제공합니다.
+1. 데이터 원본의 **이름** 을 제공합니다.
 
-1. Azure SQL 데이터베이스와 같이 증분 새로 고침을 지원하는 데이터 원본을 선택하십시오.
+1. [Azure SQL 데이터베이스](/power-query/connectors/azuresqldatabase)와 같이 증분 새로 고침을 지원하는 데이터 원본을 선택하십시오.
 
 1. 수집할 엔터티 또는 테이블을 선택합니다.
 

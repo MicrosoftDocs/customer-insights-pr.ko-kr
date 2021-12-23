@@ -1,7 +1,7 @@
 ---
 title: 서비스 주체를 사용하여 Azure Data Lake Storage 계정에 연결
 description: Azure 서비스 주체를 사용하여 자체 데이터 레이크에 연결합니다.
-ms.date: 09/08/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645180"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900283"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Azure 서비스 주체를 사용하여 Azure Data Lake Storage 계정에 연결
 
-Azure 서비스를 사용하는 자동화 도구에는 항상 제한된 권한이 있어야 합니다. 애플리케이션이 완전한 권한이 있는 사용자로 로그인하는 대신 Azure는 서비스 주체를 제공합니다. 스토리지 계정 키 대신 Azure 서비스 주체를 사용하여 Dynamics 365 Customer Insights을 Azure Data Lake Storage 계정에 연결하는 방법을 알아보려면 계속 읽으십시오. 
+이 문서에서는 스토리지 계정 키 대신 Azure 서비스 주체를 사용하여 Dynamics 365 Customer Insights와 Azure Data Lake Storage 스토리지 계정을 연결하는 방법에 대해 설명합니다. 
 
-서비스 주체를 사용하여 [Common Data Model 폴더를 데이터 원본으로 추가 또는 편집](connect-common-data-model.md) 또는 [환경 생성 또는 업데이트](create-environment.md)를 안전하게 수행할 수 있습니다.
+Azure 서비스를 사용하는 자동화 도구에는 항상 제한된 권한이 있어야 합니다. 애플리케이션이 완전한 권한이 있는 사용자로 로그인하는 대신 Azure는 서비스 주체를 제공합니다. 서비스 주체를 사용하여 안전하게 [Common Data Model 폴더를 데이터 원본으로 추가 또는 편집](connect-common-data-model.md)하거나 [환경을 생성 또는 업데이트](create-environment.md)할 수 있습니다.
 
 > [!IMPORTANT]
 > - 서비스 주체를 사용할 Data Lake Storage 계정에는 [계층 구조 네임스페이스가 활성화](/azure/storage/blobs/data-lake-storage-namespace)되어 있어야 합니다.
@@ -28,7 +28,7 @@ Azure 서비스를 사용하는 자동화 도구에는 항상 제한된 권한�
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Customer Insights에 대한 Azure 서비스 주체 만들기
 
-대상 그룹 인사이트 또는 참여 인사이트에 대한 새 서비스 주체를 만들기 전에 조직에 이미 있는지 확인하십시오.
+Customer Insights에 대한 새 서비스 주체를 만들기 전에 조직에 이미 있는지 확인하십시오.
 
 ### <a name="look-for-an-existing-service-principal"></a>기존 서비스 주체 찾기
 

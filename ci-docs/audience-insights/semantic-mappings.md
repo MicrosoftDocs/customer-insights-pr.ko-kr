@@ -1,7 +1,7 @@
 ---
 title: 의미 체계 매핑(미리 보기)
 description: 의미 체계 매핑 개요 및 사용 방법.
-ms.date: 11/01/2021
+ms.date: 12/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: f23c622572ff9f967eca07de7898419d1ffc18b0
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 08b257b97704b219bb3277042516e00deb886a49
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731951"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881838"
 ---
-# <a name="semantic-mappings"></a>의미 체계 매핑
+# <a name="semantic-mappings-preview"></a>의미 체계 매핑(미리 보기)
 
 의미 체계 매핑을 사용하면 비활동 데이터를 미리 정의된 스키마에 매핑할 수 있습니다. 이러한 스키마는 대상 그룹 인사이트가 데이터 속성을 더 잘 이해하는 데 도움이 됩니다. 시맨틱 매핑과 제공된 데이터는 대상 그룹 인사이트에서 새로운 인사이트와 기능을 가능하게 합니다. 활동 데이터를 스키마에 매핑하려면 [활동 문서](activities.md)를 검토합니다.
 
@@ -91,5 +91,40 @@ ms.locfileid: "7731951"
 
 - **삭제** : 선택한 의미 체계 매핑의 삭제를 확인하는 대화 상자를 엽니다. 의미 체계 매핑 및 삭제 아이콘을 선택하여 한 번에 둘 이상의 의미 체계 매핑을 삭제할 수도 있습니다. **삭제** 를 선택하여 확인합니다.
 
+## <a name="use-a-contactprofile-semantic-entity-mapping-to-create-contact-level-activities"></a>ContactProfile 시맨틱 엔터티 매핑을 사용하여 연락처 수준 활동 생성
+
+*ContactProfile* 시맨틱 엔터티 매핑을 생성한 후 연락처의 활동을 캡처할 수 있습니다. 이를 통해 계정의 활동 타임라인에서 각 활동을 담당한 담당자를 확인할 수 있습니다. 대부분의 단계는 일반적인 활동 매핑 구성을 따릅니다.
+
+   > [!NOTE]
+   > 연락처 수준 활동이 작동하려면 활동 데이터 내의 각 레코드에 대해 **AccountID** 와 **ContactID** 속성이 모두 있어야 합니다.
+
+1. [*ContactProfile* 시맨틱 엔터티 매핑 정의](#define-a-contactprofile-semantic-entity-mapping) 그리고 시맨틱 매핑을 실행합니다.
+
+1. 대상 그룹 인사이트에서 **데이터** > **활동** 으로 이동합니다.
+
+1. 새 활동을 만들려면 **활동 추가** 를 선택합니다.
+
+1. 활동의 이름을 지정하고 소스 활동 엔터티를 선택한 다음 활동 엔터티의 기본 키를 선택합니다.
+
+1. **관계** 단계에서 연락처 데이터를 중간 엔터티로 사용하여 활동 소스 데이터와 계정 간의 간접 관계를 만듭니다. 자세한 내용은 [직접 및 간접 관계 경로](relationships.md#relationship-paths)에서 확인하세요.
+   - *구매* 활동에 대한 예시 관계:
+      - **ContactID** 속성에서 **구매 원본 활동 데이터** > **연락처 데이터**
+      - **AccountID** 속성에서 **연락처 데이터** > **계정 데이터**
+
+   :::image type="content" source="media/Contact_Activities1.png" alt-text="예시 관계 설정":::
+
+1. 관계를 설정한 후 **다음** 을 선택하고 활동 매핑 구성을 완료합니다. 활동 생성에 대한 자세한 단계는 [활동 정의](activities.md)를 참조하세요.
+
+1. 활동 매핑을 실행합니다.
+
+1. 이제 연락처 수준 활동이 고객 타임라인에 표시됩니다.
+
+   :::image type="content" source="media/Contact_Activities2.png" alt-text="연락처 활동 구성 후 최종 결과":::
+
+### <a name="contact-level-activity-timeline-filtering"></a>연락처 수준 활동 타임라인 필터링
+
+연락처 수준 활동 매핑을 구성하고 실행하면 고객의 활동 타임라인이 업데이트됩니다. 여기에는 *ContactProfile* 구성에 따라 작업한 활동에 대해 귀하의 ID 또는 이름이 포함됩니다. 타임라인에서 연락처별로 활동을 필터링하여 관심 있는 특정 연락처를 볼 수 있습니다. 또한 **연락처에 매핑되지 않은 활동** 을 선택하여 특정 연락처에 할당되지 않은 모든 활동을 볼 수 있습니다.
+
+   :::image type="content" source="media/Contact_Activities3.png" alt-text="연락처 수준 활동에 사용할 수 있는 필터링 옵션.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
