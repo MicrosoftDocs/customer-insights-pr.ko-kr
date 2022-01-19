@@ -1,7 +1,7 @@
 ---
 title: 제품 추천 예측
 description: 고객이 구매하거나 상호 작용할 가능성이 있는 제품을 예측합니다.
-ms.date: 09/13/2021
+ms.date: 01/13/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: a75a245bc721d65643fa78d46f2be52291595a5a
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
+ms.openlocfilehash: 62b829b6ca3074e0ca52fb52584b74572bb05f05
+ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494547"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967802"
 ---
 # <a name="product-recommendation-prediction-preview"></a>제품 추천 예측(미리 보기)
 
@@ -79,11 +79,11 @@ ms.locfileid: "7494547"
 1. 고객에게 추천하고자 하는 **제품 수** 를 설정합니다. 이 값은 전달 방법이 데이터를 채우는 방식에 따라 다릅니다. 세 가지 제품을 추천할 수 있다면 그에 따라 이 값을 설정하십시오.
    
    >[!TIP]
-   > 언제든지 **저장 후 닫기** 를 선택하여 예측을 초안으로 저장할 수 있습니다. **내 예측** 탭에서 예측 초안을 확인할 수 있습니다.
+   > 언제든지 **임시 저장** 을 선택하여 예측을 초안으로 저장할 수 있습니다. **내 예측** 탭에서 예측 초안을 확인할 수 있습니다.
 
-1. **고객이 최근에 구매한 제품을 제안** 하려면 선택합니다.
+1. 고객이 최근에 구매한 제품을 **반복 구매 예상** 필드에 포함할지를 결정합니다.
 
-1. 최근 구매한 제품을 추천하지 *않음* 을 선택한 경우 **과거 내역 보기 창** 을 설정합니다. 이 설정은 사용자에게 제품을 다시 추천하기 전에 모델이 고려하는 시간 프레임을 지정합니다. 예를 들어, 고객이 2년마다 노트북을 구매한다고 표시합니다. 이 창에서는 지난 2년 동안의 구매 내역을 확인하고 항목을 찾으면 해당 항목이 추천 항목에서 필터링됩니다.
+1. **뒤돌아보기 기간** 을 설정합니다. 이 설정은 사용자에게 제품을 다시 추천하기 전에 모델이 고려하는 시간 프레임을 지정합니다. 예를 들어, 고객이 2년마다 노트북을 구매한다고 표시합니다. 이 창에서는 지난 2년 동안의 구매 내역을 확인하고 항목을 찾으면 해당 항목이 추천 항목에서 필터링됩니다.
 
 1. **다음** 선택
 

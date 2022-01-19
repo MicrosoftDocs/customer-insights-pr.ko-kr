@@ -1,5 +1,5 @@
 ---
-title: 구독 이탈 예측(비디오)
+title: 구독 이탈 예측(동영상 포함)
 description: 고객이 회사의 구독 제품이나 서비스를 더 이상 사용하지 않아도 되는 위험에 처해 있는지 여부를 예측합니다.
 ms.date: 08/19/2020
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 1ef2ff642731ee1ba0a142433745fc5a5b398c88
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: 52ef7a8584cbae5dff0c800650b0238cc09fd6d5
+ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7903997"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967709"
 ---
 # <a name="subscription-churn-prediction-preview"></a>구독 이탈 예측(미리 보기)
 
@@ -77,7 +77,7 @@ ms.locfileid: "7903997"
 1. 회사가 고객을 이탈 상태로 간주하는 **구독이 종료된 후 일** 수를 입력합니다. 이 기간은 일반적으로 고객 상실을 막기 위한 오퍼 또는 기타 마케팅 노력과 같은 비즈니스 활동에 선호됩니다.
 1. **이탈을 예측할 미래의 일수** 에 숫자를 입력하여 이탈을 예측할 창을 설정합니다. 예를 들어 마케팅 유지 노력에 맞춰 향후 90일 동안 고객의 이탈 위험을 예측합니다. 더 길거나 짧은 기간 동안 이탈 위험을 예측하면 특정 비즈니스 요구 사항에 따라 이탈 위험 프로필의 요인을 해결하기가 더 어려워질 수 있습니다. **다음** 을 선택하여 계속합니다.
    >[!TIP]
-   > 언제든지 **저장 후 닫기** 를 선택하여 예측을 초안으로 저장할 수 있습니다. **내 예측** 탭에서 초안 예측을 찾아 계속합니다.
+   > 언제든지 **임시 저장** 을 선택하여 예측을 초안으로 저장할 수 있습니다. **내 예측** 탭에서 초안 예측을 찾아 계속합니다.
 
 ### <a name="add-required-data"></a>필수 데이터 추가
 

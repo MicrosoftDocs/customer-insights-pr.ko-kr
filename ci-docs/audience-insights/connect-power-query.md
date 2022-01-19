@@ -1,5 +1,5 @@
 ---
-title: Power Query 커넥터를 통해 데이터 수집(동영상)
+title: 파워 쿼리 커넥터를 통해 데이터 수집(비디오 포함)
 description: 파워 쿼리를 기반으로 하는 데이터 원본용 커넥터.
 ms.date: 12/06/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 38c447d80a25feca087ca9f110278b8401423018
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: aae49be4364676ecc7a307e60eeca13859f1662a
+ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7903848"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7934986"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>파워 쿼리 데이터 원본에 연결
 

@@ -1,7 +1,7 @@
 ---
 title: Customer Insights 데이터를 Azure Synapse 분석으로 내보내기
 description: Azure Synapse 분석에 대한 연결을 구성하는 방법을 알아봅니다.
-ms.date: 04/12/2021
+ms.date: 01/05/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: f206043298bdbf8a84b0ef37b47a43290653beba7d3d0e8b807ec74513614aa8
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 6f630b8fb03bf615ada6d40fe27a91975d0c856e
+ms.sourcegitcommit: cb71e39de9b891c24bd5cd9c014eb3eeb537ac24
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031941"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7951050"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Azure Synapse 분석으로 데이터 내보내기(프리뷰)
 
@@ -49,6 +49,8 @@ Azure에서:
 
 ### <a name="configure-a-connection"></a>연결 구성
 
+연결을 만들려면 Customer Insights에 있는 서비스 주체와 사용자 계정에 Synapse Analytics 작업 영역이 있는 *리소스 그룹* 에 대한 **읽기** 권한이 필요합니다. 또한, 서비스 주체와 Synapse Analytics 작업 영역의 사용자는 **Synapse 관리자** 권한이 필요합니다. 
+
 1. **관리자** > **연결** 로 이동합니다.
 
 1. **연결 추가** 를 선택하고 **Azure Synapse 분석** 을 선택하거나 **Azure Synapse 분석** 타일에서 **설정** 을 선택하여 연결을 구성합니다.
@@ -63,7 +65,7 @@ Azure에서:
 
 ### <a name="configure-an-export"></a>내보내기 구성
 
-이 유형의 연결에 대한 액세스 권한이 있는 경우 이 내보내기를 구성할 수 있습니다. 자세한 내용은 [내보내기를 구성하는 데 필요한 권한](export-destinations.md#set-up-a-new-export)을 참조하십시오.
+이 유형의 연결에 대한 액세스 권한이 있는 경우 이 내보내기를 구성할 수 있습니다. 공유된 연결로 내보내기를 구성하려면 Customer Insights에서 최소한 **기여자** 권한이 있어야 합니다. 자세한 내용은 [내보내기를 구성하는 데 필요한 권한](export-destinations.md#set-up-a-new-export)을 참조하십시오.
 
 1. **데이터** > **내보내기** 로 이동합니다.
 
@@ -82,6 +84,8 @@ Azure에서:
 내보내기를 저장해도 내보내기가 즉시 실행되지는 않습니다.
 
 내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다. [주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다.
+
+Synapse Analytics로 내보낸 데이터를 쿼리하려면 내보내기 작업 공간에 있는 해당 저장소에 대한 **Storage Blob Data Reader** 액세스 권한이 있어야 합니다. 
 
 ### <a name="update-an-export"></a>내보내기 업데이트
 

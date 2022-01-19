@@ -80,7 +80,7 @@
       items:
         - name: 고객 프로필 보강
           href: audience-insights/enrichment-hub.md
-        - name: 브랜드 및 관심 관계
+        - name: 브랜드 및 관심사
           href: audience-insights/enrichment-microsoft.md
         - name: 고급 주소
           href: audience-insights/enrichment-enhanced-addresses.md
@@ -130,6 +130,8 @@
               href: audience-insights/predict-subscription-churn.md
             - name: 트랜잭션 이탈 예측
               href: audience-insights/predict-transactional-churn.md
+            - name: 고객 피드백의 감정 분석
+              href: audience-insights/sentiment-analysis.md
             - name: Azure 기계 학습의 사용자 지정 모델 사용
               href: audience-insights/custom-models.md
             - name: 부분적으로 누락된 데이터 완료

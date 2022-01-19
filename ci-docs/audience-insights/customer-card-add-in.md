@@ -1,7 +1,7 @@
 ---
-title: Dynamics 365 앱의 고객 카드 추가 기능(비디오)
+title: Dynamics 365 앱용 고객 카드 추가 앱(비디오 포함)
 description: 이 추가 기능을 사용하여 Dynamics 365 앱에서 대상 그룹 인사이트의 데이터를 표시합니다.
-ms.date: 12/07/2021
+ms.date: 12/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: e15d73bfc7af2cd9c8b5d983f01922459ec4a2ee
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: 3927b5a13a5f9b4d2b39c7f0b389bc51cafeb213
+ms.sourcegitcommit: 3811dede65946c37aa7ed3cc364251f20ffd4d17
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7904021"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "7945435"
 ---
 # <a name="customer-card-add-in-preview"></a>고객 카드 추가 기능(미리 보기)
 
@@ -27,12 +27,12 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 ## <a name="prerequisites"></a>필수 조건
 
 - 추가 기능은 Sales 또는 Customer Service, 버전 9.0 이상과 같은 Dynamics 365 모델 기반 앱에서만 작동합니다.
-- Dynamics 365 데이터를 대상 그룹 인사이트 고객 프로필에 매핑하려면 [Microsoft Dataverse 커넥터를 사용하여 Dynamics 365 앱에서 수집](connect-power-query.md)해야 합니다.
+- Dynamics 365 데이터가 잠재 고객 인사이트 고객 프로필에 매핑되도록 하려면 [Microsoft Dataverse 커넥터를 사용하여 Dynamics 365 앱에서 수집하는 것이](connect-power-query.md) 좋습니다. 다른 방법으로 Dynamics 365 연락처(또는 계정)를 수집하려면, `contactid`(또는 `accountid`) 필드가 [데이터 통합 프로세스 구상 단계에 있는 해당 데이터 소스의 기본 키로 설정되었는지 확인해야 합니다](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
 - 고객 카드 추가 기능의 모든 Dynamics 365 사용자는 데이터를 보려면 대상 그룹 인사이트의 [사용자로 추가](permissions.md)되어야 합니다.
 - 데이터 조회가 작동하려면 대상 그룹 인사이트의 [구성된 검색 및 필터 기능](search-filter-index.md)이 필요합니다.
 - 각 추가 기능 컨트롤은 대상 그룹 인사이트의 특정 데이터에 의존합니다. 일부 데이터 및 컨트롤은 특정 유형의 환경에서만 사용할 수 있습니다. 추가 기능 구성은 선택한 환경 유형으로 인해 제어를 사용할 수 없는 경우 알려줍니다. [환경 사용 사례](work-with-business-accounts.md)에 대해 자세히 알아보세요.
   - **측정 제어**: 고객 특성 유형의 [구성된 측정값](measures.md)이 필요합니다.
-  - **인텔리전스 제어**: [예측](predictions.md) 또는 [사용자 지정 모델](custom-models.md)을 사용하여 생성된 데이터가 필요합니다.
+  - **지능형 제어**: [예측 또는 맞춤 모델](predictions-overview.md)을 사용하여 생성된 데이터가 필요합니다.
   - **고객 세부 정보 제어**: 프로필의 모든 필드는 통합 고객 프로필에서 사용할 수 있습니다.
   - **보강 제어**: 활성 [보강](enrichment-hub.md)이 고객 프로필에 적용되어야 합니다. 카드 추가 기능은 다음 강화를 지원합니다. Microsfot에서 제공한 [브랜드](enrichment-microsoft.md), Microsfot에서 제공한 [관심사](enrichment-microsoft.md), Microsfot에서 제공한 [사무실 참여 데이터](enrichment-office.md).
   - **연락처 제어**: 유형 연락처의 의미 체계 엔티티 정의가 필요합니다.

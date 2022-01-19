@@ -1,5 +1,5 @@
 ---
-title: Customer Insights 데이터를 Facebook Ads Manager로 내보내기(비디오)
+title: Customer Insights 데이터를 Facebook Ads Manager로 내보내기(동영상 포함)
 description: 연결을 구성하고 Facebook 광고 관리자로 내보내는 방법을 알아봅니다.
 ms.date: 04/15/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 4b2dc2ff8e5286209bd2ec94df42e82f0944715c
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: ce1e63f7b20b757780f05895b725003e286f9dac
+ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7904172"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7935032"
 ---
 # <a name="export-segments-list-to-facebook-ads-manager-preview"></a>Facebook 광고 관리자로 세그먼트 목록 내보내기(프리뷰)
 

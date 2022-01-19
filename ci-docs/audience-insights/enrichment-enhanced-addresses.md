@@ -1,7 +1,7 @@
 ---
-title: 주소 향상 강화(비디오)
+title: 주소 향상 강화(동영상 포함)
 description: Microsoft 모델을 사용하여 고객 프로필의 주소 정보를 보강하고 정규화합니다.
-ms.date: 07/25/2021
+ms.date: 12/16/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 2158d80aa088c5bf8589fb7d23586496e2d8b855
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: afb1a6b4805702697889bb91ca36a96a714cba3d
+ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7903958"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7934931"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>향상된 주소로 고객 프로필 강화
 
@@ -101,6 +101,16 @@ ms.locfileid: "7903958"
 보강 프로세스가 완료되면 **내 보강** 아래에서 새로 보강 된 고객 프로필 데이터를 검토 할 수 있습니다. 또한 마지막 업데이트 시간과 강화 된 프로필 수를 확인할 수 있습니다.
 
 **보강된 데이터 보기** 를 선택하여 각 보강된 프로필의 상세 보기에 액세스할 수 있습니다 .
+
+### <a name="overview-card"></a>개요 카드
+
+개요 카드에는 강화 적용 범위에 관한 세부 정보가 표시됩니다. 
+
+* **처리 및 변경한 고객 수**: 성공적으로 보강된 고객 프로필의 수입니다.
+
+* **처리했지만 변경되지 않은 고객**: 인식되었지만 변경되지 않은 고객 프로필의 수입니다. 일반적으로 입력 데이터가 유효하고 보강으로 개선할 수 없는 경우에 발생합니다.
+
+* **처리되지 않았고 변경되지 않은 고객**: 인식되지 않은 프로필의 수입니다. 일반적으로 유효하지 않거나 보강되지 않는 입력 데이터를 의미합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
