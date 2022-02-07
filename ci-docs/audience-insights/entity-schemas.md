@@ -9,16 +9,11 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 66d846c3e9404ca7993cae742ea6e16833233fba
-ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7380751"
 ---
+
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model의 엔터티 스키마
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 [Common Data Model](/common-data-model/)은 선언적 사양이며, 여러 비즈니스 및 생산성 애플리케이션에서 일반적으로 사용되는 개념과 활동을 나타내는 표준 엔터티의 정의입니다. 이 모델은 관측 및 분석 데이터로 확장되고 있습니다. Common Data Model은 거래처, 사업부, 서비스 케이스, 연락처, 잠재 고객, 영업 기회, 제품 등과 같은 잘 정의되고 확장 가능한 모듈식 비즈니스 엔터티뿐 아니라 활동이나 서비스 수준 약정 같은 공급업체, 작업자, 고객과의 상호 작용을 제공합니다. 누구나 Common Data Model 정의를 구축하고 확장하여 추가 비즈니스별 아이디어를 포착할 수 있습니다.
 

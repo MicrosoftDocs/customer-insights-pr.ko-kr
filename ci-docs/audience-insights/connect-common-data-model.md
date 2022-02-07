@@ -1,7 +1,7 @@
 ---
 title: Common Data Model 데이터를 Azure Data Lake 계정에 연결
 description: Azure Data Lake Storage를 사용하여 Common Data Model 데이터로 작업합니다.
-ms.date: 12/06/2021
+ms.date: 01/25/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,13 +9,8 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5f9010f78ea4c24094e0df4f8e153fb832e05cc8
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900205"
 ---
+
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>Azure Data Lake 계정을 사용하여 Common Data Model 폴더에 연결
 
 이 문서에서는 Azure Data Lake Storage Gen2 계정을 사용하여 Common Data Model 폴더에서 데이터를 수집하는 방법에 대한 정보를 제공합니다.
@@ -25,6 +20,8 @@ ms.locfileid: "7900205"
 - Azure Data Lake의 데이터는 Common Data Model 표준을 따라야 합니다. 현재 다른 형식은 지원되지 않습니다.
 
 - 데이터 수집은 Azure Data Lake *Gen2* 스토리지 계정을 독점적으로 지원합니다. Azure Data Lake Gen1 스토리지 계정을 사용하여 데이터를 수집할 수 없습니다.
+
+- Azure Data Lake Storage 계정에는 [계층 구조 네임스페이스가 활성화](/azure/storage/blobs/data-lake-storage-namespace)되어 있어야 합니다.
 
 - Azure 서비스 주체로 인증하려면 테넌트에 구성되어 있는지 확인하세요. 자세한 내용은 [Azure 서비스 보안 주체를 사용하여 대상 그룹 인사이트를 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)을 참조하세요.
 

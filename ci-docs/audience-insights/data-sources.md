@@ -9,22 +9,17 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 78379c827e132b3b172aa7381f4c5ef2c70b9771
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977837"
 ---
+
 # <a name="data-sources-overview"></a>데이터 원본 개요
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Dynamics 365 Customer Insights의 대상 그룹 인사이트 기능은 광범위한 원본 집합의 데이터에 연결됩니다. 데이터 원본에 연결하는 과정을 종종 *데이터 수집* 프로세스라고 합니다. 데이터를 수집 한 후, [통합화](data-unification.md) 하고 조치를 취할 수 있습니다.
 
 ## <a name="add-a-data-source"></a>데이터 원본 추가
 
-선택한 옵션에 따라 데이터 원본을 추가하는 방법에 대한 자세한 기사를 참조하십시오.
+선택한 옵션에 따라 데이터 원본을 추가하는 방법에 대한 자세한 기사를 참조하세요.
 
 다음 데이터 원본을 자리 표시자로 추가할 수 있습니다.
 

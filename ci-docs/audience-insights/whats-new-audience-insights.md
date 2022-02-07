@@ -1,7 +1,7 @@
 ---
 title: 신규 및 향후 기능
-description: 새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.
-ms.date: 12/02/2021
+description: '새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.'
+ms.date: 01/27/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,29 +9,68 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 346ef93e8471580b782618550ca4eb71b3f3c921
-ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7884270"
 ---
+
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트의 새로운 기능
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 최신 업데이트를 발표하게 된 것을 기쁘게 생각합니다! 이 문서는 공개 미리 보기 기능, 일반 가용성 향상 및 기능 업데이트를 요약합니다. 장기적인 기능 계획을 보려면 [Dynamics 365 및 Power Platform 릴리스 계획](/dynamics365/release-plans/)을 살펴보십시오.
 
 업데이트는 지역별로 배포합니다. 따라서 특정 지역은 다른 지역보다 먼저 기능을 볼 수 있습니다. 다르게 지정하지 않으면 별도의 조치를 취할 필요가 없으며 가동 중지 시간 없이 자동으로 앱을 업데이트합니다.
 
 > [!TIP]
-> 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하십시오.
+> 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하세요.
+
+
+## <a name="december-2021-updates"></a>2021년 12월 업데이트
+
+2021년 12월 업데이트에는 새로운 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="forward-customer-insights-logs-to-azure-monitor"></a>Azure Monitor에 Customer Insights 로그 전달
+
+Customer Insights는 Azure Monitor와 직접 통합을 제공합니다. 이 기능에는 감사 이벤트 및 운영 이벤트가 포함됩니다. Azure Monitor 리소스 로그를 사용하면 로그를 모니터링하고 Azure Storage,  Azure Log Analytics에 보내거나 Azure Event Hubs에 스트리밍할 수 있습니다.
+
+자세한 내용은 [Azure Monitor(프리뷰)로 Dynamics 365 Customer Insights에 로그 전달](diagnostics.md)을 참조하세요.
+
+### <a name="enrich-customer-profiles-with-engagement-data"></a>참여 데이터로 고객 프로필 보강
+
+Microsoft Office 365의 데이터를 사용하여 Office 365 앱을 통해 참여에 대한 인사이트로 고객 계정 프로필을 보강합니다. 참여 데이터는 계정 수준에서 집계되는 이메일 및 회의 활동으로 구성됩니다. 예를 들어 비즈니스 계정의 이메일 수 또는 계정과의 회의 수입니다. 개별 사용자에 대한 데이터는 공유되지 않습니다. 이 보강은 영국, 유럽, 북미에서 사용할 수 있습니다.
+
+자세한 내용은 [참여 데이터로 고객 프로필 보강(프리뷰)](enrichment-office.md)을 참조하세요
+
+### <a name="advanced-data-unification-features"></a>고급 데이터 통합 기능
+
+#### <a name="enable-conflict-resolution-policies-at-the-individual-attribute-level"></a>개별 특성 수준에서 충돌 해결 정책 사용
+
+엔터티 내에서 고객 레코드의 중복을 제거할 때 전체 레코드를 승자로 선택하지 않아도 될 수 있습니다. 이제 모든 속성에 대한 규칙을 기반으로 다양한 레코드의 최상의 필드를 병합할 수 있습니다. 예를 들어 가장 최근의 이메일과 다른 기록에서 가장 완전한 주소를 유지하도록 선택할 수 있습니다. 
+
+이제 단일 엔터티 내에서 레코드를 중복 제거하고 병합하면서 개별 특성에 대해 별도의 병합 규칙을 정의할 수 있습니다. 이전에는 단일 병합 규칙(최신성 데이터 완전성을 기반으로 레코드 유지)만 선택할 수 있었고 해당 규칙은 레코드 수준에서 모든 특성에 적용되었습니다. 보관하려는 데이터 중 일부가 레코드 A에 있고 다른 좋은 데이터가 레코드 B에 있는 경우에는 이상적이지 않습니다.
+
+자세한 내용은 [일치 항목에 대한 중복 제거 정의](match-entities.md#define-deduplication-on-a-match-entity)를 참조하세요.
+
+#### <a name="custom-rules-for-matching"></a>일치를 위한 맞춤 규칙
+
+레코드를 일치시키지 않기 위해 일반 규칙에 대한 예외를 지정해야 하는 경우가 있습니다. 이는 여러 개인이 충분한 정보를 공유하여 시스템이 그들을 한 개인으로 일치시킬 때 발생할 수 있습니다. 예를 들어 같은 도시에 거주하며 같은 성를 쓰고 생년월일이 같은 쌍둥이가 있습니다.
+
+예외는 잘못된 데이터 통합이 통합 규칙에서 해결될 수 있도록 합니다. 규칙에 여러 예외를 추가할 수 있습니다.
+
+자세한 내용은 [규칙에 예외 추가](match-entities.md#add-exceptions-to-a-rule)를 참조하세요.
+
+#### <a name="provide-additional-conflict-resolution-policies-and-enable-grouping-of-attributes"></a>추가 충돌 해결 정책 제공 및 특성 그룹화 가능
+
+이 기능을 사용하면 필드 그룹을 단일 단위로 취급할 수 있습니다. 예를 들어, 레코드에 Address1, Address2, City, State 및 Zip 필드가 포함되어 있는 경우입니다. 데이터를 더 완전하게 만들기 위해 다른 레코드의 Address2에 병합하고 싶지 않을 수 있습니다.
+
+이제 관련 필드 그룹을 결합하고 단일 병합 정책을 그룹에 적용할 수 있습니다. 
+
+자세한 내용은 [필드 그룹 결합](merge-entities.md#combine-a-group-of-fields)을 참조하세요.
+
 
 ## <a name="november-2021-updates"></a>2021년 11월 업데이트
 
 2021년 11월 업데이트에는 새로운 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
 
-### <a name="segment-membership-now-available-in-dataverse"></a>이제 Dataverse에서 세그먼트 멤버십을 사용할 수 있습니다.
+### <a name="segment-membership-now-available-in-dataverse"></a>이제 Dataverse에서 세그먼트 멤버십을 사용할 수 있습니다
 
 이제 고객 프로필 및 인사이트와 함께 Dataverse에서 고객 프로필에 대한 세그먼트 멤버십 정보를 사용할 수 있습니다. Dynamics 365 작업 앱 및 모델 기반 앱은 이 데이터를 사용하여 지정된 고객에 대한 세그먼트 멤버십 세부 정보를 조회할 수 있습니다.
 

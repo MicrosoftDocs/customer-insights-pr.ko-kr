@@ -1,7 +1,7 @@
 ---
 title: 데이터 통합 시 엔터티 병합
 description: 엔터티를 병합하여 통합 고객 프로필을 만듭니다.
-ms.date: 11/01/2021
+ms.date: 01/28/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -10,14 +10,9 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-- ci-merge
-ms.openlocfilehash: c218f9c1a1b7711ee48419470bf6c352450ffc0c
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732780"
+  - ci-merge
 ---
+
 # <a name="merge-entities"></a>엔터티 병합
 
 병합 단계는 데이터 통합 프로세스의 마지막 단계입니다. 그 목적은 충돌하는 데이터를 조정하는 것입니다. 충돌하는 데이터의 예로는 두 데이터 집합에 있지만 각 데이터 집합에 있는 고객 이름("Grant Marshall"과 "Grant Marshal") 또는 형식(617-803-091X와 617803091X)에 차이가 있는 휴대폰 번호 등이 있습니다. 충돌하는 데이터 요소를 병합하는 작업은 특성별로 수행됩니다.
@@ -99,11 +94,13 @@ ms.locfileid: "7732780"
 
 1. **저장** 및 **실행** 을 선택하여 변경 사항을 처리합니다. 
 
-## <a name="manually-combine-fields"></a>수동으로 필드 결합
+## <a name="combine-fields-manually"></a>수동으로 필드 결합
 
-병합된 특성을 수동으로 지정하십시오. 
+병합된 특성을 수동으로 지정합니다.
 
-1. **병합** 페이지에서 **필드 결합** 을 선택합니다.
+1. **병합** 페이지에서 **결합** 을 선택합니다.
+
+1. **필드** 옵션을 선택합니다.
 
 1. **필드 결합 기준** 드롭다운에서 병합 승자 정책을 지정합니다.
 
@@ -114,6 +111,26 @@ ms.locfileid: "7732780"
 1. **완료** 를 선택하여 변경 내용을 적용합니다.
 
 1. **저장** 및 **실행** 을 선택하여 변경 사항을 처리합니다. 
+
+## <a name="combine-a-group-of-fields"></a>필드 그룹 결합
+
+필드 그룹을 단일 단위로 취급합니다. 예를 들어, 레코드에 Address1, Address2, City, State 및 Zip 필드가 포함되어 있는 경우입니다. 데이터를 더 완전하게 만들기 위해 다른 레코드의 Address2에 병합하고 싶지 않을 수 있습니다
+
+1. **병합** 페이지에서 **결합** 을 선택합니다.
+
+1. **필드 그룹** 옵션을 선택합니다.
+
+1. **그룹 순위 지정 기준** 드롭다운에서 병합 승자 정책을 지정합니다.
+
+1. **추가** 를 선택하고 더 많은 필드를 추가하거나 필드에 그룹을 추가할 것인지 선택합니다.
+
+1. 결합된 모든 필드에 대해 **이름** 과 **출력 이름** 을 제공합니다.
+
+1. 필드 그룹에 대해 **이름** 을 제공합니다. 
+
+1. **완료** 를 선택하여 변경 내용을 적용합니다.
+
+1. **저장** 및 **실행** 을 선택하여 변경 사항을 처리합니다.
 
 ## <a name="change-the-order-of-fields"></a>필드의 순서 변경
 
