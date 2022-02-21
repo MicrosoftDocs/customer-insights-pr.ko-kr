@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.openlocfilehash: 1af01e5579f85d7c8bc8976a003f53ef2dd280d1
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900283"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088155"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Azure 서비스 주체를 사용하여 Azure Data Lake Storage 계정에 연결
 
@@ -23,7 +23,7 @@ ms.locfileid: "7900283"
 Azure 서비스를 사용하는 자동화 도구에는 항상 제한된 권한이 있어야 합니다. 애플리케이션이 완전한 권한이 있는 사용자로 로그인하는 대신 Azure는 서비스 주체를 제공합니다. 서비스 주체를 사용하여 안전하게 [Common Data Model 폴더를 데이터 원본으로 추가 또는 편집](connect-common-data-model.md)하거나 [환경을 생성 또는 업데이트](create-environment.md)할 수 있습니다.
 
 > [!IMPORTANT]
-> - 서비스 주체를 사용할 Data Lake Storage 계정에는 [계층 구조 네임스페이스가 활성화](/azure/storage/blobs/data-lake-storage-namespace)되어 있어야 합니다.
+> - 서비스 주체를 사용할 Data Lake Storage 계정은 Gen2여야 하며 [계층 구조 네임스페이스가 활성화](/azure/storage/blobs/data-lake-storage-namespace)되어 있어야 합니다. Azure Data Lake Gen1 스토리지 계정은 지원되지 않습니다.
 > - 서비스 주체를 만들려면 Azure 구독에 대한 관리자 권한이 필요합니다.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Customer Insights에 대한 Azure 서비스 주체 만들기

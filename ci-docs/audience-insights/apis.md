@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 413746e1896928d2c648ba59d67d4247a173da57
+ms.sourcegitcommit: 21854bb66ffa53948f659886f2e131236539ae88
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732272"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8100148"
 ---
 # <a name="work-with-customer-insights-apis"></a>Customer Insights API에 대한 작업
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights는 Customer Insights의 데이터를 기반으로
  
    API를 사용하면 API 요청에 사용되는 인스턴스의 기본 및 보조 구독 키가 생성됩니다. **관리** > **권한** > **API** 에서 **기본 다시 생성** 또는 **보조 다시 생성** 을 선택하여 키를 다시 생성 할 수 있습니다.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Customer Insights API 사용.":::
+<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
 1. **API 탐색** 을 선택하여 [API를 사용해 봅니다](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -49,7 +49,7 @@ Dynamics 365 Customer Insights는 Customer Insights의 데이터를 기반으로
 
 HTTP 응답이 곧 아래에 표시됩니다.
 
-   :::image type="content" source="media/try-apis.gif" alt-text="API를 테스트하는 방법.":::
+<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>Azure Portal에 새 앱 등록을 만듭니다.
 
@@ -65,7 +65,7 @@ HTTP 응답이 곧 아래에 표시됩니다.
 
 1. 새 앱 등록에서 **API 권한** 으로 이동합니다.
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="앱 등록에서 API 권한을 설정하는 방법.":::
+<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
 
 1. **권한 추가** 를 선택하고 측면 창에서 **Customer Insights** 를 선택합니다.
 
@@ -77,7 +77,7 @@ HTTP 응답이 곧 아래에 표시됩니다.
 
 MSAL(Microsoft 인증 라이브러리)에이 앱 등록을위한 애플리케이션/클라이언트 ID를 사용하여 API에 대한 요청과 함께 보낼 전달자 토큰을 얻을 수 있습니다.
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="관리자 동의를 부여하는 방법.":::
+<!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 MSAL에 대한 자세한 내용은 [MSAL(Microsoft 인증 라이브러리) 개요](/azure/active-directory/develop/msal-overview)를 참조하세요.
 
@@ -103,7 +103,7 @@ Azure에서 앱 등록에 대한 자세한 내용은 [애플리케이션 등록]
 
 1. **관리자 동의 허용...** 을 선택하여 앱 등록을 완료합니다.
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="관리자 동의를 부여하는 방법.":::
+ <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 1. 마지막으로 Customer Insights에서 사용자로 앱 등록 이름을 추가해야 합니다.  
    
@@ -129,7 +129,7 @@ NuGet.org에서 C# 클라이언트 라이브러리 사용을 시작하는 방법
  
    또는 다음 명령을 **NuGet 패키지 관리자 콘솔** 에 실행합니다. `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Visual Studio 프로젝트에 NuGet 패키지 추가.":::
+ <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
 
 #### <a name="use-the-c-client-library"></a>C# 클라이언트 라이브러리 사용
 
@@ -141,7 +141,7 @@ NuGet.org에서 C# 클라이언트 라이브러리 사용을 시작하는 방법
 
 1. 이 `HttpClient`를 `CustomerInsights` 클라이언트의 구성에 전달합니다.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="httpclient 샘플.":::
+<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
 
 1. 클라이언트를 사용하여 '확장 메서드'(예: `GetAllInstancesAsync`)를 호출합니다. 기본 `Microsoft.Rest.HttpOperationResponse`에 대한 액세스를 선호하는 경우 "http 메시지 메서드"(예: `GetAllInstancesWithHttpMessagesAsync`)를 사용합니다.
 

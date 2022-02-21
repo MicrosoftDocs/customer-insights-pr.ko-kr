@@ -1,7 +1,7 @@
 ---
 title: 신규 및 향후 기능
-description: '새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.'
-ms.date: 01/27/2022
+description: 새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.
+ms.date: 03/02/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,8 +9,13 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
+ms.openlocfilehash: 0e25ed4e4e25b130fda410d4ba1c78caded7f0f9
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088293"
 ---
-
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트의 새로운 기능
 
 
@@ -21,6 +26,17 @@ manager: shellyha
 
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하세요.
+
+
+## <a name="january-2022-updates"></a>2022년 1월 업데이트
+
+2022년 1월 업데이트에는 새로운 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="sentiment-analysis-of-your-customers-feedback"></a>고객 피드백의 감정 분석
+
+Customer Insights는 고객 감정을 종합하고 특정 비즈니스 측면을 목표 개선을 위한 기회로 식별하는 새로운 AI 기반 기능을 제공합니다. 고객의 서면 피드백을 분석하여 저렴한 비용으로 정확한 인사이트를 얻을 수 있습니다. 각 고객 ID에 대해 두 가지 파생된 통찰력을 생성하는 자연어 처리(NLP) 모델로 구동되는 감정 분석. 감정 점수(-5 ~ 5) 및 적용 가능한 비즈니스 측면 목록. 
+
+자세한 내용은 [고객 피드백의 감정 분석(프리뷰)](sentiment-analysis.md)을 참조하세요.
 
 
 ## <a name="december-2021-updates"></a>2021년 12월 업데이트
@@ -37,7 +53,7 @@ Customer Insights는 Azure Monitor와 직접 통합을 제공합니다. 이 기�
 
 Microsoft Office 365의 데이터를 사용하여 Office 365 앱을 통해 참여에 대한 인사이트로 고객 계정 프로필을 보강합니다. 참여 데이터는 계정 수준에서 집계되는 이메일 및 회의 활동으로 구성됩니다. 예를 들어 비즈니스 계정의 이메일 수 또는 계정과의 회의 수입니다. 개별 사용자에 대한 데이터는 공유되지 않습니다. 이 보강은 영국, 유럽, 북미에서 사용할 수 있습니다.
 
-자세한 내용은 [참여 데이터로 고객 프로필 보강(프리뷰)](enrichment-office.md)을 참조하세요
+자세한 내용은 [참여 데이터로 고객 프로필 보강(프리뷰)](enrichment-office.md)을 참조하세요.
 
 ### <a name="advanced-data-unification-features"></a>고급 데이터 통합 기능
 

@@ -2,6 +2,22 @@
   href: index.yml
 - name: 제품 개요
   href: overview.md
+- name: 학습 카탈로그
+  items:
+    - name: 시작
+      href: /learn/modules/get-started-customer-data-platform/
+    - name: 데이터 수집
+      href: /learn/modules/ingest-data-customer-insights/
+    - name: 통합 고객 프로필 만들기
+      href: /learn/modules/unified-customer-profile/
+    - name: 대상 그룹 인사이트 작업
+      href: /learn/modules/working-with-customer-insights/
+    - name: 데이터 보강 및 예측
+      href: /learn/modules/enrich-data/
+    - name: 외부 연결 관리
+      href: /learn/modules/configure-third-party-connections/
+    - name: Customer Insights 관리
+      href: /learn/modules/administer-customer-data-platform/
 - name: 무료 평가판
   items:
     - name: 무료 평가판 신청
@@ -30,21 +46,11 @@
           href: audience-insights/home.md
     - name: 비즈니스 계정과 연동
       href: audience-insights/work-with-business-accounts.md
-    - name: 학습 모듈
-      items:
-        - name: 데이터 수집
-          href: /learn/modules/ingest-data-customer-insights/
-        - name: 통합 고객 프로필 만들기
-          href: /learn/modules/unified-customer-profile/
-        - name: 앱에 대한 작업
-          href: /learn/modules/working-with-customer-insights/
-        - name: 데이터 및 예측 보강
-          href: /learn/modules/enrich-data/
     - name: 데이터 원본
       items:
         - name: 데이터 원본 개요
           href: audience-insights/data-sources.md
-        - name: 파워 쿼리 커넥터를 통해 데이터 원본 추가
+        - name: Power Query 커넥터를 통해 데이터 원본 추가
           href: audience-insights/connect-power-query.md
         - name: Common Data Model 폴더를 데이터 원본으로 추가
           href: audience-insights/connect-common-data-model.md
@@ -372,3 +378,5 @@
   href: service-limits.md
 - name: DSR 권한 및 요청
   href: dsr-rights-requests.md
+- name: 제품 지원
+  href: /power-platform/admin/get-help-support

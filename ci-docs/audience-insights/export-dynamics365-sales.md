@@ -9,13 +9,23 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
+ms.openlocfilehash: d8a35424f4271b350b8d84e72a01deb6d69652a0
+ms.sourcegitcommit: 08a5dfcc4f9d293c8e7ac4fef604bc52985b1b78
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090931"
 ---
-
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>Dynamics 365 Sales에 세그먼트 사용(프리뷰)
 
 
 
 고객 데이터를 사용하여 마케팅 목록을 만들고, 워크플로에 대한 후속작업을 수행하고, Dynamics 365 Sales로 홍보 행사를 보냅니다.
+
+## <a name="known-limitations"></a>알려진 제한 사항
+
+- Dynamics 365 Sales로 내보내기는 세그먼트당 100,000명의 구성원으로 제한됩니다.
+- Dynamics 365 Sales로 세그먼트 내보내기를 완료하는 데 최대 3시간이 걸릴 수 있습니다. 
 
 ## <a name="prerequisite-for-connection"></a>연결을 위한 전제 조건
 

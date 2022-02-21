@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 4f26220f6ba7f5b5ae00c11216129f9ad814b77d
-ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
+ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892346"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088121"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>대상 그룹 인사이트에서 환경 만들기
 
@@ -28,7 +28,7 @@ ms.locfileid: "7892346"
 
 ## <a name="create-a-new-environment"></a>새 환경 만들기
 
-Customer Insights에 대한 구독 라이선스를 구입한 후 Microsoft 365 테넌트의 전역 관리자는 환경을 만들도록 초대하는 이메일을 받게 됩니다. 시작하려면 [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start)로 이동하십시오. 
+Customer Insights에 대한 구독 라이선스를 구입한 후 Microsoft 365 테넌트의 전역 관리자는 환경을 만들도록 초대하는 이메일을 받습니다. 시작하려면 [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start)로 이동하십시오. 
 
 안내식 경험은 새로운 환경에 필요한 모든 정보를 수집하는 단계를 안내합니다. 환경을 만들거나 관리하려면 대상 그룹 인사이트에 대한 [관리자 권한](permissions.md)이 필요합니다.
 
@@ -64,7 +64,7 @@ Azure Data Lake Storage에 데이터를 저장하면 해당 Azure Storage 계정
 > Customer Insights는 현재 다음을 지원합니다.
 > - Microsoft Dataverse 관리 Data Lake에 저장된 Power BI 데이터 흐름에서 수집된 엔터티입니다.  
 > - 환경을 만들 때 선택한 동일한 Azure 지역의 Azure Data Lake Storage 계정입니다.
-> - *계층 구조 네임스페이스* 가 사용된 Azure Data Lake Storage 계정입니다.
+> - Gen2가 있고 *계층 구조 네임스페이스* 가 사용된 Azure Data Lake Storage 계정입니다. Azure Data Lake Gen1 스토리지 계정은 지원되지 않습니다.
 
 Azure Data Lake Storage 옵션의 경우 인증을 위해 리소스 기반 옵션과 구독 기반 옵션 중에서 선택할 수 있습니다. 자세한 내용은 [Azure 서비스 주체를 사용하여 Azure Data Lake Storage 계정에 연결](connect-service-principal.md)을 참조하십시오. **컨테이너** 이름은 `customerinsights`이며 변경할 수 없습니다.
 

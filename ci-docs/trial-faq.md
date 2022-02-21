@@ -3,18 +3,18 @@ title: 평가판 FAQ - Dynamics 365 Customer Insights
 description: Customer Insights 평가판 설치 및 관리와 관련된 일반적인 질문에 대한 솔루션입니다. 플랫폼 및 앱별 문제를 해결하는 방법을 알아봅니다.
 author: m-hartmann
 ms.author: mhart
-ms.date: 09/30/2021
+ms.date: 02/10/2022
 ms.topic: get-started
 ms.service: customer-insights
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 2837ae13b4150310193a2d09d59aed66b4a69c69
-ms.sourcegitcommit: e6020c178a61beb0ee31a031c11ded914d10d995
+ms.openlocfilehash: f63ed39ba8c710d0c0149e0944efaafe27e7b9bb
+ms.sourcegitcommit: 5dd32dc2b18027cf2aa954356dded4bc6aab9801
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7642888"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8115976"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Dynamics 365 Customer Insights 평가판 FAQ
 
@@ -24,7 +24,7 @@ ms.locfileid: "7642888"
 
 이 앱은 클라우드 기반 서비스로, 일부 제한이 적용되기는 하지만 최신 웹 브라우저 이외에는 특별한 소프트웨어가 필요하지 않습니다. 최상의 평가판 경험을 위해 시크릿 모드에서 평가판 사이트에 액세스하지 말고 가장 가까운 평가판 위치를 선택하세요. [웹 애플리케이션 요구 사항에 대해 자세히 알아보세요.](/power-platform/admin/web-application-requirements)
 
-### <a name="how-do-i-sign-up-for-the-trial-without-a-microsoft-365-tenant"></a>Microsoft 365 테넌트 없이 평가판에 등록하려면 어떻게 해야 합니까?
+### <a name="how-do-i-sign-up-for-the-trial-without-a-microsoft-365-tenant"></a>Microsoft 365 테넌트 없이 평가판에 등록하려면 어떻게 해야 하나요?
 
 비업무용 이메일 주소를 입력하여 계정과 테넌트를 받을 수 있습니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "7642888"
 
 ### <a name="how-do-i-add-more-users-to-a-trial"></a>평가판에 어떻게 사용자를 추가합니까?
 
-사용자를 추가하려면 [평가판 관리자 계정을 사용하여 Microsoft 365 관리 센터](https://admin.microsoft.com)로 이동합니다. [관리 센터 지침](/microsoft-365/admin/add-users/add-users)을 따라 사용자를 평가판 라이선스 한도까지 추가합니다. 추가하는 사용자에게 이미 Microsoft 365 계정이 있는 경우 평가판 조직에 적절한 보안 역할 할당합니다. 자세한 내용은 [사용자에게 보안 역할 할당](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user)을 참조하세요.
+사용자를 추가하려면 평가판 관리자 계정을 사용하여 [Microsoft 365 관리 센터](https://admin.microsoft.com)로 이동하세요. [관리 센터 지침](/microsoft-365/admin/add-users/add-users)을 따라 사용자를 평가판 라이선스 한도까지 추가합니다. 추가하는 사용자에게 이미 Microsoft 365 계정이 있는 경우 평가판 조직에 적절한 보안 역할 할당합니다. 자세한 내용은 [사용자에게 보안 역할 할당](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user)을 참고하세요.
 
 ### <a name="how-many-users-can-i-add-to-my-trial-environment"></a>평가판 환경에 몇 명의 사용자를 추가할 수 있습니까?
 
@@ -63,7 +63,7 @@ ms.locfileid: "7642888"
 
 일반적으로 Customer Insights의 유료 버전으로 업그레이드할 때 자신의 데이터로 새로 시작하는 것이 좋습니다. 
 
-선택적으로 대상 그룹 인사이트만 사용하는 경우 Customer Insights를 구매하면 평가판 환경에서 데이터를 복사할 수 있습니다. 평가판 환경에서 유료 환경으로 설정을 마이그레이션하려면 Customer Insights 평가판의 관리자이자 Microsoft 365 테넌트의 전역 관리자이거나 조직의 Dynamics 365 관리자여야 합니다. 
+선택적으로 대상 그룹 인사이트만 사용하는 경우 Customer Insights를 구매하면 평가판 환경에서 데이터를 복사할 수 있습니다. Customer Insights 평가판의 관리자이자 Microsoft 365 테넌트의 전역 관리자이거나 조직의 Dynamics 365 관리자가 평가판 환경에서 유료 환경으로 설정을 마이그레이션해야 합니다. 
 
 Customer Insights의 유료 인스턴스에 처음 로그인하면 새 환경을 생성하라는 메시지가 표시됩니다. 이 프로세스에서 기존 환경에서 구성을 복사하고 대부분의 설정을 마이그레이션하도록 선택할 수 있습니다. 위에서 언급한 권한이 있는 경우 평가판 환경이 이 목록에 표시됩니다. 자세한 내용은 [환경 구성 복사](audience-insights/manage-environments.md#copy-the-environment-configuration)를 참조하십시오.
 
@@ -82,8 +82,9 @@ Customer Insights의 유료 인스턴스에 처음 로그인하면 새 환경을
 
 Customer Insights 기능의 대부분의 기능은 평가판에서 사용할 수 있습니다.
 
-다음 기능은 사용할 수 없습니다. 
+다음 기능은 **사용할 수 없습니다**. 
 - 담당 Azure Data Lake Storage 계정을 사용하는 새 환경을 만들 수 없습니다.
+- 평가판 환경은 삭제할 수 없습니다. 
 
 ### <a name="how-long-does-the-trial-last"></a>평가판 기간은 얼마나 됩니까?
 
