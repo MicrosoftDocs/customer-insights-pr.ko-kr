@@ -9,8 +9,13 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
+ms.openlocfilehash: 693e2f410a77cbf2e87ff0132ce963aab7e8e3e4
+ms.sourcegitcommit: 4c9db6c124d7244e7e8bb2f8bfdc697523781c31
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8010917"
 ---
-
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>개선된 회사 데이터로 회사 프로필 보강
 
 Microsoft의 모델과 컴파일된 회사 데이터를 사용하여 회사 프로필을 수정, 보완 및 표준화하십시오. 정확성과 인사이트를 높이기 위해 [Common Data Model 형식](/common-data-model/schema/core/applicationcommon/account)을 사용합니다.

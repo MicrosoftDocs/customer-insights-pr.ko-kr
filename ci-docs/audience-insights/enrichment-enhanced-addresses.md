@@ -9,8 +9,13 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
+ms.openlocfilehash: ba43d24ac5ae8846da87f0d41234d8616c2f8070
+ms.sourcegitcommit: 4c9db6c124d7244e7e8bb2f8bfdc697523781c31
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8010913"
 ---
-
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>향상된 주소로 고객 프로필 강화
 
 데이터의 주소는 구조화되지 않았거나 불완전하거나 부정확할 수 있습니다. Microsoft의 모델을 사용하여 [공통 데이터 모델 형식](/common-data-model/schema/core/applicationcommon/address)으로 정규화하고 보강하여 더 나은 정확성과 인사이트를 얻으십시오.

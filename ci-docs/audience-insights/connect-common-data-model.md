@@ -9,8 +9,13 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
+ms.openlocfilehash: 8a871d65bd79d3246984e23fb52210c8dc7259b8
+ms.sourcegitcommit: 7a99f3490e6582c2bc2b38019ed1898348b0eaba
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8027060"
 ---
-
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>Azure Data Lake 계정을 사용하여 Common Data Model 폴더에 연결
 
 이 문서에서는 Azure Data Lake Storage Gen2 계정을 사용하여 Common Data Model 폴더에서 데이터를 수집하는 방법에 대한 정보를 제공합니다.

@@ -10,9 +10,14 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-  - ci-merge
+- ci-merge
+ms.openlocfilehash: eb08ab38d23bf22a17896b63c93e6821431b002a
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046599"
 ---
-
 # <a name="merge-entities"></a>엔터티 병합
 
 병합 단계는 데이터 통합 프로세스의 마지막 단계입니다. 그 목적은 충돌하는 데이터를 조정하는 것입니다. 충돌하는 데이터의 예로는 두 데이터 집합에 있지만 각 데이터 집합에 있는 고객 이름("Grant Marshall"과 "Grant Marshal") 또는 형식(617-803-091X와 617803091X)에 차이가 있는 휴대폰 번호 등이 있습니다. 충돌하는 데이터 요소를 병합하는 작업은 특성별로 수행됩니다.
