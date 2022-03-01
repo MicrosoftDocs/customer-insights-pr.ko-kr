@@ -1,7 +1,7 @@
 ---
 title: 통합 고객 프로필 보강
 description: 기능을 사용하여 고객 데이터를 보강합니다.
-ms.date: 02/07/2022
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5c3dda3b9bae828857258025ff79958ee22bdb6f
-ms.sourcegitcommit: a399bd17523c8d06afd7d78af4fc711f93c0e8be
+ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "8098797"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673007"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>고객 프로필 보강(미리 보기)
 
@@ -37,17 +37,14 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 - [Experian에서 제공하는 인구 통계](enrichment-experian.md)
 - SFTP(보안 파일 전송 프로토콜)를 통한 [사용자 지정 데이터](enrichment-SFTP-custom-import.md) 
 - Microsoft 제공 [Azure Maps](enrichment-azure-maps.md)
-- HERE Technologies에서 제공한 [위치 데이터](enrichment-here.md) 
 
 # <a name="business-accounts-b-to-b"></a>[비즈니스 어카운트(B2B)](#tab/b2b)
 
 - Leadspace에서 제공한 [회사 데이터](enrichment-leadspace.md)
 - Microsoft 제공 [향상된 주소](enrichment-enhanced-addresses.md) 
-- Microsoft에서 제공한 [개선된 회사 데이터](enrichment-enhanced-company-data.md)
 - HERE Technologies에서 제공한 [위치 데이터](enrichment-here.md) 
 - SFTP(보안 파일 전송 프로토콜)를 통한 [사용자 지정 데이터](enrichment-SFTP-custom-import.md) 
 - Microsoft 제공 [Azure Maps](enrichment-azure-maps.md)
-- Microsoft에서 제공한 [계정 참여 데이터](enrichment-office.md)
 
 ---
 

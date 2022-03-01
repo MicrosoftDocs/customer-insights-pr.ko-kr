@@ -1,5 +1,5 @@
 ---
-title: Customer Insights 데이터를 SFTP 호스트로 내보내기(동영상 포함)
+title: Customer Insights 데이터를 SFTP 호스트로 내보냅니다.
 description: 연결을 구성하고 SFTP 위치로 내보내는 방법을 알아봅니다.
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -9,18 +9,16 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 542bd908010cf0a8ccc12f15d54e0a3d5b72f189
-ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
+ms.openlocfilehash: b19ca6b8085846785682046f83d0ed4758269e5b98303692c703d995407ca7dd
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7934895"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035469"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>SFTP로 세그먼트 및 다른 데이터 내보내기(프리뷰)
 
 고객 데이터를 SFTP(Secure File Transfer Protocol) 위치로 내보내 타사 애플리케이션에서 사용하십시오.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO94X]
 
 ## <a name="prerequisites-for-connection"></a>연결을 위한 전제 조건
 
@@ -28,7 +26,6 @@ ms.locfileid: "7934895"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- 방화벽 뒤에 있는 SFTP 대상은 현재 지원되지 않습니다. 
 - 내보내기 런타임은 시스템 성능에 따라 다릅니다. 서버의 최소 구성으로 2개의 CPU 코어와 1Gb의 메모리를 권장합니다. 
 - 2개의 CPU 코어와 1Gb 메모리의 권장 최소 구성을 사용하면 최대 1억 개의 고객 프로필이 있는 엔터티를 내보내는 데 90분이 걸릴 수 있습니다. 
 

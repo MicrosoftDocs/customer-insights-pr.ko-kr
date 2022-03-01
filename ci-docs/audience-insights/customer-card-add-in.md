@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 앱용 고객 카드 추가 앱(비디오 포함)
 description: 이 추가 기능을 사용하여 Dynamics 365 앱에서 대상 그룹 인사이트의 데이터를 표시합니다.
-ms.date: 02/02/2022
+ms.date: 12/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: ce6c8fab84fd4c5dfc9f78b91dde3483a1d358c1
-ms.sourcegitcommit: 11308ed275b4b25a35576eccfcae9dda9e2c2784
+ms.openlocfilehash: 98597600c2a39f8bb707af8461df4736f913e6bc
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8085256"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046488"
 ---
 # <a name="customer-card-add-in-preview"></a>고객 카드 추가 기능(미리 보기)
 
@@ -118,26 +118,5 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 
 1. 업그레이드 프로세스를 시작하면 업그레이드가 완료될 때까지 로딩 표시기가 나타납니다. 최신 버전이 없으면 업그레이드 시 오류 메시지가 표시됩니다.
 
-## <a name="troubleshooting"></a>문제 해결
-
-### <a name="controls-from-customer-card-add-in-dont-find-data"></a>고객 카드 추가 기능의 컨트롤에서 데이터를 찾을 수 없음
-
-**문제점:**
-
-올바르게 구성된 ID 필드가 있더라도 컨트롤은 고객에 대한 데이터를 찾을 수 없습니다.  
-
-**해결 방법:**
-
-1. 다음 지침에 따라 카드 추가 기능을 구성했는지 확인합니다. [고객 카드 추가 기능 구성](#configure-the-customer-card-add-in) 
-
-1. 데이터 수집 구성을 검토합니다. 연락처 ID GUID가 포함된 Dynamics 365 시스템의 데이터 원본을 편집합니다. Power Query 편집기에 연락처 ID GUID가 대문자로 표시된 경우 다음을 시도합니다. 
-    1. 데이터 원본를 편집하여 Power Query 편집자에서 데이터 원본을 엽니다.
-    1. 연락처 ID 열을 선택합니다.
-    1. 헤더 표시줄에서 **변환** 을 선택하여 사용 가능한 작업을 확인합니다.
-    1. **소문자** 를 선택합니다. 테이블의 GUID가 이제 소문자인지 확인합니다.
-    1. 데이터 원본을 저장합니다.
-    1. 데이터 수집, 통합 및 다운스트림 프로세스를 실행하여 변경 사항을 GUID에 전파합니다. 
-
-전체 새로 고침을 완료한 후 Customer Card Add-in 컨트롤에 예상 데이터가 표시되어야 합니다. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

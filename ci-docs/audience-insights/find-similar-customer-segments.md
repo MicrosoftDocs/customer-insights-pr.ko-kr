@@ -1,5 +1,5 @@
 ---
-title: AI로 유사 고객 찾기(동영상 포함)
+title: AI로 유사 고객 찾기(동영상)
 description: 인공 지능으로 유사한 고객 세그먼트를 찾으십시오.
 ms.date: 06/25/2020
 ms.service: customer-insights
@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: de337ae989558c81fff25a6ff7cca01890ed306b
-ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
+ms.openlocfilehash: 7999c4964773c3b5c49537027a2ed67f0ad57ec5
+ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7934848"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7903898"
 ---
 # <a name="similar-customers-preview"></a>유사한 고객(미리 보기)
 

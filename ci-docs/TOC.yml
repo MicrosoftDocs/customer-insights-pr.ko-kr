@@ -2,30 +2,8 @@
   href: index.yml
 - name: 제품 개요
   href: overview.md
-- name: 학습 카탈로그
-  items:
-    - name: 시작
-      href: /learn/modules/get-started-customer-data-platform/
-    - name: 데이터 수집
-      href: /learn/modules/ingest-data-customer-insights/
-    - name: 통합 고객 프로필 만들기
-      href: /learn/modules/unified-customer-profile/
-    - name: 대상 그룹 인사이트 작업
-      href: /learn/modules/working-with-customer-insights/
-    - name: 데이터 보강 및 예측
-      href: /learn/modules/enrich-data/
-    - name: 외부 연결 관리
-      href: /learn/modules/configure-third-party-connections/
-    - name: Customer Insights 관리
-      href: /learn/modules/administer-customer-data-platform/
-- name: 무료 평가판
-  items:
-    - name: 무료 평가판 신청
-      href: trial-signup.md
-    - name: 평가판 FAQ
-      href: trial-FAQ.md
-- name: 유료 라이선스로 시작
-  href: paid-license.md
+- name: 평가판 만들기
+  href: audience-insights/get-started-trial.md
 - name: 환경 액세스
   href: 'https://home.ci.ai.dynamics.com/'
 - name: 대상 그룹 인사이트
@@ -41,16 +19,24 @@
         - name: 빠른 시작 가이드
           href: audience-insights/get-started.md
         - name: 새 환경 만들기
-          href: audience-insights/create-environment.md
+          href: audience-insights/get-started-paid.md
         - name: 대상 그룹 인사이트 살펴보기
           href: audience-insights/home.md
-    - name: 비즈니스 계정과 연동
-      href: audience-insights/work-with-business-accounts.md
+    - name: 학습 모듈
+      items:
+        - name: 데이터 수집
+          href: /learn/modules/ingest-data-customer-insights/
+        - name: 통합 고객 프로필 만들기
+          href: /learn/modules/unified-customer-profile/
+        - name: 앱에 대한 작업
+          href: /learn/modules/working-with-customer-insights/
+        - name: 데이터 및 예측 보강
+          href: /learn/modules/enrich-data/
     - name: 데이터 원본
       items:
         - name: 데이터 원본 개요
           href: audience-insights/data-sources.md
-        - name: Power Query 커넥터를 통해 데이터 원본 추가
+        - name: 파워 쿼리 커넥터를 통해 데이터 원본 추가
           href: audience-insights/connect-power-query.md
         - name: Common Data Model 폴더를 데이터 원본으로 추가
           href: audience-insights/connect-common-data-model.md
@@ -80,18 +66,14 @@
           href: audience-insights/relationships.md
         - name: 고객 활동 나열
           href: audience-insights/activities.md
-        - name: 의미 체계 매핑 정의
-          href: audience-insights/semantic-mappings.md
     - name: 데이터 보강
       items:
         - name: 고객 프로필 보강
           href: audience-insights/enrichment-hub.md
-        - name: 브랜드 및 관심사
+        - name: 브랜드 및 관심 관계
           href: audience-insights/enrichment-microsoft.md
         - name: 고급 주소
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: 고급 회사 데이터
-          href: audience-insights/enrichment-enhanced-company-data.md
         - name: Azure Maps로 보강
           href: audience-insights/enrichment-azure-maps.md
         - name: HERE Technologies로 보강
@@ -100,8 +82,6 @@
           href: audience-insights/enrichment-leadspace.md
         - name: Experian으로 보강
           href: audience-insights/enrichment-experian.md
-        - name: Office 365 데이터로 보강
-          href: audience-insights/enrichment-office.md
         - name: SFTP 사용자 지정 가져오기로 보강
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: 세그먼트
@@ -136,8 +116,6 @@
               href: audience-insights/predict-subscription-churn.md
             - name: 트랜잭션 이탈 예측
               href: audience-insights/predict-transactional-churn.md
-            - name: 고객 피드백의 감정 분석
-              href: audience-insights/sentiment-analysis.md
             - name: Azure 기계 학습의 사용자 지정 모델 사용
               href: audience-insights/custom-models.md
             - name: 부분적으로 누락된 데이터 완료
@@ -148,12 +126,14 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: 구독 이탈 예측 샘플 가이드
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: 트랜잭션 이탈 예측에 대한 샘플 가이드
+            - name: 트랜잭션 이탈 예측 샘플 가이드
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: 제품 추천 예측에 대한 샘플 가이드
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: Azure Machine Learning 실험
               href: audience-insights/azure-machine-learning-experiments.md
+            - name: Azure Machine Learning Studio로 실험
+              href: audience-insights/machine-learning-studio-experiments.md
         - name: 예측 관리
           href: audience-insights/manage-predictions.md
         - name: 예측을 기준으로 세그먼트 만들기
@@ -242,14 +222,10 @@
           href: audience-insights/connections.md
         - name: 다중 환경 관리
           href: audience-insights/manage-environments.md
-        - name: 보안
-          items:
-            - name: Key Vault 직접 가져오기
-              href: audience-insights/use-azure-key-vault.md
-            - name: 서비스 주체를 사용하여 ADLS 스토리지 계정에 연결
-              href: audience-insights/connect-service-principal.md
-            - name: 진단 로그 내보내기
-              href: audience-insights/diagnostics.md
+        - name: 서비스 주체를 사용하여 ADLS 스토리지 계정에 연결
+          href: audience-insights/connect-service-principal.md
+        - name: 지원되는 언어
+          href: audience-insights/supported-languages.md
     - name: 확장성
       items:
         - name: 참여 인사이트의 웹 데이터 통합
@@ -262,40 +238,6 @@
           href: audience-insights/apis.md
         - name: API 참조
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-- name: 동의 관리(프리뷰)
-  items:
-    - name: 도움말 허브
-      href: consent-management/index.yml
-    - name: 기능 개요
-      href: consent-management/overview.md
-    - name: 시작
-      items:
-        - name: 시작
-          href: consent-management/get-started.md
-        - name: 개념 및 용어
-          href: consent-management/glossary.md
-    - name: 동의 데이터 가져오기
-      items:
-        - name: 동의 데이터 가져오기
-          href: consent-management/import-consent-data.md
-        - name: 동의 데이터 설정 및 동의 기본 설정 적용
-          href: consent-management/set-consent-rules.md
-    - name: 동의 데이터 관리
-      items:
-        - name: 대상 그룹 인사이트에서 동의 규칙 사용
-          href: audience-insights/activate-consent.md
-        - name: 잠재고객 인사이트 세그먼트에서 기본 동의 규칙 관리
-          href: audience-insights/change-default-consent-rules.md
-    - name: 설정 및 사용자 관리
-      items:
-        - name: 시스템 설정 구성
-          href: consent-management/system-settings.md
-        - name: 사용자 및 권한 관리
-          href: consent-management/manage-users.md
-    - name: 동의 데이터 사용
-      items:
-        - name: 동의 데이터로 예측 만들기
-          href: consent-management/predictions-consent-data.md
 - name: 참여 인사이트(프리뷰)
   items:
     - name: 도움말 허브
@@ -306,8 +248,6 @@
       items:
         - name: 빠른 시작 가이드
           href: engagement-insights/get-started.md
-        - name: 환경 만들기
-          href: engagement-insights/create-new-environment.md
         - name: 작업 영역 만들기
           href: engagement-insights/create-workspace.md
         - name: 웹 사이트 및 모바일 앱에서 이벤트 캡처
@@ -378,5 +318,3 @@
   href: service-limits.md
 - name: DSR 권한 및 요청
   href: dsr-rights-requests.md
-- name: 제품 지원
-  href: /power-platform/admin/get-help-support

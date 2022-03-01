@@ -2,19 +2,19 @@
 title: 실시간 데이터 수집 및 제한
 description: 대상 그룹 인사이트의 실시간 기능에 대한 일반 정보입니다.
 ms.date: 10/27/2020
-ms.reviewer: mhart
+ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: Nils-2m
-ms.author: nikeller
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 897c876306a39cd9d5842487b96cb2f0a8df7e656de0fb7f10fe8c7f53e2db6b
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b00a72e6a67e33c8e70ccc6139c5e62020f9d3e1
+ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035285"
+ms.lasthandoff: 12/06/2020
+ms.locfileid: "4689183"
 ---
 # <a name="real-time-data-ingestion-preview"></a>실시간 데이터 수집(미리 보기)
 
@@ -54,7 +54,7 @@ ms.locfileid: "7035285"
 
 실시간 API에 연결하는 방법은 다음 두 가지입니다.
 
-- [간접적으로](#connect-via-the-dynamics-365-customer-insights-connector), [Dynamics 365 Customer Insights 커넥터](/connectors/customerinsights/) 사용
+- [간접적으로](#connect-via-the-dynamics-365-customer-insights-connector), [Dynamics 365 Customer Insights 커넥터](https://docs.microsoft.com/connectors/customerinsights/) 사용
 - [직접적으로](#connect-directly-to-the-real-time-api), 코드 사용
 
 두 방법 모두 다음과 같은 전제 조건이 적용됩니다.
@@ -66,13 +66,13 @@ ms.locfileid: "7035285"
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>Dynamics 365 Customer Insights 커넥터를 통해 연결
 
-실시간 API는 코드를 작성하고 배포할 필요 없이 전용 Power Platform커넥터, [Dynamics 365 Customer Insights 커넥터](/connectors/customerinsights/)에서 데이터를 수집할 수 있습니다.    
-커넥터는 API와 동일한 실시간 작업을 수행할 수 있습니다. 프리미엄 커넥터에 대한 유효한 라이선스가 필요합니다. 자세한 내용은 [Power Apps 및 Power Automate 라이선싱 FAQ](/power-platform/admin/powerapps-flow-licensing-faq)를 참조하십시오.
+실시간 API는 코드를 작성하고 배포할 필요 없이 전용 Power Platform커넥터, [Dynamics 365 Customer Insights 커넥터](https://docs.microsoft.com/connectors/customerinsights/)에서 데이터를 수집할 수 있습니다.    
+커넥터는 API와 동일한 실시간 작업을 수행할 수 있습니다. 프리미엄 커넥터에 대한 유효한 라이선스가 필요합니다. 자세한 내용은 [Power Apps 및 Power Automate 라이선싱 FAQ](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq)를 참조하십시오.
 
-- Power Platform [Power Apps 및/또는 Power Automate](/connectors/)
-- Azure [Logic Apps](/azure/connectors/apis-list)
+- Power Platform [Power Apps 및/또는 Power Automate](https://docs.microsoft.com/connectors/)
+- Azure [Logic Apps](https://docs.microsoft.com/azure/connectors/apis-list)
 
-흐름 만들기에 대한 자세한 내용은 [Power Automate 설명서](/power-automate/)를 참조하십시오.
+흐름 만들기에 대한 자세한 내용은 [Power Automate 설명서](https://docs.microsoft.com/power-automate/)를 참조하십시오.
 
 ## <a name="connect-directly-to-the-real-time-api"></a>실시간 API에 직접 연결
 
@@ -83,7 +83,6 @@ ms.locfileid: "7035285"
 
 ## <a name="understand-your-real-time-usage-with-telemetry"></a>원격 분석으로 실시간 사용 이해
 
-실시간 API에 대한 요청의 양에 대한 개요와 시스템에서 발생할 수 있는 문제에 대한 정보를 가져옵니다. [실시간 원격 분석에 액세스](system.md#api-usage-tab)할 수 있습니다. 
+실시간 API에 대한 요청의 양에 대한 개요와 시스템에서 발생할 수 있는 문제에 대한 정보를 가져옵니다. **관리자** > **시스템** > **API 사용** 으로 이동하여 [실시간 원격 분석에 액세스](system.md#api-usage-tab)할 수 있습니다. **작업** 테이블에서 실시간 메서드를 사용하는 API 작업 행에는 실시간 API 사용량을 볼 수 있는 버튼이 있습니다. 버튼은 쌍안경 기호로 시각화됩니다. 버튼을 선택하여 현재 환경에서 실시간 API 사용에 대한 사용 세부 정보가 포함된 사이드 창을 엽니다.
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+**그룹화 기준** 선택기를 사용하여 지난 24시간에서 30일까지의 타임라인에서 실시간 상호 작용을 가장 잘 표현할 수 있는 방법을 선택할 수 있습니다. API 메서드, 엔터티 규정이름(대상 엔터티), (이벤트 소스), 결과(성공 또는 실패) 또는 오류 코드별로 데이터를 그룹화할 수 있습니다. 데이터는 이력 차트 및 테이블로 제공됩니다.

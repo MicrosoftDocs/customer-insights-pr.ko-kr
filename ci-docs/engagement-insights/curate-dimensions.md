@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8a3d7f9276330a6daacbe9428d84a371b81bbefe
-ms.sourcegitcommit: 971716c761871cee390519cacef617dac21ecd60
+ms.openlocfilehash: 50bb800c9e097d03cc6f26f79819c741ab5e8baf
+ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466356"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "7461111"
 ---
 # <a name="use-demographic-dimensions-for-splitting-behavioral-data"></a>행동 데이터 분할에 인구통계학적 차원 사용
 
@@ -29,7 +29,7 @@ ms.locfileid: "7466356"
 - 고객 프로필이 만들어지는 대상 그룹 인사이트 환경에 연결된 고객 프로필 데이터가 있는 참여 인사이트 환경. 추가 정보: [대상 그룹 인사이트와 참여 인사이트 사이에 링크 만들기](integrate-audience-insights-engagement-insights.md)
 
 > [!NOTE]
-> 대상 그룹 인사이트와 참여 인사이트 환경 간의 링크를 만든 후에는 고객 프로필 속성과 관련된 데이터만 원할 수 있으며, 이는 참여 인사이트의 차원으로 유용할 수 있습니다. 자세한 정보는 [대상 그룹 인사이트 통합 프로필 특성 및 세그먼트 활성화](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments)를 참고하십시오.
+> 대상 그룹 인사이트와 참여 인사이트 환경 간의 링크를 만든 후에는 고객 프로필 속성과 관련된 데이터만 원할 수 있으며, 이는 참여 인사이트의 차원으로 유용할 수 있습니다. 자세한 정보는 [대상 그룹 인사이트 통합 프로필 특성 및 세그먼트 활성화](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments)를 참고하십시오.<!--note from editor: Suggested. -->
 
 ## <a name="create-a-new-custom-report"></a>새 사용자 지정 보고서 만들기
 

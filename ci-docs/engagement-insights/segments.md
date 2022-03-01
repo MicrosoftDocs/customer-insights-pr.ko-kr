@@ -4,17 +4,17 @@ description: 세그먼트 및 세그먼트를 사용할 위치를 생성, 편집
 ms.reviewer: mhart
 ms.author: jusali
 author: jusali
-ms.date: 10/01/2021
+ms.date: 06/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: f6bba645a78173fb00dc75e6080f2aeda0b5a143
-ms.sourcegitcommit: 565637f49cbdd05a82f42784f594c19cac299140
+ms.openlocfilehash: cedcd58373428dd35ba29ce8fdd00007257f8fa59b0d25bc584b4e832df13604
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623595"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036156"
 ---
 # <a name="view-and-create-segments"></a>세그먼트 보기 및 만들기
 
@@ -44,27 +44,22 @@ ms.locfileid: "7623595"
 
 1. **새 세그먼트** 를 선택합니다.
 
-1. **리소스 라이브러리** 에서 필터링 기준으로 사용할 속성 옆에 있는 (+)를 선택합니다. 현재는 차원에 기반해서만 세그먼트를 만들 수 있습니다.
+1. **리소스 라이브러리** 에서 필터링할 속성을 선택합니다. 현재는 차원에 기반해서만 세그먼트를 만들 수 있습니다.
 
-   :::image type="content" source="media/create-new-segment.png" alt-text="새 세그먼트 만들기.":::
-
-1. **규칙** 섹션에서 선택한 특성에 대한 연산자와 값을 선택합니다. 다음 연산이 지원됩니다.
-
-   :::image type="content" source="media/choose-operator-segment.png" alt-text="새 세그먼트에 대한 연산자 선택.":::
-
+1. 선택한 특성에 대한 연산자 및 값을 선택합니다. 다음 연산이 지원됩니다.
    - **is**: 값을 포함하려면 정확히 일치해야 합니다. 단일 값에 여러 값을 포함하려면 **equal to** 를 사용하거나 **any of** 를 사용합니다.
    - **is not**: 값을 제외하려면 정확히 일치해야 합니다. 단일 값에 여러 값을 포함하려면 **equal to** 를 사용하거나 **any of** 를 사용합니다.
    - **starts with**: 일치하는 값이 시작하는 문자열입니다.
    - **ends with**: 일치하는 값이 끝나는 문자열입니다.
    - **contains**: 일치하는 값에 포함된 문자열입니다.
 
-1. 그룹에 조건을 더 추가하려면 논리 연산자를 사용할 수 있습니다. 프로젝트된 특성은 집합 연산자를 사용할 때 고려됩니다.
+1. 그룹에 조건을 더 추가하려면 두 개의 논리 연산자를 사용할 수 있습니다. 프로젝트된 특성은 집합 연산자를 사용할 때 고려됩니다.
    - **AND** 연산자: 두 조건을 모두 세분화 프로세스의 일부로 충족해야 합니다. 이 옵션은 여러 엔터티에서 조건을 정의할 때 가장 유용합니다.
    - **OR** 연산자: 세그레이션 프로세스의 일부로 조건 중 하나를 충족해야 합니다. 이 옵션은 동일한 엔터티에 대해 여러 조건을 정의할 때 가장 유용합니다.
 
 1. **저장** 을 선택하고 세그먼트 이름을 지정합니다. 
 
-세그먼트는 **세그먼트** 페이지에 나열되며 작업 영역의 모든 보고서 및 유입 경로에 적용할 수 있습니다.
+세그먼트는 세그먼트 페이지에 나열되며 작업 영역의 모든 보고서 및 유입 경로에 적용할 수 있습니다.
 
 ## <a name="use-a-segment-in-a-report-or-funnel"></a>보고서 또는 유입 경로에서 세그먼트 사용
 
@@ -72,7 +67,7 @@ ms.locfileid: "7623595"
 
 :::image type="content" source="media/segment-reports-filter.png" alt-text="적용할 세그먼트를 선택할 수 있는 확장된 드롭다운 목록이 있는 페이지 보기 보고서입니다.":::
 
-세그먼트를 적용하려면 보고서 또는 유입 경로를 엽니다. **+ 조건 추가** 를 선택하고 **세그먼트로 필터링** 을 선택합니다. 적용할 세그먼트를 목록에서 선택하십시오. 세그먼트가 보고서에 적용됩니다. 차트가 세그먼트를 지원하지 않으면 오류가 표시됩니다. 자세한 내용은 [유입 경로 보고서 만들기 및 관리](funnel-reports.md)를 참조하세요.
+세그먼트를 적용하려면 보고서 또는 유입 경로를 엽니다. **조건 추가** 를 선택하고 **세그먼트로 필터링** 을 선택합니다. 적용할 세그먼트를 목록에서 선택하십시오. 세그먼트가 보고서에 적용됩니다. 차트가 세그먼트를 지원하지 않으면 오류가 표시됩니다.
  
 보고서 또는 유입 경로에 *최대 3개의 세그먼트* 를 적용할 수 있습니다.
 
@@ -96,7 +91,5 @@ ms.locfileid: "7623595"
 1. 세그먼트 목록에서 **더보기 [...]** 를 선택합니다. 
 1. 드롭다운 목록에서 **삭제** 를 선택합니다.
 1. **삭제** 를 선택하여 확인합니다.
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

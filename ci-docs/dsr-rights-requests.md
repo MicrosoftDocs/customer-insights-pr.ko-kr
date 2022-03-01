@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: c116f7ce208c0288851a4b2230e27784ba3a5337
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 6faaeb6a1ee34c3e5c8e7d465b37cee589bc920c
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732688"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483684"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>GDPR에 따른 데이터 주체 권한(DSR) 요청
 
@@ -79,14 +79,7 @@ Customer Insights 관리자는 다음 단계에 따라 Customer Insights 사용�
 2. 요청한 사용자의 데이터를 내보내려면 확인을 승인합니다.
 3. 테넌트 관리자 전자 메일 주소를 통해 내보낸 데이터를 받습니다.
 
-## <a name="consent-management-preview"></a>동의 관리(프리뷰)
-
-동의 관리 기능은 사용자 데이터를 직접 수집하지 않습니다. 다른 애플리케이션에서 사용자가 제공한 동의 데이터만 가져와서 처리합니다.
-
-특정 사용자에 대한 동의 데이터를 제거하려면 동의 관리 기능에 수집된 데이터 소스에서 제거하십시오. 데이터 원본를 새로 고침하면 제거된 데이터가 동의 센터에서도 삭제됩니다. 동의 엔터티를 사용하는 애플리케이션은 [새로 고침](audience-insights/system.md#refresh-processes)한 이후 소스에서 제거된 데이터도 삭제합니다. 다른 모든 프로세스 및 애플리케이션에서 사용자 데이터를 제거하라는 데이터 주체 요청에 응답한 후 데이터 원본을 빠르게 새로 고치는 것이 좋습니다.
-
-
-## <a name="engagement-insights-preview"></a>참여 인사이트(프리뷰)
+## <a name="engagement-insights"></a>참여 인사이트
 
 ### <a name="deleting-and-exporting-event-data-containing-end-user-identifiable-information"></a>최종 사용자 식별 정보가 포함된 이벤트 데이터 삭제 및 내보내기
 

@@ -1,7 +1,7 @@
 ---
 title: 예측을 사용하여 부분 데이터 완료
 description: 예측을 사용하여 불완전한 고객 데이터를 채웁니다.
-ms.date: 11/01/2021
+ms.date: 05/05/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,17 +9,16 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 3100acf383d85c00a6ff0a8ebc54e038bd813427
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 7ca42334420a27a8739d7c28bb72606c3ed91f3c
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732414"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645042"
 ---
-# <a name="complete-your-partial-data-with-predictions-deprecated"></a>예측으로 부분 데이터 완성(더 이상 사용되지 않음)
+# <a name="complete-your-partial-data-with-predictions"></a>예측으로 부분 데이터 완성
 
-> [!IMPORTANT]
-> 이 기능은 **2021년 11월 5일** 부터 **더 이상 사용되지 않습니다**. 현재 구현은 기능이 제거될 때까지 계속 작동하지만 아래 지침을 사용하여 새 통합을 만들 수 없습니다.
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 예측을 통해 고객에 대한 이해를 높일 수 있는 예측 값을 쉽게 만들 수 있습니다. **인텔리전스** > **예측** 페이지에서 **내 예측** 을 선택하여 대상 그룹 인사이트의 다른 부분에서 구성한 예측을 보고 추가로 사용자 지정할 수 있습니다.
 
@@ -61,8 +60,6 @@ ms.locfileid: "7732414"
    > ![범주에 매핑된 필드 값을 보여주는 예.](media/intelligence-categorymapping.png "범주에 매핑된 필드 값을 보여주는 예")
 
 8. **완료** 를 선택하면 예측이 처리됩니다. 데이터의 크기와 복잡성에 따라 처리에 시간이 걸립니다. 생성한 예측의 **출력 엔터티 이름** 을 기반으로 새 엔터티에서 결과를 사용할 수 있습니다.
-
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="create-a-prediction-while-creating-a-segment"></a>세그먼트를 만들면서 예측 만들기
 

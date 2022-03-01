@@ -1,7 +1,7 @@
 ---
 title: Microsoft의 데이터로 고객 프로필 보강
-description: Microsoft의 독점 데이터를 사용하여 선호도 및 음성 점유율로 고객 데이터를 보강하세요.
-ms.date: 11/11/2021
+description: Microsoft의 독점 데이터를 사용하여 브랜드 및 관심사와 함께 고객 데이터를 보강하십시오.
+ms.date: 06/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,33 +9,29 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 346c79d0a4d5cd5c47e91c195a48d3a153db0dc0
-ms.sourcegitcommit: 9d3c9e4eb2ce20996a4f4fb44c42e3fe020c5b48
+ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7793712"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305164"
 ---
-# <a name="enrich-customer-profiles-with-affinities-and-share-of-voice-preview"></a>선호도 및 음성 점유율(미리 보기)로 고객 프로필 보강
+# <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>브랜드 및 관심 관계로 풍부한 고객 프로필 강화(미리 보기)
 
-Microsoft의 독점 데이터를 사용하여 선호도 및 SoV(음성 점유율)로 고객 데이터를 보강하세요. 이러한 선호도 및 SoV는 고객과 유사한 인구 통계를 가진 사람들의 데이터를 기반으로 합니다. 이 정보는 특정 브랜드 및 관심 분야에 대한 고객의 선호도 또는 SoV를 기반으로 고객을 더 잘 이해하고 분류하는 데 도움이 됩니다.
+Microsoft의 독점 데이터를 사용하여 브랜드 및 관심사와 함께 고객 데이터를 보강하십시오. 이 선호도는 인구 통계학적으로 고객과 유사한 사람들의 데이터를 기반으로 합니다. 이 정보는 고객을 특정 브랜드 및 관심사에 대한 선호도에 따라 더 잘 이해하고 분류할 수 있도록 도와줍니다.
 
 대상 그룹 인사이트에서 **데이터** > **보강** 으로 이동하여 [보강 구성 및 보기](enrichment-hub.md)를 수행합니다.
 
-브랜드 선호도 및 SoV 보강을 구성하려면 **검색** 탭으로 이동하고 **브랜드** 타일에서 **내 데이터 보강** 을 선택하세요.
+브랜드 관심 보강을 구성하려면 **검색** 탭으로 이동하고 **브랜드** 타일에서 **내 데이터 보강** 을 선택합니다.
 
-관심사 선호도 및 SoV 보강을 구성하려면 **검색** 탭으로 이동하고 **관심사** 타일에서 **내 데이터 보강** 을 선택하세요.
+관심 관계 보강을 구성하려면 **검색** 탭으로 이동하고 **관심** 타일에서 **내 데이터 보강** 을 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![브랜드 및 관심사 타일.](media/BrandsInterest-tile-Hub.png "브랜드 및 관심사 타일")
+   > ![브랜드 및 관심사 타일](media/BrandsInterest-tile-Hub.png "브랜드 및 관심사 타일")
 
-## <a name="how-we-determine-affinities-and-sov"></a>선호도 및 SoV를 결정하는 방법
+## <a name="how-we-determine-affinities"></a>친화도를 결정하는 방법
 
-Microsoft의 온라인 검색 데이터를 사용하여 다양한 인구 통계학적 세그먼트(나이, 성별 또는 위치로 정의됨)에서 브랜드 및 관심사에 대한 선호도 및 SoV를 찾습니다. 브랜드 또는 관심사에 대한 온라인 검색량은 선호도 또는 SoV를 결정하는 기초를 형성합니다. 그러나 각각은 고객을 이해하는 다른 관점을 제공합니다.
-
-- 관심도는 인구 통계학적 세그먼트 간의 비교입니다. 이 정보를 사용하여 다른 세그먼트와 비교하여 주어진 브랜드 또는 관심사에 대해 가장 높은 선호도를 갖는 인구 통계학적 세그먼트를 식별할 수 있습니다.
-
-- 음성 점유율는 선택한 브랜드 또는 관심사에 대한 비교입니다. 이 정보를 사용하여 선택한 다른 브랜드 또는 관심사와 비교하여 특정 인구 통계학적 세그먼트에 대해 가장 높은 음성 점유율을 보이는 브랜드 또는 관심사를 식별할 수 있습니다.
+Microsoft의 온라인 검색 데이터를 사용하여 다양한 인구 통계 세그먼트(연령, 성별 또는 위치로 정의됨)에서 브랜드 및 관심사에 대한 선호도를 찾습니다. 브랜드나 관심 분야에 대한 온라인 검색 양에 따라 인구 통계학적 세그먼트가 다른 세그먼트와 비교하여 해당 브랜드나 관심 분야에 얼마나 많은 유사성이 있는지가 결정됩니다.
 
 ## <a name="affinity-level-and-score"></a>선호도 수준 및 점수
 
@@ -52,10 +48,6 @@ Microsoft의 온라인 검색 데이터를 사용하여 다양한 인구 통계�
 |낮음     | 1-34        |
 
 선호도를 측정하기 위해 원하는 세분성에 따라 선호도 수준 또는 점수를 사용할 수 있습니다. 선호도 점수를 사용하면 더 정확한 제어가 가능합니다.
-
-## <a name="share-of-voice-sov"></a>SoV(음성 점유율)
-
-SoV를 100점 척도로 계산합니다. 모든 보강된 고객 프로필에 대한 모든 브랜드 또는 관심사의 총 SoV는 최대 100입니다. 선호도와 달리 SoV는 선택한 브랜드 및 관심사와 관련이 있습니다. 예를 들어 선택한 브랜드가 ('Microsoft', 'GitHub') 및 ('Microsoft', 'LinkedIn')인 경우 'Microsoft'의 SoV 값이 다를 수 있습니다.
 
 ## <a name="supported-countriesregions"></a>지원되는 국가/지역
 
@@ -90,7 +82,7 @@ SoV를 100점 척도로 계산합니다. 모든 보강된 고객 프로필에 �
 
 ### <a name="select-entity-to-enrich"></a>보강할 엔터티 선택
 
-**보강된 엔터티** 를 선택하고 Microsoft의 데이터로 보강할 데이터 집합을 선택합니다. 고객 엔터티를 선택하여 모든 고객 프로필을 보강하거나 세그먼트 엔터티를 선택하여 해당 세그먼트에 포함된 고객 프로필만 보강할 수 있습니다.
+**보강된 엔터티** 를 선택하고 Microsoft의 회사 데이터로 보강할 데이터 집합을 선택합니다. 고객 엔터티를 선택하여 모든 고객 프로필을 보강하거나 세그먼트 엔터티를 선택하여 해당 세그먼트에 포함된 고객 프로필만 보강할 수 있습니다.
 
 ### <a name="map-your-fields"></a>필드 매핑
 
@@ -124,25 +116,26 @@ SoV를 100점 척도로 계산합니다. 모든 보강된 고객 프로필에 �
 
 고객 데이터의 크기에 따라 보강 실행이 완료되는 데 몇 분이 걸릴 수 있습니다.
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+> [!TIP]
+> 작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다. 또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다. 프로세스 상태를 선택하여 전체 작업의 진행률에 대한 세부 사항을 볼 수 있습니다. 작업의 작업 중 하나에 대해 **세부 정보 보기** 를 선택한 후 처리 시간, 마지막 처리 날짜 및 작업과 관련된 모든 오류 및 경고와 같은 추가 정보를 찾을 수 있습니다.
 
 ## <a name="enrichment-results"></a>보강 결과
 
 보강 프로세스를 실행한 후 **내 보강** 으로 이동하여 총 보강 고객 수와 보강된 고객 프로필에 대한 브랜드 또는 관심사를 분석합니다.
 
-:::image type="content" source="media/my-enrichments.png" alt-text="보강 프로세스를 실행한 후 결과 미리 보기.":::
+:::image type="content" source="media/my-enrichments.png" alt-text="보강 프로세스를 실행한 후 결과 미리 보기":::
 
-시간 경과에 따라 보강된 고객 프로필 수와 보강된 엔터티의 미리 보기가 포함된 차트를 찾을 수 있습니다. **선호도 수준** 또는 **음성 점유율** 차트에서 **자세히 보기** 를 선택하여 보강된 데이터를 검토합니다. 브랜드에 대한 보강된 데이터는 **BrandAffinityFromMicrosoft** 및 **BrandShareOfVoiceFromMicrosoft** 엔터티로 이동합니다. 관심 데이터는 **InterestAffinityFromMicrosoft** 및 **InterestShareOfVoiceFromMicrosoft** 엔터티에 있습니다. 이 엔터티는 **데이터** > **엔터티** 의 **보강** 그룹에 나열됩니다.
+차트에서 **보강된 데이터 보기** 를 선택하여 풍부한 데이터를 검토합니다. 브랜드에 대한 보강 데이터는 **BrandAffinityFromMicrosoft** 엔터티로 이동합니다. 관심 분야에 대한 데이터는 **InterestAffinityFromMicrosoft** 엔터티에 있습니다. 이 엔터티는 **데이터** > **엔터티** 의 **보강** 그룹에 나열됩니다.
 
 ## <a name="see-enrichment-data-on-the-customer-card"></a>고객 카드의 보강 데이터 보기
 
-브랜드 및 관심사 SoV는 개별 고객 카드에서도 볼 수 있습니다. **고객** 으로 이동하여 고객 프로필을 선택하십시오. 고객 카드에서 해당 고객의 인구 통계 프로필에 있는 사람들을 기반으로 하는 브랜드 또는 관심사 SoV에 대한 차트를 찾을 수 있습니다.
+개별 고객 카드에서 브랜드 및 관심 선호도를 볼 수도 있습니다. **고객** 으로 이동하여 고객 프로필을 선택하십시오. 고객 카드에는 해당 고객의 인구 통계학적 프로필에 있는 사람들이 선호하는 브랜드 또는 관심사에 대한 차트가 있습니다.
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="보강된 데이터가 포함된 고객 카드.":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="보강된 데이터가 포함된 고객 카드":::
 
 ## <a name="next-steps"></a>다음 단계
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+보강된 고객 데이터를 바탕으로 구축합니다. [세그먼트](segments.md) 및 [측정값](measures.md)을 만들고 [데이터 내보내기](export-destinations.md) 를 통해 고객에게 개인화된 경험을 제공합니다.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
