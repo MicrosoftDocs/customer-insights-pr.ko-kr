@@ -3,18 +3,20 @@ title: 엔터티 및 데이터 집합
 description: 엔터티 페이지에서 데이터를 봅니다.
 ms.date: 12/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 00c5ee50fb9f0906622c91699852ffba0acb5c15
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+searchScope:
+- ci-entities
+- customerInsight
+ms.openlocfilehash: 1e1abdf49a3c1fe6f9fdd2cf5353a7723454f47b
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900435"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355306"
 ---
 # <a name="entities-in-audience-insights"></a>대상 그룹 인사이트의 엔터티
 
@@ -41,7 +43,7 @@ ms.locfileid: "7900435"
 > ![필드 테이블.](media/data-manager-entities-fields.PNG "필드 테이블")
 
 > [!NOTE]
-> 이 페이지에는 엔터티 데이터의 샘플만 표시됩니다. 전체 데이터 집합을 보려면 **데이터 원본** 페이지에서 엔터티를 선택하고 **편집** 을 선택한 다음 [데이터 원본](data-sources.md)에 설명된 대로 파워 쿼리 편집기를 사용하여 이 엔터티의 데이터를 봅니다.
+> 이 페이지에는 엔터티 데이터의 샘플만 표시됩니다. 전체 데이터 집합을 보려면 **데이터 원본** 페이지에서 엔터티를 선택하고 **편집** 을 선택한 다음 [데이터 원본](data-sources.md)에 설명된 대로 Power Query 편집기를 사용하여 이 엔터티의 데이터를 봅니다.
 
 엔터티에서 수집된 데이터에 대해 자세히 알아보려면 **요약** 열은 데이터에 적용할 수 있는 null, 누락된 값, 고유 값, 개수 및 분포와 같은 데이터의 중요한 특성을 제공합니다. 데이터 요약을 보려면 차트 아이콘을 선택합니다.
 
@@ -71,7 +73,9 @@ ms.locfileid: "7900435"
 
 예를 들어, '생일' 열에는 '날짜'로 설정된 데이터 유형이 있습니다. 고객 레코드에 생일이 '01/01/19777'로 입력되어 있습니다. 시스템은 이 레코드를 손상된 것으로 표시합니다. 이제 누군가가 소스 시스템의 생일을 '1977'로 변경할 수 있습니다. 데이터 원본의 자동 새로 고침 후 필드는 이제 유효한 형식을 가지며 레코드는 손상된 엔터티에서 제거됩니다. 
 
-**데이터** > **엔터티** 로 이동하여 **시스템** 섹션에서 손상된 엔터티를 찾습니다. 손상된 엔터티의 명명 스키마: 'DataSourceName_EntityName_corrupt'.
+**데이터** > **엔터티** 로 이동하여 **시스템** 섹션에서 손상된 엔터티를 찾습니다. 손상된 엔터티의 명명 스키마: 'DataSourceName_EntityName_corrupt'. 손상된 엔터티를 선택하여 모든 손상된 필드와 개별 레코드 수준에서 이유를 식별합니다.
+> [!div class="mx-imgBorder"]
+> ![손상된 이유.](media/corruption-reason.png "손상된 이유")
 
 Customer Insights는 여전히 손상된 레코드를 처리합니다. 그러나 통합 데이터로 작업할 때 문제가 발생할 수 있습니다.
 

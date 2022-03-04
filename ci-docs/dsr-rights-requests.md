@@ -3,18 +3,17 @@ title: GDPR에 따른 데이터 주체 권한(DSR) 요청 | Microsoft Docs
 description: Dynamics 365 Customer Insights 대상 그룹 통계 기능에 대한 데이터 주체 요청에 응답합니다.
 ms.date: 08/11/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 6faaeb6a1ee34c3e5c8e7d465b37cee589bc920c
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: e095eb4f8e194f314d7d6baf6fa6a7a319319d2a
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483684"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350277"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>GDPR에 따른 데이터 주체 권한(DSR) 요청
 
@@ -79,71 +78,78 @@ Customer Insights 관리자는 다음 단계에 따라 Customer Insights 사용�
 2. 요청한 사용자의 데이터를 내보내려면 확인을 승인합니다.
 3. 테넌트 관리자 전자 메일 주소를 통해 내보낸 데이터를 받습니다.
 
-## <a name="engagement-insights"></a>참여 인사이트
+## <a name="consent-management-preview"></a>동의 관리(프리뷰)
 
-### <a name="deleting-and-exporting-event-data-containing-end-user-identifiable-information"></a>최종 사용자 식별 정보가 포함된 이벤트 데이터 삭제 및 내보내기
+동의 관리 기능은 사용자 데이터를 직접 수집하지 않습니다. 다른 애플리케이션에서 사용자가 제공한 동의 데이터만 가져와서 처리합니다.
 
-다음 섹션에서는 개인 데이터를 포함할 수 있는 이벤트 데이터를 삭제하고 내보내는 방법에 대해 설명합니다.
+특정 사용자에 대한 동의 데이터를 제거하려면 동의 관리 기능에 수집된 데이터 소스에서 제거하십시오. 데이터 원본를 새로 고침하면 제거된 데이터가 동의 센터에서도 삭제됩니다. 동의 엔터티를 사용하는 애플리케이션은 [새로 고침](audience-insights/system.md#refresh-processes)한 이후 소스에서 제거된 데이터도 삭제합니다. 다른 모든 프로세스 및 애플리케이션에서 사용자 데이터를 제거하라는 데이터 주체 요청에 응답한 후 데이터 원본을 빠르게 새로 고치는 것이 좋습니다.
 
-데이터를 삭제하거나 내보내려면:
 
-1. 개인 정보 데이터가 포함된 이벤트 속성의 태그를 지정합니다.
-2. 특정 값(예: 지정된 사용자 ID)과 관련된 데이터를 삭제하거나 내보냅니다.
+<!-- ## Engagement insights (preview)
 
-#### <a name="tag-and-update-event-properties"></a>이벤트 속성에 태그 지정 및 업데이트
+### Deleting and exporting event data containing end user identifiable information
 
-개인 데이터는 이벤트 속성 수준에서 태그가 지정됩니다. 먼저 삭제 또는 내보낼 속성에 태그를 지정합니다.
+The following sections describe how to delete and export event data that might contain personal data.
 
-이벤트 속성에 개인 정보를 포함하는 태그를 지정하려면 다음 단계를 따르세요.
+To delete or export data:
 
-1. 이벤트가 포함된 작업 영역을 엽니다.
+1. Tag event properties that contain data with personal information.
+2. Delete or export data associated with specific values (for example: a specified user ID).
 
-1. **데이터** > **이벤트** 로 이동하여 선택한 작업 영역의 이벤트 목록을 확인합니다.
+#### Tag and update event properties
+
+Personal data is tagged on an event property level. First, tag the properties being considered for deletion or export.
+
+To tag an event property as containing personal information, follow these steps:
+
+1. Open the workspace containing the event.
+
+1. Go to **Data** > **Events** to see the list of events in the selected workspace.
   
-1. 태그를 지정할 이벤트를 선택합니다.
+1. Select the event you want to tag.
 
-1. **속성 편집** 을 선택하여 선택한 이벤트의 모든 속성을 나열하는 창을 엽니다.
+1. Select **Edit properties** to open the pane listing all properties of the selected event.
      
-1. **...** 를 선택한 다음 **편집** 을 선택하여 **속성 업데이트** 대화 상자를 엽니다.
+1. Select **...** and then choose **Edit** to reach the **Update property** dialog.
 
-   ![이벤트 편집.](engagement-insights/media/edit-event.png "이벤트 편집")
+   ![Edit event.](engagement-insights/media/edit-event.png "Edit event")
 
-1. **속성 업데이트** 창에서 오른쪽 위 모서리에 있는 **...** 를 선택한 다음 **EUII 포함** 상자를 선택합니다. **업데이트** 를 선택하여 변경 내용을 저장합니다.
+1. In the **Update Property** window, choose **...** in the upper right corner, and then choose the **Contains EUII** box. Choose **Update** to save your changes.
 
-   ![변경 내용을 저장합니다.](engagement-insights/media/update-property.png "변경 내용 저장")
+   ![Save your changes.](engagement-insights/media/update-property.png "Save your changes")
 
    > [!NOTE]
-   > 이벤트 스키마가 변경되거나 새 이벤트를 생성할 때마다 관련 이벤트 속성을 평가하고 필요한 경우 개인 데이터를 포함하는 것으로 태그를 지정하거나 태그를 해제하는 것이 좋습니다.
+   > Every time the event schema changes or you create a new event, it's recommended that you evaluate the associated event properties and tag or untag them as containing personal data, if necessary.
 
-#### <a name="delete-or-export-tagged-event-data"></a>태그가 지정된 이벤트 데이터 삭제 또는 내보내기
+#### Delete or export tagged event data
 
-모든 이벤트 속성이 이전 단계에서 설명한 대로 적절하게 태그 지정된 경우 환경 관리자는 태그 지정된 이벤트 데이터에 대해 삭제 요청을 발행할 수 있습니다.
+If all event properties have been tagged appropriately as described in the previous step, an environment admin can issue a deletion request against the tagged event data.
 
-EUII 삭제 또는 내보내기 요청을 관리하려면
+To manage EUII deletion or export requests
 
-1. **관리** > **환경** > **설정** 으로 이동합니다.
+1. Go to **Admin** > **Environment** > **Settings**.
 
-1. **EUII(최종 사용자 식별 정보) 관리** 섹션에서 **EUII 관리** 를 선택합니다
+1. In the **Manage end user identifiable information (EUII)** section, select **Manage EUII**.
 
-##### <a name="deletion"></a>삭제 항목
+##### Deletion
 
-삭제를 위해 **EUII(최종 사용자 식별 정보) 삭제** 섹션에 쉼표로 구분된 사용자 ID 목록을 입력할 수 있습니다. 이 ID는 정확한 문자열 일치를 통해 현재 환경에 있는 모든 프로젝트의 태그가 지정된 모든 이벤트 속성과 비교됩니다. 
+For deletion, you can enter a list of comma-separated user IDs in the **Delete end user identifiable information (EUII)** section. These IDs will then be compared with all tagged event properties of all projects in the current environment via exact string matching. 
 
-속성 값이 제공된 ID 중 하나와 일치하면 연결된 이벤트가 영구적으로 삭제됩니다. 이 작업은 되돌릴 수 없으므로 **삭제** 를 선택한 후 삭제 항목을 확인해야 합니다.
+If a property value matches one of the provided IDs, the associated event will be permanently deleted. Due to the irreversibility of this action, you must confirm the deletion after selecting **Delete**.
 
-##### <a name="export"></a>Export
+##### Export
 
-내보내기 프로세스는 **EUII(최종 사용자 식별 정보) 내보내기** 섹션에서 이벤트 속성 값을 정의할 때 삭제 프로세스와 동일합니다. 또한 내보내기 대상을 지정하려면 **Azure Blob Storage URL** 을 제공해야 합니다. Azure Blob URL에는 [SAS(공유 액세스 서명)](/azure/storage/common/storage-sas-overview)가 포함되어야 합니다.
+The export process is identical to the deletion process when it comes to defining event property values in the **Export end user identifiable information (EUII)** section. Additionally, you'll need to provide an **Azure blob storage URL** to specify the export destination. The Azure Blob URL must include a [Shared Access Signature (SAS)](/azure/storage/common/storage-sas-overview).
 
-**내보내기** 를 선택하면 일치하는 태그 속성이 포함된 현재 팀의 모든 이벤트가 CSV 형식으로 내보내기 대상으로 내보내집니다.
+After selecting **Export**, all events of the current team that contain matching tagged properties will be exported in CSV format to the export destination.
 
-### <a name="good-practices"></a>우수 사례
+### Good practices
 
-* 개인 데이터가 포함된 이벤트를 보내지 않도록 합니다.
-* EUII 데이터가 포함된 이벤트를 보내야 하는 경우 EUII 데이터가 포함된 이벤트 및 이벤트 속성의 수를 제한하세요. 하나의 이벤트로 제한하는 것이 좋습니다.
-* 전송된 개인 데이터에 액세스할 수 있는 사람은 가능한 한 적어야 합니다.
-* 개인 데이터가 포함된 이벤트의 경우 특정 사용자에게 쉽게 연결할 수 있는 고유 식별자(예: 사용자 ID)를 생성하도록 하나의 속성을 설정해야 합니다. 이렇게 하면 데이터를 쉽게 분리하고 올바른 데이터를 내보내거나 삭제할 수 있습니다.
-* 이벤트당 하나의 속성에만 개인 데이터가 포함된 것으로 태그를 지정하세요. 고유 식별자만 포함하는 것이 가장 좋습니다.
-* 자세한 값(예: 전체 요청 본문)을 포함하는 속성에 태그를 지정하지 마세요. 참여 인사이트 기능은 삭제하거나 내보낼 이벤트를 결정할 때 정확한 문자열 일치를 사용합니다.
+* Try to avoid sending any events that contain personal data.
+* If you need to send events containing EUII data, limit the number of events and event properties that contain EUII data. Ideally, limit yourself to one such event.
+* Make sure that as few people as possible have access to the sent personal data.
+* For events containing personal data, make sure that you set one property to emit a unique identifier that can easily be linked to a specific user (for example, a user ID). This makes it easier to segregate data and to export or delete the right data.
+* Only tag one property per event as containing personal data. Ideally one that only contains a unique identifier.
+* Do not tag properties containing verbose values (for example, an entire request body). Engagement insights capability uses exact string matching when deciding which events to delete or export. -->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

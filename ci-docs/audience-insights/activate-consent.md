@@ -1,20 +1,19 @@
 ---
 title: 세그먼트에 대한 동의 규칙 활성화
 description: 다음 단계에 따라 대상 그룹 인사이트에서 동의 데이터를 연결하고 동의 확인을 활성화합니다. 관리자는 동의 확인을 사용 중지할 수도 있습니다.
-ms.date: 11/03/2021
-ms.service: customer-insights
+ms.date: 11/12/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: smithy7
 ms.author: smithc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 45899738d39bd5caa433e123f9fe59020e831998
-ms.sourcegitcommit: 79b09498d1328e5551fb8684c44af1fb149f9881
+ms.openlocfilehash: 4b55c82229b1a6189c0dd67d145386344286df8a
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790784"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227501"
 ---
 # <a name="activate-consent-rules"></a>동의 규칙 활성화
 
@@ -49,3 +48,6 @@ ms.locfileid: "7790784"
 1. **동의(프리뷰)** 탭을 선택합니다.
 
 1. **동의 확인 사용** 섹션에서 토글을 **끄기** 로 설정합니다.
+
+> [!TIP]
+> 동의 관리 기능 사용을 중지하려면 [동의 센터의 시스템 설정(프리뷰)](../consent-management/system-settings.md)를 참조하세요.

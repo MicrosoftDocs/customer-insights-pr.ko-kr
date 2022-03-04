@@ -1,22 +1,24 @@
 ---
-title: 파워 쿼리 기반 데이터 원본에 대한 증분 새로 고침
-description: 파워 쿼리를 기반 대규모 데이터 소스의 신규 및 업데이트 데이터 새로 고침.
+title: Power Query 기반 데이터 원본의 증분 새로 고침
+description: Power Query를 기반으로 하는 대규모 데이터 원본에 대한 새 데이터 및 업데이트된 데이터를 새로 고칩니다.
 ms.date: 12/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+searchScope:
+- ci-system-schedule
+- customerInsights
+ms.openlocfilehash: 62632efda3c0c7e53fcdd8864b053ba93e2918bc
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900276"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353690"
 ---
-# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>파워 쿼리 기반 데이터 원본에 대한 증분 새로 고침 | Microsoft Docs
+# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Power Query 기반 데이터 원본의 증분 새로 고침
 
 이 문서에서는 Power Query를 기반으로 데이터 원본에 대한 증분 새로 고침을 구성하는 방법에 대해 설명합니다.
 
@@ -28,9 +30,9 @@ ms.locfileid: "7900276"
 
 ## <a name="configure-incremental-refresh"></a>증분 새로 고침 구성
 
-대상 그룹 인사이트를 사용하면 증분 수집을 지원하는 파워 쿼리를 통해 가져온 데이터 원본을 증분 새로 고침할 수 있습니다. 예를 들어 날짜 및 시간 필드가 있는 Azure SQL 데이터베이스는 데이터 레코드가 마지막으로 업데이트된 시간을 나타냅니다.
+대상 그룹 인사이트는 증분 새로 고침을 지원하는 Power Query를 통해 가져온 데이터 원본의 증분 새로 고침을 허용합니다. 예를 들어 날짜 및 시간 필드가 있는 Azure SQL 데이터베이스는 데이터 레코드가 마지막으로 업데이트된 시간을 나타냅니다.
 
-1. [파워 쿼리를 기반으로 새 데이터 원본를 만듭니다](connect-power-query.md).
+1. [Power Query를 기반으로 새로운 데이터 원본을 만듭니다](connect-power-query.md).
 
 1. 데이터 원본의 **이름** 을 제공합니다.
 

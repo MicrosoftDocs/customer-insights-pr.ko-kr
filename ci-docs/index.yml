@@ -4,17 +4,16 @@ metadata:
   author: m-hartmann
   description: 도움말 콘텐츠로 시작할 관련 문서를 찾습니다.
   ms.author: mhart
-  ms.date: 10/29/2020
-  ms.service: customer-insights
+  ms.date: 03/02/2022
   ms.topic: landing-page
-  ms.openlocfilehash: e9c4aa3347d6f477751804790bd3dc9b20eb5dbe
-  ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+  ms.openlocfilehash: 5efa266dfe8d70812f4c668b04cee2f93f206f7b
+  ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/15/2021
-  ms.locfileid: "5598471"
+  ms.lasthandoff: 02/25/2022
+  ms.locfileid: "8350477"
 title: Dynamics 365 Customer Insights 설명서
-summary: 시작하는 데 도움이 되는 리소스를 찾고 Customer Insights의 특징과 기능에 대해 알아보세요.
+summary: 시작하는 데 유용한 리소스를 찾고 Customer Insights의 기능에 대해 알아보십시오.
 landingContent:
 - title: Customer Insights 소개
   linkLists:
@@ -23,19 +22,41 @@ landingContent:
     - text: Customer Insights 개요
       url: overview.md
     - text: 릴리스 계획
-      url: /dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
-    - text: 환경 액세스
-      url: https://home.ci.ai.dynamics.com/
-- title: 대상 그룹 인사이트 시작
+      url: /dynamics365/release-plans/
+    - text: CDP 검색
+      url: https://dynamics.microsoft.com/ai/customer-insights/
+  - linkListType: learn
+    links:
+    - text: Customer Insights 학습 경로
+      url: /learn/paths/build-customer-insights/
+- title: Customer Insights 시작
   linkLists:
   - linkListType: get-started
     links:
     - text: 평가판 등록
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: 새로운 기능
+    - text: 대상 그룹 인사이트의 새로운 기능
       url: audience-insights/whats-new-audience-insights.md
-    - text: 대상 그룹 인사이트 설명서
-      url: audience-insights/index.yml
+    - text: 빠른 시작 가이드
+      url: audience-insights/get-started.md
+  - linkListType: learn
+    links:
+    - text: 시작
+      url: /learn/modules/get-started-customer-data-platform/
+- title: Customer Insights 관리
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 시스템 구성
+      url: audience-insights/system.md
+    - text: 사용자 권한 정의
+      url: audience-insights/permissions.md
+    - text: 다중 환경 관리
+      url: audience-insights/manage-environments.md
+  - linkListType: learn
+    links:
+    - text: Customer Insights 관리
+      url: /learn/modules/administer-customer-data-platform/
 - title: 연락하기
   linkLists:
   - linkListType: overview
@@ -46,63 +67,3 @@ landingContent:
       url: https://go.microsoft.com/fwlink/?linkid=2074172
     - text: 문제 보고
       url: https://go.microsoft.com/fwlink/?linkid=2079641
-- title: 대상 그룹 인사이트 자습서
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: 새 환경 만들기
-      url: audience-insights/home.md
-    - text: 통합 고객 프로필 만들기
-      url: /learn/modules/unified-customer-profile/
-    - text: 앱에 대한 작업
-      url: /learn/modules/working-with-customer-insights/
-- title: 대상 그룹 인사이트 데이터 내보내기
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 내보내기 대상 설정
-      url: audience-insights/export-destinations.md
-    - text: Dynamics 365 앱의 고객 카드
-      url: audience-insights/customer-card-add-in.md
-    - text: Power BI 커넥터
-      url: audience-insights/export-power-bi.md
-- title: 대상 그룹 인사이트 관리
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 시스템 구성
-      url: audience-insights/system.md
-    - text: 사용자 권한 정의
-      url: audience-insights/permissions.md
-    - text: 다중 환경 관리
-      url: audience-insights/manage-environments.md
-- title: 참여 인사이트(미리 보기) 소개
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: 기능 개요
-      url: engagement-insights/overview.md
-    - text: 사용 약관 및 개념
-      url: engagement-insights/glossary.md
-    - text: 시작
-      url: engagement-insights/get-started.md
-- title: 참여 인사이트(미리 보기) 보고서
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 보고서 보기
-      url: engagement-insights/view-reports.md
-    - text: 사용자 지정 보고서 만들기
-      url: engagement-insights/custom-reports.md
-    - text: 통합 프로필 보고서 보기
-      url: engagement-insights/profile-reports.md
-- title: 참여 인사이트(미리 보기) 이벤트
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 정교한 이벤트 만들기
-      url: engagement-insights/refined-events.md
-    - text: 이벤트 내보내기
-      url: engagement-insights/export-events.md
-    - text: 개인 데이터 삭제 및 내보내기
-      url: engagement-insights/delete-export-personal-data.md

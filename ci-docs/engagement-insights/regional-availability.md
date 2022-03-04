@@ -4,26 +4,25 @@ description: 서비스가 배포되는 지역 및 지역에 대해 자세히 알
 author: mkisel11
 ms.reviewer: mhart
 ms.author: mkisel
-ms.date: 09/01/2021
-ms.service: customer-insights
+ms.date: 09/28/2021
 ms.topic: article
 ms.manager: shellyha
-ms.openlocfilehash: c89637cbbe6626f95bcadb1f69831a1647f448a4
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: 08435e651c3706257b8c0548e6e9bbf98f39dce9
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483305"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8228114"
 ---
 # <a name="regional-availability-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights의 국가별 가용성
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Dynamics 365 Customer Insights의 기능인 참여 인사이트는 고객이 데이터를 저장하도록 선택할 수 있는 더 많은 지역을 점진적으로 도입합니다. 관리자는 [새 환경 생성](manage-environments-workspaces.md#create-an-environment) 시 지역을 선택할 수 있습니다. 
+Dynamics 365 Customer Insights의 기능인 참여 인사이트는 고객이 데이터를 저장하도록 선택할 수 있는 더 많은 지역을 점진적으로 도입합니다. 관리자는 [새 환경 생성](create-new-environment.md) 시 지역을 선택할 수 있습니다. 
 
-처음으로 참여 인사이트를 설정하는 경우 [안내된 첫 실행 경험](quickstart.md)을 통해 해당 지역을 선택할 수 있습니다. 나중에 모든 새로운 환경에서 데이터가 저장될 지역을 선택할 수 있습니다.
+처음으로 참여 인사이트를 설정하는 경우 [안내된 첫 실행 경험](quickstart.md)을 통해 해당 지역을 선택할 수 있습니다. 나중에 모든 새로운 환경에서 데이터가 저장될 하위 지역을 선택할 수 있습니다.
 
-현재 미국과 유럽, 두 지역이 있습니다. 사용자는 미국 서부 지역과 북유럽 지역 중에서 선택할 수 있습니다.
+현재 미국과 유럽 지역에서 지원됩니다. 사용자는 미국 서부, 미국 동부, 북유럽 및 서유럽 지역 중에서 선택할 수 있습니다.
 
 조직은 다른 지역에서 환경을 유지할 수 있습니다. 예를 들어 환경 A는 미국 서부에 데이터를 저장하고 환경 B는 북유럽에 저장합니다.
 

@@ -1,24 +1,23 @@
 ---
 title: Common Data Model의 Customer Insights 엔터티 스키마
 description: Common Data Model에서 엔터티로 작업합니다.
-ms.date: 04/17/2020
+ms.date: 08/13/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: f0af2a6d8a90ff01ea9d4eeb29f34113261fd0d4
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692313"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231047"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model의 엔터티 스키마
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 [Common Data Model](/common-data-model/)은 선언적 사양이며, 여러 비즈니스 및 생산성 애플리케이션에서 일반적으로 사용되는 개념과 활동을 나타내는 표준 엔터티의 정의입니다. 이 모델은 관측 및 분석 데이터로 확장되고 있습니다. Common Data Model은 거래처, 사업부, 서비스 케이스, 연락처, 잠재 고객, 영업 기회, 제품 등과 같은 잘 정의되고 확장 가능한 모듈식 비즈니스 엔터티뿐 아니라 활동이나 서비스 수준 약정 같은 공급업체, 작업자, 고객과의 상호 작용을 제공합니다. 누구나 Common Data Model 정의를 구축하고 확장하여 추가 비즈니스별 아이디어를 포착할 수 있습니다.
 
@@ -42,7 +41,7 @@ ms.locfileid: "6692313"
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>Common Data Model 엔터티 탐색기를 사용하여 엔터티 보기
 
-[Common Data Model 엔터티 탐색기](https://microsoft.github.io/CDM/)에서 엔터티를 볼 수 있습니다. **GitHub에서 로드!** 버튼을 클릭하고 **foundationCommon** > **crmCommon** > **solutions** > **customerInsights** 로 이동하여 Customer Insights 엔터티 및 그 정의 목록을 찾을 수 있습니다.
+[Common Data Model 엔터티 탐색기](https://microsoft.github.io/CDM/)에서 엔터티를 볼 수 있습니다. Insights 응용 프로그램 섹션에서 엔터티를 선택하여 Customer Insights 엔터티 및 해당 정의 목록을 가져옵니다.
 > [!div class="mx-imgBorder"]
 > ![CustomerActivity 엔터티를 보여주는 CDM 엔터티 탐색기.](media/CDM-entity-navigator.png "CustomerActivity 엔터티를 보여주는 CDM 엔터티 탐색기")
 

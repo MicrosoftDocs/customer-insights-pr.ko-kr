@@ -5,17 +5,19 @@ ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
 ms.date: 08/31/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5e8545bc9bf0d953150248fa859c6ca71a12f9cf
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+searchScope:
+- ci-home
+- customerInsights
+ms.openlocfilehash: 2776b2292560f9ea61a06d2b1b7bc7811d35c860
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645272"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353735"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-audience-insights-capability"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트 기능 시작하기
 
@@ -37,7 +39,7 @@ ms.locfileid: "7645272"
 
 통합 프로필은 인사이트를 얻고 데이터에 대한 작업을 수행하기 위한 기반입니다. 다양한 소스에서 데이터를 가져와 데이터 통합 프로세스를 실행하여 통합 프로필을 결합합니다. 수집된 엔터티 사이에 관계를 지정하고 보강 기능을 사용하여 프로필에 정보를 추가합니다. 
 
-1. 여러 옵션에서 데이터 원본을 만들어 데이터를 수집합니다. [파워 쿼리 커넥터](connect-power-query.md), [Common Data Model 폴더](connect-common-data-model.md) 또는 [Microsoft Dataverse](connect-common-data-service-lake.md) 중에서 선택합니다. 
+1. 여러 옵션에서 데이터 원본을 만들어 데이터를 수집합니다. [Power Query 커넥터](connect-power-query.md), [Common Data Model 폴더](connect-common-data-model.md) 또는 [Microsoft Dataverse](/dynamics365/customer-insights/audience-insights/connect-dataverse-managed-lake) 중에서 선택합니다. 
 
 1. [매핑](map-entities.md), [일치](match-entities.md) 및 [병합](merge-entities.md) 단계를 통해 [데이터 통합 프로세스](data-unification.md)를 실행합니다.
 

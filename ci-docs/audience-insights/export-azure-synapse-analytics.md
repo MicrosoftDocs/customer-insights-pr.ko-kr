@@ -1,22 +1,21 @@
 ---
-title: Customer Insights 데이터를 Azure Synapse 분석으로 내보내기
-description: Azure Synapse 분석에 대한 연결을 구성하는 방법을 알아봅니다.
-ms.date: 04/12/2021
+title: Customer Insights 데이터를 Azure Synapse Analytics로 내보내기
+description: Azure Synapse Analytics에 대한 연결을 구성하는 방법을 알아보세요.
+ms.date: 01/05/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 822082d661863e737ea3d3a749a6c878db766967
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 289c8d545f057b3f70679b485cf4350545c0587b
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5977385"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231320"
 ---
-# <a name="export-data-to-azure-synapse-analytics-preview"></a>Azure Synapse 분석으로 데이터 내보내기(프리뷰)
+# <a name="export-data-to-azure-synapse-analytics-preview"></a>Azure Synapse Analytics(프리뷰)로 데이터 내보내기
 
 Azure Synapse은 데이터 웨어하우스 및 빅 데이터 시스템 전체에서 인사이트를 얻는 시간을 가속화하는 분석 서비스입니다. [Azure Synapse](/azure/synapse-analytics/overview-what-is)에서 Customer Insights 데이터를 수집하고 사용할 수 있습니다.
 
@@ -49,9 +48,11 @@ Azure에서:
 
 ### <a name="configure-a-connection"></a>연결 구성
 
+연결을 만들려면 Customer Insights에 있는 서비스 주체와 사용자 계정에 Synapse Analytics 작업 영역이 있는 *리소스 그룹* 에 대한 **읽기** 권한이 필요합니다. 또한, 서비스 주체와 Synapse Analytics 작업 영역의 사용자는 **Synapse 관리자** 권한이 필요합니다. 
+
 1. **관리자** > **연결** 로 이동합니다.
 
-1. **연결 추가** 를 선택하고 **Azure Synapse 분석** 을 선택하거나 **Azure Synapse 분석** 타일에서 **설정** 을 선택하여 연결을 구성합니다.
+1. **연결 추가** 를 선택하고 **Azure Synapse Analytics** 를 선택하거나 **Azure Synapse Analytics** 타일에서 **설정** 을 선택하여 연결을 구성합니다.
 
 1. 표시 이름 필드에서 연결에 인식할 수 있는 이름을 지정합니다. 이름 및 연결 유형은 이 연결을 설명합니다. 이 연결의 목적과 대상을 설명하는 이름을 선택하는 것이 좋습니다.
 
@@ -63,23 +64,27 @@ Azure에서:
 
 ### <a name="configure-an-export"></a>내보내기 구성
 
-이 유형의 연결에 대한 액세스 권한이 있는 경우 이 내보내기를 구성할 수 있습니다. 자세한 내용은 [내보내기를 구성하는 데 필요한 권한](export-destinations.md#set-up-a-new-export)을 참조하십시오.
+이 유형의 연결에 대한 액세스 권한이 있는 경우 이 내보내기를 구성할 수 있습니다. 공유된 연결로 내보내기를 구성하려면 Customer Insights에서 최소한 **기여자** 권한이 있어야 합니다. 자세한 내용은 [내보내기를 구성하는 데 필요한 권한](export-destinations.md#set-up-a-new-export)을 참조하십시오.
 
 1. **데이터** > **내보내기** 로 이동합니다.
 
 1. **내보내기 추가** 를 선택하여 새 내보내기를 만듭니다.
 
-1. **내보내기 연결** 필드의 **Azure Synapse 분석** 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 [연결](connections.md)이 없는 것입니다.
+1. **내보내기 연결** 필드의 **Azure Synapse Analytics** 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 [연결](connections.md)이 없는 것입니다.
 
 1. 내보내기에 대해 알아볼 수 있는 **표시 이름** 과 **데이터베이스 이름** 을 제공합니다.
 
-1. Azure Synapse 분석으로 내보낼 엔터티를 선택합니다.
+1. Azure Synapse Analytics에 내보낼 엔터티를 선택합니다.
+   > [!NOTE]
+   > [Common Data Model 폴더](connect-common-data-model.md) 기반의 데이터 원본은 지원하지 않습니다.
 
-1. **저장** 을 선택합니다.
+2. **저장** 을 선택합니다.
 
 내보내기를 저장해도 내보내기가 즉시 실행되지는 않습니다.
 
 내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다. [주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다.
+
+Synapse Analytics로 내보낸 데이터를 쿼리하려면 내보내기 작업 공간에 있는 해당 저장소에 대한 **Storage Blob Data Reader** 액세스 권한이 있어야 합니다. 
 
 ### <a name="update-an-export"></a>내보내기 업데이트
 

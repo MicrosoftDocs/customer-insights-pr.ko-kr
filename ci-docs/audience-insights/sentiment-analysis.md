@@ -1,20 +1,19 @@
 ---
-title: 고객 피드백을 위한 의미 분석
+title: 고객 피드백에 대한 감정 분석
 description: Dynamics 365 Customer Insights에서 고객 피드백에 대한 감정 분석 모델을 사용하는 방법을 알아보세요.
 ms.date: 12/23/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 05e530a1bc96c5fd9c7a3bc0197563d8fe330387
-ms.sourcegitcommit: cb71e39de9b891c24bd5cd9c014eb3eeb537ac24
+ms.openlocfilehash: b06613b00a512a31479f9d30d539a010e17d33ba
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7951085"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231473"
 ---
 # <a name="analyze-sentiment-in-customer-feedback-preview"></a>고객 피드백에 대한 감정 분석(미리보기)
 
@@ -38,7 +37,7 @@ ms.locfileid: "7951085"
 
 두 가지 **자연어 처리(NLP) 모델** 을 사용합니다. 첫 번째 모델은 각 피드백 댓글에 감정 점수를 할당합니다. 두 번째 모델은 각 피드백을 적용 가능한 모든 비즈니스 부문과 연결합니다. 모델은 소셜 미디어, 소매, 레스토랑, 소비재, 자동차 산업 전반에 걸친 공개 데이터로 훈련됩니다.    
   
-- 피드백 데이터와 연결할 모델에 대해 미리 정의된 비즈니스 부문은 다음과 같습니다.
+피드백 데이터와 연결할 모델에 대해 미리 정의된 비즈니스 부문은 다음과 같습니다.
 -   거래처 관리
 -   체크 아웃 및 지불
 -   고객 지원
@@ -73,7 +72,7 @@ Customer Insights는 단일 모델을 실행하여 피드백 레코드를 최대
 - 피드백 텍스트   
 
 > [!TIP]
-> 감정 분석을 하려면 고객의 텍스트 피드백이 필요합니다. 지금은 피드백 엔터티를 한 개만 구성할 수 있습니다. 피드백 엔터티가 여러 개면 데이터 수집이 시작되기 전에 파워 쿼리에서 통합할 수 있습니다.
+> 감정 분석을 하려면 고객의 텍스트 피드백이 필요합니다. 지금은 피드백 엔터티를 한 개만 구성할 수 있습니다. 피드백 엔터티가 여러 개인 경우 데이터 수집이 시작되기 전에 Power Query에 통합할 수 있습니다.
 
 ## <a name="configure-a-sentiment-analysis"></a>감정 분석 구성 
 

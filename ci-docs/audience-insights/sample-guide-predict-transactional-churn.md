@@ -3,22 +3,21 @@ title: 트랜잭션 이탈 예측 샘플 가이드
 description: 이 샘플 가이드를 사용하여 즉시 사용 가능한 트랜잭션 이탈 예측 모델을 사용해보세요.
 ms.date: 11/19/2020
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 19befa17524aba4543f0d8a5f5f7d6f5a88b2322f1264b88fa0b31641610592a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 93841358d110bd16c7b7f8beb079bed704b22260
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7029453"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354609"
 ---
-# <a name="transactional-churn-prediction-preview-sample-guide"></a>트랜잭션 이탈 예측(미리 보기) 샘플 가이드
+# <a name="transactional-churn-prediction-sample-guide"></a>트랜잭션 이탈 예측 샘플 가이드
 
-이 가이드는 아래 제공된 데이터를 사용하여 Customer Insights에서 트랜잭션 이탈 예측의 엔드 투 엔드 예를 안내합니다. 이 가이드에 사용된 모든 데이터는 실제 고객 데이터가 아니며 Customer Insights 구독의 *데모* 환경에 있는 Contoso 데이터 집합의 일부입니다.
+이 가이드는 아래 제공된 데이터를 사용하여 Customer Insights에서 트랜잭션 이탈 예측의 엔드 투 엔드 예를 안내합니다. 이 가이드에 사용된 모든 데이터는 실제 고객 데이터가 아니며 Customer Insights 구독 내 *데모* 환경에 있는 Contoso 데이터 집합의 일부입니다.
 
 ## <a name="scenario"></a>시나리오
 
@@ -31,7 +30,7 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
 
 ## <a name="task-1---ingest-data"></a>작업 1 - 데이터 수집
 
-파워 쿼리 커넥터를 사용하여 [데이터 수집](data-sources.md) 및 [데이터 원본 가져오기](connect-power-query.md)에 대한 문서를 검토하세요. 다음 정보는 사용자가 일반적인 데이터 수집에 익숙하다고 가정합니다. 
+구체적으로 Power Query 커넥터를 사용한 [데이터 수집](data-sources.md) 및 [데이터 원본 가져오기에 대한 문서](connect-power-query.md)를 검토하세요. 다음 정보는 사용자가 일반적인 데이터 수집에 익숙하다고 가정합니다. 
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>전자상거래 플랫폼에서 고객 데이터 수집
 
@@ -149,7 +148,7 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
 
 ## <a name="task-3---configure-transaction-churn-prediction"></a>작업 3 - 트랜잭션 이탈 구성 예측
 
-통합된 고객 프로필을 사용하면 이제 구독 이탈 예측을 실행할 수 있습니다. 자세한 단계는 [구독 이탈 예측(미리보기)](predict-subscription-churn.md) 문서를 참조하세요. 
+통합된 고객 프로필을 사용하면 이제 구독 이탈 예측을 실행할 수 있습니다. 자세한 단계는 [구독 이탈 예측](predict-subscription-churn.md) 문서를 참조하세요. 
 
 1. **인텔리전스** > **검색** 으로 이동하여 **고객 이탈 모델** 을 사용하도록 선택합니다.
 

@@ -1,21 +1,23 @@
 ---
 title: Customer Insights에서 환경 만들기
 description: Dynamics 365 Customer Insights에 대한 라이선스 구독으로 환경을 만드는 단계.
-ms.date: 12/06/2021
+ms.date: 02/24/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
-ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+searchScope:
+- ci-home
+- customerInsights
+ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8088121"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354103"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>대상 그룹 인사이트에서 환경 만들기
 
@@ -76,12 +78,14 @@ Customer Insights의 여러 환경을 만들고 해당 환경의 출력 엔터�
    
 **Microsoft Dataverse** 단계를 통해 Customer Insights를 Dataverse 환경과 연결할 수 있습니다.
 
-[기본 예측 모델](predictions-overview.md#out-of-box-models)을 사용하려면 Dataverse와 데이터 공유를 구성하세요. 또는 조직에서 관리하는 Microsoft Dataverse 환경 URL을 제공하여 온-프레미스 데이터 원본에서 데이터 수집을 활성화할 수 있습니다. **데이터 공유 활성화** 를 선택하여 Customer Insights 출력 데이터를 Dataverse 관리형 Data Lake와 공유합니다.
+Dynamics 365 Marketing 또는 Power Apps의 모델 기반 애플리케이션과 같은 Dataverse를 기반으로 하는 비즈니스 애플리케이션과 데이터(프로필 및 인사이트)를 공유할 수 있는 고유한 Microsoft Dataverse 환경을 제공합니다. 고유한 Dataverse 환경이 없는 경우 이 필드를 비워 두세요. 그러면 환경이 프로비저닝됩니다.
+
+Dataverse 환경에 연결하면 [Power Platform 데이터 흐름 및 게이트웨이를 사용하여 온프레미스 데이터 원본에서 데이터를 수집](data-sources.md#add-data-from-on-premises-data-sources)할 수도 있습니다. 또한 Dataverse 환경에 연결하여 [기본 예측 모델](predictions-overview.md?tabs=b2c#out-of-box-models)을 사용할 수 있습니다.
 
 > [!IMPORTANT]
 > 데이터 공유를 활성화하려면 Customer Insights 및 Dataverse가 동일한 지역에 있어야 합니다.
 
-:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Microsoft Dataverse와 데이터 공유를 활성화하는 구성 옵션":::
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="Microsoft Dataverse와의 데이터 공유는 순 새 인스턴스에 대해 자동으로 사용됩니다.":::
 
 > [!NOTE]
 > Customer Insights는 다음 데이터 공유 시나리오를 지원하지 않습니다.

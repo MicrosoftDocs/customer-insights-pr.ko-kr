@@ -1,20 +1,19 @@
 ---
 title: Customer Insights 데이터를 Campaign Monitor로 내보내기
 description: 연결을 구성하고 Campaign Monitor로 내보내는 방법을 알아봅니다.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 091a3197dc0c19ff78f0419fb4e88868e0f78359
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: be9c92a087ab4664077d18fe8585bf96715c1535
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124189"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8228161"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>Campaign Monitor로 세그먼트 내보내기(프리뷰)
 
@@ -28,10 +27,10 @@ ms.locfileid: "6124189"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- Campaign Monitor로 내보낼 때마다 최대 1백만 개의 프로필을 내보낼 수 있습니다.
+- Campaign Monitor로 내보낼 때마다 고객 프로필을 최대 100만 개까지 내보낼 수 있습니다.
 - Campaign Monitor로 내보내기는 세그먼트로 제한됩니다.
-- 최대 1백만 개의 프로필을 Campaign Monitor로 내보내는 데 최대 20분이 걸릴 수 있습니다. 
-- Campaign Monitor로 내보낼 수 있는 프로필 수는 Campaign Monitor와의 계약에 따라 다르며 제한됩니다.
+- 최대 100만 개의 고객 프로필을 Campaign Monitor로 내보내려면 최대 20분이 걸릴 수 있습니다. 
+- Campaign Monitor로 내보낼 수 있는 고객 프로필의 수는 Campaign Monitor와의 계약에 따라 달라지고 제한됩니다.
 
 ## <a name="set-up-connection-to-campaign-monitor"></a>Campaign Monitor 연결 설정
 
@@ -66,7 +65,7 @@ ms.locfileid: "6124189"
 1. [**Campaign Monitor 목록 ID**](https://www.campaignmonitor.com/api/getting-started/#your-list-id)를 입력합니다.    
    API 목록 ID를 보려면 먼저 Campaign Monitor의 **계정 설정** 에서 [API 키를 생성](https://www.campaignmonitor.com/api/getting-started/)합니다.  
 
-3. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. Campaign Monitor로 세그먼트를 내보내야 합니다.
+1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다. Campaign Monitor로 세그먼트를 내보내야 합니다.
 
 1. **저장** 을 선택합니다.
 

@@ -1,24 +1,26 @@
 ---
 title: Google 광고로 Customer Insights 데이터 내보내기
 description: 연결을 구성하고 Google Ads로 내보내는 방법을 알아봅니다.
-ms.date: 03/03/2021
-ms.service: customer-insights
+ms.date: 09/27/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c16967bf8ea1fd02b3f991d7b7d3715a71fa8681
-ms.sourcegitcommit: 9a99e48e96dfb3d895db428f37c30ae55eea66b7
+ms.openlocfilehash: 28e2b35c5a47a025b8cdcccdb3f61c79878bf056
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "6604285"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227018"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Google Ads로 세그먼트 내보내기(프리뷰)
 
 통합 고객 프로필의 세그먼트를 Google Ads 대상 그룹 목록으로 내보내고 이를 사용하여 Google 검색, Gmail, YouTube 및 Google 디스플레이 네트워크에서 광고합니다. 
+
+> [!IMPORTANT]
+> 현재 승인된 Google Ads 개발자 토큰이 이미 있는 경우에만 새 연결을 만들고 Google Ads로 데이터를 내보낼 수 있습니다. 정책 변경으로 인해 Google Ads 내보내기가 곧 업데이트되고 경험의 연속성을 보장하고 Google Ads로 내보내기를 단순화하기 위해 개발자 토큰이 필요하지 않은 내보내기 옵션이 제공됩니다. 새 내보내기 옵션으로 쉽게 전환할 수 있도록 Google Ads에 대한 연결을 더 이상 설정하지 않는 것이 좋습니다.
 
 ## <a name="prerequisites-for-connection"></a>연결을 위한 전제 조건
 
@@ -32,9 +34,9 @@ ms.locfileid: "6604285"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- Google 광고로 내보낼 때마다 프로필이 최대 100만 개입니다.
+- Google Ads로 내보낼 때마다 최대 100만 개의 고객 프로필이 생성됩니다.
 - Google 광고로 내보내기는 세그먼트로 제한됩니다.
-- 총 100만 개의 프로필이 있는 세그먼트를 내보내는 것은 공급자측의 제한으로 인해 최대 5분이 걸릴 수 있습니다. 
+- 공급자 측의 제한으로 인해 총 100만 개의 고객 프로필이 포함된 세그먼트를 내보내는 데 최대 5분이 걸릴 수 있습니다. 
 - Google 광고에서 일치하는 데 최대 48시간이 걸릴 수 있습니다.
 
 ## <a name="set-up-connection-to-google-ads"></a>Google Ads 연결 설정
@@ -71,7 +73,7 @@ ms.locfileid: "6604285"
 
 1. **[Google 광고 대상 그룹 ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** 를 입력하고 **연결** 을 선택하여 Google 광고 연결을 초기화합니다.
 
-1. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다.
+1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다.
 
 1. 내보낼 세그먼트를 선택합니다. 총 100만 개의 고객 프로필을 Google 광고로 내보낼 수 있습니다.
 

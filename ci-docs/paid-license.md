@@ -1,25 +1,24 @@
 ---
 title: Dynamics 365 Customer Insights의 유료 라이선스로 시작
 author: m-hartmann
-description: Dynamics 365 Customer Insights의 첫 실행 경험을 익히고 그 기능을 탐색합니다.
+description: Dynamics 365 Customer Insights의 첫 실행 경험을 익히고 그 기능을 살펴보십시오.
 ms.author: mhart
 ms.date: 10/05/2021
-ms.service: customer-insights
-ms.topic: overview
+ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: b4228a36069f4adb8098ea96cefec0eef81a6560
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: c9517ed2b50ff37e361a27538dfb9f9ccbf3df8f
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645705"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350139"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Customer Insights 구매 후 시작
 
 이 문서에서는 조직에서 구독을 구입한 후 Dynamics 365 Customer Insights에서 첫 번째 단계를 수행하는 방법을 설명합니다. Customer Insights 구매를 원할 경우 [Dynamics 365 Customer Insights 웹사이트](https://dynamics.microsoft.com/ai/customer-insights/)에 연락처가 나와 있습니다. 
 
-Customer Insights에 대한 구독 라이선스를 구입한 후 Microsoft 365 테넌트의 전역 관리자는 환경을 만들도록 초대하는 이메일을 받게 됩니다. 
+Customer Insights에 대한 구독 라이선스를 구입한 후 Microsoft 365 테넌트의 전역 관리자는 환경을 만들도록 초대하는 이메일을 받습니다. 
 
 Customer Insights는 테넌트별로 라이선스가 부여되며 여러 기능을 포함합니다. 추가 용량과 라이선스를 구입하여 기본 할당량을 늘릴 수 있습니다. 
 - [가격 책정 개요](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
@@ -40,10 +39,7 @@ Customer Insights는 테넌트별로 라이선스가 부여되며 여러 기능�
 
 ## <a name="create-your-own-environment"></a>나만의 환경 만들기
 
-처음 로그인하면 샘플 데이터가 있는 환경이 표시됩니다. 해당 데이터를 사용하여 기능을 탐색하고 앱에 익숙해질 수 있습니다. 자신의 데이터를 사용하려면 작업하려는 기능에 환경을 만들어야 합니다.
-
-- [대상 그룹 인사이트에서 환경을 만듭니다.](audience-insights/get-started-paid.md)
-- [참여 인사이트에서 환경을 만듭니다.](engagement-insights/create-new-environment.md) 
+처음 로그인하면 샘플 데이터가 있는 환경이 표시됩니다. 해당 데이터를 사용하여 기능을 탐색하고 앱에 익숙해질 수 있습니다. 자체 데이터를 사용하려면 [환경을 만들어야](audience-insights/get-started-paid.md) 합니다.
 
 
 

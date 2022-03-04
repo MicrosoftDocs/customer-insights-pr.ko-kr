@@ -3,21 +3,20 @@ title: 고객에 대한 통합 보기 만들기
 description: 고객 프로필의 단일 마스터 데이터 세트를 만들기 위해 데이터와 데이터 통합 프로세스를 진행합니다.
 ms.date: 10/18/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.custom: intro-internal
 searchScope:
-- ci-unify
-ms.openlocfilehash: 694bfd0e407975af64ca0971a73fe4c3f5ba5a23
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+- ci-map
+- customerInsights
+ms.openlocfilehash: 2012d32494ccd4639cbffbb81d4f6eac1258e23b
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648079"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353827"
 ---
 # <a name="data-unification-overview"></a>데이터 통합 개요
 

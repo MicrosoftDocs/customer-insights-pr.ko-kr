@@ -3,18 +3,17 @@ title: 고객 평생 가치 예측 샘플 가이드
 description: 이 샘플 가이드를 사용하여 고객 평생 가치 예측 모델을 사용해보세요.
 ms.date: 05/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 19c1fbadb79ba22c0dc11aa7c3b5b2415add70a7
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: c130e5f699f7eb921b69a20bc6d4ba9eab5b2779
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306357"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354839"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>고객 평생 가치(CLV) 예측 샘플 가이드
 
@@ -22,7 +21,7 @@ ms.locfileid: "6306357"
 
 ## <a name="scenario"></a>시나리오
 
-Contoso는 고품질 커피 및 커피 머신을 생산하는 회사입니다. Contoso 커피 웹 사이트를 통해 제품을 판매합니다. 회사는 고객이 향후 12개월 동안 창출할 수 있는 가치(수익)를 파악하려고 합니다. 향후 12개월 동안 고객의 기대 가치를 파악하면 고 가치 고객을 대상으로 마케팅 활동을 진행하는 데 도움이 될 것입니다.
+Contoso는 고품질 커피 및 커피 머신을 생산하는 회사입니다. Contoso Coffee 웹 사이트를 통해 제품을 판매합니다. 회사는 고객이 향후 12개월 동안 창출할 수 있는 가치(수익)를 파악하려고 합니다. 향후 12개월 동안 고객의 기대 가치를 파악하면 고 가치 고객을 대상으로 마케팅 활동을 진행하는 데 도움이 될 것입니다.
 
 ## <a name="prerequisites"></a>필수 조건
 
@@ -31,7 +30,7 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사입니다. C
 
 ## <a name="task-1---ingest-data"></a>작업 1 - 데이터 수집
 
-[데이터 수집 정보](data-sources.md) 및 [파워 쿼리 커넥터를 사용하여 데이터 원본 가져오기](connect-power-query.md) 문서를 검토합니다. 다음 정보는 사용자가 일반적인 데이터 수집에 익숙하다고 가정합니다.
+Power Query 커넥터를 사용한 [데이터 수집](data-sources.md) 및 [데이터 원본 가져오기에 대한 문서](connect-power-query.md)를 검토하세요. 다음 정보는 사용자가 일반적인 데이터 수집에 익숙하다고 가정합니다.
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>전자상거래 플랫폼에서 고객 데이터 수집
 
@@ -164,7 +163,7 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사입니다. C
 
 ## <a name="task-3---configure-customer-lifetime-value-prediction"></a>작업 3 - 고객 평생 가치 예측 구성
 
-통합된 고객 프로필을 통해 이제 고객 평생 가치 예측을 실행할 수 있습니다. 자세한 단계는 [고객 평생 가치 예측(프리뷰)](predict-customer-lifetime-value.md)을 참조하십시오.
+통합된 고객 프로필을 통해 이제 고객 평생 가치 예측을 실행할 수 있습니다. 자세한 단계는 [고객 평생 가치 예측](predict-customer-lifetime-value.md)을 참조하세요.
 
 1. **인텔리전스**  > **예측** 으로 이동하고 **고객 평생 가치 모델** 을 선택합니다.
 

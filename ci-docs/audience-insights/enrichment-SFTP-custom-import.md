@@ -3,18 +3,17 @@ title: SFTP 사용자 지정 가져오기로 보강
 description: SFTP 사용자 지정 가져오기 보강에 대한 일반 정보입니다.
 ms.date: 04/09/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f92b36ac5364ea8586f9cbba7ba03178641555c0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: e4b9a65eb50f75e0243fabfc10b501cf7acf4490
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304658"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229646"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>사용자 지정 데이터로 고객 프로필 보강(미리 보기)
 
@@ -45,6 +44,8 @@ SFTP 사용자 지정 가져오기를 구성하려면 다음 전제 조건이 �
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="데이터 위치 입력 시 스크린 샷.":::
 
+1. **다음** 을 선택하고 고객 데이터 세트를 선택합니다. 모든 고객 프로필 또는 세그먼트일 수 있습니다.
+
 1. **다음** 을 선택하고 보강 이름과 출력 엔터티 이름을 제공합니다. 
 
 1. 선택 사항을 검토 한 후 **보강 저장** 을 선택합니다.
@@ -64,7 +65,7 @@ SFTP 사용자 지정 가져오기를 구성하려면 다음 전제 조건이 �
 1. 확인이 완료되면 **저장** 을 선택하여 연결을 저장할 수 있습니다.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian 연결 구성 페이지](media/enrichment-SFTP-connection.png "Experian 연결 구성 페이지")
+   > ![Experian 연결 구성 페이지.](media/enrichment-SFTP-connection.png "Experian 연결 구성 페이지")
 
 
 ## <a name="defining-field-mappings"></a>필드 매핑 정의 
@@ -123,6 +124,6 @@ SFTP 서버에서 가져올 파일이 포함된 디렉터리에는 *model.json* 
 
 ## <a name="next-steps"></a>다음 단계
 
-보강된 고객 데이터를 바탕으로 구축합니다. [세그먼트](segments.md) 및 [측정값](measures.md)을 만들고 [데이터 내보내기](export-destinations.md) 를 통해 고객에게 개인화된 경험을 제공합니다.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

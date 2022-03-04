@@ -2,19 +2,25 @@
 title: 대상 그룹 인사이트의 시스템 구성
 description: Dynamics 365 Customer Insights 대상 그룹 인사이트 기능의 시스템 설정에 대해 알아봅니다.
 ms.date: 11/01/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 1b790106f8b9617d0c1f244e1d15a74c7ef9a82b
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+searchScope:
+- ci-system-status
+- ci-system-schedule
+- ci-system-about
+- ci-system-general
+- ci-system-api-usage
+- customerInsights
+ms.openlocfilehash: 2c52f7b8a7d41ae4a985745c7b79bbc62f59bb5a
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732378"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354241"
 ---
 # <a name="system-configuration"></a>시스템 구성
 
@@ -85,6 +91,10 @@ ms.locfileid: "7732378"
 ## <a name="schedule-tab"></a>예약 탭
 
 **일정** 탭을 사용하여 [수집된 데이터 원본](data-sources.md) 전체에 대한 자동 새로 고침을 예약합니다. 자동 새로 고침은 데이터 소스의 업데이트가 통합 고객 프로필에 반영되도록 합니다.
+
+> [!NOTE]
+> 귀사에서 관리하는 데이터 원본은 자체 일정에 따라 새로 고쳐집니다. 귀사에서 관리하는 데이터 원본의 새로 고침을 예약하려면 **데이터 원본** 페이지에서 해당 데이터 소스에 대한 새로 고침 설정을 구성하세요.
+> :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform 데이터 흐름 새로 고침 설정.":::
 
 1. 대상 그룹 인사이트에서 **관리** > **시스템** 으로 이동한 후 **일정** 탭을 선택합니다.
 

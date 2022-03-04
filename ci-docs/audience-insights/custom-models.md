@@ -3,18 +3,20 @@ title: 사용자 지정 기계 학습 모델 | Microsoft Docs
 description: Dynamics 365 Customer Insights Azure Machine Learning의 사용자 지정 모델로 작업합니다.
 ms.date: 12/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
-ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+searchScope:
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 460b68e1e65b3033af0a03d1bcc27e718c79d7aa
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881792"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355083"
 ---
 # <a name="custom-machine-learning-models"></a>사용자 지정 기계 학습 모델
 
@@ -40,6 +42,8 @@ ms.locfileid: "7881792"
 
    > [!NOTE]
    > Customer Insights 인스턴스와 워크플로에서 선택한 Azure 웹 서비스 또는 파이프라인 간에 데이터가 전송됩니다. Azure 서비스로 데이터를 전송하는 경우 조직의 해당 데이터에 대한 법적 요구 사항 또는 규제 사항을 준수하는 데 필요한 방식과 위치에서 데이터를 처리하도록 서비스가 구성되어 있는지 확인하시기 바랍니다.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
 
 ## <a name="add-a-new-workflow"></a>새 워크플로 추가
 

@@ -1,20 +1,19 @@
 ---
 title: Customer Insights 데이터를 Microsoft Advertising으로 내보내기
 description: 연결을 구성하고 Microsoft Advertising으로 내보내는 방법을 알아봅니다.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c2ac92de2718cf7f0622b407bf198a7a7e50a37b
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 8f009ed0258ded424340061e5320dd7df68c199f
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124516"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226899"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>Microsoft Advertising으로 세그먼트 내보내기(프리뷰)
 
@@ -29,9 +28,9 @@ Customer Insights 세그먼트를 Microsoft Advertising으로 내보내 Customer
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- Microsoft Advertising으로 내보낼 때마다 최대 5십만 개의 프로필을 내보낼 수 있습니다.
+- Microsoft Advertising으로 내보낼 때마다 고객 프로필을 최대 50만 개까지 내보낼 수 있습니다.
 - Microsoft Advertising으로 내보내기는 세그먼트로 제한됩니다.
-- 최대 5십만 개의 프로필을 Microsoft Advertising으로 내보내는 데 최대 10분이 걸릴 수 있습니다. 
+- 최대 50만 개의 고객 프로필을 Microsoft Advertising으로 내 보내는 데 데 최대 10분이 걸릴 수 있습니다. 
 
 
 ## <a name="set-up-the-connection-to-microsoft-advertising"></a>Microsoft Advertising에 대한 연결 설정
@@ -68,7 +67,7 @@ Customer Insights 세그먼트를 Microsoft Advertising으로 내보내 Customer
 
 1. **Microsoft Advertising 고객 ID 및 계정 ID** 를 입력합니다. Microsoft Advertising에 로그인하면 URL 매개 변수에서 고객 ID(`cid`) 및 계정 ID(`aid`)를 찾을 수 있습니다.
 
-1. **데이터 매칭** 섹션의 **이메일** 필드에서 고객의 이메일 주소가 있는 통합 고객 프로필의 필드를 선택합니다. Microsoft Advertising으로 세그먼트를 내보내야 합니다.
+1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소가 있는 필드를 선택합니다. Microsoft Advertising으로 세그먼트를 내보내야 합니다.
 
 1. **저장** 을 선택합니다.
 

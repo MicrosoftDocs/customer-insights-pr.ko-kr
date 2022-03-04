@@ -3,18 +3,17 @@ title: Customer Insights 데이터를 Sendinblue로 내보내기
 description: 연결을 구성하고 Sendinblue로 내보내는 방법을 알아봅니다.
 ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b5924b2d4e7f0b11ce6478a31015fcbaaf44ff93
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 8d870ff31ce2d441e619ac18899c4d1b6c69ca41
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617793"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231427"
 ---
 # <a name="export-segments-to-sendinblue-preview"></a>Sendinblue로 세그먼트 내보내기(프리뷰)
 

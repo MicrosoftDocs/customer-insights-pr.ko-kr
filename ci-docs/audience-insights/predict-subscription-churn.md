@@ -3,20 +3,19 @@ title: 구독 이탈 예측(동영상 포함)
 description: 고객이 회사의 구독 제품이나 서비스를 더 이상 사용하지 않아도 되는 위험에 처해 있는지 여부를 예측합니다.
 ms.date: 08/19/2020
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 52ef7a8584cbae5dff0c800650b0238cc09fd6d5
-ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
+ms.openlocfilehash: b61e87ad833dd7a8e51c6619945a9e216d85f221
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967709"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354702"
 ---
-# <a name="subscription-churn-prediction-preview"></a>구독 이탈 예측(미리 보기)
+# <a name="subscription-churn-prediction"></a>구독 이탈 예측
 
 구독 이탈 예측은 고객이 회사의 구독 제품이나 서비스를 더 이상 사용하지 않아도 되는 위험에 처해 있는지 여부를 예측합니다. **인텔리전스** > **예측** 페이지에서 새로운 구독 이탈 예측을 만들 수 있습니다. **내 예측** 을 선택하여 내가 만든 다른 예측을 볼 수 있습니다.
 
@@ -63,7 +62,7 @@ ms.locfileid: "7967709"
 ## <a name="create-a-subscription-churn-prediction"></a>구독 이탈 예측 만들기
 
 1. 대상 그룹 인사이트에서 **인텔리전스** > **예측** 으로 이동합니다.
-1. **구독 이탈 모델(미리 보기)** 타일을 선택하고 **이 모델 사용** 을 선택합니다.
+1. **구독 이탈 모델** 타일을 선택하고 **이 모델 사용** 을 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![이 모델 사용 단추가 있는 구독 이탈 모델 타일.](media/subscription-churn-usethismodel.PNG "이 모델 사용 단추가 있는 구독 이탈 모델 타일")
 

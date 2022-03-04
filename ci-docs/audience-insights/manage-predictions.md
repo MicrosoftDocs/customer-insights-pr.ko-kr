@@ -3,18 +3,17 @@ title: 예측 시나리오를 위해 공유된 작업
 description: 예측을 관리, 문제 해결 및 구체화하는 방법을 알아봅니다.
 ms.date: 11/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 4e7e21a610564b30463b27ab703c291275725895
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 8c5d8b0395452c8da1631f09cffeddfc811e6d29
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731996"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8230800"
 ---
 # <a name="manage-predictions"></a>예측 관리
 

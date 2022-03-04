@@ -5,16 +5,15 @@ author: jusali
 ms.reviewer: mhart
 ms.author: jusali
 ms.date: 10/04/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 5e301b4ff0a7586fb143b154b773791b3bd645b7
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: 1f82ff588c2ffbe82c3ee7df2498ac2cca2bad31
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648125"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8225435"
 ---
 # <a name="create-a-new-environment"></a>새 환경 만들기 
 
@@ -46,7 +45,7 @@ ms.locfileid: "7648125"
 
 1. **고급 설정 표시** 를 선택하여 다음과 같은 선택적 설정을 사용하거나 사용 중지합니다.
 
-   - **처음부터 알아보기** 로 전환하여 웹 이벤트를 이전에 인증한 사용자와 연결합니다. 자세한 내용은 [이전에 인증된 방문자의 웹 이벤트 인](unknown-to-known.md)식을 참조하세요.
+   - **처음부터 알아보기** 로 전환하여 웹 이벤트를 이전에 인증한 사용자와 연결합니다. 자세한 내용은 [이전에 인증된 방문자의 웹 이벤트 인식](unknown-to-known.md)을 참조하십시오.
    - 이 작업 영역에 대한 봇의 웹 트래픽을 제거하려면 **봇 트래픽 필터링** 을 "사용"으로 전환합니다. 
 
 1. 완료되면 **완료** 를 선택합니다. 

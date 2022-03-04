@@ -2,7 +2,6 @@
 title: 주요 대상 그룹으로 비즈니스 계정 시작
 description: Dynamics 365 Customer Insights의 주요 대상 고객인 비즈니스 계정에 대해 알아보세요.
 ms.date: 10/19/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
@@ -10,12 +9,16 @@ ms.custom: intro-internal
 ms.author: wimohabb
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: fb943a91154e913c85c40fbf6077c171e9240ac5
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+searchScope:
+- ci-semantic-mapping
+- ci-connections
+- customerInsights
+ms.openlocfilehash: 88882dc727c37262c9f204fbc8049abe17bd21a3
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977929"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353551"
 ---
 # <a name="work-with-business-accounts-in-audience-insights"></a>대상 그룹 인사이트에서 비즈니스 계정 작업
 

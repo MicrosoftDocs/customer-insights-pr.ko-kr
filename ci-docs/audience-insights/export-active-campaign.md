@@ -1,20 +1,19 @@
 ---
 title: Customer Insights 데이터를 ActiveCampaign으로 내보내기
 description: 연결을 구성하고 ActiveCampaign으로 내보내는 방법을 알아봅니다.
-ms.date: 06/29/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6d85fa9836618e27f7f3da6ce17c07b4bc89e187
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
+ms.openlocfilehash: 089b9b0d76437e695f797f941ed384734d8f772e
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314641"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227817"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>ActiveCampaign으로 세그먼트 내보내기(프리뷰)
 
@@ -28,9 +27,9 @@ ms.locfileid: "6314641"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- ActiveCampaign으로 내보낼 때마다 프로필을 최대 1백만 개까지 내보낼 수 있으며 완료하는 데 최대 90분이 걸릴 수 있습니다.
+- ActiveCampaign으로 내보내기당 최대 100만 개의 고객 프로필을 내보낼 수 있으며 완료하는 데 최대 90분이 걸릴 수 있습니다.
 - ActiveCampaign으로 내보내기는 세그먼트로 제한됩니다.
-- ActiveCampaign으로 내보낼 수 있는 프로필 수는 ActiveCampaign과의 계약에 따라 다릅니다.
+- ActiveCampaign으로 내보낼 수 있는 고객 프로필의 수는 ActiveCampaign과의 계약에 따라 다릅니다.
 
 ## <a name="set-up-connection-to-activecampaign"></a>ActiveCampaign 앱에 대한 연결 설정
 
@@ -64,7 +63,7 @@ ms.locfileid: "6314641"
 
 1. [**ActiveCampaign 목록 ID**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign)를 입력합니다.    
 
-3. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. ActiveCampaign으로 세그먼트를 내보내야 합니다. 선택적으로 이름, 성, 및 전화를 내보내 더 개인화된 이메일을 만들 수 있습니다. 특성 추가를 선택하여 이러한 필드를 매핑합니다.
+1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다. ActiveCampaign으로 세그먼트를 내보내야 합니다. 선택적으로 이름, 성, 및 전화를 내보내 더 개인화된 이메일을 만들 수 있습니다. 특성 추가를 선택하여 이러한 필드를 매핑합니다.
 
 1. **저장** 을 선택합니다.
 

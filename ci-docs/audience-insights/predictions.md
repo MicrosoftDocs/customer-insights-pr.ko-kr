@@ -1,24 +1,28 @@
 ---
 title: 예측을 사용하여 부분 데이터 완료
 description: 예측을 사용하여 불완전한 고객 데이터를 채웁니다.
-ms.date: 05/05/2020
-ms.service: customer-insights
+ms.date: 11/01/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7ca42334420a27a8739d7c28bb72606c3ed91f3c
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+searchScope:
+- ci-predictions
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 9634523f61e27a0ed183186a788ab0cef3c0491b
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645042"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354011"
 ---
-# <a name="complete-your-partial-data-with-predictions"></a>예측으로 부분 데이터 완성
+# <a name="complete-your-partial-data-with-predictions-deprecated"></a>예측으로 부분 데이터 완성(더 이상 사용되지 않음)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> 이 기능은 **2021년 11월 5일** 부터 **더 이상 사용되지 않습니다**. 현재 구현은 기능이 제거될 때까지 계속 작동하지만 아래 지침을 사용하여 새 통합을 만들 수 없습니다.
 
 예측을 통해 고객에 대한 이해를 높일 수 있는 예측 값을 쉽게 만들 수 있습니다. **인텔리전스** > **예측** 페이지에서 **내 예측** 을 선택하여 대상 그룹 인사이트의 다른 부분에서 구성한 예측을 보고 추가로 사용자 지정할 수 있습니다.
 
@@ -60,6 +64,8 @@ ms.locfileid: "7645042"
    > ![범주에 매핑된 필드 값을 보여주는 예.](media/intelligence-categorymapping.png "범주에 매핑된 필드 값을 보여주는 예")
 
 8. **완료** 를 선택하면 예측이 처리됩니다. 데이터의 크기와 복잡성에 따라 처리에 시간이 걸립니다. 생성한 예측의 **출력 엔터티 이름** 을 기반으로 새 엔터티에서 결과를 사용할 수 있습니다.
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="create-a-prediction-while-creating-a-segment"></a>세그먼트를 만들면서 예측 만들기
 
@@ -110,7 +116,7 @@ ms.locfileid: "7645042"
 
 ## <a name="edit-a-prediction"></a>예측 편집
 
-예측을 만든 후 AI Builder에서 모델을 사용자 지정하여 모델의 효과를 높일 수 있습니다.  
+예측을 생성한 후 AI Builder에서 모델을 사용자 지정하여 모델의 효율성을 높일 수 있습니다.  
 
 1. 대상 그룹 인사이트에서 **인텔리전스** > **예측** > **내 예측** 으로 이동합니다.
 
@@ -118,14 +124,14 @@ ms.locfileid: "7645042"
 
 3. **작업** 열에서 줄임표를 선택하고 **보기** 를 선택합니다.
 
-4. **AI Builder에서 사용자 지정** 을 선택합니다.
+4. **AI Builder에서 사용자화** 를 선택합니다.
 
 5. AI Builder에서 모델을 업데이트합니다. [AI Builder에서 모델 관리에 대해 자세히 알아보십시오](/ai-builder/manage-model#retrain-and-republish-existing-models).
 
 다음 예측에서는 생성한 업데이트된 모델을 사용합니다.
 
 > [!NOTE]
-> AI Builder에서 생성된 새 모델은 위에 나열된 경험에서 생성된 모델이 아니면 대상 그룹 인사이트에 표시되지 않습니다.
+> AI Builder에서 생성된 새 모델은 위에 나열된 경험에서 생성된 모델이 아니면 대상 인사이트에 표시되지 않습니다.
 
 ## <a name="remove-a-prediction"></a>예측 제거
 

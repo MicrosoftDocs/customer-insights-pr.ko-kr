@@ -3,20 +3,24 @@ title: 고객 평생 가치(CLV) 예측
 description: 향후 활성 고객의 잠재적인 수익을 예측합니다.
 ms.date: 02/05/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: m-hartmann
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 740d6a5a749e156414b0e80193334051b7f2632fe4d1f4291d74b99250f35bc2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+searchScope:
+- ci-predictions
+- ci-create-prediction
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 07790604b06f21095a9220a6f57727cac80789c5
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035377"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355797"
 ---
-# <a name="customer-lifetime-value-clv-prediction-preview"></a>고객 평생 가치(CLV) 예측(미리 보기)
+# <a name="customer-lifetime-value-clv-prediction"></a>고객 평생 가치(CLV) 예측
 
 개별 활성 고객이 정의된 미래 기간 동안 비즈니스에 가져올 잠재적 가치(수익)를 예측합니다. 이 기능은 다음과 같은 다양한 목표를 달성하는 데 도움이 될 수 있습니다. 
 - 가치 높은 고객 고객을 식별하고 해당 인사이트를 처리
@@ -65,7 +69,7 @@ CLV 모델을 구성하고 실행하는 데 많은 시간이 걸리지 않으므
     - 데이터 완전성: 입력 데이터의 필수 필드에서 누락된 값이 20% 미만   
 
 > [!NOTE]
-> - 모델에는 고객의 트랜잭션 내역이 필요합니다. 현재 하나의 트랜잭션 기록 엔터티만 구성할 수 있습니다. 여러 구매/트랜잭션 엔터티가 있는 경우 데이터 수집 전에 파워 쿼리에서 통합할 수 있습니다.
+> - 모델에는 고객의 트랜잭션 내역이 필요합니다. 현재 하나의 트랜잭션 기록 엔터티만 구성할 수 있습니다. 구매/거래 엔터티가 여러 개인 경우 데이터 수집 전에 Power Query에 통합할 수 있습니다.
 > - 그러나 추가 고객 활동 데이터(선택 사항)의 경우 모델에서 고려하려는 만큼 고객 활동 엔터티를 추가할 수 있습니다.
 
 ## <a name="create-a-customer-lifetime-value-prediction"></a>고객 평생 가치 예측 만들기
@@ -74,7 +78,7 @@ CLV 모델을 구성하고 실행하는 데 많은 시간이 걸리지 않으므
 
 1. **고객 평생 가치** 타일을 선택하고 **모델 사용** 을 선택합니다. 
 
-1. **고객 평생 가치(미리 보기)** 창에서, **시작하기** 를 선택합니다.
+1. **고객 평생 가치** 창에서 **시작하기** 를 선택합니다.
 
 1. **이 모델 이름** 및 **출력 엔터티 이름** 을 지정하여 다른 모델이나 엔터티와 구별합니다.
 

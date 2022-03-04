@@ -1,20 +1,19 @@
 ---
 title: 회사 데이터 개선
 description: Microsoft의 모델을 사용하여 회사 데이터를 보강하고 정규화하십시오.
-ms.date: 12/16/2021
+ms.date: 01/19/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 616efe723313a6fbec7f1c7219c236a8f0aab3b2
-ms.sourcegitcommit: e141a6a34a985cca68f03082a700ed27f2f3c0c1
+ms.openlocfilehash: 7a576621c71b925bd1563827aca10cad4ef9b4eb
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927590"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229411"
 ---
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>개선된 회사 데이터로 회사 프로필 보강
 
@@ -80,19 +79,19 @@ Microsft
 
 강화 프로세스를 시작하려면 명령 모음에서.**실행** 을 선택하십시오. [예약된 새로 고침](system.md#schedule-tab)으로 시스템이 자동으로 보강을 실행하도록 할 수도 있습니다. 처리 시간은 고객 데이터의 크기에 따라 다릅니다.
 
-보강 프로세스가 완료되면 **내 보강** 아래에서 새로 보강 된 고객 프로필 데이터를 검토 할 수 있습니다. 또한 마지막 업데이트 시간과 강화 된 프로필 수를 확인할 수 있습니다.
+보강 프로세스가 완료되면 **내 보강** 아래에서 새로 보강 된 고객 프로필 데이터를 검토 할 수 있습니다. 또한 마지막 업데이트 시간과 강화된 프로필 수를 확인할 수 있습니다.
 
-**보강된 데이터 보기** 를 선택하여 각 보강된 프로필의 상세 보기에 액세스할 수 있습니다 .
+**보강된 고객 미리 보기** 타일에서 보강된 데이터의 샘플을 볼 수 있습니다. **더 보기** 를 선택하고 **데이터** 탭을 선택하여 각 보강된 프로필의 상세 보기에 액세스합니다.
 
 ### <a name="overview-card"></a>개요 카드
 
-개요 카드에는 강화 적용 범위에 관한 세부 정보가 표시됩니다. 
+개요 카드에는 보강 적용 범위에 관한 세부 정보가 표시됩니다. 
 
-* **처리 및 변경한 고객 수**: 성공적으로 보강된 고객 프로필의 수입니다.
+* **처리 및 변경된 회사**: 성공적으로 보강된 고객 회사 프로필의 수입니다.
 
-* **처리했지만 변경되지 않은 고객**: 인식되었지만 변경되지 않은 고객 프로필의 수입니다. 일반적으로 입력 데이터가 유효하고 보강으로 개선할 수 없는 경우에 발생합니다.
+* **처리되고 변경되지 않은 회사**: 인식되었지만 변경되지 않은 고객 회사 프로필의 수입니다. 이는 일반적으로 입력 데이터가 유효하고 보강으로 개선할 수 없는 경우에 발생합니다.
 
-* **처리되지 않았고 변경되지 않은 고객**: 인식되지 않은 프로필의 수입니다. 일반적으로 유효하지 않거나 보강되지 않는 입력 데이터를 의미합니다.
+* **처리되지 않고 변경되지 않은 회사**: 인식되지 않은 고객 회사 프로필의 수입니다. 이는 일반적으로 유효하지 않거나 보강되지 않는 입력 데이터가 있는 경우 발생합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

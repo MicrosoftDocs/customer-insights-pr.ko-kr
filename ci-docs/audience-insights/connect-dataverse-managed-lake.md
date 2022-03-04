@@ -1,30 +1,35 @@
 ---
 title: Microsoft Dataverse에서 테이블에 연결
 description: Microsoft Dataverse 관리 데이터 레이크에서 데이터 가져오기
-ms.date: 07/23/2021
-ms.service: customer-insights
+ms.date: 12/06/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: f92d64723e6a4d2fcebdbb3758519d4bfd4aeaf4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+searchScope:
+- ci-dataverse
+- customerInsights
+ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692582"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354149"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Microsoft Dataverse 관리형 데이터 레이크의 데이터에 연결
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-이 문서에서는 Dataverse 사용자가 Dataverse 관리형 레이크에서 분석 엔터티에 빠르게 연결할 수 있는 방법에 대한 정보를 제공합니다. Dataverse 조직의 관리자만 관리 레이크 엔터티 목록을 볼 수 있습니다.
+
+이 문서에서는 Dataverse 사용자가 Microsoft Dataverse 관리형 레이크의 분석 엔터티에 빠르게 연결하는 방법을 안내합니다. 
+
+> [!NOTE]
+> Dataverse 조직의 관리자여야만 계속 진행하고 관리형 레이크에서 사용 가능한 엔터티 목록을 볼 수 있습니다.
 
 ## <a name="important-considerations"></a>중요 사항
 
-Azure Data Lake Storage와 같은 온라인 서비스에 저장된 데이터는 Dynamics 365 Customer Insights에서 데이터가 처리 또는 저장된 위치와 다른 곳에 저장될 수 있습니다.온라인 서비스에서 데이터를 가져오거나 이에 연결하면 해당 데이터가 Dynamics 365 Customer Insights에 전송되거나 저장될 수 있음에 동의하는 것입니다. [Microsoft 보안 센터에서 자세히 알아보십시오.](https://www.microsoft.com/trust-center)
+Azure Data Lake Storage와 같은 온라인 서비스에 저장된 데이터는 Dynamics 365 Customer Insights에서 데이터가 처리 또는 저장된 위치와 다른 곳에 저장될 수 있습니다. 온라인 서비스에서 데이터를 가져오거나 이에 연결하면 해당 데이터가 Dynamics 365 Customer Insights에 전송되거나 저장될 수 있음에 동의하는 것입니다. [Microsoft 보안 센터에서 자세히 알아보십시오.](https://www.microsoft.com/trust-center)
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Dataverse 관리 레이크에 연결
 
@@ -32,12 +37,9 @@ Azure Data Lake Storage와 같은 온라인 서비스에 저장된 데이터는 
 
 2. **데이터 원본 추가** 를 선택합니다.
 
-3. **Microsoft Dataverse 관리 레이크에 연결** 을 선택하고 **다음** 을 선택합니다.
+3. **Microsoft Dataverse** 를 선택하고 **다음** 을 선택합니다.
 
-4. 데이터 원본의 **이름** 을 입력하고 **다음** 을 선택합니다. 이름 지침: 
-   - 문자로 시작합니다.
-   - 문자와 숫자만 사용하십시오. 특수 문자와 공백은 사용할 수 없습니다.
-   - 3~64자 사이에서 사용하십시오.
+4. 데이터 원본의 **이름** 을 입력하고 **다음** 을 선택합니다. 
 
 5. Dataverse 조직의 **서버 주소** 를 제공하고 **로그인** 을 선택합니다.
 
