@@ -3,20 +3,18 @@ title: 활동을 기반으로 제안된 세그먼트.
 description: 기계 학습을 통해 고객 활동을 기반으로 새롭고 흥미로운 세그먼트를 찾을 수 있습니다.
 ms.date: 05/11/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 manager: shellyha
-searchScope:
-- ci-segment-suggestions
-- customerInsights
-ms.openlocfilehash: 9c10a32b770ea110a1166f20f72116a3a12cb92e
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 14d9d4f0df6b5835f21fb63447d05853ee98a757
+ms.sourcegitcommit: 8341fa964365c185b65bc4b71fc0c695ea127dc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354471"
+ms.lasthandoff: 05/14/2021
+ms.locfileid: "6034091"
 ---
 # <a name="suggested-segments-based-on-activity-data-preview"></a>활동 데이터를 기반으로 제안된 세그먼트(프리뷰)
 

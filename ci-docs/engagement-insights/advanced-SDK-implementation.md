@@ -4,16 +4,17 @@ description: SDK로 웹 사이트를 계측할 때 고려해야 할 고급 시�
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 09/27/2021
+ms.date: 11/12/2020
+ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: a083d8215f295af0884257a016b62b8c7e4ab2c7
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 7455d276035bfaf1f8a93d0e3b0b0884353a4010715c05d1d696309f7eb4b233
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8227206"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036336"
 ---
 # <a name="advanced-web-sdk-instrumentation"></a>고급 웹 SDK 계측
 
@@ -32,20 +33,20 @@ SDK를 사용하면 모든 이벤트와 함께 전송할 수있는 사용자 정
 - **authType**: 인증된 사용자 ID를 가져오는 데 사용되는 인증 유형입니다.
 - **이름**: 사용자의 이름입니다.
 - **이메일**: 사용자의 이메일 주소입니다.
-
-다음 예제는 사용자 정보를 보내는 코드 조각를 보여줍니다. 앞에 별표 * 기호가 있는 함수가 있는 경우 함수를 사용자 지정 구현으로 대체합니다.
+    
+다음 예제는 사용자 정보를 보내는 코드 조각를 보여줍니다. *로 표시된 함수가 표시되면 해당 값을 호출하는 구현으로 바뀝니다.  
 
 ```
 […]
-window, document
+window, document 
 {
-    src:"https://download.pi.dynamics.com/sdk/web/msei-1.min.js",
-    name:"myproject",
-    cfg:{
-      ingestionKey:<paste your ingestion key>",
-      autoCapture:{
-        view:true,
-        click:true
+    src:"https://download.pi.dynamics.com/sdk/web/mspi-0.min.js", 
+    name:"myproject",      
+    cfg:{ 
+      ingestionKey:<paste your ingestion key>", 
+      autoCapture:{ 
+        view:true, 
+        click:true 
       }
     },
     user:{
@@ -57,25 +58,25 @@ window, document
 […]
 ```
 
-`setUser(user: IUser)` API를 호출하여 사용자 정보를 지정할 수도 있습니다. `setUser` API를 호출한 후 전송된 원격 분석에는 사용자 정보가 포함됩니다.
+SDK에서 `setUser(user: IUser)` API를 호출하여 사용자 정보를 지정할 수도 있습니다. `setUser API`를 호출한 후 전송된 원격 분석에는 사용자 정보가 포함됩니다.
 
 ## <a name="adding-custom-properties-for-each-event"></a>각 이벤트에 대한 사용자 지정 속성 추가
 
-SDK를 사용하면 모든 이벤트와 함께 보낼 수 있는 사용자 지정 속성을 지정할 수 있습니다. 맞춤 속성을 키-값 쌍을 포함하는 객체로 지정할 수 있습니다(값은 `string | number | boolean` 유형일 수 있음). 코드 스니펫 구성의 `src`, `name` 및 `cfg`와 유사한 `props`라는 속성에 객체를 추가할 수 있습니다.
+SDK를 사용하면 모든 이벤트와 함께 보낼 수 있는 사용자 지정 속성을 지정할 수 있습니다. 맞춤 속성을 키-값 쌍을 포함하는 객체로 지정할 수 있습니다(값은 `string | number | boolean` 유형일 수 있음). 객체는 코드 조각 구성의 `src`, `name` 및 `cfg`와 유사한 `props` 속성에 추가할 수 있습니다. 
 
 다음 예제는 사용자 지정 속성을 보내는 코드 조각를 보여줍니다.
 
 ```
 […]
-window, document
+window, document 
 {
-    src:"https://download.pi.dynamics.com/sdk/web/msei-1.min.js",
-    name:"myproject",
-    cfg:{
-      ingestionKey:<paste your ingestion key>",
-      autoCapture:{
-        view:true,
-        click:true
+    src:"https://download.pi.dynamics.com/sdk/web/mspi-0.min.js", 
+    name:"myproject",      
+    cfg:{ 
+      ingestionKey:<paste your ingestion key>", 
+      autoCapture:{ 
+        view:true, 
+        click:true 
       }
     },
     props:{
@@ -86,7 +87,7 @@ window, document
 […]
 ```
 
-`setProperty(name: string, value: string | number | boolean)` API를 호출하여 사용자 지정 속성을 개별적으로 지정할 수도 있습니다.
+SDK에서 `setProperty(name: string, value: string | number | boolean)` API를 호출하여 사용자 지정 속성을 개별적으로 지정할 수도 있습니다.
 
 ## <a name="sending-custom-events"></a>사용자 지정 이벤트 보내기
 

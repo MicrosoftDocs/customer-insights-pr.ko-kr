@@ -3,17 +3,18 @@ title: Customer Insights 데이터를 Adobe Experience Platform로 내보내기
 description: Adobe Experience Platform에서 대상 그룹 인사이트 세그먼트를 사용하는 방법을 알아봅니다.
 ms.date: 03/29/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 9010af3c42823ce0dd8685bf71c109aef8d3f635
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: fac976a49b1b5c5485b75e1262135738c913bd2230be7df8aa0ec12c59734053
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8227720"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032125"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Adobe Experience Platform(프리뷰)에서 Customer Insights 세그먼트 사용
 

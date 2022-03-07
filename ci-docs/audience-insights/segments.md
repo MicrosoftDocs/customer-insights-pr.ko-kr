@@ -1,49 +1,36 @@
 ---
 title: 대상 그룹 인사이트의 세그먼트
 description: 세그먼트 및 세그먼트 생성 및 관리 방법에 대한 개요입니다.
-ms.date: 11/01/2021
+ms.date: 05/03/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-searchScope:
-- ci-customers-page
-- ci-enrichment-details
-- ci-segments
-- ci-segment-details
-- customerInsights
-ms.openlocfilehash: c58f79c2beda1083d19bd36d94549ff1a46b096e
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 6e2080b4ad19f6f57f60da591345e80ce9083e8a
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355991"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554075"
 ---
 # <a name="segments-overview"></a>세그먼트 개요
 
 세그먼트를 사용하면 인구 통계, 트랜잭션 또는 행동 특성을 기반으로 고객을 그룹화할 수 있습니다. 세그먼트를 사용하여 판촉 캠페인, 판매 활동 및 고객 지원 조치를 대상으로 비즈니스 목표를 달성할 수 있습니다.
 
-세그먼트 정의의 필터와 일치하는 고객 프로필을 세그먼트의 *구성원* 이라고 합니다. 약간의 [서비스 제한](/dynamics365/customer-insights/service-limits)이 적용됩니다.
+세그먼트 정의의 필터와 일치하는 고객 프로필을 세그먼트의 *구성원* 이라고 합니다. 약간의 [서비스 제한](service-limits.md)이 적용됩니다.
 
 ## <a name="create-a-new-segment"></a>새 세그먼트 만들기
 
 새 세그먼트를 만드는 방법에는 여러 가지가 있습니다. 
 
-# <a name="individual-consumers-b-to-c"></a>[개별 소비자(B2C)](#tab/b2c)
-
-- 세그먼트 빌더가 있는 복잡한 세그먼트: [직접 빌드](segment-builder.md#create-a-new-segment) 
-- 연산자가 하나인 간단한 세그먼트: [빠른 세그먼트](segment-builder.md#quick-segments) 
-- 유사한 고객을 찾는 AI 기반 방법: [유사 고객](find-similar-customer-segments.md) 
-- 측정값 또는 속성을 기반으로 한 AI 기반 제안: [측정값 향상을 위한 제안 세그먼트](suggested-segments.md) 
-- 활동에 따른 제안: [고객 활동에 기반한 제안 세그먼트](suggested-segments-activity.md) 
-
-# <a name="business-accounts-b-to-b"></a>[비즈니스 어카운트(B2B)](#tab/b2b)
-
-- 세그먼트 빌더가 있는 복잡한 세그먼트: [직접 빌드](segment-builder.md#create-a-new-segment)
-
----
+- 세그먼트 빌더를 통한 복잡한 세그먼트: [빈 세그먼트](segment-builder.md#create-a-new-segment)
+- 연산자가 하나인 간단한 세그먼트: [빠른 세그먼트](segment-builder.md#quick-segments)
+- 유사한 고객을 찾는 AI 기반 방법: [유사 고객](find-similar-customer-segments.md)
+- 측정값 또는 속성을 기반으로 한 AI 기반 제안: [측정값 향상을 위한 제안 세그먼트](suggested-segments.md)
+- 활동에 따른 제안: [고객 활동에 기반한 제안 세그먼트](suggested-segments-activity.md)
 
 ## <a name="manage-existing-segments"></a>기존 세그먼트 관리
 
@@ -70,7 +57,8 @@ ms.locfileid: "8355991"
 
 **세그먼트** 페이지에서 **모두 새로 고침** 을 선택하여 모든 세그먼트를 한 번에 새로 고치거나 세그먼트를 선택할 때 하나 이상의 세그먼트를 새로 고치고 옵션에서 **새로 고침** 을 선택할 수 있습니다. 또는 **관리자** > **시스템** > **일정** 에서 반복 새로 고침을 구성할 수 있습니다.
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+> [!TIP]
+> 작업/프로세스 [상태에는 6가지 유형](system.md#status-types)이 있습니다. 또한 대부분의 프로세스는 [다른 다운스트림 프로세스에 의존](system.md#refresh-policies)합니다. 프로세스 상태를 선택하여 전체 작업의 진행률에 대한 세부 사항을 볼 수 있습니다. 작업 중 하나를 선택한 다음 **자세히 보기** 참조를 선택하면, 처리 시간, 마지막 처리 날짜, 작업과 관련된 모든 오류 및 경고와 같은 추가 정보를 확인할 수 있습니다.
 
 ## <a name="export-segments"></a>세그먼트 내보내기
 
@@ -82,9 +70,9 @@ ms.locfileid: "8355991"
 
 1. 작업 드롭다운 목록에서 **내보내기 관리** 를 선택합니다.
 
-1. **세그먼트에 대한 내보내기(미리 보기)** 페이지가 열립니다. 현재 세그먼트를 포함하는지 여부에 따라 그룹화된 구성된 모든 내보내기를 볼 수 있습니다.
+1. **세그먼트에 대한 내보내기(미리 보기)** 페이지가 열립니다. 현재 세그먼트를 포함하거나 포함하지 않은 내보내기별로 그룹화된 모든 구성된 내보내기를 볼 수 있습니다.
 
-   1. 선택한 세그먼트를 내보내기에 추가하려면 해당 내보내기를 **편집** 하여 해당 세그먼트를 선택한 다음 저장합니다. 개별 고객을 위한 환경에서는 대신 목록에서 내보내기를 선택하고 **세그먼트 추가** 를 선택하여 동일한 결과를 얻을 수 있습니다.
+   1. 선택한 세그먼트를 내보내기에 추가하려면 목록에서 내보내기를 선택하고 **세그먼트 추가** 를 선택합니다.
 
    1. 선택한 세그먼트로 새 내보내기를 만들려면 **내보내기 추가** 를 선택합니다. 내보내기 만들기에 대한 자세한 내용은 [새 내보내기 설정](export-destinations.md#set-up-a-new-export)을 참조하십시오.
 
@@ -110,5 +98,4 @@ ms.locfileid: "8355991"
 >
 >이 목록은 일치하는 세그먼트 구성원의 미리 보기이며 세그먼트의 처음 100개 레코드를 표시하므로 신속하게 평가하고 필요한 경우 정의를 검토할 수 있습니다. 일치하는 모든 레코드를 보려면 [세그먼트 내보내기](export-destinations.md)를 수행해야 합니다.
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)] 

@@ -3,21 +3,19 @@ title: Customer Insights에서 데이터 내보내기
 description: 데이터 공유를 위한 내보내기를 관리합니다.
 ms.date: 11/01/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-searchScope:
-- ci-export
-- ci-connections
-- customerInsights
-ms.openlocfilehash: 33f59c62565560517c480be63e581465605c5f7b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.custom: intro-internal
+ms.openlocfilehash: bff0486fdb3a02ecb0aa86e81abe1c506e234bc5
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354333"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732158"
 ---
 # <a name="exports-preview-overview"></a>내보내기(프리뷰) 개요
 

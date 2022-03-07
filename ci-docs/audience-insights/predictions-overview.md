@@ -1,19 +1,21 @@
 ---
 title: 지원되는 예측 시나리오에 대한 개요
 description: Dynamics 365 Customer Insights 애플리케이션에서 사용하는 예측 시나리오 및 옵션입니다.
-ms.date: 12/21/2021
+ms.date: 05/18/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: get-started
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: c692785c7d81ab660ba2e07411e986c67c1a5d0a
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.custom: intro-internal
+ms.openlocfilehash: b73046844f6009a2b163b5eaadf5f63f75cda1d8
+ms.sourcegitcommit: b78c9680b213204e6b0ed47f0147205083f6a98f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228252"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "6539169"
 ---
 # <a name="predictions-overview"></a>예측 개요
 
@@ -22,21 +24,10 @@ Dynamics 365 Customer Insights에는 AI 및 기계 학습을 활용하여 데이
 ## <a name="out-of-box-models"></a>기본 제공 모델
 
 데이터 예측을 시작하는 가장 쉬운 방법은 흔히 기본 제공 모델이라고 부르는 사전 정의된 모델입니다. 인사이트를 빠르게 생성하도록 특정 데이터와 구조만 필요합니다. 현재 다음 모델을 사용할 수 있습니다. 
-
-# <a name="individual-consumers-b-to-c"></a>[개별 소비자(B2C)](#tab/b2c)
-
-- [고객 평생 가치](predict-customer-lifetime-value.md): 비즈니스와의 전체 상호 작용에서 고객의 잠재적 수익을 예측합니다.
+- [고객 평생 가치](predict-customer-lifetime-value.md): 비즈니스와의 전체 상호 작용에서 고객의 잠재적 수익을 예측합니다. 
 - [제품 추천](predict-product-recommendation.md): 구매 행동 및 구매 패턴이 유사한 고객을 기반으로 한 예측 제품 추천 세트를 제안합니다.
 - [구독 이탈](predict-subscription-churn.md): 고객이 회사의 구독 제품 또는 서비스를 더 이상 사용하지 않을 위험에 처해 있는지 여부를 예측합니다.
 - [트랜잭션 이탈](predict-transactional-churn.md): 고객이 특정 시간 프레임에서 귀하의 제품이나 서비스를 더 이상 구매하지 않을 것인지 예측합니다.
-- [감정 분석](sentiment-analysis.md): 고객 피드백의 감정을 분석하고 자주 언급되는 비즈니스 측면을 식별합니다.
-
-# <a name="business-accounts-b-to-b"></a>[비즈니스 어카운트(B2B)](#tab/b2b)
-
-- [트랜잭션 이탈](predict-transactional-churn.md): 고객이 특정 시간 프레임에서 귀하의 제품이나 서비스를 더 이상 구매하지 않을 것인지 예측합니다.
-
----
-
 
 ## <a name="azure-machine-learning-integration"></a>Azure 기계 학습 통합
 

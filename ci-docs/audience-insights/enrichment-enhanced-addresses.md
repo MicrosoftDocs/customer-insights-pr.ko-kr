@@ -1,25 +1,20 @@
 ---
-title: 주소 향상 강화(동영상 포함)
+title: 주소 향상 보강
 description: Microsoft 모델을 사용하여 고객 프로필의 주소 정보를 보강하고 정규화합니다.
-ms.date: 01/19/2022
+ms.date: 07/25/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-searchScope:
-- ci-data-sources-enrichment
-- ci-data-sources-enrichment-details
-- ci-enrichments
-- ci-enrichment-wizard
-- customerInsights
-ms.openlocfilehash: 067757019078d3a46b224ba259d2d097dfbbe381
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 65db6ce05f4d6f7f7b08ada172fec057027dd310
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353644"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692261"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>향상된 주소로 고객 프로필 강화
 
@@ -28,8 +23,6 @@ ms.locfileid: "8353644"
 ## <a name="how-we-enhance-addresses"></a>주소 향상 방법
 
 당사 모델은 주소를 향상하기 위해 2단계 프로세스를 거칩니다. 먼저 주소를 구문 분석하여 구성 요소를 식별하고 구조화된 형식에 넣습니다. 그런 다음 AI를 사용하여 주소의 값을 수정, 완성 및 표준화합니다.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWNewo]
 
 ### <a name="example"></a>예제
 
@@ -103,22 +96,12 @@ ms.locfileid: "8353644"
 
 강화 프로세스를 시작하려면 명령 모음에서.**실행** 을 선택하십시오. [예약된 새로 고침](system.md#schedule-tab)으로 시스템이 자동으로 보강을 실행하도록 할 수도 있습니다. 처리 시간은 고객 데이터의 크기에 따라 다릅니다.
 
-보강 프로세스가 완료되면 **내 보강** 아래에서 새로 보강 된 고객 프로필 데이터를 검토 할 수 있습니다. 또한 마지막 업데이트 시간과 강화된 프로필 수를 확인할 수 있습니다.
+보강 프로세스가 완료되면 **내 보강** 아래에서 새로 보강 된 고객 프로필 데이터를 검토 할 수 있습니다. 또한 마지막 업데이트 시간과 강화 된 프로필 수를 확인할 수 있습니다.
 
-**보강된 고객 미리 보기** 타일에서 보강된 데이터의 샘플을 볼 수 있습니다. **더 보기** 를 선택하고 **데이터** 탭을 선택하여 각 보강된 프로필의 상세 보기에 액세스합니다.
-
-### <a name="overview-card"></a>개요 카드
-
-개요 카드에는 보강 적용 범위에 관한 세부 정보가 표시됩니다. 
-
-* **처리 및 변경된 주소**: 성공적으로 보강된 주소가 있는 고객 프로필의 수입니다.
-
-* **처리되고 변경되지 않은 주소**: 인식되었지만 변경되지 않은 주소가 있는 고객 프로필의 수입니다. 일반적으로 입력 데이터가 유효하고 보강으로 개선할 수 없는 경우에 발생합니다.
-
-* **처리되지 않고 변경되지 않은 주소**: 인식되지 않은 주소가 있는 프로필의 수입니다. 일반적으로 유효하지 않거나 보강되지 않는 입력 데이터를 의미합니다.
+**보강된 데이터 보기** 를 선택하여 각 보강된 프로필의 상세 보기에 액세스할 수 있습니다 .
 
 ## <a name="next-steps"></a>다음 단계
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+보강된 고객 데이터를 바탕으로 구축합니다. [세그먼트](segments.md) 및 [측정값](measures.md)을 만들고 [데이터 내보내기](export-destinations.md) 를 통해 고객에게 개인화된 경험을 제공합니다.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

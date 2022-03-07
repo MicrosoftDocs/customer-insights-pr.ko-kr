@@ -1,19 +1,20 @@
 ---
 title: Autopilot로 Customer Insights 데이터 내보내기
 description: 연결을 구성하고 Autopilot으로 내보내는 방법을 알아봅니다.
-ms.date: 10/08/2021
+ms.date: 03/03/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 7a7a67a52fcf39da8d50bd95817d25470fc90b6f
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: c9ada8a6f4e4546990a1360567b400033050119c4c4c9a3df1af8fcaab75e157
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8227674"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032033"
 ---
 # <a name="export-segments-to-autopilot-preview"></a>Autopilot으로 세그먼트 내보내기(프리뷰)
 
@@ -27,10 +28,10 @@ ms.locfileid: "8227674"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- 총 10만 개의 고객 프로필을 Autopilot으로 내보낼 수 있습니다.
+- 총 10만 개의 고객 프로필을 Autopilot로 내보낼 수 있습니다.
 - Autopilot로 내보내기는 세그먼트로 제한됩니다.
-- 최대 10만 개의 고객 프로필을 Autopilot로 내보내려면 최대 몇 시간이 걸릴 수 있습니다. 
-- Autopilot으로 내보낼 수 있는 고객 프로필의 수는 Autopilot과의 계약에 따라 달라지고 제한됩니다.
+- 최대 10만 개의 프로필을 Autopilot로 내보내는 데 최대 몇 시간이 걸릴 수 있습니다. 
+- Autopilot로 내보낼 수 있는 프로필 수는 Autopilot와의 계약에 따라 다르며 제한됩니다.
 
 ## <a name="set-up-connection-to-autopilot"></a>Autopilot에 연결을 설정합니다.
 
@@ -42,7 +43,7 @@ ms.locfileid: "8227674"
 
 1. 이 연결을 사용할 수 있는 사용자를 선택합니다. 아무 조치도 취하지 않으면 기본값은 관리자입니다. 자세한 내용은 [기여자가 내보내기에 연결을 사용하도록 허용](connections.md#allow-contributors-to-use-a-connection-for-exports)을 확인하세요.
 
-1. [Autopilot API 키](https://autopilot.docs.apiary.io/#)를 입력합니다.
+3. [Autopilot API 키](https://autopilot.docs.apiary.io/#)를 입력합니다.
 
 1. **동의** 를 선택해 **데이터 프라이버시 및 규정 준수** 를 확인합니다.
 
@@ -62,7 +63,7 @@ ms.locfileid: "8227674"
 
 1. **내보내기 연결** 필드의 Autopilot 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 연결이 없는 것입니다.
 
-1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다. **이름**, **성** 과 같은 다른 선택 사항 필드에 대해 동일한 단계를 반복하십시오.
+3. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. **이름**, **성** 과 같은 다른 선택 사항 필드에 대해 동일한 단계를 반복하십시오.
 
 1. 내보낼 세그먼트를 선택합니다. Autopilot로 **총 10만 개 이상의 고객 프로필은 내보내지 않을 것을 강력히 권고합니다**. 
 

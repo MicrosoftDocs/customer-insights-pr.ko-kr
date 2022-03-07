@@ -1,25 +1,21 @@
 ---
 title: 통합 고객 프로필 보강
 description: 기능을 사용하여 고객 데이터를 보강합니다.
-ms.date: 02/07/2022
+ms.date: 09/30/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-searchScope:
-- ci-enrichments
-- ci-enrichment-details
-- ci-enrichment-wizard
-- customerInsights
-ms.openlocfilehash: e8cac35ccf7012524dc22cb4a499dc605dd66346
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355391"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617563"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>고객 프로필 보강(미리 보기)
 
@@ -33,7 +29,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 **검색** 탭에서 지원되는 모든 보강 옵션을 찾을 수 있습니다.
 
-# <a name="individual-consumers-b-to-c"></a>[개별 소비자(B2C)](#tab/b2c)
+# <a name="individual-customers-b2c"></a>[개별 소비자(B2C)](#tab/b2c)
 
 - Microsoft에서 제공한 [브랜드](enrichment-microsoft.md)
 - Microsoft에서 제공한 [관심사](enrichment-microsoft.md)
@@ -41,17 +37,14 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 - [Experian에서 제공하는 인구 통계](enrichment-experian.md)
 - SFTP(보안 파일 전송 프로토콜)를 통한 [사용자 지정 데이터](enrichment-SFTP-custom-import.md) 
 - Microsoft 제공 [Azure Maps](enrichment-azure-maps.md)
-- HERE Technologies에서 제공한 [위치 데이터](enrichment-here.md) 
 
-# <a name="business-accounts-b-to-b"></a>[비즈니스 어카운트(B2B)](#tab/b2b)
+# <a name="business-accounts-b2b"></a>[비즈니스 계정(B2B)](#tab/b2b)
 
 - Leadspace에서 제공한 [회사 데이터](enrichment-leadspace.md)
 - Microsoft 제공 [향상된 주소](enrichment-enhanced-addresses.md) 
-- Microsoft에서 제공한 [개선된 회사 데이터](enrichment-enhanced-company-data.md)
 - HERE Technologies에서 제공한 [위치 데이터](enrichment-here.md) 
 - SFTP(보안 파일 전송 프로토콜)를 통한 [사용자 지정 데이터](enrichment-SFTP-custom-import.md) 
 - Microsoft 제공 [Azure Maps](enrichment-azure-maps.md)
-- Microsoft에서 제공한 [계정 참여 데이터](enrichment-office.md)
 
 ---
 
