@@ -1,20 +1,19 @@
 ---
 title: Microsoft Teams용 봇
 description: 봇의 도움을 받아 Microsoft Teams에서 통합 고객 프로필을 찾아보세요.
-ms.date: 04/21/2020
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 9bf401124b0ffb21b046954056141e7703386d4911f89f34ffc0fcb84bf0f4be
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: d6b016c1ec35e26ce6449333234edfd218bc9354
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032490"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8232110"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>Dynamics 365 Customer Insights의 Teams 봇(미리 보기)
 
@@ -31,7 +30,10 @@ Microsoft Teams에 연결하여 봇이 Teams 채널에서 통합 고객 프로�
 - [통합 프로세스](data-unification.md)가 완료되어야 합니다.
 - 필드가 [검색 및 필터 색인](search-filter-index.md)에 추가되어야 합니다.
 - Customer Insights와 Teams가 같은 조직에 있습니다.
+- 환경에는 개별 고객으로 설정된 기본 대상 그룹 고객이 있습니다. 비즈니스 계정은 지원되지 않습니다.
 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 ## <a name="configure-the-bot"></a>봇 구성
 
 1. 대상 그룹 인사이트에서 **데이터** > **내보내기 대상** 으로 이동합니다.

@@ -1,20 +1,19 @@
 ---
 title: Customer Insights 데이터를 Omnisend로 내보내기
 description: 연결을 구성하고 Omnisend로 내보내는 방법을 알아봅니다.
-ms.date: 05/21/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8bd692819fa8451ded5e74191ee717f81f87425d
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 15fc6fc2426ad3958268e5bcc200b8eb2b0fd13a
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124517"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226771"
 ---
 # <a name="export-segments-to-omnisend-preview"></a>Omnisend로 세그먼트 내보내기(프리뷰)
 
@@ -28,9 +27,9 @@ ms.locfileid: "6124517"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- Omnisend로 내보낼 때마다 최대 1백만 개의 프로필을 내보낼 수 있으며 완료하는 데 최대 4시간이 걸릴 수 있습니다.
+- Omnisend로 내보내기당 최대 100만 개의 고객 프로필을 내보낼 수 있으며 완료하는 데 최대 4시간이 걸릴 수 있습니다.
 - Omnisend로 내보내기는 세그먼트로 제한됩니다.
-- Omnisend로 내보낼 수 있는 프로필 수는 Omnisend와의 계약에 따라 다릅니다.
+- Omnisend로 내보낼 수 있는 고객 프로필의 수는 Omnisend와의 계약에 따라 다릅니다.
 
 ## <a name="set-up-connection-to-omnisend"></a>Omnisend 연결 설정
 
@@ -62,7 +61,7 @@ ms.locfileid: "6124517"
 
 1. **내보내기 연결** 필드의 Omnisend 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 연결이 없는 것입니다.
 
-1. **데이터 일치** 섹션의 이메일 필드에서 고객의 **이메일** 주소를 나타내는 통합 고객 프로필의 필드를 선택합니다. Omnisend로 세그먼트를 내보내야 합니다. 선택적으로 이름, 성, 주소, 국가/지역, 주, 도시 및 우편 번호를 내보내 보다 개인화된 이메일을 만들 수 있습니다. **특성 추가** 를 선택하여 이러한 필드를 매핑합니다.
+1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다. Omnisend로 세그먼트를 내보내야 합니다. 선택적으로 이름, 성, 주소, 국가/지역, 주, 도시 및 우편 번호를 내보내 보다 개인화된 이메일을 만들 수 있습니다. **특성 추가** 를 선택하여 이러한 필드를 매핑합니다.
 
 1. **저장** 을 선택합니다.
 
