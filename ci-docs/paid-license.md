@@ -7,12 +7,12 @@ ms.date: 10/05/2021
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: c9517ed2b50ff37e361a27538dfb9f9ccbf3df8f
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: fa6ea6e96de3d382c1426b383a057c8ce4f67ccf
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350139"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8456006"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Customer Insights 구매 후 시작
 
@@ -39,7 +39,4 @@ Customer Insights는 테넌트별로 라이선스가 부여되며 여러 기능�
 
 ## <a name="create-your-own-environment"></a>나만의 환경 만들기
 
-처음 로그인하면 샘플 데이터가 있는 환경이 표시됩니다. 해당 데이터를 사용하여 기능을 탐색하고 앱에 익숙해질 수 있습니다. 자체 데이터를 사용하려면 [환경을 만들어야](audience-insights/get-started-paid.md) 합니다.
-
-
-
+처음 로그인하면 샘플 데이터가 있는 환경이 표시됩니다. 해당 데이터를 사용하여 기능을 탐색하고 앱에 익숙해질 수 있습니다. 자체 데이터를 사용하려면 [환경을 만들어야](/dynamics365/customer-insights/audience-insights/create-environment) 합니다.

@@ -1,7 +1,7 @@
 ---
 title: 환경 만들기 및 관리
 description: 서비스에 등록하는 방법과 환경을 관리하는 방법을 알아봅니다.
-ms.date: 12/06/2021
+ms.date: 02/09/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
@@ -11,16 +11,14 @@ manager: shellyha
 searchScope:
 - ci-system-about
 - customerInsights
-ms.openlocfilehash: d9e0ee726dbbfcf330022c4d95747551d3114e7e
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 4f4e5a8415f6c2128b0480edf67f317124eeeba9
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354287"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376884"
 ---
 # <a name="manage-environments"></a>환경 관리
-
-
 
 ## <a name="switch-environments"></a>환경 전환
 
@@ -98,9 +96,29 @@ ms.locfileid: "8354287"
 
 데이터 통합이 완료되면 **측정** 및 **세그먼트** 로 이동하여 이들도 새로 고칩니다.
 
+## <a name="change-the-owner-of-an-environment"></a>환경 담당자 변경
+
+여러 사용자가 Customer Insights에서 관리자 권한을 가질 수 있지만 한 명의 사용자만 환경 담당자입니다. 기본적으로 처음에 환경을 만드는 사람이 관리자입니다. 환경의 관리자는 관리자 권한이 있는 다른 사용자에게 소유권을 할당할 수 있습니다.
+
+1. 앱 헤더의 **환경** 선택기를 선택합니다.
+
+1. **편집** 아이콘을 선택합니다.
+
+1. **환경 편집** 상자에서 **기본 정보** 단계로 이동합니다.
+
+1. **환경 담당자 변경** 필드에서 환경의 새 담당자를 선택합니다.  
+
+1. **검토 및 완료** 를 선택한 다음 **업데이트** 를 선택하여 변경 사항을 적용합니다. 
+
+## <a name="claim-ownership-of-an-environment"></a>환경 소유권 주장
+
+환경 담당자가 조직을 떠나거나 해당 사용자 계정이 삭제되면 환경에는 담당자가 없게 됩니다. 관리자 권한이 있는 사용자는 소유권을 주장하고 새 담당자가 될 수 있습니다. 해당 사용자는 계속해서 환경을 소유하거나 [소유권을 다른 관리자에게로 변경할 수 있습니다](#change-the-owner-of-an-environment). 
+
+소유권을 주장하려면 원래 담당자가 조직을 떠날 때 Customer Insights의 모든 페이지 상단에 표시되는 **소유권 확보** 단추를 선택합니다.
+
 ## <a name="reset-an-existing-environment"></a>기존 환경 초기화
 
-모든 구성을 삭제하고 수집된 데이터를 제거하려는 경우 관리자로서 환경을 빈 상태로 재설정할 수 있습니다.
+환경 담당자는 모든 구성을 삭제하고 수집된 데이터를 제거하려는 경우 환경을 빈 상태로 재설정할 수 있습니다.
 
 1.  앱 헤더의 **환경** 선택기를 선택합니다. 
 
@@ -112,7 +130,7 @@ ms.locfileid: "8354287"
 
 ## <a name="delete-an-existing-environment"></a>기존 환경 삭제
 
-관리자는 관리하는 환경을 삭제할 수 있습니다.
+환경 담당자는 관리하는 환경을 삭제할 수 있습니다.
 
 1.  앱 헤더의 **환경** 선택기를 선택합니다.
 

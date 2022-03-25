@@ -14,16 +14,18 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 067757019078d3a46b224ba259d2d097dfbbe381
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 2ab550e83a4969c1f547e66bcbf6ddb96d7789df
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353644"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376305"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>향상된 주소로 고객 프로필 강화
 
 데이터의 주소는 구조화되지 않았거나 불완전하거나 부정확할 수 있습니다. Microsoft의 모델을 사용하여 [공통 데이터 모델 형식](/common-data-model/schema/core/applicationcommon/address)으로 정규화하고 보강하여 더 나은 정확성과 인사이트를 얻으십시오.
+
+데이터 통합 프로세스에서 일치 정확도를 향상하기 위해 [데이터 원본의 주소를 보강](data-sources-enrichment.md)할 수도 있습니다. 
 
 ## <a name="how-we-enhance-addresses"></a>주소 향상 방법
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: ad1023135516ca9c49818d19aa84df68d16b2e3c
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: efa26fa82a950063e074a4ab930ed95383c55334
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229972"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376700"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Experian 인구 통계로 고객 프로필을 보강하십시오.(프리뷰)
 
@@ -25,7 +25,7 @@ Experian을 구성하려면 다음 전제 조건이 충족되어야 합니다.
 
 - 활성 Experian 구독이 있어야 합니다. 구독하려면 [Experian에 직접 연락](https://www.experian.com/marketing-services/contact)하세요. [Experian 데이터 보강에 대해 자세히 알아보기](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
 
-- 관리자가 Experian 연결을 이미 *구성했거나* 귀하가 [관리자](permissions.md#administrator) 권한을 가지고 있음. 또한 Experian에서 생성된 SSH 사용 보안 전송(ST) 계정에 대한 사용자 ID, 당사자 ID 및 모델 번호가 필요합니다.
+- 관리자가 Experian 연결을 이미 *구성했거나* 귀하가 [관리자](permissions.md#admin) 권한을 가지고 있음. 또한 Experian에서 생성된 SSH 사용 보안 전송(ST) 계정에 대한 사용자 ID, 당사자 ID 및 모델 번호가 필요합니다.
 
 ## <a name="supported-countriesregions"></a>지원되는 국가/지역
 

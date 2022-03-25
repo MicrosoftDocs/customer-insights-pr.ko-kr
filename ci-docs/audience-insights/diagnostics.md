@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 2e0801c2b6af591e48a7df485a8523903c07617c
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354416"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376424"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Azure Monitor를 사용하여 Dynamics 365 Customer Insights에서 로그 전달(프리뷰)
 
@@ -37,7 +37,7 @@ Customer Insights는 다음 이벤트 로그를 보냅니다.
 Customer Insights에서 진단을 구성하려면 다음 필수 구성 요소가 충족되어야 합니다.
 
 - 활성 [Azure 구독](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)이 있어야 합니다.
-- Customer Insights의 [관리자](permissions.md#administrator) 권한이 있어야 합니다.
+- Customer Insights의 [관리자](permissions.md#admin) 권한이 있어야 합니다.
 - Azure의 대상 리소스에서 **기여자** 와 **사용자 액세스 관리자** 역할이어야 합니다. 리소스는 Azure Storage 계정, Azure 이벤트 허브 또는 Azure Log Analytics 작업 영역일 수 있습니다. 자세한 내용은 [Azure Portal을 사용하여 Azure 역할 할당 추가 또는 제거](/azure/role-based-access-control/role-assignments-portal)를 참조하세요.
 - Azure Storage, Azure 이벤트 허브 또는 Azure Log Analytics에 대한 [대상 요구 사항](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements)을 충족해야 합니다.
 - 리소스가 속한 리소스 그룹에서 적어도 **독자** 역할이어야 합니다.
@@ -132,7 +132,7 @@ API 이벤트와 워크플로 이벤트는 구조가 같습니다. 다른 세부
 | `resultSignature` | String    | 선택 항목          | 이벤트의 결과 상태 작업이 REST API 호출에 해당하는 경우 HTTP 상태 코드입니다.        | `200`             |
 | `durationMs`      | Long      | 선택 항목          | 작업 기간(밀리초)입니다.     | `133`     |
 | `callerIpAddress` | String    | 선택 항목          | 작업이 공개적으로 사용 가능한 IP 주소에서 오는 API 호출에 해당하는 경우 호출자 IP 주소입니다.                                                 | `144.318.99.233`         |
-| `identity`        | String    | 선택 항목          | 작업을 수행한 사용자 또는 애플리케이션의 ID를 설명하는 JSON 객체입니다.       | [ID](#identity-schema) 섹션을 참조하세요.     |  |
+| `identity`        | String    | 선택 항목          | 작업을 수행한 사용자 또는 애플리케이션의 ID를 설명하는 JSON 객체입니다.       | [ID](#identity-schema) 섹션을 참조하세요.     |  
 | `properties`      | String    | 선택 항목          | 특정 이벤트 범주에 대한 더 많은 속성이 있는 JSON 객체.      | [속성](#api-properties-schema) 섹션을 참조하세요.    |
 | `level`           | String    | 필수 항목          | 이벤트의 심각도 수준입니다.    | `Informational`, `Warning`, `Error` 또는 `Critical`.           |
 | `uri`             | String    | 선택 항목          | 절대 요청 URI입니다.    |               |
@@ -230,7 +230,7 @@ API 이벤트와 워크플로 이벤트는 구조가 같습니다. 다른 세부
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | 네      | 네  | 항상 `WorkflowEvent`, 이벤트를 워크플로 이벤트로 표시합니다.                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | 네      | 네  | 워크플로 실행의 식별자입니다. 워크플로 실행 내의 모든 워크플로 및 작업에는 같은 `workflowJobId`가 있습니다.                                                                                                                                   |
-| `properties.operationType`                   | 네      | 네  | 작업의 식별자는 [작업 유형]을 참조하세요.(#operation-types)                                                                                                                                                                                       |
+| `properties.operationType`                   | 네      | 네  | 작업의 식별자는 [작업 유형].(#operation-types)을 참조하세요.                                                                                                                                                                                       |
 | `properties.tasksCount`                      | 네      | 없음   | 워크플로 전용. 워크플로가 트리거하는 작업의 수입니다                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | 네      | 없음   | 선택 사항. 워크플로 이벤트 전용. 워크플로를 트리거한 Azure Active Directory [사용자의 objectId](/azure/marketplace/find-tenant-object-id#find-user-object-id)는 `properties.workflowSubmissionKind`도 참조하세요.                                   |
 | `properties.workflowType`                    | 네      | 없음   | `full` 또는 `incremental` 새로 고침.                                                                                                                                                                                                                            |
@@ -239,7 +239,7 @@ API 이벤트와 워크플로 이벤트는 구조가 같습니다. 다른 세부
 | `properties.startTimestamp`                  | 네      | 네  | UTC 타임스탬프`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.endTimestamp`                    | 네      | 네  | UTC 타임스탬프`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.submittedTimestamp`              | 네      | 네  | UTC 타임스탬프`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
-| `properties.instanceId`                      | 네      | 네  | Customer Insights `instanceId`                                                                                                                                                                                                                              |  |
+| `properties.instanceId`                      | 네      | 네  | Customer Insights `instanceId`                                                                                                                                                                                                                              |  
 | `properties.identifier`                      | 없음       | 네  | - OperationType =`Export`의 경우, 식별자는 내보내기 구성의 guid입니다. <br> - OperationType =`Enrichment`의 경우, 보강의 guid입니다. <br> - OperationType `Measures` 및 `Segmentation`의 경우, 식별자는 엔터티 이름입니다. |
 | `properties.friendlyName`                    | 없음       | 네  | 내보내기 또는 처리되는 엔터티의 사용자에게 친숙한 이름입니다.                                                                                                                                                                                           |
 | `properties.error`                           | 없음       | 네  | 선택 사항. 자세한 내용이 포함된 오류 메시지입니다.                                                                                                                                                                                                                  |

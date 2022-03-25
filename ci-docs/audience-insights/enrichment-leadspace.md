@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f89ef6842c21cf6b78154586f818beffbcdcffb9
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 0db0c984f6bf9f7ded0704b6fa0caf39c7dace3a
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8230642"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376792"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Leadspace를 통한 회사 프로필 강화(미리 보기)
 
@@ -25,7 +25,7 @@ Leadspace를 구성하려면 다음 전제 조건이 충족되어야 합니다.
 
 - 활성 Leadspace 라이선스.
 - 계정을 기반으로 [통합된 고객 프로필](customer-profiles.md)이 있습니다.
-- 관리자가 Leadspace 연결을 이미 구성했거나 귀하가 [관리자](permissions.md#administrator) 권한 및 "영구 키"(**Leadspace 토큰**)를 가지고 있음. 제품에 대한 자세한 설명은 [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/)에 직접 확인하십시오.
+- 관리자가 Leadspace 연결을 이미 구성했거나 귀하가 [관리자](permissions.md#admin) 권한 및 "영구 키"(**Leadspace 토큰**)를 가지고 있음. 제품에 대한 자세한 설명은 [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/)에 직접 확인하십시오.
 
 ## <a name="configure-the-enrichment"></a>보강 구성
 

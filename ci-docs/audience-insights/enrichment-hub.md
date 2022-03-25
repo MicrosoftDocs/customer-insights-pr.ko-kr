@@ -1,7 +1,7 @@
 ---
 title: 통합 고객 프로필 보강
 description: 기능을 사용하여 고객 데이터를 보강합니다.
-ms.date: 02/07/2022
+ms.date: 02/18/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: e8cac35ccf7012524dc22cb4a499dc605dd66346
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
+ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355391"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8372727"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>고객 프로필 보강(미리 보기)
 
@@ -42,6 +42,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 - SFTP(보안 파일 전송 프로토콜)를 통한 [사용자 지정 데이터](enrichment-SFTP-custom-import.md) 
 - Microsoft 제공 [Azure Maps](enrichment-azure-maps.md)
 - HERE Technologies에서 제공한 [위치 데이터](enrichment-here.md) 
+- LiveRamp AbiliTec 제공 [ID](enrichment-liveramp.md)
 
 # <a name="business-accounts-b-to-b"></a>[비즈니스 어카운트(B2B)](#tab/b2b)
 
@@ -80,6 +81,10 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 ## <a name="multiple-enrichments-of-the-same-type"></a>동일한 유형의 여러 보강
 
 보강할 엔터티는 보강 구성 중에 지정되므로 프로필의 하위 집합만 보강할 수 있습니다. 예를 들어 특정 세그먼트에 대해서만 데이터를 보강합니다. 동일한 유형의 여러 보강을 구성하고 동일한 연결을 재사용할 수 있습니다. 일부 보강에는 만들 수 있는 동일한 유형의 보강 수에 제한이 있습니다. 제한과 현재 사용은 **보강** 페이지에서 확인할 수 있습니다.
+
+## <a name="enrich-data-sources-before-unification"></a>통합 전 데이터 원본 보강
+
+데이터 통합 전에 고객 데이터를 보강하여 데이터 일치의 품질을 높일 수 있습니다. 자세한 내용은 [데이터 원본 보강](data-sources-enrichment.md)을 참조하세요.
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>보강 프로세스의 진행 상황 보기
 

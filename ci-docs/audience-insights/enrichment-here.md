@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 1b46e8913c6d288b93cdf32e195b5e9387916e70
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 1cbbad9bfe559bcb15b23894fc7475507aae8add
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8230390"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376358"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>HERE Technologies로 고객 프로필 보강(미리 보기)
 
@@ -25,7 +25,7 @@ HERE Technologies 보강을 구성하려면 다음 필수 구성 요소가 충�
 
 - 활성 HERE Technologies 구독이 있어야 합니다. 구독하려면 [여기에서 등록](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic)하거나 직접 [HERE Technologies에 연락](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you)할 수 있습니다. [HERE Technologies Location 보강에 대해 자세히 알아보세요.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- HERE [연결](connections.md)을 사용할 수 *있거나* 귀하가 [관리자](permissions.md#administrator) 권한 및 HERE Technologies API 키를 가지고 있습니다.
+- HERE [연결](connections.md)을 사용할 수 *있거나* 귀하가 [관리자](permissions.md#admin) 권한 및 HERE Technologies API 키를 가지고 있습니다.
 
 ## <a name="configure-the-enrichment"></a>보강 구성
 

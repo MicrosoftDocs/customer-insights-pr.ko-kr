@@ -8,16 +8,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: dc9bbe22b7f10cf92f06cae18fbece9808b87dce
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: dd90ef4576246b49d4a9c74005196ee9813a6744
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8226722"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455915"
 ---
 # <a name="power-automate-connector-preview"></a>Power Automate 커넥터(미리 보기)
 
 데이터가 변경되면 특정 이벤트가 자동으로 발생하도록 트리거하고 [Power Automate](https://flow.microsoft.com/)에서 직접 더 복잡한 흐름을 관리합니다.
+
+## <a name="known-limitations"></a>알려진 제한 사항
+
+- 60초당 최대 100개의 호출을 할 수 있습니다. $skip 매개 변수를 사용하여 API 엔드포인트를 여러 번 호출할 수 있습니다. [$skip 매개 변수에 대해 자세히 알아보세요](/connectors/customerinsights/#get-items-from-an-entity).
 
 ## <a name="power-automate-triggers"></a>Power Automate 트리거
 

@@ -1,7 +1,7 @@
 ---
 title: 사용자 권한 관리
 description: 사용 권한 및 사용자 역할에 대해 알아봅니다.
-ms.date: 03/25/2021
+ms.date: 02/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: a3d21d55d86950953611967bb66712312eb42b4b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 85e1f4f93ac0e99ce6634dfc8fceab0c9a14885e
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355945"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376746"
 ---
 # <a name="user-permissions"></a>사용자 권한
 
@@ -48,7 +48,7 @@ ms.locfileid: "8355945"
 - **보강** 페이지에서 구성을 관리하고 고객 프로필을 보강합니다(자사 보강만 해당).
 - 기여자와 공유된 연결을 기반으로 내보내기를 관리하고 만듭니다. [관리자가 기여자가 내보내기에 연결을 사용하도록 허용하는 방법에 대해 자세히 알아보세요.](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-## <a name="administrator"></a>관리자
+## <a name="admin"></a>관리자
 
 - 참가자가 사용할 수 있는 모든 권한입니다.
 - 시스템 프로세스의 작업 언어 및 새로 고침 일정을 포함하여 **시스템** 페이지에서 설정을 변경합니다.
@@ -60,6 +60,12 @@ ms.locfileid: "8355945"
 - **고객 카드 추가 기능** 을 설치하고 사용합니다.
 - **Power Apps 커넥터** 를 추가하고 사용합니다.
 - [Customer Insights API](apis.md)의 사용을 설정합니다.
+- 다른 관리자에게 [환경 소유권을 할당](manage-environments.md#change-the-owner-of-an-environment)합니다.
+
+## <a name="admin-owner"></a>관리자(담당자)
+
+- 관리자가 사용할 수 있는 모든 권한입니다.
+- 환경을 [초기화 및 삭제](manage-environments.md#reset-an-existing-environment)합니다.
 
 ## <a name="assign-roles-and-permissions"></a>역할 및 사용 권한 할당
 

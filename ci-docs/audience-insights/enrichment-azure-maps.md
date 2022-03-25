@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: cb1c0778a398ef6d338ce6cf9e199eae0c344a5c
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 2cc44f7b453d2aca328c397b14787c8a02c5e490
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8226457"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376654"
 ---
 # <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>Azure Maps를 통한 고객 프로필 보강(프리뷰)
 
@@ -25,7 +25,7 @@ Azure Maps 데이터 보강을 구성하려면 다음 필수 구성 요소가 �
 
 - 활성 Azure Maps 구독이 있어야 합니다. 구독을 받으려면 [가입 또는 무료 평가판 받기](https://azure.microsoft.com/services/azure-maps/)를 수행하면 됩니다.
 
-- Azure Maps [연결](connections.md)을 사용할 수 있거나 *또는* [관리자](permissions.md#administrator) 사용 권한과 활성 Azure Maps API 키가 있어야 합니다.
+- Azure Maps [연결](connections.md)을 사용할 수 있거나 *또는* [관리자](permissions.md#admin) 사용 권한과 활성 Azure Maps API 키가 있어야 합니다.
 
 ## <a name="configure-the-enrichment"></a>보강 구성
 

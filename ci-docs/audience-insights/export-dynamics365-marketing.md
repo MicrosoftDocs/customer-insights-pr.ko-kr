@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: d3254bf13b843fe8e1b6e6db49dd6ee1dc22290c
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 0bd2bfa7402ed19cb92ff1f35208b150cfec48c3
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353919"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455840"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>Dynamics 365 Marketing에 세그먼트 사용(프리뷰)
 
@@ -28,7 +28,7 @@ Dataverse 조직에서 실시간 고객 여정 오케스트레이션을 위해 D
 
 ## <a name="prerequisite-for-a-connection"></a>연결을 위한 전제 조건
 
-- Customer Insights에서 마케팅으로 세그먼트를 내보내려면 먼저 Dynamics 365 Marketing에 연락처 레코드가 있어야 합니다. [Microsoft Dataverse를 사용하는 Dynamics 365 Marketing](connect-power-query.md)에서 연락처를 수집하는 방법에 대해 자세히 알아보십시오.
+- Customer Insights에서 마케팅으로 세그먼트를 내보내려면 먼저 Dynamics 365 Marketing에 연락처 레코드가 있어야 합니다. [Microsoft Dataverse를 사용하는 Dynamics 365 Marketing](connect-dataverse-managed-lake.md)에서 연락처를 수집하는 방법에 대해 자세히 알아보십시오.
 
   > [!NOTE]
   > 대상 그룹 인사이트에서 마케팅으로 세그먼트를 내보내면 마케팅 인스턴스에 새 연락처 레코드가 생성되지 않습니다. 마케팅의 연락처 레코드는 대상 그룹 인사이트에서 수집되고 데이터 원본으로 사용되어야 합니다. 또한 세그먼트를 내보내기 전에 고객 ID를 연락처 ID에 매핑하려면 통합 고객 엔터티에 포함되어야 합니다.

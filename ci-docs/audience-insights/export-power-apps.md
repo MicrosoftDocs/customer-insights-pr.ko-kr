@@ -8,12 +8,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: ae2a3b7c05e9ed860da31853c47af2aec8634e7a
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 18cc32a169e79794d2d3203d462620ab41efaafe
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229039"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455960"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Microsoft Power Apps 커넥터(미리 보기)
 
@@ -38,6 +38,8 @@ Customer Insights를 데이터 연결로 추가한 후 Power Apps에서 다음 �
 ### <a name="retrievable-entities"></a>검색 가능한 엔터티
 
 Power Apps 커넥터를 통해서만 **Customer**, **UnifiedActivity**, **Segments** 및 **ContactProfile** 엔터티를 검색할 수 있습니다. ContactProfile은 비즈니스 계정의 대상 그룹 인사이트 인스턴스에서만 사용할 수 있습니다. 다른 엔터티는 기본 커넥터가 Power Automate 내의 트리거를 통해 지원하기 때문에 표시됩니다.
+
+60초당 최대 100개의 호출을 할 수 있습니다. $skip 매개 변수를 사용하여 API 엔드포인트를 여러 번 호출할 수 있습니다. [$skip 매개 변수에 대해 자세히 알아보세요](/connectors/customerinsights/#get-items-from-an-entity).
 
 ### <a name="delegation"></a>위임
 

@@ -8,16 +8,14 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 667a984f1a2287456f4e6324eafe628fba957bf5
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 9195770255bd798636b9532d6e1ca928345b3708
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8232666"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376470"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 대상 그룹 인사이트의 새로운 기능
-
-
 
 최신 업데이트를 발표하게 된 것을 기쁘게 생각합니다! 이 문서는 공개 미리 보기 기능, 일반 가용성 향상 및 기능 업데이트를 요약합니다. 장기적인 기능 계획을 보려면 [Dynamics 365 및 Power Platform 릴리스 계획](/dynamics365/release-plans/)을 살펴보십시오.
 
@@ -26,6 +24,62 @@ ms.locfileid: "8232666"
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하세요.
 
+
+## <a name="february-2022-updates"></a>2022년 2월 업데이트
+
+2022년 2월 업데이트에는 새로운 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="general-availability-for-prediction-models"></a>예측 모델의 일반 공급
+
+**구독 이탈**, **거래 이탈**, **고객평생가치(CLV)** 를 포함한 즉시 사용 가능한 예측 모델이 Customer Insights의 일부로 일반 공급됩니다. 
+
+자세한 내용은 [예측 개요](predictions-overview.md)를 참조하세요.
+
+### <a name="new-data-source-integration-with-azure-synapse-analytics-preview"></a>새로운 데이터 원본: Azure Synapse Analytics 통합(프리뷰)
+
+Azure Synapse Analytics는 데이터 웨어하우스 및 빅 데이터 시스템 전반에 걸쳐 인사이트를 확보하는 시간을 단축하는 엔터프라이즈 분석 서비스입니다.
+
+조직에서 이미 Azure Synapse Analytics의 고급 분석 기능을 사용하고 출력을 Data Lake 데이터베이스에 저장하는 경우 해당 데이터를 Customer Insights에 쉽게 수집할 수 있습니다. 자세한 내용은 [Azure Synapse 데이터 원본 연결(프리뷰)](connect-synapse.md)을 참조하세요.
+
+### <a name="liveramp-enrichment-preview"></a>LiveRamp 보강(프리뷰)
+
+LiveRamp는 결정적 오프라인 ID 확인 및 고객 데이터 통합을 제공합니다. 고객 데이터의 개인 식별자를 AbiliTec ID 그래프에 매핑하고 AbiliTec ID를 받을 수 있습니다. 그런 다음 이 ID를 사용하여 고객 데이터를 더 잘 통합할 수 있습니다.
+
+자세한 내용은 [LiveRamp의 ID 데이터로 고객 프로필 보강(프리뷰)](enrichment-liveramp.md)을 참조하세요.
+
+### <a name="enrichment-for-data-sources-preview"></a>데이터 원본 보강(프리뷰)
+
+Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 데이터 통합 전에 고객 데이터를 강화하십시오. 데이터 원본 보강은 데이터를 통합할 경우 더 나은 결과를 얻을 수 있는 더 높은 데이터 완전성과 품질을 확보하는 데 도움이 됩니다.
+
+자세한 내용은 [데이터 원본 보강(프리뷰)](data-sources-enrichment.md)을 참조하세요.
+
+### <a name="change-owner-of-environment"></a>환경 담당자 변경
+
+여러 사용자가 Customer Insights에서 관리자 권한을 가질 수 있지만 한 명의 사용자만 환경 담당자입니다. 개선된 환경을 통해 환경 담당자를 변경하고 이전 담당자가 조직을 떠난 경우 소유권을 주장할 수 있습니다. 
+
+자세한 내용은 [환경 담당자 변경](manage-environments.md#change-the-owner-of-an-environment)을 참조하세요.
+
+### <a name="data-preparation-process-lists-corruption-reason-for-corrupted-records"></a>데이터 준비 프로세스는 손상된 레코드의 손상 이유를 나열합니다.
+
+데이터 준비 프로세스는 쉬운 식별을 위해 이제 개별 레코드 수준에서 손상된 데이터가 있는 모든 필드에 대해 손상 이유를 표시합니다. 
+
+자세한 정보는 [손상된 데이터 원본](entities.md#corrupted-data-sources)을 참조하세요.
+
+### <a name="end-of-preview-for-reporting-features-in-the-engagement-insights-capability"></a>참여 인사이트 기능의 보고 기능에 대한 프리뷰 종료
+
+Dynamics 365 Customer Insights 참여 인사이트 기능 프리뷰가 2022년 2월 15일에 종료됩니다.  
+이 변경 사항은 Customer Insights 평가판 경험에 더 이상 유입 경로 생성 기능이나 기타 보고 기능이 포함되지 않음을 의미합니다.
+
+Microsoft CDP(고객 데이터 플랫폼)인 [Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/)의 다른 많은 기능을 탐색하고 평가해 보시기 바랍니다.    
+ 
+전환 기간 동안 기존 프리뷰 참가자는 다음과 같은 일부 미리 보기 기능에 계속 액세스할 수 있습니다.
+
+- 웹 사이트 또는 모바일 앱을 계측하기 위한 코드 가져오기 
+- 이벤트 및 이벤트 속성 보기 
+- 수집 및 정제된 이벤트로 통합 프로필을 향상하여 고객 데이터의 가치를 최대한 활용
+  
+전환 기간 동안 캡처된 이벤트는 연결된 Data Lake로 계속 스트리밍됩니다. 이 기능이 꺼지면 참여 인사이트와 대상 그룹 인사이트 간의 데이터 공유가 중지되고 연결된 스토리지로 새 이벤트가 전송되지 않습니다.
+기능 프리뷰 종료에 대한 질문이 있는 경우 Microsoft 계정 팀에 직접 문의하세요. 계정 팀에서 향후 출시에 대한 최신 정보를 제공합니다. 
 
 ## <a name="january-2022-updates"></a>2022년 1월 업데이트
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: e4b9a65eb50f75e0243fabfc10b501cf7acf4490
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 042558af801a1d1fc365939d9aa42c09b98b2679
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229646"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376608"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>사용자 지정 데이터로 고객 프로필 보강(미리 보기)
 
@@ -25,7 +25,7 @@ SFTP 사용자 지정 가져오기를 구성하려면 다음 전제 조건이 �
 
 - SFTP 호스트에서 가져올 파일의 이름과 위치(경로)가 있습니다.
 - 가져올 데이터의 [Common Data Model 스키마](/common-data-model/)를 지정하는 *model.json* 파일이 있음. 이 파일은 가져올 파일과 동일한 디렉터리에 있어야 합니다.
-- 관리자가 SFTP 연결을 이미 구성 *했거나* 귀하가 [관리자](permissions.md#administrator) 권한을 가지고 있음. 데이터를 가져올 SFTP 위치에 대한 사용자 자격 증명, URL 및 포트 번호.
+- 관리자가 SFTP 연결을 이미 구성 *했거나* 귀하가 [관리자](permissions.md#admin) 권한을 가지고 있음. 데이터를 가져올 SFTP 위치에 대한 사용자 자격 증명, URL 및 포트 번호.
 
 
 ## <a name="configure-the-import"></a>가져오기 구성

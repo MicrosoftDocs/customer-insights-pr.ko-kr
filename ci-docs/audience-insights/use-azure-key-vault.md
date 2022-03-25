@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 5b22c1464b3f089551f485f98d6d93840ff77136
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 418575f724090628da8bd01e2569a4cb9e646337
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355899"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376516"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>고유한 Azure Key Vault 가져오기(미리 보기)
 
@@ -31,7 +31,7 @@ ms.locfileid: "8355899"
 
 - 활성 Azure 구독이 있어야 합니다.
 
-- 귀하는 대상 그룹 인사이트에서 [관리자](permissions.md#administrator) 역할을 갖고 있습니다. [대상 그룹 인사이트의 사용자 권한](permissions.md#assign-roles-and-permissions)에 대해 자세히 알아보세요.
+- 귀하는 대상 그룹 인사이트에서 [관리자](permissions.md#admin) 역할을 갖고 있습니다. [대상 그룹 인사이트의 사용자 권한](permissions.md#assign-roles-and-permissions)에 대해 자세히 알아보세요.
 
 - 키 자격 증명 모음 또는 키 자격 증명 모음이 속한 리소스 그룹에 대한 [기여자](/azure/role-based-access-control/built-in-roles#contributor) 및 [사용자 액세스 관리자](/azure/role-based-access-control/built-in-roles#user-access-administrator) 역할이 있습니다. 자세한 내용은 [Azure Portal을 사용하여 Azure 역할 할당 추가 또는 제거](/azure/role-based-access-control/role-assignments-portal)로 이동하세요. 키 자격 증명 모음에 대한 사용자 액세스 관리자 역할이 없는 경우 Dynamics 365 Customer Insights에 대한 Azure 서비스 주체에 대한 역할 기반 액세스 제어 권한을 별도로 설정해야 합니다. 연결해야 하는 키 자격 증명 모음에 대해 [Azure 서비스 주체](connect-service-principal.md)를 사용하는 단계를 따릅니다.
 

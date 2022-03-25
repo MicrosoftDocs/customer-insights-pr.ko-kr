@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 938a9de83fd8f5ff0c9ae815d626cdfa35228aba
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 47239bd7f0c89742cf9c673bb2ebe4c41d853233
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228482"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376838"
 ---
 # <a name="enrich-customer-profiles-with-engagement-data-preview"></a>참여 데이터로 고객 프로필 보강(프리뷰)
 
@@ -28,7 +28,7 @@ Microsoft Office 365의 데이터를 사용하여 Office 365 앱을 통해 참�
 - 활성 Office 365 클라우드 라이선스가 있어야 합니다.
 - [비즈니스 계정](work-with-business-accounts.md)을 기반으로 [통합된 고객 프로필](customer-profiles.md)이 있습니다.
 - Customer Insights 환경에는 [첨부된 Microsoft Dataverse 조직](create-environment.md#step-3-connect-to-microsoft-dataverse)이 있어야 합니다.
-- [관리자](permissions.md#administrator) 권한이 있어야 합니다.
+- [관리자](permissions.md#admin) 권한이 있어야 합니다.
 - Office 365 테넌트 관리자로부터 Dynamics 365 애플리케이션 내에서 **조직에 대한 인사이트** 를 제공하기 위해 Office 365 데이터를 사용하는 데 동의를 받았거나 받을 수 있어야 합니다.
 
 ## <a name="configure-the-enrichment"></a>보강 구성

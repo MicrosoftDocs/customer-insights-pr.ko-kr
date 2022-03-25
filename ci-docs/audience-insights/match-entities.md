@@ -13,12 +13,12 @@ searchScope:
 - ci-merge
 - ci-map
 - customerInsights
-ms.openlocfilehash: 49729a13d26885c30039f9fa426eaee92c172424
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: ab4ab0dba1bd91b1893cd4b16b8d51381d5b6ef8
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355161"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376930"
 ---
 # <a name="match-entities"></a>엔터티 매칭
 
@@ -180,7 +180,19 @@ ms.locfileid: "8355161"
   - Deduplication_WinnerId: 이 필드에는 식별된 그룹 또는 클러스터의 승자 ID가 포함됩니다. Deduplication_WinnerId가 레코드의 기본 키 값과 같으면 레코드가 승자 레코드라는 의미입니다.
 - 중복 제거 규칙을 정의하는 데 사용되는 필드입니다.
 - 적용된 중복 제거 규칙과 일치 알고리즘에서 반환된 점수를 나타내는 규칙 및 점수 필드입니다.
-   
+ 
+## <a name="include-enriched-entities-preview"></a>보강된 엔터티 포함(프리뷰)
+
+데이터 원본 수준에서 엔터티를 보강한 경우 일치 프로세스를 실행하기 전에 엔터티를 선택합니다. 보강된 엔터티는 통합 결과를 향상시킬 수 있습니다. 자세한 내용은 [데이터 원본 보강](data-sources-enrichment.md)을 참조하세요. 
+
+보강된 엔터티에는 원래 데이터 원본 필드와 보강된 필드가 포함됩니다. 따라서 보강된 엔터티로 작업하기로 선택한 경우 기존 구성은 영향을 받지 않습니다. 그러나 보강된 필드를 대신 사용하려면 일치 규칙을 업데이트해야 할 수도 있습니다.
+
+1. **데이터** > **통합** > **일치** 로 이동하고 페이지 상단에서 **보강된 엔터티 사용** 을 선택합니다.
+
+1. **보강된 엔터티 사용** 창에서 보강된 엔터티를 하나 이상 선택합니다.
+
+1. **완료** 를 선택합니다. 원본 엔터티가 사용되는 위치(예: 일치 순서 또는 규칙)는 자동으로 보강된 엔터티로 변경됩니다.
+  
 ## <a name="run-the-match-process"></a>일치 프로세스 실행
 
 엔터티 간 일치 및 중복 제거 규칙을 포함하여 구성된 일치 규칙으로 일치 프로세스를 실행할 수 있습니다. 
