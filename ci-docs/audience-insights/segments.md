@@ -1,7 +1,7 @@
 ---
 title: 대상 그룹 인사이트의 세그먼트
 description: 세그먼트 및 세그먼트 생성 및 관리 방법에 대한 개요입니다.
-ms.date: 11/01/2021
+ms.date: 03/30/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: c58f79c2beda1083d19bd36d94549ff1a46b096e
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 340a7b7326f5b4a8cbde8683b8d41cb53dc557b0
+ms.sourcegitcommit: 0bd5f53e4e7e37359afd087ee16b779a6b3a9183
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355991"
+ms.lasthandoff: 03/30/2022
+ms.locfileid: "8508574"
 ---
 # <a name="segments-overview"></a>세그먼트 개요
 
@@ -68,7 +68,9 @@ ms.locfileid: "8355991"
 
 ## <a name="refresh-segments"></a>세그먼트 새로 고침
 
-**세그먼트** 페이지에서 **모두 새로 고침** 을 선택하여 모든 세그먼트를 한 번에 새로 고치거나 세그먼트를 선택할 때 하나 이상의 세그먼트를 새로 고치고 옵션에서 **새로 고침** 을 선택할 수 있습니다. 또는 **관리자** > **시스템** > **일정** 에서 반복 새로 고침을 구성할 수 있습니다.
+**세그먼트** 페이지에서 **모두 새로 고침** 을 선택하여 모든 세그먼트를 한 번에 새로 고치거나 세그먼트를 선택할 때 하나 이상의 세그먼트를 새로 고치고 옵션에서 **새로 고침** 을 선택할 수 있습니다. 또는 **관리자** > **시스템** > **일정** 에서 반복 새로 고침을 구성할 수 있습니다. 반복 새로 고침이 구성된 경우 다음 규칙이 적용됩니다.
+- **동적** 또는 **확장** 유형의 모든 세그먼트는 설정된 케이던스에서 자동으로 새로 고쳐집니다. 새로 고침이 완료되면 **상태** 가 세그먼트 새로 고침에 문제가 있었는지 나타냅니다. **마지막 새로 고침** 은 마지막으로 성공한 새로 고침의 타임스탬프를 보여줍니다. 오류가 발생하면 오류를 선택하여 발생한 상황에 대한 세부 정보를 확인합니다.
+- 유형이 **정적** 인 세그먼트는 자동으로 새로 고침되지 *않습니다*. **마지막 새로 고침** 은 정적 세그먼트가 수동으로 실행되거나 새로 고쳐진 마지막 시간의 타임스탬프를 보여줍니다.
 
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: 실시간 데이터 수집 및 제한
+title: 실시간 데이터 수집(프리뷰)
 description: 대상 그룹 인사이트의 실시간 기능에 대한 일반 정보입니다.
 ms.date: 10/27/2020
 ms.reviewer: mhart
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2fe5279eee1b3b30f5bc21464c85fe5f86d342a0
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 138704445d52df3336af6af60420f0bd0ee0c639
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355483"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464034"
 ---
 # <a name="real-time-data-ingestion-preview"></a>실시간 데이터 수집(미리 보기)
 

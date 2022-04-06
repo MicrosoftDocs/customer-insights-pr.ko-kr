@@ -1,19 +1,19 @@
 ---
 title: 지원되는 예측 시나리오에 대한 개요
 description: Dynamics 365 Customer Insights 애플리케이션에서 사용하는 예측 시나리오 및 옵션입니다.
-ms.date: 12/21/2021
+ms.date: 03/24/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: c692785c7d81ab660ba2e07411e986c67c1a5d0a
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 11b0efeecf8bea893272e67d29b1c6622771110c
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228252"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487543"
 ---
 # <a name="predictions-overview"></a>예측 개요
 
@@ -36,6 +36,11 @@ Dynamics 365 Customer Insights에는 AI 및 기계 학습을 활용하여 데이
 - [트랜잭션 이탈](predict-transactional-churn.md): 고객이 특정 시간 프레임에서 귀하의 제품이나 서비스를 더 이상 구매하지 않을 것인지 예측합니다.
 
 ---
+
+> [!TIP]
+> 업데이트된 데이터로 즉시 사용 가능한 모델을 정기적으로 새로 고쳐 비즈니스 사용 사례를 정확하게 알릴 수 있도록 하는 것이 좋습니다. 시스템이 새 데이터 원본 또는 업데이트된 데이터 원본을 수집할 때 데이터가 임시로 새로 고쳐집니다. 그러나 모델은 이 경우에만 다시 점수를 매기고 기존 훈련 데이터를 계속 사용합니다.
+> 
+> 구성 환경에서 모델 재훈련 일정을 설정하여 **업데이트 일정** 을 구성할 수 있습니다. 모델은 언제든지 변경할 수 있는 이 일정에 따라 재훈련하고 다시 채점합니다.
 
 
 ## <a name="azure-machine-learning-integration"></a>Azure 기계 학습 통합

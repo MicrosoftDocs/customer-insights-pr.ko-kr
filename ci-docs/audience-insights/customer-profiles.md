@@ -14,18 +14,20 @@ searchScope:
 - ci-activities
 - ci-activities-wizard
 - customerInsights
-ms.openlocfilehash: 3a17716508a14020c56640c7d68f300a9d721af4
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 074d84eff65d52b083fff6c161282d4fafa1af85
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354889"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523735"
 ---
 # <a name="customer-profiles"></a>고객 프로필
 
 **고객** 페이지에는 통합된 고객 프로필이 결합된 보기가 표시됩니다. [통합 고객 엔터티를 생성](data-unification.md)하면 고객 프로필을 사용할 수 있습니다. 이 페이지에서 고객을 검색하고 해당 검색에 대한 인덱스를 정의할 수 있습니다.
 
-고객은 개인 또는 조직이 될 수 있습니다. 각 고객 프로필은 타일로 표시됩니다. 더 많은 레코드를 얻으려면 페이지 매김 컨트롤을 사용하세요. 카드는 **검색 및 필터 인덱스** 에 정의된 대로 *고객* 엔터티의 필드를 표시합니다. 타일을 선택하면 [고객 세부 정보 페이지](customer-profiles.md#customer-details-page)라는 전용 페이지에서 선택한 고객에 대한 데이터를 볼 수 있습니다.
+고객은 개인 또는 조직이 될 수 있습니다. 각 고객 프로필은 타일로 표시됩니다. 더 많은 레코드를 얻으려면 페이지 매김 컨트롤을 사용하세요. 카드는 **검색 및 필터 인덱스** 에 정의된 대로 *고객* 엔터티의 필드를 표시합니다. 각 카드 내의 필드 순서는 시스템에서 선택합니다.
+
+타일을 선택하면 [고객 세부 정보 페이지](customer-profiles.md#customer-details-page)라는 전용 페이지에서 선택한 고객에 대한 데이터를 볼 수 있습니다.
 
 > [!div class="mx-imgBorder"] 
 > ![결과 타일을 보여주는 고객 페이지](media/customers-page-result-tiles-B2C.png "결과 타일을 보여주는 고객 페이지")

@@ -24,8 +24,6 @@
       href: trial-signup.md
     - name: 평가판 FAQ
       href: trial-FAQ.md
-- name: 유료 라이선스로 시작
-  href: paid-license.md
 - name: 환경 액세스
   href: 'https://home.ci.ai.dynamics.com/'
 - name: 대상 그룹 인사이트
@@ -40,12 +38,14 @@
       items:
         - name: 빠른 시작 가이드
           href: audience-insights/get-started.md
+        - name: 유료 라이선스로 시작
+          href: paid-license.md
         - name: 새 환경 만들기
           href: audience-insights/create-environment.md
         - name: 대상 그룹 인사이트 살펴보기
           href: audience-insights/home.md
-    - name: 비즈니스 계정과 연동
-      href: audience-insights/work-with-business-accounts.md
+        - name: 비즈니스 계정과 연동
+          href: audience-insights/work-with-business-accounts.md
     - name: 데이터 원본
       items:
         - name: 데이터 원본 개요
@@ -64,8 +64,6 @@
           href: audience-insights/incremental-refresh-data-sources.md
         - name: 실시간 데이터 수집
           href: audience-insights/real-time-data-ingestion.md
-        - name: 엔터티 및 데이터 집합 이해
-          href: audience-insights/entities.md
     - name: 데이터 통합
       items:
         - name: 데이터 통합 개요
@@ -76,16 +74,6 @@
           href: audience-insights/match-entities.md
         - name: 엔터티 병합
           href: audience-insights/merge-entities.md
-        - name: 통합 고객 프로필 검토
-          href: audience-insights/customer-profiles.md
-        - name: 통합 고객 프로필 필터링
-          href: audience-insights/search-filter-index.md
-        - name: 관계 및 연결된 엔터티 구축
-          href: audience-insights/relationships.md
-        - name: 고객 활동 나열
-          href: audience-insights/activities.md
-        - name: 의미 체계 매핑 정의
-          href: audience-insights/semantic-mappings.md
     - name: 데이터 보강
       items:
         - name: 고객 프로필 보강
@@ -110,6 +98,14 @@
           href: audience-insights/enrichment-office.md
         - name: SFTP 사용자 지정 가져오기로 보강
           href: audience-insights/enrichment-SFTP-custom-import.md
+    - name: 통합 프로필
+      items:
+        - name: 통합 고객 프로필 검토
+          href: audience-insights/customer-profiles.md
+        - name: 통합 고객 프로필 필터링
+          href: audience-insights/search-filter-index.md
+        - name: 고객 활동 정의
+          href: audience-insights/activities.md
     - name: 세그먼트
       items:
         - name: 세그먼트 개요
@@ -190,6 +186,8 @@
               href: audience-insights/export-adobe-campaign-standard.md
             - name: Adobe Experience Platform
               href: audience-insights/export-adobe-experience-platform.md
+            - name: Braze
+              href: audience-insights/export-braze.md
             - name: Campaign Monitor
               href: audience-insights/export-campaign-monitor.md
             - name: Constant Contact
@@ -198,12 +196,14 @@
               href: audience-insights/export-dotdigital.md
             - name: Dynamics 365 Marketing
               href: audience-insights/export-dynamics365-marketing.md
-            - name: Dynamics 365 Sales
+            - name: Dynamics 365 for Sales
               href: audience-insights/export-dynamics365-sales.md
             - name: Facebook 광고 관리자
               href: audience-insights/export-facebook.md
             - name: Google 광고
               href: audience-insights/export-google-ads.md
+            - name: Iterable
+              href: audience-insights/export-iterable.md
             - name: Klaviyo
               href: audience-insights/export-klaviyo.md
             - name: LinkedIn Ads
@@ -242,6 +242,18 @@
               href: audience-insights/export-power-automate.md
             - name: Power BI
               href: audience-insights/export-power-bi.md
+    - name: 엔터티
+      items:
+        - name: 엔터티 이해
+          href: audience-insights/entities.md
+        - name: Common Data Model의 엔터티 스키마 검토
+          href: audience-insights/entity-schemas.md
+        - name: Dataverse의 Customer Insights 데이터
+          href: audience-insights/customer-insights-dataverse.md
+        - name: 관계 및 연결된 엔터티 구축
+          href: audience-insights/relationships.md
+        - name: 의미 체계 매핑 정의
+          href: audience-insights/semantic-mappings.md
     - name: 관리
       items:
         - name: 시스템 구성 설정
@@ -252,15 +264,17 @@
           href: audience-insights/connections.md
         - name: 다중 환경 관리
           href: audience-insights/manage-environments.md
-        - name: 보안
-          items:
-            - name: Key Vault 직접 가져오기
-              href: audience-insights/use-azure-key-vault.md
-            - name: 서비스 주체를 사용하여 ADLS 스토리지 계정에 연결
-              href: audience-insights/connect-service-principal.md
-            - name: 진단 로그 내보내기
-              href: audience-insights/diagnostics.md
-    - name: 확장성
+        - name: Key Vault 직접 가져오기
+          href: audience-insights/use-azure-key-vault.md
+        - name: 서비스 주체를 사용하여 스토리지 계정에 연결
+          href: audience-insights/connect-service-principal.md
+        - name: 진단 로그 내보내기
+          href: audience-insights/diagnostics.md
+        - name: 서비스 한도
+          href: service-limits.md
+        - name: DSR 권한 및 요청
+          href: dsr-rights-requests.md
+    - name: API
       items:
         - name: Common Data Model의 엔터티 스키마 검토
           href: audience-insights/entity-schemas.md
@@ -306,9 +320,5 @@
           href: consent-management/predictions-consent-data.md
 - name: 참여 인사이트(프리뷰)
   href: engagement-insights/overview.md
-- name: 서비스 한도
-  href: service-limits.md
-- name: DSR 권한 및 요청
-  href: dsr-rights-requests.md
 - name: 제품 지원
   href: /power-platform/admin/get-help-support

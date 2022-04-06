@@ -1,7 +1,7 @@
 ---
 title: 데이터를 수집할 데이터 원본 사용
 description: 다양한 소스에서 데이터를 가져 오는 방법을 알아 봅니다.
-ms.date: 12/06/2021
+ms.date: 03/18/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: adkuppa
@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: e7bcf82c4fe3625ef791ec2b0a7651be0356a006
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 9cf97c3e30d7501ba1f188a0e25a1a103299aa7f
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354057"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464082"
 ---
 # <a name="data-sources-overview"></a>데이터 원본 개요
 
@@ -47,7 +47,18 @@ Dataverse 환경을 Customer Insights와 연결 후 생성되는 데이터 원�
 
 기존 Power BI의 데이터 게이트웨이 또는 Power Apps 환경이 표시되고 Customer Insights에서 재사용할 수 있습니다. 데이터 소스 페이지에는 온-프레미스 데이터 게이트웨이를 보고 구성할 수 있는 Microsoft Power Platform 환경에 대한 링크가 표시됩니다.
 
+> [!IMPORTANT]
+> 게이트웨이가 최신 버전으로 업데이트되었는지 확인하십시오. 게이트웨이 화면에 표시되는 프롬프트에서 직접 업데이트를 설치하고 게이트웨이를 재구성하거나 [최신 버전 다운로드](https://powerapps.microsoft.com/downloads/)를 수행할 수 있습니다. 최신 게이트웨이 버전을 사용하지 않는 경우 **키워드는 지원되지 않습니다: 구성 속성. 매개 변수 이름: 키워드** 와 같은 오류 메시지와 함께 데이터 흐름 새로 고침이 실패합니다.
+
 ## <a name="review-ingested-data"></a>수집 된 데이터 검토
+환경에 Power Platform 데이터 흐름이 포함된 경우 **데이터 원본** 페이지에는 세 개의 섹션이 나열됩니다. 
+- **공유**: 모든 Customer Insights 관리자가 관리할 수 있는 데이터 원본입니다. Power BI 데이터 흐름, 자체 스토리지 계정 및 Dataverse 관리형 데이터 레이크에 연결은 공유형 데이터 원본의 예입니다.
+- **내가 관리**: Power Platform 데이터 흐름이 생성되고 사용자만 관리할 수 있습니다. 다른 Customer Insights 관리자는 이러한 데이터 흐름을 볼 수만 있고 편집, 새로 고침 또는 삭제할 수 없습니다.
+- **다른 사람이 관리함**: 다른 관리자가 만든 Power Platform 데이터 흐름입니다. 보는 것만 가능합니다. 도움이 필요하면 연락할 데이터 흐름의 담당자를 나열합니다.
+> [!NOTE]
+> 모든 엔터티는 다른 사용자가 보고 사용할 수 있습니다. 사용자 컨텍스트는 데이터 원본에만 적용되며 이러한 데이터 흐름으로 인해 생성되는 엔터티에는 적용되지 않습니다.
+
+Power Platform 데이터 흐름이 사용되지 않으면 그룹이나 섹션이 표시되지 않습니다. **데이터 원본** 페이지에는 모든 데이터 원본의 목록만 포함됩니다.
 
 수집 된 각 데이터 원본의 이름, 해당 상태 및 해당 소스에 대한 데이터가 마지막으로 새로 고쳐진 시간이 표시됩니다. 모든 열을 기준으로 데이터 원본 목록을 정렬할 수 있습니다.
 

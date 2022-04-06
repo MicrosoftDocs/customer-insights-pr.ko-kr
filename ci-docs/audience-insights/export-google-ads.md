@@ -1,42 +1,37 @@
 ---
 title: Google 광고로 Customer Insights 데이터 내보내기
 description: 연결을 구성하고 Google Ads로 내보내는 방법을 알아봅니다.
-ms.date: 09/27/2021
+ms.date: 03/31/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 28e2b35c5a47a025b8cdcccdb3f61c79878bf056
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 7a85237f7aff564d6b540b2c11553a52f875fac4
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8227018"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523808"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Google Ads로 세그먼트 내보내기(프리뷰)
 
 통합 고객 프로필의 세그먼트를 Google Ads 대상 그룹 목록으로 내보내고 이를 사용하여 Google 검색, Gmail, YouTube 및 Google 디스플레이 네트워크에서 광고합니다. 
 
-> [!IMPORTANT]
-> 현재 승인된 Google Ads 개발자 토큰이 이미 있는 경우에만 새 연결을 만들고 Google Ads로 데이터를 내보낼 수 있습니다. 정책 변경으로 인해 Google Ads 내보내기가 곧 업데이트되고 경험의 연속성을 보장하고 Google Ads로 내보내기를 단순화하기 위해 개발자 토큰이 필요하지 않은 내보내기 옵션이 제공됩니다. 새 내보내기 옵션으로 쉽게 전환할 수 있도록 Google Ads에 대한 연결을 더 이상 설정하지 않는 것이 좋습니다.
 
 ## <a name="prerequisites-for-connection"></a>연결을 위한 전제 조건
 
 -   [Google 광고 계정](https://ads.google.com/) 및 해당 관리자 자격 증명이 있어야 합니다.
--   [승인된 Google Ads 개발자 토큰](https://developers.google.com/google-ads/api/docs/first-call/dev-token)이 있습니다. 
 -   [고객 일치 정책](https://support.google.com/adspolicy/answer/6299717) 요구 사항을 충족합니다.
 -   [리마케팅 목록 크기](https://support.google.com/google-ads/answer/7558048) 요구 사항을 충족합니다.
--   Google 광고에 기존 대상 그룹과 해당 ID가 있습니다. 자세한 내용은 [Google 광고 대상 그룹](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)을 참조하세요.
 -   [구성된 세그먼트](segments.md)가 있어야 합니다.
--   내보낸 세그먼트의 통합 고객 프로필에는 이메일 주소, 이름 및 성을 나타내는 필드가 포함됩니다.
+-   내보낸 세그먼트의 통합 고객 프로필에는 이메일 주소, 전화, 모바일 광고주 ID, 타사 사용자 ID 또는 주소를 나타내는 필드가 있습니다.
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-- Google Ads로 내보낼 때마다 최대 100만 개의 고객 프로필이 생성됩니다.
 - Google 광고로 내보내기는 세그먼트로 제한됩니다.
-- 공급자 측의 제한으로 인해 총 100만 개의 고객 프로필이 포함된 세그먼트를 내보내는 데 최대 5분이 걸릴 수 있습니다. 
+- 공급자 측의 제한으로 인해 총 100만 개의 고객 프로필이 포함된 세그먼트를 내보내는 데 최대 30분이 걸릴 수 있습니다. 
 - Google 광고에서 일치하는 데 최대 48시간이 걸릴 수 있습니다.
 
 ## <a name="set-up-connection-to-google-ads"></a>Google Ads 연결 설정
@@ -50,8 +45,6 @@ ms.locfileid: "8227018"
 1. 이 연결을 사용할 수 있는 사용자를 선택합니다. 아무 조치도 취하지 않으면 기본값은 관리자입니다. 자세한 내용은 [기여자가 내보내기에 연결을 사용하도록 허용](connections.md#allow-contributors-to-use-a-connection-for-exports)을 확인하세요.
 
 1. **[Google 광고 고객 ID](https://support.google.com/google-ads/answer/1704344)** 를 입력합니다.
-
-1. **[Google 광고에서 승인한 개발자 토큰](https://developers.google.com/google-ads/api/docs/first-call/dev-token)** 을 입력합니다.
 
 1. **동의** 를 선택해 **데이터 프라이버시 및 규정 준수** 를 확인합니다.
 
@@ -71,11 +64,11 @@ ms.locfileid: "8227018"
 
 1. **내보내기 연결** 필드의 Google Ads 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 이 유형의 연결을 사용할 수 없습니다.
 
-1. **[Google 광고 대상 그룹 ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** 를 입력하고 **연결** 을 선택하여 Google 광고 연결을 초기화합니다.
+1. 새 대상 그룹를 만들려면 Google 대상 그룹 ID 필드를 비워 둡니다. Google Ads 계정에 새 대상 그룹이 자동으로 생성되고 내보낸 세그먼트의 이름이 사용됩니다. 기존 Google Ads 대상 그룹을 업데이트하려면 [Google Ads 대상 그룹 ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)를 입력하십시오.
 
-1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다.
+1. **데이터 매칭** 섹션에서 내보낼 데이터 필드를 하나 이상 선택하고 Customer Insights에서 해당 데이터 필드를 나타내는 필드를 선택합니다.
 
-1. 내보낼 세그먼트를 선택합니다. 총 100만 개의 고객 프로필을 Google 광고로 내보낼 수 있습니다.
+1. 내보낼 세그먼트를 선택합니다. 
 
 내보내기를 저장해도 내보내기가 즉시 실행되지는 않습니다.
 

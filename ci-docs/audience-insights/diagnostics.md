@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
-ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8376424"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523677"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Azure Monitor를 사용하여 Dynamics 365 Customer Insights에서 로그 전달(프리뷰)
 
@@ -230,7 +230,7 @@ API 이벤트와 워크플로 이벤트는 구조가 같습니다. 다른 세부
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | 네      | 네  | 항상 `WorkflowEvent`, 이벤트를 워크플로 이벤트로 표시합니다.                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | 네      | 네  | 워크플로 실행의 식별자입니다. 워크플로 실행 내의 모든 워크플로 및 작업에는 같은 `workflowJobId`가 있습니다.                                                                                                                                   |
-| `properties.operationType`                   | 네      | 네  | 작업의 식별자는 [작업 유형].(#operation-types)을 참조하세요.                                                                                                                                                                                       |
+| `properties.operationType`                   | 네      | 네  | 작업의 식별자는 [작업 유형](#operation-types)을 참조하세요.                                                                                                                                                                               |
 | `properties.tasksCount`                      | 네      | 없음   | 워크플로 전용. 워크플로가 트리거하는 작업의 수입니다                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | 네      | 없음   | 선택 사항. 워크플로 이벤트 전용. 워크플로를 트리거한 Azure Active Directory [사용자의 objectId](/azure/marketplace/find-tenant-object-id#find-user-object-id)는 `properties.workflowSubmissionKind`도 참조하세요.                                   |
 | `properties.workflowType`                    | 네      | 없음   | `full` 또는 `incremental` 새로 고침.                                                                                                                                                                                                                            |

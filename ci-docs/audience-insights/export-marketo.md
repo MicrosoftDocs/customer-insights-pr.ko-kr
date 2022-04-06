@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec286bb6a90fb4d18e89caf9166aa659b29d668e
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: d56ed779c342bb0855ee84d949f8d3ca604b92c1
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231999"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487523"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Marketo로 세그먼트 내보내기(프리뷰)
 
@@ -63,7 +63,7 @@ ms.locfileid: "8231999"
 
 1. **[Marketo 목록 ID](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 를 입력합니다. 목록 ID는 순수 숫자 값입니다. 예를 들어 Marketo 목록 ID가 ST12345A7인 경우 숫자 앞뒤의 문자를 제거하고 `12345`를 입력합니다. 
 
-1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다. 
+1. **데이터 매칭** 섹션에서 고객의 이메일 주소 또는 고객의 Marketo ID를 나타내는 필드를 하나 이상 선택합니다. 
 
 1. 선택적으로 **이름** 과 **성**, **도시**, **주**, **국가/지역** 을 내보내어 보다 개인화된 이메일을 만들 수 있습니다. **특성 추가** 를 선택하여 이러한 필드를 매핑합니다.
 

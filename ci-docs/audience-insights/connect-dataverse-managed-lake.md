@@ -1,7 +1,7 @@
 ---
 title: Microsoft Dataverse에서 테이블에 연결
 description: Microsoft Dataverse 관리 데이터 레이크에서 데이터 가져오기
-ms.date: 12/06/2021
+ms.date: 03/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,16 +11,14 @@ ms.reviewer: mhart
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 81412ea8259e690eb839676d82ab31847854a97e
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354149"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464074"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Microsoft Dataverse 관리형 데이터 레이크의 데이터에 연결
-
-
 
 이 문서에서는 Dataverse 사용자가 Microsoft Dataverse 관리형 레이크의 분석 엔터티에 빠르게 연결하는 방법을 안내합니다. 
 
@@ -29,7 +27,8 @@ ms.locfileid: "8354149"
 
 ## <a name="important-considerations"></a>중요 사항
 
-Azure Data Lake Storage와 같은 온라인 서비스에 저장된 데이터는 Dynamics 365 Customer Insights에서 데이터가 처리 또는 저장된 위치와 다른 곳에 저장될 수 있습니다. 온라인 서비스에서 데이터를 가져오거나 이에 연결하면 해당 데이터가 Dynamics 365 Customer Insights에 전송되거나 저장될 수 있음에 동의하는 것입니다. [Microsoft 보안 센터에서 자세히 알아보십시오.](https://www.microsoft.com/trust-center)
+1. Azure Data Lake Storage와 같은 온라인 서비스에 저장된 데이터는 Dynamics 365 Customer Insights에서 데이터가 처리 또는 저장된 위치와 다른 곳에 저장될 수 있습니다. 온라인 서비스에서 데이터를 가져오거나 이에 연결하면 해당 데이터가 Dynamics 365 Customer Insights에 전송되거나 저장될 수 있음에 동의하는 것입니다. [Microsoft 보안 센터에서 자세히 알아보십시오.](https://www.microsoft.com/trust-center)
+2. [변경 추적](/power-platform/admin/enable-change-tracking-control-data-synchronization)이 활성화된 Dataverse 엔터티만 표시됩니다. 이러한 엔터티는 Dataverse 관리형 데이터 레이크로 내보내고 Customer Insights에서 사용할 수 있습니다. 기본 Dataverse 테이블에는 기본적으로 변경 내용 추적이 활성화되어 있습니다. 사용자 지정 테이블에 대해 변경 내용 추적을 켜야 합니다. Dataverse 테이블이 변경 추적을 위해 활성화되어 있는지 확인하려면 [Power Apps](https://make.powerapps.com) > **데이터** > **테이블** 로 이동합니다. 관심 있는 테이블을 찾아 선택합니다. **설정** > **고급 옵션** 으로 이동하여 **변경 사항 추적** 설정을 검토합니다.
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Dataverse 관리 레이크에 연결
 

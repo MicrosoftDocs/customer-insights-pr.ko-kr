@@ -1,23 +1,23 @@
 ---
 title: Customer Insights에서 환경 만들기
 description: Dynamics 365 Customer Insights에 대한 라이선스 구독으로 환경을 만드는 단계.
-ms.date: 02/24/2022
+ms.date: 03/28/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: MichelleDevaney
-ms.author: midevane
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: a538237322615f69f0a5cb43d394275bf79af00b
+ms.sourcegitcommit: ae02ac950810242e2505d7d371b80210dc8a0777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354103"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491921"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>대상 그룹 인사이트에서 환경 만들기
 
@@ -83,14 +83,16 @@ Dynamics 365 Marketing 또는 Power Apps의 모델 기반 애플리케이션과 
 Dataverse 환경에 연결하면 [Power Platform 데이터 흐름 및 게이트웨이를 사용하여 온프레미스 데이터 원본에서 데이터를 수집](data-sources.md#add-data-from-on-premises-data-sources)할 수도 있습니다. 또한 Dataverse 환경에 연결하여 [기본 예측 모델](predictions-overview.md?tabs=b2c#out-of-box-models)을 사용할 수 있습니다.
 
 > [!IMPORTANT]
-> 데이터 공유를 활성화하려면 Customer Insights 및 Dataverse가 동일한 지역에 있어야 합니다.
+> 1. 데이터 공유를 활성화하려면 Customer Insights 및 Dataverse가 동일한 지역에 있어야 합니다.
+> 1. Dataverse 환경에서 전역 관리자 역할이 있어야 합니다. 이 [Dataverse 환경이 연결되어](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) 있는지 확인하여 특정 보안 그룹에 추가하고 해당 보안 그룹에 추가되었는지 확인하십시오.
+> 1. 기존 Customer Insights 환경은 해당 Dataverse 환경과 이미 연결되어 있지 않습니다. [Dataverse 환경에 대한 기존 연결 제거](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment) 방법을 알아보세요.
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="Microsoft Dataverse와의 데이터 공유는 순 새 인스턴스에 대해 자동으로 사용됩니다.":::
 
-> [!NOTE]
-> Customer Insights는 다음 데이터 공유 시나리오를 지원하지 않습니다.
-> - 모든 데이터를 자체 Azure Data Lake Storage에 저장하면 Dataverse 관리형 데이터 레이크와 데이터 공유를 활성화할 수 없습니다.
-> - Dataverse와 데이터 공유를 사용 설정하면 [엔터티에서 예측되거나 누락된 값 만들기](predictions.md)가 가능하지 않습니다.
+자체 Azure Data Lake Storage에서 Microsoft Dataverse와 데이터 공유를 활성화하는 방법에 대한 자세한 내용은 [Microsoft Dataverse에 연결](manage-environments.md#connect-to-microsoft-dataverse)을 참조하십시오.
+
+Customer Insights는 다음 데이터 공유 시나리오를 지원하지 않습니다.
+- Dataverse와 데이터 공유를 사용 설정하면 [엔터티에서 예측되거나 누락된 값 만들기](predictions.md)가 가능하지 않습니다.
 
 ### <a name="step-4-finalize-the-settings"></a>4단계: 설정 완료
 

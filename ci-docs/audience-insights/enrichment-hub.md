@@ -1,7 +1,7 @@
 ---
 title: 통합 고객 프로필 보강
 description: 기능을 사용하여 고객 데이터를 보강합니다.
-ms.date: 02/18/2022
+ms.date: 03/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
-ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
+ms.openlocfilehash: 510a20306e793a5ba522a6ac0d9c7194f03472d2
+ms.sourcegitcommit: ae02ac950810242e2505d7d371b80210dc8a0777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8372727"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491967"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>고객 프로필 보강(미리 보기)
 
@@ -97,5 +97,19 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 1. **진행 세부 정보** 창에서 **보강** 섹션을 확장합니다. 
 1. 진행 상황을 확인하려는 보강 아래에서 **세부 정보 보기** 를 선택합니다. 
 1. **작업 세부 정보** 창에서 **세부 정보 표시** 를 선택하여 보강 및 해당 상태 업데이트와 관련된 프로세스를 확인합니다. 
+
+## <a name="enrichment-results"></a>보강 결과
+
+보강 실행을 완료한 후 보강 결과를 검토할 수 있습니다.
+
+1. **데이터** > **보강** 으로 이동합니다. 
+1. 정보를 원하는 보강을 선택하십시오.
+
+모든 보강은 보강 프로필 수, 생성된 보강 엔터티 미리보기 및 시간 경과에 따른 보강 프로필 수와 같은 기본 정보를 표시합니다. 사용 가능한 경우 **필드로 보강된 고객 수** 는 각 보강된 필드의 적용 범위에 대한 드릴다운을 제공합니다.
+
+:::image type="content" source="media/enrichments-results.png" alt-text="보강 결과 페이지.":::
+
+일부 보강은 또한 보강 유형과 관련된 정보를 표시합니다. 자세한 내용은 관련 보강 설명서를 참조하십시오.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
