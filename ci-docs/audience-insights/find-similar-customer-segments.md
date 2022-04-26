@@ -1,23 +1,23 @@
 ---
 title: AI로 유사 고객 찾기(동영상 포함)
 description: 인공 지능으로 유사한 고객 세그먼트를 찾으십시오.
-ms.date: 06/25/2020
+ms.date: 03/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-segment-builder
 - ci-segment-insights
 - customerInsights
-ms.openlocfilehash: 5626b980ad8802aae9657052e3ca51a70c49baf9
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 851ea2c3388de603c1beef4a58e359aa989c9c46
+ms.sourcegitcommit: e129a1fa8b020b6bfb6efc3c53fa9d89e1614ad1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355253"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "8561578"
 ---
 # <a name="similar-customers-preview"></a>유사한 고객(미리 보기)
 
@@ -36,6 +36,8 @@ ms.locfileid: "8355253"
 
 1. 새 세그먼트의 제안된 이름을 검토하고 필요한 경우 변경하십시오.
 
+1. 선택적으로 새 세그먼트에 [태그](work-with-tags-columns.md#manage-tags)를 추가합니다.
+
 1. 새 세그먼트를 정의하는 필드를 검토하십시오. 이 필드는 시스템이 원본 세그먼트와 유사한 고객을 찾으려고 하는 기초를 정의합니다. 시스템은 기본적으로 권장 필드를 선택합니다.
   모델 성능을 크게 저하시킬 수 있는 필드는 자동으로 제외됩니다.
   
@@ -44,9 +46,9 @@ ms.locfileid: "8355253"
 
 1. **모든 고객** 또는 새 세그먼트에서 **기존 특정 세그먼트** 의 고객만 포함하려면 선택하십시오.
 
-1. **원본 세그먼트에서 모든 사람 제외** 확인란을 선택해 원본 세그먼트에서 고객을 제외합니다.
-
 1. 기본적으로 시스템은 출력에 대상 그룹 크기의 20%만 포함하도록 제안합니다. 필요에 따라 이 임계값을 편집하십시오. 임계값을 높이면 정밀도가 떨어집니다.
+
+1. **유사한 특성을 가진 고객 외에 소스 세그먼트의 구성원 포함** 확인란을 선택하여 소스 세그먼트에 고객을 포함합니다.
 
 1. 페이지 하단에서 **실행** 을 선택해 데이터 집합을 분석하는 이진 분류 작업(기계 학습의 방법)을 시작합니다.
 
@@ -67,7 +69,7 @@ ms.locfileid: "8355253"
 
 유사한 세그먼트를 새로 고치려면 **세그먼트** 페이지를 선택하고 작업 표시줄에서 **새로 고침** 을 선택합니다.
 
-유사한 세그먼트를 수정하면 데이터가 다시 처리됩니다. 이전에 생성된 세그먼트는 새로 고친 데이터로 업데이트됩니다.    
+유사한 세그먼트를 수정하면 데이터가 다시 처리됩니다. 이전에 생성된 세그먼트는 새로 고친 데이터로 업데이트됩니다.
 유사한 세그먼트를 편집하려면 **세그먼트** 페이지를 선택하고 작업 표시줄에서 **편집** 을 선택합니다. 변경 사항을 적용하고 **실행** 을 선택해 처리를 시작합니다.
 
 ## <a name="delete-a-similar-segment"></a>유사한 세그먼트 삭제
@@ -84,6 +86,5 @@ ms.locfileid: "8355253"
 - 0.85 – 1 사이의 유사성 점수는 시스템이 *매우 유사* 로 분류한 고객입니다.
 
 유사성 점수가 0.4 미만인 고객은 모델 출력에 포함되지 않습니다. 시스템은 이를 원본 세그먼트와 비슷한 것으로 간주하지 않습니다.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

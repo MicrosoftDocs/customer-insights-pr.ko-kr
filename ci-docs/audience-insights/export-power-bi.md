@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: dccc069a355725bae09c1fece9292b9aee374e6d
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 06c5bed74b82f9ae2a764a2eb363348e0edab531
+ms.sourcegitcommit: 4b2ad63aa7a4d4f31b573870bccbc40befe5f8fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225524"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8552064"
 ---
 # <a name="connector-for-power-bi-preview"></a>Power BI용 커넥터(미리 보기)
 
@@ -72,6 +72,6 @@ Power BI용 Customer Insights 커넥터는 최대 1백만 개의 고객 프로�
 
 MM/DD/YYYY와 같은 날짜 형식의 필드가 포함된 엔터티를 로드할 때 일치하지 않는 로케일 형식으로 인해 오류가 발생할 수 있습니다. 이 불일치는 대상 그룹 인사이트의 날짜 필드가 미국 형식으로 저장되기 때문에 Power BI Desktop 파일이 영어(미국)가 아닌 다른 로케일로 설정된 경우 발생합니다.
 
-Power BI Desktop 파일에는 데이터를 검색할 때 적용되는 단일 로케일 설정이 있습니다. 이 날짜 필드를 올바르게 해석하려면 .BPI 파일의 로케일을 영어(미국)로 설정하십시오. [Power BI Desktop 파일의 로케일을 변경하는 방법 알아보기](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
+Power BI Desktop 파일에는 데이터를 검색할 때 적용되는 단일 로케일 설정이 있습니다. 이 날짜 필드를 올바르게 해석하려면 .BPI 파일의 로케일을 영어(미국)로 설정하십시오. [Power BI Desktop 파일의 로케일을 변경하는 방법 알아보기](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

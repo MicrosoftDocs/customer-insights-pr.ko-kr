@@ -1,22 +1,22 @@
 ---
 title: 템플릿에서 측정값 생성
 description: 일반적인 사용 사례에 대한 템플릿을 사용하여 측정값을 정의합니다.
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
+author: v-wendysmith
 ms.author: wameng
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-measure-template
 - customerInsights
-ms.openlocfilehash: 0fe846691825b93732cbbe6d1c942a79e4a3934f
-ms.sourcegitcommit: cf6a0ed44915908a44c70889a2dd199a9d0d4798
+ms.openlocfilehash: eeabd889f7b694f8d809894169a3cdc068acc340
+ms.sourcegitcommit: 9ef2cf99b847e7bd8f890f83d84b3a4045aaf8cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2022
-ms.locfileid: "8359910"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "8529409"
 ---
 # <a name="use-a-template-to-build-a-measure"></a>템플릿을 사용하여 측정값 빌드
 
@@ -51,7 +51,9 @@ ms.locfileid: "8359910"
 
 1. 필요한 데이터를 검토하고 모든 데이터가 제자리에 있다면 **시작** 을 선택합니다.
 
-1. **이름 편집** 창에서 측정 및 출력 엔터티의 이름을 설정합니다. 
+1. 측정값 이름 옆에 있는 **세부 정보 편집** 을 선택합니다. 측정값의 이름을 제공합니다. 선택적으로 측정값에 [태그](work-with-tags-columns.md#manage-tags)를 추가합니다.
+
+   :::image type="content" source="media/measures_edit_details.png" alt-text="세부 정보 편집 대화 상자.":::
 
 1. **완료** 를 선택합니다.
 

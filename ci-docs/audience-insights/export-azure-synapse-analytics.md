@@ -1,19 +1,19 @@
 ---
 title: Customer Insights 데이터를 Azure Synapse Analytics로 내보내기
 description: Azure Synapse Analytics에 대한 연결을 구성하는 방법을 알아보세요.
-ms.date: 01/05/2022
+ms.date: 04/11/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 289c8d545f057b3f70679b485cf4350545c0587b
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 8ace9fbee4fbd8822629a39d5902e176f8511cb5
+ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231320"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8560395"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Azure Synapse Analytics(프리뷰)로 데이터 내보내기
 
@@ -28,21 +28,21 @@ Customer Insights에서 Azure Synapse로의 연결을 구성하려면 다음 필
 
 ## <a name="prerequisites-in-customer-insights"></a>Customer Insights의 필수 조건
 
-* 귀하는 대상 그룹 인사이트에서 **관리자** 역할을 갖고 있습니다. [대상 그룹 인사이트에서 사용자 권한 설정](permissions.md#assign-roles-and-permissions)에 대해 자세히 알아보기
+* Azure Active Directory(AD) 사용자 계정에는 Customer Insights에 **관리자** 역할이 있습니다. [대상 그룹 인사이트에서 사용자 권한 설정](permissions.md#assign-roles-and-permissions)에 대해 자세히 알아보기
 
 Azure에서: 
 
 - 활성 Azure 구독.
 
-- Azure Data Lake Storage Gen2 계정을 사용하는 경우 *대상 그룹 인사이트에 대한 서비스 주체는* **스토리지 Blob 데이터 기여자** 권한이 필요합니다. [대상 그룹 인사이트에 대한 Azure 서비스 주체를 사용하여 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)에 대해 자세히 알아봅니다. Data Lake Storage Gen2에는 [계층적 네임스페이스](/azure/storage/blobs/data-lake-storage-namespace)가 활성화되어 **있어야** 합니다.
+- 새 Azure Data Lake Storage Gen2 계정을 사용하는 경우 *Customer Insights의 서비스 주체* 에는 **스토리지 Blob 데이터 Contributor** 권한이 필요합니다. [대상 그룹 인사이트에 대한 Azure 서비스 주체를 사용하여 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)에 대해 자세히 알아봅니다. Data Lake Storage Gen2에는 [계층적 네임스페이스](/azure/storage/blobs/data-lake-storage-namespace)가 활성화되어 **있어야** 합니다.
 
-- 리소스 그룹에는 Azure Synapse 작업 영역이 있으며 *서비스 주체* 및 *대상 그룹 인사이트 사용자* 는 **Reader** 이상의 권한을 할당 받아야 합니다. 자세한 내용은 [Azure Portal을 사용하여 Azure 역할 할당](/azure/role-based-access-control/role-assignments-portal)을 참조하십시오.
+- Azure Synapse workspace가 있는 리소스 그룹에서 *서비스 주체* 및 *Customer Insights에서 관리자 권한이 있는 Azure AD 사용자* 에 최소 **Reader** 권한을 할당해야 합니다. 자세한 내용은 [Azure Portal을 사용하여 Azure 역할 할당](/azure/role-based-access-control/role-assignments-portal)을 참조하십시오.
 
-- *사용자* 는 데이터가 있고 Azure Synapse 작업 영역에 연결된 Azure Data Lake Storage Gen2 계정에 대한 **스토리지 Blob 데이터 기여자** 권한이 필요합니다. [Azure Portal을 사용하여 Blob 및 큐 데이터에 대한 액세스를 위한 Azure 역할 할당](/azure/storage/common/storage-auth-aad-rbac-portal) 및 [스토리지 Blob 데이터 기여자 권한](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor)에 대해 자세히 알아봅니다.
+- *Customer Insights에서 관리자 권한이 있는 Azure AD 사용자* 는 데이터가 있고 Azure Synapse workspace에 연결된 Azure Data Lake Storage Gen2 계정에 대한 **스토리지 Blob 데이터 Contributor** 권한이 필요합니다. [Azure Portal을 사용하여 Blob 및 큐 데이터에 대한 액세스를 위한 Azure 역할 할당](/azure/storage/common/storage-auth-aad-rbac-portal) 및 [스토리지 Blob 데이터 기여자 권한](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor)에 대해 자세히 알아봅니다.
 
 - *[Azure Synapse 작업 영역 관리 ID](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* 는 데이터가 있고 Azure Synapse 작업 영역에 연결된 Azure Data Lake Storage Gen2 계정에 대한 **스토리지 Blob 데이터 기여자** 권한이 필요합니다. [Azure Portal을 사용하여 Blob 및 큐 데이터에 대한 액세스를 위한 Azure 역할 할당](/azure/storage/common/storage-auth-aad-rbac-portal) 및 [스토리지 Blob 데이터 기여자 권한](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor)에 대해 자세히 알아보기.
 
-- Azure Synapse 작업 영역에서 *대상 그룹 인사이트의 서비스 주체* 는 **Synapse 관리자** 역할이 할당 받아야 합니다. 자세한 내용은 [Synapse 작업 영역에 대한 액세스 제어를 설정하는 방법](/azure/synapse-analytics/security/how-to-set-up-access-control)을 참조하십시오.
+- Azure Synapse workspace에서 *Customer Insights의 서비스 주체* 에는 **시냅스 관리자** 역할이 할당되어야 합니다. 자세한 내용은 [Synapse 작업 영역에 대한 액세스 제어를 설정하는 방법](/azure/synapse-analytics/security/how-to-set-up-access-control)을 참조하십시오.
 
 ## <a name="set-up-the-connection-and-export-to-azure-synapse"></a>연결을 설정하고 Azure Synapse로 내보내기
 

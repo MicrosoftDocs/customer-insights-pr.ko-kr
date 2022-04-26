@@ -44,6 +44,8 @@
           href: audience-insights/create-environment.md
         - name: 대상 그룹 인사이트 살펴보기
           href: audience-insights/home.md
+        - name: 태그 및 열 작업
+          href: audience-insights/work-with-tags-columns.md
         - name: 비즈니스 계정과 연동
           href: audience-insights/work-with-business-accounts.md
     - name: 데이터 원본

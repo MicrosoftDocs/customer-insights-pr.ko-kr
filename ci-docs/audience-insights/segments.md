@@ -6,7 +6,7 @@ ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-customers-page
@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 340a7b7326f5b4a8cbde8683b8d41cb53dc557b0
-ms.sourcegitcommit: 0bd5f53e4e7e37359afd087ee16b779a6b3a9183
+ms.openlocfilehash: 68e71df3853470af47228c7365f25db3a71d15b0
+ms.sourcegitcommit: 9ef2cf99b847e7bd8f890f83d84b3a4045aaf8cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2022
-ms.locfileid: "8508574"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "8529547"
 ---
 # <a name="segments-overview"></a>세그먼트 개요
 
@@ -51,20 +51,26 @@ ms.locfileid: "8508574"
 
 각 세그먼트는 세그먼트에 대한 추가 정보가 포함된 행으로 표시됩니다.
 
-:::image type="content" source="media/segments-selected-segment.png" alt-text="옵션 드롭다운 목록 및 사용 가능한 옵션이 있는 선택된 세그먼트.":::
+:::image type="content" source="media/segments-selected-segment.png" alt-text="옵션 드롭다운 목록 및 사용 가능한 옵션이 있는 선택된 세그먼트." lightbox="media/segments-selected-segment.png":::
 
-세그먼트를 선택하면 다음 작업을 사용할 수 있습니다.
+세그먼트를 선택하면 다음 작업을 수행할 수 있습니다.
 
 - **보기**: 구성원 수 추세를 포함한 세그먼트 세부 사항 및 세그먼트 구성원의 미리보기를 봅니다.
+- **다운로드**: 구성원 목록을 .CSV 파일로 다운로드합니다.
 - **편집**: 속성을 변경할 세그먼트를 편집합니다.
 - 세그먼트의 **중복 항목을 만듭니다**. 속성을 즉시 편집하거나 단순히 중복 항목을 저장하도록 선택할 수 있습니다.
 - **새로 고침**: 최신 데이터를 포함하도록 세그먼트를 새로 고칩니다.
-- **활성화** 또는 **비활성화**: 세그먼트를 활성화하거나 비활성화합니다. 세그먼트에는 활성 또는 비활성의 두 가지 상태가 있습니다. 이러한 상태는 세그먼트를 편집할 때 유용합니다. 비활성 세그먼트의 경우 세그먼트 정의가 존재하지만 아직 고객이 포함되어 있지 않습니다. 세그먼트를 활성화하면 상태가 '비활성'에서 '활성'으로 변경되고 세그먼트 정의와 일치하는 고객을 찾기 시작합니다. [예약된 새로 고침](system.md#schedule-tab)이 구성되었고 비활성 세그먼트에 **상태** 가 **건너뜀** 으로 나열되어 있으면 새로 고침이 시도되지 않았음을 나타냅니다. 비활성 세그먼트가 활성화되면 새로 고쳐지고 예약된 새로 고침에 포함됩니다.
+- **활성화** 또는 **비활성화**: 세그먼트를 활성화하거나 비활성화합니다. 비활성 세그먼트의 경우 세그먼트 정의가 존재하지만 아직 고객이 포함되어 있지 않습니다. 활성 세그먼트는 세그먼트 정의와 일치하는 고객을 찾습니다. [예약된 새로 고침](system.md#schedule-tab)이 구성되었고 비활성 세그먼트에 **상태** 가 **건너뜀** 으로 나열되어 있으면 새로 고침이 시도되지 않았음을 나타냅니다. 비활성 세그먼트가 활성화되면 새로 고쳐지고 예약된 새로 고침에 포함됩니다.
   또는 **활성화/비활성화** 드롭다운의 **나중에 예약** 기능을 사용하여 특정 세그먼트의 활성화 및 비활성화에 대한 미래 날짜 및 시간을 지정할 수 있습니다.
+- 세그먼트에서 **[유사한 고객 찾기](find-similar-customer-segments.md)** 를 수행합니다.
 - **이름 바꾸기**: 세그먼트 이름을 바꿉니다.
+- **태그**: 세그먼트에 대한 [태그를 관리](work-with-tags-columns.md#manage-tags)합니다.
 - **다운로드**: 구성원 목록을 .CSV 파일로 다운로드합니다.
 - **내보내기 관리** 내보내기 관련 세그먼트를 보고 관리합니다. [내보내기에 대해 자세히 알아보기.](export-destinations.md)
 - **삭제**: 세그먼트를 삭제합니다.
+- **열**: 표시되는 [열을 사용자 지정](work-with-tags-columns.md#customize-columns)합니다.
+- **필터**: [태그를 필터링](work-with-tags-columns.md#filter-on-tags)합니다.
+- **이름 검색**: 세그먼트 이름으로 검색합니다.
 
 ## <a name="refresh-segments"></a>세그먼트 새로 고침
 
