@@ -3,17 +3,17 @@ title: 무료 평가판 등록 - Dynamics 365 Customer Insights
 description: 무료 Customer Insights 평가판에 빠르게 등록하고 시작하는 방법을 알아보세요. 앱을 탐색하고 추가 학습 리소스를 찾습니다.
 author: m-hartmann
 ms.author: mhart
-ms.date: 09/30/2021
+ms.date: 04/12/2022
 ms.topic: get-started
 ms.custom: template-trial-setup
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 1b50da077cb0584ca9f277b276d0e9ebb46b2c5d
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: 2f27dd4fd9df679696d72f2eccde262de3e4afc4
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350231"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641724"
 ---
 # <a name="sign-up-for-a-free-dynamics-365-customer-insights-trial"></a>무료 Dynamics 365 Customer Insights 평가판 등록
 
@@ -21,7 +21,7 @@ Customer Insights는 30일 무료 평가판을 제공합니다. 간편하게 가
 
 **평가판 등록 방법**:
 
-1. [평가판 개요 페이지](https://dynamics.microsoft.com/get-started/?appname=customerinsights)로 이동하여 **지금 등록하기** 를 선택합니다.
+1. [평가판 개요 페이지](https://dynamics.microsoft.com/ai/customer-insights/)로 이동하여 **Customer Insights 무료로 사용해 보기** 를 선택합니다.
 1. 화면 상의 지침을 따라 [Microsoft 계정 및 연락처 정보와 연결된 이메일](https://support.microsoft.com/windows/what-is-a-microsoft-account-4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa)을 입력합니다.
 1. 선택한 기능의 시작 페이지에 도달할 때까지 선택하고 집중할 기능을 선택합니다.
 
@@ -31,12 +31,12 @@ Customer Insights는 30일 무료 평가판을 제공합니다. 간편하게 가
 
 평가판 환경에는 유료 버전과 동일한 기능이 포함됩니다. 아래 링크는 몇 가지 주요 기능을 사용하여 안내합니다.
 
-- [대상 그룹 인사이트를 위한 빠른 시작.](audience-insights/get-started.md)
-- [더 많은 사용자를 추가하고 권한을 할당합니다.](audience-insights/permissions.md)
-- [데이터 원본](audience-insights/data-sources.md)을 수집하고 [데이터 통합 프로세스](audience-insights/data-unification.md)를 통해 실행하여 [통합 고객 프로필](audience-insights/customer-profiles.md)을 가져옵니다.
-- [통합된 고객 프로필 보강](audience-insights/enrichment-hub.md) 또는 [예측 모델 실행](audience-insights/predictions-overview.md).
-- 고객을 그룹화하는 [세그먼트](audience-insights/segments.md)를 만들고 KPI를 검토하기 위한 [측정값](audience-insights/measures.md)을 만듭니다.
-- [연결](audience-insights/connections.md) 및 [내보내기](audience-insights/export-destinations.md)를 설정하여 다른 응용 프로그램에서 데이터의 하위 집합을 처리합니다.
+- [Customer Insights 시작.](get-started.md)
+- [더 많은 사용자를 추가하고 권한을 할당합니다.](permissions.md)
+- [데이터 원본](data-sources.md)을 수집하고 [데이터 통합 프로세스](data-unification.md)를 통해 실행하여 [통합 고객 프로필](customer-profiles.md)을 가져옵니다.
+- [통합된 고객 프로필 보강](enrichment-hub.md) 또는 [예측 모델 실행](predictions-overview.md).
+- 고객을 그룹화하는 [세그먼트](segments.md)를 만들고 KPI를 검토하기 위한 [측정값](measures.md)을 만듭니다.
+- [연결](connections.md) 및 [내보내기](export-destinations.md)를 설정하여 다른 응용 프로그램에서 데이터의 하위 집합을 처리합니다.
 
 ## <a name="additional-resources"></a>추가 리소스
 

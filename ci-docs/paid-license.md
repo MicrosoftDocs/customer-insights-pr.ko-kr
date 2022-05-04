@@ -7,12 +7,12 @@ ms.date: 10/05/2021
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: fa6ea6e96de3d382c1426b383a057c8ce4f67ccf
-ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
+ms.openlocfilehash: 8fcc1c97be87afe942aa3b5e23d1eb68008aa873
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "8456006"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641862"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Customer Insights 구매 후 시작
 
@@ -34,9 +34,8 @@ Customer Insights는 테넌트별로 라이선스가 부여되며 여러 기능�
 
 1. [Customer Insights 앱 URL](https://home.ci.ai.dynamics.com)로 이동합니다.
 1. 학교 또는 회사 계정을 사용하여 로그인합니다. 
-1. 서비스 약관에 동의하고 Customer Insights 인스턴스에 대한 콘텐츠 기본 설정을 지정합니다.
-1. 선택한 기능의 시작 페이지에 도달할 때까지 집중할 기능을 선택합니다.
+1. 서비스 약관에 동의하고 Customer Insights 환경에 대한 콘텐츠 기본 설정을 지정합니다.
 
 ## <a name="create-your-own-environment"></a>나만의 환경 만들기
 
-처음 로그인하면 샘플 데이터가 있는 환경이 표시됩니다. 해당 데이터를 사용하여 기능을 탐색하고 앱에 익숙해질 수 있습니다. 자체 데이터를 사용하려면 [환경을 만들어야](/dynamics365/customer-insights/audience-insights/create-environment) 합니다.
+처음 로그인하면 샘플 데이터가 있는 환경이 표시됩니다. 해당 데이터를 사용하여 기능을 탐색하고 앱에 익숙해질 수 있습니다. 자체 데이터를 사용하려면 [환경을 만들어야](create-environment.md) 합니다.
