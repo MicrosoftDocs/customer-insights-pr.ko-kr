@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 03169f0218dfad55cf20ecaf1c1596c652e5f601
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646553"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755270"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Azure Monitor를 사용하여 Dynamics 365 Customer Insights에서 로그 전달(프리뷰)
 
@@ -27,12 +27,12 @@ Customer Insights는 다음 이벤트 로그를 보냅니다.
 - **감사 이벤트**
   - **APIEvent** - Dynamics 365 Customer Insights UI를 통해 수행된 변경 추적을 활성화합니다.
 - **운영 이벤트**
-  - **WorkflowEvent** - 워크플로를 통해 [데이터 원본](data-sources.md)을 설정하고 데이터를 [통합](data-unification.md), [보강](enrichment-hub.md)하고 마지막으로 다른 시스템으로 [내보낼](export-destinations.md) 수 있습니다. 이러한 모든 단계는 개별적으로(예: 단일 내보내기 트리거) 또는 조정(예: 추가 강화를 가져오고 완료되면 데이터를 다른 시스템으로 내보내는 통합 프로세스를 트리거하는 데이터 소스의 데이터 새로 고침)할 수 있습니다. 자세한 내용은 [WorkflowEvent 스키마](#workflow-event-schema)를 참조하십시오.
+  - **WorkflowEvent** - 워크플로를 통해 [데이터 원본](data-sources.md)을 설정하고 데이터를 [통합](data-unification.md), [보강](enrichment-hub.md)하고 마지막으로 다른 시스템으로 [내보낼](export-destinations.md) 수 있습니다. 이러한 모든 단계는 개별적으로 수행할 수 있습니다(예: 단일 내보내기 트리거). 또한 오케스트레이션된 상태로 실행할 수 있습니다(예: 통합 프로세스를 트리거하는 데이터 원본의 데이터 새로 고침, 강화를 가져오고 완료되면 데이터를 다른 시스템으로 내보냄). 자세한 내용은 [WorkflowEvent 스키마](#workflow-event-schema)를 참조하십시오.
   - **APIEvent** - 고객 인스턴스에서 Dynamics 365 Customer Insights에 대한 모든 API 호출. 자세한 내용은 [APIEvent 스키마](#api-event-schema)를 참조하십시오.
 
 ## <a name="set-up-the-diagnostic-settings"></a>진단 설정 구성
 
-### <a name="prerequisites"></a>필수 항목
+### <a name="prerequisites"></a>전제 조건
 
 Customer Insights에서 진단을 구성하려면 다음 필수 구성 요소가 충족되어야 합니다.
 
@@ -55,7 +55,7 @@ Customer Insights에서 진단을 구성하려면 다음 필수 구성 요소가
 
 1. 대상 리소스가 있는 Azure 구독의 **테넌트** 를 선택하고 **로그인** 을 선택합니다.
 
-1. **리소스 유형**(Storage 계정, Event Hub 또는 로그 분석)을 선택합니다.
+1. **리소스 유형**(스토리지 계정, 이벤트 허브 또는 로그 분석)을 선택합니다.
 
 1. 대상 리소스의 **구독** 을 선택합니다.
 
@@ -182,7 +182,7 @@ API 이벤트와 워크플로 이벤트는 구조가 같습니다. 다른 세부
 
 ### <a name="workflow-event-schema"></a>워크플로 이벤트 스키마
 
-워크플로에는 여러 단계가 포함됩니다. [데이터 소스 수집](data-sources.md), 데이터 [통합](data-unification.md), [보강](enrichment-hub.md), [내보내기](export-destinations.md). 이러한 모든 단계는 개별적으로 실행되거나 다음 프로세스와 함께 조정될 수 있습니다. 
+워크플로에는 여러 단계가 포함됩니다. [데이터 소스 수집](data-sources.md), 데이터 [통합](data-unification.md), [보강](enrichment-hub.md), [내보내기](export-destinations.md). 이러한 모든 단계는 개별적으로 실행되거나 다음 프로세스와 함께 조정될 수 있습니다.
 
 #### <a name="operation-types"></a>작업 유형
 
@@ -215,7 +215,7 @@ API 이벤트와 워크플로 이벤트는 구조가 같습니다. 다른 세부
 | `time`          | 타임스탬프 | 필수 항목          | 이벤트의 타임스탬프(UTC)                                                                                                                                 | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resourceId`    | String    | 필수 항목          | 이벤트를 발생시킨 인스턴스의 ResourceId                                                                                                            | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
 | `operationName` | String    | 필수 항목          | 이 이벤트가 나타내는 작업의 이름입니다. `{OperationType}.[WorkFlow|Task][Started|Completed]`. [작업 유형](#operation-types)을 참조하세요. | `Segmentation.WorkflowStarted`,<br> `Segmentation.TaskStarted`, <br> `Segmentation.TaskCompleted`, <br> `Segmentation.WorkflowCompleted`                                 |
-| `category`      | String    | 필수 항목          | 이벤트 로그 범주입니다. 워크플로 이벤트의 경우 항상 `Operational`                                                                                           | `Operational`                                                                                                                                                            | 
+| `category`      | String    | 필수 항목          | 이벤트 로그 범주입니다. 워크플로 이벤트의 경우 항상 `Operational`                                                                                           | `Operational`                                                                                                                                                            |
 | `resultType`    | String    | 필수 항목          | 이벤트의 상태 `Running`, `Skipped`, `Successful`, `Failure`                                                                                            |                                                                                                                                                                          |
 | `durationMs`    | Long      | 선택 항목          | 작업 기간(밀리초)입니다.                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | String    | 선택 항목          | 특정 이벤트 범주에 대한 더 많은 속성이 있는 JSON 객체.                                                                                        | [워크플로 속성](#workflow-properties-schema) 하위 섹션을 참조하세요.                                                                                                       |

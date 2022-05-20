@@ -1,19 +1,19 @@
 ---
 title: 신규 및 향후 기능
 description: 새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.
-ms.date: 04/05/2022
+ms.date: 05/03/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 25c6e2897d836854408871b2c74afa16ecba7435
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 386198c838929a20e136288fffb1015707654d8d
+ms.sourcegitcommit: 9f256af5c4f7e99305bf09087f7ec05eebeae6a0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647247"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8700945"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights의 새로운 기능
 
@@ -24,6 +24,28 @@ ms.locfileid: "8647247"
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하세요.
 
+
+## <a name="april-2022-updates"></a>2022년 4월 업데이트
+
+2022년 4월 업데이트에는 새로운 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="dun--bradstreet-enrichment-preview"></a>Dun & Bradstreet 보강(프리뷰)
+
+Dun & Bradstreet는 비즈니스를 위한 상업 데이터, 분석 및 인사이트를 제공합니다. 통합된 고객 프로필을 보유한 고객이 회사의 데이터를 보강할 수 있습니다. 보강에는 DUNS 번호, 회사 규모, 위치, 산업 등과 같은 특성이 포함됩니다.
+
+자세한 내용은 [Dun & Bradstreet를 통한 회사 프로필 보강(프리뷰)](enrichment-dnb.md).
+
+### <a name="define-the-measure-type-when-creating-a-new-measure"></a>새 측정값 생성 시 측정값 유형 정의
+
+이제 개별 프로필에 대한 측정값과 전체 비즈니스에 대한 측정값을 구분할 수 있습니다. 비즈니스 측정값은 Customer Insights의 홈 페이지에 표시되지만 고객 측정값은 자세한 고객 보기에 노출됩니다.
+
+자세한 내용은 [측정값 빌더를 사용하여 처음부터 측정값 만들기](measure-builder.md)를 참조하세요.
+
+### <a name="consolidation-of-customer-insights-documentation"></a>Customer Insights 설명서 통합
+
+설명서 문서를 다시 방문하여 참여 인사이트 및 대상 그룹 인사이트 기능에 대한 언급을 제거했습니다. 앞으로 애플리케이션의 핵심 기능에 대해 쓸 때 제품 이름 Customer Insights를 일관되게 참조할 것입니다. 이 변경으로 인해 기본 설명서 저장소의 목차, URL 구조 및 파일 경로가 크게 재구성되었습니다. 모든 책갈피 또는 기존 링크는 계속 작동하며 업데이트된 URL로 리디렉션됩니다.
+
+변경 사항을 어떻게 인식하는지 알려주거나 예상대로 작동하지 않는 것을 발견하려면 [이 페이지에 대한 피드백 제출](https://github.com/MicrosoftDocs/customer-insights/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A%0A%E2%9A%A0%20*Do%20not%20edit%20this%20section.%20It%20is%20required%20for%20docs.microsoft.com%20%E2%9E%9F%20GitHub%20issue%20linking.*%0A%0A*%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Version%20Independent%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Content%3A%20%5BNew%20and%20upcoming%20features%20-%20Dynamics%20365%20Customer%20Insights%5D(https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Fcustomer-insights%2Fwhats-new-customer-insights)%0A*%20Content%20Source%3A%20%5Bci-docs%2Fwhats-new-customer-insights.md%5D(https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fcustomer-insights%2Fblob%2Fmain%2Fci-docs%2Fwhats-new-customer-insights.md)%0A*%20Service%3A%20**customer-insights**%0A*%20Sub-service%3A%20**audience-insights**%0A*%20GitHub%20Login%3A%20%40m-hartmann%0A*%20Microsoft%20Alias%3A%20**mhart**)을 통해 알려주십시오.
 
 ## <a name="march-2022-updates"></a>2022년 3월 업데이트
 

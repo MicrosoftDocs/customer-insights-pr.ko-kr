@@ -12,12 +12,12 @@ searchScope:
 - ci-predictions
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: cca91f2bbe2fc64554199082a79c1b388a01ab52
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e2cace3547a0b584dbf26ae5eecf86f3b256649f
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647127"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740727"
 ---
 # <a name="complete-your-partial-data-with-predictions-deprecated"></a>예측으로 부분 데이터 완성(더 이상 사용되지 않음)
 
@@ -37,7 +37,7 @@ ms.locfileid: "8647127"
 
 1. 조직에 [Microsoft Dataverse에서 설정](/ai-builder/build-model#prerequisites) 인스턴스가 있고 이는 Customer Insights와 동일한 조직에 있습니다.
 
-2. 대상 그룹 인사이트 환경은 Dataverse 인스턴스에 연결됩니다.
+2. Customer Insights 환경이 Dataverse 인스턴스에 첨부됩니다.
 
 자세한 내용은 [새 환경 만들기](create-environment.md)를 참조하세요.
 

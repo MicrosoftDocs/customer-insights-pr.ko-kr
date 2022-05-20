@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 85995cbd7f797810bfb6ecdc8a24d56542f0b5a9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 1e629cd218b104b115f74f59a53a14e9d60fcc8a
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646602"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741373"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Microsoft Dataverse에서 Customer Insights 데이터로 작업
 
@@ -54,7 +54,7 @@ Customer Insights의 일부 출력 엔터티는 Dataverse의 테이블로 사용
 
 ### <a name="customerprofile"></a>CustomerProfile
 
-이 테이블에는 Customer Insights의 통합 고객 프로필이 포함되어 있습니다. 통합 고객 프로필의 스키마는 병합 프로세스에 사용되는 엔터티 및 특성에 따라 다릅니다. 고객 프로필 스키마에는 일반적으로 [CustomerProfile에 대한 Common Data Model 정의](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile) 특성의 하위 집합이 포함됩니다.
+이 테이블에는 Customer Insights의 통합 고객 프로필이 포함되어 있습니다. 통합 고객 프로필의 스키마는 데이터 통합 프로세스에 사용된 엔터티 및 특성에 따라 다릅니다. 고객 프로필 스키마에는 일반적으로 [CustomerProfile에 대한 Common Data Model 정의](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile) 특성의 하위 집합이 포함됩니다.
 
 ### <a name="alternatekey"></a>AlternateKey
 

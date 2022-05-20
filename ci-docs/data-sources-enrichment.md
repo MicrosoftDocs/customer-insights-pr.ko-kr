@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 56f6a8ad20224922f9968f0ad3b6a0e0a400214b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646573"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755694"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>데이터 원본 보강(프리뷰)
 
@@ -26,7 +26,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 데
 1. **데이터** > **통합** 으로 이동합니다. 보강할 엔터티를 선택하고 엔터티의 기본 키로 하나의 특성을 선택합니다. 자세한 내용은 [기본 키 선택](map-entities.md#select-primary-key-and-semantic-type-for-attributes)을 참조하세요.
 
 1. **데이터** > **데이터 원본** 으로 이동.
- 
+
 1. 보강하려는 데이터 원본 옆의 세로 줄임표를 선택하고 **보강** 을 선택합니다.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="데이터 원본 보강 페이지입니다.":::

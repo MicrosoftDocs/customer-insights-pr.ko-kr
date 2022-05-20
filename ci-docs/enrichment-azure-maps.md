@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 6a1c3791076a7dda4531664ca88632f7f1b914e3
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 6d43dc2ca82c034fbd396d92637e7aea8179df77
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646533"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755362"
 ---
 # <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>Azure Maps를 통한 고객 프로필 보강(프리뷰)
 
@@ -51,7 +51,7 @@ Azure Maps 데이터 보강을 구성하려면 다음 필수 구성 요소가 �
 
 1. 필드 매핑을 완료하려면 **다음** 을 선택합니다.
 
-1. **고급 설정** 을 수정할지 여부를 평가합니다. 이는 고급 사용 케이스를 처리할 수 있는 최대한의 유연성을 제공하기 위해 제공되지만 대부분의 경우 기본값이 적절합니다.
+1. **고급 설정** 을 수정할지 여부를 평가합니다. 이러한 설정은 고급 사용 사례를 처리할 수 있는 최대한의 유연성을 제공하기 위해 제공되지만 대부분의 경우 기본값이 적절합니다.
    - **주소 유형**: 기본 동작은 보강이 불완전하더라도 최상의 주소 일치를 반환하는 것입니다. 완전한 주소만 얻으려면&mdash;예를 들어 집 번호가 포함된 주소&mdash;**포인트 주소** 를 제외한 모든 확인란을 선택 취소합니다. 
    - **언어** : 기본적으로 주소는 해당 주소가 속한 지역의 언어로 반환됩니다. 표준화된 주소 언어를 적용하려면 드롭다운 메뉴에서 언어를 선택합니다. 예를 들어 **영어** 를 선택하면 **København, Danmark** 대신 **Copenhagen, Denmark** 가 반환됩니다.
 
@@ -89,7 +89,7 @@ Azure Maps 데이터 보강을 구성하려면 다음 필수 구성 요소가 �
 
 ## <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수
 
-Azure Maps에 데이터를 전송하기 위해 Dynamics 365 Customer Insights를 활성화할 때 개인 데이터와 같이 잠재적으로 민감한 데이터를 비롯하여 Dynamics 365 Customer Insights의 준수 경계를 벗어난 데이터 전송을 허용합니다. Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만 귀하는 Azure Maps가 귀하가 가질 수 있는 모든 개인 정보 보호 또는 보안 의무를 충족하도록 해야 합니다. 자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)을 참고하십시오.
+Azure Maps에 데이터를 전송하기 위해 Dynamics 365 Customer Insights를 활성화할 때 개인 데이터와 같이 잠재적으로 민감한 데이터를 비롯하여 Dynamics 365 Customer Insights의 준수 경계를 벗어난 데이터 전송을 허용합니다. Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만 귀하는 귀하가 가질 수 있는 모든 개인 정보 보호 또는 보안 의무를 Azure Maps가 충족하는지 확인할 책임이 있습니다. 자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)을 참고하십시오.
 Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하지 않도록 이 보강을 언제든지 제거할 수 있습니다.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

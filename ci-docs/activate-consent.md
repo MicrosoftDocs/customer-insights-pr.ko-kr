@@ -1,23 +1,22 @@
 ---
 title: 세그먼트에 대한 동의 규칙 활성화
 description: 다음 단계에 따라 Dynamics 365 Customer Insights에서 동의 데이터를 연결하고 동의 확인을 활성화합니다. 관리자는 동의 확인을 사용 중지할 수도 있습니다.
-ms.date: 11/12/2021
-ms.subservice: audience-insights
+ms.date: 04/27/2022
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: bfa03f4b7b56b300a74ebd04721cd64b893879f1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f82e3a4031fee8bcaa88575cbd68b37385a7fffb
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646639"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755178"
 ---
 # <a name="activate-consent-rules"></a>동의 규칙 활성화
 
-[동의 센터(미리 보기)](consent-management/overview.md)는 다양한 소스의 동의 데이터를 결합시키는 데 도움이 됩니다. 통합된 *동의* 엔터티를 사용하여 기본 동의 확인을 적용합니다. 동의 센터에서 동의 데이터를 가져오고 데이터에 대한 규칙을 구성하면 *동의* 엔터티가 Dynamics 365 Customer Insights에 자동으로 동기화됩니다.
+[동의 센터(미리 보기)](consent-management/overview.md)는 다양한 소스의 동의 데이터를 결합시키는 데 도움이 됩니다. 통합된 *동의* 엔터티를 사용하여 기본 동의 확인을 적용합니다. 동의 데이터를 가져오고 맵 규칙을 구성하면 *동의* 엔터티가 Dynamics 365 Customer Insights에 자동으로 동기화됩니다.
 
 ## <a name="enable-consent-checks"></a>동의 확인 사용
 

@@ -1,38 +1,46 @@
 ---
 title: 고객에 대한 통합 보기 만들기
-description: 고객 프로필의 단일 마스터 데이터 세트를 만들기 위해 데이터와 데이터 통합 프로세스를 진행합니다.
-ms.date: 10/18/2021
-ms.reviewer: mhart
+description: 통합 고객 프로필의 단일 데이터 세트를 만들기 위해 데이터와 데이터 통합 프로세스를 진행합니다.
+ms.date: 05/10/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: overview
-author: adkuppa
-ms.author: adkuppa
+author: v-wendysmith
+ms.author: mukeshpo
 manager: shellyha
 searchScope:
 - ci-map
 - customerInsights
-ms.openlocfilehash: eb5bbc538f93bc7097581db233d684870ade84a2
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: bb8da6f4b9f92f2b265ff9807e04638edae4f814
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646562"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755742"
 ---
 # <a name="data-unification-overview"></a>데이터 통합 개요
 
-[데이터 원본 설정](data-sources.md) 후 데이터를 통합할 수 있습니다. 데이터 통합에는 **매핑**, **일치** 및 **병합** 의 세 단계가 포함됩니다.
+[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
-데이터 통합 프로세스를 사용하면 개별 데이터 원본을 단일 마스터 데이터 집합으로 통합하여 고객에 대한 통일된 보기를 제공할 수 있습니다. 통합 단계는 필수이며 다음 순서로 수행됩니다.
+[데이터 원본 설정](data-sources.md) 후 데이터를 통합할 수 있습니다. 데이터 통합을 사용하면 한 때 서로 다른 데이터 원본을 해당 데이터에 대한 통합 보기를 제공하는 단일 마스터 데이터 세트로 통합할 수 있습니다. 데이터가 개인 중심인 개인 소비자(B-to-C)의 경우 통합은 고객에 대한 통합 보기를 제공합니다. 데이터가 거래처 중심인 비즈니스 거래처(B-to-B)의 경우 통합은 거래처에 대한 통합 보기를 제공합니다.
 
-1. [매핑](map-entities.md)
-2. [일치](match-entities.md)
-3. [병합](merge-entities.md)
+데이터는 단일 엔터티 또는 여러 엔터티에서 통합될 수 있습니다. 통합은 다음 순서로 수행됩니다.
 
-데이터 통합을 완료한 후 선택적으로
+1. [원본 필드](map-entities.md)(이전에는 Map이라고 함): 원본 필드 단계에서 통합 프로세스에 포함할 엔터티와 필드를 선택합니다. 필드의 목적을 설명하는 공통 의미 유형에 필드를 매핑합니다.
 
-- [엔터티 간 관계 설정](relationships.md)을 통해 정교한 세그먼트를 만들고
-- [데이터 보강](enrichment-hub.md)을 통해 고객에 대한 광범위한 인사이트를 얻으며
+1. [중복 레코드](remove-duplicates.md)(이전에는 일치의 일부): 중복 레코드 단계에서 선택적으로 각 엔터티 내에서 중복 고객 레코드를 제거하는 규칙을 정의합니다.
+
+1. [매칭 조건](match-entities.md)(이전에는 일치라고 함): 일치 조건 단계에서 엔터티 간에 고객 레코드를 일치시키는 규칙을 정의합니다. 고객이 둘 이상의 엔터티에서 발견되면 각 엔터티의 모든 열과 데이터가 포함된 단일 통합 레코드가 생성됩니다.
+
+1. [통합 고객 필드](merge-entities.md)(이전에는 병합이라고 함): 통합 고객 필드 단계에서 통합 고객 프로필에 포함, 제외 또는 병합해야 하는 소스 필드를 결정합니다.  
+
+1. 통합 프로필을 [검토](review-unification.md)하고 생성합니다.
+
+데이터 통합을 완료한 후 선택적으로:
+
+- [엔터티 간 관계 설정](relationships.md)을 통해 정교한 세그먼트를 만듭니다.
+- [데이터 보강](enrichment-hub.md)을 통해 고객에 대한 광범위한 통찰력을 얻습니다.
 - 일부 수집된 특성에서 [활동을 정의](activities.md)합니다.
-
+- [측정값 구축](measures.md)을 통해 고객 행동과 비즈니스 성과를 더 잘 이해합니다.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

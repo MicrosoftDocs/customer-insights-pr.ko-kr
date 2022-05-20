@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 42095f369c47553e5ddf5fada54e559202c943a9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646954"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757394"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>세그먼트 목록 및 기타 데이터를 Azure Blob Storage로 내보내기(프리뷰)
 
@@ -44,7 +44,7 @@ Blob Storage에 Customer Insights 데이터를 저장하거나 다른 애플리�
 이 유형의 연결에 대한 액세스 권한이 있는 경우 이 내보내기를 구성할 수 있습니다. 자세한 내용은 [내보내기를 구성하는 데 필요한 권한](export-destinations.md#set-up-a-new-export)을 참조하세요.
 
 > [!IMPORTANT]
-> Azure Blob Storage 계정에 대한 일시 삭제 설정을 켠 경우 내보내기가 실패합니다. 데이터를 Blob으로 내보내려면 일시 삭제를 끕니다. 자세한 내용은 [Blob 일시 삭제 사용](/azure/storage/blobs/soft-delete-blob-enable.md)을 참조하십시오
+> Azure Blob Storage 계정에 대한 일시 삭제 설정을 켠 경우 내보내기가 실패합니다. 데이터를 Blob으로 내보내려면 일시 삭제를 끕니다. 자세한 내용은 [Blob 일시 삭제 사용](/azure/storage/blobs/soft-delete-blob-enable)을 참조하십시오
 
 1. **데이터** > **내보내기** 로 이동합니다.
 

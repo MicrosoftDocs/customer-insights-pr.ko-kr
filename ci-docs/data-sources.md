@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: bcc50c6fa8f8e2a66ef6164bfa9022e068c0e374
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 1fe8d6e8098831ecc8ff28e571340c56a654de6d
+ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646582"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739216"
 ---
 # <a name="data-sources-overview"></a>데이터 원본 개요
 
@@ -35,9 +35,6 @@ Dynamics 365 Customer Insights는 광범위한 원본 세트의 데이터에 연
 - [Common Data Model 폴더로 부터](connect-common-data-model.md)
 - [내 Microsoft Dataverse 레이크로 부터](connect-dataverse-managed-lake.md)
 - [Azure Synapse Analytics 데이터베이스에서](connect-synapse.md)
-
-> [!NOTE]
-> 평가판을 사용하는 경우 가져오기 방법 섹션에 **Customer Insights 데이터 라이브러리** 옵션이 있습니다. 다양한 산업 분야에서 사용할 수 있는 샘플 데이터 세트를 선택하려면 이 옵션을 선택합니다. 자세한 내용은 [Dynamics 365 Customer Insights 평가판](trial-signup.md)을 참조하십시오.
 
 ## <a name="add-data-from-on-premises-data-sources"></a>온-프레미스 데이터 소스의 데이터 추가
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e77227e1e353c02cfb13e26a8ecbe0768ba6c0fa
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646684"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741511"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Azure Synapse Analytics(프리뷰)로 데이터 내보내기
 
@@ -34,7 +34,7 @@ Azure에서:
 
 - 활성 Azure 구독.
 
-- 새 Azure Data Lake Storage Gen2 계정을 사용하는 경우 *Customer Insights의 서비스 주체* 에는 **스토리지 Blob 데이터 Contributor** 권한이 필요합니다. [대상 그룹 인사이트에 대한 Azure 서비스 주체를 사용하여 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)에 대해 자세히 알아봅니다. Data Lake Storage Gen2에는 [계층적 네임스페이스](/azure/storage/blobs/data-lake-storage-namespace)가 활성화되어 **있어야** 합니다.
+- 새 Azure Data Lake Storage Gen2 계정을 사용하는 경우 *Customer Insights의 서비스 주체* 에는 **스토리지 Blob 데이터 Contributor** 권한이 필요합니다. [Customer Insights용 Azure 서비스 주체를 사용하여 Azure Data Lake Storage Gen2 계정에 연결](connect-service-principal.md)에 대해 자세히 알아보세요. Data Lake Storage Gen2에는 [계층적 네임스페이스](/azure/storage/blobs/data-lake-storage-namespace)가 활성화되어 **있어야** 합니다.
 
 - Azure Synapse workspace가 있는 리소스 그룹에서 *서비스 주체* 및 *Customer Insights에서 관리자 권한이 있는 Azure AD 사용자* 에 최소 **Reader** 권한을 할당해야 합니다. 자세한 내용은 [Azure Portal을 사용하여 Azure 역할 할당](/azure/role-based-access-control/role-assignments-portal)을 참조하십시오.
 

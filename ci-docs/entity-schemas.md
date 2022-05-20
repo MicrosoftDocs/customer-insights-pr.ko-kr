@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e155f75ffbc2c1bb228bece1b3e34846df794543
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646891"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757440"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model의 엔터티 스키마
 
@@ -23,7 +23,7 @@ ms.locfileid: "8646891"
 
 이 공유 데이터 모델을 통해 응용 프로그램과 데이터 통합자가 통합된 데이터 정의를 제공하여 보다 쉽게 공동 작업할 수 있습니다. Common Data Model에는 표준 엔터티, 관계, 계층 구조, 특성 등이 포함된 풍부한 메타데이터 시스템이 포함됩니다. Dynamics 365 앱에서 시작되었으며 260개가 넘는 표준 엔터티가 있는 GitHub에서 오픈 소스로 제공됩니다. 내부 및 외부 파트너의 대규모 시스템은 Common Data Model에 산업별 개념을 제공합니다.
 
-오늘날 Power BI 데이터 흐름 및 Azure Data Services를 비롯한 여러 시스템 및 플랫폼이 Common Data Model 을 구현합니다. Microsoft Dataverse, Dynamics 365, Power Apps, Power BI, 곧 출시될 Azure 데이터 서비스에서 이미 지원되며 [오픈 데이터 이니셔티브](https://www.microsoft.com/open-data-initiative)에 직접적인 가치를 창출합니다.
+오늘날 Power BI 데이터 흐름 및 Azure Data Services를 비롯한 여러 시스템 및 플랫폼이 Common Data Model 을 구현합니다. Microsoft Dataverse, Dynamics 365, Power Apps, Power BI, 곧 출시될 Azure 데이터 서비스에서 이미 지원되며 [오픈 데이터 이니셔티브](https://dynamics.microsoft.com/en-us/open-data-initiative/)에 직접적인 가치를 창출합니다.
 
 ## <a name="customer-insights-entity-schemas"></a>Customer Insights 엔터티 스키마
 

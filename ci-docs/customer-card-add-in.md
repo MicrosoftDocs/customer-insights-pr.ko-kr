@@ -13,16 +13,14 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 2dfa6c643cbe9a8531a085d8ce01b0f64776476f
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 8508880bb3274bb491a314a043a5222d4d381073
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646612"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755644"
 ---
 # <a name="customer-card-add-in-preview"></a>고객 카드 추가 기능(미리 보기)
-
-
 
 Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하세요. 지원되는 Dynamics 365 앱에 설치된 고객 카드 추가 기능을 사용하여 고객 프로필 필드, 인사이트 및 활동 타임라인을 표시하도록 선택할 수 있습니다. 추가 기능은 연결된 Dynamics 365 앱의 데이터에 영향을 주지 않고 Customer Insights에서 데이터를 검색합니다.
 
@@ -31,7 +29,7 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 ## <a name="prerequisites"></a>필수 조건
 
 - 추가 기능은 Sales 또는 Customer Service, 버전 9.0 이상과 같은 Dynamics 365 모델 기반 앱에서만 작동합니다.
-- Dynamics 365 데이터를 Customer Insights 고객 프로필에 매핑하려면 [Microsoft Dataverse 커넥터를 사용하여 Dynamics 365 앱에서 수집](connect-power-query.md)하는 것이 좋습니다. 다른 방법으로 Dynamics 365 연락처(또는 계정)를 수집하려면, `contactid`(또는 `accountid`) 필드가 [데이터 통합 프로세스 구상 단계에 있는 해당 데이터 소스의 기본 키로 설정되었는지 확인해야 합니다](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
+- Dynamics 365 데이터를 Customer Insights 고객 프로필에 매핑하려면 [Microsoft Dataverse 커넥터를 사용하여 Dynamics 365 앱에서 수집](connect-power-query.md)하는 것이 좋습니다. 다른 방법으로 Dynamics 365 연락처(또는 계정)를 수집하려면, `contactid`(또는 `accountid`) 필드가 [데이터 통합 프로세스 구상 단계에 있는 해당 데이터 소스의 기본 키로 설정되었는지 확인해야 합니다](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 - 고객 카드 추가 기능의 모든 Dynamics 365 사용자는 데이터를 보려면 Customer Insights에서 [사용자로 추가](permissions.md)해야 합니다.
 - 데이터 조회가 작동하려면 Customer Insights의 [구성된 검색 및 필터 기능](search-filter-index.md)이 필요합니다.
 - 각 추가 기능 컨트롤은 Customer Insights의 특정 데이터에 의존합니다. 일부 데이터 및 컨트롤은 특정 유형의 환경에서만 사용할 수 있습니다. 추가 기능 구성은 선택한 환경 유형으로 인해 제어를 사용할 수 없는 경우 알려줍니다. [환경 사용 사례](work-with-business-accounts.md)에 대해 자세히 알아보세요.
@@ -132,16 +130,16 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 
 **해결 방법:**
 
-1. 다음 지침에 따라 카드 추가 기능을 구성했는지 확인합니다. [고객 카드 추가 기능 구성](#configure-the-customer-card-add-in) 
+1. 다음 지침에 따라 카드 추가 기능을 구성했는지 확인합니다. [고객 카드 추가 기능 구성](#configure-the-customer-card-add-in)
 
-1. 데이터 수집 구성을 검토합니다. 연락처 ID GUID가 포함된 Dynamics 365 시스템의 데이터 원본을 편집합니다. Power Query 편집기에 연락처 ID GUID가 대문자로 표시된 경우 다음을 시도합니다. 
+1. 데이터 수집 구성을 검토합니다. 연락처 ID GUID가 포함된 Dynamics 365 시스템의 데이터 원본을 편집합니다. Power Query 편집기에 연락처 ID GUID가 대문자로 표시된 경우 다음 단계를 시도합니다.
     1. 데이터 원본를 편집하여 Power Query 편집자에서 데이터 원본을 엽니다.
     1. 연락처 ID 열을 선택합니다.
     1. 헤더 표시줄에서 **변환** 을 선택하여 사용 가능한 작업을 확인합니다.
     1. **소문자** 를 선택합니다. 테이블의 GUID가 이제 소문자인지 확인합니다.
     1. 데이터 원본을 저장합니다.
-    1. 데이터 수집, 통합 및 다운스트림 프로세스를 실행하여 변경 사항을 GUID에 전파합니다. 
+    1. 데이터 수집, 통합 및 다운스트림 프로세스를 실행하여 변경 사항을 GUID에 전파합니다.
 
-전체 새로 고침을 완료한 후 Customer Card Add-in 컨트롤에 예상 데이터가 표시되어야 합니다. 
+시스템이 전체 새로 고침을 완료한 후 Customer Card Add-in 컨트롤에 예상 데이터가 표시되어야 합니다.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

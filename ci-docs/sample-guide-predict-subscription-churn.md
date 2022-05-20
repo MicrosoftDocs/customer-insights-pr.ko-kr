@@ -1,8 +1,8 @@
 ---
 title: 구독 이탈 예측 샘플 가이드
 description: 이 샘플 가이드를 사용하여 즉시 사용 가능한 구독 이탈 예측 모델을 사용해보세요.
-ms.date: 11/19/2020
-ms.reviewer: mhart
+ms.date: 03/31/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-create-prediction
 - customerInsights
-ms.openlocfilehash: 2aea6c62421b308705899e4f8af64f64bfcb2d3d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5a8eeafecacef3d0bb4a798b698cf490423ca98d
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647096"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741419"
 ---
 # <a name="subscription-churn-prediction-sample-guide"></a>구독 이탈 예측 샘플 가이드
 
@@ -112,61 +112,7 @@ Contoso는 고품질 커피 및 커피 머신을 생산하는 회사로 Contoso 
 
 ## <a name="task-2---data-unification"></a>작업 2 - 데이터 통합
 
-데이터를 수집 한 후 이제 **매핑, 일치, 병합** 프로세스를 시작하여 통합 고객 프로필을 만듭니다. 자세한 내용은 [데이터 통합](data-unification.md)을 참조하십시오.
-
-### <a name="map"></a>매핑
-
-1. 데이터를 수집한 후 전자상거래 및 충성도 데이터의 연락처를 공통 데이터 유형에 매핑합니다. **데이터** > **통합** > **매핑** 으로 이동합니다.
-
-1. 고객 프로필을 나타내는 엔터티(**eCommerceContacts** 및 **loyCustomers**)를 선택합니다. 
-
-   :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="전자상거래와 충성도 데이터 원본을 통합합니다.":::
-
-1. **eCommerceContacts** 의 기본 키로 **ContactId** 를 선택하고 **loyCustomers** 의 기본 키로 **LoyaltyID** 를 선택합니다.
-
-   :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="LoyaltyId를 기본 키로 통합합니다.":::
-
-### <a name="match"></a>일치
-
-1. **일치 탭** 으로 이동한 다음 **순서 설정** 을 선택합니다.
-
-1. **기본** 드롭다운 목록에서 **eCommerceContacts : eCommerce** 를 기본 소스로 선택하고 모든 레코드를 포함합니다.
-
-1. **엔터티 2** 드롭다운 목록에서 **loyCustomers : LoyaltyScheme** 을 선택하고 모든 레코드를 포함합니다.
-
-   :::image type="content" source="media/unify-match-order.PNG" alt-text="전자상거래와 충성도 데이터 원본을 통합합니다.":::
-
-1. **새 규칙 만들기** 선택
-
-1. FullName을 사용하여 첫 번째 조건을 추가합니다.
-
-   * eCommerceContacts의 경우 드롭다운에서 **FullName** 을 선택합니다.
-   * loyCustomers의 경우 드롭다운에서 **FullName** 을 선택합니다.
-   * **정규화** 드롭다운을 선택하고 **유형(전화, 이름, 주소, ...)** 을 선택합니다.
-   * **정밀도 수준**: **기본** 및 **값**: **높음** 을 설정합니다.
-
-1. 새 규칙의 이름에 **FullName, Email** 을 입력합니다.
-
-   * **조건 추가** 를 선택하여 이메일 주소에 대한 두 번째 조건을 추가합니다.
-   * 엔터티 eCommerceContacts의 경우 드롭다운에서 **이메일** 을 선택합니다.
-   * 엔터티 loyCustomers의 경우 드롭다운에서 **이메일** 을 선택합니다. 
-   * 정규화를 비워 둡니다. 
-   * **정밀도 수준**: **기본** 및 **값**: **높음** 을 설정합니다.
-
-   :::image type="content" source="media/unify-match-rule.PNG" alt-text="이름 및 이메일에 대한 일치 규칙을 통합합니다.":::
-
-7. **저장** 및 **실행** 을 선택합니다.
-
-### <a name="merge"></a>병합
-
-1. **병합** 탭으로 이동합니다.
-
-1. **loyCustomers** 엔터티의 **ContactId** 에서 표시 이름을 **ContactIdLOYALTY** 로 변경하여 수집된 다른 ID와 구별합니다.
-
-   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="포인트 ID에서 contactid의 이름을 바꿉니다.":::
-
-1. **저장** 및 **실행** 을 선택하여 병합 프로세스를 시작합니다.
-
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>작업 3 - 구독 이탈 구성 예측
 

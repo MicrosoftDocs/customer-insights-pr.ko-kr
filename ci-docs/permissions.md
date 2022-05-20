@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: b80f07dfa734f4dd762bd711151a7045f24bed7d
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 74c7ff7cda8431c04dd34713becefa7e346331b4
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653576"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740911"
 ---
 # <a name="user-permissions"></a>사용자 권한
 
@@ -41,7 +41,7 @@ ms.locfileid: "8653576"
 
 - 뷰어에서 사용할 수 있는 모든 권한입니다.
 - **데이터 원본** 페이지를 사용하여 데이터를 로드하고 변환합니다.
-- 통합 고객 프로필 엔터티를 만드는 *데이터 통합* 섹션(**매핑**, **일치** 및 **병합**)을 완료합니다.
+- ***데이터 통합** 을 완료하면 통합 고객 프로필 엔터티가 됩니다.
 - **관계** 및 **활동** 을 정의합니다.
 - **세그먼트** 페이지를 사용하여 세그먼트를 만듭니다.
 - **측정값** 페이지를 사용하여 측정값을 만듭니다.

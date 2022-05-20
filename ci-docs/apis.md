@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: ecc8bb3dbec1d4583c4bf2a58058145343945299
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a460ec87ec85f0614f944d352588d4ca899f8120
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646792"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755458"
 ---
 # <a name="work-with-customer-insights-apis"></a>Customer Insights API에 대한 작업
 
@@ -25,7 +25,7 @@ Dynamics 365 Customer Insights는 Customer Insights의 데이터를 기반으로
 > [!IMPORTANT]
 > 이러한 API에 대한 자세한 내용은 [Customer Insights API 참조](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights)에 나열되어 있습니다. 여기에는 작업, 매개 변수 및 응답에 대한 추가 정보가 포함됩니다.
 
-이 문서에서는 Customer Insights API에 액세스하고, Azure 앱 등록을 만들고, 사용 가능한 클라이언트 라이브러리를 시작하는 방법을 설명합니다.
+이 문서에서는 Customer Insights API에 액세스하고, Azure 앱 등록을 만들고, 클라이언트 라이브러리를 시작하는 방법을 설명합니다.
 
 ## <a name="get-started-trying-the-customer-insights-apis"></a>Customer Insights API로 시작하기
 
@@ -83,7 +83,7 @@ MSAL(Microsoft 인증 라이브러리)에이 앱 등록을위한 애플리케이
 
 MSAL에 대한 자세한 내용은 [MSAL(Microsoft 인증 라이브러리) 개요](/azure/active-directory/develop/msal-overview)를 참조하세요.
 
-Azure에서 앱 등록에 대한 자세한 내용은 [애플리케이션 등록](/azure/active-directory/develop/quickstart-register-app.md#register-an-application)을 참고하세요.
+Azure에서 앱 등록에 대한 자세한 내용은 [애플리케이션 등록](/graph/auth-register-app-v2)을 참고하세요.
 
 클라이언트 라이브러리에서 API를 사용하는 방법에 대한 자세한 내용은 [Customer Insights 클라이언트 라이브러리](#customer-insights-client-libraries)를 참고하세요.
 
@@ -113,6 +113,10 @@ Azure에서 앱 등록에 대한 자세한 내용은 [애플리케이션 등록]
 
 1. 앱 등록 이름을 검색하고 검색 결과에서 선택한 다음 **저장** 을 선택합니다.
 
+## <a name="sample-queries"></a>샘플 쿼리
+
+[OData 쿼리 예시](odata-examples.md) API와 작동하도록 OData 샘플 쿼리의 짧은 목록을 컴파일했습니다.
+
 ## <a name="customer-insights-client-libraries"></a>Customer Insights 클라이언트 라이브러리
 
 이 섹션은 Customer Insights API에 사용할 수 있는 클라이언트 라이브러리 사용을 시작하는 데 도움이 됩니다. 모든 라이브러리 소스 코드 및 샘플 애플리케이션은 [Customer Insights GitHub 페이지](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries)에서 확인할 수 있습니다. 
@@ -137,7 +141,7 @@ NuGet.org에서 C# 클라이언트 라이브러리 사용을 시작하는 방법
 
 1. [MSAL(Microsoft 인증 라이브러리)](/azure/active-directory/develop/msal-overview)을 사용하여 기존 [Azure 앱 등록](#create-a-new-app-registration-in-the-azure-portal)을 사용하여 `AccessToken`를 가져옵니다.
 
-1. 토큰을 성공적으로 인증하고 획득한 후에는 추가 **DefaultRequestHeaders "승인"** 을 **무기명 "액세스 토큰"** 으로 설정하고 **Ocp-Apim-Subscription-Key** 를 [Customer Insights 환경의 **구독 키**](#get-started-trying-the-customer-insights-apis)로 설정하여 새로 만들기 또는 기존 `HttpClient`를 사용합니다.   
+1. 토큰을 성공적으로 인증하고 획득한 후에는 **DefaultRequestHeaders "승인"** 을 **무기명 "액세스 토큰"** 으로 설정하고 **Ocp-Apim-Subscription-Key** 를 [Customer Insights 환경의 **구독 키**](#get-started-trying-the-customer-insights-apis)로 설정하여 새로 만들기 또는 기존 `HttpClient`를 사용합니다.   
  
    적절한 경우 **권한 부여** 헤더를 초기화합니다. 예를 들어 토큰이 만료된 경우입니다.
 
@@ -147,7 +151,7 @@ NuGet.org에서 C# 클라이언트 라이브러리 사용을 시작하는 방법
 
 1. 클라이언트를 사용하여 '확장 메서드'(예: `GetAllInstancesAsync`)를 호출합니다. 기본 `Microsoft.Rest.HttpOperationResponse`에 대한 액세스를 선호하는 경우 "http 메시지 메서드"(예: `GetAllInstancesWithHttpMessagesAsync`)를 사용합니다.
 
-1. 메서드가 여러 유형(예: `IList<InstanceInfo>` 및 `ApiErrorResult`)을 반환할 수 있으므로 응답은 `object` 유형일 수 있습니다. 반환 유형을 확인하려면 해당 작업의 [API 세부 정보 페이지](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights)에 지정된 응답 유형으로 객체를 안전하게 캐스트할 수 있습니다.    
+1. 메서드가 여러 유형(예: `IList<InstanceInfo>` 및 `ApiErrorResult`)을 반환할 수 있으므로 응답은 `object` 유형일 수 있습니다. 반환 유형을 확인하려면 해당 작업에 대해 [API 세부정보 페이지](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights)에 지정된 응답 유형의 개체를 사용합니다.    
    
    요청에 대한 추가 정보가 필요한 경우 **http 메시지 방법** 을 사용하여 원시 응답 객체에 액세스합니다.
 

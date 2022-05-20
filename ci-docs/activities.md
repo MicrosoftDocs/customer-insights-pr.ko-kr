@@ -17,16 +17,16 @@ searchScope:
 - ci-measures
 - ci-segment-suggestions
 - customerInsight
-ms.openlocfilehash: 29b5d3f5848d36abd8e941136a6330dbb7730016
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 6c0a1bc5d9a42806b458142804199c733ff530ec
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646801"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755506"
 ---
 # <a name="customer-activities"></a>고객 활동
 
-Dynamics 365 Customer Insights에 [다양한 데이터 소스](data-sources.md)의 고객 활동을 결합하여 활동을 시간순으로 나열하는 타임라인을 만듭니다. Dynamics 365 앱 또는 Power BI 대시보드에 타임라인과 [고객 카드 추가 기능](customer-card-add-in.md)을 포함합니다.
+Dynamics 365 Customer Insights의 [다양한 데이터 원본](data-sources.md)에서 고객 활동을 결합합니다. 활동을 시간순으로 나열하는 타임라인을 만듭니다. [고객 카드 추가 기능](customer-card-add-in.md) 솔루션을 사용하여 Dynamics 365 앱에 타임라인을 포함합니다.
 
 ## <a name="define-an-activity"></a>활동 정의
 
@@ -78,7 +78,7 @@ Dynamics 365 Customer Insights에 [다양한 데이터 소스](data-sources.md)�
 
 1. 다음 단계로 이동하려면 **다음** 을 선택하세요. **완료 및 검토** 를 선택하여 활동 유형을 **기타** 로 설정한 상태로 지금 활동을 저장할 수 있습니다. 
 
-1. **활동 유형** 단계에서 활동 유형을 선택하고 선택적으로 Customer Insights의 다른 영역에서 사용하기 위해 일부 활동 유형을 의미론적으로 매핑하려는 경우 선택합니다. 현재 *피드백*, *충성도*, *SalesOrder*, *SalesOrderLine* 및 *구독* 활동 유형은 필드 매핑에 동의한 후 의미적으로 매핑될 수 있습니다. 활동 유형이 새 활동과 관련이 없는 경우 사용자 지정 활동 유형에 *기타* 또는 *새로 만들기* 를 선택할 수 있습니다.
+1. **활동 유형** 단계에서 활동 유형을 선택하고 선택적으로 Customer Insights의 다른 영역에서 사용하기 위해 일부 활동 유형을 의미론적으로 매핑하려는 경우 선택합니다. 현재, *피드백*, *로얄티*, *SalesOrder*, *SalesOrderLine* 및 *구독* 활동 유형은 필드 매핑에 동의한 후 시맨틱을 지원합니다. 활동 유형이 새 활동과 관련이 없는 경우 사용자 지정 활동 유형에 *기타* 또는 *새로 만들기* 를 선택할 수 있습니다.
 
 1. 다음 단계로 이동하려면 **다음** 을 선택하세요. 
 
@@ -110,7 +110,7 @@ Dynamics 365 Customer Insights에 [다양한 데이터 소스](data-sources.md)�
 
 **고객** 의 타임라인을 열려면 고객으로 이동하여 보려는 고객 프로필을 선택합니다.
 
-구성한 활동에 고객이 참여한 경우 **활동 타임라인** 섹션에서 찾을 수 있습니다.
+고객이 구성된 활동에 참여했다면 **활동 타임라인** 섹션에서 확인할 수 있습니다.
 
 :::image type="content" source="media/Activity_Timeline1.PNG" alt-text="고객 프로필에서 구성된 활동 보기.":::
 

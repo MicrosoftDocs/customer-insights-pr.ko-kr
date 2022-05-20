@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 1dd99edc327bd41b0442b390f2e4f8664269f553
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 776eee79c25edbd40ed119510a314f5126933c3e
+ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646873"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739170"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Azure 서비스 주체를 사용하여 Azure Data Lake Storage 계정에 연결
 
@@ -40,7 +40,7 @@ Customer Insights에 대한 새 서비스 주체를 만들기 전에 조직에 �
 
 3. **관리** 에서 **엔터프라이즈 애플리케이션** 를 선택합니다.
 
-4. 이름이 `Dynamics 365 AI for Customer Insights`인 Microsoft 애플리케이션 ID `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff`을 검색합니다.
+4. **응용 프로그램 ID 시작** `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff`에 대한 필터를 추가하거나 `Dynamics 365 AI for Customer Insights` 이름을 검색합니다.
 
 5. 일치하는 레코드를 찾으면 서비스 주체가 이미 존재한다는 의미입니다. 
    

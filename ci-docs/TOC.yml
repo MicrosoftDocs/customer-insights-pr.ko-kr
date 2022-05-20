@@ -66,12 +66,18 @@
   items:
     - name: 데이터 통합 개요
       href: data-unification.md
-    - name: 엔터티 및 특성 매핑
+    - name: 원본 필드 선택
       href: map-entities.md
-    - name: 엔터티 매칭
+    - name: 중복 레코드 제거
+      href: remove-duplicates.md
+    - name: 일치 조건
       href: match-entities.md
-    - name: 엔터티 병합
+    - name: 고객 필드 통합
       href: merge-entities.md
+    - name: 데이터 통합 검토
+      href: review-unification.md
+    - name: 통합 설정 업데이트
+      href: data-unification-update.md
 - name: 데이터 보강
   items:
     - name: 고객 프로필 보강
@@ -282,6 +288,8 @@
       href: apis.md
     - name: API 참조
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+    - name: OData 샘플 쿼리
+      href: odata-examples.md
 - name: 동의 관리(프리뷰)
   items:
     - name: 도움말 허브
