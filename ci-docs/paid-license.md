@@ -1,41 +1,33 @@
 ---
-title: Dynamics 365 Customer Insights의 유료 라이선스로 시작
+title: Dynamics 365 Customer Insights 라이선스 구매
 author: m-hartmann
-description: Dynamics 365 Customer Insights의 첫 실행 경험을 익히고 그 기능을 살펴보십시오.
+description: Dynamics 365 Customer Insights 라이선스를 구매하고 로그인하여 앱에 익숙해지십시오.
 ms.author: mhart
 ms.date: 10/05/2021
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 8fcc1c97be87afe942aa3b5e23d1eb68008aa873
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 9c83dc6716abd5f81eb7851d462d7d61791f542b
+ms.sourcegitcommit: ba29fd7c89bdeba7260b4783662d8da8e1e1e30e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641862"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8768430"
 ---
-# <a name="get-started-after-purchasing-customer-insights"></a>Customer Insights 구매 후 시작
+# <a name="purchase-customer-insights"></a>Customer Insights 구매
 
-이 문서에서는 조직에서 구독을 구입한 후 Dynamics 365 Customer Insights에서 첫 번째 단계를 수행하는 방법을 설명합니다. Customer Insights 구매를 원할 경우 [Dynamics 365 Customer Insights 웹사이트](https://dynamics.microsoft.com/ai/customer-insights/)에 연락처가 나와 있습니다. 
-
-Customer Insights에 대한 구독 라이선스를 구입한 후 Microsoft 365 테넌트의 전역 관리자는 환경을 만들도록 초대하는 이메일을 받습니다. 
-
-Customer Insights는 테넌트별로 라이선스가 부여되며 여러 기능을 포함합니다. 추가 용량과 라이선스를 구입하여 기본 할당량을 늘릴 수 있습니다. 
-- [가격 책정 개요](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
-- 용량 및 권한: [Dynamics 365 라이선스 가이드](https://go.microsoft.com/fwlink/?LinkId=866544)
+Dynamics 365 Customer Insights을 구매하려면 [Dynamics 365 Customer Insights 웹사이트](https://dynamics.microsoft.com/ai/customer-insights/)에서 연락처 옵션을 참조하십시오.
 
 서비스 및 기능을 사용해 보려면 [평가판 환경 설정](trial-signup.md)을 참조하십시오.
 
-## <a name="start-with-customer-insights"></a>Customer Insights로 시작
+Customer Insights는 테넌트별로 라이선스가 부여되며 여러 기능을 포함합니다. 추가 용량과 라이선스를 구입하여 기본 할당량을 늘릴 수 있습니다.
+- [가격 책정 개요](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
+- 용량 및 권한: [Dynamics 365 라이선스 가이드](https://go.microsoft.com/fwlink/?LinkId=866544)
 
-첫 실행 경험은 Customer Insights의 초기 초점을 선택하고 샘플 데이터로 기능을 탐색하는 데 도움이 됩니다. 다음 단계로는 고유한 환경을 만들고 고유한 데이터로 작업할 수 있습니다.
-
-**처음으로 로그인**:
+## <a name="sign-in-for-the-first-time"></a>처음으로 로그인
 
 1. [Customer Insights 앱 URL](https://home.ci.ai.dynamics.com)로 이동합니다.
-1. 학교 또는 회사 계정을 사용하여 로그인합니다. 
+1. 학교 또는 회사 계정을 사용하여 로그인합니다.
 1. 서비스 약관에 동의하고 Customer Insights 환경에 대한 콘텐츠 기본 설정을 지정합니다.
 
-## <a name="create-your-own-environment"></a>나만의 환경 만들기
-
-처음 로그인하면 샘플 데이터가 있는 환경이 표시됩니다. 해당 데이터를 사용하여 기능을 탐색하고 앱에 익숙해질 수 있습니다. 자체 데이터를 사용하려면 [환경을 만들어야](create-environment.md) 합니다.
+처음 로그인하면 샘플 데이터가 있는 환경이 표시됩니다. 해당 데이터를 사용하여 기능을 탐색하고 앱에 익숙해질 수 있습니다. 자체 데이터를 사용하려면 [환경을 만듭니다](create-environment.md).

@@ -1,7 +1,7 @@
 ---
 title: Customer Insights의 세그먼트
 description: 세그먼트 및 세그먼트 생성 및 관리 방법에 대한 개요입니다.
-ms.date: 03/30/2022
+ms.date: 05/20/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 9791e971387eb7db91ed7c4e4fe76552656013ba
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d616ec8273115203dddb59334a348c66e72fa678
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647067"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800750"
 ---
 # <a name="segments-overview"></a>세그먼트 개요
 
@@ -58,7 +58,7 @@ ms.locfileid: "8647067"
 - **보기**: 구성원 수 추세를 포함한 세그먼트 세부 사항 및 세그먼트 구성원의 미리보기를 봅니다.
 - **다운로드**: 구성원 목록을 .CSV 파일로 다운로드합니다.
 - **편집**: 속성을 변경할 세그먼트를 편집합니다.
-- 세그먼트의 **중복 항목을 만듭니다**. 속성을 즉시 편집하거나 단순히 중복 항목을 저장하도록 선택할 수 있습니다.
+- 세그먼트의 **중복 항목을 만듭니다**. 속성을 즉시 편집하거나 복제본을 저장하도록 선택할 수 있습니다.
 - **새로 고침**: 최신 데이터를 포함하도록 세그먼트를 새로 고칩니다.
 - **활성화** 또는 **비활성화**: 세그먼트를 활성화하거나 비활성화합니다. 비활성 세그먼트의 경우 세그먼트 정의가 존재하지만 아직 고객이 포함되어 있지 않습니다. 활성 세그먼트는 세그먼트 정의와 일치하는 고객을 찾습니다. [예약된 새로 고침](system.md#schedule-tab)이 구성되었고 비활성 세그먼트에 **상태** 가 **건너뜀** 으로 나열되어 있으면 새로 고침이 시도되지 않았음을 나타냅니다. 비활성 세그먼트가 활성화되면 새로 고쳐지고 예약된 새로 고침에 포함됩니다.
   또는 **활성화/비활성화** 드롭다운의 **나중에 예약** 기능을 사용하여 특정 세그먼트의 활성화 및 비활성화에 대한 미래 날짜 및 시간을 지정할 수 있습니다.
@@ -75,6 +75,7 @@ ms.locfileid: "8647067"
 ## <a name="refresh-segments"></a>세그먼트 새로 고침
 
 **세그먼트** 페이지에서 **모두 새로 고침** 을 선택하여 모든 세그먼트를 한 번에 새로 고치거나 세그먼트를 선택할 때 하나 이상의 세그먼트를 새로 고치고 옵션에서 **새로 고침** 을 선택할 수 있습니다. 또는 **관리자** > **시스템** > **일정** 에서 반복 새로 고침을 구성할 수 있습니다. 반복 새로 고침이 구성된 경우 다음 규칙이 적용됩니다.
+
 - **동적** 또는 **확장** 유형의 모든 세그먼트는 설정된 케이던스에서 자동으로 새로 고쳐집니다. 새로 고침이 완료되면 **상태** 가 세그먼트 새로 고침에 문제가 있었는지 나타냅니다. **마지막 새로 고침** 은 마지막으로 성공한 새로 고침의 타임스탬프를 보여줍니다. 오류가 발생하면 오류를 선택하여 발생한 상황에 대한 세부 정보를 확인합니다.
 - 유형이 **정적** 인 세그먼트는 자동으로 새로 고침되지 *않습니다*. **마지막 새로 고침** 은 정적 세그먼트가 수동으로 실행되거나 새로 고쳐진 마지막 시간의 타임스탬프를 보여줍니다.
 
@@ -86,7 +87,7 @@ ms.locfileid: "8647067"
 
 1. **세그먼트** 페이지로 이동합니다.
 
-1. 내보낼 세그먼트 선택에 대해 **더보기 [...]** 를 선택합니다.
+1. 내보낼 세그먼트의 세로 줄임표(&vellip;)를 선택합니다.
 
 1. 작업 드롭다운 목록에서 **내보내기 관리** 를 선택합니다.
 
@@ -97,6 +98,26 @@ ms.locfileid: "8647067"
    1. 선택한 세그먼트로 새 내보내기를 만들려면 **내보내기 추가** 를 선택합니다. 내보내기 만들기에 대한 자세한 내용은 [새 내보내기 설정](export-destinations.md#set-up-a-new-export)을 참조하십시오.
 
 1. 세그먼트의 기본 페이지로 돌아가려면 **뒤로** 를 선택합니다.
+
+## <a name="track-usage-of-a-segment"></a>세그먼트 사용량 추적
+
+Customer Insights와 연결된 동일한 Microsoft Dataverse 조직을 기반으로 하는 앱에서 세그먼트를 사용하는 경우 세그먼트 사용량을 추적할 수 있습니다. [Dynamics 365 Marketing의 고객 여정에 사용된 Customer Insights 세그먼트](/dynamics365/marketing/real-time-marketing-ci-profile)의 경우 시스템에서 해당 세그먼트의 사용에 대해 알려줍니다.
+
+Customer Insights 환경 내에서 또는 Marketing의 고객 여정에서 사용 중인 세그먼트를 편집할 때 [세그먼트 빌더](segment-builder.md)의 배너가 종속성에 대해 알려줍니다. 배너에서 직접 또는 세그먼트 빌더에서 **사용량** 을 선택하여 종속성 세부 정보를 검사할 수 있습니다.
+
+**세그먼트 사용량** 창은 Dataverse 기반 앱에서 이 세그먼트의 사용량에 대한 세부 정보를 보여줍니다. 고객 여정에 사용되는 세그먼트의 경우 이 세그먼트가 사용되는 Marketing에서 여정을 검사할 수 있는 링크를 찾을 수 있습니다. Marketing 앱에 액세스할 수 있는 권한이 있는 경우 해당 앱에서 자세한 내용에 액세스할 수 있습니다.
+
+:::image type="content" source="media/segment-usage-pane.png" alt-text="세그먼트 빌더의 세그먼트 사용량에 대한 세부 정보가 있는 측면 창.":::
+
+추적된 세그먼트를 삭제하려고 하면 시스템에서 추적된 세그먼트의 사용량에 대해 알려줍니다. 삭제하려는 세그먼트가 Marketing의 고객 여정에서 사용되는 경우 해당 여정은 해당 세그먼트의 모든 사용자에 대해 중지됩니다. 여정이 마케팅 캠페인의 일부인 경우 삭제는 해당 캠페인 자체에 영향을 미칩니다. 그러나 경고에도 불구하고 세그먼트를 삭제할 수 있습니다.
+
+:::image type="content" source="media/segment-usage-delete.png" alt-text="Dataverse 애플리케이션에서 세그먼트를 사용할 때 세그먼트 삭제를 확인하는 대화 상자.":::
+
+### <a name="supported-apps"></a>지원되는 앱
+
+사용량은 현재 다음 Dataverse 기반 앱에서 추적됩니다.
+
+- [Dynamics 365 Marketing의 고객 여정](/dynamics365/marketing/real-time-marketing-ci-profile)
 
 ## <a name="view-processing-history-and-segment-members"></a>처리 기록 및 세그먼트 구성원 보기
 
@@ -117,6 +138,5 @@ ms.locfileid: "8647067"
 > 이 목록에 나타나는 필드는 세그먼트 엔터티의 특성을 기반으로 합니다.
 >
 >이 목록은 일치하는 세그먼트 구성원의 미리 보기이며 세그먼트의 처음 100개 레코드를 표시하므로 신속하게 평가하고 필요한 경우 정의를 검토할 수 있습니다. 일치하는 모든 레코드를 보려면 [세그먼트 내보내기](export-destinations.md)를 수행해야 합니다.
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

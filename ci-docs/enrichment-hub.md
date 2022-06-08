@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 5c14e6c96d2f907ba161331b6f92277191cbdbef
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: abc1b6af80e8854ee3bc930453634ef67376c4af
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653531"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800613"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>고객 프로필 보강(미리 보기)
 
@@ -63,7 +63,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 **내 보강** 탭으로 이동하여 구성된 모든 보강을 확인하십시오. 각 보강은 보강에 대한 추가 정보를 포함하는 행으로 표시됩니다.
 
-사용 가능한 옵션을 보려면 보강을 선택하십시오. 목록 항목에서 줄임표(...)를 선택하여 옵션을 볼 수도 있습니다. 여러 보강을 구성한 경우 검색 상자를 사용하여 빠르게 찾을 수 있습니다.
+사용 가능한 옵션을 보려면 보강을 선택하십시오. 목록 항목에서 세로 줄임표(&vellip;)를 선택하여 옵션을 볼 수도 있습니다. 여러 보강을 구성한 경우 검색 상자를 사용하여 빠르게 찾을 수 있습니다.
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="보강 목록에서 보강을 관리하는 옵션.":::
 

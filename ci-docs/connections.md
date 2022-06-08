@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: d85de28a12565e1a2e36278d0e8b74f6de286b20
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 2a3175737ac95e10d75fad4a69db303b0564c6cc
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755317"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800380"
 ---
 # <a name="connections-preview-overview"></a>연결(프리뷰) 개요
 
@@ -69,7 +69,7 @@ ms.locfileid: "8755317"
 
 1. **연결** 탭으로 이동합니다.
 
-1. 편집할 연결의 세로 줄임표를 선택하십시오.
+1. 편집할 연결의 세로 줄임표(&vellip;)를 선택하십시오.
 
 1. **편집** 을 선택합니다.
 
@@ -85,7 +85,7 @@ ms.locfileid: "8755317"
 
 1. **연결** 탭으로 이동합니다.
 
-1. 제거할 연결의 세로 줄임표를 선택하십시오.
+1. 제거할 연결의 세로 줄임표(&vellip;)를 선택하십시오.
 
 1. 드롭다운 메뉴에서 **제거** 를 선택합니다. 확인 대화 상자가 나타납니다.
 

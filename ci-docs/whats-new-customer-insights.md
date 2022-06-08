@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 386198c838929a20e136288fffb1015707654d8d
-ms.sourcegitcommit: 9f256af5c4f7e99305bf09087f7ec05eebeae6a0
+ms.openlocfilehash: af79c8369dd608e8ce1c14c50bb9aef3a79b9029
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8700945"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833638"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights의 새로운 기능
 
@@ -58,6 +58,7 @@ LiveRamp는 ID 확인 및 고객 데이터 통합을 제공합니다. 고객 데
 자세한 내용은 [LiveRamp의 ID 데이터로 고객 프로필 보강(프리뷰)](enrichment-liveramp.md)을 참조하세요.
 
 ### <a name="organize-segments-and-measures-with-tags-and-filters"></a>태그 및 필터를 사용하여 세그먼트 및 측정 구성
+
 조직에서 많은 세그먼트 또는 측정값을 유지 관리하는 경우 올바른 세그먼트 또는 측정값을 찾는 것이 때때로 어려울 수 있습니다. 이 새로운 기능을 사용하면 태그와 열을 사용하여 목록을 구성할 수 있습니다. 데이터를 빠르고 쉽게 찾고 보기를 사용자 지정하는 데 도움이 됩니다.
 
 자세한 내용은 [태그 및 열로 작업](work-with-tags-columns.md)을 참조하세요.
@@ -65,9 +66,9 @@ LiveRamp는 ID 확인 및 고객 데이터 통합을 제공합니다. 고객 데
 ### <a name="enable-data-sharing-with-dataverse-when-using-your-own-storage-account"></a>자체 스토리지 계정을 사용할 때 Dataverse와 데이터 공유 활성화
 
 환경에서 Azure Data Lake Storage을 사용하여 Customer Insights 데이터를 저장하는 경우 Microsoft Dataverse와 데이터를 공유하려면 몇 가지 추가 구성이 필요합니다.
-이전에는 데이터가 관리되는 데이터 레이크에 저장된 경우에만 Dataverse과 데이터 공유를 활성화할 수 있었습니다. 
+이전에는 데이터가 관리되는 데이터 레이크에 저장된 경우에만 Dataverse과 데이터 공유를 활성화할 수 있었습니다.
 
-자세한 내용은 [자체 Azure Data Lake Storage에서 Dataverse와 데이터 공유 활성화(프리뷰)](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)를 참조하세요.
+자세한 내용은 [자체 Azure Data Lake Storage에서 Dataverse와 데이터 공유 활성화(프리뷰)](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)를 참조하세요.
 
 ### <a name="new-export-destinations-iterable-and-braze"></a>새로운 내보내기 대상: Iterable 및 Braze
 
@@ -81,7 +82,6 @@ LiveRamp는 ID 확인 및 고객 데이터 통합을 제공합니다. 고객 데
 
 - Google Ads: Google Ads 내보내기 커넥터의 새 버전을 사용하면 인증 환경이 간소화되어 이제 새 Google Ads 잠재고객을 자동으로 생성할 수 있습니다. 
 - Marketo: 새 버전의 Marketo 내보내기 커넥터는 Marketo ID를 지원하므로 데이터 중복을 방지하고 기존 레코드를 업데이트하며 Marketo에서 새 레코드를 생성할 수 있습니다. 
-
 
 ## <a name="february-2022-updates"></a>2022년 2월 업데이트
 

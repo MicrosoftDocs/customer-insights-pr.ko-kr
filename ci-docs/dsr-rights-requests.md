@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 5b39452d7a4612242739e8000e57217954c71289
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: af2583295627f98e980adbca4f216b9c34c3cad8
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641524"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808569"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>GDPR에 따른 데이터 주체 권한(DSR) 요청
 
@@ -41,7 +41,7 @@ Customer Insights 관리자는 다음 단계에 따라 데이터 원본에서 �
 1. Dynamics 365 Customer Insights에 로그인합니다.
 2. **데이터** > **데이터 원본** 으로 이동
 3. 삭제된 고객 데이터가 포함된 목록의 각 데이터 원본의 경우:
-   1. (...)을 선택하고 **새로 고침** 을 선택합니다.
+   1. 세로 줄임표(&vellip;)를 선택한 다음 **새로 고침** 을 선택합니다.
    2. **상태** 아래에서 데이터 원본의 상태를 확인합니다. 확인 표시는 새로 고침이 완료되었음을 나타냅니다. 경고 삼각형은 문제가 있음을 의미합니다. 경고 삼각형이 표시되면 D365CI@microsoft.com에 문의하십시오.
 
 > [!div class="mx-imgBorder"]
@@ -52,7 +52,7 @@ Customer Insights 관리자는 다음 단계에 따라 데이터 원본에서 �
 Customer Insights 관리자는 다음 단계에 따라 Customer Insights 사용자 데이터를 삭제할 수 있습니다.
 
 1. Dynamics 365 Customer Insights에 로그인합니다.
-2. **관리자** > **권한** 으로 이동합니다.
+2. **관리자** > **보안** > **권한** 으로 이동합니다.
 3. 삭제하려는 사용자의 확인란을 선택합니다.
 4. **제거** 를 선택합니다.
 

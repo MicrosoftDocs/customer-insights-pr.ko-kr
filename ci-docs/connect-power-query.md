@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 50258365c3134c588aa79ec72c66d0de329e0ff1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 4db97ec02eb96662d30a8536ea42372f81f318d2
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646882"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800162"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Power Query 데이터 원본에 연결
 
@@ -76,7 +76,7 @@ Power Query 커넥터를 기반으로 데이터 원본을 추가하는 것은 �
 
 1. **데이터** > **데이터 원본** 으로 이동.
 
-2. 변경하려는 데이터 원본 옆의 세로 줄임표를 선택하고 드롭다운 메뉴에서 **편집** 을 선택합니다.
+2. 변경하려는 데이터 원본 옆의 세로 줄임표(&vellip;)를 선택하고 드롭다운 메뉴에서 **편집** 을 선택합니다.
 
    > [!div class="mx-imgBorder"]
    > ![편집 옵션.](media/edit-option-data-sources.png "편집 옵션")

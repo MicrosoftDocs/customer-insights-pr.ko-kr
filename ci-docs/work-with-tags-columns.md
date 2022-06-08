@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 04ae4ffd303a47add15044f313c96a23e5efcd76
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c0d23a74b5ca68162ee21307705b1f781a7eb97e
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647236"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800567"
 ---
 # <a name="work-with-tags-and-columns"></a>태그 및 열 작업
 
@@ -37,7 +37,7 @@ ms.locfileid: "8647236"
 
 1. 태그를 관리하려는 항목을 선택합니다.
 
-1. **자세히보기(...)** 를 선택하고 **태그** 를 선택합니다.
+1. 세로 줄임표(&vellip;)를 선택하고 **태그** 를 선택합니다.
 
    :::image type="content" source="media/segments_list_tag.png" alt-text="옵션 드롭다운 목록 및 사용 가능한 옵션이 있는 선택된 세그먼트."lightbox="media/segments_list_tag.png":::
 

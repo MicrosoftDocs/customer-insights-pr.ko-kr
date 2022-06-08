@@ -12,12 +12,12 @@ searchScope:
 - ci-predictions
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: e2cace3547a0b584dbf26ae5eecf86f3b256649f
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 57ef46416db0a11cde9f9d7650a0b502a01bf0ab
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740727"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800658"
 ---
 # <a name="complete-your-partial-data-with-predictions-deprecated"></a>예측으로 부분 데이터 완성(더 이상 사용되지 않음)
 
@@ -95,7 +95,7 @@ ms.locfileid: "8740727"
 
 2. 검토하려는 예측을 선택합니다.
 
-3. **작업** 열에서 줄임표를 선택하고 **보기** 를 선택합니다.
+3. **작업** 열에서 세로 줄임표(&vellip;)를 선택하고 **보기** 를 선택합니다.
 
 4. 예측 보기에 여러 데이터 요소가 표시됩니다.
    > [!div class="mx-imgBorder"]
@@ -122,7 +122,7 @@ ms.locfileid: "8740727"
 
 2. 편집할 예측을 선택합니다.
 
-3. **작업** 열에서 줄임표를 선택하고 **보기** 를 선택합니다.
+3. **작업** 열에서 세로 줄임표(&vellip;)를 선택하고 **보기** 를 선택합니다.
 
 4. **AI Builder에서 사용자화** 를 선택합니다.
 
@@ -139,7 +139,7 @@ ms.locfileid: "8740727"
 
 2. 삭제하려는 예측을 선택합니다.
 
-3. **작업** 열에서 줄임표를 선택하고 **삭제** 를 선택합니다.
+3. **작업** 열에서 세로 줄임표(&vellip;)를 선택하고 **삭제** 를 선택합니다.
 
 4. 삭제를 확인합니다.
 
@@ -153,7 +153,7 @@ ms.locfileid: "8740727"
 - 앱 권한이 부여되지 않습니다.
     1. [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)으로 이동합니다.
     1. **환경** 을 선택합니다.
-    1. 권한을 추가하려는 환경 옆의 줄임표를 선택하고 **설정** 을 선택합니다.
+    1. 권한을 추가하려는 환경 옆의 세로 줄임표(&vellip;)를 선택하고 **설정** 을 선택합니다.
     1. **사용자 + 권한** 을 확장하고 **사용자** 를 선택합니다.
     1. **+ 새로 만들기** 를 선택하고 **사용자** 를 선택합니다.
     1. 아직 선택하지 않은 경우 **응용 프로그램 사용자** 를 선택하고 다음 정보를 입력합니다.

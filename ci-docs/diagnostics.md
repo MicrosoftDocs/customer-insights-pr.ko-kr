@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 03169f0218dfad55cf20ecaf1c1596c652e5f601
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 15ae772617efa4c64cf79d0bac10a0c3cb28ca30
+ms.sourcegitcommit: a92bf5985263240fd07bad98d8e119b88cf2c9d9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755270"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8807589"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Azure Monitor를 사용하여 Dynamics 365 Customer Insights에서 로그 전달(프리뷰)
 
@@ -38,7 +38,7 @@ Customer Insights에서 진단을 구성하려면 다음 필수 구성 요소가
 
 - 활성 [Azure 구독](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)이 있어야 합니다.
 - Customer Insights의 [관리자](permissions.md#admin) 권한이 있어야 합니다.
-- Azure의 대상 리소스에서 **기여자** 와 **사용자 액세스 관리자** 역할이어야 합니다. 리소스는 Azure Storage 계정, Azure 이벤트 허브 또는 Azure Log Analytics 작업 영역일 수 있습니다. 자세한 내용은 [Azure Portal을 사용하여 Azure 역할 할당 추가 또는 제거](/azure/role-based-access-control/role-assignments-portal)를 참조하세요.
+- Azure의 대상 리소스에서 **기여자** 와 **사용자 액세스 관리자** 역할이어야 합니다. 리소스는 Azure Data Lake Storage 계정, Azure 이벤트 허브 또는 Azure Log Analytics 작업 영역일 수 있습니다. 자세한 내용은 [Azure Portal을 사용하여 Azure 역할 할당 추가 또는 제거](/azure/role-based-access-control/role-assignments-portal)를 참조하세요. 이 권한은 Customer Insights에서 진단 설정을 구성하는 동안 필요하며 성공적인 설정 후에 변경할 수 있습니다.
 - Azure Storage, Azure 이벤트 허브 또는 Azure Log Analytics에 대한 [대상 요구 사항](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements)을 충족해야 합니다.
 - 리소스가 속한 리소스 그룹에서 적어도 **독자** 역할이어야 합니다.
 

@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: cdeb48df2172785ed8adad0f21943974ec39d14d
-ms.sourcegitcommit: 94de4dacdb8a7f4bc0f5914e7398622e70b81ff3
+ms.openlocfilehash: 621977068dc49b55f50f00e9762a4a5952d7b453
+ms.sourcegitcommit: ba29fd7c89bdeba7260b4783662d8da8e1e1e30e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743421"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8768358"
 ---
 # <a name="explore-customer-insights"></a>Customer Insights 살펴보기
 
@@ -28,9 +28,9 @@ ms.locfileid: "8743421"
 
 ## <a name="left-side-pane"></a>좌측 창
 
-좌측 창을 사용하여 Customer Insights의 다른 영역 사이를 탐색하십시오. 
+왼쪽 창을 사용하여 Customer Insights의 다른 영역 사이를 탐색하십시오.
 
-비즈니스 거래처 및 개인 소비자와 작업하는 경우 기본 대상 그룹을 선택하여 그에 따라 초점을 설정할 수 있습니다. 
+비즈니스 거래처 및 개인 소비자와 작업하는 경우 기본 대상 그룹을 선택하여 그에 따라 초점을 설정할 수 있습니다.
 
 ## <a name="application-header"></a>애플리케이션 헤더
 
@@ -38,7 +38,7 @@ ms.locfileid: "8743421"
 
 스마일 아이콘은 **Feedback** 컨트롤입니다. 이를 선택하여 Customer Insights 사용 경험에 대해 알려주십시오. 우리는 귀하의 피드백에 적극적으로 귀를 기울이고 있으며 귀하가 좋아하는 것과 개선할 수 있는 방법을 알려주셔서 미리 감사드립니다.
 
-톱니바퀴 아이콘으로 표시되는 **Settings** 컨트롤을 사용하면 Customer Insights에 대한 세션 세부 정보를 수집하고 Microsoft 365 프로필에 대한 전역 설정을 구성할 수 있습니다. 
+톱니바퀴 아이콘으로 표시되는 **Settings** 컨트롤을 사용하면 Customer Insights에 대한 세션 세부 정보를 수집하고 Microsoft 365 프로필에 대한 전역 설정을 구성할 수 있습니다.
 
 **도움말** 옵션은 물음표 아이콘으로 시각화되어 상황에 맞는 도움말 링크 및 기타 유용한 리소스를 제공합니다.
 
@@ -46,7 +46,7 @@ ms.locfileid: "8743421"
 
 ## <a name="getting-started-with-customer-insights-section"></a>Customer Insights 시작 섹션
 
-이 섹션에는 Customer Insights 환경을 설정하는 프로세스를 안내하는 데 도움이 되는 카드가 포함되어 있습니다. 
+이 섹션에는 Customer Insights 환경을 설정하는 프로세스를 안내하는 데 도움이 되는 카드가 포함되어 있습니다.
 
 1. **데이터 추가** 카드는 데이터 가져오기를 도와줍니다. Customer Insights는 [고객에 대한 데이터를 가져오는 여러 옵션](data-sources.md)을 지원합니다. **데이터 원본 추가** 를 선택하여 시작합니다.
 1. 초기 데이터 가져오기가 성공적으로 완료되면 **데이터 통합** 카드를 사용하여 데이터를 조화시키고 서로 다른 원본에서 [통합 고객 프로필 생성](data-unification.md)을 할 수 있습니다. 

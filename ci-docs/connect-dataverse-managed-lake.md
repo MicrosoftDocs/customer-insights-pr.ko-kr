@@ -11,12 +11,12 @@ ms.reviewer: mhart
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: e8a294a4bad1581539b5905160cddcd625699d90
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 7140e9254108bc6f0d518b3ccf4b10fc33cde115
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646630"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800181"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Microsoft Dataverse 관리형 데이터 레이크의 데이터에 연결
 
@@ -62,7 +62,7 @@ ms.locfileid: "8646630"
 
 1. **데이터** > **데이터 원본** 으로 이동.
 
-2. 업데이트하려는 데이터 원본 옆에 있는 줄임표를 선택하십시오.
+2. 업데이트하려는 데이터 원본 옆에 있는 세로 줄임표(&vellip;)를 선택합니다.
 
 3. 목록에서 **편집** 옵션을 선택합니다.
 

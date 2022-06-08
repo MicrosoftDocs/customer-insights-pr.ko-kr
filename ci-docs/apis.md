@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: a460ec87ec85f0614f944d352588d4ca899f8120
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 9a04276f7326533cd389cba6554f468123463bac
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755458"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808514"
 ---
 # <a name="work-with-customer-insights-apis"></a>Customer Insights API에 대한 작업
 
@@ -31,11 +31,11 @@ Dynamics 365 Customer Insights는 Customer Insights의 데이터를 기반으로
 
 1. Customer Insights에 [로그인](https://home.ci.ai.dynamics.com)합니다. 아직 구독하지 않은 경우 [Customer Insights 평가판에 등록](https://aka.ms/tryci)하세요.
 
-1. Customer Insights 환경에서 API를 사용하려면 **관리** > **권한** 으로 이동합니다. 이렇게 하려면 관리자 권한이 필요합니다.
+1. Customer Insights 환경에서 API를 활성화하려면 **관리** > **보안** 으로 이동합니다. 이렇게 하려면 관리자 권한이 필요합니다.
 
 1. **API** 탭으로 이동하고 **사용** 버튼을 선택합니다.    
  
-   API를 사용하면 API 요청에 사용되는 인스턴스의 기본 및 보조 구독 키가 생성됩니다. **관리** > **권한** > **API** 에서 **기본 다시 생성** 또는 **보조 다시 생성** 을 선택하여 키를 다시 생성 할 수 있습니다.
+   API를 사용하면 API 요청에 사용되는 인스턴스의 기본 및 보조 구독 키가 생성됩니다. **관리** > **보안** > **APIs** 에서 **기본 재생성** 또는 **보조 재생성** 을 선택하여 키를 다시 생성할 수 있습니다.
 
 <!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
@@ -62,14 +62,12 @@ HTTP 응답이 곧 아래에 표시됩니다.
 1. 왼쪽에서 **앱 등록** 을 선택합니다.
 
 1. **새 등록** 을 선택하고 애플리케이션 이름을 제공하고 계정 유형을 선택합니다.
- 
+
    원하는 경우 리디렉션 URL을 추가합니다. http://localhost는 로컬 컴퓨터에서 애플리케이션을 개발하는 데 충분합니다.
 
 1. 새 앱 등록에서 **API 권한** 으로 이동합니다.
 
-<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
-
-1. **권한 추가** 를 선택하고 측면 창에서 **Customer Insights** 를 선택합니다.
+1. **권한 추가** 를 선택하고 측면 창에서 **Customer Insights용 Dynamics 365 AI** 를 선택합니다.
 
 1. **권한 유형** 에서 **위임된 권한** 을 선택한 후 **user_impersonation** 권한을 선택합니다.
 
@@ -109,7 +107,7 @@ Azure에서 앱 등록에 대한 자세한 내용은 [애플리케이션 등록]
 
 1. 마지막으로 Customer Insights에서 사용자로 앱 등록 이름을 추가해야 합니다.  
    
-   Customer Insights를 열고 **관리자** > **권한** 으로 이동하고 **사용자 추가** 를 선택합니다.
+   Customer Insights를 열고 **관리자** > **보안** 으로 이동하여 **사용자 추가** 를 선택합니다.
 
 1. 앱 등록 이름을 검색하고 검색 결과에서 선택한 다음 **저장** 을 선택합니다.
 

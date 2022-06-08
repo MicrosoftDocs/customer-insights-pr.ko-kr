@@ -6,7 +6,9 @@
   href: whats-new-customer-insights.md
 - name: 학습 카탈로그
   items:
-    - name: 시작
+    - name: Microsoft 고객 데이터 플랫폼 전문가로 인증
+      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+    - name: Customer Insights 시작
       href: /learn/modules/get-started-customer-data-platform/
     - name: 데이터 수집
       href: /learn/modules/ingest-data-customer-insights/
@@ -34,8 +36,6 @@
       href: get-started.md
     - name: 유료 라이선스로 시작
       href: paid-license.md
-    - name: 새 환경 만들기
-      href: create-environment.md
     - name: Customer Insights 살펴보기
       href: home.md
     - name: 태그 및 열 작업
@@ -198,6 +198,8 @@
           href: export-campaign-monitor.md
         - name: Constant Contact
           href: export-constant-contact.md
+        - name: Criteo
+          href: export-criteo.md
         - name: DotDigital
           href: export-dotdigital.md
         - name: Dynamics 365 Marketing
@@ -254,12 +256,22 @@
       href: entities.md
     - name: Common Data Model의 엔터티 스키마 검토
       href: entity-schemas.md
-    - name: Dataverse의 Customer Insights 데이터
-      href: customer-insights-dataverse.md
     - name: 관계 및 연결된 엔터티 구축
       href: relationships.md
     - name: 의미 체계 매핑 정의
       href: semantic-mappings.md
+- name: 환경
+  items:
+    - name: 새 환경 만들기
+      href: create-environment.md
+    - name: Microsoft Dataverse에 연결
+      href: customer-insights-dataverse.md
+    - name: 자체 Azure Data Lake Storage 사용
+      href: own-data-lake-storage.md
+    - name: 환경 설정 관리
+      href: manage-environments.md
+    - name: 서비스 주체를 사용하여 스토리지 계정에 연결
+      href: connect-service-principal.md
 - name: 관리
   items:
     - name: 시스템 구성 설정
@@ -268,20 +280,12 @@
       href: security-overview.md
     - name: 사용자 권한 할당
       href: permissions.md
-    - name: 연결 개요
-      href: connections.md
-    - name: 다중 환경 관리
-      href: manage-environments.md
     - name: Key Vault 직접 가져오기
       href: use-azure-key-vault.md
-    - name: 서비스 주체를 사용하여 스토리지 계정에 연결
-      href: connect-service-principal.md
     - name: 진단 로그 내보내기
       href: diagnostics.md
-    - name: 서비스 한도
-      href: service-limits.md
-    - name: DSR 권한 및 요청
-      href: dsr-rights-requests.md
+    - name: 연결 개요
+      href: connections.md
 - name: API
   items:
     - name: API에 대한 작업
@@ -324,5 +328,9 @@
       items:
         - name: 동의 데이터로 예측 만들기
           href: consent-management/predictions-consent-data.md
+- name: 서비스 한도
+  href: service-limits.md
+- name: DSR 권한 및 요청
+  href: dsr-rights-requests.md
 - name: 제품 지원
   href: /power-platform/admin/get-help-support

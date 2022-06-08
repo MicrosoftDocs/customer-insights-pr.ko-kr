@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 4a269a223efa08f71db09eef2ec9a8f8a077f7a7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641816"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833776"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Dynamics 365 Customer Insights 평가판 FAQ
 
@@ -62,9 +62,9 @@ ms.locfileid: "8641816"
 
 일반적으로 Customer Insights의 유료 버전으로 업그레이드할 때 자신의 데이터로 새로 시작하는 것이 좋습니다. 
 
-선택적으로 Customer Insights만 사용하는 경우 Customer Insights를 구매하면 평가판 환경에서 데이터를 복사할 수 있습니다. Customer Insights 평가판의 관리자이자 Microsoft 365 테넌트의 전역 관리자이거나 조직의 Dynamics 365 관리자가 평가판 환경에서 유료 환경으로 설정을 마이그레이션해야 합니다. 
+선택적으로 Customer Insights만 사용하는 경우 Customer Insights를 구매하면 평가판 환경에서 데이터를 복사할 수 있습니다. Customer Insights 평가판의 관리자이자 Microsoft 365 테넌트의 전역 관리자이거나 조직의 Dynamics 365 관리자가 평가판 환경에서 유료 환경으로 설정을 마이그레이션해야 합니다.
 
-Customer Insights의 유료 인스턴스에 처음 로그인하면 새 환경을 생성하라는 메시지가 표시됩니다. 이 프로세스에서 기존 환경에서 구성을 복사하고 대부분의 설정을 마이그레이션하도록 선택할 수 있습니다. 위에서 언급한 권한이 있는 경우 평가판 환경이 이 목록에 표시됩니다. 자세한 내용은 [환경 구성 복사](manage-environments.md#copy-the-environment-configuration)를 참조하십시오.
+Customer Insights의 유료 인스턴스에 처음 로그인하면 새 환경을 생성하라는 메시지가 표시됩니다. 이 프로세스에서 기존 환경에서 구성을 복사하고 대부분의 설정을 마이그레이션하도록 선택할 수 있습니다. 위에서 언급한 권한이 있는 경우 평가판 환경이 이 목록에 표시됩니다. 자세한 내용은 [환경 구성 복사](create-environment.md#copy-the-environment-configuration)를 참조하십시오.
 
 ### <a name="what-are-the-trial-limits-and-quotas"></a>평가판 제한과 할당량은 무엇입니까?
 
@@ -81,9 +81,10 @@ Customer Insights의 유료 인스턴스에 처음 로그인하면 새 환경을
 
 Customer Insights 기능의 대부분의 기능은 평가판에서 사용할 수 있습니다.
 
-다음 기능은 **사용할 수 없습니다**. 
+다음 기능은 **사용할 수 없습니다**.
+
 - 담당 Azure Data Lake Storage 계정을 사용하는 새 환경을 만들 수 없습니다.
-- 평가판 환경은 삭제할 수 없습니다. 
+- 평가판 환경은 삭제할 수 없습니다.
 
 ### <a name="how-long-does-the-trial-last"></a>평가판 기간은 얼마나 됩니까?
 

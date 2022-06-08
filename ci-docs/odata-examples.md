@@ -1,19 +1,19 @@
 ---
 title: Dynamics 365 Customer Insights API에 대한 OData 예시
 description: Customer Insights API를 쿼리하여 데이터를 검토하기 위해 OData(Open Data Protocol)에 대해 일반적으로 사용되는 예입니다.
-ms.date: 05/10/2022
+ms.date: 05/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 007278e1330e1a8e64d524ded8496acaf83b874c
-ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
+ms.openlocfilehash: cdadd72bfe4272d8d83d923baaa6fd40d008473b
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740042"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808469"
 ---
 # <a name="odata-query-examples"></a>OData 쿼리 예시
 
@@ -33,16 +33,15 @@ OData(Open Data Protocol)는 HTTP와 같은 핵심 프로토콜을 기반으로 
 
 다음 표에는 *고객* 엔터티에 대한 샘플 쿼리 집합이 포함되어 있습니다.
 
-
 |쿼리 유형 |예  | 노트  |
 |---------|---------|---------|
 |단일 고객 ID     | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'`          |  |
-|대체 키    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}' `         |  대체 키는 통합 고객 엔터티에 유지됩니다       |
+|대체 키    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  대체 키는 통합 고객 엔터티에 유지됩니다       |
 |선택   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |-    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
 |대체 키 + In   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |검색  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   검색 문자열에 대한 상위 10개 결과를 반환합니다      |
-|세그먼트 구성원 자격  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10  `     | 세그먼트화 엔터티에서 미리 설정된 행 수를 반환합니다.      |
+|세그먼트 구성원 자격  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | 세그먼트화 엔터티에서 미리 설정된 행 수를 반환합니다.      |
 
 ## <a name="unified-activity"></a>통합 활동
 
@@ -53,7 +52,7 @@ OData(Open Data Protocol)는 HTTP와 같은 핵심 프로토콜을 기반으로 
 |CID 활동     | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}'`          | 특정 고객 프로필의 활동을 나열합니다 |
 |활동 시간 프레임    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityTime gt 2017-01-01T00:00:00.000Z and ActivityTime lt 2020-01-01T00:00:00.000Z`     |  시간 프레임의 고객 프로필 활동       |
 |활동 유형입니다.    |   `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityType eq '{ActivityName}'`        |         |
-|표시 이름별 활동     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’ `        | |
+|표시 이름별 활동     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’`        | |
 |활동 정렬    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc`     |  오름차순 또는 내림차순 활동 정렬       |
 |세그먼트 멤버십에서 확장된 활동  |   `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     |         |
 
@@ -67,3 +66,13 @@ OData(Open Data Protocol)는 HTTP와 같은 핵심 프로토콜을 기반으로 
 |보강된 CID 브랜드    | `{serviceRoot}/BrandShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`  |       |
 |보강된 CID 관심사    |   `{serviceRoot}/InterestShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`       |         |
 |In-Clause + 확장     | `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')`         | |
+
+## <a name="not-supported-odata-queries"></a>지원되지 않는 OData 쿼리
+
+다음 쿼리는 Customer Insights에서 지원되지 않습니다.
+
+- 수집된 원본 엔터티의 `$filter`. Customer Insights에서 생성하는 시스템 엔터티에 대해서만 $filter 쿼리를 실행할 수 있습니다.
+- `$search` 쿼리에서 `$expand`. 예: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
+- 특성의 하위 집합만 선택된 경우 `$select`에서 `$expand`. 예: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
+- `$expand`는 특정 고객에 대한 브랜드 또는 관심도를 보강합니다. 예: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
+- 대체 키를 통해 예측 모델 출력 엔터티를 쿼리합니다. 예: `OOBModelOutputEntity?$filter=HotelCustomerID eq '{AK}'`

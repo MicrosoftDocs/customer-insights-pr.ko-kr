@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: f392c5cc5ac88a971565f0ccaf309ce89ce12660
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a44d1f2c00c90de3ed5a9425e3a197e109cb28e0
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646720"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800428"
 ---
 # <a name="custom-machine-learning-models"></a>사용자 지정 기계 학습 모델
 
@@ -92,7 +92,7 @@ ms.locfileid: "8646720"
 
 ## <a name="edit-a-workflow"></a>워크플로 편집
 
-1. **사용자 지정 모델** 페이지에서 이전에 만든 워크플로 옆의 **작업** 열에서 세로 줄임표를 선택하고 **편집** 을 선택합니다.
+1. **사용자 지정 모델** 페이지에서 이전에 만든 워크플로 옆의 **작업** 열에서 세로 줄임표(&vellip;)를 선택하고 **편집** 을 선택합니다.
 
 1. **표시 이름** 필드에서 워크플로의 인식 가능한 이름을 업데이트할 수 있지만 구성된 웹 서비스 또는 파이프라인은 변경할 수 없습니다. **다음** 을 선택합니다.
 
@@ -108,7 +108,7 @@ ms.locfileid: "8646720"
 
 ## <a name="run-a-workflow"></a>워크플로 실행
 
-1. **사용자 지정 모델** 페이지에서 이전에 만든 워크플로 옆의 **작업** 열에서 세로 줄임표를 선택합니다.
+1. **사용자 지정 모델** 페이지에서 이전에 만든 워크플로 옆의 **작업** 열에서 세로 줄임표(&vellip;)를 선택합니다.
 
 1. **실행** 을 선택합니다.
 
@@ -116,7 +116,7 @@ ms.locfileid: "8646720"
 
 ## <a name="delete-a-workflow"></a>워크플로 삭제
 
-1. **사용자 지정 모델** 페이지에서 이전에 만든 워크플로 옆의 **작업** 열에서 세로 줄임표를 선택합니다.
+1. **사용자 지정 모델** 페이지에서 이전에 만든 워크플로 옆의 **작업** 열에서 세로 줄임표(&vellip;)를 선택합니다.
 
 1. **삭제** 를 선택하고 삭제를 확인합니다.
 

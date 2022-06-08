@@ -13,12 +13,12 @@ searchScope:
 - ci-segment-builder
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: c8e9e4976ade36c1c3c4f688a667b329bfde6e3e
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e1a9cd0e3c0347285026d937ca7d951a602e7160
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647076"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800104"
 ---
 # <a name="create-segments"></a>세그먼트 만들기
 
@@ -134,8 +134,9 @@ ms.locfileid: "8647076"
 > - 세그먼트 빌더는 조건에 대한 연산자를 설정할 때 엔터티에서 유효한 값을 제안하지 않습니다. **데이터** > **엔터티** 로 이동하고 엔터티 데이터를 다운로드하여 사용 가능한 값을 확인할 수 있습니다.
 > - 날짜를 기반으로 하는 조건을 사용하면 고정 날짜와 변동 날짜 범위 간에 전환할 수 있습니다.
 > - 세그먼트에 대한 규칙이 여러 개인 경우 수정 중인 규칙 옆에 파란색 수직선이 있습니다.
-> - 규칙 및 조건을 세그먼트 정의의 다른 위치로 이동할 수 있습니다. 규칙 또는 조건 옆에 있는 [...]를 선택하고 이동할 방법과 위치를 선택합니다.
+> - 규칙 및 조건을 세그먼트 정의의 다른 위치로 이동할 수 있습니다. 규칙 또는 조건 옆에 있는 세로 줄임표(&vellip;)를 선택하고 이동할 방법과 위치를 선택합니다.
 > - 명령 모음의 **실행 취소** 및 **다시 실행** 컨트롤을 사용하면 변경 사항을 롤백할 수 있습니다.
+> - 세그먼트를 만든 후 일부 세그먼트를 사용하면 [세그먼트 사용량을 추적](segments.md#track-usage-of-a-segment)할 수 있습니다.
 
 ## <a name="quick-segments"></a>퀵 세그먼트
 

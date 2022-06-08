@@ -1,19 +1,19 @@
 ---
 title: 데이터 원본 보강
 description: 데이터 통합 프로세스를 진행하기 전에 데이터 원본을 보강합니다.
-ms.date: 03/02/2022
+ms.date: 05/20/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755694"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800289"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>데이터 원본 보강(프리뷰)
 
@@ -27,7 +27,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 데
 
 1. **데이터** > **데이터 원본** 으로 이동.
 
-1. 보강하려는 데이터 원본 옆의 세로 줄임표를 선택하고 **보강** 을 선택합니다.
+1. 보강하려는 데이터 원본 옆의 세로 줄임표(&vellip;)를 선택하고 **보강** 을 선택합니다.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="데이터 원본 보강 페이지입니다.":::
 
@@ -41,11 +41,12 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 데
 
 - [고급 주소](enrichment-enhanced-addresses.md)
 - [고급 회사 데이터](enrichment-enhanced-company-data.md)
+- [LiveRamp의 ID 데이터](enrichment-liveramp.md)
 
 ## <a name="manage-existing-data-source-enrichments"></a>기존 데이터 원본 보강 관리
 
 **내 보강** 탭으로 이동하여 구성된 모든 보강을 확인하십시오.
 
-사용 가능한 옵션을 보려면 보강을 선택하십시오. 목록 항목에서 줄임표(...)를 선택하여 옵션을 볼 수도 있습니다. 여러 보강을 구성한 경우 검색 상자를 사용하여 빠르게 찾을 수 있습니다.
+사용 가능한 옵션을 보려면 보강을 선택하십시오. 목록 항목에서 세로 줄임표(&vellip;)를 선택하여 옵션을 볼 수도 있습니다. 여러 보강을 구성한 경우 검색 상자를 사용하여 빠르게 찾을 수 있습니다.
 
 데이터 원본 보강을 보고, 편집하고, 실행하거나 삭제할 수 있습니다. 자세한 내용은 [기존 보강 관리](enrichment-hub.md)를 확인하세요.

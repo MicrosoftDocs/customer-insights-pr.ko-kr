@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 74c7ff7cda8431c04dd34713becefa7e346331b4
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 8022563f8994400b88389c20d7d661d9ea82bab1
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740911"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833730"
 ---
 # <a name="user-permissions"></a>사용자 권한
 
@@ -65,7 +65,7 @@ ms.locfileid: "8740911"
 ## <a name="admin-owner"></a>관리자(담당자)
 
 - 관리자가 사용할 수 있는 모든 권한입니다.
-- 환경을 [초기화 및 삭제](manage-environments.md#reset-an-existing-environment)합니다.
+- 환경을 [초기화 및 삭제](manage-environments.md#reset-an-existing-environment-preview)합니다.
 
 ## <a name="assign-roles-and-permissions"></a>역할 및 사용 권한 할당
 
