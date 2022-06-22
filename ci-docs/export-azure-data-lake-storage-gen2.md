@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 8b14992f8312d333d8a12501e8a28496c8434779
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646774"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947238"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>세그먼트 목록 및 기타 데이터를 Azure Data Lake Storage Gen2로 내보내기(미리 보기)
 
@@ -21,11 +21,9 @@ Data Lake Storage Gen2에 Customer Insights 데이터를 저장하거나 다른 
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
-1. Azure Data Lake Storage Gen2의 경우 데이터 레이크에 대한 스토리지 계정을 만들 때 [표준 성능과 프리미엄 성능 계층](/azure/storage/blobs/create-data-lake-storage-account) 중에서 선택할 수 있습니다. 프리미엄 성능 계층을 선택하는 경우 프리미엄 블록 Blob을 계정 유형으로 선택합니다. 
+1. Azure Data Lake Storage Gen2의 경우 데이터 레이크에 대한 스토리지 계정을 만들 때 [표준 성능과 프리미엄 성능 계층](/azure/storage/blobs/create-data-lake-storage-account) 중에서 선택할 수 있습니다. 프리미엄 성능 계층을 선택하는 경우 프리미엄 블록 Blob을 계정 유형으로 선택합니다.
 
-
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Azure Data Lake Storage Gen2에 대한 연결 설정 
-
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Azure Data Lake Storage Gen2에 대한 연결 설정
 
 1. **관리자** > **연결** 로 이동합니다.
 
@@ -39,7 +37,7 @@ Data Lake Storage Gen2에 Customer Insights 데이터를 저장하거나 다른 
     - Azure Data Lake Storage Gen2와 함께 사용할 스토리지 계정을 만드는 방법을 알아 보려면 [스토리지 계정 만들기](/azure/storage/blobs/create-data-lake-storage-account)를 참조하십시오. 
     - Azure Data Lake 2세대 스토리지 계정 이름 및 계정 키를 찾는 방법에 대한 자세한 내용은 [Azure Portal에서 스토리지 계정 설정 관리](/azure/storage/common/storage-account-manage)를 참조하세요.
 
-1. 연결을 완료하려면 **저장** 을 선택합니다. 
+1. 연결을 완료하려면 **저장** 을 선택합니다.
 
 ## <a name="configure-an-export"></a>내보내기 구성
 
@@ -57,8 +55,12 @@ Data Lake Storage Gen2에 Customer Insights 데이터를 저장하거나 다른 
 
 내보내기를 저장해도 내보내기가 즉시 실행되지는 않습니다.
 
-내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다. [주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다. 
+내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다.
+[주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다.
 
-내보낸 데이터는 구성한 Azure Data Lake 2세대 스토리지 컨테이너에 저장됩니다. 
+내보낸 데이터는 구성한 Azure Data Lake 2세대 스토리지 컨테이너에 저장됩니다.
+
+> [!TIP]
+> 많은 양의 데이터가 포함된 엔터티를 내보내면 각 내보내기에 대해 동일한 폴더에 여러 CSV 파일이 생성될 수 있습니다. 내보내기를 완료하는 데 걸리는 시간을 최소화하기 위해 성능상의 이유로 내보내기 분할이 발생합니다.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

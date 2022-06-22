@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 46a67e58f79029246029e2d06789525c2131f100
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833776"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011895"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Dynamics 365 Customer Insights 평가판 FAQ
 
@@ -66,9 +66,9 @@ ms.locfileid: "8833776"
 
 Customer Insights의 유료 인스턴스에 처음 로그인하면 새 환경을 생성하라는 메시지가 표시됩니다. 이 프로세스에서 기존 환경에서 구성을 복사하고 대부분의 설정을 마이그레이션하도록 선택할 수 있습니다. 위에서 언급한 권한이 있는 경우 평가판 환경이 이 목록에 표시됩니다. 자세한 내용은 [환경 구성 복사](create-environment.md#copy-the-environment-configuration)를 참조하십시오.
 
-### <a name="what-are-the-trial-limits-and-quotas"></a>평가판 제한과 할당량은 무엇입니까?
+### <a name="what-are-the-trial-limits-and-quotas"></a>평가판 제한과 할당량은 무엇인가요?
 
-- 담당 Azure Data Lake Storage 계정을 사용하여 Customer Insights 평가판 동안 출력 데이터를 저장할 수 없습니다. 그러나 Data Lake Storage 계정에서 데이터를 수집할 수 있습니다.
+- Customer Insights 평가판 동안에는 자신의 Azure Data Lake Storage 계정을 사용하여 출력 데이터를 저장할 수 없습니다. 그러나 Data Lake Storage 계정에서 데이터를 수집할 수 있습니다.
 - Customer Insights 평가판을 시작할 때 자동으로 프로비저닝되는 Dataverse 환경에 최대 3GB의 데이터를 저장할 수 있습니다.
 
 ## <a name="customer-insights-specific-questions"></a>Customer Insights 관련 질문
@@ -83,7 +83,7 @@ Customer Insights 기능의 대부분의 기능은 평가판에서 사용할 수
 
 다음 기능은 **사용할 수 없습니다**.
 
-- 담당 Azure Data Lake Storage 계정을 사용하는 새 환경을 만들 수 없습니다.
+- 자신의 Azure Data Lake Storage 계정을 사용하여 새로운 환경을 만들 수 없습니다.
 - 평가판 환경은 삭제할 수 없습니다.
 
 ### <a name="how-long-does-the-trial-last"></a>평가판 기간은 얼마나 됩니까?

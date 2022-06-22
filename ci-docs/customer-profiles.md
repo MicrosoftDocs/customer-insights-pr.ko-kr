@@ -1,7 +1,7 @@
 ---
 title: 고객 프로필 보기
 description: 통합된 고객 데이터를 조합하여 볼 수 있습니다.
-ms.date: 05/13/2022
+ms.date: 06/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -14,12 +14,12 @@ searchScope:
 - ci-activities
 - ci-activities-wizard
 - customerInsights
-ms.openlocfilehash: 9bb7abc04afe38d73e1df9b252e1864fa6570d7e
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 1e9e59d7ae6c16ed8b33f2ea482563c3520ab885
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755790"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947054"
 ---
 # <a name="customer-profiles"></a>고객 프로필
 
@@ -55,9 +55,9 @@ ms.locfileid: "8755790"
 
 고객 타일 중 하나를 선택하여 **고객 정보 페이지** 를 엽니다. 이 보기에는 선택된 고객의 통합된 정보가 포함됩니다. 고객 세부 정보에는 다음 내용이 포함됩니다.
 
-**고객 프로필 타일**: 이 타일은 통합된 *고객* 엔터티의 다른 값을 표시합니다. 필드에 선택한 고객 프로필에 대한 값이 없으면 표시되지 않습니다. 타일은 섹션으로 구성됩니다.
+**고객 프로필 타일**: 이 타일은 통합된 *고객* 엔터티의 다른 값을 표시합니다. 필드에 선택한 고객 프로필에 대한 값이 없으면 주소 필드를 제외하고는 표시되지 않습니다. 타일은 섹션으로 구성됩니다.
 
-- 첫 번째 섹션에는 검색 및 필터 인덱스의 일부인 모든 필드가 뒤따르는 사전 정의된 필드 세트가 표시됩니다. 프로필에 이러한 필드가 포함되어 있으면 모든 주소 관련 필드가 한 줄로 결합됩니다.
+- 첫 번째 섹션에는 검색 및 필터 인덱스의 일부인 모든 필드가 뒤따르는 사전 정의된 필드 세트가 표시됩니다. 모든 주소 관련 필드는 프로필에 주소 정보가 없는 경우에도 표시되는 한 줄로 결합됩니다.
 - **이 고객의 연락처**: 비즈니스 계정 환경에서는 이 고객에 대한 모든 관련 연락처가 두 번째 섹션으로 표시됩니다. 각 연락처는 해당 필드와 함께 표시됩니다. 빈 필드는 숨겨져 있습니다.
 - **추가 필드**: ID를 제외한 선택된 고객의 나머지 필드를 표시합니다.
 - **ID**: 해당 엔티티 이름 아래의 모든 ID를 나열합니다. 필드는 의미 체계에 따라 ID로 식별되며, 이를 통해 분류됩니다.

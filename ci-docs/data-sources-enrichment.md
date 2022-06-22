@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: b34b83d7a73dbdf21984f626174524188f0f1dc1
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800289"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011481"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>데이터 원본 보강(프리뷰)
 
@@ -29,9 +29,11 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 데
 
 1. 보강하려는 데이터 원본 옆의 세로 줄임표(&vellip;)를 선택하고 **보강** 을 선택합니다.
 
-   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="데이터 원본 보강 페이지입니다.":::
+   :::image type="content" source="media/data_sources_enrich.png" alt-text="보강이 강조 표시된 데이터 원본 페이지":::
 
    **검색** 탭에는 [지원되는 데이터 소스 보강 옵션](#supported-data-source-enrichments)이 표시됩니다.
+
+   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="데이터 원본 보강 페이지입니다.":::
 
 1. **내 데이터 보강** 을 선택하여 데이터 원본 보강을 구성합니다. 출력 엔터티 이름이 자동으로 채워집니다.
 

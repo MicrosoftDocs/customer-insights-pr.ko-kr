@@ -1,19 +1,19 @@
 ---
 title: GDPR에 따른 데이터 주체 권한(DSR) 요청 | Microsoft Docs
 description: Dynamics 365 Customer Insights에 대한 데이터 주체 요청에 응답합니다.
-ms.date: 08/11/2021
+ms.date: 05/23/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: af2583295627f98e980adbca4f216b9c34c3cad8
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: c71305ab835b0f4f75adcce716e795959f898e47
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808569"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947376"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>GDPR에 따른 데이터 주체 권한(DSR) 요청
 
@@ -77,11 +77,5 @@ Customer Insights 관리자는 다음 단계에 따라 Customer Insights 사용�
 1. 요청에 사용자의 전자 메일 주소를 지정하여 D365CI@microsoft.com으로 전자 메일을 보냅니다. Customer Insights 팀은 등록된 테넌트 관리자 이메일 주소로 이메일을 보내 데이터 내보내기 확인을 요청합니다.
 2. 요청한 사용자의 데이터를 내보내려면 확인을 승인합니다.
 3. 테넌트 관리자 전자 메일 주소를 통해 내보낸 데이터를 받습니다.
-
-## <a name="consent-management-preview"></a>동의 관리(프리뷰)
-
-동의 관리 기능은 사용자 데이터를 직접 수집하지 않습니다. 다른 애플리케이션에서 사용자가 제공한 동의 데이터만 가져와서 처리합니다.
-
-특정 사용자에 대한 동의 데이터를 제거하려면 동의 관리 기능에 수집된 데이터 소스에서 제거하십시오. 데이터 원본를 새로 고침하면 제거된 데이터가 동의 센터에서도 삭제됩니다. 동의 엔터티를 사용하는 애플리케이션은 [새로 고침](system.md#refresh-processes)한 이후 소스에서 제거된 데이터도 삭제합니다. 다른 모든 프로세스 및 애플리케이션에서 사용자 데이터를 제거하라는 데이터 주체 요청에 응답한 후 데이터 원본을 빠르게 새로 고치는 것이 좋습니다.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

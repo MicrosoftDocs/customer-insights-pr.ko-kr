@@ -7,20 +7,20 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: 7140e9254108bc6f0d518b3ccf4b10fc33cde115
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: c470956b0453ac2558ed85acdeebba120a0ca55d
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800181"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011711"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Microsoft Dataverse 관리형 데이터 레이크의 데이터에 연결
 
-이 문서에서는 Dataverse 사용자가 Microsoft Dataverse 관리형 레이크의 분석 엔터티에 빠르게 연결하는 방법을 안내합니다. 
+Microsoft Dataverse 사용자는 Microsoft Dataverse 관리 레이크에서 분석 개체에 빠르게 연결할 수 있습니다.
 
 > [!NOTE]
 > Dataverse 조직의 관리자여야만 계속 진행하고 관리형 레이크에서 사용 가능한 엔터티 목록을 볼 수 있습니다.
@@ -32,40 +32,34 @@ ms.locfileid: "8800181"
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Dataverse 관리 레이크에 연결
 
-1. Customer Insights에서 **데이터** > **데이터 원본** 으로 이동합니다.
+1. **데이터** > **데이터 원본** 으로 이동.
 
-2. **데이터 원본 추가** 를 선택합니다.
+1. **데이터 원본 추가** 를 선택합니다.
 
-3. **Microsoft Dataverse** 를 선택하고 **다음** 을 선택합니다.
+1. **Microsoft Dataverse** 를 선택합니다.
 
-4. 데이터 원본의 **이름** 을 입력하고 **다음** 을 선택합니다. 
+1. 데이터 소스의 **이름** 과 **설명**(선택 사항)을 입력합니다.
 
-5. Dataverse 조직의 **서버 주소** 를 제공하고 **로그인** 을 선택합니다.
+1. Dataverse 조직의 **서버 주소** 를 제공하고 **로그인** 을 선택합니다.
 
-   :::image type="content" source="media/ingest-dataverse-server-address.png" alt-text="사용자가 Dataverse 환경 URL을 입력할 수 있는 데이터 수집 단계의 화면.":::
-
-6. 사용 가능한 목록에서 Customer Insights에 엔터티로 수집할 테이블을 선택합니다.    
+1. 사용 가능한 목록에서 Customer Insights에 엔터티로 수집할 테이블을 선택합니다.
 
    > [!NOTE]
    > 일부 테이블이 이미 선택된 경우 다른 Dynamics 365 응용 프로그램(예: Dynamics 365 Sales Insights 또는 Customer Service Insights)에서 사용할 수 있습니다. 선택 사항은 변경할 수 없습니다. 이 테이블은 데이터 원본이 생성되면 엔터티로 사용할 수 있습니다.
 
-   :::image type="content" source="media/select-dataverse-entities.png" alt-text="Dataverse 환경의 엔터티 목록을 보여주는 대화 상자.":::
+    :::image type="content" source="media/select-dataverse-entities.png" alt-text="Dataverse 환경의 엔터티 목록을 보여주는 대화 상자.":::
 
-7. Dataverse에서 선택한 테이블의 동기화를 시작하려면 선택 항목을 저장하십시오. 새로 추가된 연결은 **데이터 원본** 페이지에서 찾을 수 있습니다. 새로 고침을 위해 대기하고 선택한 모든 테이블이 동기화될 때까지 엔터티 수를 0으로 표시합니다.
+1. Dataverse에서 선택한 테이블의 동기화를 시작하려면 선택 항목을 저장하십시오. 새로 추가된 연결은 **데이터 원본** 페이지에서 찾을 수 있습니다. 새로 고침을 위해 대기하고 선택한 모든 테이블이 동기화될 때까지 엔터티 수를 0으로 표시합니다.
 
 환경의 데이터 원본 하나만 동일한 Dataverse 관리 레이크를 동시에 사용할 수 있습니다.
 
 ## <a name="edit-a-dataverse-managed-lake-data-source"></a>Dataverse 관리 레이크 데이터 원본 편집
 
-데이터 원본을 생성한 후에만 엔터티 선택을 편집할 수 있습니다. 예를 들어, 만약 추가 엔티티가 Dataverse에 추가 되었고 당신 또한 그 것들을 가져오고 싶습니다.    
+데이터 원본을 생성한 후에만 엔터티 선택을 편집할 수 있습니다. 예를 들어, 만약 추가 엔티티가 Dataverse에 추가 되었고 당신 또한 그 것들을 가져오고 싶습니다.
 다른 Dataverse 데이터 레이크에 연결하려면, [새로운 데이터 원본 생성](#connect-to-a-dataverse-managed-lake)을 수행합니다.
 
 1. **데이터** > **데이터 원본** 으로 이동.
 
-2. 업데이트하려는 데이터 원본 옆에 있는 세로 줄임표(&vellip;)를 선택합니다.
+1. 업데이트하려는 데이터 원본 옆에 있는 **편집** 을 선택합니다.
 
-3. 목록에서 **편집** 옵션을 선택합니다.
-
-4. 사용 가능한 엔터티 목록에서 추가 엔터티를 선택하고 **저장** 을 선택합니다.
-
-[!INCLUDE [footer-include](includes/footer-banner.md)]
+1. 사용 가능한 엔터티 목록에서 추가 엔터티를 선택하고 **저장** 을 선택합니다.

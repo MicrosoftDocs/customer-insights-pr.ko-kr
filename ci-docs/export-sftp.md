@@ -1,19 +1,19 @@
 ---
 title: Customer Insights 데이터를 SFTP 호스트로 내보내기(동영상 포함)
 description: 연결을 구성하고 SFTP 위치로 내보내는 방법을 알아봅니다.
-ms.date: 03/03/2021
+ms.date: 06/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5170ec4ca35ad2a94f02e9d696c44a32da888120
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b56d628c8286ba6697cccc9b002f609aa929951b
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646756"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947192"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>SFTP로 세그먼트 및 다른 데이터 내보내기(프리뷰)
 
@@ -28,8 +28,8 @@ ms.locfileid: "8646756"
 ## <a name="known-limitations"></a>알려진 제한 사항
 
 - 방화벽 뒤에 있는 SFTP 대상은 현재 지원되지 않습니다. 
-- 내보내기 런타임은 시스템 성능에 따라 다릅니다. 서버의 최소 구성으로 2개의 CPU 코어와 1Gb의 메모리를 권장합니다. 
-- 2개의 CPU 코어와 1Gb 메모리의 권장 최소 구성을 사용하면 최대 1억 개의 고객 프로필이 있는 엔터티를 내보내는 데 90분이 걸릴 수 있습니다. 
+- 내보내기 런타임은 시스템 성능에 따라 다릅니다. 서버의 최소 구성으로 2개의 CPU 코어와 1Gb의 메모리를 권장합니다.
+- 2개의 CPU 코어와 1Gb 메모리의 권장 최소 구성을 사용하면 최대 1억 개의 고객 프로필이 있는 엔터티를 내보내는 데 90분이 걸릴 수 있습니다.
 
 ## <a name="set-up-connection-to-sftp"></a>SFTP 연결 설정
 
@@ -64,13 +64,17 @@ ms.locfileid: "8646756"
 1. 내보내려는 엔터티(예: 세그먼트)를 선택합니다.
 
    > [!NOTE]
-   > 선택한 각 엔터티는 내보낼 때 최대 5개의 출력 파일로 분할됩니다. 
+   > 선택한 각 엔터티는 내보낼 때 최대 5개의 출력 파일로 분할됩니다.
 
 1. **저장** 을 선택합니다.
 
 내보내기를 저장해도 내보내기가 즉시 실행되지는 않습니다.
 
-내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다. [주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다. 
+내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다.
+[주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다.
+
+> [!TIP]
+> 많은 양의 데이터가 포함된 엔터티를 내보내면 각 내보내기에 대해 동일한 폴더에 여러 CSV 파일이 생성될 수 있습니다. 내보내기를 완료하는 데 걸리는 시간을 최소화하기 위해 성능상의 이유로 내보내기 분할이 발생합니다.
 
 ## <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수
 

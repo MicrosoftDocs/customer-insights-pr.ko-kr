@@ -1,19 +1,19 @@
 ---
 title: Customer Insights 데이터를 Snapchat으로 내보내기
 description: 연결을 구성하고 Snapchat으로 내보내는 방법을 알아봅니다.
-ms.date: 10/08/2021
+ms.date: 06/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 171b8bf0f4a034c78e872b671602ae7653271da7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d64b482c322af8632e29ec41d6e34c390c5e646c
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647147"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947284"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>Snapchat으로 세그먼트 내보내기(프리뷰)
 
@@ -21,7 +21,8 @@ ms.locfileid: "8647147"
 
 ## <a name="prerequisites-for-a-connection"></a>연결을 위한 전제 조건
 
--   [Snapchat 비즈니스 계정](https://business.snapchat.com/), [Snapchat 광고 계정](https://ads.snapchat.com/) 및 해당 관리자 자격 증명.
+-   [Snapchat 비즈니스 계정](https://business.snapchat.com/), [Snapchat 광고 계정](https://ads.snapchat.com/) 및 해당 관리자 자격 증명. 귀하는 최소한 조직 계정의 구성원이어야 하고 특정 광고 계정의 데이터 관리자여야 합니다. 
+-   Snapchat에 SAM 유형(Snap 대상 그룹 Match)의 대상 그룹 관리자가 하나 이상 있습니다. 
 -   Customer Insights에 [세그먼트를 구성](segments.md)했습니다.
 -   내보낸 세그먼트의 통합 고객 프로필에는 이메일 주소를 나타내는 필드가 포함됩니다.
 
@@ -60,7 +61,7 @@ ms.locfileid: "8647147"
 
 1. **내보내기 연결** 필드의 Snapchat 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 연결이 없는 것입니다.
 
-1. [**Snapchat 대상 그룹 ID**](https://businesshelp.snapchat.com/s/article/custom-audiences)를 입력합니다.
+1. [**Snapchat 세그먼트/대상 그룹 ID**](https://businesshelp.snapchat.com/s/article/custom-audiences)를 입력합니다. Snapchat Audience Manager에서 대상 그룹을 선택한 후 URL에서 대상 그룹 ID를 찾을 수 있습니다. 
 
 1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다. Snapchat으로 세그먼트를 내보내야 합니다.
 

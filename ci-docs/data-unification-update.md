@@ -1,7 +1,7 @@
 ---
 title: 통합 설정 업데이트
 description: 통합 설정에서 중복 규칙, 일치 규칙 또는 통합 필드를 업데이트합니다.
-ms.date: 05/04/2022
+ms.date: 06/01/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
@@ -13,12 +13,12 @@ searchScope:
 - ci-merge
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: be399da9b98d8803d7d1a90f44a40e0d638a8d47
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 590a2996cf8b2b1c6def59b78583169ec1910b59
+ms.sourcegitcommit: 760fbac397c738407c7dea59297d54cae19b6f57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755598"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844048"
 ---
 # <a name="update-the-unification-settings"></a>통합 설정 업데이트
 
@@ -43,8 +43,9 @@ ms.locfileid: "8755598"
 
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="통합 옵션이 강조 표시된 데이터 통합 페이지의 스크린샷.":::
 
-   - 통합 고객 프로필(종속성 유무에 관계없이)을 업데이트하려면 [고객 프로필 업데이트 실행](#run-updates-to-the-unified-customer-profile)을 참조하십시오.
-   - 통합 프로필을 업데이트하지 않고 일치 조건의 품질을 평가하려면 [일치하는 조건 실행](#run-matching-conditions)을 참조하십시오. **일치하는 조건만 실행** 옵션은 단일 엔터티에 대해 표시되지 않습니다.
+   - [일치하는 조건을 실행](#run-matching-conditions)하여 통합 프로필을 업데이트하지 않고도 일치 조건(중복 제거 및 일치 규칙)의 품질을 빠르게 평가할 수 있습니다. **일치하는 조건만 실행** 옵션은 단일 엔터티에 대해 표시되지 않습니다.
+   - [고객 프로필을 통합](#run-updates-to-the-unified-customer-profile)하여 일치 조건을 실행하고 종속성(예: 보강, 세그먼트 또는 측정값)에 영향을 주지 않고 Unified Customer Profiles 엔터티를 업데이트합니다. 종속 프로세스는 실행되지 않지만 [새로 고침 일정에 정의](system.md#schedule-tab)에 따라 새로 고쳐집니다.
+   - [고객 프로필 및 종속성을 통합](#run-updates-to-the-unified-customer-profile)하여 일치 조건을 실행하고 Unified Customer Profiles 엔터티 및 모든 종속성(예: 보강, 세그먼트 또는 측정값)을 업데이트합니다. 모든 프로세스는 자동으로 다시 실행됩니다.
 
 ## <a name="edit-source-fields"></a>원본 필드 편집
 
@@ -135,11 +136,13 @@ ms.locfileid: "8755598"
 
 ## <a name="run-matching-conditions"></a>일치하는 조건 실행
 
+일치 조건 실행은 중복 제거 및 일치 규칙만 실행하고 *Deduplication_* 및 *ConflationMatchPair* 엔터티를 업데이트합니다.
+
 1. **데이터** > **통합** 페이지에서 **일치하는 조건만 실행** 을 선택합니다.
 
-   **중복 레코드** 및 **일치하는 조건** 타일에 **대기** 또는 **새로 고침** 이 표시됩니다.
+   **중복 레코드** 및 **일치하는 조건** 타일에 **대기** 또는 **새로 고침** 상태가 표시됩니다.
 
-   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
+   [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
 1. 매칭이 완료되면 **일치하는 조건** 타일에서 **편집** 을 선택합니다.
 
@@ -153,10 +156,12 @@ ms.locfileid: "8755598"
 
 1. **데이터** > **통합** 페이지에서 다음을 선택합니다.
 
-   - **고객 프로필 통합**: 종속성(예: 보강, 세그먼트 또는 측정값)에 영향을 주지 않고 통합된 고객 프로필 엔터티를 업데이트합니다. 종속 프로세스는 실행되지 않지만 [새로 고침 일정에 정의](system.md#schedule-tab)에 따라 새로 고쳐집니다.
+   - **고객 프로필 통합**: 일치 조건을 실행하고 종속성(예: 보강, 세그먼트 또는 측정값)에 영향을 주지 않고 Unified Customer Profiles 엔터티를 업데이트합니다. 종속 프로세스는 실행되지 않지만 [새로 고침 일정에 정의](system.md#schedule-tab)에 따라 새로 고쳐집니다.
 
-   - **고객 프로필 및 종속성 통합**: 통합 프로필 및 모든 종속성을 업데이트합니다. 모든 프로세스는 자동으로 다시 실행됩니다. 모든 다운스트림 프로세스가 완료된 후 고객 프로필에 업데이트된 데이터가 반영됩니다.
+   - **고객 프로필 및 종속성 통합**: 일치 조건을 실행하고 통합 프로필 및 모든 종속성을 업데이트합니다. 모든 프로세스는 자동으로 다시 실행됩니다. 모든 다운스트림 프로세스가 완료된 후 고객 프로필에 업데이트된 데이터가 반영됩니다.
 
-   **중복 레코드**, **일치하는 조건** 및 **통합 고객 필드** 타일에 **대기** 또는 **새로 고침** 이 표시됩니다.
+   **중복 레코드**, **일치하는 조건** 및 **통합 고객 필드** 타일에 **대기** 또는 **새로 고침** 상태가 표시됩니다.
 
-   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
+   [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
+
+성공적인 실행 결과는 통합된 고객 프로필의 수를 보여주는 **통합** 페이지에 표시됩니다.

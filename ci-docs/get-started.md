@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 68c26eb0ad0da787a9f594b4aebe679588b0d6bf
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 1c925110f40319df77940d1c32f24a99504d6ec6
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833583"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011987"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 시작
 
@@ -39,7 +39,7 @@ Customer Insights에 처음 로그인하면 설정을 구성하고 제품을 탐
 
 통합 프로필은 인사이트를 얻고 데이터에 대한 작업을 수행하기 위한 기반입니다. 다양한 소스에서 데이터를 가져와 데이터 통합 프로세스를 실행하여 통합 프로필을 결합합니다. 수집된 엔터티 간에 관계를 지정하고 보강 기능을 사용하여 프로필에 정보를 추가합니다.
 
-1. 여러 옵션에서 데이터 원본을 만들어 데이터를 수집합니다. [Power Query 커넥터](connect-power-query.md), [Common Data Model 폴더](connect-common-data-model.md) 또는 [Microsoft Dataverse](connect-dataverse-managed-lake.md) 중에서 선택합니다.
+1. 여러 옵션에서 데이터 원본을 만들어 데이터를 수집합니다. [Azure Data Lake Storage(Common Data Model 포함)](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md) 또는 [Power Query 커넥터](connect-power-query.md) 중에서 선택합니다.
 
 1. [원본 필드](map-entities.md)를 식별하고, [중복](remove-duplicates.md), [일치 조건](match-entities.md), [필드 통합](merge-entities.md)을 제거하여 [데이터 통합 프로세스](data-unification.md)를 실행합니다.
 

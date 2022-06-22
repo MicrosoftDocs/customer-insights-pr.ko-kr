@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: b18d1f42b9510ebf23f0666322819865d132173b
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 36ad957f59b23df6ee83d9d90898ef03ddfd320a
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833393"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011849"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Azure 서비스 주체를 사용하여 Azure Data Lake Storage 계정에 연결
 
@@ -51,7 +51,13 @@ Customer Insights에 대한 새 서비스 주체를 만들기 전에 조직에 �
 
 ## <a name="grant-permissions-to-the-service-principal-to-access-the-storage-account"></a>서비스 주체에게 스토리지 계정에 액세스할 수 있는 권한 부여
 
-Azure Portal로 이동하여 Customer Insights에서 사용하려는 스토리지 계정에 대한 권한을 서비스 주체에 부여합니다.
+Azure Portal로 이동하여 Customer Insights에서 사용하려는 스토리지 계정에 대한 권한을 서비스 주체에 부여합니다. 스토리지 계정 또는 컨테이너에 다음 역할 중 하나를 할당해야 합니다.
+
+|자격 증명|요구 사항|
+|----------|------------|
+|현재 로그인한 사용자|**역할**: Storage Blob 데이터 판독기, Storage Blob 기여자 또는 Storage Blob 소유자입니다.<br>**수준**: 스토리지 계정 또는 컨테이너에 대한 권한을 부여할 수 있습니다.</br>|
+|Customer Insights 서비스 주체 -<br>Azure Data Lake Storage를 데이터 원본으로 사용</br>|옵션 1<ul><li>**역할**: Storage Blob 데이터 판독기, Storage Blob 데이터 기여자 또는 Storage Blob 데이터 소유자입니다.</li><li>**수준**: 저장소 계정에 대한 권한을 부여해야 합니다.</li></ul>옵션 2 *(스토리지 계정에 대한 서비스 주체 액세스를 공유하지 않음)*<ul><li>**역할 1**: Storage Blob 데이터 판독기, Storage Blob 데이터 기여자 또는 Storage Blob 데이터 소유자입니다.</li><li>**수준**: 컨테이너에 대한 권한을 부여해야 합니다.</li><li>**역할 2**: Storage Blob 데이터 위임자입니다.</li><li>**수준**: 저장소 계정에 대한 권한을 부여해야 합니다.</li></ul>|
+|Customer Insights 서비스 주체 - <br>Azure Data Lake Storage를 출력 또는 대상으로 사용</br>|옵션 1<ul><li>**역할**: Storage Blob 데이터 기여자 또는 Storage Blob 소유자입니다.</li><li>**수준**: 저장소 계정에 대한 권한을 부여해야 합니다.</li></ul>옵션 2 *(스토리지 계정에 대한 서비스 주체 액세스를 공유하지 않음)*<ul><li>**역할**: Storage Blob 데이터 기여자 또는 Storage Blob 소유자입니다.</li><li>**수준**: 컨테이너에 대한 권한을 부여해야 합니다.</li><li>**역할 2**: Storage Blob 위임자입니다.</li><li>**수준**: 저장소 계정에 대한 권한을 부여해야 합니다.</li></ul>|
 
 1. [Azure 관리 포털](https://portal.azure.com)로 이동하고 조직에 로그인합니다.
 
@@ -62,7 +68,7 @@ Azure Portal로 이동하여 Customer Insights에서 사용하려는 스토리�
    :::image type="content" source="media/ADLS-SP-AddRoleAssignment.png" alt-text="역할 할당을 추가하는 동안 Azure Portal을 보여 주는 스크린샷.":::
 
 1. **역할 할당 추가** 창에서 다음 속성을 설정합니다.
-   - 역할: **Storage Blob 데이터 기여자**
+   - 역할: 위에 나열된 자격 증명을 기반으로 하는 Storage Blob 데이터 판독기, Storage Blob 기여자 또는 Storage Blob 소유자입니다.
    - 액세스 권한 할당: **사용자, 그룹 또는 서비스 주체**
    - 구성원 선택: **Customer Insights용 Dynamics 365 AI**(이 절차의 앞부분에서 조회한 [서비스 주체](#create-a-new-service-principal))
 

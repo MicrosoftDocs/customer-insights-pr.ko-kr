@@ -1,19 +1,19 @@
 ---
 title: Azure Blob Storage로 Customer Insights 데이터 내보내기
 description: 연결을 구성하고 Azure Blob Storage로 내보내는 방법을 알아봅니다.
-ms.date: 10/06/2021
+ms.date: 06/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
-ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
+ms.openlocfilehash: 623926bf520b19ee4156b7a05e953241cd819e9e
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2022
-ms.locfileid: "8757394"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947146"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>세그먼트 목록 및 기타 데이터를 Azure Blob Storage로 내보내기(프리뷰)
 
@@ -58,16 +58,19 @@ Blob Storage에 Customer Insights 데이터를 저장하거나 다른 애플리�
 
 내보내기를 저장해도 내보내기가 즉시 실행되지는 않습니다.
 
-내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다.     
+내보내기는 모든 [예약된 새로 고침](system.md#schedule-tab)에 따라 실행됩니다.
 
-[주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다. 
+[주문형으로 데이터를 내보낼](export-destinations.md#run-exports-on-demand)수도 있습니다.
 
 내보낸 데이터는 구성한 Blob Storage 컨테이너에 저장됩니다. 컨테이너에 다음 폴더 경로가 자동으로 생성됩니다.
 
 - 원본 엔터티 및 시스템에서 생성된 엔터티의 경우:  
   `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`  
   - 예: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
- 
+  
+  > [!TIP]
+  > 많은 양의 데이터가 포함된 엔터티를 내보내면 각 내보내기에 대해 동일한 폴더에 여러 CSV 파일이 생성될 수 있습니다. 내보내기를 완료하는 데 걸리는 시간을 최소화하기 위해 성능상의 이유로 내보내기 분할이 발생합니다.
+
 - 내보낸 엔터티의 model.json은 %ExportDestinationName% 수준에 있습니다.  
   - 예: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 
