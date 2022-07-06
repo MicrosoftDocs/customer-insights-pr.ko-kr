@@ -1,5 +1,5 @@
 ---
-title: 고객 피드백에 대한 감정 분석
+title: 고객 피드백에 대한 감정 분석(프리뷰)
 description: Dynamics 365 Customer Insights에서 고객 피드백에 대한 감정 분석 모델을 사용하는 방법을 알아보세요.
 ms.date: 12/23/2021
 ms.subservice: audience-insights
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: e51225bbfcd445180b12661cba12256c3f042045
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: af1afd3eff8a795a9e199b1c1d411b79dc2841b4
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647047"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055544"
 ---
-# <a name="analyze-sentiment-in-customer-feedback-preview"></a>고객 피드백에 대한 감정 분석(미리보기)
+# <a name="analyze-sentiment-in-customer-feedback-preview"></a>고객 피드백의 감정 분석(프리뷰)
 
 오늘날 고객들은 고품질 제품, 서비스, 경험을 기대합니다. 특히 피드백을 공유하는 고객. 점점 많아지는 데이터를 비용은 억제하면서 정확하게 분석하기는 매우 어렵습니다. Dynamics 365 Customer Insights는 기업이 데이터를 저렴한 비용으로 정확하게 분석하도록 도와주는 고객 피드백에 대한 감정 분석 모델을 제공합니다.
 

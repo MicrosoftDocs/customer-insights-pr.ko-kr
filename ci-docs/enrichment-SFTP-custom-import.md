@@ -1,5 +1,5 @@
 ---
-title: SFTP 사용자 지정 가져오기로 보강
+title: SFTP 사용자 지정 가져오기로 고객 프로필 보강(프리뷰)
 description: SFTP 사용자 지정 가져오기 보강에 대한 일반 정보입니다.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 657afb6fcb68429680eb677734b4115e69769008
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953727"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081335"
 ---
-# <a name="enrich-customer-profiles-with-custom-data-preview"></a>사용자 지정 데이터로 고객 프로필 보강(미리 보기)
+# <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>SFTP 사용자 지정 가져오기로 고객 프로필 보강(프리뷰)
 
 SFTP(보안 파일 전송 프로토콜) 사용자 지정 가져오기를 사용하면 데이터 통합 프로세스를 거치지 않아도 되는 데이터를 가져올 수 있습니다. 데이터를 가져오는 유연하고 안전하며 쉬운 방법입니다. SFTP 사용자 지정 가져오기는 보강에 필요한 고객 프로필 데이터를 내보낼 수 있는 [SFTP 내보내기](export-sftp.md)와 함께 사용할 수 있습니다. 그런 다음 데이터를 처리하고 보강할 수 있으며 SFTP 사용자 지정 가져오기를 사용하여 보강된 데이터를 Dynamics 365 Customer Insights로 다시 가져올 수 있습니다.
 
@@ -120,7 +120,7 @@ Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하�
 
 1. **실행** 을 선택하여 강화 프로세스를 시작하거나 닫기를 선택하여 **강화** 페이지로 돌아갑니다.
 
-## <a name="enrichment-results"></a>보강 결과
+## <a name="view-enrichment-results"></a>강화 결과 보기
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

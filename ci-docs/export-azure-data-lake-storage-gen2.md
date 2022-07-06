@@ -1,5 +1,5 @@
 ---
-title: Azure Data Lake Storage Gen2로 Customer Insights 데이터 내보내기
+title: Azure Data Lake Storage Gen2로 데이터 내보내기(프리뷰)
 description: Azure Data Lake Storage Gen2로 연결을 구성하는 방법을 알아보세요.
 ms.date: 10/06/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: c2446fba425203d2910b82134b73543a73c7ecf8
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947238"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081483"
 ---
-# <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>세그먼트 목록 및 기타 데이터를 Azure Data Lake Storage Gen2로 내보내기(미리 보기)
+# <a name="export-data-to-azure-data-lake-storage-gen2-preview"></a>Azure Data Lake Storage Gen2로 데이터 내보내기(프리뷰)
 
 Data Lake Storage Gen2에 Customer Insights 데이터를 저장하거나 다른 애플리케이션으로 데이터를 전송하는 데 사용합니다.
 

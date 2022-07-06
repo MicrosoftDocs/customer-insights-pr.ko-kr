@@ -1,5 +1,5 @@
 ---
-title: Customer Insights 데이터를 ActiveCampaign으로 내보내기
+title: ActiveCampaign으로 세그먼트 내보내기
 description: 연결을 구성하고 ActiveCampaign으로 내보내는 방법을 알아봅니다.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5d15b9bf7383d06070ac92d7a729fc6e6e00c9d7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: eb6f2bb69bb30c319e17390562b3f33512f33ff1
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646936"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054716"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>ActiveCampaign으로 세그먼트 내보내기(프리뷰)
 
@@ -21,9 +21,9 @@ ms.locfileid: "8646936"
 
 ## <a name="prerequisites"></a>필수 조건
 
--   귀하는 [ActiveCampaign 계정](https://www.activecampaign.com/) 및 해당 관리자 자격 증명을 가지고 있습니다.
--   Customer Insights에 [세그먼트를 구성](segments.md)했습니다.
--   내 보낸 세그먼트의 통합 고객 프로필에는 이메일 주소가 있는 필드가 포함됩니다.
+- 귀하는 [ActiveCampaign 계정](https://www.activecampaign.com/) 및 해당 관리자 자격 증명을 가지고 있습니다.
+- Customer Insights에 [세그먼트를 구성](segments.md)했습니다.
+- 내 보낸 세그먼트의 통합 고객 프로필에는 이메일 주소가 있는 필드가 포함됩니다.
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 

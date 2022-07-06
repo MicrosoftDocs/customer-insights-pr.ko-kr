@@ -1,5 +1,5 @@
 ---
-title: Power Automate 커넥터 | Microsoft Docs
+title: Power Automate 커넥터(프리뷰) | Microsoft Docs
 description: Dynamics 365 Customer Insights의 Microsoft Power Automate에서 흐름을 만듭니다.
 ms.date: 06/24/2021
 ms.reviewer: mhart
@@ -8,16 +8,16 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d22c4c785695b23a257a89f1ffa519fdc18b443e
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 29a861dad926072f6f849d738d868f0f3b9306be
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741187"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081389"
 ---
 # <a name="power-automate-connector-preview"></a>Power Automate 커넥터(미리 보기)
 
-데이터가 변경되면 특정 이벤트가 자동으로 발생하도록 트리거하고 [Power Automate](https://flow.microsoft.com/)에서 직접 더 복잡한 흐름을 관리합니다.
+데이터가 변경되면 특정 이벤트가 자동으로 발생하도록 트리거하고 [Microsoft Power Automate](https://flow.microsoft.com/)에서 직접 더 복잡한 흐름을 관리합니다.
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 

@@ -1,5 +1,5 @@
 ---
-title: 지원되는 예측 시나리오에 대한 개요
+title: 예측 개요
 description: Dynamics 365 Customer Insights 애플리케이션에서 사용하는 예측 시나리오 및 옵션입니다.
 ms.date: 03/24/2022
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 11b0efeecf8bea893272e67d29b1c6622771110c
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a87af80fa713a1ac70493345c0c920e416692b0f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647456"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081694"
 ---
 # <a name="predictions-overview"></a>예측 개요
 

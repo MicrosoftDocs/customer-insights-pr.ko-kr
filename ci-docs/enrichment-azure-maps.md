@@ -1,5 +1,5 @@
 ---
-title: Azure Maps에서 위치 데이터로 고객 프로필 보강
+title: Azure Maps의 위치 데이터로 고객 프로필 보강(프리뷰)
 description: Azure Maps 자사 보강에 대한 일반 정보.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: a806b2d0c791972c967c90694527608b4def9f3f
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953636"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052615"
 ---
-# <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>Azure Maps를 통한 고객 프로필 보강(프리뷰)
+# <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>Azure Maps의 위치 데이터로 고객 프로필 보강(프리뷰)
 
 Azure Maps는 기본 제공 위치 인텔리전스를 통해 지리 공간 데이터를 기반으로 경험을 제공하는 위치 중심 데이터 및 서비스를 제공합니다. Azure Maps 데이터 보강 서비스는 고객에 대한 위치 정보의 정밀도를 향상시킵니다. Dynamics 365 Customer Insights에 주소 정규화, 위도 및 경도 추출과 같은 기능을 제공합니다.
 
@@ -82,7 +82,7 @@ Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하�
 
 1. **실행** 을 선택하여 강화 프로세스를 시작하거나 닫기를 선택하여 **강화** 페이지로 돌아갑니다.
 
-## <a name="enrichment-results"></a>보강 결과
+## <a name="view-enrichment-results"></a>강화 결과 보기
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

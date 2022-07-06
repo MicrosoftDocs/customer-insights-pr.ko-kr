@@ -21,14 +21,14 @@ searchScope:
 - ci-measure-template
 - ci-permissions
 - customerInsights
-ms.openlocfilehash: a7b10d985d5cba64b25595a3d7c101d6cb5c62a5
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5477798a8b9e0771d390e403379b7447eb7baddd
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647327"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081443"
 ---
-# <a name="relationships-between-entities"></a>엔터티 간 관계
+# <a name="relationships-between-entities-and-entity-paths"></a>엔터티 및 엔터티 경로 간 관계
 
 관계는 엔터티를 연결하고 엔터티가 공통 식별자인 외래 키를 공유할 때 데이터 그래프를 정의합니다. 이 외래 키는 한 엔터티에서 다른 엔터티로 참조될 수 있습니다. 연결된 엔터티를 사용하면 여러 데이터 원본을 기반으로 세그먼트 및 측정값을 정의할 수 있습니다.
 

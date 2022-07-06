@@ -1,21 +1,21 @@
 ---
-title: Customer Insights 데이터를 Azure Synapse Analytics로 내보내기
+title: Azure Synapse Analytics로 데이터 내보내기(프리뷰)
 description: Azure Synapse Analytics에 대한 연결을 구성하는 방법을 알아보세요.
-ms.date: 04/11/2022
+ms.date: 06/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 60bacb313e0426564310f3c1339bf3b732e17489
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741511"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081583"
 ---
-# <a name="export-data-to-azure-synapse-analytics-preview"></a>Azure Synapse Analytics(프리뷰)로 데이터 내보내기
+# <a name="export-data-to-azure-synapse-analytics-preview"></a>Azure Synapse Analytics로 데이터 내보내기(프리뷰)
 
 Azure Synapse은 데이터 웨어하우스 및 빅 데이터 시스템 전체에서 인사이트를 얻는 시간을 가속화하는 분석 서비스입니다. [Azure Synapse](/azure/synapse-analytics/overview-what-is)에서 Customer Insights 데이터를 수집하고 사용할 수 있습니다.
 
@@ -48,7 +48,7 @@ Azure에서:
 
 ### <a name="configure-a-connection"></a>연결 구성
 
-연결을 만들려면 Customer Insights에 있는 서비스 주체와 사용자 계정에 Synapse Analytics 작업 영역이 있는 *리소스 그룹* 에 대한 **읽기** 권한이 필요합니다. 또한, 서비스 주체와 Synapse Analytics 작업 영역의 사용자는 **Synapse 관리자** 권한이 필요합니다. 
+연결을 만들려면 Customer Insights에 있는 서비스 주체와 사용자 계정에 Synapse Analytics 작업 영역이 있는 *리소스 그룹* 에 대한 **읽기** 권한이 필요합니다. 또한 서비스 주체와 Synapse Analytics 작업 영역의 사용자는 **Synapse 관리자** 권한이 필요합니다. 
 
 1. **관리자** > **연결** 로 이동합니다.
 
@@ -72,13 +72,13 @@ Azure에서:
 
 1. **내보내기 연결** 필드의 **Azure Synapse Analytics** 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 [연결](connections.md)이 없는 것입니다.
 
-1. 내보내기에 대해 알아볼 수 있는 **표시 이름** 과 **데이터베이스 이름** 을 제공합니다.
+1. 내보내기에 대해 알아볼 수 있는 **표시 이름** 과 **데이터베이스 이름** 을 제공합니다. 내보내기는 연결에 정의된 작업 영역에 새 [Azure Synapse 레이크 데이터베이스](/azure/synapse-analytics/database-designer/concepts-lake-database)를 생성합니다.
 
 1. Azure Synapse Analytics에 내보낼 엔터티를 선택합니다.
    > [!NOTE]
    > [Common Data Model 폴더](connect-common-data-model.md) 기반의 데이터 원본은 지원하지 않습니다.
 
-2. **저장** 을 선택합니다.
+1. **저장** 을 선택합니다.
 
 내보내기를 저장해도 내보내기가 즉시 실행되지는 않습니다.
 

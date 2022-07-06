@@ -1,5 +1,5 @@
 ---
-title: Azure Blob Storage로 Customer Insights 데이터 내보내기
+title: Azure Blob Storage로 데이터 내보내기(프리뷰)
 description: 연결을 구성하고 Azure Blob Storage로 내보내는 방법을 알아봅니다.
 ms.date: 06/09/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 623926bf520b19ee4156b7a05e953241cd819e9e
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: 059c8364ca0f3740bc0e4ffeeeba94246c9e5696
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947146"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055498"
 ---
-# <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>세그먼트 목록 및 기타 데이터를 Azure Blob Storage로 내보내기(프리뷰)
+# <a name="export-data-to-an-azure-blob-storage-preview"></a>Azure Blob Storage로 데이터 내보내기(프리뷰)
 
 Blob Storage에 Customer Insights 데이터를 저장하거나 다른 애플리케이션으로 데이터를 전송하는 데 사용합니다.
 

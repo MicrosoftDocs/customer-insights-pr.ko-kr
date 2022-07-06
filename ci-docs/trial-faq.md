@@ -1,5 +1,5 @@
 ---
-title: 평가판 FAQ - Dynamics 365 Customer Insights
+title: Dynamics 365 Customer Insights 평가판 FAQ
 description: Customer Insights 평가판 설치 및 관리와 관련된 일반적인 질문에 대한 솔루션입니다. 플랫폼 및 앱별 문제를 해결하는 방법을 알아봅니다.
 author: m-hartmann
 ms.author: mhart
@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 46a67e58f79029246029e2d06789525c2131f100
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: 41f112466d54c9923d0daf7c55d343f9b5c81d98
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011895"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051507"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Dynamics 365 Customer Insights 평가판 FAQ
 

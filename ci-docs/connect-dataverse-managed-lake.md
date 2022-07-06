@@ -1,7 +1,7 @@
 ---
-title: Microsoft Dataverse에서 테이블에 연결
+title: Microsoft Dataverse 관리형 데이터 레이크의 데이터에 연결
 description: Microsoft Dataverse 관리 데이터 레이크에서 데이터 가져오기
-ms.date: 03/18/2022
+ms.date: 05/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,12 +11,12 @@ ms.reviewer: v-wendysmith
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: c470956b0453ac2558ed85acdeebba120a0ca55d
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: 9ae0b964d8d39835715b7ddadc712e2338b855af
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011711"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081263"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Microsoft Dataverse 관리형 데이터 레이크의 데이터에 연결
 

@@ -1,5 +1,5 @@
 ---
-title: Customer Insights 데이터를 SFTP 호스트로 내보내기(동영상 포함)
+title: SFTP 호스트로 데이터 내보내기(프리뷰)(비디오 포함)
 description: 연결을 구성하고 SFTP 위치로 내보내는 방법을 알아봅니다.
 ms.date: 06/09/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b56d628c8286ba6697cccc9b002f609aa929951b
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: 67789a87cf0ff1b0d9933f2c0adde37762c83476
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947192"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081534"
 ---
-# <a name="export-segments-and-other-data-to-sftp-preview"></a>SFTP로 세그먼트 및 다른 데이터 내보내기(프리뷰)
+# <a name="export-data-to-sftp-preview"></a>SFTP로 데이터 내보내기(프리뷰)
 
 고객 데이터를 SFTP(Secure File Transfer Protocol) 위치로 내보내 타사 애플리케이션에서 사용하십시오.
 

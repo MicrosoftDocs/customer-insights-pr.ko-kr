@@ -1,5 +1,5 @@
 ---
-title: Marketo로 Customer Insights 데이터 내보내기
+title: Marketo로 세그먼트 내보내기(프리뷰)
 description: 연결을 구성하고 Marketo로 내보내는 방법을 알아봅니다.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 7354b0aeafbe95e60d172b16c26d83c5dc25fb96
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 8cd24cf436bd5fdfd4ec3834d35baa1495e37ca4
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647476"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9053213"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Marketo로 세그먼트 내보내기(프리뷰)
 

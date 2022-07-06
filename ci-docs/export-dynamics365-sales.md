@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Sales에 Customer Insights 데이터 내보내기
+title: Dynamics 365 Sales로 세그먼트 내보내기(프리뷰)
 description: 연결을 구성하고 Dynamics 365 Sales로 내보내는 방법을 알아봅니다.
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -11,16 +11,14 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: 987690283090ec83ca75f50bf8f3cd8da9295887
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b8e756313ca037dca41cb25587229808f0c584c9
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646837"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081362"
 ---
-# <a name="use-segments-in-dynamics-365-sales-preview"></a>Dynamics 365 Sales에 세그먼트 사용(프리뷰)
-
-
+# <a name="export-segments-to-dynamics-365-sales-preview"></a>Dynamics 365 Sales로 세그먼트 내보내기(프리뷰)
 
 고객 데이터를 사용하여 마케팅 목록을 만들고, 워크플로에 대한 후속작업을 수행하고, Dynamics 365 Sales로 홍보 행사를 보냅니다.
 

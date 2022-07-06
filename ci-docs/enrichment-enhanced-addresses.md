@@ -1,5 +1,5 @@
 ---
-title: 주소 향상 강화(동영상 포함)
+title: 향상된 주소로 고객 프로필 강화(비디오 포함)
 description: Microsoft 모델을 사용하여 고객 프로필의 주소 정보를 보강하고 정규화합니다.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -14,14 +14,14 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: f6279b9bb721d99d66f73e8dc839a92f1ad90140
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 01f1c917c75e932cc69f4c7251e57524fc859dce
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953819"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081227"
 ---
-# <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>향상된 주소로 고객 프로필 강화
+# <a name="enrich-customer-profiles-with-enhanced-addresses"></a>향상된 주소로 고객 프로필 강화
 
 데이터의 주소는 구조화되지 않았거나 불완전하거나 부정확할 수 있습니다. Microsoft의 모델을 사용하여 [공통 데이터 모델 형식](/common-data-model/schema/core/applicationcommon/address)으로 정규화하고 보강하여 더 나은 정확성과 인사이트를 얻으십시오.
 
@@ -101,7 +101,7 @@ ms.locfileid: "8953819"
 
 1. 선택 사항을 검토 한 후 **보강 저장** 을 선택합니다.
 
-## <a name="enrichment-results"></a>보강 결과
+## <a name="view-enrichment-results"></a>강화 결과 보기
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

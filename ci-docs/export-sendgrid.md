@@ -1,5 +1,5 @@
 ---
-title: SendGrid로 Customer Insights 데이터 내보내기
+title: SendGrid로 세그먼트 내보내기(프리뷰)
 description: 연결을 구성하고 SendGrid로 내보내는 방법을 알아봅니다.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 38dd782fdf06d5970e79e6deb6e8fc94252da585
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 669f0fb48b095f6a9faeebf257ee9df3d1c580c7
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647207"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081663"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>SendGrid로 세그먼트 내보내기(프리뷰)
 

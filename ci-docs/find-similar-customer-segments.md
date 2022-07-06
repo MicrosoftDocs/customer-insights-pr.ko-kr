@@ -1,5 +1,5 @@
 ---
-title: AI로 유사 고객 찾기(동영상 포함)
+title: AI로 유사 고객 찾기(프리뷰)(비디오 포함)
 description: 인공 지능으로 유사한 고객 세그먼트를 찾으십시오.
 ms.date: 03/25/2022
 ms.subservice: audience-insights
@@ -12,14 +12,14 @@ searchScope:
 - ci-segment-builder
 - ci-segment-insights
 - customerInsights
-ms.openlocfilehash: 7877349817829f7486a63a1355a81361e1cb2c13
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d58b2e424fd81ad691db4b2576bdf5655038ed89
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646909"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054809"
 ---
-# <a name="similar-customers-preview"></a>유사한 고객(미리 보기)
+# <a name="find-similar-customers-with-ai-preview"></a>AI로 유사 고객 찾기(프리뷰)
 
 이 기능을 사용하면 인공 지능을 사용하여 고객 기반에서 유사한 고객을 찾을 수 있습니다. 이 기능을 사용하려면 하나 이상의 세그먼트를 작성해야 합니다. 기존 세그먼트의 기준을 확장하면 해당 세그먼트와 유사한 고객을 찾을 수 있습니다.
 

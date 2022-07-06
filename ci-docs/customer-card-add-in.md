@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 앱용 고객 카드 추가 앱(비디오 포함)
+title: Dynamics 365 앱용 고객 카드 추가 기능(프리뷰)(비디오 포함)
 description: 이 추가 기능을 사용하여 Dynamics 365 앱의 Customer Insights에서 고객 프로필 데이터를 표시합니다.
 ms.date: 02/02/2022
 ms.reviewer: mhart
@@ -13,14 +13,14 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 8508880bb3274bb491a314a043a5222d4d381073
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: ead18963959f94fd07912384cf61802f83523e2f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755644"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081254"
 ---
-# <a name="customer-card-add-in-preview"></a>고객 카드 추가 기능(미리 보기)
+# <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>Dynamics 365 앱의 고객 카드 추가 기능(프리뷰)
 
 Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하세요. 지원되는 Dynamics 365 앱에 설치된 고객 카드 추가 기능을 사용하여 고객 프로필 필드, 인사이트 및 활동 타임라인을 표시하도록 선택할 수 있습니다. 추가 기능은 연결된 Dynamics 365 앱의 데이터에 영향을 주지 않고 Customer Insights에서 데이터를 검색합니다.
 

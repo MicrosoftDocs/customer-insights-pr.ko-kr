@@ -1,6 +1,6 @@
 ---
-title: 고유한 Azure Key Vault를 가져와 비밀을 관리하세요.
-description: 고유한 Azure Key Vault를 사용하도록 Customer Insights를 구성하는 방법을 알아보세요.
+title: 고유한 Azure Key Vault 가져오기(미리 보기)
+description: 고유한 Azure Key Vault를 사용하여 비밀을 관리하도록 Customer Insights를 구성하는 방법을 알아보세요.
 ms.date: 10/06/2021
 ms.reviewer: mhart
 ms.subservice: audience-insights
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: d4f2d5ebc828053c40e22065f4915c4d0f84153f
-ms.sourcegitcommit: 6ec4626a185892dfb781d3c7af4384f9c13f3723
+ms.openlocfilehash: 8fdb131de35c7d936d2921265f03faa5682db6f6
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "8763587"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081474"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>고유한 Azure Key Vault 가져오기(미리 보기)
 

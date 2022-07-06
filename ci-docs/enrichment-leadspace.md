@@ -1,5 +1,5 @@
 ---
-title: 타사 보강 Leadspace를 사용하여 회사 프로필 보강
+title: Leadspace를 통한 회사 프로필 보강(프리뷰)
 description: Leadspace 타사 보강에 대한 일반 정보입니다.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: ca53f15bd7c71b3b4acb396c4daf52d7c7aff9eb
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: b58532a541ee22a5e34d0af1a3334ccbd53627b2
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954187"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081353"
 ---
-# <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Leadspace를 통한 회사 프로필 강화(미리 보기)
+# <a name="enrich-company-profiles-with-leadspace-preview"></a>Leadspace를 통한 회사 프로필 보강(프리뷰)
 
 Leadspace는 B-to-B 고객 데이터 플랫폼을 제공하는 데이터 과학 회사입니다. 계정을 기반으로 하는 통합 고객 프로필이 있는 환경에서 데이터를 보강할 수 있습니다. 회사 규모, 위치 또는 산업과 같은 특성으로 *고객 프로필* 을 보강합니다. 직함, 가상 사용자 또는 이메일 인증과 같은 특성으로 *연락처 프로필* 을 보강합니다.
 
@@ -82,7 +82,7 @@ Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하�
 
 1. **실행** 을 선택하여 강화 프로세스를 시작하거나 닫기를 선택하여 **강화** 페이지로 돌아갑니다.
 
-## <a name="enrichment-results"></a>보강 결과
+## <a name="view-enrichment-results"></a>강화 결과 보기
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

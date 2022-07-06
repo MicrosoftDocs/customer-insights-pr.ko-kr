@@ -1,5 +1,5 @@
 ---
-title: 기존 세그먼트에 대한 세그먼트 인사이트
+title: 세그먼트 인사이트(미리 보기)
 description: 기존 세그먼트에 대한 인사이트를 얻어 차이점과 공통점을 확인하세요.
 ms.date: 06/10/2020
 ms.subservice: audience-insights
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-segment-insights
 - customerInsights
-ms.openlocfilehash: 526b593ba9b038de3d3c27f6a7683ca76b3f2319
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e90bdc523c3f8857c150ccba9d81f055d39f9feb
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646738"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051599"
 ---
 # <a name="segment-insights-preview"></a>세그먼트 인사이트(미리 보기)
 

@@ -1,5 +1,5 @@
 ---
-title: Customer Insights 데이터를 LinkedIn Ads로 내보내기
+title: LinkedIn Ads로 세그먼트 내보내기(프리뷰)
 description: 연결을 구성하고 LinkedIn Ads로 내보내는 방법을 알아봅니다.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bf1d12ffbd7a4cfd7d268fea8a1f90cc37589e00
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e6ad3901f7b8dc1ae8edc54c0b09a99b01be34cd
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647447"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9050864"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>LinkedIn Ads로 세그먼트 내보내기(프리뷰)
 

@@ -1,5 +1,5 @@
 ---
-title: Dun & Bradstreet를 통한 회사 프로필 보강
+title: Dun & Bradstreet를 통한 회사 프로필 보강(프리뷰)
 description: Dun & Bradstreet 타사 보강에 대한 일반 정보입니다.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -9,14 +9,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b1038970b6aee3bbdd7f79cc457f79aaf1c38222
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 51f2e4e46aa25d10502d0feb5ea42eb7d2d637b9
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953899"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081434"
 ---
-# <a name="enrichment-of-company-profiles-with-dun--bradstreet-preview"></a>Dun & Bradstreet를 통한 회사 프로필 보강(프리뷰)
+# <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>Dun & Bradstreet를 통한 회사 프로필 보강(프리뷰)
 
 Dun & Bradstreet는 비즈니스를 위한 상업 데이터, 분석 및 인사이트를 제공합니다. 통합된 고객 프로필을 보유한 고객이 회사의 데이터를 보강할 수 있습니다. 보강에는 DUNS 번호, 회사 규모, 위치, 산업 등과 같은 특성이 포함됩니다.
 
@@ -102,7 +102,7 @@ Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하�
 
 1. **실행** 을 선택하여 강화 프로세스를 시작하거나 닫기를 선택하여 **강화** 페이지로 돌아갑니다.
 
-## <a name="enrichment-results"></a>보강 결과
+## <a name="view-enrichment-results"></a>강화 결과 보기
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

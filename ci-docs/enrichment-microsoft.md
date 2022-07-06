@@ -1,5 +1,5 @@
 ---
-title: Microsoft의 브랜드 및 관심 데이터로 고객 프로필 강화
+title: Microsoft의 브랜드 및 관심 데이터로 고객 프로필 강화(프리뷰)
 description: Microsoft의 독점 데이터를 사용하여 선호도 및 음성 점유율로 고객 데이터를 보강하세요.
 ms.date: 03/02/2022
 ms.reviewer: mhart
@@ -12,14 +12,14 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 61262980cafdcd130430e200e466ce7da6cc4d07
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: e1827adca10a3b193c02a20c4abccacf73194a77
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953773"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081503"
 ---
-# <a name="enrich-customer-profiles-with-affinities-and-share-of-voice-preview"></a>선호도 및 음성 점유율(미리 보기)로 고객 프로필 보강
+# <a name="enrich-customer-profiles-with-brands-and-interests-data-from-microsoft-preview"></a>Microsoft의 브랜드 및 관심 데이터로 고객 프로필 강화(프리뷰)
 
 Microsoft의 독점 데이터를 사용하여 선호도 및 SoV(음성 점유율)로 고객 데이터를 보강하세요. 이러한 선호도 및 SoV는 고객과 유사한 인구 통계를 가진 사람들의 데이터를 기반으로 합니다. 이 정보는 특정 브랜드 및 관심 분야에 대한 고객의 선호도 또는 SoV를 기반으로 고객을 더 잘 이해하고 분류하는 데 도움이 됩니다.
 
@@ -104,7 +104,7 @@ SoV를 100점 척도로 계산합니다. 모든 보강된 고객 프로필에 �
 
    프로필을 보강할 때 선택한 국가 또는 지역에 없는 프로필을 포함하여 선택한 브랜드 및 관심사에 대한 데이터를 얻는 모든 고객 프로필을 보강합니다. 예를 들어 독일을 선택한 경우 선택한 브랜드 및 미국 내 관심사에 대한 데이터가 있으면 미국에 있는 프로필을 보강합니다.
 
-## <a name="enrichment-results"></a>보강 결과
+## <a name="view-enrichment-results"></a>강화 결과 보기
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

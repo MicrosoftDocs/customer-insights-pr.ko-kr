@@ -1,5 +1,5 @@
 ---
-title: Azure Synapse Analytics에서 데이터 수집
+title: Azure Synapse 데이터 원본 연결(프리뷰)
 description: Azure Synapse의 데이터베이스를 Dynamics 365 Customer Insights의 데이터 원본으로 사용합니다.
 ms.date: 03/25/2022
 ms.reviewer: v-wendysmith
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6f94cdbcc203fc4518544f7a945bd80e871b36c1
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: c4ae65613a02df38a30f907dae72d413bf1a702f
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011435"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052707"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>Azure Synapse Analytics 데이터 원본 연결(프리뷰)
 
@@ -59,7 +59,7 @@ Azure Synapse Analytics는 데이터 웨어하우스 및 빅 데이터 시스템
 
 1. Azure Synapse Analytics에 대한 [사용 가능한 연결](connections.md)을 선택하거나 새 연결을 만듭니다.
 
-1. 선택한 Azure Synapse Analytics 연결에 연결된 작업 영역에서 **데이터베이스** 를 선택하고 **다음** 을 선택합니다.
+1. 선택한 Azure Synapse Analytics 연결에 연결된 작업 영역에서 **데이터베이스** 를 선택하고 **다음** 을 선택합니다. 현재 *레이크 데이터베이스* 데이터베이스 유형만 지원합니다.
 
 1. 연결된 데이터베이스에서 수집할 엔터티를 선택하고 **다음** 을 선택합니다.
 

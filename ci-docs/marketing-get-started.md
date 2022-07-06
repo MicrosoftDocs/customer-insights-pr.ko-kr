@@ -6,14 +6,14 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 4cc3cbde97d0f9da198652e86c0843476393b646
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 99ec463299a24ea81cfe26bb785e36bdefdcd080
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833316"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054440"
 ---
-# <a name="work-with-unified-customer-profiles-in-dynamics-365-marketing"></a>Dynamics 365 Marketing의 통합 고객 프로필 작업
+# <a name="use-unified-customer-profiles-in-dynamics-365-marketing"></a>Dynamics 365 Marketing에서 통합 고객 프로필 사용
 
 [Dynamics 365 Marketing](/dynamics365/marketing/overview)은 고객 경험을 향상시켜 모든 접점에서 개인화된 여정을 조율하여 관계 강화하고 충성도를 높일 수 있습니다. Dynamics 365 Marketing 앱은 Dynamics 365 Sales, Dynamics 365 Customer Insights, Microsoft Teams 및 기타 제품과 원활하게 작동하며 데이터 및 AI의 힘을 사용하여 더 빠르고 더 나은 결정을 내릴 수 있습니다.
 

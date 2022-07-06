@@ -1,5 +1,5 @@
 ---
-title: Microsoft Office 365의 데이터로 고객 프로필 보강
+title: Microsoft Office 365의 데이터로 고객 프로필 보강(프리뷰)
 description: Microsoft Office의 독점 데이터를 사용하여 참여 데이터로 고객 프로필을 보강합니다.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 7192b7680e73a581dd603de174c57b20bec996dd
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 75762afb70814c8a81c1574ee7ea1553a2048737
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954141"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055682"
 ---
-# <a name="enrich-customer-profiles-with-engagement-data-preview"></a>참여 데이터로 고객 프로필 보강(프리뷰)
+# <a name="enrich-customer-profiles-with-data-from-microsoft-office-365-preview"></a>Microsoft Office 365의 데이터로 고객 프로필 보강(프리뷰)
 
 Microsoft Office 365의 데이터를 사용하여 Office 365 앱을 통해 참여에 대한 인사이트로 고객 계정 프로필을 보강합니다. 참여 데이터는 계정 수준에서 집계되는 이메일 및 회의 활동으로 구성됩니다. 예를 들어 비즈니스 계정의 이메일 수 또는 계정과의 회의 수입니다. 개별 사용자에 대한 데이터는 제공되지 않습니다.
 
@@ -75,7 +75,7 @@ Office 데이터의 크기에 따라 보강 실행을 완료하는 데 몇 시�
 
 [!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
-## <a name="enrichment-results"></a>보강 결과
+## <a name="view-enrichment-results"></a>강화 결과 보기
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)] *Office* 엔터티입니다. *Office_UserEntity* 에는 보강 구성 중에 선택한 이메일 주소의 Active Directory ID가 포함되어 있습니다.
 

@@ -1,5 +1,5 @@
 ---
-title: 제3자 보강을 통한 보강 Experian
+title: Experian 인구 통계로 고객 프로필을 보강하십시오.(프리뷰)
 description: Experian 제3자 보강에 대한 일반 정보.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 735da18e584b0d9db76b557f4d16dbdf1757f33c
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: a30e98b06ed07590ab95cae1d8db8023e49ff7f9
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954095"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9053029"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Experian 인구 통계로 고객 프로필을 보강하십시오.(프리뷰)
 
@@ -79,7 +79,7 @@ Experian에 데이터를 전송하기 위해 Dynamics 365 Customer Insights를 �
 
 1. **실행** 을 선택하여 강화 프로세스를 시작하거나 닫기를 선택하여 **강화** 페이지로 돌아갑니다.
 
-## <a name="enrichment-results"></a>보강 결과
+## <a name="view-enrichment-results"></a>강화 결과 보기
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

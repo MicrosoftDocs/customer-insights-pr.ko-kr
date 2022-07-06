@@ -1,6 +1,6 @@
 ---
-title: Customer Insights에서 다른 서비스에 대한 연결.
-description: 다른 서비스와 데이터를 공유합니다.
+title: 연결(프리뷰) 개요
+description: Customer Insights에서 다른 서비스에 대한 연결.
 ms.date: 04/09/2021
 ms.reviewer: nikeller
 ms.subservice: audience-insights
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: 2a3175737ac95e10d75fad4a69db303b0564c6cc
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: a8b4b8a9bdcf7cf43c47a67d547405dd20dad60d
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800380"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081236"
 ---
 # <a name="connections-preview-overview"></a>연결(프리뷰) 개요
 

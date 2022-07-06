@@ -1,5 +1,5 @@
 ---
-title: Power BI 커넥터
+title: Power BI 커넥터(미리 보기)
 description: Power BI에서 Dynamics 365 Customer Insights 커넥터 사용 방법 알아보기.
 ms.date: 07/23/2021
 ms.reviewer: mhart
@@ -8,16 +8,16 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e901114703a43b4b4e751e0a93eb4876d7636c00
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 72daf6d4ef3b6afb8049c622b57e7ec44762fb21
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647156"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051277"
 ---
-# <a name="connector-for-power-bi-preview"></a>Power BI용 커넥터(미리 보기)
+# <a name="power-bi-connector-preview"></a>Power BI 커넥터(미리 보기)
 
-Power BI Desktop을 사용하여 데이터에 대한 시각화를 만듭니다. 통일된 고객 데이터로 추가 인사이트를 생성하고 보고서를 작성합니다.
+Microsoft Power BI Desktop으로 데이터에 대한 시각화를 만듭니다. 통일된 고객 데이터로 추가 인사이트를 생성하고 보고서를 작성합니다.
 
 ## <a name="prerequisites"></a>필요한 항목
 

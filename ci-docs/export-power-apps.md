@@ -1,5 +1,5 @@
 ---
-title: Power Apps 커넥터
+title: Power Apps 커넥터(미리 보기)
 description: Power Apps 및 Power Automate와 연결합니다.
 ms.date: 10/01/2021
 ms.reviewer: mhart
@@ -8,16 +8,16 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: e99d7d4f231eb2ade67f27c9e52c61af3a21b99d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 0b71f723d1e491d422d24b1be6616d2f33c95d40
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647467"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055268"
 ---
-# <a name="microsoft-power-apps-connector-preview"></a>Microsoft Power Apps 커넥터(미리 보기)
+# <a name="power-apps-connector-preview"></a>Power Apps 커넥터(미리 보기)
 
-통합된 고객 프로필을 Power Apps를 사용하여 개인화된 앱으로 가져오기.
+통합된 고객 프로필을 Microsoft Power Apps를 사용하여 개인화된 앱으로 가져오기.
 
 ## <a name="connect-power-apps-and-dynamics-365-customer-insights"></a>Power Apps 및 Dynamics 365 Customer Insights 연결
 

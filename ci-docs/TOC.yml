@@ -80,7 +80,7 @@
       href: data-unification-update.md
 - name: 데이터 보강
   items:
-    - name: 고객 프로필 보강
+    - name: 데이터 보강 개요
       href: enrichment-hub.md
     - name: Office 365 데이터의 계정
       href: enrichment-office.md
@@ -112,7 +112,7 @@
       href: search-filter-index.md
     - name: 고객 활동 정의
       href: activities.md
-    - name: Customer Insights에 대한 동의 관리
+    - name: 동의 관리 사용
       href: consent-management.md
 - name: 세그먼트
   items:
@@ -212,6 +212,8 @@
           href: export-facebook.md
         - name: Google 광고
           href: export-google-ads.md
+        - name: InMobi
+          href: export-inmobi.md
         - name: Iterable
           href: export-iterable.md
         - name: Klaviyo

@@ -1,5 +1,5 @@
 ---
-title: 회사 데이터 개선
+title: 개선된 회사 데이터로 회사 프로필 보강
 description: Microsoft의 모델을 사용하여 회사 데이터를 보강하고 정규화하십시오.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 4247d59806468907d93fc7848231ec5a2985580e
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 131ef3d1e123628779609ddec368cfef8f4d607e
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953957"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054256"
 ---
-# <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>개선된 회사 데이터로 회사 프로필 보강
+# <a name="enrich-company-profiles-with-enhanced-company-data"></a>개선된 회사 데이터로 회사 프로필 보강
 
 Microsoft의 모델과 컴파일된 회사 데이터를 사용하여 회사 프로필을 수정, 보완 및 표준화하십시오. 정확성과 인사이트를 높이기 위해 [Common Data Model 형식](/common-data-model/schema/core/applicationcommon/account)을 사용합니다.
 
@@ -84,7 +84,7 @@ Microsft
 
 1. **실행** 을 선택하여 강화 프로세스를 시작하거나 닫기를 선택하여 **강화** 페이지로 돌아갑니다.
 
-## <a name="enrichment-results"></a>보강 결과
+## <a name="view-enrichment-results"></a>강화 결과 보기
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

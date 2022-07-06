@@ -1,5 +1,5 @@
 ---
-title: 고객 또는 계정 필드 통합
+title: 데이터 통합을 위한 고객 필드 통합
 description: 엔터티를 병합하여 통합 고객 프로필을 만듭니다.
 recommendations: false
 ms.date: 05/04/2022
@@ -14,14 +14,14 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 78e2528d4a3058f879d83952f72ed88a1da065b6
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: ceb2724ad490c1ba44fd9b7ff2be04721892fca4
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740865"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081623"
 ---
-# <a name="unify-customer-fields"></a>고객 필드 통합
+# <a name="unify-customer-fields-for-data-unification"></a>데이터 통합을 위한 고객 필드 통합
 
 [!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Customer Insights 데이터를 Adobe Campaign Standard로 내보내기
+title: Adobe Campaign Standard로 Customer Insights 세그먼트 내보내기(프리뷰)
 description: Adobe Campaign Standard에서 Customer Insights 세그먼트를 사용하는 방법에 대해 알아보십시오.
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,24 +8,24 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 2a62d2f889f199222eeb8cc969fce62fa89fa6f0
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 9915591cd969bf825f5d1669de43ed4f9953f898
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646972"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081344"
 ---
-# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>Adobe Campaign Standard(프리뷰)에서 Customer Insights 세그먼트 사용
+# <a name="export-customer-insights-segments-to-adobe-campaign-standard-preview"></a>Adobe Campaign Standard로 Customer Insights 세그먼트 내보내기(프리뷰)
 
-Dynamics 365 Customer Insights 사용자는 관련 대상 그룹을 타겟팅하여 마케팅 캠페인을 보다 효율적으로 만들기 위해 세그먼트를 생성했을 수 있습니다. Adobe Experience Platform 및 Adobe Campaign Standard와 같은 애플리케이션에서 Customer Insights의 세그먼트를 사용하려면 이 문서에 설명된 몇 가지 단계를 따라야 합니다.
+Dynamics 365 Customer Insights의 사용자는 관련 대상 그룹을 타겟팅하여 마케팅 캠페인을 보다 효율적으로 만들기 위해 세그먼트를 생성했을 수 있습니다. Adobe Experience Platform 및 Adobe Campaign Standard와 같은 애플리케이션에서 Customer Insights의 세그먼트를 사용하려면 이 문서에 설명된 몇 가지 단계를 따라야 합니다.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="이 문서에 설명된 단계의 프로세스 다이어그램입니다.":::
 
 ## <a name="prerequisites"></a>필수 조건
 
--   Dynamics 365 Customer Insights 라이선스
--   Adobe Campaign Standard 라이선스
--   Azure Blob Storage 계정
+- Dynamics 365 Customer Insights 라이선스
+- Adobe Campaign Standard 라이선스
+- Azure Blob Storage 계정
 
 ## <a name="campaign-overview"></a>캠페인 개요
 

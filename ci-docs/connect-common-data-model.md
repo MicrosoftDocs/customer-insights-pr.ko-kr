@@ -1,5 +1,5 @@
 ---
-title: Common Data Model 데이터를 Azure Data Lake 계정에 연결
+title: Azure Data Lake 계정을 사용하여 Common Data Model 폴더에 연결
 description: Azure Data Lake Storage를 사용하여 Common Data Model 데이터로 작업합니다.
 ms.date: 05/30/2022
 ms.topic: how-to
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: 2ab7ec77252be33f1203959c2a596ddec20425f2
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: b1cdcb46df17d722ad49d361ae4c7ab34c83eeb1
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011573"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081308"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>Azure Data Lake Storage에서 데이터에 연결
 

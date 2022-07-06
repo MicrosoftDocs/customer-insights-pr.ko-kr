@@ -1,5 +1,5 @@
 ---
-title: 무료 평가판 등록 - Dynamics 365 Customer Insights
+title: 무료 Dynamics 365 Customer Insights 평가판 등록
 description: 무료 Customer Insights 평가판에 빠르게 등록하고 시작하는 방법을 알아보세요. 앱을 탐색하고 추가 학습 리소스를 찾습니다.
 author: m-hartmann
 ms.author: mhart
@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-setup
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 2f27dd4fd9df679696d72f2eccde262de3e4afc4
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 73f12745f76ef65afcc565ffb972e755073a2834
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641724"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081407"
 ---
 # <a name="sign-up-for-a-free-dynamics-365-customer-insights-trial"></a>무료 Dynamics 365 Customer Insights 평가판 등록
 

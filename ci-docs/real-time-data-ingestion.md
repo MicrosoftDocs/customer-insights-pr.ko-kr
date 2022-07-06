@@ -1,5 +1,5 @@
 ---
-title: 실시간 데이터 수집(프리뷰)
+title: 실시간 데이터 수집(미리 보기)
 description: Customer Insights의 실시간 기능에 대한 일반 정보입니다.
 ms.date: 10/27/2020
 ms.reviewer: mhart
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: d6aa07dd4dfa25b3d2ce707eb6050df56fcc3079
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 39d68011df9e4341244af627bb71f4e3635256bb
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646648"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081730"
 ---
 # <a name="real-time-data-ingestion-preview"></a>실시간 데이터 수집(미리 보기)
 

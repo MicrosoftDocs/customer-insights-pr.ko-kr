@@ -1,5 +1,5 @@
 ---
-title: 예측 시나리오를 위해 공유된 작업
+title: 예측 관리
 description: 예측을 관리, 문제 해결 및 구체화하는 방법을 알아봅니다.
 ms.date: 11/01/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: c4d269e1b542e84ade8c6e63c1dadace51ddde32
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a180f6462452d9830d0daa150a35a9d0acad925a
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647387"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081574"
 ---
 # <a name="manage-predictions"></a>예측 관리
 

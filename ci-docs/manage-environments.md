@@ -1,5 +1,5 @@
 ---
-title: 방법 - 환경 관리
+title: '방법: 환경 관리'
 description: 기존 Customer Insights 환경을 관리자로 관리하는 방법을 알아봅니다.
 ms.date: 05/31/2022
 ms.subservice: audience-insights
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-about
 - customerInsights
-ms.openlocfilehash: 62a5856edac5e66e5e42c93313d78fa6826469b3
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: fc3b3f404cf0ac84c782778414494289c803babe
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833500"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081674"
 ---
 # <a name="how-to-manage-environments"></a>방법: 환경 관리
 

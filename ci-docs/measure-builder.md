@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-measure-builder
 - customerInsights
-ms.openlocfilehash: d003d054145343cc2feeefeeee413810df43185a
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: f3ec86806074a12c1107648303ed2d65e97ebc69
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800334"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081654"
 ---
-# <a name="use-measure-builder-to-create-measures-from-scratch"></a>측정값 빌더를 사용하여 처음부터 측정값 만들기
+# <a name="create-new-measures-with-the-measure-builder"></a>측정 빌더로 새 측정 만들기
 
 이 문서에서는 처음부터 새 [측정값](measures.md)을 만드는 방법을 설명합니다. 측정값 빌더를 사용하면 수학 연산자, 집계 함수 및 필터를 사용하여 계산을 정의할 수 있습니다. 통합된 *Customer* 엔터티와 관련된 엔터티의 특성을 사용하여 측정값을 작성할 수 있습니다.
 

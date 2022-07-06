@@ -1,5 +1,5 @@
 ---
-title: 제3자 보강을 통한 보강 HERE Technologies
+title: HERE Technologies로 고객 프로필 보강(프리뷰)
 description: HERE Technologies 타사 보강에 대한 일반 정보입니다.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 171ead92427924083a13e2a3d52e7a7da417c801
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: d88085b6be156dd1c895e9e5b38cc9d77acbdb95
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953681"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052059"
 ---
-# <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>HERE Technologies로 고객 프로필 보강(미리 보기)
+# <a name="enrich-customer-profiles-with-here-technologies-preview"></a>HERE Technologies로 고객 프로필 보강(프리뷰)
 
 HERE Technologies는 위치 중심 데이터 및 서비스를 제공하는 위치 플랫폼 회사입니다. HERE Technologies의 데이터 강화 서비스는 고객에 대한 위치 정보의 정확성을 향상시킵니다. 주소 정규화, 위도 및 경도 추출 등을 제공합니다.
 
@@ -72,7 +72,7 @@ Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하�
 
 1. **실행** 을 선택하여 강화 프로세스를 시작하거나 닫기를 선택하여 **강화** 페이지로 돌아갑니다.
 
-## <a name="enrichment-results"></a>보강 결과
+## <a name="view-enrichment-results"></a>강화 결과 보기
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Azure Machine Learning 실험
+title: Azure Machine Learning 기반 모델 사용
 description: Dynamics 365 Customer Insights의 Azure Machine Learning 기반 모델을 사용합니다.
 ms.date: 12/02/2021
 ms.subservice: audience-insights
@@ -8,12 +8,12 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: cefd037a021b669e827f0593d63b938d452963f7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a1efad2887a02a92ee2960b07b066edc331f3665
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646783"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081317"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Azure Machine Learning 기반 모델 사용
 

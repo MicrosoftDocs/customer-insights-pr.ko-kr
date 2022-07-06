@@ -1,5 +1,5 @@
 ---
-title: AdRoll로 Customer Insights 데이터 내보내기
+title: AdRoll로 세그먼트 내보내기(프리뷰)
 description: 연결을 구성하고 AdRoll로 내보내는 방법을 알아봅니다.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec7d2d4d137f2f0e3e1ff2ec0d09bff8ac4f28ea
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 13c7dd3b8556ad807fba6c537525b463480e860b
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646702"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081563"
 ---
 # <a name="export-segments-to-adroll-preview"></a>AdRoll로 세그먼트 내보내기(프리뷰)
 
@@ -21,9 +21,9 @@ ms.locfileid: "8646702"
 
 ## <a name="prerequisites-for-a-connection"></a>연결을 위한 전제 조건
 
--   [AdRoll 거래처](https://www.adroll.com/) 및 해당 관리자 자격 증명이 있어야 합니다.
--   Customer Insights에 [세그먼트를 구성](segments.md)했습니다.
--   내보낸 세그먼트의 통합 고객 프로필에는 이메일 주소를 나타내는 필드가 포함됩니다.
+- [AdRoll 거래처](https://www.adroll.com/) 및 해당 관리자 자격 증명이 있어야 합니다.
+- Customer Insights에 [세그먼트를 구성](segments.md)했습니다.
+- 내보낸 세그먼트의 통합 고객 프로필에는 이메일 주소를 나타내는 필드가 포함됩니다.
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 

@@ -1,6 +1,6 @@
 ---
-title: 고객 프로필 보기
-description: 통합된 고객 데이터를 조합하여 볼 수 있습니다.
+title: 고객 프로필
+description: 검색 및 필터 사용을 포함한 통합 고객 데이터 보기
 ms.date: 06/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
@@ -14,12 +14,12 @@ searchScope:
 - ci-activities
 - ci-activities-wizard
 - customerInsights
-ms.openlocfilehash: 1e9e59d7ae6c16ed8b33f2ea482563c3520ab885
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: 279c8e1291c6449005d593244f1979e871610a77
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947054"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052197"
 ---
 # <a name="customer-profiles"></a>고객 프로필
 

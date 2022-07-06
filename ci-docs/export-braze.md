@@ -1,34 +1,35 @@
 ---
-title: Braze로 Customer Insights 데이터 내보내기
+title: Braze로 세그먼트 내보내기(프리뷰)
 description: 연결을 구성하고 Braze로 내보내는 방법을 알아보세요.
-ms.date: 03/29/2022
+ms.date: 06/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bfc9b34506dc3385b5edf12b31e74d05f2d20655
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 314a61f82c4040a8dbd6dff1dd5d92e20464f82a
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646675"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081494"
 ---
-# <a name="export-segment-lists-to-braze-preview"></a>Braze로 세그먼트 목록 내보내기(프리뷰)
+# <a name="export-segments-to-braze-preview"></a>Braze로 세그먼트 내보내기(프리뷰)
 
 Unified customer profile의 세그먼트를 Braze로 내보내고 마케팅 활동에 사용합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
--   [Braze 계정](https://www.braze.com/) 및 해당 관리자 자격 증명이 있습니다.
--   Customer Insights에 [세그먼트를 구성](segments.md)했습니다.
--   내보낸 세그먼트의 Unified customer profile에는 이메일 주소와 Braze 고객 ID를 나타내는 필드가 있습니다. 
+- [Braze 계정](https://www.braze.com/) 및 해당 관리자 자격 증명입니다.
+- 기존 [Braze 세그먼트](https://www.braze.com/docs/user_guide/engagement_tools/segments/creating_a_segment/)입니다.
+- Customer Insights에 [세그먼트를 구성했습니다](segments.md).
+- 내보낸 세그먼트의 Unified customer profile에는 이메일 주소와 Braze 고객 ID를 나타내는 필드가 있습니다.
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
 - Braze로 내보내기는 세그먼트로 제한됩니다.
-- 최대 100만 개의 고객 프로필을 Braze로 내보내려면 최대 40분이 소요될 수 있습니다. 
+- 최대 100만 개의 고객 프로필을 Braze로 내보내려면 최대 40분이 소요될 수 있습니다.
 - Braze로 내보낼 수 있는 고객 프로필의 수는 Braze와의 계약에 따라 달라지고 제한됩니다.
 
 ## <a name="set-up-connection-to-braze"></a>Braze에 연결 설정
@@ -41,7 +42,7 @@ Unified customer profile의 세그먼트를 Braze로 내보내고 마케팅 활�
 
 1. 이 연결을 사용할 수 있는 사용자를 선택합니다. 아무 조치도 취하지 않으면 기본값은 관리자입니다. 자세한 내용은 [기여자가 내보내기에 연결을 사용하도록 허용](connections.md#allow-contributors-to-use-a-connection-for-exports)을 확인하세요.
 
-1. 계속 로그인하려면 [Braze API 키](https://www.braze.com/docs/api/basics/)를 제공하세요. 
+1. 계속 로그인하려면 [Braze API 키](https://www.braze.com/docs/api/basics/)를 제공하세요.
 
 1. **동의** 를 선택해 **데이터 프라이버시 및 규정 준수** 를 확인합니다.
 
@@ -59,9 +60,13 @@ Unified customer profile의 세그먼트를 Braze로 내보내고 마케팅 활�
 
 1. **대상 추가** 를 선택하여 새 내보내기를 만듭니다.
 
-1. **내보내기 연결** 필드의 Braze 섹션에서 연결을 선택합니다. 이 섹션 이름이 표시되지 않으면 사용 가능한 이 유형의 연결이 없는 것입니다.  
+1. **내보내기 연결** 필드의 Braze 섹션에서 연결을 선택합니다. 이 섹션이 표시되지 않으면 사용할 수 있는 이 유형의 연결이 없는 것입니다.  
 
-3. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택하고 "고객 ID" 필드에서 고객의 Braze ID를 나타내는 필드를 선택합니다. Braze로 세그먼트를 내보내는 데 필요합니다. Braze의 세그먼트는 Dynamics 365 Customer Insights에서와 동일한 세그먼트 이름으로 생성됩니다. 데이터 일치를 위해 추가 선택적 필드를 선택할 수 있습니다. 
+1. 내보내기에 대한 **표시 이름** 을 추가합니다.
+
+1. **Braze 세그먼트 API 식별자** 필드에 내보내려는 Braze 세그먼트의 API 식별자를 추가합니다. Braze 플랫폼의 세그먼트 세부 정보에서 식별자를 찾을 수 있습니다.
+
+1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다. **고객 ID** 필드에서 고객의 Braze ID를 나타내는 필드를 선택하세요. Braze로 세그먼트를 내보내는 데 필요합니다. 선택적으로 더 많은 필드를 선택할 수 있습니다.
 
 1. **저장** 을 선택합니다.
 

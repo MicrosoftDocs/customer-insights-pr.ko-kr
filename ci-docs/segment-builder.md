@@ -1,6 +1,6 @@
 ---
-title: 세그먼트 빌더를 사용하여 세그먼트 만들기
-description: 다양한 특성에 따라 그룹화할 고객 세그먼트를 만듭니다.
+title: 세그먼트 만들기
+description: 세그먼트 빌더 또는 빠른 세그먼트를 사용하여 다양한 특성을 기반으로 그룹화할 고객 세그먼트를 만듭니다.
 ms.date: 03/25/2022
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -13,12 +13,12 @@ searchScope:
 - ci-segment-builder
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: e1a9cd0e3c0347285026d937ca7d951a602e7160
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: b99d9575d3b6af91758d80eb04170773b08cc9ab
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800104"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9053980"
 ---
 # <a name="create-segments"></a>세그먼트 만들기
 

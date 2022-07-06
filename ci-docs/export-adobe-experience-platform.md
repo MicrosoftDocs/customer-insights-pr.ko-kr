@@ -1,5 +1,5 @@
 ---
-title: Customer Insights 데이터를 Adobe Experience Platform로 내보내기
+title: Adobe Experience Platform으로 세그먼트 내보내기(프리뷰)
 description: Adobe Experience Platform에서 Customer Insights 세그먼트를 사용하는 방법에 대해 알아보십시오.
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 42a4e0c6bce67a63b449a541299620ef2f4a3259
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c29b8264019669ffd954a298ce3a633c852477fa
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647256"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052519"
 ---
-# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Adobe Experience Platform(프리뷰)에서 Customer Insights 세그먼트 사용
+# <a name="export-segments-to-adobe-experience-platform-preview"></a>Adobe Experience Platform으로 세그먼트 내보내기(프리뷰)
 
 Dynamics 365 Customer Insights의 사용자는 관련 대상 그룹을 타겟팅하여 마케팅 캠페인을 보다 효율적으로 만들기 위해 세그먼트를 생성했을 수 있습니다. Adobe Experience Platform 및 Adobe Campaign Standard와 같은 애플리케이션에서 Customer Insights의 세그먼트를 사용하려면 이 문서에 설명된 몇 가지 단계를 따라야 합니다.
 

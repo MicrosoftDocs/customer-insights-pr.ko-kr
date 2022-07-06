@@ -13,16 +13,16 @@ searchScope:
 - ci-create-prediction
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: 3e1b1ce00eeda1cead9ba05beae65b6903d0b9cf
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: ea7acd1ddbb0eb8d66fb82018637a85b6ffb369b
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647347"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055222"
 ---
 # <a name="customer-lifetime-value-clv-prediction"></a>고객 평생 가치(CLV) 예측
 
-개별 활성 고객이 정의된 미래 기간 동안 비즈니스에 가져올 잠재적 가치(수익)를 예측합니다. 이 기능은 다음과 같은 다양한 목표를 달성하는 데 도움이 될 수 있습니다. 
+개별 활성 고객이 정의된 미래 기간 동안 비즈니스에 가져올 잠재적 가치(수익)를 예측합니다. 이 기능은 다음과 같은 다양한 목표를 달성하는 데 도움이 될 수 있습니다.
 - 가치 높은 고객 고객을 식별하고 해당 인사이트를 처리
 - 잠재 가치를 기반으로 전략적인 고객 세그먼트를 만들어 타겟팅된 판매, 마케팅 및 지원 노력을 통해 개인화된 캠페인을 실행
 - 고객 가치를 높이는 기능에 집중하여 제품 개발 지원

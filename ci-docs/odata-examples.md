@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Customer Insights API에 대한 OData 예시
+title: Customer Insights API에 대한 OData 쿼리 예제
 description: Customer Insights API를 쿼리하여 데이터를 검토하기 위해 OData(Open Data Protocol)에 대해 일반적으로 사용되는 예입니다.
 ms.date: 05/25/2022
 ms.subservice: audience-insights
@@ -8,14 +8,14 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: cdadd72bfe4272d8d83d923baaa6fd40d008473b
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: 54ba9f4e9baeb4b7021bb8c20a706bbb6eb1529f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808469"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081721"
 ---
-# <a name="odata-query-examples"></a>OData 쿼리 예시
+# <a name="odata-query-examples-for-customer-insights-apis"></a>Customer Insights API에 대한 OData 쿼리 예제
 
 OData(Open Data Protocol)는 HTTP와 같은 핵심 프로토콜을 기반으로 구축된 데이터 액세스 프로토콜입니다. 웹용 REST와 같이 일반적으로 허용되는 방법론을 사용합니다. OData 서비스를 사용하는 데 사용할 수 있는 다양한 종류의 라이브러리와 도구가 있습니다.
 
