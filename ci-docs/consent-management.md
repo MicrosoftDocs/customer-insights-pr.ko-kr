@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 77b09b6eb0a916e724542d503d96d19c5581aca1
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 99fe24cb47a8c20f629182d9a1c6adfd36a1eaf7
+ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "8947503"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9188056"
 ---
 # <a name="use-customer-consent"></a>고객 동의 사용
 
@@ -50,13 +50,13 @@ Dynamics 365 Customer Insights는 Unified Customer Profiles의 일부로 선호�
 
 ## <a name="import-and-unify-consent-data"></a>동의 데이터 가져오기 및 통합
 
-다른 데이터 소스를 Customer Insights로 수집하는 것과 동일한 방식으로 동의 데이터를 가져올 수 있습니다. 지원되는 데이터 원본 및 가져오는 방법에 대한 자세한 내용은 [데이터 원본 개요](data-sources.md)를 참조하세요.
+다른 데이터 소스를 Customer Insights로 수집하는 것과 동일한 방식으로 동의 데이터를 가져옵니다. 지원되는 데이터 원본 및 가져오는 방법에 대한 자세한 내용은 [데이터 원본 개요](data-sources.md)를 참조하세요.
 
 데이터 원본 통합에 대한 자세한 내용은 [데이터 통합 개요](data-unification.md)를 참조하세요.
 
 ## <a name="use-consent-data"></a>동의 데이터 사용
 
-동의 데이터가 Unified Customer Profiles의 일부가 되면 Customer Insights에서 사용할 수 있습니다. 예를 들어 고객의 개인 정보 및 데이터 보호 기본 설정을 준수하도록 하는 규칙이 있는 세그먼트를 만듭니다. 동의 기본 설정을 지원하는 규칙은 프로필 속성을 기반으로 세그먼트에서 사용자를 제외하는 데 사용됩니다. 연락에 동의하지 않은 고객 프로필을 제외하는 규칙을 세그먼트에 추가합니다.
+동의 데이터가 Unified Customer Profiles의 일부가 되면 Customer Insights에서 사용할 수 있습니다. 예를 들어 고객의 개인 정보 및 데이터 보호 기본 설정을 준수하도록 하는 규칙이 있는 세그먼트를 만듭니다. 동의 기본 설정을 지원하는 규칙은 프로필 속성을 기반으로 세그먼트에서 사용자를 제외하는 데 사용됩니다. 연락받는 것을 동의하지 않은 고객 프로필을 제외하는 규칙을 세그먼트에 추가합니다.
 
 위의 샘플 테이블을 참조하면 세그먼트에는 다음 규칙이 포함될 수 있습니다. `Consent option=Newsletter & Consent value=True` 이 구성은 연락처 기본 설정을 준수하여 뉴스레터를 보내는 세그먼트를 생성합니다.
 
@@ -71,3 +71,5 @@ Dynamics 365 Customer Insights는 Unified Customer Profiles의 일부로 선호�
 즉, Customer Insights로 가져오는 소스 데이터에 항상 최신 정보가 있는지 확인하세요.
 
 자세한 내용은 [수동으로 세그먼트 새로 고침](segments.md#refresh-segments) 또는 [예약된 새로 고침 구성](system.md#schedule-tab)을 참조하세요.
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

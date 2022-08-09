@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 62969527ceed906ff06fb9be90b972496323ce0a
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 33c8910b7a4dd8723c0d62f2e28228cd2d8df4b7
+ms.sourcegitcommit: 5716025eb4828425ca237377b02a892de8689f4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052753"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "9142827"
 ---
 # <a name="how-to-create-a-new-environment"></a>방법: 새 환경 만들기
 
@@ -67,7 +67,6 @@ ms.locfileid: "9052753"
 ## <a name="step-3-connect-to-microsoft-dataverse"></a>3단계: Microsoft Dataverse에 연결
 
 **Microsoft Dataverse** 단계를 통해 Customer Insights를 Dataverse 환경과 연결할 수 있습니다. Dataverse와 데이터를 공유하여 Dynamics 365 Marketing 또는 Power Apps의 모델 기반 애플리케이션과 같은 Dataverse를 기반으로 하는 비즈니스 애플리케이션과 함께 사용합니다.
-
 
 고유한 Dataverse 환경이 없는 경우 이 필드를 비워두면 자동으로 생성됩니다.
 

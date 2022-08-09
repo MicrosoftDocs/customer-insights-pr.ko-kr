@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 334440493c50448005ec90d0cfac11358d677b73
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 49bf558209ca91ab9d8db945862a57adccee1f6b
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081281"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196356"
 ---
 # <a name="enrich-customer-profiles-with-identity-data-from-liveramp-preview"></a>LiveRamp의 ID 데이터로 고객 프로필 보강(프리뷰)
 
@@ -59,7 +59,7 @@ Dynamics 365 Customer Insights에서 LiveRamp로 데이터를 전송하도록 �
 
 1. 개요를 검토한 후 **다음** 을 선택합니다.
 
-1. 연결을 선택합니다. 관리자가 없는 경우 관리자에게 문의하세요.
+1. 연결을 선택합니다. 사용 가능한 연결이 없으면 관리자에게 문의하십시오.
 
 1. **다음** 을 선택합니다.
 

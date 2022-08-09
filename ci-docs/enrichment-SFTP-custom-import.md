@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 81ef6c62240e26cb5c9475e6306e08edc7e5eb31
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081335"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195804"
 ---
 # <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>SFTP 사용자 지정 가져오기로 고객 프로필 보강(프리뷰)
 
@@ -104,7 +104,7 @@ Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하�
 
 1. 개요를 검토한 후 **다음** 을 선택합니다.
 
-1. 연결을 선택합니다. 관리자가 없는 경우 관리자에게 문의하세요.
+1. 연결을 선택합니다. 사용 가능한 연결이 없으면 관리자에게 문의하십시오.
 
 1. **고객 데이터 세트** 를 선택하고 보강할 프로필 또는 세그먼트를 선택합니다. *고객* 엔터티는 모든 고객 프로필을 강화하는 반면 세그먼트는 해당 세그먼트에 포함된 고객 프로필만 강화합니다.
 

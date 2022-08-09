@@ -1,7 +1,7 @@
 ---
 title: Azure Data Lake 계정을 사용하여 Common Data Model 폴더에 연결
 description: Azure Data Lake Storage를 사용하여 Common Data Model 데이터로 작업합니다.
-ms.date: 05/30/2022
+ms.date: 07/27/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: b1cdcb46df17d722ad49d361ae4c7ab34c83eeb1
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: e071bf9364b44a92d81c9ff2269ff4e8654010aa
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081308"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9207007"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>Azure Data Lake Storage에서 데이터에 연결
 
@@ -82,7 +82,7 @@ Azure Data Lake Storage Gen2 계정을 사용하여 Dynamics 365 Customer Insigh
    :::image type="content" source="media/ADLS_required.png" alt-text="기본 키에 필수를 표시하는 대화 상자":::
 
    > [!TIP]
-   > JSON 편집 인터페이스에서 엔터티를 편집하려면 **더 보기** > **스키마 파일 편집** 을 선택합니다. 변경하고 **저장** 을 선택합니다.
+   > JSON 편집 인터페이스에서 엔터티를 편집하려면 해당 엔터티를 선택하고 나서 **스키마 파일 편집** 을 선택합니다. 변경하고 **저장** 을 선택합니다.
 
 1. 증분 수집이 필요한 선택한 엔터티의 경우 **증분 새로 고침** 아래에 **필수** 가 표시됩니다. 이러한 각 엔터티에 대해서는 [Azure Data Lake 데이터 원본에 대한 증분 새로 고침 구성](incremental-refresh-data-sources.md)을 참조하세요.
 
@@ -101,6 +101,10 @@ Azure Data Lake Storage Gen2 계정을 사용하여 Dynamics 365 Customer Insigh
    1. **완료** 를 선택합니다.
 
 1. **저장** 을 선택합니다. **데이터 원본** 페이지가 열리고 **새로 고침 중** 상태의 새 데이터 원본이 표시됩니다.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+데이터를 로드하는 데 시간이 걸릴 수 있습니다. 새로 고침이 완료되면, 수집된 데이터를 [**엔터티**](entities.md) 페이지에서 검토할 수 있습니다.
 
 ### <a name="create-a-new-schema-file"></a>새 스키마 파일 만들기
 
@@ -148,6 +152,9 @@ Azure Data Lake Storage Gen2 계정을 사용하여 Dynamics 365 Customer Insigh
 
 1. **저장** 을 선택합니다. **데이터 원본** 페이지가 열리고 **새로 고침 중** 상태의 새 데이터 원본이 표시됩니다.
 
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+데이터를 로드하는 데 시간이 걸릴 수 있습니다. 새로 고침이 완료되면, 수집된 데이터를 [**엔터티**](entities.md) 페이지에서 검토할 수 있습니다.
 
 ## <a name="edit-an-azure-data-lake-storage-data-source"></a>Azure Data Lake Storage 데이터 원본 편집
 
@@ -180,7 +187,15 @@ Azure Data Lake Storage Gen2 계정을 사용하여 Dynamics 365 Customer Insigh
       > 기존 model.json 또는 manifest.json 파일과 엔티티 집합에 대한 종속성이 있는 경우 오류 메시지가 표시되고 다른 model.json 또는 manifest.json 파일을 선택할 수 없습니다. model.json 또는 manifest.json 파일을 변경하기 전에 이러한 종속성을 제거하거나 종속성 제거를 방지하기 위해 사용할 model.json 또는 manifest.json 파일로 새 데이터 원본를 만드십시오.
    - 데이터 파일 위치 또는 기본 키를 변경하려면 **편집** 을 선택합니다.
    - 증분 수집 데이터를 변경하려면 [Azure Data Lake 데이터 원본에 대한 증분 새로 고침 구성](incremental-refresh-data-sources.md)을 참조하세요.
+   - .json 파일의 엔터티 이름과 일치하도록 엔터티 이름만 변경하세요.
+
+     > [!NOTE]
+     > 수집 후에는 항상 Customer Insights의 엔터티 이름을 model.json 또는 manifest.json 파일의 엔터티 이름과 동일하게 유지하세요. Customer Insights는 시스템을 새로 고칠 때마다 model.json 또는 manifest.json을 사용하여 모든 엔터티 이름의 유효성을 검사합니다. Customer Insights 내부 또는 외부에서 엔터티 이름이 변경되면 Customer Insights에서 .json 파일의 새 엔터티 이름을 찾을 수 없기 때문에 오류가 발생합니다. 수집된 엔터티 이름이 실수로 변경된 경우 .json 파일의 이름과 일치하도록 Customer Insights의 엔터티 이름을 수정하세요.
 
 1. **특성** 을 선택하여 특성을 추가 또는 변경하거나 데이터 프로파일링을 활성화합니다. 그런 다음 **완료** 를 선택합니다.
 
 1. **저장** 을 클릭하여 변경 사항을 적용하고 **데이터 원본** 페이지로 돌아갑니다.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

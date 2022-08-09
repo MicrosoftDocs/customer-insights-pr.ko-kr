@@ -104,22 +104,26 @@
       href: enrichment-here.md
     - name: SFTP 사용자 지정 가져오기
       href: enrichment-SFTP-custom-import.md
-- name: 통합 프로필
+- name: 고객 프로필 및 활동
   items:
-    - name: 통합 고객 프로필 검토
+    - name: 고객 프로필 보기
       href: customer-profiles.md
-    - name: 통합 고객 프로필 필터링
+    - name: 검색 및 필터 색인 관리
       href: search-filter-index.md
     - name: 고객 활동 정의
       href: activities.md
     - name: 동의 관리 사용
       href: consent-management.md
+    - name: 개인 설정용 웹 데이터 사용
+      href: unknown-to-known.md
 - name: 세그먼트
   items:
     - name: 세그먼트 개요
       href: segments.md
-    - name: 세그먼트 만들기
+    - name: 세그먼트 빌더로 생성
       href: segment-builder.md
+    - name: 빠른 세그먼트로 만들기
+      href: segment-quick.md
     - name: 측정값에 따라 제안된 세그먼트
       href: suggested-segments.md
     - name: 활동을 기반으로 제안된 세그먼트
@@ -132,9 +136,9 @@
   items:
     - name: 측정값 개요
       href: measures.md
-    - name: 새 측정값 만들기
+    - name: 측정값 빌더로 만들기
       href: measure-builder.md
-    - name: 측정값 템플릿 사용
+    - name: 템플릿으로 만들기
       href: measure-templates.md
 - name: 예측
   items:
@@ -180,6 +184,10 @@
           href: export-destinations.md
         - name: 활성 캠페인
           href: export-active-campaign.md
+        - name: Adobe Campaign Standard
+          href: export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: export-adobe-experience-platform.md
         - name: AdRoll
           href: export-adroll.md
         - name: AutoPilot
@@ -190,10 +198,6 @@
           href: export-azure-data-lake-storage-gen2.md
         - name: Azure Synapse Analytics
           href: export-azure-synapse-analytics.md
-        - name: Adobe Campaign Standard
-          href: export-adobe-campaign-standard.md
-        - name: Adobe Experience Platform
-          href: export-adobe-experience-platform.md
         - name: Braze
           href: export-braze.md
         - name: Campaign Monitor
@@ -228,6 +232,8 @@
           href: export-marketo.md
         - name: Microsoft Advertising
           href: export-microsoft-advertising.md
+        - name: MoEngage
+          href: export-moengage.md
         - name: Omnisend
           href: export-omnisend.md
         - name: RollWorks

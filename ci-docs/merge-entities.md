@@ -14,16 +14,14 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: ceb2724ad490c1ba44fd9b7ff2be04721892fca4
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 4a19b753e7a5979fe72d7e96bc4452d7795c2d48
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081623"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139665"
 ---
 # <a name="unify-customer-fields-for-data-unification"></a>데이터 통합을 위한 고객 필드 통합
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 통합 프로세스의 이 단계에서 통합 프로필 엔터티 내에서 병합할 속성을 선택하고 제외합니다. 예를 들어 3개의 엔터티에 이메일 데이터가 있는 경우 3개의 개별 이메일 필드를 모두 유지하거나 통합 프로필에 대한 단일 이메일 필드로 병합할 수 있습니다. 일부 특성은 시스템에 의해 자동으로 결합됩니다. 안정적이고 고유한 고객 ID를 생성하고 관련 프로필을 클러스터로 그룹화할 수 있습니다.
 

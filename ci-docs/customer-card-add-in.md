@@ -13,12 +13,12 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: ead18963959f94fd07912384cf61802f83523e2f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8b3b6a0d54b80d7df454e9dc925f14cc3c39684c
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081254"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9194931"
 ---
 # <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>Dynamics 365 앱의 고객 카드 추가 기능(프리뷰)
 
@@ -26,23 +26,27 @@ Dynamics 365 앱에서 직접 고객에 대한 모든 측면 보기를 확인하
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN1qv]
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>전제 조건
 
-- 추가 기능은 Sales 또는 Customer Service, 버전 9.0 이상과 같은 Dynamics 365 모델 기반 앱에서만 작동합니다.
-- Dynamics 365 데이터를 Customer Insights 고객 프로필에 매핑하려면 [Microsoft Dataverse 커넥터를 사용하여 Dynamics 365 앱에서 수집](connect-power-query.md)하는 것이 좋습니다. 다른 방법으로 Dynamics 365 연락처(또는 계정)를 수집하려면, `contactid`(또는 `accountid`) 필드가 [데이터 통합 프로세스 구상 단계에 있는 해당 데이터 소스의 기본 키로 설정되었는지 확인해야 합니다](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
+- Sales 또는 Customer Service, 버전 9.0 이상과 같은 Dynamics 365 모델 기반 앱입니다.
+- Dynamics 365 데이터를 Customer Insights 고객 프로필에 매핑하려면 [Microsoft Dataverse 커넥터를 사용하여 Dynamics 365 앱에서 수집](connect-power-query.md)하는 것이 좋습니다. 다른 방법으로 Dynamics 365 연락처(또는 계정)를 수집하려면, `contactid`(또는 `accountid`) 필드가 [데이터 통합 프로세스를 진행하는 동안 해당 데이터 원본의 기본 키](map-entities.md#select-primary-key-and-semantic-type-for-attributes)로 설정되어 있는지 확인해야 합니다.
 - 고객 카드 추가 기능의 모든 Dynamics 365 사용자는 데이터를 보려면 Customer Insights에서 [사용자로 추가](permissions.md)해야 합니다.
-- 데이터 조회가 작동하려면 Customer Insights의 [구성된 검색 및 필터 기능](search-filter-index.md)이 필요합니다.
+- Customer Insights에서 [구성된 검색 및 필터 기능](search-filter-index.md).
 - 각 추가 기능 컨트롤은 Customer Insights의 특정 데이터에 의존합니다. 일부 데이터 및 컨트롤은 특정 유형의 환경에서만 사용할 수 있습니다. 추가 기능 구성은 선택한 환경 유형으로 인해 제어를 사용할 수 없는 경우 알려줍니다. [환경 사용 사례](work-with-business-accounts.md)에 대해 자세히 알아보세요.
-  - **측정 제어**: 고객 특성 유형의 [구성된 측정값](measures.md)이 필요합니다.
-  - **지능형 제어**: [예측 또는 맞춤 모델](predictions-overview.md)을 사용하여 생성된 데이터가 필요합니다.
-  - **고객 세부 정보 제어**: 프로필의 모든 필드는 통합 고객 프로필에서 사용할 수 있습니다.
-  - **보강 제어**: 활성 [보강](enrichment-hub.md)이 고객 프로필에 적용되어야 합니다. 카드 추가 기능은 다음 강화를 지원합니다. Microsfot에서 제공한 [브랜드](enrichment-microsoft.md), Microsfot에서 제공한 [관심사](enrichment-microsoft.md), Microsfot에서 제공한 [사무실 참여 데이터](enrichment-office.md).
-  - **연락처 제어**: 유형 연락처의 의미 체계 엔티티 정의가 필요합니다.
-  - **시간 표시줄 제어**: [구성된 활동](activities.md)이 필요합니다.
+  - **측정 제어** 에는 [구성된 고객 특성 측정값](measures.md)이 필요합니다.
+  - **인텔리전스 제어** 에는 [예측 또는 사용자 지정 모델](predictions-overview.md)을 사용하여 생성된 데이터가 필요합니다.
+  - **고객 세부 정보 제어** 에 통합 고객 프로필에서 사용할 수 있는 프로필의 모든 필드를 표시할 수 있습니다.
+  - **보강 제어** 에는 활성 [보강](enrichment-hub.md)이 고객 프로필에 적용되어야 합니다. 카드 추가 기능은 다음 강화를 지원합니다. Microsfot에서 제공한 [브랜드](enrichment-microsoft.md), Microsfot에서 제공한 [관심사](enrichment-microsoft.md), Microsfot에서 제공한 [사무실 참여 데이터](enrichment-office.md).
+  - **연락처 제어** 에는 의미 엔터티 유형의 연락처가 필요합니다.
+  - **시간 표시줄 제어** 에는 [구성된 활동](activities.md)이 필요합니다.
 
 ## <a name="install-the-customer-card-add-in"></a>고객 카드 추가 기능 설치
 
-고객 카드 추가 기능은 Dynamics 365의 Customer Engagement 앱을 위한 솔루션입니다. 솔루션을 설치하려면 AppSource로 이동하고 **Dynamics 고객 카드** 를 검색합니다. [AppSource에서 고객 카드 추가 기능](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview)을 선택하고 **지금 가져 오기** 를 선택합니다.
+고객 카드 추가 기능은 Dynamics 365의 Customer Engagement 앱을 위한 솔루션입니다. 솔루션을 설치하려면 다음을 따르세요.
+
+1. AppSource로 이동하여 **Dynamics 고객 카드** 를 검색합니다.
+
+1. [AppSource에서 고객 카드 추가 기능](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview)을 선택하고 **지금 가져 오기** 를 선택합니다.
 
 솔루션을 설치하려면 Dynamics 365 앱에 대한 관리자 자격 증명으로 로그인해야 할 수 있습니다. 솔루션을 환경에 설치하는 데 시간이 걸릴 수 있습니다.
 

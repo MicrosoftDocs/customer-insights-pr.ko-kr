@@ -1,7 +1,7 @@
 ---
 title: Azure Synapse 데이터 원본 연결(프리뷰)
 description: Azure Synapse의 데이터베이스를 Dynamics 365 Customer Insights의 데이터 원본으로 사용합니다.
-ms.date: 03/25/2022
+ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: c4ae65613a02df38a30f907dae72d413bf1a702f
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 54247fbcdc27f6ed8314e0755164083eb461aa64
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052707"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206915"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>Azure Synapse Analytics 데이터 원본 연결(프리뷰)
 
@@ -66,3 +66,9 @@ Azure Synapse Analytics는 데이터 웨어하우스 및 빅 데이터 시스템
 1. 선택적으로 데이터 프로파일링을 허용할 데이터 엔터티를 선택합니다.
 
 1. **저장** 을 선택하여 선택 사항을 적용하고 Azure Synapse Analytics의 레이크 데이터베이스 테이블에 연결된 새로 만든 데이터 원본의 데이터 수집을 시작합니다. **데이터 원본** 페이지가 열리고 **새로 고침 중** 상태의 새 데이터 원본이 표시됩니다.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+데이터를 로드하는 데 시간이 걸릴 수 있습니다. 새로 고침이 완료되면, 수집된 데이터를 [**엔터티**](entities.md) 페이지에서 검토할 수 있습니다.
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

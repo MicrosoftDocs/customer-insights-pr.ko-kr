@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 92d37fc0950fefcb5c2a5d26214a469d3693980d
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: cc65314f1b083694b60ac0a2625bea906be7272b
+ms.sourcegitcommit: ad74ace653db9a25fce4343adef7db1c9b0d8904
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054762"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183501"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model의 엔터티 스키마
 
@@ -40,8 +40,7 @@ ms.locfileid: "9054762"
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>Common Data Model 엔터티 탐색기를 사용하여 엔터티 보기
 
 [Common Data Model 엔터티 탐색기](https://microsoft.github.io/CDM/)에서 엔터티를 볼 수 있습니다. Insights 응용 프로그램 섹션에서 엔터티를 선택하여 Customer Insights 엔터티 및 해당 정의 목록을 가져옵니다.
-> [!div class="mx-imgBorder"]
-> ![CustomerActivity 엔터티를 보여주는 CDM 엔터티 탐색기.](media/CDM-entity-navigator.png "CustomerActivity 엔터티를 보여주는 CDM 엔터티 탐색기")
 
+:::image type="content" source="media/CDM-entity-navigator.png" alt-text="CustomerActivity 엔터티를 보여주는 CDM 엔터티 탐색기.":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

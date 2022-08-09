@@ -8,12 +8,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 415cd5d675512b4f434998afaa8265c8e45c562b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 72aa38242df21181f142833db03c825574455986
+ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647336"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171057"
 ---
 # <a name="subscription-churn-prediction"></a>구독 이탈 예측
 
@@ -121,7 +121,7 @@ ms.locfileid: "8647336"
    - **예측 이름:** 생성할 때 제공한 예측의 이름입니다.
    - **예측 유형:** 예측에 사용된 모델 유형
    - **출력 엔터티:** 예측의 출력을 저장할 엔터티 이름입니다. **데이터** > **엔터티** 에서 이 이름을 가진 엔터티를 찾을 수 있습니다.    
-     출력 엔터티에서 *ChurnScore* 는 예상되는 이탈 확률이며 *IsChurn* 은 임계값이 0.5인 *ChurnScore* 를 기반으로 하는 이진 레이블입니다. 기본 임계값은 시나리오에 적합하지 않을 수 있습니다. 선호하는 임계 값으로 [새 세그먼트를 만듭니다](segments.md#create-a-new-segment).
+     출력 엔터티에서 *ChurnScore* 는 예상되는 이탈 확률이며 *IsChurn* 은 임계값이 0.5인 *ChurnScore* 를 기반으로 하는 이진 레이블입니다. 기본 임계값은 시나리오에 적합하지 않을 수 있습니다. 선호하는 임계 값으로 [새 세그먼트를 만듭니다](segments.md#create-a-segment).
    - **예측된 필드:** 이 필드는 일부 유형의 예측에 대해서만 채워지며 구독 이탈 예측에는 사용되지 않습니다.
    - **상태:** 예측 실행의 현재 상태입니다.
         - **큐에 대기 중:** 예측이 현재 다른 프로세스가 실행되기를 기다리고 있습니다.

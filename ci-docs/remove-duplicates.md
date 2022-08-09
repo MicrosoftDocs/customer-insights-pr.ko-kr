@@ -13,16 +13,14 @@ searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: 27dff3551ab411a12c273536d7431d651c48573e
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: a838fbdabdb3bfffc6d3835a3f0e97306a43964a
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741664"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139437"
 ---
 # <a name="remove-duplicates-before-unifying-data"></a>데이터를 통합하기 전에 중복 제거
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 통합의 이 단계에서는 선택적으로 엔터티 내에서 중복 레코드를 처리하기 위한 규칙을 설정할 수 있습니다. *중복 제거* 는 중복 레코드를 식별하여 하나의 레코드로 병합합니다. 원본 레코드는 대체 ID를 사용하여 병합된 레코드에 연결됩니다. 규칙이 구성되지 않은 경우 시스템 정의 규칙이 적용됩니다.
 

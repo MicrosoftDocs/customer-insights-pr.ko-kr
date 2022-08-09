@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: a30e98b06ed07590ab95cae1d8db8023e49ff7f9
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 876853ab42e8c08ad1abacb8d8a205c0aadabcf7
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9053029"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195944"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Experian 인구 통계로 고객 프로필을 보강하십시오.(프리뷰)
 
@@ -59,7 +59,7 @@ Experian에 데이터를 전송하기 위해 Dynamics 365 Customer Insights를 �
 
 1. 개요를 검토한 후 **다음** 을 선택합니다.
 
-1. 연결을 선택합니다. 관리자가 없는 경우 관리자에게 문의하세요.
+1. 연결을 선택합니다. 사용 가능한 연결이 없으면 관리자에게 문의하십시오.
 
 1. **다음** 을 선택합니다.
 

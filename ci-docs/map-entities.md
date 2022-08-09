@@ -13,16 +13,14 @@ searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: a962f1353b6e25b40c60b39a81ac936873f34d92
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: a75218c996b277e00924f2b7b38ea686a1f4dc38
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741003"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139790"
 ---
 # <a name="select-source-fields-for-data-unification"></a>데이터 통합을 위한 소스 필드 선택
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 통합의 첫 번째 단계는 통합하려는 데이터 세트 내의 엔터티와 필드를 선택하는 것입니다. 이름, 주소, 전화번호 및 이메일과 같은 고객 관련 세부 정보가 포함된 엔터티를 선택합니다. 하나 이상의 엔터티를 선택할 수 있습니다.
 

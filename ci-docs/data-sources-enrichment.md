@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: fb97b721cc82ccd23cfd1df74a0712b8fc277b8a
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 98e9e330e7ef9cf085caa94a506fa788cebdd67b
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081245"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9207191"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>데이터 원본 보강(프리뷰)
 
@@ -21,9 +21,9 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 데
 
 ## <a name="enrich-a-data-source"></a>데이터 원본 보강
 
-보강을 생성하거나 편집하려면 기여자 또는 관리자 권한이 있어야 합니다. 자세한 내용은 [권한](permissions.md)을 참조하십시오.  
+보강을 생성하거나 편집하려면 기여자 또는 관리자 [권한](permissions.md)이 있어야 합니다.  
 
-1. **데이터** > **통합** 으로 이동합니다. 보강할 엔터티를 선택하고 엔터티의 기본 키로 하나의 특성을 선택합니다. 자세한 내용은 [기본 키 선택](map-entities.md#select-primary-key-and-semantic-type-for-attributes)을 참조하세요.
+1. **데이터** > **통합** 으로 이동합니다. 보강할 엔터티를 선택하고 엔터티의 [기본 키](map-entities.md#select-primary-key-and-semantic-type-for-attributes)로 특성을 하나 선택합니다.
 
 1. **데이터** > **데이터 원본** 으로 이동.
 
@@ -47,8 +47,8 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 데
 
 ## <a name="manage-existing-data-source-enrichments"></a>기존 데이터 원본 보강 관리
 
-**내 보강** 탭으로 이동하여 구성된 모든 보강을 확인하십시오.
+**데이터** > **보강** 으로 이동합니다. **내 보강** 탭에서 구성된 보강, 해당 상태, 보강 고객 수 및 데이터를 마지막으로 새로 고친 시간을 확인합니다. 열을 기준으로 보강 목록을 정렬하거나 검색 상자를 사용하여 관리하려는 보강을 찾을 수 있습니다.
 
-사용 가능한 옵션을 보려면 보강을 선택하십시오. 목록 항목에서 세로 줄임표(&vellip;)를 선택하여 옵션을 볼 수도 있습니다. 여러 보강을 구성한 경우 검색 상자를 사용하여 빠르게 찾을 수 있습니다.
+사용 가능한 옵션을 보려면 보강을 선택하십시오. 목록 항목에서 세로 줄임표(&vellip;)를 선택하여 옵션을 볼 수도 있습니다.
 
-데이터 원본 보강을 보고, 편집하고, 실행하거나 삭제할 수 있습니다. 자세한 내용은 [기존 보강 관리](enrichment-hub.md)를 확인하세요.
+데이터 원본 보강을 보고, 편집하고, 실행하거나 삭제할 수 있습니다. 자세한 내용은 [기존 보강 관리](enrichment-hub.md#manage-existing-enrichments)를 확인하세요.

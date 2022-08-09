@@ -14,43 +14,56 @@ searchScope:
 - ci-measure-template
 - ci-enrichment-details
 - customerInsights
-ms.openlocfilehash: 880c06bffcfa269151d96cb4c597eed4832fc61b
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: ead57ccbdcaf9f86ee54d1f15de71a63f2e1081b
+ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081703"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9170828"
 ---
 # <a name="measures-overview"></a>측정값 개요
 
-측정값은 고객 행동과 비즈니스 성과를 더 잘 이해하는 데 도움이 됩니다. 측정값은 [통합 프로필](data-unification.md)에서 관련 가치를 확인합니다. 예를 들어, 기업은 개별 고객의 구매 내역을 이해하거나 *회사의 총 매출* 을 측정하여 비즈니스 전체의 집계된 수익을 이해하기 위해 *고객당 총 지출* 을 보고 싶어 합니다.  
+측정값은 고객 행동과 비즈니스 성과를 더 잘 이해하는 데 도움이 됩니다. 측정값은 [통합 프로필](data-unification.md)에서 관련 가치를 확인합니다. 예를 들어, 기업은 개별 고객의 구매 내역을 이해하거나 *회사의 총 매출* 을 측정하여 비즈니스 전체의 집계된 수익을 이해하기 위해 *고객당 총 지출* 을 보고 싶어 합니다.
 
-측정값은 다양한 연산자와 간단한 매핑 옵션이 있는 데이터 쿼리 플랫폼인 [측정값 빌더를 사용](measure-builder.md)하여 생성됩니다. 이를 통해 데이터를 필터링하고 결과를 그룹화하고 [엔터티 관계 경로](relationships.md)를 감지하고 출력을 미리 볼 수 있습니다. [미리 정의된 템플릿을 사용](measure-templates.md)하여 효율성 있게 일반적으로 사용되는 측정값을 구성할 수 있습니다.
+측정값을 생성하여 고객 데이터를 쿼리하고 인사이트를 추출하여 비즈니스 활동을 계획합니다. 예를 들어 *고객당 총지출* 및 *고객당 총수익* 의 측정값을 생성하면 지출이 많고 수익이 높은 고객 그룹을 식별하는 데 도움이 됩니다. 그런 다음 이러한 측정값을 기반으로 [세그먼트를 생성](segments.md)하여 차선책을 유도할 수 있습니다.
 
-측정값 빌더를 사용하여 고객 데이터를 쿼리하고 인사이트를 추출하여 비즈니스 활동을 계획합니다. 예를 들어 *고객당 총 지출* 및 *고객당 총 수익* 의 측정값을 생성하면 지출이 많고 수익이 높은 고객 그룹을 식별하는 데 도움이 됩니다. 이러한 측정값을 기반으로 [세그먼트를 생성](segments.md)하여 차선책을 유도할 수 있습니다.
+## <a name="create-a-measure"></a>측정값 만들기
 
-## <a name="manage-your-measures"></a>측정 관리
+목표 대상 그룹을 기반으로 측정값을 만드는 방법을 선택합니다.
 
-측정값 목록은 **측정** 페이지에 있습니다.
+# <a name="individual-consumers-b-to-c"></a>[개별 소비자(B2C)](#tab/b2c)
 
-측정값 유형, 작성자, 생성 날짜, 현황 및 상태에 대한 정보를 확인할 수 있습니다. 목록에서 측정값을 선택하면 출력을 미리 보고 CSV 파일을 다운로드할 수 있습니다.
+- 측정값 빌더를 사용하여 처음부터 [자체 측정값을 빌드](measure-builder.md)합니다.
+- 일반적으로 사용되는 측정값에서 [미리 정의된 템플릿](measure-templates.md)을 사용합니다.
+
+# <a name="business-accounts-b-to-b"></a>[비즈니스 어카운트(B2B)](#tab/b2b)
+
+측정값 빌더를 사용하여 처음부터 [자체 측정값을 빌드](measure-builder.md)합니다.
+
+---
+
+## <a name="manage-existing-measures"></a>기존 측정값 관리
+
+**측정값** 페이지로 이동하여 생성한 측정값, 해당 상태, 측정값 유형 및 데이터를 마지막으로 새로 고친 시간을 확인합니다. 열을 기준으로 측정값 목록을 정렬하거나 검색 상자를 사용하여 관리하려는 측정값을 찾을 수 있습니다.
+
+사용 가능한 작업을 보려면 측정값 옆을 선택합니다. 측정값 이름을 선택하여 출력값을 미리 보고 CSV 파일을 다운로드합니다.
 
 :::image type="content" source="media/measures-actions.png" alt-text="단일 측정을 관리하기 위한 작업."lightbox="media/measures-actions.png":::
 
-측정값을 선택하면 다음 작업을 수행할 수 있습니다.
-
-- 측정의 구성을 **편집** 합니다.
-- 측정값을 **복제** 합니다. 속성을 즉시 편집하거나 단순히 중복 항목을 저장하도록 선택할 수 있습니다.
-- 최신 데이터를 기반으로 측정값을 **새로 고침** 합니다. 모든 측정값을 동시에 새로 고치려면 모든 측정값을 선택한 다음 **새로 고침** 을 선택합니다.
+- 측정값을 **편집** 하여 속성을 변경합니다.
+- 측정값을 **새로 고침** 하여 최신 데이터를 포함합니다.
 - 측정 **이름 바꾸기** 를 수행합니다.
-- **활성화** 또는 **비활성화** 합니다. [예약된 새로 고침](system.md#schedule-tab) 중에는 비활성 측정값이 새로 고쳐지지 않습니다.
-- **태그**: 세그먼트에 대한 [태그를 관리](work-with-tags-columns.md#manage-tags)합니다.
+- 측정값을 **활성화** 또는 **비활성화** 합니다. [예약된 새로 고침](system.md#schedule-tab) 중에는 비활성 측정값을 새로 고침하지 않으며 **상태** 가 **건너뜀** 으로 나열되어 있으면 새로 고침이 시도되지 않았음을 나타냅니다.
+- **태그** 하여 측정값용 [태그를 관리](work-with-tags-columns.md#manage-tags)합니다.
 - 측정을 **삭제** 합니다.
+- **열**: 표시되는 [열을 사용자 지정](work-with-tags-columns.md#customize-columns)합니다.
+- **필터**: [태그를 필터링](work-with-tags-columns.md#filter-on-tags)합니다.
+- **이름을 검색** 하여 측정값별로 검색합니다.
+
+## <a name="refresh-measures"></a>측정값 새로 고침
+
+측정값은 자동 예약에 따라 새로 고쳐지거나 필요에 따라 수동으로 새로 고칠 수 있습니다. 하나 이상의 측정값을 수동으로 새로 고치려면 측정값을 선택하고 **새로 고침** 을 실행합니다. [자동 새로 고침을 예약](system.md#schedule-tab)하려면 **관리** > **시스템** > **예약** 으로 이동합니다.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
-
-## <a name="next-step"></a>다음 단계
-
-기존 측정을 사용하여 [고객 세그먼트](segments.md)를 만들 수 있습니다.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

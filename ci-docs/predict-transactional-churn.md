@@ -8,12 +8,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: e55ca8c6926fa0bda05aaf52fd799ca25f7f585f
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b8216b5a739964fdfff8cad7e6d6d7ce3f5308b5
+ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647496"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171103"
 ---
 # <a name="transaction-churn-prediction"></a>트랜잭션 이탈 예측
 
@@ -240,7 +240,7 @@ ms.locfileid: "8647496"
    - **예측 이름**: 생성 시 제공한 예측의 이름입니다.
    - **예측 유형**: 예측에 사용되는 모델 유형
    - **출력 엔터티**: 예측의 출력을 저장할 엔터티 이름입니다. **데이터** > **엔터티** 에서 이 이름을 가진 엔터티를 찾을 수 있습니다.
-     출력 엔터티에서 *ChurnScore* 는 예상되는 이탈 확률이며 *IsChurn* 은 임계값이 0.5인 *ChurnScore* 를 기반으로 하는 이진 레이블입니다. 기본 임계값은 시나리오에 적합하지 않을 수 있습니다. 선호하는 임계 값으로 [새 세그먼트를 만듭니다](segments.md#create-a-new-segment).
+     출력 엔터티에서 *ChurnScore* 는 예상되는 이탈 확률이며 *IsChurn* 은 임계값이 0.5인 *ChurnScore* 를 기반으로 하는 이진 레이블입니다. 기본 임계값은 시나리오에 적합하지 않을 수 있습니다. 선호하는 임계 값으로 [새 세그먼트를 만듭니다](segments.md#create-a-segment).
      모든 고객이 반드시 활성 고객인 것은 아닙니다. 일부는 오랫동안 활동이 없었을 수 있으며 이탈 정의에 따라 이미 이탈한 것으로 간주됩니다. 이미 이탈한 고객에 대해 이탈 위험을 예측하는 것은 관심 대상이 아니기 때문에 유용하지 않습니다.
    - **예측 필드**: 이 필드는 일부 예측 유형에 대해서만 채워지며 이탈 예측에서는 사용되지 않습니다.
    - **상태**: 예측 실행 상태입니다.

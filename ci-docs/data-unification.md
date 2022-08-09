@@ -11,16 +11,14 @@ manager: shellyha
 searchScope:
 - ci-map
 - customerInsights
-ms.openlocfilehash: 0dbc3b2c75365e94758a1b6330e8cb557e6bd768
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 766e688cb80c50a0d620943f87b76eb84a2fb89a
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081290"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139506"
 ---
 # <a name="data-unification-overview"></a>데이터 통합 개요
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 [데이터 원본 설정](data-sources.md) 후 데이터를 통합할 수 있습니다. 데이터 통합을 사용하면 한 때 서로 다른 데이터 원본을 해당 데이터에 대한 통합 보기를 제공하는 단일 마스터 데이터 세트로 통합할 수 있습니다. 데이터가 개인 중심인 개인 소비자(B-to-C)의 경우 통합은 고객에 대한 통합 보기를 제공합니다. 데이터가 거래처 중심인 비즈니스 거래처(B-to-B)의 경우 통합은 거래처에 대한 통합 보기를 제공합니다.
 

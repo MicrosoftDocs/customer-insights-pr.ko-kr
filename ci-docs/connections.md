@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: a8b4b8a9bdcf7cf43c47a67d547405dd20dad60d
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 4a0bc5dd4100b462a26660a0c51fda1fe92b6bb9
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081236"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195182"
 ---
 # <a name="connections-preview-overview"></a>연결(프리뷰) 개요
 
@@ -27,6 +27,12 @@ ms.locfileid: "9081236"
 **연결** 탭은 모든 활성 연결을 보여줍니다. 목록에는 각 연결에 대한 행이 표시됩니다.
 
 빠른 개요, 설명을 확인하고 **발견** 탭에서 각 확장성 옵션으로 수행할 수 있는 작업을 알아보세요.
+
+## <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수
+
+제3자 또는 다른 Microsoft 제품에 데이터를 전송하기 위해 Dynamics 365 Customer Insights를 활성화 할 때 Dynamics 365 Customer Insights의 규정 준수 범위 이외의 개인 데이터 등 잠재적으로 민감한 데이터를 비롯한 데이터의 전송을 허용합니다. Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만, 보유하고 있는 제3자의 모든 개인 정보 보호 또는 보안 의무를 충족하는 데에 대한 책임은 귀하에게 있음을 알려드립니다. 자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)를 참조하세요.
+
+Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하지 않도록 이 연결 상태를 언제든지 제거할 수 있습니다.
 
 ## <a name="exports"></a>내보내기
 
@@ -41,8 +47,6 @@ ms.locfileid: "9081236"
 연결을 추가하려면 [관리자 권한](permissions.md)이 있어야 합니다. 다른 Microsoft 서비스에 연결하는 경우 두 서비스가 동일한 조직에 있다고 가정합니다.
 
 1. **관리자** > **연결(프리뷰)** 로 이동합니다.
-
-1. **연결** 탭으로 이동합니다.
 
 1. 새 연결을 만들려면 **연결 추가** 를 선택합니다. 드롭다운 메뉴에서 생성하려는 연결 유형을 선택합니다.
 
@@ -99,3 +103,5 @@ ms.locfileid: "9081236"
 ## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>자체 Key Vault에서 관리하는 비밀을 통해 연결 설정
 
 일부 연결에는 API 키 또는 비밀과 같은 암호가 필요합니다. 일부 연결은 자체 Key Vault에 저장된 비밀을 지원합니다. 지원되는 연결 및 [Customer Insights를 위해 자체 Key Vault](use-azure-key-vault.md)를 설정하는 방법에 대해 자세히 알아보세요.
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

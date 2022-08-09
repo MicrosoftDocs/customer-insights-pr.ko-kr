@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 54ba9f4e9baeb4b7021bb8c20a706bbb6eb1529f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
+ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081721"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9121570"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>Customer Insights API에 대한 OData 쿼리 예제
 
@@ -23,7 +23,7 @@ OData(Open Data Protocol)는 HTTP와 같은 핵심 프로토콜을 기반으로 
 
 대상 환경에서 작동하도록 쿼리 샘플을 수정해야 합니다. 
 
-- {serviceRoot}:`https://api.ci.ai.dynamics.com/v1/instances/{instanceId}` 여기서{instanceId}는 쿼리하려는 Customer Insights 환경의 GUID입니다. [ListAllInstances 작업](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances)을 사용하면 액세스 권한이 있는 {InstanceId}를 찾을 수 있습니다.
+- {serviceRoot}:`https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` 여기서{instanceId}는 쿼리하려는 Customer Insights 환경의 GUID입니다. [ListAllInstances 작업](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances)을 사용하면 액세스 권한이 있는 {InstanceId}를 찾을 수 있습니다.
 - {CID}: 통합 고객 레코드의 GUID입니다. 예: `ce759201f786d590bf2134bff576c369`
 - {AlternateKey}: 데이터 원본에 있는 고객 레코드의 기본 키 식별자입니다. 예: `CNTID_1002`
 - {DSname}: Customer Insights에 수집되는 데이터 원본의 엔터티 이름이 있는 문자열입니다. 예: `Website_contacts`
@@ -39,9 +39,10 @@ OData(Open Data Protocol)는 HTTP와 같은 핵심 프로토콜을 기반으로 
 |대체 키    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  대체 키는 통합 고객 엔터티에 유지됩니다       |
 |선택   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |-    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
-|대체 키 + In   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
+|대체 키 + In   | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |검색  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   검색 문자열에 대한 상위 10개 결과를 반환합니다      |
 |세그먼트 구성원 자격  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | 세그먼트화 엔터티에서 미리 설정된 행 수를 반환합니다.      |
+|고객용 세그먼트 멤버십 | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'&IsMemberOfSegment('{SegmentName}')`     | 고객이 지정된 세그먼트의 구성원인 경우 고객 프로필을 반환함     |
 
 ## <a name="unified-activity"></a>통합 활동
 

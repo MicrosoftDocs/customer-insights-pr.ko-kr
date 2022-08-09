@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b58532a541ee22a5e34d0af1a3334ccbd53627b2
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 3f23fe7177f931db3e3179970915d0cd3c736f87
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081353"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196218"
 ---
 # <a name="enrich-company-profiles-with-leadspace-preview"></a>Leadspace를 통한 회사 프로필 보강(프리뷰)
 
@@ -54,7 +54,7 @@ Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하�
 
 1. 개요를 검토한 후 **다음** 을 선택합니다.
 
-1. 연결을 선택합니다. 관리자가 없는 경우 관리자에게 문의하세요.
+1. 연결을 선택합니다. 사용 가능한 연결이 없으면 관리자에게 문의하십시오.
 
 1. **다음** 을 선택합니다.
 

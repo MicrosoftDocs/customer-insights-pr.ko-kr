@@ -1,28 +1,56 @@
 ---
 title: Dynamics 365 Customer Insights의 새로운 기능
 description: 새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.
-ms.date: 06/02/2022
+ms.date: 06/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 4b5b95d1774d22827b3c08c2b6ccbb7858f1b04b
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f3ae0fe6631ee7c8d79664528be383ec53e93fe8
+ms.sourcegitcommit: 92e5a798ca75c7f10aa5025a9bbd2ffb4d4ae7d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054026"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114254"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights의 새로운 기능
 
 최신 업데이트를 발표하게 된 것을 기쁘게 생각합니다! 이 문서는 공개 미리 보기 기능, 일반 가용성 향상 및 기능 업데이트를 요약합니다. 장기적인 기능 계획을 보려면 [Dynamics 365 및 Power Platform 릴리스 계획](/dynamics365/release-plans/)을 살펴보십시오.
 
-업데이트는 지역별로 배포합니다. 따라서 특정 지역은 다른 지역보다 먼저 기능을 볼 수 있습니다. 다르게 지정하지 않으면 별도의 조치를 취할 필요가 없으며 가동 중지 시간 없이 자동으로 앱을 업데이트합니다.
+업데이트는 지역별로 배포합니다. 따라서 특정 지역은 다른 지역보다 먼저 기능을 볼 수 있습니다. 다르게 지정하지 않으면 별도의 조치를 취할 필요가 없으며 Microsoft에서는 가동 중지 시간 없이 자동으로 앱을 업데이트합니다.
 
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하세요.
+
+## <a name="june-2022-updates"></a>2022년 6월 업데이트
+
+2022년 6월 업데이트에는 새로운 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="updated-user-experience-for-data-sources-and-data-ingestion"></a>데이터 원본 및 데이터 수집에 대한 사용자 경험 업데이트
+
+다양한 데이터 원본에서 데이터를 가져오는 것은 Dynamics 365 Customer Insights의 고객 데이터를 통합하기 위한 기초입니다. Microsoft에서는 데이터 원본 가져오기 및 연결에 대한 사용자 경험을 다시 살펴보았습니다. 이 업데이트의 목표는 Customer Insights에 데이터를 더 쉽게 수집하는 것입니다.
+
+자세한 내용은 [데이터 원본 개요](data-sources.md)를 확인하세요.
+
+### <a name="export-to-inmobi"></a>InMobi로 내보내기
+
+InMobi는 브랜드에서 소비자를 이해하고 식별하며, 참여를 유도하거나 정보를 획득하는 데 도움이 됩니다. Azure Blob Storage 계정을 통해 세그먼트 및 기타 데이터를 InMobi 서비스로 내보낼 수 있습니다.
+
+자세한 내용은 [InMobi로 내보내기(프리뷰)](export-inmobi.md)에서 확인하기
+
+### <a name="lockbox-support-in-customer-insights"></a>Customer Insights의 Lockbox 지원
+
+고객 Lockbox는 데이터 액세스 요청을 검토 및 승인(또는 거부)하는 인터페이스를 제공합니다. 이러한 요청은 지원 사례를 해결하기 위해 고객 데이터에 대한 데이터 액세스가 필요할 때 발생합니다.
+
+자세한 정보는 [고객 LockBox를 사용하여 고객 데이터에 안전하게 액세스(프리뷰)](security-overview.md#securely-access-customer-data-with-customer-lockbox-preview)를 확인하세요.
+
+### <a name="connect-to-your-data-using-azure-private-link"></a>Azure Private Link를 사용하여 데이터에 연결
+
+Azure Private Link를 사용하면 Customer Insights가 가상 네트워크의 프라이빗 엔드포인트를 통해 Azure Data Lake Storage 계정에 연결할 수 있습니다. 공용 인터넷에 노출되지 않는 저장소 계정의 데이터에 대해 Private Link를 사용하면 제한된 네트워크에 연결할 수 있습니다.
+
+자세한 내용은 [Customer Insights의 Private Link 사용](security-overview.md#private-links-tab)을 확인하세요.
 
 ## <a name="may-2022-updates"></a>2022년 5월 업데이트
 

@@ -1,7 +1,7 @@
 ---
 title: 데이터 원본 개요
 description: 다양한 원본에서 데이터를 가져오거나 수집하는 방법을 알아보세요.
-ms.date: 05/18/2022
+ms.date: 07/26/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: mukeshpo
@@ -12,20 +12,20 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: fbe44f655bdbc20ef7f0956022395e2dcb570adf
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 6ab97c535454e84c1bb18aca00bca2568eb65a2a
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9051461"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9207099"
 ---
 # <a name="data-sources-overview"></a>데이터 원본 개요
 
 Dynamics 365 Customer Insights는 광범위한 원본 집합에서 데이터를 가져올 수 있는 연결을 제공합니다. 데이터 원본에 연결하는 과정을 종종 *데이터 수집* 프로세스라고 합니다. 데이터를 수집한 후 개인화된 경험을 구축하기 위해 데이터를 [통합](data-unification.md)하고 인사이트를 생성하고 활성화할 수 있습니다.
 
-## <a name="add-data-sources"></a>데이터 원본 추가
+## <a name="add-or-edit-data-sources"></a>데이터 원본 추가 또는 편집
 
-데이터 원본을 Customer Insights에 첨부하거나 가져올 수 있습니다. 아래 링크는 데이터 원본 추가에 대한 지침을 제공합니다.
+데이터 원본을 Customer Insights에 첨부하거나 가져올 수 있습니다. 다음 링크는 데이터 원본 추가 및 편집에 대한 지침을 제공합니다.
 
 **데이터 원본 첨부**
 
@@ -50,13 +50,18 @@ Microsoft의 Azure 데이터 서비스 중 하나에서 준비된 데이터가 �
 
 환경에서 Power Platform 데이터 흐름을 사용하지 않는 경우 **데이터 원본** 페이지에는 모든 데이터 원본의 목록만 포함됩니다. 표시된 섹션이 없습니다.
 
-**데이터** > **데이터 원본** 으로 이동하여 수집된 각 데이터 원본의 이름, 해당 상태 및 해당 원본에 대한 데이터가 마지막으로 새로 고쳐진 시간을 확인합니다. 모든 열을 기준으로 데이터 원본 목록을 정렬할 수 있습니다.
+## <a name="manage-existing-data-sources"></a>기존 데이터 원본 관리
 
-:::image type="content" source="media/configure-data-datasource-added.png" alt-text="원본 데이터 추가됨.":::
+**데이터** > **데이터 원본** 으로 이동하여 수집된 각 데이터 원본의 이름, 해당 상태 및 해당 원본에 대한 데이터가 마지막으로 새로 고쳐진 시간을 확인합니다. 열을 기준으로 데이터 원본 목록을 정렬하거나 검색 상자를 사용하여 관리하려는 데이터 원본을 찾을 수 있습니다.
 
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+사용 가능한 작업을 보려면 데이터 원본을 선택합니다.
 
-데이터를 로드하는 데 시간이 걸릴 수 있습니다. 성공적으로 새로 고친 후 수집된 데이터는 **엔터티** 페이지에서 검토할 수 있습니다. 자세한 내용은 [엔터티](entities.md)를 참조하십시오.
+:::image type="content" source="media/data_sources_showmore.png" alt-text="원본 데이터 추가됨.":::
+
+- [**편집**](#add-or-edit-data-sources): 속성을 변경할 데이터 원본을 편집합니다.
+- [**새로 고침**](#refresh-data-sources): 최신 데이터를 포함하도록 데이터 원본을 새로 고침 합니다.
+- [**보강**](data-sources-enrichment.md): 통합 전에 데이터 원본을 보강합니다.
+- 데이터 원본을 **삭제** 합니다. 데이터 원본은 데이터가 통합, 통찰력, 활성화 또는 내보내기와 같은 처리에 사용되지 않는 경우에만 삭제할 수 있습니다.
 
 ## <a name="refresh-data-sources"></a>데이터 원본 새로 고침
 
@@ -64,23 +69,12 @@ Microsoft의 Azure 데이터 서비스 중 하나에서 준비된 데이터가 �
 
 **관리** > **시스템** > [**일정**](system.md#schedule-tab)으로 이동하여 수집된 데이터 원본의 시스템 예약 새로 고침을 구성합니다.
 
-요청 시 데이터 원본을 새로 고침하려면 다음 단계를 따르세요.
+필요에 따라 데이터 원본을 새로 고침하려면 다음을 따르세요.
 
 1. **데이터** > **데이터 원본** 으로 이동.
 
-1. 새로 고치려는 데이터 원본 옆의 세로 줄임표(&vellip;)를 선택하고 드롭다운 목록에서 **새로 고침** 을 선택합니다. 데이터 원본은 이제 수동 새로 고침을 위해 트리거됩니다. 데이터 원본를 새로 고침하면 데이터 원본에 지정된 모든 엔터티의 엔터티 스키마와 데이터가 모두 업데이트됩니다.
+1. 새로 고침하려는 데이터 원본을 선택하고 **새로 고침** 을 선택합니다. 데이터 원본은 이제 수동 새로 고침을 위해 트리거됩니다. 데이터 원본를 새로 고침하면 데이터 원본에 지정된 모든 엔터티의 엔터티 스키마와 데이터가 모두 업데이트됩니다.
 
-1. 기존 새로 고침을 취소하고 데이터 원본이 마지막 새로 고침 상태로 되돌리려면 **새로 고침 중지** 를 선택합니다.
-
-## <a name="delete-a-data-source"></a>데이터 원본 삭제
-
-데이터 원본은 데이터가 통합, 통찰력, 활성화 또는 내보내기와 같은 처리에 사용되지 않는 경우에만 삭제할 수 있습니다.
-
-1. **데이터** > **데이터 원본** 으로 이동.
-
-2. 제거하려는 데이터 원본 옆의 세로 줄임표(&vellip;)를 선택하고 드롭다운 메뉴에서 삭제 **삭제** 를 선택합니다.
-
-3. 삭제를 확정합니다.
-
+1. 상태를 선택하여 **진행 세부 정보** 창을 열고 진행 상황을 조회합니다. 작업을 취소하려면 창 하단에서 **작업 취소** 를 선택합니다.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

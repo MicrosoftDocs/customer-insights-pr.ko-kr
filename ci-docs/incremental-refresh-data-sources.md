@@ -11,18 +11,16 @@ manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: bff27bf7fec2bcb741846ae76bb1f616f459136c
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: de39743eb8728fac34e417724c5f73bf44309c89
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9012033"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9207145"
 ---
 # <a name="incremental-refresh-for-power-query-and-azure-data-lake-data-sources"></a>Power Query 및 Azure Data Lake 데이터 원본에 대한 증분 새로 고침
 
-이 문서에서는 Power Query 또는 Azure Data Lake를 기반으로 데이터 원본에 대한 증분 새로 고침을 구성하는 방법에 대해 설명합니다.
-
-데이터 소스 증분 새로 고침은 다음과 같은 이점을 제공합니다:
+Power Query 또는 Azure Data Lake를 기반으로 데이터 원본의 증분 새로 고침을 사용하면 다음과 같은 이점이 있습니다.
 
 - **빠른 새로 고침** - 변경된 데이터만 새로 고침됩니다. 예를 들어 지난 5일 동안의 과거 데이터 집합만 새로 고칠 수 있습니다.
 - **신뢰성 향상** - 새로 고침이 작을수록 휘발성 원본 시스템에 대한 연결을 오랫동안 유지할 필요가 없으므로 연결 문제의 위험이 줄어듭니다.
@@ -73,6 +71,7 @@ Customer Insights는 Azure Data Lake Storage에 연결된 데이터 원본에 �
 
    1. 전체 데이터, 증분 데이터 upsert 및 증분 데이터 삭제에 대한 .csv 또는 .parquet 파일이 포함된 루트 폴더를 찾습니다.
    1. 전체 데이터와 두 증분 파일(\.csv 또는 \.parquet)에 대한 확장자를 입력합니다.
+   1. .csv 파일의 경우 열 구분 기호를 선택하고 파일의 첫 번째 행을 열 머리글로 사용합니다.
    1. **저장** 을 선택합니다.
 
 1. **마지막 업데이트** 에서 날짜 타임스탬프 특성을 선택합니다.

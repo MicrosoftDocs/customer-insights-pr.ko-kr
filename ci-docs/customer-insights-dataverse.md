@@ -1,7 +1,7 @@
 ---
 title: Microsoft Dataverse에서 Customer Insights 데이터로 작업
 description: Customer Insights와 Microsoft Dataverse를 연결하고 Dataverse로 내보내는 출력 엔터티를 이해하는 방법을 알아봅니다.
-ms.date: 05/30/2022
+ms.date: 07/15/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: 89ff629033230de3c6252b6a3a16816d9b3c1287
+ms.sourcegitcommit: 85b198de71ff2916fee5500ed7c37c823c889bbb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011536"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9153412"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Microsoft Dataverse에서 Customer Insights 데이터로 작업
 
@@ -31,13 +31,25 @@ Dataverse 환경에 연결하면 [Power Platform 데이터 흐름 및 게이트�
 - 연결하려는 Dataverse 환경과 이미 연결된 다른 Customer Insights 환경이 없습니다. [Dataverse 환경에 대한 기존 연결 제거](#remove-an-existing-connection-to-a-dataverse-environment) 방법을 알아보세요.
 - Microsoft Dataverse 환경은 단일 스토리지 계정에만 연결할 수 있습니다. 환경을 [Azure Data Lake Storage 사용](own-data-lake-storage.md)으로 구성한 경우에만 적용됩니다.
 
+## <a name="dataverse-storage-capacity-entitlement"></a>Dataverse 스토리지 용량 획득 자격
+
+Customer Insights를 구독하면 조직의 기존 [Dataverse 스토리지 용량](/power-platform/admin/capacity-storage)을 추가로 얻을 수 있습니다. 추가된 용량은 구독에 사용하는 프로필 개수에 따라 다릅니다.
+
+**예제:**
+
+예를 들어 고객 프로필 100,000개당 15GB의 데이터베이스 스토리지와 20GB의 파일 스토리지가 제공됩니다. 구독을 사용하는 고객 프로필이 300,000개인 경우 총 스토리지 용량은 45GB(3x15GB)의 데이터베이스 스토리지와 60GB(3x20GB)의 파일 스토리지가 됩니다. 마찬가지로, 30,000개의 계정으로 B2B를 구독하는 경우 총 스토리지 용량은 45GB(3x15GB) 데이터베이스 스토리지와 60GB(3x20GB) 파일 스토리지가 됩니다.
+
+로그 용량은 늘지 않고 조직에 맞게 설정됩니다.
+
+용량 획득 자격에 대한 자세한 내용은 [Dynamics 365 라이선싱 가이드](https://go.microsoft.com/fwlink/?LinkId=866544)를 참조하세요.
+
 ## <a name="connect-a-dataverse-environment-to-customer-insights"></a>Dataverse 환경을 Customer Insights에 연결
 
 **Microsoft Dataverse** 단계를 통해 [Customer Insights 환경을 생성](create-environment.md)하는 동안 Customer Insights를 Dataverse 환경과 연결할 수 있습니다.
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="Microsoft Dataverse와의 데이터 공유는 새로운 환경에서 자동으로 활성화됩니다.":::
 
-관리자는 Customer Insights를 구성하여 기존 Dataverse 환경에 연결할 수 있습니다. Dataverse 환경에 대한 URL을 제공함으로써 새로운 Customer Insights 환경에 연결됩니다.
+관리자는 Customer Insights를 구성하여 기존 Dataverse 환경에 연결할 수 있습니다. Dataverse 환경에 대한 URL을 제공해드리므로 새로운 Customer Insights 환경에 연결할 수 있습니다. Customer Insights와 Dataverse 간의 연결을 설정한 후에는 Dataverse 환경에서 조직 이름을 바꾸지 않아야 합니다. 조직의 이름은 Dataverse URL에서 사용되며 변경된 이름으로 인해 Customer Insights와 연결이 끊길 수 있습니다.
 
 기존 Dataverse 환경을 사용하지 않으려는 경우 시스템은 테넌트의 Customer Insights 데이터에 대한 새 환경을 생성합니다. [Power Platform 관리자는 환경을 만들 수 있는 사람을 제어할 수 있습니다](/power-platform/admin/control-environment-creation). 새로운 Customer Insights 환경을 설정하고 관리자가 관리자를 제외한 모든 사람에 대해 Dataverse 환경 생성을 비활성화한 경우 새 환경을 생성하지 못할 수 있습니다.
 
@@ -84,7 +96,7 @@ PowerShell 스크립트를 실행하려면 먼저 그에 따라 PowerShell을 �
 
     2. `ByolSetup.ps1`
         - 이 스크립트를 실행하려면 스토리지 계정/컨테이너 수준에서 *Storage Blob 데이터 소유자* 권한이 필요합니다. 그렇지 않으면 이 스크립트가 자동으로 생성합니다. 스크립트를 성공적으로 실행한 후 역할 할당을 수동으로 제거할 수 있습니다.
-        - 이 PowerShell 스크립트는 Microsoft Dataverse 서비스 및 모든 Dataverse 기반 비즈니스 애플리케이션에 필요한 톨 기반 액세스 제어(RBAC)를 추가합니다. 또한 `CreateSecurityGroups.ps1` 스크립트로 생성된 보안 그룹에 대한 CustomerInsights 컨테이너의 액세스 제어 목록(ACL)을 업데이트합니다. Contributor 그룹에는 *rwx* 권한이 있고 Reader 그룹에는 *r-x* 권한만 있습니다.
+        - 이 PowerShell 스크립트는 Microsoft Dataverse 서비스 및 모든 Dataverse 기반 비즈니스 애플리케이션에 필요한 역할 기반 액세스 제어 기능을 추가 제공합니다. 또한 `CreateSecurityGroups.ps1` 스크립트로 생성된 보안 그룹에 대한 CustomerInsights 컨테이너의 액세스 제어 목록(ACL)을 업데이트합니다. Contributor 그룹에는 *rwx* 권한이 있고 Reader 그룹에는 *r-x* 권한만 있습니다.
         - Azure Data Lake Storage, 스토리지 계정 이름, 리소스 그룹 이름, Reader 및 Contributor 보안 그룹 ID 값이 포함된 Azure 구독 ID를 제공하여 Windows PowerShell에서 이 PowerShell 스크립트를 실행합니다. 추가 정보와 구현된 논리를 검토하려면 편집기에서 PowerShell 스크립트를 엽니다.
         - 스크립트를 성공적으로 실행한 후 출력 문자열을 복사합니다. 출력 문자열은 다음과 같습니다. `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
 
