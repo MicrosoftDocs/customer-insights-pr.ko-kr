@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: f9c9ee55f2874ae1dcaf82f2ff17ed0fbbb7804d
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 0e953cfff12df433d033717d58b28c2834468916
+ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196402"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9259852"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Azure Synapse Analytics로 데이터 내보내기(프리뷰)
 
@@ -24,7 +24,7 @@ Azure Synapse은 데이터 웨어하우스 및 빅 데이터 시스템 전체에
 > [!NOTE]
 > 설명된 대로 모든 **역할 할당** 을 설정해야 합니다.
 
-- Customer Insights의 Azure Active Directory(AD) 사용자 계정은 [관리자 역할](permissions.md#assign-roles-and-permissions) 권한이 있어야 합니다.
+- Customer Insights의 Azure Active Directory(AD) 사용자 계정은 [관리자 역할](permissions.md#add-users) 권한이 있어야 합니다.
 
 Azure에서:
 
@@ -39,6 +39,8 @@ Azure에서:
 - *[Azure Synapse workspace 관리 ID](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* 에는 데이터가 있고 Azure Synapse workspace에 연결된 Azure Data Lake Storage Gen2 계정에 대한 **Storage Blob 데이터 기여자** 권한이 있어야 합니다. [Azure Portal을 사용하여 Blob 및 큐 데이터에 대한 액세스를 위한 Azure 역할 할당](/azure/storage/common/storage-auth-aad-rbac-portal) 및 [스토리지 Blob 데이터 기여자 권한](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor)에 대해 자세히 알아보기.
 
 - Azure Synapse workspace에서 *Customer Insights의 서비스 주체* 에는 **시냅스 관리자** [역할이 할당](/azure/synapse-analytics/security/how-to-set-up-access-control)되어야 합니다.
+
+- Customer Insights 환경에서 데이터를 [자체 Azure Data Lake Storage](own-data-lake-storage.md)에 저장하는 경우 연결을 Azure Synapse Analytics에 설정하는 사용자에게는 Data Lake Storage 계정에서 기본 **독자** 이상의 역할이 필요합니다. 자세한 내용은 [Azure Portal을 사용하여 Azure 역할 할당](/azure/role-based-access-control/role-assignments-portal)을 참조하십시오.
 
 ## <a name="set-up-connection-to-azure-synapse"></a>Azure Synapse에 대한 연결 설정
 

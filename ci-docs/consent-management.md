@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 99fe24cb47a8c20f629182d9a1c6adfd36a1eaf7
-ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
+ms.openlocfilehash: 6c951219410b55adc34691f677158b574cea1e01
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9188056"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245703"
 ---
 # <a name="use-customer-consent"></a>고객 동의 사용
 
@@ -70,6 +70,6 @@ Dynamics 365 Customer Insights는 Unified Customer Profiles의 일부로 선호�
 
 즉, Customer Insights로 가져오는 소스 데이터에 항상 최신 정보가 있는지 확인하세요.
 
-자세한 내용은 [수동으로 세그먼트 새로 고침](segments.md#refresh-segments) 또는 [예약된 새로 고침 구성](system.md#schedule-tab)을 참조하세요.
+자세한 내용은 [수동으로 세그먼트 새로 고침](segments.md#refresh-segments) 또는 [예약된 새로 고침 구성](schedule-refresh.md)을 참조하세요.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Dun & Bradstreet를 통한 회사 프로필 보강(프리뷰)
 description: Dun & Bradstreet 타사 보강에 대한 일반 정보입니다.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 71b35e4295e19c13edadc6548ac79715555e8183
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: e89b64774dcb519a071dd3d403473807a50e7f33
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196034"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237912"
 ---
 # <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>Dun & Bradstreet를 통한 회사 프로필 보강(프리뷰)
 
@@ -55,16 +55,11 @@ Customer Insights의 [관리자](permissions.md#admin)여야 하며 Dun & Bradst
 
 1. 유효한 Dun & Bradstreet 자격 증명 및 Dun & Bradstreet 프로젝트 세부 정보 *지역, 드롭 폴더 경로 및 드롭 폴더 이름* 을 입력하십시오. Dun & Bradstreet 프로젝트에서 [이 정보를 가져옵니다](#set-up-your-dun--bradstreet-project).
 
-1. [데이터 개인 정보 보호 및 규정 준수](#data-privacy-and-compliance)를 검토하고 **동의함** 을 선택하여 동의를 제공합니다.
+1. [데이터 개인 정보 보호 및 규정 준수](connections.md#data-privacy-and-compliance)를 검토하고 **동의함** 을 선택합니다.
 
 1. **확인** 을 선택하여 구성을 확인한 다음 **저장** 을 선택합니다.
 
    :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="Dun & Bradstreet 연결 구성 페이지.":::
-
-### <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수
-
-Dynamics 365 Customer Insights에서 Dun & Bradstreet로 데이터를 전송하도록 설정하면 개인 데이터와 같이 잠재적으로 민감한 데이터를 포함하여 Dynamics 365 Customer Insights의 규정 준수 경계 외부로 데이터를 전송할 수 있습니다. Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만 귀하는 귀하가 가질 수 있는 모든 개인 정보 보호 또는 보안 의무를 Dun & Bradstreet가 충족하는지 확인할 책임이 있습니다. 자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)를 참조하세요.
-Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하지 않도록 이 보강을 언제든지 제거할 수 있습니다.
 
 ## <a name="supported-countries-or-regions"></a>지원되는 국가 또는 지역
 

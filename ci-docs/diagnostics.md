@@ -1,7 +1,7 @@
 ---
-title: Azure Monitor를 사용하여 Dynamics 365 Customer Insights에서 로그 전달(프리뷰)
+title: 진단 로그 내보내기(프리뷰)
 description: Microsoft Azure Monitor에 로그를 보내는 방법 알아보기
-ms.date: 12/14/2021
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: article
@@ -11,87 +11,56 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 8c72df7054a682244215bbee54968d6aef4bbf59
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052661"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245933"
 ---
-# <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Azure Monitor를 사용하여 Dynamics 365 Customer Insights에서 로그 전달(프리뷰)
+# <a name="export-diagnostic-logs-preview"></a>진단 로그 내보내기(프리뷰)
 
-Dynamics 365 Customer Insights는 Azure Monitor와 직접 통합을 제공합니다. Azure Monitor 리소스 로그를 사용하면 로그를 모니터링하고 [Azure Storage](https://azure.microsoft.com/services/storage/), [ Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview)에 보내거나 [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/)에 스트리밍할 수 있습니다.
+Azure Monitor를 사용해 Customer Insights에서 로그를 전달합니다. Azure Monitor 리소스 로그를 사용하면 로그를 모니터링하고 [Azure Storage](https://azure.microsoft.com/services/storage/), [ Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview)에 보내거나 [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/)에 스트리밍할 수 있습니다.
 
 Customer Insights는 다음 이벤트 로그를 보냅니다.
 
 - **감사 이벤트**
-  - **APIEvent** - Dynamics 365 Customer Insights UI를 통해 수행된 변경 추적을 활성화합니다.
+  - **APIEvent** - Dynamics 365 Customer Insights UI를 통해 변경 내용 추적을 사용 설정합니다.
 - **운영 이벤트**
-  - **WorkflowEvent** - 워크플로를 통해 [데이터 원본](data-sources.md)을 설정하고 데이터를 [통합](data-unification.md), [보강](enrichment-hub.md)하고 마지막으로 다른 시스템으로 [내보낼](export-destinations.md) 수 있습니다. 이러한 모든 단계는 개별적으로 수행할 수 있습니다(예: 단일 내보내기 트리거). 또한 오케스트레이션된 상태로 실행할 수 있습니다(예: 통합 프로세스를 트리거하는 데이터 원본의 데이터 새로 고침, 강화를 가져오고 완료되면 데이터를 다른 시스템으로 내보냄). 자세한 내용은 [WorkflowEvent 스키마](#workflow-event-schema)를 참조하십시오.
-  - **APIEvent** - 고객 인스턴스에서 Dynamics 365 Customer Insights에 대한 모든 API 호출. 자세한 내용은 [APIEvent 스키마](#api-event-schema)를 참조하십시오.
+  - **WorkflowEvent** - [데이터 원본](data-sources.md)을 설정하고 데이터를 [통합](data-unification.md), [보강](enrichment-hub.md)하며 다른 시스템으로 [내보낼](export-destinations.md) 수 있습니다. 이러한 단계는 개별적으로 수행할 수 있습니다(예: 단일 내보내기 트리거). 또한 구성된 상태로 실행할 수 있습니다(예: 통합 프로세스를 트리거하는 데이터 원본의 데이터 새로 고침, 보강을 가져오고 데이터를 다른 시스템으로 내보냄). 자세한 내용은 [WorkflowEvent 스키마](#workflow-event-schema)를 참조하십시오.
+  - **APIEvent** - 고객 인스턴스에서 Dynamics 365 Customer Insights에 대한 모든 API 호출을 전송합니다. 자세한 내용은 [APIEvent 스키마](#api-event-schema)를 참조하십시오.
 
 ## <a name="set-up-the-diagnostic-settings"></a>진단 설정 구성
 
 ### <a name="prerequisites"></a>전제 조건
 
-Customer Insights에서 진단을 구성하려면 다음 필수 구성 요소가 충족되어야 합니다.
-
-- 활성 [Azure 구독](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)이 있어야 합니다.
-- Customer Insights의 [관리자](permissions.md#admin) 권한이 있어야 합니다.
-- Azure의 대상 리소스에서 **기여자** 와 **사용자 액세스 관리자** 역할이어야 합니다. 리소스는 Azure Data Lake Storage 계정, Azure 이벤트 허브 또는 Azure Log Analytics 작업 영역일 수 있습니다. 자세한 내용은 [Azure Portal을 사용하여 Azure 역할 할당 추가 또는 제거](/azure/role-based-access-control/role-assignments-portal)를 참조하세요. 이 권한은 Customer Insights에서 진단 설정을 구성하는 동안 필요하며 성공적인 설정 후에 변경할 수 있습니다.
-- Azure Storage, Azure 이벤트 허브 또는 Azure Log Analytics에 대한 [대상 요구 사항](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements)을 충족해야 합니다.
-- 리소스가 속한 리소스 그룹에서 적어도 **독자** 역할이어야 합니다.
+- 사용 중인 [Azure 구독](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
+- Customer Insights의 [관리자](permissions.md#admin) 권한.
+- Azure 기반 대상 리소스에서 [기여자 및 사용자 액세스 관리자 역할](/azure/role-based-access-control/role-assignments-portal). 리소스는 Azure Data Lake Storage 계정, Azure 이벤트 허브 또는 Azure Log Analytics 작업 영역일 수 있습니다. 이 권한은 Customer Insights에서 진단 설정을 구성하는 동안 필요하지만, 설정을 완료한 후 변경할 수 있습니다.
+- Azure Storage, Azure 이벤트 허브 또는 Azure Log Analytics 관련 [대상 요구 사항](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements)에 부합됩니다.
+- 리소스가 속한 리소스 그룹에서 **독자** 이상의 역할이 있어야 합니다.
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>Azure Monitor로 진단 설정
 
-1. Customer Insights **시스템** > **진단** 을 선택하여 이 인스턴스에 구성된 진단 대상을 봅니다.
+1. Customer Insights에서 **관리** > **시스템** 으로 이동하고 **진단** 탭을 선택합니다.
 
 1. **대상 추가** 를 선택합니다.
 
-   > [!div class="mx-imgBorder"]
-   > ![진단 연결](media/diagnostics-pane.png "진단 연결")
+   :::image type="content" source="media/diagnostics-pane.png" alt-text="진단 연결.":::
 
 1. **진단 대상 이름** 필드에 이름을 입력하십시오.
 
-1. 대상 리소스가 있는 Azure 구독의 **테넌트** 를 선택하고 **로그인** 을 선택합니다.
-
 1. **리소스 유형**(스토리지 계정, 이벤트 허브 또는 로그 분석)을 선택합니다.
 
-1. 대상 리소스의 **구독** 을 선택합니다.
+1. **구독**, **리소스 그룹**, 대상 리소스에 해당하는 **리소스** 를 선택합니다. [대상 리소스에 대한 구성](#configuration-on-the-destination-resource)에서 권한 및 로그 정보를 확인합니다.
 
-1. 대상 리소스의 **리소스 그룹** 을 선택합니다.
-
-1. **리소스** 를 선택합니다.
-
-1. **데이터 프라이버시 및 규정 준수** 선언문을 확인합니다.
+1. [데이터 개인 정보 보호 및 규정 준수](connections.md#data-privacy-and-compliance)를 검토하고 **동의함** 을 선택합니다.
 
 1. **시스템에 연결** 을 선택하여 대상 리소스에 연결합니다. API가 사용 중이고 이벤트를 생성하는 경우 로그는 15분 후에 대상에 표시되기 시작합니다.
 
-### <a name="remove-a-destination"></a>대상 제거
-
-1. **시스템** > **진단** 으로 이동합니다.
-
-1. 목록에서 진단 대상을 선택합니다.
-
-1. **작업** 열에서 **삭제** 아이콘을 선택합니다.
-
-1. 삭제를 확인하여 로그 전달을 중지합니다. Azure 구독의 리소스는 삭제되지 않습니다. **작업** 열의 링크를 선택하여 선택한 리소스에 대한 Azure Portal을 열고 그곳에서 삭제할 수 있습니다.
-
-## <a name="log-categories-and-event-schemas"></a>로그 카테고리 및 이벤트 스키마
-
-현재 [API 이벤트](apis.md) 및 워크플로 이벤트가 지원되며 다음 범주 및 스키마가 적용됩니다.
-로그 스키마는 [Azure Monitor 공통 스키마](/azure/azure-monitor/platform/resource-logs-schema#top-level-common-schema)를 따릅니다.
-
-### <a name="categories"></a>카테고리
-
-Customer Insights는 두 가지 범주를 제공합니다.
-
-- **감사 이벤트**: [API 이벤트](#api-event-schema). 서비스의 구성 변경 사항을 추적합니다. `POST|PUT|DELETE|PATCH` 작업이 이 범주에 속합니다.
-- **운영 이벤트**: 서비스를 사용하는 동안 생성된 [API 이벤트](#api-event-schema) 또는 [워크플로 이벤트](#workflow-event-schema)  예를 들어, `GET` 요청 또는 워크플로의 실행 이벤트.
-
 ## <a name="configuration-on-the-destination-resource"></a>대상 리소스에 대한 구성
 
-리소스 유형에 대한 선택에 따라 다음 단계가 자동으로 적용됩니다.
+리소스 유형에 대한 선택에 따라 다음과 같은 변경 사항이 자동으로 발생합니다.
 
 ### <a name="storage-account"></a>Storage account
 
@@ -116,9 +85,34 @@ Customer Insights 서비스 주체는 리소스에 대해 **로그 분석 기여
 
 **쿼리** 창 아래에서 **감사** 솔루션을 확장하고 `CIEvents`를 검색하여 제공된 예제 쿼리를 찾습니다.
 
+## <a name="remove-a-diagnostics-destination"></a>진단 대상 제거
+
+1. **관리자** > **시스템** 으로 이동하여 **진단** 탭을 선택합니다.
+
+1. 목록에서 진단 대상을 선택합니다.
+
+   > [!TIP]
+   > 대상을 제거하면 로그 전달이 중지되지만 Azure 구독 기반 리소스는 삭제되지 않습니다. Azure의 리소스를 삭제하려면 **작업** 열의 링크를 선택하여 선택한 리소스에 대한 Azure Portal을 열고 거기서 삭제합니다. 그런 다음 진단 대상을 삭제합니다.
+
+1. **작업** 열에서 **삭제** 아이콘을 선택합니다.
+
+1. 삭제를 확인하여 대상을 제거하고 로그 전달을 중지합니다.
+
+## <a name="log-categories-and-event-schemas"></a>로그 카테고리 및 이벤트 스키마
+
+현재 [API 이벤트](apis.md) 및 워크플로 이벤트가 지원되며 다음 범주 및 스키마가 적용됩니다.
+로그 스키마는 [Azure Monitor 공통 스키마](/azure/azure-monitor/platform/resource-logs-schema#top-level-common-schema)를 따릅니다.
+
+### <a name="categories"></a>카테고리
+
+Customer Insights는 두 가지 범주를 제공합니다.
+
+- **감사 이벤트**: [API 이벤트](#api-event-schema). 서비스의 구성 변경 사항을 추적합니다. `POST|PUT|DELETE|PATCH` 작업이 이 범주에 속합니다.
+- **운영 이벤트**: 서비스를 사용하는 동안 생성된 [API 이벤트](#api-event-schema) 또는 [워크플로 이벤트](#workflow-event-schema)  예를 들어, `GET` 요청 또는 워크플로의 실행 이벤트.
+
 ## <a name="event-schemas"></a>이벤트 스키마
 
-API 이벤트와 워크플로 이벤트는 구조가 같습니다. 다른 세부 사항은 [API 이벤트 스키마](#api-event-schema) 또는 [워크플로 이벤트 스키마](#workflow-event-schema)를 참조하세요.
+API 이벤트와 워크플로 이벤트는 구조가 같지만 몇 가지 차이점이 있습니다. 자세한 내용은 [API 이벤트 스키마](#api-event-schema) 또는 [워크플로 이벤트 스키마](#workflow-event-schema)를 참조하세요.
 
 ### <a name="api-event-schema"></a>API 이벤트 스키마
 
@@ -220,7 +214,6 @@ API 이벤트와 워크플로 이벤트는 구조가 같습니다. 다른 세부
 | `durationMs`    | Long      | 선택 항목          | 작업 기간(밀리초)입니다.                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | String    | 선택 항목          | 특정 이벤트 범주에 대한 더 많은 속성이 있는 JSON 객체.                                                                                        | [워크플로 속성](#workflow-properties-schema) 하위 섹션을 참조하세요.                                                                                                       |
 | `level`         | String    | 필수 항목          | 이벤트의 심각도 수준입니다.                                                                                                                                  | `Informational`, `Warning` 또는 `Error`                                                                                                                                   |
-|                 |
 
 #### <a name="workflow-properties-schema"></a>워크플로 속성 스키마
 
@@ -247,3 +240,5 @@ API 이벤트와 워크플로 이벤트는 구조가 같습니다. 다른 세부
 | `properties.additionalInfo.AffectedEntities` | 없음       | 네  | 선택 사항. OperationType `Export` 전용. 내보내기에 구성된 엔터티 목록이 포함되어 있습니다.                                                                                                                                                            |
 | `properties.additionalInfo.MessageCode`      | 없음       | 네  | 선택 사항. OperationType `Export` 전용. 내보내기에 대한 자세한 메시지입니다.                                                                                                                                                                                 |
 | `properties.additionalInfo.entityCount`      | 없음       | 네  | 선택 사항. OperationType `Segmentation` 전용. 세그먼트에 있는 총 구성원 수를 나타냅니다.                                                                                                                                                    |
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

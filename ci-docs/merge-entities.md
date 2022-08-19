@@ -14,12 +14,12 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 4a19b753e7a5979fe72d7e96bc4452d7795c2d48
-ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.openlocfilehash: a6f29c4985ee274207d122fb1bd76d97b98613b6
+ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9139665"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "9213590"
 ---
 # <a name="unify-customer-fields-for-data-unification"></a>데이터 통합을 위한 고객 필드 통합
 
@@ -58,6 +58,9 @@ ms.locfileid: "9139665"
 
 1. 다음 세 가지 옵션 중 하나에서 필드를 결합하거나 병합하는 방법을 지정합니다.
     - **중요도**: 참여 필드에 대해 지정된 중요도 순위를 기반으로 승자 값을 식별합니다. 기본 병합 옵션입니다. **위/아래로 이동** 을 선택하여 중요도 순위를 설정합니다.
+
+      > [!NOTE]
+      > Customer Insights는 첫 non-null 값을 사용합니다. 예를 들어 엔터티 A, B, C가 순서대로 순위가 매겨진 경우 A.Name 및 B.Name가 null이면 C.Name의 값이 사용됩니다.
 
       :::image type="content" source="media/importance-merge-option.png" alt-text="병합 필드의 중요도 옵션 대화 상자.":::
 

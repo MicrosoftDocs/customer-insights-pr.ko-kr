@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 6b6daab480db5e37830ff58b71dcdd3bbdbe46da
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 0c2a900190b4ab6e93098d05a2fd66bcd2b847fd
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9053888"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245887"
 ---
 # <a name="data-enrichment-preview-overview"></a>데이터 보강(프리뷰) 개요
 
@@ -76,7 +76,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 - 고객 프로필의 수가 보강된 강화 세부 사항 **보기**.
 - 강화 구성 **편집**.
 - 보강을 [**실행**](#run-or-refresh-enrichments)하여 최신 데이터로 고객 프로필을 업데이트합니다. 목록에서 선택하여 한 번에 여러 보강을 실행합니다.
-- 보강을 **활성화** 또는 **비활성화** 합니다. 비활성 보강은 [예약된 새로 고침](system.md#schedule-tab) 중에 새로 고쳐지지 않습니다.
+- 보강을 **활성화** 또는 **비활성화** 합니다. 비활성 보강은 [예약된 새로 고침](schedule-refresh.md) 중에 새로 고쳐지지 않습니다.
 - 보강을 **삭제** 합니다.
 
 보강에서 [세그먼트](segments.md) 또는 [측정값](measures.md)을 생성할 수도 있습니다.
@@ -85,7 +85,7 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 
 보강을 실행하면 자동 일정에 따라 새로 고치거나 요청 시 수동으로 새로 고칠 수 있습니다.
 
-1. 하나 이상의 보강을 수동으로 새로 고치려면 선택하고 **실행** 을 선택합니다. [자동 새로 고침을 예약](system.md#schedule-tab)하려면 **관리** > **시스템** > **예약** 으로 이동합니다. 처리 시간은 고객 데이터의 크기에 따라 다릅니다.
+1. 하나 이상의 보강을 수동으로 새로 고치려면 선택하고 **실행** 을 선택합니다. [자동 새로 고침을 예약](schedule-refresh.md)하려면 **관리** > **시스템** > **예약** 으로 이동합니다. 처리 시간은 고객 데이터의 크기에 따라 다릅니다.
 
 1. 선택적으로 [보강 프로세스의 진행 상황을 확인합니다](#see-the-progress-of-the-enrichment-process).
 
@@ -102,6 +102,8 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 고
 1. **진행 세부 정보** 창에서 **보강** 섹션을 확장합니다.
 1. 진행 상황을 확인하려는 보강 아래에서 **세부 정보 보기** 를 선택합니다.
 1. **작업 세부 정보** 창에서 **세부 정보 표시** 를 선택하여 보강 및 해당 상태 업데이트와 관련된 프로세스를 확인합니다.
+
+[!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
 ## <a name="view-enrichment-results"></a>강화 결과 보기
 

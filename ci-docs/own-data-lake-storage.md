@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
 ms.reviewer: mhart
-ms.openlocfilehash: 5acb58906c1a9db54337f3b4dc2ab7891db7954e
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: d2ff49c324c5c5c28213f362ff330d441fcb6052
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011941"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246209"
 ---
 # <a name="use-your-own-azure-data-lake-storage-gen2-account"></a>자신의 Azure Data Lake Storage Gen2 계정 사용
 
@@ -37,7 +37,7 @@ Customer Insights의 관리자는 프로세스 중에 [환경 생성](create-env
 1. **스토리지 연결** 방법을 선택합니다. 인증을 위해 리소스 기반 옵션과 구독 기반 옵션 중에서 선택할 수 있습니다. 자세한 내용은 [Azure 서비스 주체를 사용하여 Azure Data Lake Storage 계정에 연결](connect-service-principal.md)을 참조하십시오.
    - **Azure 구독** 의 경우 `customerinsights` 컨테이너가 포함된 **구독**, **리소스 그룹** 및 **스토리지 계정** 을 선택합니다.
    - **계정 키** 의 경우 Data Lake Storage 계정에 대해 **계정 이름** 및 **계정 키** 를 제공합니다. 이 인증 방법을 사용하면 조직에서 키를 교체할 경우 알림을 받게 됩니다. 회전할 때 새 키로 [환경 구성을 업데이트](manage-environments.md#edit-an-existing-environment)해야 합니다.
-1. Azure Private Link를 사용하여 스토리지 계정에 연결하고 2단계 프로세스를 통해 [프라이빗 링크에 대한 연결을 생성](security-overview.md#private-links-tab)할지 여부를 선택합니다.
+1. Azure Private Link를 사용하여 스토리지 계정에 연결하고 2단계 프로세스를 통해 [프라이빗 링크에 대한 연결을 생성](security-overview.md#set-up-an-azure-private-link)할지 여부를 선택합니다.
 
 데이터 수집과 같은 시스템 프로세스가 완료되면 시스템은 스토리지 계정에 해당 폴더를 만듭니다. 데이터 파일과 *model.json* 파일이 생성되어 프로세스 이름을 기반으로 폴더에 추가됩니다.
 

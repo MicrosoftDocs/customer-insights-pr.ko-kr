@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 33c8910b7a4dd8723c0d62f2e28228cd2d8df4b7
-ms.sourcegitcommit: 5716025eb4828425ca237377b02a892de8689f4a
+ms.openlocfilehash: 875cbbd095dfd239ab83c1c80db28ea7c0a04ed0
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "9142827"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245565"
 ---
 # <a name="how-to-create-a-new-environment"></a>방법: 새 환경 만들기
 
@@ -48,7 +48,7 @@ ms.locfileid: "9142827"
 
 다음 정보를 제공합니다.
 
-- **이름**: 이 환경의 이름입니다. 기존 환경에서 복사한 경우 이 필드가 이미 채워져 있지만 변경할 수 있습니다.
+- **이름**: 이 환경의 이름입니다. 기존 환경에서 복사한 경우 이 필드가 이미 채워져 있지만 변경할 수 있습니다. 둘 이상의 작업 환경이 있는 경우 쉽게 식별할 수 있는 이름을 각각 제공합니다.
 - **비즈니스 선택**: 새로운 환경의 주요 대상 그룹을 선택합니다. 개별 소비자(B-to-C) 또는 [1비즈니스 계정](work-with-business-accounts.md)(B-to-B)으로 작업할 수 있습니다. 조직에서 소매업체나 커피숍과 같이 주로 개인과 비즈니스를 수행하는 경우 개별 소비자를 선택합니다. 주요 대상 그룹이 자동차 제조업체 또는 제지 회사와 같은 다른 회사인 경우 비즈니스 계정을 선택하십시오.
 - **유형**: 프로덕션 환경을 만들지 샌드박스 환경을 만들지 선택합니다. 샌드박스 환경은 예약된 데이터 새로 고침을 허용하지 않으며 사전 구현 및 테스트를 위한 것입니다. 샌드박스 환경은 현재 선택된 프로덕션 환경과 동일한 기본 대상을 사용합니다.
 - **지역**: 서비스가 배포되고 호스팅되는 지역입니다. [자신의 Azure Data Lake Storage 계정을 사용](own-data-lake-storage.md)하거나 [기존 Microsoft Dataverse 조직에 연결](customer-insights-dataverse.md)하려면 Customer Insights 환경이 동일한 지역에 있어야 합니다.

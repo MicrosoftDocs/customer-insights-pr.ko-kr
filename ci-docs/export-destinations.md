@@ -12,12 +12,12 @@ searchScope:
 - ci-export
 - ci-connections
 - customerInsights
-ms.openlocfilehash: a70aadda4fc0eff3ddb4c89665506762613c291a
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fd234aff9021ded76d8226bf2f15e035cf75e7db
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9194976"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245335"
 ---
 # <a name="exports-preview-overview"></a>내보내기(프리뷰) 개요
 
@@ -79,7 +79,7 @@ ms.locfileid: "9194976"
 
 ## <a name="schedule-and-run-exports"></a>내보내기 예약 및 실행
 
-구성하는 각 내보내기에는 새로 고침 일정이 있습니다. 새로 고치는 동안 시스템은 내보내기에 포함할 새 데이터 또는 업데이트된 데이터를 찾습니다. 기본적으로 내보내기는 모든 [예약된 시스템 새로 고침](system.md#schedule-tab)의 일부로 실행됩니다. 새로 고침 일정을 사용자 지정하거나 해제하여 수동으로 내보내기를 실행할 수 있습니다.
+구성하는 각 내보내기에는 새로 고침 일정이 있습니다. 새로 고치는 동안 시스템은 내보내기에 포함할 새 데이터 또는 업데이트된 데이터를 찾습니다. 기본적으로 내보내기는 모든 [예약된 시스템 새로 고침](schedule-refresh.md)의 일부로 실행됩니다. 새로 고침 일정을 사용자 지정하거나 해제하여 수동으로 내보내기를 실행할 수 있습니다.
 
 내보내기 일정은 환경 상태에 따라 다릅니다. 예약된 내보내기가 시작되어야 할 때 [종속성](system.md#refresh-processes)에 진행 중인 업데이트가 있는 경우 시스템은 먼저 업데이트를 완료한 다음 내보내기를 실행합니다. **새로 고침** 열에는 내보내기가 마지막으로 새로 고침된 시점이 표시됩니다.
 

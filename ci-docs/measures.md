@@ -14,12 +14,12 @@ searchScope:
 - ci-measure-template
 - ci-enrichment-details
 - customerInsights
-ms.openlocfilehash: ead57ccbdcaf9f86ee54d1f15de71a63f2e1081b
-ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
+ms.openlocfilehash: 99368a7ab2e8d7b3e53c04fbf25bb23bd2e550a9
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9170828"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245381"
 ---
 # <a name="measures-overview"></a>측정값 개요
 
@@ -53,7 +53,7 @@ ms.locfileid: "9170828"
 - 측정값을 **편집** 하여 속성을 변경합니다.
 - 측정값을 **새로 고침** 하여 최신 데이터를 포함합니다.
 - 측정 **이름 바꾸기** 를 수행합니다.
-- 측정값을 **활성화** 또는 **비활성화** 합니다. [예약된 새로 고침](system.md#schedule-tab) 중에는 비활성 측정값을 새로 고침하지 않으며 **상태** 가 **건너뜀** 으로 나열되어 있으면 새로 고침이 시도되지 않았음을 나타냅니다.
+- 측정값을 **활성화** 또는 **비활성화** 합니다. [예약된 새로 고침](schedule-refresh.md) 중에는 비활성 측정값을 새로 고침하지 않으며 **상태** 가 **건너뜀** 으로 나열되어 있으면 새로 고침이 시도되지 않았음을 나타냅니다.
 - **태그** 하여 측정값용 [태그를 관리](work-with-tags-columns.md#manage-tags)합니다.
 - 측정을 **삭제** 합니다.
 - **열**: 표시되는 [열을 사용자 지정](work-with-tags-columns.md#customize-columns)합니다.
@@ -62,7 +62,7 @@ ms.locfileid: "9170828"
 
 ## <a name="refresh-measures"></a>측정값 새로 고침
 
-측정값은 자동 예약에 따라 새로 고쳐지거나 필요에 따라 수동으로 새로 고칠 수 있습니다. 하나 이상의 측정값을 수동으로 새로 고치려면 측정값을 선택하고 **새로 고침** 을 실행합니다. [자동 새로 고침을 예약](system.md#schedule-tab)하려면 **관리** > **시스템** > **예약** 으로 이동합니다.
+측정값은 자동 예약에 따라 새로 고쳐지거나 필요에 따라 수동으로 새로 고칠 수 있습니다. 하나 이상의 측정값을 수동으로 새로 고치려면 측정값을 선택하고 **새로 고침** 을 실행합니다. [자동 새로 고침을 예약](schedule-refresh.md)하려면 **관리** > **시스템** > **예약** 으로 이동합니다.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

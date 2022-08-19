@@ -1,19 +1,19 @@
 ---
 title: Experian 인구 통계로 고객 프로필을 보강하십시오.(프리뷰)
 description: Experian 제3자 보강에 대한 일반 정보.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 876853ab42e8c08ad1abacb8d8a205c0aadabcf7
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fccb37cde3f05a70009c18b6c52db01a5ede094d
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195944"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9238004"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Experian 인구 통계로 고객 프로필을 보강하십시오.(프리뷰)
 
@@ -41,13 +41,9 @@ Customer Insights의 [관리자](permissions.md#admin)여야 하며 Experian 사
 
 1. 연결 이름과 Experian Secure Transport 계정의 유효한 사용자 ID, 당사자 ID 및 모델 번호를 입력합니다.
 
-1. [데이터 개인 정보 보호 및 규정 준수](#data-privacy-and-compliance)를 검토하고 **동의함** 을 선택하여 동의를 제공합니다.
+1. [데이터 개인 정보 보호 및 규정 준수](connections.md#data-privacy-and-compliance)를 검토하고 **동의함** 을 선택합니다.
 
 1. **확인** 을 선택하여 구성을 확인한 다음 **저장** 을 선택합니다.
-
-### <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수
-
-Experian에 데이터를 전송하기 위해 Dynamics 365 Customer Insights를 활성화할 때 개인 데이터와 같이 잠재적으로 민감한 데이터를 비롯하여 Dynamics 365 Customer Insights의 준수 경계를 벗어난 데이터 전송을 허용합니다. Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만 귀하는 Experian이 귀하가 가질 수 있는 모든 개인 정보 보호 또는 보안 의무를 충족하도록 해야 합니다. 자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)를 참조하세요. Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하지 않도록 이 보강을 언제든지 제거할 수 있습니다.
 
 ## <a name="configure-the-enrichment"></a>보강 구성
 

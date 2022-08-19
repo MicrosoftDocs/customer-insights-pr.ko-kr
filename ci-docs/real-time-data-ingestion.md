@@ -11,18 +11,18 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 403cc9dbd3bddcf67f59b5cb0be936af4d268fc2
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 2652e0868f5cc514ab6df9c150a9183cf95ae589
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195666"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246116"
 ---
 # <a name="real-time-data-ingestion-preview"></a>실시간 데이터 수집(미리 보기)
 
 거의 실시간 기능을 통해 고객이 제품 또는 서비스와 수행한 최신 상호 작용을 몇 초 안에 볼 수 있습니다.
 
-[예약된 새로 고침](system.md#schedule-tab)에는 많은 수의 레코드와 여러 가지 복잡한 작업이 포함됩니다. 먼저 데이터 원본에서 데이터를 가져옵니다. 그런 다음 데이터가 통합된 후 데이터는 추가 정보로 보강됩니다. 이 프로세스를 실행할 때마다 몇 분에서 몇 시간이 걸릴 수 있습니다.
+[예약된 새로 고침](schedule-refresh.md)에는 많은 수의 레코드와 여러 가지 복잡한 작업이 포함됩니다. 먼저 데이터 원본에서 데이터를 가져옵니다. 그런 다음 데이터가 통합된 후 데이터는 추가 정보로 보강됩니다. 이 프로세스를 실행할 때마다 몇 분에서 몇 시간이 걸릴 수 있습니다.
 
 실시간 기능은 이후에 예약된 새로 고침이 데이터 원본에서이 데이터를 가져올 때까지 즉시 사용할 데이터를 제공합니다.
 
@@ -85,7 +85,7 @@ ms.locfileid: "9195666"
 
 ## <a name="understand-your-real-time-usage-with-telemetry"></a>원격 분석으로 실시간 사용 이해
 
-실시간 API에 대한 요청의 양에 대한 개요와 시스템에서 발생할 수 있는 문제에 대한 정보를 가져옵니다. [실시간 원격 분석에 액세스](system.md#api-usage-tab)할 수 있습니다. 
+실시간 API에 대한 요청의 양에 대한 개요와 시스템에서 발생할 수 있는 문제에 대한 정보를 가져옵니다. [실시간 원격 분석에 액세스](system.md#view-api-usage)할 수 있습니다. 
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

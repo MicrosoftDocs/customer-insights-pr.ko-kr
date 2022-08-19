@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 6ab97c535454e84c1bb18aca00bca2568eb65a2a
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 591353bf1ba2f9ca05ddd137e1cf29dc0b0fba97
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207099"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245657"
 ---
 # <a name="data-sources-overview"></a>데이터 원본 개요
 
@@ -67,7 +67,7 @@ Microsoft의 Azure 데이터 서비스 중 하나에서 준비된 데이터가 �
 
 데이터 원본은 자동 일정에 따라 새로 고쳐 지거나 필요에 따라 수동으로 새로 고칠 수 있습니다. [온-프레미스 데이터 원본](connect-power-query.md#add-data-from-on-premises-data-sources)은 데이터 수집 중에 설정된 자체 일정에 따라 새로 고쳐집니다. 연결된 데이터 원본의 경우 데이터 수집은 해당 데이터 원본에서 사용 가능한 최신 데이터를 사용합니다.
 
-**관리** > **시스템** > [**일정**](system.md#schedule-tab)으로 이동하여 수집된 데이터 원본의 시스템 예약 새로 고침을 구성합니다.
+**관리** > **시스템** > [**일정**](schedule-refresh.md)으로 이동하여 수집된 데이터 원본의 시스템 예약 새로 고침을 구성합니다.
 
 필요에 따라 데이터 원본을 새로 고침하려면 다음을 따르세요.
 

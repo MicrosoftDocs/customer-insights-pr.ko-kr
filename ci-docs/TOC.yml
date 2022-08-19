@@ -284,18 +284,20 @@
       href: connect-service-principal.md
 - name: 관리
   items:
-    - name: 시스템 구성 설정
-      href: system.md
-    - name: 보안 설정 구성
-      href: security-overview.md
     - name: 사용자 권한 할당
       href: permissions.md
     - name: Key Vault 직접 가져오기
       href: use-azure-key-vault.md
+    - name: 보안 설정 구성
+      href: security-overview.md
     - name: 진단 로그 내보내기
       href: diagnostics.md
-    - name: 연결 개요
+    - name: 연결 관리
       href: connections.md
+    - name: 시스템 새로 고침 예약
+      href: schedule-refresh.md
+    - name: 시스템 구성 보기
+      href: system.md
 - name: API
   items:
     - name: API에 대한 작업

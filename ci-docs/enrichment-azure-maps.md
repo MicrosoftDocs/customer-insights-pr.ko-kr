@@ -1,19 +1,19 @@
 ---
 title: Azure Maps의 위치 데이터로 고객 프로필 보강(프리뷰)
 description: Azure Maps 자사 보강에 대한 일반 정보.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f14b4fc20a9a1d8842f42f9e0e656b3d8dcddcf4
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052615"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9238050"
 ---
 # <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>Azure Maps의 위치 데이터로 고객 프로필 보강(프리뷰)
 
@@ -35,14 +35,9 @@ Customer Insights의 [관리자](permissions.md#admin)여야 하며 활성 Azure
 
 1. 연결 이름과 유효한 Azure Maps API 키를 입력합니다.
 
-1. [데이터 개인 정보 보호 및 규정 준수](#data-privacy-and-compliance)를 검토하고 **동의함** 을 선택하여 동의를 제공합니다.
+1. [데이터 개인 정보 보호 및 규정 준수](connections.md#data-privacy-and-compliance)를 검토하고 **동의함** 을 선택합니다.
 
 1. **확인** 을 선택하여 구성을 확인한 다음 **저장** 을 선택합니다.
-
-### <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수
-
-Azure Maps에 데이터를 전송하기 위해 Dynamics 365 Customer Insights를 활성화할 때 개인 데이터와 같이 잠재적으로 민감한 데이터를 비롯하여 Dynamics 365 Customer Insights의 준수 경계를 벗어난 데이터 전송을 허용합니다. Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만 귀하는 귀하가 가질 수 있는 모든 개인 정보 보호 또는 보안 의무를 Azure Maps가 충족하는지 확인할 책임이 있습니다. 자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)을 참고하십시오.
-Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하지 않도록 이 보강을 언제든지 제거할 수 있습니다.
 
 ## <a name="configure-the-enrichment"></a>보강 구성
 

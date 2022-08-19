@@ -2,7 +2,7 @@
 title: 데이터를 통합하기 전에 중복 제거
 description: 통합 프로세스의 두 번째 단계는 중복이 발견될 때 보관할 레코드를 선택하는 것입니다.
 recommendations: false
-ms.date: 04/22/2022
+ms.date: 08/01/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
@@ -13,16 +13,25 @@ searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: a838fbdabdb3bfffc6d3835a3f0e97306a43964a
-ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.openlocfilehash: 7f4829cfc14af623f724c6594e834f3fac1c15a9
+ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9139437"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "9213635"
 ---
 # <a name="remove-duplicates-before-unifying-data"></a>데이터를 통합하기 전에 중복 제거
 
-통합의 이 단계에서는 선택적으로 엔터티 내에서 중복 레코드를 처리하기 위한 규칙을 설정할 수 있습니다. *중복 제거* 는 중복 레코드를 식별하여 하나의 레코드로 병합합니다. 원본 레코드는 대체 ID를 사용하여 병합된 레코드에 연결됩니다. 규칙이 구성되지 않은 경우 시스템 정의 규칙이 적용됩니다.
+이 옵션 단계에서는 엔터티 **내** 에서 중복 레코드를 제거하기 위한 규칙을 설정할 수 있습니다. 중복 제거를 통해 고객에 대한 여러 레코드를 식별하고 유지할 최상의 레코드를 선택하거나(기본 병합 환경 설정에 따라) 레코드를 하나로 병합합니다(고급 병합 환경 설정에 따라). 원본 레코드는 대체 ID를 사용하여 병합된 레코드에 연결됩니다. 규칙이 구성되지 않은 경우 시스템 정의 규칙이 적용됩니다.
+
+## <a name="default-deduplication"></a>기본 중복 제거
+
+중복 제거 규칙이 추가되지 않은 경우 시스템 정의 규칙이 적용됩니다.
+
+- 기본 키는 중복 제거됩니다.
+  동일한 기본 키를 가진 모든 레코드의 경우 **가장 많이 채워진** 레코드(null 값이 가장 적은 레코드)가 우선 적용됩니다.
+- 모든 교차 엔터티 일치 규칙이 해당 엔터티에 적용됩니다.
+  예: 일치 단계에서 엔터티 A가 *FullName* 과 *DateofBirth* 기반의 엔터티 B와 일치하면 *FullName* 과 *DateofBirth* 에 따라 엔터티 A도 중복 제거됩니다. *FullName* 과 *DateofBirth* 는 엔터티 A의 고객을 식별하는 유효 키이지만 이러한 키는 엔터티 A의 중복 고객을 식별하는 데에도 유효합니다.
 
 ## <a name="include-enriched-entities-preview"></a>보강된 엔터티 포함(프리뷰)
 

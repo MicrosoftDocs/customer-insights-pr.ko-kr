@@ -8,12 +8,12 @@ ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: a180f6462452d9830d0daa150a35a9d0acad925a
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 42abfb305efaccaeef48e32f2cc69f3d36fbe73d
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081574"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245473"
 ---
 # <a name="manage-predictions"></a>예측 관리
 
@@ -58,7 +58,7 @@ ms.locfileid: "9081574"
 
 ## <a name="refresh-a-prediction"></a>예측 새로 고침
 
-예측은 설정에서 구성된 대로 [데이터 새로 고침 예약](system.md#schedule-tab)에 자동으로 동일하게 갱신됩니다. 수동으로도 새로 고칠 수 있습니다.
+예측은 설정에서 구성된 대로 [데이터 새로 고침 예약](schedule-refresh.md)에 자동으로 동일하게 갱신됩니다. 수동으로도 새로 고칠 수 있습니다.
 
 1. **인텔리전스** > **예측** 으로 이동하고 **내 예측** 탭을 선택합니다.
 

@@ -1,19 +1,19 @@
 ---
 title: HERE Technologies로 고객 프로필 보강(프리뷰)
 description: HERE Technologies 타사 보강에 대한 일반 정보입니다.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 26de9fce863c9832b70adf3ce39cb2ae0ce43d0e
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 86a070342193dd7afda38823d90f4bd28c8b862e
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196264"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237866"
 ---
 # <a name="enrich-customer-profiles-with-here-technologies-preview"></a>HERE Technologies로 고객 프로필 보강(프리뷰)
 
@@ -33,16 +33,11 @@ Customer Insights의 [관리자](permissions.md#admin)여야 하며 활성 HERE 
 
 1. 연결 이름과 유효한 HERE Technologies API 키를 입력합니다.
 
-1. [데이터 개인 정보 보호 및 규정 준수](#data-privacy-and-compliance)를 검토하고 **동의함** 을 선택하여 동의를 제공합니다.
+1. [데이터 개인 정보 보호 및 규정 준수](connections.md#data-privacy-and-compliance)를 검토하고 **동의함** 을 선택합니다.
 
 1. **확인** 을 선택하여 구성을 확인한 다음 **저장** 을 선택합니다.
 
    :::image type="content" source="media/enrichment-HERE-connection.png" alt-text="HERE technologies 연결 구성 페이지.":::
-
-### <a name="data-privacy-and-compliance"></a>데이터 프라이버시 및 규정 준수
-
-Dynamics 365 Customer Insights를 사용하여 HERE Technologies로 데이터를 전송하는 경우 Dynamics 365 Customer Insights 규정 준수 경계 외부로 개인 데이터와 같이 잠재적으로 민감한 데이터 등의 데이터를 전송할 수 있습니다. Microsoft는 귀하의 지시에 따라 이러한 데이터를 전송하지만 HERE Technologies가 귀하가 가질 수 있는 모든 개인 정보 보호 또는 보안 의무를 충족하도록 할 책임은 귀하에게 있습니다. 자세한 내용은 [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?linkid=396732)를 참조하세요.
-Dynamics 365 Customer Insights 관리자는 이 기능을 더 이상 사용하지 않도록 이 보강을 언제든지 제거할 수 있습니다.
 
 ## <a name="configure-the-enrichment"></a>보강 구성
 

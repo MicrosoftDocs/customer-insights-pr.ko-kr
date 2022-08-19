@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: e071bf9364b44a92d81c9ff2269ff4e8654010aa
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: b237c291bb4dd22ca22ab2cdd8b6293490aa83e1
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207007"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245841"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>Azure Data Lake Storage에서 데이터에 연결
 
@@ -56,8 +56,8 @@ Azure Data Lake Storage Gen2 계정을 사용하여 Dynamics 365 Customer Insigh
 
 1. **다음을 사용하여 스토리지 연결** 에 대해 다음 옵션 중 하나를 선택합니다. 자세한 내용은 [Azure 서비스 주체를 사용하여 Azure Data Lake Storage Gen2 계정에 Customer Insights 연결](connect-service-principal.md)을 참조하세요.
 
-   - **Azure 리소스**: **리소스 ID** 를 입력합니다. 선택적으로 Azure Private Link를 통해 스토리지 계정에서 데이터를 수집하려는 경우 **프라이빗 링크 사용** 을 선택합니다. 자세한 내용은 [프라이빗 링크](security-overview.md#private-links-tab)를 참조하세요.
-   - **Azure 구독**: **구독** 을 선택한 다음 **리소스 그룹** 및 **스토리지 계정** 을 선택합니다. 선택적으로 Azure Private Link를 통해 스토리지 계정에서 데이터를 수집하려는 경우 **프라이빗 링크 사용** 을 선택합니다. 자세한 내용은 [프라이빗 링크](security-overview.md#private-links-tab)를 참조하세요.
+   - **Azure 리소스**: **리소스 ID** 를 입력합니다. 선택적으로 Azure Private Link를 통해 스토리지 계정에서 데이터를 수집하려는 경우 **프라이빗 링크 사용** 을 선택합니다. 자세한 내용은 [프라이빗 링크](security-overview.md#set-up-an-azure-private-link)를 참조하세요.
+   - **Azure 구독**: **구독** 을 선택한 다음 **리소스 그룹** 및 **스토리지 계정** 을 선택합니다. 선택적으로 Azure Private Link를 통해 스토리지 계정에서 데이터를 수집하려는 경우 **프라이빗 링크 사용** 을 선택합니다. 자세한 내용은 [프라이빗 링크](security-overview.md#set-up-an-azure-private-link)를 참조하세요.
   
    > [!NOTE]
    > 데이터 원본을 만들려면 컨테이너 또는 스토리지 계정에 대해 다음 역할 중 하나가 필요합니다.
@@ -176,7 +176,7 @@ Azure Data Lake Storage Gen2 계정을 사용하여 Dynamics 365 Customer Insigh
         > - 스토리지 Blob 데이터 담당자
         > - Storage Blob 데이터 Contributor
 
-   - Azure Private Link를 통해 스토리지 계정에서 데이터를 수집하려는 경우 **프라이빗 링크를 사용하도록 설정** 합니다. 자세한 내용은 [프라이빗 링크](security-overview.md#private-links-tab)를 참조하세요.
+   - Azure Private Link를 통해 스토리지 계정에서 데이터를 수집하려는 경우 **프라이빗 링크를 사용하도록 설정** 합니다. 자세한 내용은 [프라이빗 링크](security-overview.md#set-up-an-azure-private-link)를 참조하세요.
 
 1. **다음** 을 선택합니다.
 1. 다음 중 하나를 변경합니다.

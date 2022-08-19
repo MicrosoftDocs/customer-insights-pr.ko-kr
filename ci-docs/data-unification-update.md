@@ -13,12 +13,12 @@ searchScope:
 - ci-merge
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 1af7f018abd412c833ff22b3880f0e4508ff4953
-ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.openlocfilehash: a7cf06c07e4b95b848a55dfe5fe0b09397fe744e
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9139619"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245602"
 ---
 # <a name="update-the-unification-settings"></a>통합 설정 업데이트
 
@@ -42,7 +42,7 @@ ms.locfileid: "9139619"
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="통합 옵션이 강조 표시된 데이터 통합 페이지의 스크린샷.":::
 
    - [일치하는 조건을 실행](#run-matching-conditions)하여 통합 프로필을 업데이트하지 않고도 일치 조건(중복 제거 및 일치 규칙)의 품질을 빠르게 평가할 수 있습니다. **일치하는 조건만 실행** 옵션은 단일 엔터티에 대해 표시되지 않습니다.
-   - [고객 프로필을 통합](#run-updates-to-the-unified-customer-profile)하여 일치 조건을 실행하고 종속성(예: 보강, 세그먼트 또는 측정값)에 영향을 주지 않고 Unified Customer Profiles 엔터티를 업데이트합니다. 종속 프로세스는 실행되지 않지만 [새로 고침 일정에 정의](system.md#schedule-tab)에 따라 새로 고쳐집니다.
+   - [고객 프로필을 통합](#run-updates-to-the-unified-customer-profile)하여 일치 조건을 실행하고 종속성(예: 보강, 세그먼트 또는 측정값)에 영향을 주지 않고 Unified Customer Profiles 엔터티를 업데이트합니다. 종속 프로세스는 실행되지 않지만 [새로 고침 일정에 정의](schedule-refresh.md)에 따라 새로 고쳐집니다.
    - [고객 프로필 및 종속성을 통합](#run-updates-to-the-unified-customer-profile)하여 일치 조건을 실행하고 Unified Customer Profiles 엔터티 및 모든 종속성(예: 보강, 세그먼트 또는 측정값)을 업데이트합니다. 모든 프로세스는 자동으로 다시 실행됩니다.
 
 ## <a name="edit-source-fields"></a>원본 필드 편집
@@ -154,7 +154,7 @@ ms.locfileid: "9139619"
 
 1. **데이터** > **통합** 페이지에서 다음을 선택합니다.
 
-   - **고객 프로필 통합**: 일치 조건을 실행하고 종속성(예: 보강, 세그먼트 또는 측정값)에 영향을 주지 않고 Unified Customer Profiles 엔터티를 업데이트합니다. 종속 프로세스는 실행되지 않지만 [새로 고침 일정에 정의](system.md#schedule-tab)에 따라 새로 고쳐집니다.
+   - **고객 프로필 통합**: 일치 조건을 실행하고 종속성(예: 보강, 세그먼트 또는 측정값)에 영향을 주지 않고 Unified Customer Profiles 엔터티를 업데이트합니다. 종속 프로세스는 실행되지 않지만 [새로 고침 일정에 정의](schedule-refresh.md)에 따라 새로 고쳐집니다.
 
    - **고객 프로필 및 종속성 통합**: 일치 조건을 실행하고 통합 프로필 및 모든 종속성을 업데이트합니다. 모든 프로세스는 자동으로 다시 실행됩니다. 모든 다운스트림 프로세스가 완료된 후 고객 프로필에 업데이트된 데이터가 반영됩니다.
 
