@@ -2,7 +2,7 @@
 title: 데이터 통합을 위한 고객 필드 통합
 description: 엔터티를 병합하여 통합 고객 프로필을 만듭니다.
 recommendations: false
-ms.date: 05/04/2022
+ms.date: 07/27/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
@@ -14,18 +14,18 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: a6f29c4985ee274207d122fb1bd76d97b98613b6
-ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
+ms.openlocfilehash: 7ebd6ab8fa6ae141f33295a5d7723e96c8dc70ca
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "9213590"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304021"
 ---
-# <a name="unify-customer-fields-for-data-unification"></a>데이터 통합을 위한 고객 필드 통합
+# <a name="unify-customer-fields"></a>고객 필드 통합
 
-통합 프로세스의 이 단계에서 통합 프로필 엔터티 내에서 병합할 속성을 선택하고 제외합니다. 예를 들어 3개의 엔터티에 이메일 데이터가 있는 경우 3개의 개별 이메일 필드를 모두 유지하거나 통합 프로필에 대한 단일 이메일 필드로 병합할 수 있습니다. 일부 특성은 시스템에 의해 자동으로 결합됩니다. 안정적이고 고유한 고객 ID를 생성하고 관련 프로필을 클러스터로 그룹화할 수 있습니다.
+통합 프로세스의 이 단계에서 통합 프로필 엔터티 내에서 병합할 속성을 선택하고 제외합니다. 예를 들어 3개의 엔터티에 이메일 데이터가 있는 경우 3개의 개별 이메일 필드를 모두 유지하거나 통합 프로필에 대한 단일 이메일 필드로 병합할 수 있습니다. 일부 특성은 시스템에 의해 자동으로 결합됩니다. 안정적이고 고유한 고객 ID를 생성할 수 있습니다. 개별 고객의 경우 관련 프로필을 클러스터로 그룹화할 수 있습니다.
 
-:::image type="content" source="media/m3_unify.png" alt-text="통합 고객 프로필을 정의하는 병합된 필드가 있는 테이블을 보여주는 데이터 통합 프로세스의 병합 페이지입니다.":::
+:::image type="content" source="media/m3_unify.png" alt-text="통합 고객 프로필을 정의하는 병합된 필드가 있는 테이블을 표시하는 데이터 통합 프로세스의 고객 통합 필드 페이지.":::
 
 ## <a name="review-and-update-the-customer-fields"></a>고객 필드 검토 및 업데이트
 
@@ -47,7 +47,7 @@ ms.locfileid: "9213590"
 
 1. 선택적으로, [고객 ID 구성을 생성](#configure-customer-id-generation)합니다.
 
-1. 선택적으로, [프로필을 가족 또는 클러스터로 그룹화](#group-profiles-into-households-or-clusters)합니다.
+1. B-to-C의 경우 선택적으로, [프로필을 가족 또는 클러스터로 그룹화](#group-profiles-into-households-or-clusters)합니다.
 
 > [!div class="nextstepaction"]
 > [다음 단계: 통합 검토](review-unification.md)
@@ -161,7 +161,7 @@ ms.locfileid: "9213590"
 
 ## <a name="group-profiles-into-households-or-clusters"></a>프로필을 가족 또는 클러스터로 그룹화
 
-관련 프로필을 클러스터로 그룹화하는 규칙을 정의할 수 있습니다. 현재 사용 가능한 클러스터 유형은 가정 및 사용자 지정 클러스터의 두 가지입니다. *Customer* 엔터티에 의미 필드 *Person.LastName* 및 *Location.Address* 가 포함된 경우 시스템은 미리 정의된 규칙을 사용하여 가구를 자동으로 선택합니다. [일치 규칙](match-entities.md#define-rules-for-match-pairs)과 유사한 고유한 규칙 및 조건으로 클러스터를 생성할 수도 있습니다.
+개별 고객의 경우 관련 프로필을 클러스터로 그룹화하는 규칙을 정의할 수 있습니다. 현재 사용 가능한 클러스터 유형은 가정 및 사용자 지정 클러스터의 두 가지입니다. *Customer* 엔터티에 의미 필드 *Person.LastName* 및 *Location.Address* 가 포함된 경우 시스템은 미리 정의된 규칙을 사용하여 가구를 자동으로 선택합니다. [일치 규칙](match-entities.md#define-rules-for-match-pairs)과 유사한 고유한 규칙 및 조건으로 클러스터를 생성할 수도 있습니다.
 
 1. **고급** > **클러스터 생성** 을 선택합니다.
 

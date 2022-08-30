@@ -76,6 +76,8 @@
       href: merge-entities.md
     - name: 데이터 통합 검토
       href: review-unification.md
+    - name: 통합 연락처 프로필 만들기
+      href: data-unification-contacts.md
     - name: 통합 설정 업데이트
       href: data-unification-update.md
 - name: 데이터 보강

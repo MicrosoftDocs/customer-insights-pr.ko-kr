@@ -6,19 +6,19 @@ ms.date: 08/01/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: mukeshpo
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: 7f4829cfc14af623f724c6594e834f3fac1c15a9
-ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
+ms.openlocfilehash: 3f84c1c149f0befcbe489ccdd8a666ce6d5d798a
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "9213635"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304481"
 ---
 # <a name="remove-duplicates-before-unifying-data"></a>데이터를 통합하기 전에 중복 제거
 
@@ -47,7 +47,7 @@ ms.locfileid: "9213635"
 
 1. **중복 레코드** 페이지에서 엔터티를 선택하고 **규칙 추가** 를 선택하여 중복 제거 규칙을 정의합니다.
 
-   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="더 보기가 강조 표시된 중복 레코드 페이지의 스크린샷":::
+   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="엔터티가 강조 표시되고 규칙 추가가 표시된 중복 레코드 페이지의 스크린샷"  lightbox="media/m3_duplicates_showmore.png":::
 
    1. **규칙 추가** 창에서 다음 정보를 입력합니다.
       - **필드 선택**: 중복 여부를 확인하려는 엔터티의 사용 가능한 필드 목록에서 선택합니다. 모든 단일 고객에게 고유한 필드를 선택하십시오. 예를 들어 이메일 주소 또는 이름, 도시 및 전화번호의 조합입니다.
@@ -80,9 +80,9 @@ ms.locfileid: "9213635"
       - **가장 많이 채워진**: 가장 많이 채워진 특성 필드가 있는 레코드를 승자 레코드로 식별합니다. 기본 병합 옵션입니다.
       - **가장 최근**: 최신순으로 승자 기록을 식별합니다. 최신 성을 정의하려면 날짜 또는 숫자 필드가 필요합니다.
       - **가장 최근**: 최신순으로 승자 기록을 식별합니다. 최신성을 정의하려면 날짜 또는 숫자 필드가 필요합니다.
-      
+
       동점일 경우 승자 기록은 MAX(PK) 또는 더 큰 기본 키 값을 가진 레코드입니다.
-      
+
    1. 선택적으로 엔터티의 개별 특성에 대한 병합 기본 설정을 정의하려면 창 하단에서 **고급** 을 선택합니다. 예를 들어 가장 최근의 이메일과 다른 기록에서 가장 완전한 주소를 유지하도록 선택할 수 있습니다. 엔터티를 확장하여 모든 속성을 보고 개별 속성에 사용할 옵션을 정의합니다. 최근성 기반 옵션을 선택하는 경우 최근성을 정의하는 날짜/시간 필드도 지정해야 합니다.
 
       :::image type="content" source="media/m3_adv_merge.png" alt-text="최근 이메일 및 전체 주소를 표시하는 고급 병합 기본 설정 창":::
@@ -96,18 +96,5 @@ ms.locfileid: "9213635"
 
 > [!div class="nextstepaction"]
 > [여러 엔터티의 다음 단계: 조건 일치](match-entities.md)
-
-## <a name="deduplication-output-as-an-entity"></a>엔터티로서 중복 제거 출력
-
-중복 제거 프로세스는 각 원본 엔터티에 대해 중복 제거된 새 엔터티를 생성합니다. 이러한 엔터티는 **엔티티** 페이지의 **시스템** 섹션에서 **Deduplication_DataSource_Entity** 라는 이름으로 **ConflationMatchPairs:CustomerInsights** 와 함께 찾을 수 있습니다.
-
-중복 제거 출력 엔터티에는 다음 정보가 포함됩니다.
-
-- ID / 키
-  - 기본 키 및 대체 ID 필드. 대체 ID 필드는 레코드에 대해 식별된 모든 대체 ID로 구성됩니다.
-  - Deduplication_GroupId 필드는 지정된 중복 제거 필드를 기반으로 모든 유사한 레코드를 그룹화하는 엔터티 내에서 식별된 그룹 또는 클러스터를 보여줍니다. 이것은 시스템 처리 목적으로 사용됩니다. 지정된 수동 중복 제거 규칙이 없고 시스템 정의 중복 제거 규칙이 적용되는 경우 중복 제거 출력 엔터티에서 이 필드를 찾을 수 없습니다.
-  - Deduplication_WinnerId: 이 필드에는 식별된 그룹 또는 클러스터의 승자 ID가 포함됩니다. Deduplication_WinnerId가 레코드의 기본 키 값과 같으면 레코드가 승자 레코드라는 의미입니다.
-- 중복 제거 규칙을 정의하는 데 사용되는 필드입니다.
-- 적용된 중복 제거 규칙과 일치 알고리즘에서 반환된 점수를 나타내는 규칙 및 점수 필드입니다.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

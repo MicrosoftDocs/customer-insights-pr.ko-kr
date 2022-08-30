@@ -1,9 +1,9 @@
 ---
-title: 고객 활동
-description: 고객 활동을 정의하고 고객 프로필의 타임라인에서 볼 수 있습니다.
-ms.date: 07/22/2022
+title: 고객 또는 비즈니스 연락처 활동
+description: 고객 또는 비즈니스 연락처 활동을 정의하고 고객 프로필의 타임라인에서 볼 수 있습니다.
+ms.date: 08/12/2022
 ms.subservice: audience-insights
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
@@ -16,19 +16,19 @@ searchScope:
 - ci-activities-wizard
 - ci-measures
 - ci-segment-suggestions
-- customerInsight
-ms.openlocfilehash: cc21b0eeb368156437e60d851c2d144f3974c066
-ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
+- customerInsights
+ms.openlocfilehash: bbb8bc30d079273bc935181c628915bb3c02d982
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9188147"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304113"
 ---
-# <a name="customer-activities"></a>고객 활동
+# <a name="customer-or-business-contact-activities"></a>고객 또는 비즈니스 연락처 활동
 
-고객 활동은 고객이 수행하는 작업 또는 이벤트입니다. 활동 데이터의 예로는 트랜잭션, 지원 통화 기간, 웹사이트 검토, 구매, 반품이 있습니다. 이러한 활동은 하나 이상의 데이터 소스에 포함됩니다. 고객 인사이트를 사용하여 [데이터 소스](data-sources.md)에서 고객 활동을 통합하여 고객 프로필과 연결합니다. 이러한 활동은 고객 프로필의 시간 표시줄에 시간순으로 표시됩니다. [고객 카드 추가 기능](customer-card-add-in.md) 솔루션을 사용하여 Dynamics 365 앱에 타임라인을 포함합니다.
+고객 활동은 고객 또는 비즈니스 담당자가 수행하는 작업 또는 이벤트입니다. 활동 데이터의 예로는 트랜잭션, 지원 통화 기간, 웹사이트 검토, 구매, 반품이 있습니다. 이러한 활동은 하나 이상의 데이터 소스에 포함됩니다. 고객 인사이트를 사용하여 [데이터 소스](data-sources.md)에서 고객 활동을 통합하여 고객 프로필과 연결합니다. 이러한 활동은 고객 프로필의 시간 표시줄에 시간순으로 표시됩니다. [고객 카드 추가 기능](customer-card-add-in.md) 솔루션을 사용하여 Dynamics 365 앱에 타임라인을 포함합니다.
 
-## <a name="define-an-activity"></a>활동 정의
+## <a name="define-a-customer-activity"></a>고객 활동 정의
 
 고객 시간 표시줄에 포함되려면 엔터티는 하나 이상의 **날짜** 속성 유형을 가져야 합니다. 해당 엔터티가 없으면 **활동 추가** 컨트롤을 사용할 수 없습니다.
 
@@ -38,9 +38,9 @@ ms.locfileid: "9188147"
 
 1. **활동 데이터** 단계에서 다음 정보를 입력합니다.
 
-   - **활동 이름**: 활동의 이름입니다.
-   - **활동 엔터티**: 거래 또는 활동 데이터가 포함된 엔터티입니다.
-   - **기본 키**: 레코드를 고유하게 식별하는 필드입니다. 중복 값, 빈 값 또는 누락된 값을 포함해서는 안됩니다.
+   - **활동 이름**: 활동 이름을 선택합니다.
+   - **활동 엔터티**: 거래 또는 활동 데이터가 포함된 엔터티를 선택합니다.
+   - **기본 키**: 레코드를 고유하게 식별하는 필드를 선택합니다. 중복 값, 빈 값 또는 누락된 값을 포함해서는 안됩니다.
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="이름, 엔터티 및 기본 키를 사용하여 활동 데이터를 설정합니다.":::
 
@@ -48,9 +48,9 @@ ms.locfileid: "9188147"
 
 1. **관계** 단계에서 **관계 추가** 를 선택하여 활동 데이터를 해당 고객 레코드에 연결합니다. 이 단계는 엔터티 간의 연결을 시각화합니다.  
 
-   - **엔터티의 외래 키**: 다른 엔터티와의 관계를 설정하는 데 사용될 활동 엔터티의 필드입니다.
+   - **외래 키**: 다른 엔터티와의 관계를 설정하는 데 사용될 활동 엔터티의 외부 필드입니다.
    - **끝 엔터티 이름**: 활동 엔터티와 관계가 있는 해당 소스 고객 엔터티입니다. 데이터 통합 프로세스에 사용되는 소스 고객 엔터티에만 연결할 수 있습니다.
-   - **관계 이름**: 엔티티 간의 관계를 식별하는 이름입니다. 이 활동 엔터티와 선택한 소스 고객 엔터티 간의 관계가 이미 있는 경우 관계 이름은 읽기 전용입니다.
+   - **관계 이름**: 이 활동 엔터티와 선택된 원본 고객 엔터티 사이의 관계가 이미 존재하는 경우 관계 이름은 읽기 전용 모드입니다. 그러한 관계가 없는 경우 이 상자에 입력한 이름으로 새 관계가 생성됩니다.
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="엔터티 관계를 정의합니다.":::
 
@@ -90,7 +90,7 @@ ms.locfileid: "9188147"
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-## <a name="manage-existing-activities"></a>기존 활동 관리
+## <a name="manage-existing-customer-activities"></a>기존 고객 활동 관리
 
 **데이터** > **활동** 으로 이동하여 저장된 활동, 해당 소스 엔터티, 활동 유형과 이러한 데이터가 고객 시간 표시줄에 포함되어 있는지 확인합니다. 열을 기준으로 활동 목록을 정렬하거나 검색 상자를 사용하여 관리하려는 활동을 찾을 수 있습니다.
 
@@ -116,9 +116,43 @@ ms.locfileid: "9188147"
 
      :::image type="content" source="media/Activity_Timeline3.PNG" alt-text="필터 패널을 사용하여 필터 조건을 구성.":::
 
-1. 필터를 제거하려면 **필터 지우기** 또는 **필터** 를 선택하고 필터 확인란을 선택 해제합니다.
-
 > [!NOTE]
 > 고객 프로필에서 나가면 활동 필터가 제거됩니다. 고객 프로필을 열 때마다 설정을 적용해야 합니다.
+
+## <a name="define-a-contact-activity"></a>연락처 활동 정의
+
+비즈니스 거래처(B-to-B)의 경우 *ContactProfile* 엔터티를 사용하여 연락처 활동을 캡처합니다. 거래처의 활동 타임라인에서 각 활동을 담당한 담당자를 확인할 수 있습니다. 대부분의 단계는 고객 활동 매핑 구성을 따릅니다.
+
+   > [!NOTE]
+   > 연락처 수준 활동을 정의하려면 *ContactProfile* 엔터티가 [통합 연락처 프로필](data-unification-contacts.md) 또는 [시맨틱 매핑](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping)을 통해 생성되어야 합니다.
+   >
+   > 활동 데이터 내의 각 레코드에 대해 **AccountID** 와 **ContactID** 특성이 모두 있어야 합니다.
+  
+1. **데이터** > **활동** 으로 이동합니다.
+
+1. **활동 추가** 를 선택하십시오.
+
+1. 활동의 이름을 지정하고 소스 활동 엔터티를 선택한 다음 활동 엔터티의 기본 키를 선택합니다.
+
+1. **관계** 단계에서 연락처 데이터를 중간 엔터티로 사용하여 활동 소스 데이터와 계정 간의 간접 관계를 만듭니다. 자세한 내용은 [직접 및 간접 관계 경로](relationships.md#relationship-paths)에서 확인하세요.
+   - *구매* 활동에 대한 예시 관계:
+      - **ContactID** 속성에서 **구매 원본 활동 데이터** > **연락처 데이터**
+      - **AccountID** 속성에서 **연락처 데이터** > **계정 데이터**
+
+   :::image type="content" source="media/Contact_Activities1.png" alt-text="예시 관계 설정":::
+
+1. 관계를 설정한 후 **다음** 을 선택하고 활동 매핑 구성을 완료합니다. 활동 생성에 대한 자세한 단계는 [고객 활동 정의](#define-a-customer-activity)를 참조하세요.
+
+1. 활동 매핑을 실행합니다.
+
+1. 이제 연락처 수준 활동이 고객 타임라인에 표시됩니다.
+
+   :::image type="content" source="media/Contact_Activities2.png" alt-text="연락처 활동 구성 후 최종 결과":::
+
+## <a name="contact-level-activity-timeline-filtering"></a>연락처 수준 활동 타임라인 필터링
+
+연락처 수준 활동 매핑을 구성하고 실행하면 고객의 활동 타임라인이 업데이트됩니다. 여기에는 *ContactProfile* 구성에 따라 작업한 활동에 대해 귀하의 ID 또는 이름이 포함됩니다. 타임라인에서 연락처별로 활동을 필터링하여 관심 있는 특정 연락처를 볼 수 있습니다. 또한 **연락처에 매핑되지 않은 활동** 을 선택하여 특정 연락처에 할당되지 않은 모든 활동을 볼 수 있습니다.
+
+   :::image type="content" source="media/Contact_Activities3.png" alt-text="연락처 수준 활동에 사용할 수 있는 필터링 옵션.":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

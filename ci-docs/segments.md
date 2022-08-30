@@ -1,7 +1,7 @@
 ---
 title: 세그먼트 개요
 description: 세그먼트 및 세그먼트 생성 및 관리 방법에 대한 개요입니다.
-ms.date: 05/20/2022
+ms.date: 08/12/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -14,18 +14,18 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 195a7c733f047c24f9f47a151c1cb623fe34d055
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: d4de3a6af6bc7d54305a23e3fbd3cc95d464d352
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246301"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304803"
 ---
 # <a name="segments-overview"></a>세그먼트 개요
 
 세그먼트를 사용하면 인구 통계, 트랜잭션 또는 행동 특성을 기반으로 고객을 그룹화할 수 있습니다. 세그먼트를 사용하여 판촉 캠페인, 판매 활동 및 고객 지원 조치를 대상으로 비즈니스 목표를 달성할 수 있습니다.
 
-세그먼트 정의의 필터와 일치하는 고객 프로필을 세그먼트의 *구성원* 이라고 합니다. 약간의 [서비스 제한](/dynamics365/customer-insights/service-limits)이 적용됩니다.
+세그먼트 정의의 필터와 일치하는 고객 또는 거래처 프로필을 세그먼트의 *구성원* 이라고 합니다. 약간의 [서비스 제한](/dynamics365/customer-insights/service-limits)이 적용됩니다.
 
 ## <a name="create-a-segment"></a>세그먼트 만들기
 
@@ -41,13 +41,19 @@ ms.locfileid: "9246301"
 
 # <a name="business-accounts-b-to-b"></a>[비즈니스 어카운트(B2B)](#tab/b2b)
 
-- 세그먼트 빌더가 있는 단순 또는 복합 세그먼트: [직접 빌드](segment-builder.md)
+[나만의 빌드](segment-builder.md) 세그먼트 빌더를 사용한 거래처 세그먼트 또는 연락처 세그먼트(프리뷰)
+
+> [!NOTE]
+> 대부분의 내보내기 대상에는 마케팅 목적으로 연락처 정보가 필요합니다. 따라서 해당 내보내기에 사용할 연락처 세그먼트를 만듭니다.
 
 ---
 
 ## <a name="manage-existing-segments"></a>기존 세그먼트 관리
 
-**세그먼트** 페이지로 이동하여 생성한 세그먼트, 해당 상태 및 조건, 구성원 수 및 데이터를 마지막으로 새로 고친 시간을 확인합니다. 열을 기준으로 세그먼트 목록을 정렬하거나 검색 상자를 사용하여 관리하려는 세그먼트를 찾을 수 있습니다.
+**세그먼트** 페이지로 이동하여 생성한 세그먼트, 해당 상태 및 상태, 데이터를 마지막으로 새로 고친 시간을 볼 수 있습니다. 열을 기준으로 세그먼트 목록을 정렬하거나 검색 상자를 사용하여 관리하려는 세그먼트를 찾을 수 있습니다.
+
+> [!TIP]
+> B-to-B 환경에서 **대상 그룹 유형** 열은 세그먼트가 거래처 또는 연락처를 기반으로 하는지 여부를 식별합니다.
 
 사용 가능한 작업을 보려면 세그먼트를 선택합니다.
 
@@ -82,7 +88,7 @@ ms.locfileid: "9246301"
 > [!NOTE]
 > 이 목록에 나타나는 필드는 세그먼트 엔터티의 특성을 기반으로 합니다.
 >
->이 목록은 일치하는 세그먼트 구성원의 미리 보기이며 세그먼트의 처음 100개 레코드를 표시하므로 신속하게 평가하고 필요한 경우 정의를 검토할 수 있습니다. 일치하는 모든 레코드를 보려면 [세그먼트를 내보냅니다](export-destinations.md).
+> 이 목록은 일치하는 세그먼트 구성원의 미리 보기이며 세그먼트의 처음 100개 레코드를 표시하므로 신속하게 평가하고 필요한 경우 정의를 검토할 수 있습니다. 일치하는 모든 레코드를 보려면 **자세히 보기** 를 선택하여 [**엔터티**](entities.md) 페이지 또는 [세그먼트 내보내기](export-destinations.md)를 엽니다.
 
 ## <a name="refresh-segments"></a>세그먼트 새로 고침
 

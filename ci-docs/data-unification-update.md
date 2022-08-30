@@ -1,11 +1,11 @@
 ---
-title: 통합 설정 업데이트
-description: 통합 설정에서 중복 규칙, 일치 규칙 또는 통합 필드를 업데이트합니다.
-ms.date: 06/01/2022
+title: 고객, 거래처 또는 연락처 통합 설정 업데이트
+description: 고객 또는 거래처 통합 설정에서 중복 규칙, 일치 규칙 또는 통합 필드를 업데이트합니다.
+ms.date: 08/12/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: v-wendysmith
-ms.author: mukeshpo
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
@@ -13,20 +13,26 @@ searchScope:
 - ci-merge
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: a7cf06c07e4b95b848a55dfe5fe0b09397fe744e
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: f2c14c169f5973b5f400989b9eeea593eba09182
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245602"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304343"
 ---
-# <a name="update-the-unification-settings"></a>통합 설정 업데이트
+# <a name="update-unification-settings"></a>통합 설정 업데이트
 
 통합 프로필이 생성된 후 통합 설정을 검토하거나 변경하려면 다음 단계를 수행하십시오.
 
 1. **데이터** > **통합** 으로 이동합니다.
 
-   :::image type="content" source="media/m3_unified.png" alt-text="데이터 통합 후 데이터 통합 페이지의 스크린샷.":::
+   개인 고객(B-to-C)의 경우 **통합** 페이지에는 각 통합 단계에 대한 통합 고객 프로필 및 타일 수가 표시됩니다.
+
+   :::image type="content" source="media/m3_unified.png" alt-text="데이터 통합 후 데이터 통합 페이지의 스크린샷." lightbox="media/m3_unified.png":::
+
+   비즈니스 거래처(B-to-B)의 경우 **통합** 페이지에는 각 거래처 통합 단계에 대한 통합 거래처 프로필 및 타일 수가 표시됩니다. 연락처가 통합된 경우 각 연락처 통합 단계에 대한 통합 연락처 프로필 및 타일 수가 표시됩니다. 업데이트하려는 항목에 따라 **거래처 통합** 또는 **연락처 통합(프리뷰)** 에서 적절한 타일을 선택합니다.
+
+   :::image type="content" source="media/b2b_unified.png" alt-text="거래처 및 연락처 데이터가 통합된 후 데이터 통합 ​​페이지의 스크린샷." lightbox="media/b2b_unified.png":::
 
    > [!TIP]
    > **일치 조건** 타일은 여러 엔터티를 선택한 경우에만 표시됩니다.
@@ -36,14 +42,14 @@ ms.locfileid: "9245602"
    - [중복 레코드](#manage-deduplication-rules): 중복 제거 규칙을 관리하거나 기본 설정을 병합합니다.
    - [일치 조건](#manage-match-rules): 둘 이상의 엔터티에서 일치 규칙을 업데이트합니다.
    - [통합 고객 필드](#manage-unified-fields): 필드를 결합하거나 제외합니다. 관련 프로필을 클러스터로 그룹화할 수도 있습니다.
+   - [시맨틱 필드](#manage-semantic-fields-for-unified-contacts)로 통합 연락처 필드의 의미 유형을 관리합니다.
+   - [관계](#manage-contact-and-account-relationships)로 연락처 대 거래처 관계를 관리합니다.
 
 1. 변경한 후 다음 옵션을 선택합니다.
 
-   :::image type="content" source="media/m3_run_match_merge.png" alt-text="통합 옵션이 강조 표시된 데이터 통합 페이지의 스크린샷.":::
-
    - [일치하는 조건을 실행](#run-matching-conditions)하여 통합 프로필을 업데이트하지 않고도 일치 조건(중복 제거 및 일치 규칙)의 품질을 빠르게 평가할 수 있습니다. **일치하는 조건만 실행** 옵션은 단일 엔터티에 대해 표시되지 않습니다.
-   - [고객 프로필을 통합](#run-updates-to-the-unified-customer-profile)하여 일치 조건을 실행하고 종속성(예: 보강, 세그먼트 또는 측정값)에 영향을 주지 않고 Unified Customer Profiles 엔터티를 업데이트합니다. 종속 프로세스는 실행되지 않지만 [새로 고침 일정에 정의](schedule-refresh.md)에 따라 새로 고쳐집니다.
-   - [고객 프로필 및 종속성을 통합](#run-updates-to-the-unified-customer-profile)하여 일치 조건을 실행하고 Unified Customer Profiles 엔터티 및 모든 종속성(예: 보강, 세그먼트 또는 측정값)을 업데이트합니다. 모든 프로세스는 자동으로 다시 실행됩니다.
+   - [프로필을 통합](#run-updates-to-the-unified-profile)하여 일치 조건을 실행하고 종속성(예: 보강, 세그먼트 또는 측정값)에 영향을 주지 않고 통합 프로필 엔터티를 업데이트합니다. 종속 프로세스는 실행되지 않지만 [새로 고침 일정에 정의](schedule-refresh.md)에 따라 새로 고쳐집니다.
+   - [프로필 및 종속성을 통합](#run-updates-to-the-unified-profile)하여 일치 조건을 실행하고 통합 프로필 엔터티 및 모든 종속성(예: 보강, 세그먼트 또는 측정값)을 업데이트합니다. 모든 프로세스는 자동으로 다시 실행됩니다. B-to-B에서 통합은 통합 프로필을 업데이트하는 거래처 및 연락처 엔터티 모두에서 실행됩니다.
 
 ## <a name="edit-source-fields"></a>원본 필드 편집
 
@@ -55,11 +61,11 @@ ms.locfileid: "9245602"
 
    매핑된 필드와 매핑되지 않은 필드의 수가 표시됩니다.
 
-1. **엔터티 및 필드 선택** 을 선택하여 다른 특성이나 엔터티를 추가합니다. 검색 또는 스크롤을 사용하여 관심있는 특성 및 엔터티를 찾아 선택하십시오. **적용** 을 선택합니다.
+1. 다른 특성 또는 엔터티를 추가하려면 **엔터티 및 필드 선택** 을 선택합니다.
 
-1. 선택적으로 엔터티의 기본 키, 특성 유형을 변경하고 **지능형 매핑** 을 켜거나 끌 수 있습니다. 자세한 내용은 [특성에 대한 기본 키 및 의미 유형 선택](map-entities.md#select-primary-key-and-semantic-type-for-attributes)을 참조하십시오.
+1. 선택적으로 엔터티의 기본 키, 특성 유형을 변경하고 **지능형 매핑** 을 켜거나 끌 수 있습니다. 자세한 내용은 [원본 필드 선택](map-entities.md)을 참조하십시오.
 
-1. **다음** 을 ​​선택하여 중복 제거 규칙을 변경하거나 **저장 후 닫기** 를 선택하고 [통합 설정 업데이트](#update-the-unification-settings)로 돌아갑니다.
+1. **다음** 을 선택하여 중복 제거 규칙을 변경하거나 **저장 후 닫기** 를 선택하고 [통합 설정 업데이트](#update-unification-settings)로 돌아갑니다.
 
 ## <a name="manage-deduplication-rules"></a>중복 제거 규칙 관리
 
@@ -69,7 +75,7 @@ ms.locfileid: "9245602"
 
    발견된 중복 레코드 수가 **중복** 아래에 표시됩니다. **중복 레코드** 열에는 중복 레코드가 있는 엔터티와 중복된 레코드의 비율이 표시됩니다.
 
-1. 보강 엔터티를 추가한 경우 **보강 엔터티 사용** 을 선택합니다 자세한 내용은 [데이터 원본 보강](data-sources-enrichment.md)을 참조하세요.
+1. 보강 엔터티를 사용하려면 **보강 엔터티 사용** 을 선택합니다 자세한 내용은 [데이터 원본 보강](data-sources-enrichment.md)을 참조하세요.
 
 1. 중복 제거 규칙을 관리하려면 다음 옵션 중 하나를 선택하십시오.
    - **새 규칙 만들기**: 해당 항목에서 **규칙 추가** 를 선택합니다. 자세한 내용은 [중복 제거 규칙 정의](remove-duplicates.md#define-deduplication-rules)를 참조하세요.
@@ -83,11 +89,9 @@ ms.locfileid: "9245602"
    1. **병합 기본 설정 편집** 을 선택하고 **보관할 레코드** 옵션을 변경합니다.
    1. 엔터티의 개별 특성에 대한 병합 기본 설정을 변경하려면 **고급** 을 선택하고 필요에 따라 변경합니다.
 
-      :::image type="content" source="media/m3_adv_merge.png" alt-text="가장 최근의 이메일과 가장 완전한 주소를 보여주는 고급 병합 기본 설정의 스크린샷":::
-
    1. **완료** 를 선택합니다.
 
-1. **다음** 을 선택하여 일치하는 조건을 변경하거나 **저장 후 닫기** 를 선택하고 [통합 설정 업데이트](#update-the-unification-settings)로 돌아갑니다.
+1. **다음** 을 선택하여 일치하는 조건을 변경하거나 **저장 후 닫기** 를 선택하고 [통합 설정 업데이트](#update-unification-settings)로 돌아갑니다.
 
 ## <a name="manage-match-rules"></a>일치 규칙 관리
 
@@ -104,7 +108,7 @@ ms.locfileid: "9245602"
 
 1. 모든 규칙 및 해당 점수의 결과를 보려면 **마지막 실행 보기** 를 선택합니다. 대체 연락처 ID를 포함한 결과가 표시됩니다. 결과를 다운로드할 수 있습니다.
 
-1. 특정 규칙의 결과와 점수를 보려면 규칙을 선택한 다음 **미리 보기** 를 선택합니다. 결과가 표시됩니다. 결과를 다운로드할 수 있습니다.
+1. 특정 규칙의 결과와 점수를 보려면 규칙을 선택한 다음 **미리 보기** 를 선택합니다. 결과를 표시합니다 결과를 다운로드할 수 있습니다.
 
 1. 규칙에 대한 특정 조건의 결과를 보려면 규칙을 선택한 다음 **편집** 을 선택합니다. 편집 창의 조건에서 **미리 보기** 를 선택합니다. 결과를 다운로드할 수 있습니다.
 
@@ -120,7 +124,7 @@ ms.locfileid: "9245602"
    - **규칙 복제** : 규칙을 선택한 다음 **복제** 하여 수정을 통해 유사한 규칙을 생성합니다.
    - **규칙 삭제**: 규칙을 선택한 다음 **삭제** 합니다.
 
-1. **다음** 을 선택하여 통합 필드를 변경하거나 **저장 후 닫기** 를 선택하고 [통합 설정 업데이트](#update-the-unification-settings)로 돌아갑니다.
+1. **다음** 을 선택하여 통합 필드를 변경하거나 **저장 후 닫기** 를 선택하고 [통합 설정 업데이트](#update-unification-settings)로 돌아갑니다.
 
 ## <a name="manage-unified-fields"></a>통합 필드 관리
 
@@ -130,7 +134,28 @@ ms.locfileid: "9245602"
 
 1. 결합 및 제외 필드를 검토하고 필요에 따라 변경합니다. CustomerID 키 또는 그룹 프로필을 클러스터에 추가하거나 편집합니다. 자세한 내용은 [통합 고객 필드](merge-entities.md)를 참조하십시오.
 
-1. **다음** 을 선택하여 통합 설정을 검토하고 [통합 프로필 및 종속성을 업데이트](#run-updates-to-the-unified-customer-profile)하거나 **저장 및 닫기** 를 선택하고 [통합 설정 업데이트](#update-the-unification-settings)로 돌아가서 추가 변경을 수행합니다.
+1. 고객 또는 거래처의 경우 **다음** 을 선택하여 검토 및 [통합 프로필 및 종속성 업데이트](#run-updates-to-the-unified-profile)를 검토합니다. 또는 **저장 후 닫기** 를 선택하고 [통합 설정 업데이트](#update-unification-settings)로 돌아가서 더 변경합니다.
+
+   연락처의 경우 **다음** 을 ​​선택하여 시맨틱 필드를 관리합니다. 또는 **저장 후 닫기** 를 선택하고 [통합 설정 업데이트](#update-unification-settings)로 돌아가서 더 변경합니다.
+
+## <a name="manage-semantic-fields-for-unified-contacts"></a>통합 연락처의 시맨틱 필드 관리
+
+1. **시맨틱 필드** 타일에서 **편집** 을 선택합니다.
+
+1. 통합 필드의 시맨틱 유형을 변경하려면 새 유형을 선택하십시오. 자세한 내용은 [통합 연락처에 대한 시맨틱 필드 정의](data-unification-contacts.md#define-the-semantic-fields-for-unified-contacts)를 참조하십시오.
+
+1. **다음** 을 ​​선택하여 거래처 및 연락처 관계를 관리하거나 **저장 후 닫기** 를 선택하고 [통합 설정 업데이트](#update-unification-settings)로 돌아가서 추가로 변경합니다.
+
+## <a name="manage-contact-and-account-relationships"></a>연락처 및 거래처 관계 관리
+
+1. **관계** 타일에서 **편집** 을 선택합니다.
+
+1. 연락처 및 거래처 관계를 변경하려면 다음 정보를 변경하십시오.
+
+   - **연락처 엔터티의 외래 키**: 연락처 엔터티를 거래처에 연결하는 특성을 선택합니다.
+   - **거래처 엔터티에**: 연락처와 연결된 거래처 엔터티를 선택합니다.
+
+1. **다음** 을 선택하여 통합 설정을 검토하고 [통합 프로필 및 종속성을 업데이트](#run-updates-to-the-unified-profile)하거나 **저장 후 닫기** 를 선택하고 [통합 설정 업데이트](#update-unification-settings)로 돌아가서 추가 변경을 수행합니다.
 
 ## <a name="run-matching-conditions"></a>일치하는 조건 실행
 
@@ -148,18 +173,15 @@ ms.locfileid: "9245602"
 
 1. 변경하려면 [중복 제거 규칙 관리](#manage-deduplication-rules) 또는 [일치 규칙 관리](#manage-match-rules)를 참조하십시오.
 
-1. 일치 프로세스를 다시 실행하거나 [고객 프로필 업데이트를 실행](#run-updates-to-the-unified-customer-profile)합니다.
+1. 일치 프로세스를 다시 실행하거나 [프로필 업데이트를 실행](#run-updates-to-the-unified-profile)합니다.
 
-## <a name="run-updates-to-the-unified-customer-profile"></a>통합 고객 프로필에 대한 업데이트 실행
+## <a name="run-updates-to-the-unified-profile"></a>통합 프로필에 대한 업데이트 실행
 
-1. **데이터** > **통합** 페이지에서 다음을 선택합니다.
+- 일치 조건을 실행하고 종속성(예: 고객 카드, 보강, 세그먼트 또는 측정값)에 영향을 주지 *않고* 통합 프로필 엔터티를 업데이트하려면 **고객 프로필 통합** 을 선택합니다. 거래처의 경우 **거래처 통합** > **프로필 통합** 을 선택합니다. 연락처의 경우 **연락처 통합(프리뷰)** > **프로필 통합** 을 선택합니다. 종속 프로세스는 실행되지 않지만 [새로 고침 일정에 정의](schedule-refresh.md)에 따라 새로 고쳐집니다.
+- 일치 조건을 실행하고 통합 프로필을 업데이트하고 모든 종속성을 실행하려면 **고객 프로필 및 종속성 통합** 을 선택합니다. 모든 프로세스는 자동으로 다시 실행됩니다. 거래처 및 연락처의 경우 **거래처 통합** > **프로필 및 종속성 통합** 을 선택합니다. 일치 조건은 통합 프로필을 업데이트하는 거래처 및 연락처 모두에 대해 실행되고 다른 모든 종속성이 실행됩니다.
 
-   - **고객 프로필 통합**: 일치 조건을 실행하고 종속성(예: 보강, 세그먼트 또는 측정값)에 영향을 주지 않고 Unified Customer Profiles 엔터티를 업데이트합니다. 종속 프로세스는 실행되지 않지만 [새로 고침 일정에 정의](schedule-refresh.md)에 따라 새로 고쳐집니다.
+**원본 필드** 를 제외한 모든 타일은 **대기 중** 또는 **새로 고침 중** 을 표시합니다.
 
-   - **고객 프로필 및 종속성 통합**: 일치 조건을 실행하고 통합 프로필 및 모든 종속성을 업데이트합니다. 모든 프로세스는 자동으로 다시 실행됩니다. 모든 다운스트림 프로세스가 완료된 후 고객 프로필에 업데이트된 데이터가 반영됩니다.
+[!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
-   **중복 레코드**, **일치하는 조건** 및 **통합 고객 필드** 타일에 **대기** 또는 **새로 고침** 상태가 표시됩니다.
-
-   [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
-
-성공적인 실행 결과는 통합된 고객 프로필의 수를 보여주는 **통합** 페이지에 표시됩니다.
+성공적인 실행 결과는 통합된 프로필의 수를 보여주는 **통합** 페이지에 표시됩니다.

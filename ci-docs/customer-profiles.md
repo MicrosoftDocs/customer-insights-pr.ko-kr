@@ -14,12 +14,12 @@ searchScope:
 - ci-activities
 - ci-activities-wizard
 - customerInsights
-ms.openlocfilehash: 6cdf47e6997f230811dcb0f2cf5542f3a6db2367
-ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
+ms.openlocfilehash: 0c8edfd8f45ce7770d568811df2b38be1b04e73a
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9188101"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9303791"
 ---
 # <a name="view-customer-profiles"></a>고객 프로필 보기
 
@@ -78,7 +78,7 @@ ms.locfileid: "9188101"
 **고객 프로필 타일** 에는 통합된 *고객* 엔터티의 다른 값이 표시됩니다. 필드에 선택한 고객 프로필에 대한 값이 없으면 주소 필드를 제외하고는 표시되지 않습니다. 타일은 섹션으로 구성됩니다.
 
 - 첫 번째 섹션에는 검색 및 필터 인덱스의 일부인 모든 필드가 뒤따르는 사전 정의된 필드 세트가 표시됩니다. 모든 주소 관련 필드는 프로필에 주소 정보가 없는 경우에도 표시되는 한 줄로 결합됩니다.
-- **이 고객의 연락처** 에는 비즈니스 계정에 적용된 환경이 표시됩니다. 각 연락처는 해당 필드와 함께 표시됩니다. 빈 필드는 숨겨져 있습니다.
+- **이 고객의 연락처** 는 비즈니스 거래처(B-to-B) 환경에 표시됩니다. 각 연락처는 해당 필드와 함께 표시됩니다. 빈 필드는 숨겨져 있습니다.
 - **추가 필드** 에는 ID를 제외한 선택된 고객의 나머지 필드가 표시됩니다.
 - **ID** 에서는 해당 엔터티 이름 아래에 모든 ID가 나열됩니다. 필드는 의미 체계별 ID로 구분됩니다.
 
