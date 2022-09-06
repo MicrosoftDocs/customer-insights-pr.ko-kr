@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: c573c46fda895d36d29712e75fe28b261c9b399a
+ms.sourcegitcommit: 0b5bfe0145dbd325fa518df4561d6a0a9a352264
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245933"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "9352809"
 ---
 # <a name="export-diagnostic-logs-preview"></a>진단 로그 내보내기(프리뷰)
 
@@ -36,8 +36,8 @@ Customer Insights는 다음 이벤트 로그를 보냅니다.
 
 - 사용 중인 [Azure 구독](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - Customer Insights의 [관리자](permissions.md#admin) 권한.
+- Azure Storage, Azure 이벤트 허브 또는 Azure Log Analytics에 대해 [대상 요구 사항](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements)를 따르는 Azure의 유효한 리소스입니다.
 - Azure 기반 대상 리소스에서 [기여자 및 사용자 액세스 관리자 역할](/azure/role-based-access-control/role-assignments-portal). 리소스는 Azure Data Lake Storage 계정, Azure 이벤트 허브 또는 Azure Log Analytics 작업 영역일 수 있습니다. 이 권한은 Customer Insights에서 진단 설정을 구성하는 동안 필요하지만, 설정을 완료한 후 변경할 수 있습니다.
-- Azure Storage, Azure 이벤트 허브 또는 Azure Log Analytics 관련 [대상 요구 사항](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements)에 부합됩니다.
 - 리소스가 속한 리소스 그룹에서 **독자** 이상의 역할이 있어야 합니다.
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>Azure Monitor로 진단 설정

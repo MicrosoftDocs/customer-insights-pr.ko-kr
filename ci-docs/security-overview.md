@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ea21163d7dd05370de28ca8340ae9583846adb26
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: d20d57e9b7724e9921f9341eeaa39141b4555ff1
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246070"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387257"
 ---
 # <a name="configure-security-settings"></a>보안 설정 구성
 
@@ -23,7 +23,7 @@ API 키를 관리하고, 고객 데이터에 액세스하며, Azure 프라이빗
 
 [Customer Insights API](apis.md)를 사용하는 환경의 데이터로 키를 조회하고 관리합니다.
 
-1. **시스템** > **보안** 으로 이동하여 **API** 탭을 선택합니다.
+1. **관리자** > **보안** 으로 이동한 다음 **API** 탭을 선택합니다.
 
 1. 환경에 대한 API 액세스 권한이 설정되지 않은 경우 **사용 설정** 을 선택합니다. 또는 환경에 대한 API 액세스를 차단하려면 **비활성화** 를 선택하고 확인합니다.
 

@@ -1,27 +1,27 @@
 ---
 title: Customer Insights API에 대한 OData 쿼리 예제
 description: Customer Insights API를 쿼리하여 데이터를 검토하기 위해 OData(Open Data Protocol)에 대해 일반적으로 사용되는 예입니다.
-ms.date: 05/25/2022
+ms.date: 08/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
-ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
+ms.openlocfilehash: 26e56a3bab01ba55284a52e72efbcbfbaadaad6f
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9121570"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387210"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>Customer Insights API에 대한 OData 쿼리 예제
 
 OData(Open Data Protocol)는 HTTP와 같은 핵심 프로토콜을 기반으로 구축된 데이터 액세스 프로토콜입니다. 웹용 REST와 같이 일반적으로 허용되는 방법론을 사용합니다. OData 서비스를 사용하는 데 사용할 수 있는 다양한 종류의 라이브러리와 도구가 있습니다.
 
-이 문서에서는 [Customer Insights APIs](apis.md)를 기반으로 자체 구현을 구축하는 데 도움이 되도록 자주 요청되는 몇 가지 예제 쿼리를 나열합니다.
+[Customer Insights API](apis.md)를 기반으로 고유한 구현을 구축하는 데 도움이 되도록 자주 요청되는 몇 가지 예시 쿼리를 검토하십시오.
 
-대상 환경에서 작동하도록 쿼리 샘플을 수정해야 합니다. 
+대상 환경에서 작동하도록 쿼리 샘플을 수정합니다.
 
 - {serviceRoot}:`https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` 여기서{instanceId}는 쿼리하려는 Customer Insights 환경의 GUID입니다. [ListAllInstances 작업](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances)을 사용하면 액세스 권한이 있는 {InstanceId}를 찾을 수 있습니다.
 - {CID}: 통합 고객 레코드의 GUID입니다. 예: `ce759201f786d590bf2134bff576c369`
@@ -31,7 +31,7 @@ OData(Open Data Protocol)는 HTTP와 같은 핵심 프로토콜을 기반으로 
 
 ## <a name="customer"></a>고객 님
 
-다음 표에는 *고객* 엔터티에 대한 샘플 쿼리 집합이 포함되어 있습니다.
+*고객* 엔터티에 대한 샘플 쿼리입니다.
 
 |쿼리 유형 |예  | 노트  |
 |---------|---------|---------|
@@ -46,7 +46,7 @@ OData(Open Data Protocol)는 HTTP와 같은 핵심 프로토콜을 기반으로 
 
 ## <a name="unified-activity"></a>통합 활동
 
-다음 표에는 *UnifiedActivity* 엔터티에 대한 샘플 쿼리 집합이 포함되어 있습니다.
+*UnifiedActivity* 엔터티에 대한 샘플 쿼리입니다.
 
 |쿼리 유형 |예  | 노트  |
 |---------|---------|---------|
@@ -57,9 +57,9 @@ OData(Open Data Protocol)는 HTTP와 같은 핵심 프로토콜을 기반으로 
 |활동 정렬    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc`     |  오름차순 또는 내림차순 활동 정렬       |
 |세그먼트 멤버십에서 확장된 활동  |   `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     |         |
 
-## <a name="other-examples"></a>다른 예
+## <a name="other-examples"></a>다른 예제
 
-다음 표에는 다른 엔터티에 대한 샘플 쿼리 집합이 포함되어 있습니다.
+다른 엔터티에 대한 샘플 쿼리입니다.
 
 |쿼리 유형 |예  | 노트  |
 |---------|---------|---------|

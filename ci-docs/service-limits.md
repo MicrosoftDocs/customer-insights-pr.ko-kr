@@ -1,23 +1,23 @@
 ---
 title: Customer Insights의 서비스 제한
 description: Customer Insights SaaS 서비스의 제한 사항을 이해합니다.
-ms.date: 05/28/2022
+ms.date: 08/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6d1b761a5c9f67bfdc7c5b152132c618db3ea36a
-ms.sourcegitcommit: 78ef22cd39a1ebd7525f96829cd79d95f34438b9
+ms.openlocfilehash: 421e1aa41a54a4b8c34ac27fc7c02e510d2bb588
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8940676"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387164"
 ---
 # <a name="service-limits-in-customer-insights"></a>Customer Insights의 서비스 제한
 
-이 문서에서는 서비스의 신뢰성과 안정성을 보장하기 위해 고안된 Customer Insights 서비스의 기본 제한 사항에 대해 설명합니다. [아이디어 포럼](https://go.microsoft.com/fwlink/?linkid=2074172)에서 변경 요청을 할 수 있습니다.
+ Customer Insights에는 서비스의 안정성과 안정성을 보장하도록 설계된 기본 제공 제한이 있습니다. [아이디어 포럼](https://go.microsoft.com/fwlink/?linkid=2074172)에서 변경 요청을 할 수 있습니다.
 
 ## <a name="customer-insights"></a>Customer Insights
 

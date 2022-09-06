@@ -1,19 +1,19 @@
 ---
 title: Dynamics 365 Customer Insights의 새로운 기능
 description: 새로운 기능, 개선 사항 및 버그 수정에 대한 정보입니다.
-ms.date: 08/03/2022
+ms.date: 08/31/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: a9bb254736ae70589afb267bf0a60206a18a3385
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 1e734464cec1f66428c3a2a2e403437a2a9d8500
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246019"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387302"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights의 새로운 기능
 
@@ -23,6 +23,24 @@ ms.locfileid: "9246019"
 
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하세요.
+
+## <a name="august-2022-updates"></a>2022년 8월 업데이트
+
+2022년 8월 업데이트에는 새로운 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="contact-unification-in-b-to-b-environments"></a>B-to-B 환경에서 연락처 통합
+
+Customer Insights의 B-to-B 환경은 이제 향상된 데이터 통합 경험을 지원합니다.
+
+이제 거래처와 함께 연락처를 통합하여 비즈니스 연락처 전체를 볼 수 있습니다. 통합 연락처는 통합 거래처와 연결되어 있으며 이제 고객 카드에 나열됩니다. 
+
+자세한 내용은 [통합 연락처 프로필 만들기](data-unification-contacts.md)를 참조하십시오.
+
+### <a name="create-and-export-of-segments-based-on-unified-contacts"></a>통합 연락처를 기반으로 세그먼트 생성 및 내보내기
+
+새로운 연락처 통합 덕분에 연락처, 거래처 또는 둘 다의 기준을 사용하여 연락처 세그먼트를 만들 수 있습니다. 이러한 세그먼트는 다른 서비스에서 활성화하기 위해 내보낼 수 있습니다.
+
+자세한 내용은 [내보내기 개요](export-destinations.md)를 참조하세요.
 
 ## <a name="july-2022-updates"></a>2022년 7월 업데이트
 
