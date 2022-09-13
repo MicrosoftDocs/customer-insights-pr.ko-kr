@@ -160,8 +160,6 @@
           href: sentiment-analysis.md
         - name: Azure 기계 학습의 사용자 지정 모델 사용
           href: custom-models.md
-        - name: 부분적으로 누락된 데이터 완료
-          href: predictions.md
     - name: 샘플 가이드
       items:
         - name: CLV 예측용 샘플 가이드

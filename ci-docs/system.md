@@ -14,12 +14,12 @@ searchScope:
 - ci-system-general
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2498814a3d2e6330124fb97c036b9b310bcf1f7a
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 6e60bf7c18939a29f660e06989e262deeb59a39b
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246255"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396009"
 ---
 # <a name="view-system-configuration"></a>시스템 구성 보기
 
@@ -38,12 +38,6 @@ ms.locfileid: "9246255"
    - **API 호출** - 선택한 시간 프레임에서 API에 대한 총 호출 수를 시각화하는 차트입니다.
    - **데이터 전송** - 선택한 시간 프레임에서 API를 통해 전송된 데이터의 양을 보여주는 차트입니다.
    - **작업** - 각각의 사용 가능한 API 작업에 대한 행과 작업의 사용량에 대한 세부 정보가 포함된 테이블입니다. 작업 이름을 선택하여 [API 참조](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances)로 이동합니다.
-
-   [실시간 데이터 수집](real-time-data-ingestion.md)을 사용하는 작업에는 실시간 API 사용량을 볼 수 있는 쌍안경 기호가 제공됩니다.
-
-   1. 쌍안경 기호를 선택하여 작업에 대한 사용량 세부 정보가 포함된 **실시간 API 사용량** 창을 엽니다.
-   1. **시간 프레임** 을 선택하고 확인합니다.
-   1. **그룹화** 상자를 사용하여 실시간 상호 작용을 가장 잘 표시하는 방법을 선택합니다. API **메서드**, **엔터티 규정 이름**(대상 엔터티), **대상별 생성**(이벤트 소스), **결과**(성공 또는 실패) 또는 **오류 코드** 별로 데이터를 분류할 수 있습니다. 데이터는 이력 차트 및 테이블로 제공됩니다.
 
 ## <a name="view-system-information"></a>시스템 정보 보기
 

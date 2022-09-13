@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: ce10fcfe9906d33209270f8f6930a51b045b13e2
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 949ea071ca41127b0c45488d5d7af3f6aa4e1c35
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246344"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9395964"
 ---
 # <a name="schedule-system-refresh"></a>시스템 새로 고침 예약
 
@@ -36,7 +36,7 @@ ms.locfileid: "9246344"
 
 1. **매주**(기본값) 및 **매일** 새로 고침 중에서 선택합니다. 매주 새로 고침을 예약하려면 새로 고침을 실행할 날짜를 하나 이상 선택합니다.
 
-1. **표준 시간대** 를 설정한 다음 **시간** 드롭 다운 메뉴에서 새로 고침 타이밍을 설정합니다. 하루에 여러 번 새로 고침을 예약하려면 **다른 시간 추가** 를 선택합니다.
+1. **표준 시간대** 를 설정한 다음 **시간** 드롭 다운 메뉴에서 새로 고침 타이밍을 설정합니다. 하루에 여러 번 새로 고침을 예약하려면 **다른 시간 추가** 를 선택합니다. 새로 고침은 최대 4개까지 추가할 수 있습니다.
 
 1. **저장** 을 선택하여 변경 내용을 적용합니다.
 

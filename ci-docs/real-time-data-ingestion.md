@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2652e0868f5cc514ab6df9c150a9183cf95ae589
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: dd433b57e8695891a08d6f7fdb8c87befd2e1cfa
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246116"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396069"
 ---
 # <a name="real-time-data-ingestion-preview"></a>실시간 데이터 수집(미리 보기)
 
@@ -82,10 +82,5 @@ ms.locfileid: "9246116"
 원본 시스템 형식이나 UnifiedActivity 형식으로 활동을 게시할 수 있습니다. /api/instances/{instanceId}/manage/entities/UnifiedActivity에 API를 호출하여 형식을 가져옵니다.
 
 매개 변수 및 응답을 포함한이 API의 세부 사항은 [Customer Insights API 참조](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights)의 **EntityData** 섹션에서 찾을 수 있습니다. 자세한 내용은 [Customer Insights API 작업](apis.md) 도움말 항목을 참조하세요.
-
-## <a name="understand-your-real-time-usage-with-telemetry"></a>원격 분석으로 실시간 사용 이해
-
-실시간 API에 대한 요청의 양에 대한 개요와 시스템에서 발생할 수 있는 문제에 대한 정보를 가져옵니다. [실시간 원격 분석에 액세스](system.md#view-api-usage)할 수 있습니다. 
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

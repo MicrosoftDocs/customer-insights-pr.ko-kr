@@ -8,12 +8,12 @@ ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: a87af80fa713a1ac70493345c0c920e416692b0f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 32240c8c43751d8514d38b392f23ef4138d50ee2
+ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081694"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9411839"
 ---
 # <a name="predictions-overview"></a>예측 개요
 
@@ -39,14 +39,11 @@ Dynamics 365 Customer Insights에는 AI 및 기계 학습을 활용하여 데이
 
 > [!TIP]
 > 업데이트된 데이터로 즉시 사용 가능한 모델을 정기적으로 새로 고쳐 비즈니스 사용 사례를 정확하게 알릴 수 있도록 하는 것이 좋습니다. 시스템이 새 데이터 원본 또는 업데이트된 데이터 원본을 수집할 때 데이터가 임시로 새로 고쳐집니다. 그러나 모델은 이 경우에만 다시 점수를 매기고 기존 훈련 데이터를 계속 사용합니다.
-> 
+>
 > 구성 환경에서 모델 재훈련 일정을 설정하여 **업데이트 일정** 을 구성할 수 있습니다. 모델은 언제든지 변경할 수 있는 이 일정에 따라 재훈련하고 다시 채점합니다.
-
 
 ## <a name="azure-machine-learning-integration"></a>Azure 기계 학습 통합
 
 조직에서 이미 Azure 기계 학습 실험을 기반으로 기계 학습 시나리오를 사용하는 경우 Customer Insights의 사용자 지정 모델 기능은 종합적인 결론을 도출하는 데 도움이 됩니다. 인사이트를 생성할 데이터를 선택하고 결과를 통합 고객 프로필에 매핑할 수 있도록 지원하는 워크플로를 만듭니다. 자세한 내용은 [사용자 지정 기계 학습 모델](custom-models.md)을 참조하세요.
 
-## <a name="ai-builder-prediction"></a>AI Builder 예측
-
-때로는 데이터 집합이 불완전하고 일부 값이 누락됩니다. Customer Insights는 고객 엔터티 및 세그먼트에 대한 누락된 값을 예측하는 데 도움이 될 수 있습니다. 자세한 내용은 [예측으로 부분 데이터 완성](predictions.md)을 참조하십시오.
+[!INCLUDE [footer-include](includes/footer-banner.md)]

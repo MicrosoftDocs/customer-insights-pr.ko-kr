@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: b237c291bb4dd22ca22ab2cdd8b6293490aa83e1
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: d79b2d34e425e123224209814fef6e367c77c813
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245841"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396093"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>Azure Data Lake Storage에서 데이터에 연결
 
@@ -39,6 +39,8 @@ Azure Data Lake Storage Gen2 계정을 사용하여 Dynamics 365 Customer Insigh
   - 스토리지 Blob 데이터 Reader
   - 스토리지 Blob 데이터 담당자
   - Storage Blob 데이터 Contributor
+
+- 데이터 원본 연결을 설정하는 사용자에게는 스토리지 계정에 대한 최소한의 Storage Blob Data Contributor 권한이 필요합니다.
 
 - Data Lake Storage의 데이터는 데이터 저장을 위한 Common Data Model 표준을 따라야 하며 데이터 파일(*.csv 또는 *.parquet)의 스키마를 나타내는 공통 데이터 모델 매니페스트가 있어야 합니다. 매니페스트는 엔터티 열 및 데이터 형식, 데이터 파일 위치 및 파일 형식과 같은 엔터티의 세부 정보를 제공해야 합니다. 자세한 내용은 [Common Data Model 매니페스트](/common-data-model/sdk/manifest)를 참조하세요. 매니페스트가 없는 경우 Storage Blob 데이터 소유자 또는 Storage Blob 데이터 기여자 액세스 권한이 있는 관리자는 데이터를 수집할 때 스키마를 정의할 수 있습니다.
 
@@ -62,7 +64,7 @@ Azure Data Lake Storage Gen2 계정을 사용하여 Dynamics 365 Customer Insigh
    > [!NOTE]
    > 데이터 원본을 만들려면 컨테이너 또는 스토리지 계정에 대해 다음 역할 중 하나가 필요합니다.
    >
-   >  - Storage Blob Data Reader는 스토리지 계정에서 데이터를 읽고 Customer Insights로 수집하는 데 충분합니다. 
+   >  - Storage Blob Data Reader는 스토리지 계정에서 데이터를 읽고 Customer Insights로 수집하는 데 충분합니다.
    >  - Customer Insights에서 매니페스트 파일을 직접 편집하려면 Storage Blob 데이터 기여자 또는 담당자가 필요합니다.  
   
 1. 데이터를 가져올 데이터 및 스키마(model.json 또는 manifest.json 파일)가 포함된 **컨테이너** 의 이름을 선택하고 **다음** 을 선택합니다.
