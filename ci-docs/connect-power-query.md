@@ -5,19 +5,19 @@ ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
-ms.author: matgos
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 7af51ed04fbd28149ea501c58e6fe71b5fa6d4b6
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 6a25e332bafab414c9def4e1e6b461139dd24ea6
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207053"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463273"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Power Query 데이터 원본에 연결
 
@@ -63,7 +63,9 @@ Power Query 커넥터를 기반으로 데이터 원본을 추가하는 것은 �
 데이터를 로드하는 데 시간이 걸릴 수 있습니다. 새로 고침이 완료되면, 수집된 데이터를 [**엔터티**](entities.md) 페이지에서 검토할 수 있습니다.
 
 > [!CAUTION]
-> Power Query 기반 데이터 원본은 [Dataverse의 데이터 흐름](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)을 생성합니다. Customer Insights에서 사용되는 Power Platform 관리 센터의 데이터 흐름 이름을 바꾸지 않도록 하세요. 데이터 흐름의 이름을 바꾸면 Customer Insights 데이터 원본과 Dataverse 데이터 흐름 간의 참조 데이터에 문제가 생깁니다.
+>
+> - Power Query 기반 데이터 원본은 [Dataverse의 데이터 흐름](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)을 생성합니다. Customer Insights에서 사용되는 Power Platform 관리 센터의 데이터 흐름 이름을 바꾸지 않도록 하세요. 데이터 흐름의 이름을 바꾸면 Customer Insights 데이터 원본과 Dataverse 데이터 흐름 간의 참조 데이터에 문제가 생깁니다.
+> - Customer Insights의 Power Query 데이터 원본에 대한 동시 평가에는 [PowerBI.com의 Dataflows와 같이 새로 고침 한도](/power-query/power-query-online-limits#refresh-limits)가 동일합니다. 데이터 새로 고침이 평가 한도에 도달하여 실패한 경우 데이터 원본이 동시에 처리되지 않도록 각 데이터 흐름에 대한 새로 고침 일정을 조정하는 것이 좋습니다.
 
 ### <a name="available-power-query-data-sources"></a>사용 가능한 Power Query 데이터 원본
 
@@ -77,7 +79,7 @@ Power Query 커넥터를 기반으로 데이터 원본을 추가하는 것은 �
 
 Dataverse 환경을 Customer Insights와 연결 후 생성되는 데이터 원본은 기본적으로 [Power Platform 데이터 흐름](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)을 사용합니다. 데이터 흐름은 데이터 게이트웨이를 사용하여 온 프레미스 연결을 지원합니다. [온-프레미스 데이터 게이트웨이](/data-integration/gateway/service-gateway-app)를 사용하여 Dataverse 환경이 연결되기 전에 존재했던 데이터 소스를 제거하고 다시 생성할 수 있습니다.
 
-기존 Power BI의 데이터 게이트웨이 또는 Power Apps의 환경이 표시되고 Customer Insights에서 이를 재사용할 수 있습니다. 데이터 소스 페이지에는 온-프레미스 데이터 게이트웨이를 보고 구성할 수 있는 Microsoft Power Platform 환경에 대한 링크가 표시됩니다.
+Power BI 또는 Power Apps 환경의 데이터 게이트웨이가 표시되며 데이터 게이트웨이와 Customer Insights 환경이 동일한 Azure 지역에 있는 경우 Customer Insights에서 재사용할 수 있습니다. 데이터 소스 페이지에는 온-프레미스 데이터 게이트웨이를 보고 구성할 수 있는 Microsoft Power Platform 환경에 대한 링크가 표시됩니다.
 
 > [!IMPORTANT]
 > 게이트웨이가 최신 버전으로 업데이트되었는지 확인하십시오. 게이트웨이 화면에 표시되는 프롬프트에서 직접 업데이트를 설치하고 게이트웨이를 재구성하거나 [최신 버전 다운로드](https://powerapps.microsoft.com/downloads/)를 수행할 수 있습니다. 최신 게이트웨이 버전을 사용하지 않는 경우 **키워드는 지원되지 않습니다: 구성 속성. 매개 변수 이름: 키워드** 와 같은 오류 메시지와 함께 데이터 흐름 새로 고침이 실패합니다.

@@ -12,12 +12,12 @@ searchScope:
 - ci-export
 - ci-connections
 - customerInsights
-ms.openlocfilehash: c580b6c01e1b4ac6b095733193d86ebd0b4005f2
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: 44f58d694b9bd35a8d8c04d487d40743291e0566
+ms.sourcegitcommit: ef3e17134d44d2731605381ea0385dbc5aef6120
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9304067"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460198"
 ---
 # <a name="exports-preview-overview"></a>내보내기(프리뷰) 개요
 
@@ -81,6 +81,11 @@ ms.locfileid: "9304067"
 ## <a name="schedule-and-run-exports"></a>내보내기 예약 및 실행
 
 구성하는 각 내보내기에는 새로 고침 일정이 있습니다. 새로 고치는 동안 시스템은 내보내기에 포함할 새 데이터 또는 업데이트된 데이터를 찾습니다. 기본적으로 내보내기는 모든 [예약된 시스템 새로 고침](schedule-refresh.md)의 일부로 실행됩니다. 새로 고침 일정을 사용자 지정하거나 해제하여 수동으로 내보내기를 실행할 수 있습니다.
+
+> [!TIP]
+> 다음 모범 사례를 통해 세그먼트 내보내기 처리 시간을 최소화합니다.
+> - 여러 내보내기에 걸쳐 세그먼트 엔터티를 배포합니다.
+> - 모든 내보내기를 동시에 예약하지 마십시오. 각 내보내기의 예정된 시간 사이에 30분 또는 1시간을 두십시오.
 
 내보내기 일정은 환경 상태에 따라 다릅니다. 예약된 내보내기가 시작되어야 할 때 [종속성](system.md#refresh-processes)에 진행 중인 업데이트가 있는 경우 시스템은 먼저 업데이트를 완료한 다음 내보내기를 실행합니다. **새로 고침** 열에는 내보내기가 마지막으로 새로 고침된 시점이 표시됩니다.
 

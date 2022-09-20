@@ -8,12 +8,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7f38b7d9985368fc38107f1f360f0603a7fcc8e6
-ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
+ms.openlocfilehash: c3863b1a72fd92ddc87755699feda11371ec9214
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9411748"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463227"
 ---
 # <a name="service-limits-in-customer-insights"></a>Customer Insights의 서비스 제한
 
@@ -25,6 +25,7 @@ ms.locfileid: "9411748"
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | 세그먼트, 측정값 및 예측 | 300  | 결합된 [세그먼트](segments.md), [측정값](measures.md) 및 [예측](predictions-overview.md)의 총 수는 300을 초과할 수 없습니다.  |
 | 관계 | 엔티티 경로의 관계에 대한 20가지 수준의 깊이. | 빌더 인터페이스를 사용하여 [세그먼트](segments.md) 또는 [측정](measures.md)를 생성할 때 엔터티 경로는 시작 엔터티와 대상 엔터티 간에 최대 20개의 관계 홉을 가질 수 있습니다.  |
+|데이터 수집| Power Query 데이터 원본에 대한 동시 평가는 제한됩니다. | Customer Insights에는 [PowerBI.com의 Dataflows와 같이 새로 고침 한도가](/power-query/power-query-online-limits#refresh-limits) 동일하게 있습니다. |
 
 ## <a name="fair-scheduling-of-jobs"></a>공정한 작업 일정
 
