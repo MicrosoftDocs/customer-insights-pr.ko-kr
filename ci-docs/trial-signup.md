@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-setup
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: fd32a3e37f4bbf57a5bd05f888fde39d32c02a82
-ms.sourcegitcommit: e5649ca0b3000cee0ca7c9eac7142cbd5f7dd2ac
+ms.openlocfilehash: 13e0b22d40d909abdbea8e77c9b4795ee42271c8
+ms.sourcegitcommit: e02a0bf51b5440fcf3284d410f24ea652fe90723
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9305612"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9544317"
 ---
 # <a name="sign-up-for-a-free-dynamics-365-customer-insights-trial"></a>무료 Dynamics 365 Customer Insights 평가판 등록
 
@@ -40,6 +40,6 @@ Customer Insights는 30일 무료 평가판을 제공합니다. 간편하게 가
 
 ## <a name="additional-resources"></a>추가 리소스
 
-- [Customer Insights에 대한 학습 경로 및 교육 모듈 살펴보기](/learn/browse/?products=dynamics-cust-insights)
+- [Customer Insights에 대한 학습 경로 및 교육 모듈 살펴보기](/training/browse/?products=dynamics-cust-insights)
 - [평가판 FAQ](trial-faq.md)
 - [Dynamics 365 Customer Insights 제품 세부 정보](https://dynamics.microsoft.com/ai/customer-insights/)

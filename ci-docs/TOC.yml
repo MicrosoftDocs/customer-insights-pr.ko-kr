@@ -7,21 +7,21 @@
 - name: 학습 카탈로그
   items:
     - name: Microsoft 고객 데이터 플랫폼 전문가로 인증
-      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+      href: /certifications/exams/mb-260?tab=tab-instructor-led
     - name: Customer Insights 시작
-      href: /learn/modules/get-started-customer-data-platform/
+      href: /training/modules/get-started-customer-data-platform/
     - name: 데이터 수집
-      href: /learn/modules/ingest-data-customer-insights/
+      href: /training/modules/ingest-data-customer-insights/
     - name: 통합 고객 프로필 만들기
-      href: /learn/modules/unified-customer-profile/
+      href: /training/modules/unified-customer-profile/
     - name: Customer Insights 작업
-      href: /learn/modules/working-with-customer-insights/
+      href: /training/modules/working-with-customer-insights/
     - name: 데이터 보강 및 예측
-      href: /learn/modules/enrich-data/
+      href: /training/modules/enrich-data/
     - name: 외부 연결 관리
-      href: /learn/modules/configure-third-party-connections/
+      href: /training/modules/configure-third-party-connections/
     - name: Customer Insights 관리
-      href: /learn/modules/administer-customer-data-platform/
+      href: /training/modules/administer-customer-data-platform/
 - name: 무료 평가판
   items:
     - name: 무료 평가판 신청
@@ -118,6 +118,8 @@
       href: consent-management.md
     - name: 개인 설정용 웹 데이터 사용
       href: unknown-to-known.md
+    - name: 알 수 없는 고객 프로필 관리
+      href: manage-unknown-profiles.md
 - name: 세그먼트
   items:
     - name: 세그먼트 개요
