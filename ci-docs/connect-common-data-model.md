@@ -1,7 +1,7 @@
 ---
 title: Azure Data Lake 계정을 사용하여 Common Data Model 폴더에 연결
 description: Azure Data Lake Storage를 사용하여 Common Data Model 데이터로 작업합니다.
-ms.date: 07/27/2022
+ms.date: 09/29/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: d79b2d34e425e123224209814fef6e367c77c813
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: c12603b9ed8a814356a0f8d0137e97afc749b87c
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9396093"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609950"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>Azure Data Lake Storage에서 데이터에 연결
 
@@ -43,6 +43,10 @@ Azure Data Lake Storage Gen2 계정을 사용하여 Dynamics 365 Customer Insigh
 - 데이터 원본 연결을 설정하는 사용자에게는 스토리지 계정에 대한 최소한의 Storage Blob Data Contributor 권한이 필요합니다.
 
 - Data Lake Storage의 데이터는 데이터 저장을 위한 Common Data Model 표준을 따라야 하며 데이터 파일(*.csv 또는 *.parquet)의 스키마를 나타내는 공통 데이터 모델 매니페스트가 있어야 합니다. 매니페스트는 엔터티 열 및 데이터 형식, 데이터 파일 위치 및 파일 형식과 같은 엔터티의 세부 정보를 제공해야 합니다. 자세한 내용은 [Common Data Model 매니페스트](/common-data-model/sdk/manifest)를 참조하세요. 매니페스트가 없는 경우 Storage Blob 데이터 소유자 또는 Storage Blob 데이터 기여자 액세스 권한이 있는 관리자는 데이터를 수집할 때 스키마를 정의할 수 있습니다.
+
+## <a name="recommendations"></a>추천
+
+최적의 성능을 위해 Customer Insights는 파티션 크기를 1GB 이하로 권장하고 폴더의 파티션 파일 수는 1000개를 초과하지 않아야 합니다.
 
 ## <a name="connect-to-azure-data-lake-storage"></a>Azure Data Lake Storage에 연결
 
@@ -199,5 +203,101 @@ Azure Data Lake Storage Gen2 계정을 사용하여 Dynamics 365 Customer Insigh
 1. **저장** 을 클릭하여 변경 사항을 적용하고 **데이터 원본** 페이지로 돌아갑니다.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupt-data"></a>수집 오류 또는 데이터 손상의 일반적인 이유
+
+데이터 수집 중에 레코드가 손상된 것으로 간주될 수 있는 가장 일반적인 이유는 다음과 같습니다.
+
+- 원본 파일과 스키마 간에 데이터 형식 및 필드 값이 일치하지 않습니다
+- 원본 파일의 열 수가 스키마와 일치하지 않습니다
+- 필드에는 예상 스키마와 비교하여 열이 비뚤어지게 하는 문자가 포함되어 있습니다. 예: 잘못된 형식의 따옴표, 이스케이프 처리되지 않은 따옴표, 줄 바꿈 문자 또는 탭 문자.
+- 파티션 파일이 없습니다
+- datetime/date/datetimeoffset 열이 있는 경우 표준 형식을 따르지 않는 경우 해당 형식을 스키마에 지정해야 합니다.
+
+### <a name="schema-or-data-type-mismatch"></a>스키마 또는 데이터 형식 불일치
+
+데이터가 스키마를 따르지 않으면 수집 프로세스가 오류와 함께 완료됩니다. 원본 데이터 또는 스키마를 수정하고 데이터를 다시 수집하십시오.
+
+### <a name="partition-files-are-missing"></a>파티션 파일이 없습니다
+
+- 손상된 레코드 없이 수집에 성공했지만 데이터가 표시되지 않으면 model.json 또는 manifest.json 파일을 편집하여 파티션이 지정되었는지 확인합니다. 그런 다음, [데이터 원본 새로 고침](data-sources.md#refresh-data-sources)을 수행합니다.
+
+- 자동 일정 새로 고침 중에 데이터 원본이 새로 고쳐지는 동시에 데이터 수집이 발생하면 파티션 파일이 비어 있거나 Customer Insights에서 처리할 수 없습니다. 업스트림 새로 고침 일정에 맞추기 위해 [시스템 새로 고침 일정](schedule-refresh.md) 또는 데이터 원본의 새로 고침 일정을 변경합니다. 새로 고침이 한 번에 모두 발생하지 않도록 타이밍을 맞추고 Customer Insights에서 처리할 최신 데이터를 제공합니다.
+
+### <a name="datetime-fields-in-the-wrong-format"></a>잘못된 형식의 날짜/시간 필드
+
+엔터티의 날짜/시간 필드가 ISO 8601 또는 en-US 형식이 아닙니다. Customer Insights의 기본 날짜/시간 형식은 en-US 형식입니다. 엔터티의 모든 날짜/시간 필드는 동일한 형식이어야 합니다. Customer Insights는 모델 또는 manifest.json의 원본 또는 엔터티 수준에서 주석 또는 특성이 만들어지면 다른 형식을 지원합니다. 예:
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  manifest.json에서 날짜/시간 형식은 엔터티 수준 또는 특성 수준에서 지정할 수 있습니다. 엔터티 수준에서 *.manifest.cdm.json의 엔터티의 "exhibitsTraits"를 사용하여 날짜/시간 형식을 정의합니다. 특성 수준에서 entityname.cdm.json의 속성에 "appliedTraits"를 사용합니다.
+
+**엔터티 수준의 Manifest.json**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**특성 수준의 Entity.json**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

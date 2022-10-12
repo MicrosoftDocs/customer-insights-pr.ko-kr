@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: acba06cba5fb5cbf0bca5aeb30b603003555fc32
-ms.sourcegitcommit: 3ab8f1c0ba5874095a19f0b6367b9a4432f72ed1
+ms.openlocfilehash: 2a386d65a5e285d471e9cafc45f247e7b4ae23bb
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "9409365"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609600"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights의 새로운 기능
 
@@ -228,9 +228,9 @@ Microsoft 및 기타 파트너와 같은 소스의 데이터를 사용하여 데
 
 ### <a name="data-preparation-process-lists-corruption-reason-for-corrupted-records"></a>데이터 준비 프로세스는 손상된 레코드의 손상 이유를 나열합니다.
 
-이제 데이터 준비에 손상된 데이터가 있는 모든 필드에 대한 손상 이유가 표시됩니다. 정보는 쉽게 식별할 수 있도록 개별 기록 수준으로 제공됩니다. 
+이제 데이터 준비에 손상된 데이터가 있는 모든 필드에 대한 손상 이유가 표시됩니다. 정보는 쉽게 식별할 수 있도록 개별 기록 수준으로 제공됩니다.
 
-자세한 정보는 [손상된 데이터 원본](entities.md#corrupted-data-sources)을 참조하세요.
+자세한 정보는 [손상된 데이터 원본](data-sources.md#corrupt-data-sources)을 참조하세요.
 
 ### <a name="end-of-preview-for-reporting-features-in-the-engagement-insights-capability"></a>참여 인사이트 기능의 보고 기능에 대한 프리뷰 종료
 

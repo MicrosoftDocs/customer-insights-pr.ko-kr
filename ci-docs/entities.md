@@ -1,7 +1,7 @@
 ---
 title: Customer Insights의 엔터티
 description: 엔터티 페이지에서 데이터를 봅니다.
-ms.date: 12/06/2021
+ms.date: 08/04/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-entities
 - customerInsight
-ms.openlocfilehash: 0beaa46d47545ac195ced876b509dfc57821bfaf
-ms.sourcegitcommit: ad74ace653db9a25fce4343adef7db1c9b0d8904
+ms.openlocfilehash: e365945b27e7c985ca5371c6b72619610b6f3af1
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "9183572"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9610106"
 ---
 # <a name="entities-in-customer-insights"></a>Customer Insights의 엔터티
 
@@ -61,27 +61,5 @@ ms.locfileid: "9183572"
   - **생성 일시**: 엔터티 생성 날짜 및 시간
   - **수정한 사람**: 엔터티를 수정한 사람의 이름
   - **수정 일시**: 엔터티 수정 날짜 및 시간
-
-## <a name="entity-specific-information"></a>엔터티별 정보
-
-다음 섹션에서는 일부 시스템 생성 엔터티에 대한 정보를 제공합니다.
-
-### <a name="corrupted-data-sources"></a>손상된 데이터 원본
-
-수집된 데이터 원본의 필드에 손상된 데이터가 포함될 수 있습니다. 손상된 필드가 있는 레코드는 시스템 생성 엔터티에 노출됩니다. 손상된 레코드에 대해 알면 소스 시스템에서 검토하고 업데이트할 데이터를 식별하는 데 도움이 됩니다. 다음 번에 데이터 원본을 새로 고친 후 수정된 레코드는 Customer Insights에 수집되고 다운스트림 프로세스로 전달됩니다. 
-
-예를 들어, '생일' 열에는 '날짜'로 설정된 데이터 유형이 있습니다. 고객 레코드에 생일이 '01/01/19777'로 입력되어 있습니다. 시스템은 이 레코드를 손상된 것으로 표시합니다. 이제 누군가가 소스 시스템의 생일을 '1977'로 변경할 수 있습니다. 데이터 원본의 자동 새로 고침 후 필드는 이제 유효한 형식을 가지며 레코드는 손상된 엔터티에서 제거됩니다.
-
-**데이터** > **엔터티** 로 이동하여 **시스템** 섹션에서 손상된 엔터티를 찾습니다. 손상된 엔터티의 명명 스키마: 'DataSourceName_EntityName_corrupt'. 손상된 엔터티를 선택하여 손상된 필드와 개별 레코드 수준에서 이유를 식별합니다.
-
-   :::image type="content" source="media/corruption-reason.png" alt-text="손상된 이유.":::
-
-Customer Insights는 여전히 손상된 레코드를 처리합니다. 그러나 통합 데이터로 작업할 때 문제가 발생할 수 있습니다.
-
-수집된 데이터에 대해 다음 검사를 실행하여 손상된 레코드를 노출합니다.
-
-- 필드 값이 해당 열의 데이터 유형과 일치하지 않습니다.
-- 필드에 열이 예상 스키마와 일치하지 않게 하는 문자가 포함되어 있습니다. 예: 잘못된 형식의 따옴표, 이스케이프 처리되지 않은 따옴표 또는 복귀 개행 문자.
-- datetime/date/datetimeoffset 열이 있으면 표준 ISO 형식을 따르지 않는 경우 해당 형식을 모델에 지정해야 합니다.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

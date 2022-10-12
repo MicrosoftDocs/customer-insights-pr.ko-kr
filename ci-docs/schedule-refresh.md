@@ -1,7 +1,7 @@
 ---
 title: 시스템 새로 고침 예약
 description: 시스템을 새로 고침해야 하는 시간 예약
-ms.date: 08/09/2022
+ms.date: 09/27/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
@@ -11,19 +11,19 @@ manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: 949ea071ca41127b0c45488d5d7af3f6aa4e1c35
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: 4aac02b570357d2086f7a9d7340b0e4837157a0b
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9395964"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9610336"
 ---
 # <a name="schedule-system-refresh"></a>시스템 새로 고침 예약
 
 [수집된 데이터 원본](data-sources.md) 전체에 대한 자동 새로 고침을 예약합니다. 자동 새로 고침은 데이터 소스의 업데이트가 통합 고객 프로필에 반영되도록 합니다.
 
 > [!NOTE]
-> 귀사가 관리하는 Power Query 데이터 원본은 자체 일정에 따라 새로 고침됩니다. 이 Power Query 데이터 원본의 새로 고침을 예약하려면 **데이터 원본** 페이지에서 해당 데이터 소스에 대한 새로 고침 설정을 구성하세요.
+> 귀사가 관리하는 Power Query 데이터 원본은 자체 일정에 따라 새로 고침됩니다. 이 Power Query 데이터 원본의 새로 고침을 예약하려면 **데이터 원본** 페이지에서 해당 데이터 소스에 대한 새로 고침 설정을 구성하세요. 새로 고침이 한 번에 모두 발생하지 않도록 타이밍을 업스트림 데이터 새로 고침 일정에 맞춥니다.
 > :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform 데이터 흐름 새로 고침 설정.":::
 
 ## <a name="set-system-refresh-schedule"></a>시스템 새로 고침 예약 설정

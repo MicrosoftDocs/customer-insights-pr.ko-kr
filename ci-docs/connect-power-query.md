@@ -1,7 +1,7 @@
 ---
 title: Power Query 데이터 원본에 연결(비디오 포함)
 description: Power Query 커넥터를 통해 데이터를 수집합니다(비디오 포함).
-ms.date: 07/26/2022
+ms.date: 09/29/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 6a25e332bafab414c9def4e1e6b461139dd24ea6
-ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
+ms.openlocfilehash: 4cc7e57dfb0f8d050e91adc441c24e849882f5d8
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9463273"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609898"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Power Query 데이터 원본에 연결
 
@@ -43,16 +43,17 @@ Power Query 커넥터를 기반으로 데이터 원본을 추가하는 것은 �
 
 1. **변환 데이터** 선택.
 
-1. **Power Query - 쿼리 편집** 대화 상자를 사용하여 데이터를 검토하고 구체화할 수 있습니다. 선택한 데이터 원본에서 식별된 시스템이 왼쪽 창에 나타납니다.
+1. **Power Query - 쿼리 편집** 페이지에서 데이터를 검토하고 구체화합니다. 선택한 데이터 원본에서 식별된 시스템이 왼쪽 창에 나타납니다.
 
    :::image type="content" source="media/data-manager-configure-edit-queries.png" alt-text="대화 쿼리 편집":::
 
-1. 데이터를 변환할 수도 있습니다. 편집하거나 변환할 엔터티를 선택합니다. Power Query 창의 옵션을 사용하여 변환을 적용합니다. 각 변환은 **적용된 단계** 아래에 나열됩니다. Power Query는 [이미 빌드된 변환](/power-query/power-query-what-is-power-query#transformations) 옵션을 다양하게 제공합니다.
+1. 데이터를 변환합니다. 편집하거나 변환할 엔터티를 선택합니다. Power Query 창의 옵션을 사용하여 변환을 적용합니다. 각 변환은 **적용된 단계** 아래에 나열됩니다. Power Query는 [이미 빌드된 변환](/power-query/power-query-what-is-power-query#transformations) 옵션을 다양하게 제공합니다.
 
-   다음 변환을 사용하는 것이 좋습니다.
-
-   - CSV 파일에서 데이터를 수집하는 경우 첫 번째 행에는 종종 헤더가 포함됩니다. **변환** 으로 이동하고 **첫 번째 행을 헤더로 사용** 을 선택합니다.
-   - 데이터 유형이 적절하게 설정되었는지 확인하십시오. 예를 들어 날짜 필드의 경우 날짜 유형을 선택합니다.
+   > [!IMPORTANT]
+   > 다음 변환을 사용하는 것이 좋습니다.
+   >
+   > - CSV 파일에서 데이터를 수집하는 경우 첫 번째 행에는 종종 헤더가 포함됩니다. **변환** 으로 이동하고 **첫 번째 행을 헤더로 사용** 을 선택합니다.
+   > - 데이터 형식이 적절하게 설정되고 데이터와 일치하는지 확인하십시오. 예를 들어 날짜 필드의 경우 날짜 유형을 선택합니다.
 
 1. **쿼리 편집** 대화 상자에서 데이터 원본에 추가 엔티티를 추가하려면 **홈** 으로 이동하고 **데이터 가져오기** 를 선택합니다. 이 데이터 원본에 대한 모든 엔터티를 추가할 때까지 5~10단계를 반복합니다. 여러 데이터 집합을 포함하는 데이터베이스가 있는 경우 각 데이터 집합은 자체 엔터티입니다.
 
@@ -102,5 +103,51 @@ Power BI 또는 Power Apps 환경의 데이터 게이트웨이가 표시되며 �
 1. **저장** 을 선택하여 변경 사항을 적용하고 **데이터 원본** 페이지로 돌아갑니다.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupt-data"></a>수집 오류 또는 데이터 손상의 일반적인 이유
+
+### <a name="data-type-does-not-match-data"></a>데이터 형식이 데이터와 일치하지 않습니다.
+
+가장 일반적인 데이터 형식 불일치는 날짜 필드가 올바른 날짜 형식으로 설정되지 않은 경우 발생합니다.
+
+데이터를 소스에서 수정하고 다시 수집할 수 있습니다. 또는 Customer Insights 내에서 변환을 수정하십시오. 변환을 수정하는 방법:
+
+1. **데이터** > **데이터 원본** 으로 이동.
+
+1. 손상된 데이터가 있는 데이터 원본 옆에 있는 **편집** 을 선택합니다.
+
+1. **다음** 을 선택합니다.
+
+1. 각 쿼리를 선택하고 잘못된 "적용된 단계" 내부에 적용된 변환 또는 날짜 형식으로 변환되지 않은 날짜 열을 찾습니다.
+
+   :::image type="content" source="media/PQ_corruped_date.png" alt-text="Power Query - 잘못된 날짜 형식을 표시하는 편집":::
+
+1. 데이터와 정확히 일치하도록 데이터 형식을 변경하십시오.
+
+1. **저장** 을 선택합니다. 해당 데이터 원본이 새로 고쳐집니다.
+
+## <a name="troubleshoot-ppdf-power-query-based-data-source-refresh-issues"></a>PPDF Power Query 기반 데이터 원본 새로 고침 문제 해결
+
+데이터가 오래되었거나 데이터 원본 새로 고침 후 오류가 발생하면 다음 단계를 수행하십시오.
+
+1. [Power Platform](https://make.powerapps.com)으로 이동합니다.
+
+1. Customer Insights 인스턴스에 대해 **환경** 을 선택합니다.
+
+1. **데이터 흐름** 으로 이동합니다.
+
+1. Customer Insights의 데이터 원본에 해당하는 데이터 흐름의 경우 세로 줄임표(&vellip;)를 선택한 다음 **새로 고침 기록 표시** 를 선택합니다.
+
+1. 데이터 흐름의 **상태** 가 **성공** 인 경우 Power Query 기반 데이터 원본의 소유권이 변경되었을 수 있습니다.
+
+   1. 새로 고침 기록에서 새로 고침 일정을 검토합니다.
+   1. 새 담당자의 일정을 설정하고 설정을 저장합니다.
+
+1. 데이터 흐름의 **상태** 가 **실패함** 인 경우:
+
+   1. 새로 고침 기록 파일을 다운로드합니다.
+   1. 다운로드한 파일을 검토하여 실패 원인을 확인하십시오.
+   1. 오류를 해결할 수 없으면 **?** 를 선택하여 지원 티켓을 엽니다. 다운로드한 새로 고침 기록 파일을 포함합니다.
+
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

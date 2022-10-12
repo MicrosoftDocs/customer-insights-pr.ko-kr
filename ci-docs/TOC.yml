@@ -162,6 +162,8 @@
           href: sentiment-analysis.md
         - name: Azure 기계 학습의 사용자 지정 모델 사용
           href: custom-models.md
+        - name: 예측을 기준으로 세그먼트 만들기
+          href: prediction-based-segment.md
     - name: 샘플 가이드
       items:
         - name: CLV 예측용 샘플 가이드
@@ -174,10 +176,6 @@
           href: sample-guide-predict-product-recommendation.md
         - name: Azure Machine Learning 실험
           href: azure-machine-learning-experiments.md
-    - name: 예측 관리
-      href: manage-predictions.md
-    - name: 예측을 기준으로 세그먼트 만들기
-      href: prediction-based-segment.md
 - name: 내보내기 옵션
   items:
     - name: 내보내기

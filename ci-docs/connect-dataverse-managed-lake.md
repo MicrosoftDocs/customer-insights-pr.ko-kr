@@ -1,7 +1,7 @@
 ---
 title: Microsoft Dataverse 관리형 데이터 레이크의 데이터에 연결
 description: Microsoft Dataverse 관리 데이터 레이크에서 데이터 가져오기
-ms.date: 07/26/2022
+ms.date: 08/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,12 +11,12 @@ ms.reviewer: v-wendysmith
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: b21150a1c51bdad35250cae7fde7f38a014ec876
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 0d9612525344c8ac99b6e3edfe33a426dc0a474b
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206961"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609803"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Microsoft Dataverse 관리형 데이터 레이크의 데이터에 연결
 
@@ -70,5 +70,93 @@ Microsoft Dataverse 사용자는 Microsoft Dataverse 관리 레이크에서 분�
 1. **저장** 을 클릭하여 변경 사항을 적용하고 **데이터 원본** 페이지로 돌아갑니다.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupted-data"></a>수집 오류 또는 데이터 손상의 일반적인 이유
+
+수집된 데이터에 대해 다음 검사를 실행하여 손상된 레코드를 노출합니다.
+
+- 필드 값이 해당 열의 데이터 유형과 일치하지 않습니다.
+- 필드에 열이 예상 스키마와 일치하지 않게 하는 문자가 포함되어 있습니다. 예: 잘못된 형식의 따옴표, 이스케이프 처리되지 않은 따옴표 또는 복귀 개행 문자.
+- datetime/date/datetimeoffset 열이 있으면 표준 ISO 형식을 따르지 않는 경우 해당 형식을 모델에 지정해야 합니다.
+
+### <a name="schema-or-data-type-mismatch"></a>스키마 또는 데이터 형식 불일치
+
+데이터가 스키마를 따르지 않으면 레코드가 손상된 것으로 분류됩니다. 원본 데이터 또는 스키마를 수정하고 데이터를 다시 수집하십시오.
+
+### <a name="datetime-fields-in-the-wrong-format"></a>잘못된 형식의 날짜/시간 필드
+
+엔터티의 날짜/시간 필드가 ISO 또는 en-US 형식이 아닙니다. Customer Insights의 기본 날짜/시간 형식은 en-US 형식입니다. 엔터티의 모든 날짜/시간 필드는 동일한 형식이어야 합니다. Customer Insights는 모델 또는 manifest.json의 원본 또는 엔터티 수준에서 주석 또는 특성이 만들어지면 다른 형식을 지원합니다. 예:
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  manifest.json에서 날짜/시간 형식은 엔터티 수준 또는 특성 수준에서 지정할 수 있습니다. 엔터티 수준에서 *.manifest.cdm.json의 엔터티의 "exhibitsTraits"를 사용하여 날짜/시간 형식을 정의합니다. 특성 수준에서 entityname.cdm.json의 속성에 "appliedTraits"를 사용합니다.
+
+**엔터티 수준의 Manifest.json**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**특성 수준의 Entity.json**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
