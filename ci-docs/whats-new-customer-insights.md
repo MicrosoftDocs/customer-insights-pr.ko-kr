@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 2a386d65a5e285d471e9cafc45f247e7b4ae23bb
-ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
+ms.openlocfilehash: dcee60a73e0c32278553253040478c31e45237ae
+ms.sourcegitcommit: 618ef15b434de0a68213383b6521ce2a60753afb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "9609600"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "9638359"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights의 새로운 기능
 
@@ -23,6 +23,28 @@ ms.locfileid: "9609600"
 
 > [!TIP]
 > 기능 요청 및 제품 제안에 대한 투표를 제출하려면 [Dynamics 365 응용 프로그램 아이디어 포털](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)로 이동하세요.
+
+## <a name="september-2022-updates"></a>2022년 9월 업데이트
+
+2022년 9월 업데이트에는 새로운 기능, 성능 업그레이드 및 버그 수정이 포함됩니다.
+
+### <a name="export-data-to-hubspot"></a>HubSpot으로 데이터 내보내기
+
+통합 고객 프로필의 세그먼트를 HubSpot으로 내보내고 이메일 마케팅에 사용합니다.
+
+자세한 내용은 [HubSpot으로 세그먼트 내보내기](export-hubspot.md)를 참조하십시오.
+
+### <a name="remove-a-unified-field-or-entity-from-data-unification"></a>데이터 통합에서 통합 필드 또는 엔터티 제거
+
+데이터 통합 프로세스에서 필드와 엔터티를 제거할 수 있습니다.
+
+자세한 내용은 [통합 필드 제거](data-unification-update.md#remove-a-unified-field)를 참조하십시오.
+
+### <a name="manage-unknown-customer-profiles"></a>알 수 없는 고객 프로필 관리
+
+기억에 남는 개인 설정은 고객 데이터의 풍부함과 완전성에 달려 있으며 Customer Insights는 이러한 목표를 달성하는 데 도움이 됩니다. ID 이외의 정보가 없는 사용자의 고객 프로필을 관리할 수 있습니다.
+
+자세한 내용은 [Customer Insights로 알 수 없는 프로필 관리](manage-unknown-profiles.md)를 참조하세요.
 
 ## <a name="august-2022-updates"></a>2022년 8월 업데이트
 

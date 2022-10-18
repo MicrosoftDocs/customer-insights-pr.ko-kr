@@ -1,19 +1,19 @@
 ---
 title: Braze로 세그먼트 내보내기(프리뷰)
 description: 연결을 구성하고 Braze로 내보내는 방법을 알아보세요.
-ms.date: 07/25/2022
+ms.date: 10/06/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 84dc7f13f30e0334d431fe5b5866c7f87e82ab27
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 2f52eb8196e057f934c8d2b5ac0518ce121606b6
+ms.sourcegitcommit: 003c1929f730d7d505c108aba84f6269f4c98978
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195115"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9655278"
 ---
 # <a name="export-segments-to-braze-preview"></a>Braze로 세그먼트 내보내기(프리뷰)
 
@@ -23,6 +23,7 @@ Unified customer profile의 세그먼트를 Braze로 내보내고 마케팅 활�
 
 - [Braze 계정](https://www.braze.com/) 및 해당 관리자 자격 증명입니다.
 - [Braze API 키](https://www.braze.com/docs/api/basics/)
+- [Braze REST 끝점](https://www.braze.com/docs/api/basics/#api-definitions) 
 - Customer Insights에 [세그먼트를 구성했습니다](segments.md).
 - 내보낸 세그먼트의 Unified customer profile에는 이메일 주소와 Braze 고객 ID를 나타내는 필드가 있습니다.
 
@@ -30,6 +31,7 @@ Unified customer profile의 세그먼트를 Braze로 내보내고 마케팅 활�
 
 - 최대 100만 개의 고객 프로필을 Braze로 내보내는 데 최대 40분이 소요될 수 있습니다. Braze로 내보낼 수 있는 고객 프로필의 개수는 Braze와 체결한 계약에 따라 다릅니다.
 - 세그먼트만 해당됩니다.
+- Azure Private Link는 Braze 내보내기에 지원되지 않습니다.
 
 ## <a name="set-up-connection-to-braze"></a>Braze에 연결 설정
 
@@ -62,6 +64,8 @@ Unified customer profile의 세그먼트를 Braze로 내보내고 마케팅 활�
 1. **내보내기 추가** 를 선택합니다.
 
 1. **내보내기 연결** 필드의 Braze 섹션에서 연결을 선택합니다. 사용 가능한 연결이 없으면 관리자에게 문의하십시오.
+
+1. REST 끝점을 **호스트 이름** 필드에 `rest.iad-03.braze.com` 형식으로 입력합니다.
 
 1. 내보낼 엔터티의 이름을 입력합니다.
 
