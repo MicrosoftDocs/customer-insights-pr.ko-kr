@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: dfa63110fc5291f2b63aebf588d6fdd20ed4ab67
-ms.sourcegitcommit: 134aac66e3e0b77b2e96a595d6acbb91bf9afda2
+ms.openlocfilehash: 9433c411a2c7eb0db137c6392578993d47be82a2
+ms.sourcegitcommit: 8559ca47a22d1d7cd9be13531c2eaf0c1083942b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9424317"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671259"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Microsoft Dataverse에서 Customer Insights 데이터로 작업
 
@@ -63,6 +63,9 @@ Customer Insights를 구독하면 조직의 기존 [Dataverse 스토리지 용�
 ## <a name="enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview"></a>자체 Azure Data Lake Storage에서 Dataverse와 데이터 공유 활성화(프리뷰)
 
 [자체 Azure Data Lake Storage 계정](own-data-lake-storage.md)에서 Customer Insights 환경을 설정하는 사용자에게 스토리지 계정의 `customerinsights` 컨테이너에 대한 최소 **Storage Blob 데이터 리더** 권한이 있는지 확인합니다.
+
+> [!NOTE]
+> 데이터 공유는 자체 Azure Data Lake Storage 계정을 사용하는 경우에만 적용할 수 있습니다. Customer Insights 환경에서 기본 Dataverse 스토리지를 사용하는 경우 이 설정을 사용할 수 없습니다.
 
 ### <a name="limitations"></a>제한 사항
 
