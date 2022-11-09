@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3c04fc26dc690cf32b45913257e82b9a0f617185
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 82303c7bcb269ee68419c9639ee743e13451f273
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196310"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724692"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>Campaign Monitor로 세그먼트 내보내기(프리뷰)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9196310"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
+- BYOS(Bring Your Own Storage)와 결합된 개인 링크는 지원되지 않습니다.
 - 최대 100만 개의 고객 프로필을 Campaign Monitor로 내보낼 때마다 최대 20분이 소요될 수 있습니다. Campaign Monitor로 내보낼 수 있는 고객 프로필의 개수는 Campaign Monitor와 체결한 계약에 따라 다릅니다.
 - 세그먼트만 해당됩니다.
 
