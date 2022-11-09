@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0281be288b2c4d9e5da7ad8e2ed25f7b51b8498e
-ms.sourcegitcommit: f959c85871777e5f4eab289e91b2fd114cd72153
+ms.openlocfilehash: b34f1d54fa499f6c6b80fa547a8aaf61af3b35a1
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "9588910"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725362"
 ---
 # <a name="export-segments-to-hubspot-preview"></a>HubSpot으로 세그먼트 내보내기(프리뷰)
 
@@ -27,6 +27,7 @@ ms.locfileid: "9588910"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
+- BYOS(Bring Your Own Storage)와 결합된 개인 링크는 지원되지 않습니다.
 - HubSpot으로 내보내기당 최대 100,000개의 고객 프로필이 생성되며 완료하는 데 최대 15분이 소요될 수 있습니다. HubSpot으로 내보낼 수 있는 고객 프로필의 수는 HubSpot과의 계약에 따라 달라지고 제한됩니다.
 - 세그먼트만 해당됩니다.
 

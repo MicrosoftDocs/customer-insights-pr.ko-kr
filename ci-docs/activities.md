@@ -1,12 +1,12 @@
 ---
 title: 고객 또는 비즈니스 연락처 활동
 description: 고객 또는 비즈니스 연락처 활동을 정의하고 고객 프로필의 타임라인에서 볼 수 있습니다.
-ms.date: 08/12/2022
+ms.date: 10/26/2022
 ms.subservice: audience-insights
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
-author: CadeSanthaMSFT
-ms.author: cadesantha
+author: srivas15
+ms.author: shsri
 manager: shellyha
 searchScope:
 - ci-entities
@@ -17,12 +17,12 @@ searchScope:
 - ci-measures
 - ci-segment-suggestions
 - customerInsights
-ms.openlocfilehash: bbb8bc30d079273bc935181c628915bb3c02d982
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: d8caa477278f04c3a0a95ced15f4bea2a22aa8cd
+ms.sourcegitcommit: da6a2d189edacc8f2c0f2abedcb28245f26fe74c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9304113"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9723789"
 ---
 # <a name="customer-or-business-contact-activities"></a>고객 또는 비즈니스 연락처 활동
 
@@ -41,6 +41,9 @@ ms.locfileid: "9304113"
    - **활동 이름**: 활동 이름을 선택합니다.
    - **활동 엔터티**: 거래 또는 활동 데이터가 포함된 엔터티를 선택합니다.
    - **기본 키**: 레코드를 고유하게 식별하는 필드를 선택합니다. 중복 값, 빈 값 또는 누락된 값을 포함해서는 안됩니다.
+
+     > [!NOTE]
+     > 각 행의 기본 키는 데이터 원본 새로 고침에서 일관성을 유지해야 합니다. 행의 기본 키가 데이터 원본 새로 고침에서 업데이트되면 출력 활동 엔터티에 중복이 생성됩니다. 
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="이름, 엔터티 및 기본 키를 사용하여 활동 데이터를 설정합니다.":::
 
@@ -132,7 +135,15 @@ ms.locfileid: "9304113"
 
 1. **활동 추가** 를 선택하십시오.
 
-1. 활동의 이름을 지정하고 소스 활동 엔터티를 선택한 다음 활동 엔터티의 기본 키를 선택합니다.
+1. **활동 데이터** 단계에서 다음 정보를 입력합니다.
+
+   - **활동 이름**: 활동 이름을 선택합니다.
+   - **활동 엔터티**: 거래 또는 활동 데이터가 포함된 엔터티를 선택합니다.
+   - **기본 키**: 레코드를 고유하게 식별하는 필드를 선택합니다. 중복 값, 빈 값 또는 누락된 값을 포함해서는 안됩니다.
+
+     > [!NOTE]
+     > 각 행의 기본 키는 데이터 원본 새로 고침에서 일관성을 유지해야 합니다. 행의 기본 키가 데이터 원본 새로 고침에서 업데이트되면 출력 활동 엔터티에 중복이 생성됩니다. 
+
 
 1. **관계** 단계에서 연락처 데이터를 중간 엔터티로 사용하여 활동 소스 데이터와 계정 간의 간접 관계를 만듭니다. 자세한 내용은 [직접 및 간접 관계 경로](relationships.md#relationship-paths)에서 확인하세요.
    - *구매* 활동에 대한 예시 관계:

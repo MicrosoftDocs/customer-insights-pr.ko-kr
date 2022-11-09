@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f2990ad410dda0cbf952f82f3fc30b3a53a7bcd4
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 855e77055eeb24a2c6cff0d45cd23edf93cc0581
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9197000"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724856"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>SendGrid로 세그먼트 내보내기(프리뷰)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9197000"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
+- BYOS(Bring Your Own Storage)와 결합된 개인 링크는 지원되지 않습니다.
 - 최대 10만 개의 고객 프로필 전체를 SendGrid로 내보내려면 완료까지 최대 몇 시간이 걸릴 수 있습니다. SendGrid로 내보낼 수 있는 고객 프로필의 개수는 SendGrid와 체결한 계약에 따라 다릅니다.
 - 세그먼트만 해당됩니다.
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01be1a075db0da05dc5536aea8a33093f9a2ea13
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: c7a4b1be1c959d70fad929b56452169b40e5b592
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195022"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724611"
 ---
 # <a name="export-segments-to-facebook-ads-manager-preview"></a>Facebook 광고 관리자로 세그먼트 내보내기(프리뷰)
 
@@ -25,11 +25,13 @@ ms.locfileid: "9195022"
 
 - [Facebook 광고 계정](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account)에는 [Facebook 비즈니스 계정](https://business.facebook.com/)이 포함됩니다.
 - [Facebook 광고 계정](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account)의 관리자 권한입니다.
+- 사용자 지정 대상 그룹 약관은 Customer Insights에서 연결을 설정하는 사용자가 수락해야 합니다.
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
 - 최대 1,000만 개의 고객 프로필을 Facebook 광고 관리자로 내보낼 때마다 최대 90분이 소요될 수 있습니다.
 - 세그먼트만 해당됩니다.
+- Facebook 광고 통합은 25개 이상의 광고 계정이 있는 사용자를 지원하지 않습니다.
 - [사용자 지정 대상 그룹](https://www.facebook.com/business/help/744354708981227?id=2469097953376494)의 Facebook *고객 목록* 유형만 해당됩니다.
   > [!NOTE]
   > 경우에 따라 드롭다운 목록에 다양한 유형의 사용자 지정 대상 그룹이 표시됩니다. *고객 목록* 이 아닌 다른 유형을 선택하면 내보낼 수 없습니다.

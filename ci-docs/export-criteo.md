@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d7c8d6f0121fe18a6c886ba3776109a1a592ef33
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 61435030254638965fbeb7980312e73695416aa2
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195344"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724797"
 ---
 # <a name="export-segments-to-criteo-preview"></a>Criteo로 세그먼트 내보내기(프리뷰)
 
@@ -27,6 +27,7 @@ ms.locfileid: "9195344"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
+- BYOS(Bring Your Own Storage)와 결합된 개인 링크는 지원되지 않습니다.
 - 최대 100만 개의 고객 프로필을 Criteo로 내보낼 때마다 최대 30분이 소요될 수 있습니다. Criteo로 내보낼 수 있는 고객 프로필의 개수는 Criteo와 체결된 계약에 따라 다릅니다.
 - 세그먼트만 해당됩니다.
 
@@ -65,8 +66,6 @@ ms.locfileid: "9195344"
 1. 내보낼 엔터티의 이름을 입력합니다.
 
 1. **데이터 일치** 섹션의 **이메일** 필드에서 고객의 이메일 주소를 나타내는 필드를 선택합니다.
-
-1. 필요에 따라 **광고주 ID** 및 **이름** 을 내보낼 수 있습니다.
 
 1. 내보낼 세그먼트를 선택합니다.
 

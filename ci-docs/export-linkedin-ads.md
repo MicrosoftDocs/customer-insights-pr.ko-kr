@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 4c3928e05db0ebda262b4ad3e928ce85f70035b9
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: 06eb915e352ad545f95e96e6108be0f81f43a451
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9304711"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725316"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>LinkedIn Ads로 세그먼트 내보내기(프리뷰)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9304711"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
+- BYOS(Bring Your Own Storage)와 결합된 개인 링크는 지원되지 않습니다.
 - 최대 10만 개의 고객 프로필을 LinkedIn Ads로 내보낼 때마다 최대 10분이 소요될 수 있습니다.
 - 세그먼트만 해당됩니다. 세그먼트에는 300개 이상의 고유 프로필이 포함되어야 합니다.
 

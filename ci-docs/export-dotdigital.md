@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: cabaea84e31f8fe97bc558a8dca8d93bc40f43b7
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 8f3e3378dce9177c6645b91140884ae135540243
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196080"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724994"
 ---
 # <a name="export-segments-to-dotdigital-preview"></a>DotDigital로 세그먼트 내보내기(프리뷰)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196080"
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
+- BYOS(Bring Your Own Storage)와 결합된 개인 링크는 지원되지 않습니다.
 - 최대 100만 고객 프로필을 DotDigital로 내보낼 때마다 공급자 측의 제한으로 인해 완료까지 최대 3시간이 소요될 수 있습니다. DotDigital로 내보낼 수 있는 고객 프로필의 개수는 DotDigital와 체결한 계약에 따라 다릅니다.
 - 세그먼트만 해당됩니다.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 2f52eb8196e057f934c8d2b5ac0518ce121606b6
-ms.sourcegitcommit: 003c1929f730d7d505c108aba84f6269f4c98978
+ms.openlocfilehash: a3967008ec166cb6f099659b0791f1318126c0da
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9655278"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725224"
 ---
 # <a name="export-segments-to-braze-preview"></a>Braze로 세그먼트 내보내기(프리뷰)
 
@@ -29,6 +29,7 @@ Unified customer profile의 세그먼트를 Braze로 내보내고 마케팅 활�
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
+- BYOS(Bring Your Own Storage)와 결합된 개인 링크는 지원되지 않습니다.
 - 최대 100만 개의 고객 프로필을 Braze로 내보내는 데 최대 40분이 소요될 수 있습니다. Braze로 내보낼 수 있는 고객 프로필의 개수는 Braze와 체결한 계약에 따라 다릅니다.
 - 세그먼트만 해당됩니다.
 - Azure Private Link는 Braze 내보내기에 지원되지 않습니다.
