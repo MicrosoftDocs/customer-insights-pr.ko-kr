@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 7bc0c3614e6dd39fbd65ae098ed679d95d09de9d
-ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
+ms.openlocfilehash: 675fd03c44a7a7a492b111895d79c2e77f93a5b5
+ms.sourcegitcommit: 4ba74816ebfa46412c64c40a61e1f31c4ccc40f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9259806"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9738164"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>Azure Synapse Analytics 데이터 원본 연결(프리뷰)
 
@@ -45,7 +45,7 @@ Azure Synapse Analytics는 데이터 웨어하우스 및 빅 데이터 시스템
 
 - *[Azure Synapse 작업 영역 관리 ID](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* 는 데이터가 있고 Azure Synapse 작업 영역에 연결된 Azure Data Lake Storage Gen2 계정에 대한 **스토리지 Blob 데이터 기여자** 권한이 필요합니다. [Azure Portal을 사용하여 Blob 및 큐 데이터에 대한 액세스를 위한 Azure 역할 할당](/azure/storage/common/storage-auth-aad-rbac-portal) 및 [스토리지 Blob 데이터 기여자 권한](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor)에 대해 자세히 알아보기.
 
-- Azure Synapse workspace에서 'Dynamics 365 AI for Customer Insights'에 해당하는 *Customer Insights의 서비스 주체* 에는 **시냅스 관리자** 역할이 할당되어야 합니다. 자세한 내용은 [Synapse 작업 영역에 대한 액세스 제어를 설정하는 방법](/azure/synapse-analytics/security/how-to-set-up-access-control)을 참조하십시오.
+- Azure Synapse workspace에서 'Dynamics 365 AI for Customer Insights'에 해당하는 *Customer Insights의 서비스 주체* 에는 **시냅스 관리자** 역할이 할당되어야 합니다. **사용자** 는 작업 영역에 할당된 최소한 **시냅스 기여자** 역할이 필요합니다. 자세한 내용은 [Synapse 작업 영역에 대한 액세스 제어를 설정하는 방법](/azure/synapse-analytics/security/how-to-set-up-access-control)을 참조하십시오.
 
 - Customer Insights 환경에서 데이터를 [자체 Azure Data Lake Storage](own-data-lake-storage.md)에 저장하는 경우 연결을 Azure Synapse Analytics에 설정하는 사용자에게는 Data Lake Storage 계정에서 기본 **독자** 이상의 역할이 필요합니다. 자세한 내용은 [Azure Portal을 사용하여 Azure 역할 할당](/azure/role-based-access-control/role-assignments-portal)을 참조하십시오.
 
